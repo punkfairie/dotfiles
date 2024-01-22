@@ -130,7 +130,7 @@ setup_gitconfig()
 {
   cd "$dotfiles_dir"
 
-  if ! [[ -f $dotfiles_dir/git/gitconfig.local.symlink ]]; then
+  if ! [[ -f $dotfiles_dir/git/.gitconfig.local.symlink ]]; then
     print_title "Set up gitconfig"
 
     git_credential="cache"
@@ -148,7 +148,7 @@ setup_gitconfig()
     sed -e "s/AUTHORNAME/$git_authorname/g" \
       -e "s/AUTHOREMAIL/$git_authoremail/g" \
       -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" \
-      $dotfiles_dir/git/gitconfig.local.symlink.example > $dotfiles_dir/gitconfig.local.symlink
+      $dotfiles_dir/git/.gitconfig.local.symlink.example > $dotfiles_dir/.gitconfig.local.symlink
 
     print_result $? "gitconfig"
   fi

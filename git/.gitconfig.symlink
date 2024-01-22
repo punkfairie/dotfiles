@@ -1,0 +1,13 @@
+# vim:set ft=toml sw=4 :
+
+[alias]
+    prevision = "!f() { git checkout `git log --oneline $2 | awk -v commit=\"$1\" 'FNR == -commit+1 {print $1}'` $2; }; f"
+    nevermind = "reset --hard HEAD && git clean -df"
+
+[rebase]
+    autosquash = true
+[merge]
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
+    hideResolved = true
