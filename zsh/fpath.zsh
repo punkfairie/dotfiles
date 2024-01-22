@@ -4,7 +4,7 @@
 
 if [[ -d "$DOT/functions" ]]; then
   fpath=($DOT/functions $fpath)
-  autoload -U $DOT/functions/*(:t)
+  { autoload -U $DOT/functions/*(:t); } &> /dev/null
 fi
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

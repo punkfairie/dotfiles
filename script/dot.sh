@@ -168,7 +168,7 @@ link_file()
   local skip=
   local action=
 
-  if [[ -f "$dst" -o -d "$dst" -o -L "$dst" ]]; then
+  if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]; then
     
     if ! $overwrite_all && ! $backup_all && ! $skip_all; then
       local current_src="$(readlink $dst)"
@@ -214,7 +214,7 @@ link_file()
 
   fi
 
-  if ! $skip; then
+  if [[ $skip != "true" ]]; then # "false" or empty
     ln -s "$src" "$dst"
     print_success "Linked $src to $dst"
   fi
@@ -288,7 +288,7 @@ main()
   if [[ -x "${dotfiles_dir}/script/utils.sh" ]]; then
     . "${dotfiles_dir}/script/utils.sh" || exit 1
   else
-  download_utils || exit 1
+    download_utils || exit 1
   fi
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
