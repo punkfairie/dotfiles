@@ -1,0 +1,8 @@
+# vim:set ft=toml sw=4:
+
+[user]
+    name = AUTHORNAME
+    email = AUTHOREMAIL
+
+[credential]
+    helper = GIT_CREDENTIAL_HELPER
