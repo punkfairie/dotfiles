@@ -13,7 +13,7 @@ export DOT="$HOME/dotfiles"
 export HACK="$HOME/hackin"
 
 # Theme.
-ZSH_THEME="typewritten"
+ZSH_THEME=""
 
 # Use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -77,6 +77,9 @@ for file in ${(M)config_files:#*/completion.zsh}; do
 done
 
 unset config_files
+
+# Starship
+eval "$(starship init zsh)"
 
 # Herd injected PHP binary.
 export PATH="/Users/marley/Library/Application Support/Herd/bin/":$PATH
