@@ -133,14 +133,18 @@ are_xcode_cli_tools_installed()
 
 install_xcode_cli_toools()
 {
-  print_title "Xcode"
-
   if [[ "$(uname)" == "Darwin" ]]; then
+
+    print_title "Xcode"
+
     xcode-select --install &> /dev/null
 
     execute \
       "until are_xcode_cli_tools_installed; do sleep 5; done" \
       "Install Xcode Command Line Tools"
+
+    sudo xcodebuild -license accept &> /dev/null
+    print_result $? "Agree to the terms of the Xcode license"
   fi
 }
 
