@@ -11,3 +11,6 @@
 [mergetool]
     keepBackup = false
     hideResolved = true
+
+[include]
+    path = ~/.gitconfig.local
