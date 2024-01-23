@@ -228,7 +228,7 @@ install_dotfiles()
   local backup_all=false
   local skip_all=false
 
-  for src in $(find -H "$dotfiles_dir" -maxdepth 2 -name "*.symlink" -not -path "*.git*"); do
+  for src in $(find -H "$dotfiles_dir" -maxdepth 2 -name "*.symlink" -not -path ".git"); do
     dst="$HOME/$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
@@ -268,6 +268,7 @@ restart_os()
   printf "\n"
 
   if answer_is_yes; then
+    ask_for_sudo
     sudo shutdown -r now &> /dev/null
   fi
 }
@@ -295,10 +296,6 @@ main()
 
   skip_questions "$@" \
     && yes_to_all=true
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
-  ask_for_sudo
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   
