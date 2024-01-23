@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Base path.
-export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:$HOME/dotfiles/bin:$PATH"
 
 # Dotfiles root dir.
 export DOT="$HOME/dotfiles"
@@ -40,8 +40,10 @@ done
 unset config_files
 
 # Starship
+export STARSHIP_CONFIG=$DOT/zsh/starship.toml
 eval "$(starship init zsh)"
 
+# Zsh Syntax Highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Herd injected PHP binary.
