@@ -123,6 +123,28 @@ download_dotfiles()
 }
 
 ################################################################################
+#                                    Xcode                                     #
+################################################################################
+
+are_xcode_cli_tools_installed()
+{
+  xcode-select --print-path &> /dev/null
+}
+
+install_xcode_cli_toools()
+{
+  print_title "Xcode"
+
+  if [[ "$(uname)" == "Darwin" ]]; then
+    xcode-select --install &> /dev/null
+
+    execute \
+      "until are_xcode_cli_tools_installed; do sleep 5; done" \
+      "Install Xcode Command Line Tools"
+  fi
+}
+
+################################################################################
 #                               Setup Gitconfig                                #
 ################################################################################
 
@@ -317,10 +339,13 @@ main()
   
   $dotfiles_dir/os/pref.sh
 
+  install_xcode_cli_toools
+
   $dotfiles_dir/homebrew/brew.sh
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   
+  print_title "Installers"
   find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
