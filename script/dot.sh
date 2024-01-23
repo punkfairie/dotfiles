@@ -290,7 +290,6 @@ restart_os()
   printf "\n"
 
   if answer_is_yes; then
-    ask_for_sudo
     sudo shutdown -r now &> /dev/null
   fi
 }
@@ -318,6 +317,10 @@ main()
 
   skip_questions "$@" \
     && yes_to_all=true
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  
+  ask_for_sudo
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   

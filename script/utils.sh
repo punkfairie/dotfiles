@@ -164,7 +164,7 @@ show_spinner()
   tput sc
 
   while kill -0 "$PID" &> /dev/null; do
-    frame_text="   [${FRAMES:i++%NUMBER_OF_FRAMES:1}] $MSG"
+    frame_text=" [${FRAMES:i++%NUMBER_OF_FRAMES:1}] $MSG"
 
     # Print frame text.
     printf "%s" "$frame_text"
@@ -237,7 +237,7 @@ execute()
   # Print output based on what happened.
   print_result $exit_code "$MSG"
 
-  if [[ $exit -ne 0 ]]; then
+  if [[ $exit_code -ne 0 ]]; then
     print_error_stream < "$TMP_FILE"
   fi
 
