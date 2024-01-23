@@ -46,6 +46,9 @@ eval "$(starship init zsh)"
 # Zsh Syntax Highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Zsh Autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Herd injected PHP binary.
 export PATH="/Users/marley/Library/Application Support/Herd/bin/":$PATH
 
