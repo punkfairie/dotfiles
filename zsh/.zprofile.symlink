@@ -1,3 +1,0 @@
-#!/usr/bin/env zsh
-
-eval "$(/usr/local/bin/brew shellenv)"

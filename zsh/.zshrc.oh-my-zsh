@@ -3,11 +3,50 @@
 # Base path.
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
 # Dotfiles root dir.
 export DOT="$HOME/dotfiles"
 
 # Projects dir.
 export HACK="$HOME/hackin"
+
+# Theme.
+ZSH_THEME=""
+
+# Use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+HYPHEN_INSENSITIVE="true"
+
+# Auto-update behavior.
+# zstyle ':omz:update' mode disabled # disable automatic updates
+# zstyle ':omz:update' mode auto     # update automatically without asking
+zstyle ':omz:update' mode reminder # just remind me to update when it's time
+
+# Display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the
+# default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+COMPLETION_WAITING_DOTS="true"
+
+# Plugins to load.
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions colored-man-pages gh gulp iterm2 laravel macos npm nvm sudo thefuck)
+
+# iTerm2 Shell Integration
+if [[ "$(uname)" == "Darwin" ]] && [[ $(mdfind "iTerm.app") ]]; then
+  zstyle ':omz:plugins:iterm2' shell-integration yes
+fi
+
+# the fuck
+eval $(thefuck --alias)
+
+# zsh completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
+source $ZSH/oh-my-zsh.sh
 
 # Local environment variables.
 if [[ -e $HOME/.local.env ]]; then
