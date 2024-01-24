@@ -1,6 +1,11 @@
-connect-timeout = 60 # limit the timeout in seconds
-location             # follow HTTP redirects
-show-error           # show error messages
+# limit the timeout in seconds
+connect-timeout = 60
+
+# follow HTTP redirects
+location
+
+# show error messages
+show-error
 
 # send a fake UA string for the HTTP servers that sniff it
 user-agent = "Mozilla/5.0 Gecko"
