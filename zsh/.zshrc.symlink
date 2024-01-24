@@ -22,15 +22,15 @@ config_files=($DOT/**/*.zsh)
 for file in ${(M)config_files:#*/path.zsh}; do
   source $file
 done
+#
+# Initialize autocomplete.
+autoload -U compinit
+compinit
 
 # Load everything else, except completion.
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
   source $file
 done
-
-# Initialize autocomplete.
-autoload -U compinit
-compinit
 
 # Load autocompletions.
 for file in ${(M)config_files:#*/completion.zsh}; do
