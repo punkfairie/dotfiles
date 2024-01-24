@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Remove that annoying 'last logged in' message.
+# Tested this method vs in iTerm settings - latter is less portable and slower.
+printf '\33c\e[3J'
+
 # Base path.
 export PATH="$HOME/bin:/usr/local/bin:$HOME/dotfiles/bin:$PATH"
 
