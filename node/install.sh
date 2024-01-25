@@ -1,13 +1,14 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
+# vim:set ft=bash:
 
-cd "$(dirname ${(%):-%x})" \
+cd "$(dirname "${BASH_SOURCE[0]}")" \
   && source "../script/utils.sh"
 
-execute \
-  "if ! [ -d \"$HOME/.zsh-plugins/zsh-nvm\" ]; then git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-plugins/zsh-nvm; fi" \
-  "zsh-nvm"
-
-source "./nvm.zsh"
+if ! [[ -d "~/.zsh-plugins/zsh-nvm" ]]; then
+  execute \
+    "git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-plugins/zsh-nvm" \
+    "zsh-nvm"
+fi
 
 execute "nvm install lts/iron" "Node.js 20.x"
 
