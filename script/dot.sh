@@ -9,7 +9,7 @@ declare -r DOTFILES_UTILS="https://raw.githubusercontent.com/$GITHUB_REPO/main/s
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-declare dotfiles_dir="$HOME/dotfiles"
+declare dotfiles_dir="$HOME/dotfiles" # MUST HAVE NO LEADING SLASH!!
 declare yes_to_all=false
 
 ################################################################################
@@ -241,6 +241,12 @@ link_file()
   fi
 
   if [[ $skip != "true" ]]; then # "false" or empty
+
+    # See if any directories need to be created
+    if [[ "$dst" =~ '/' ]]; then
+      mkdir -p "${dst%/*}"
+    fi
+
     ln -s "$src" "$dst"
     print_success "Linked $src to $dst"
   fi
@@ -254,8 +260,11 @@ install_dotfiles()
   local backup_all=false
   local skip_all=false
 
-  for src in $(find -H "$dotfiles_dir" -maxdepth 2 -name "*.symlink" -not -path ".git"); do
-    dst="$HOME/$(basename "${src%.*}")"
+  for src in $(find -H "$dotfiles_dir" -maxdepth 5 -name "*.symlink" -not -path ".git"); do
+    dst="${src%.*}"
+    dst="${dst#$dotfiles_dir/}"
+    dst="${dst#*/}"
+    dst="$HOME/$dst"
     link_file "$src" "$dst"
   done
 }
