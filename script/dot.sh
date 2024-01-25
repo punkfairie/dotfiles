@@ -359,6 +359,8 @@ main()
 
   $dotfiles_dir/homebrew/brew.sh
 
+  $dotfiles_dir/node/volta.sh
+
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   
   print_title "Installers"
