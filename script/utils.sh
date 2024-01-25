@@ -38,11 +38,9 @@ ask_for_sudo()
 
 print_in_color()
 {
-  string=$(echo "$1" | tr -s " ")
-
   printf "%b" \
     "$(tput setaf "$2" 2> /dev/null)" \
-    "$string" \
+    "$1" \
     "$(tput sgr0 2> /dev/null)"
 }
 
@@ -164,7 +162,7 @@ show_spinner()
   tput sc
 
   while kill -0 "$PID" &> /dev/null; do
-    frame_text=" [${FRAMES:i++%NUMBER_OF_FRAMES:1}] $MSG"
+    frame_text="   [${FRAMES:$((i++%NUMBER_OF_FRAMES)):1}] $MSG"
 
     # Print frame text.
     printf "%s" "$frame_text"
@@ -193,7 +191,7 @@ is_git_repository()
 set_trap()
 {
   trap -p "$1" | grep "$2" &> /dev/null \
-    || trap '$2' "$1"
+    || trap "$2" "$1"
 }
 
 kill_all_subproccesses()
