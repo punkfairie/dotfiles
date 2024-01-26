@@ -6,4 +6,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-npm_install "tldr" "tldr pages"
+npm_install "tldr pages" "tldr"

@@ -8,5 +8,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 npm_install()
 {
-  execute ". $DOT/node/path.zsh && npm install --global --silent $1" "$2"
+  local -r MSG="$1"
+  local -r PKG="$2"
+
+  execute ". $DOT/node/path.zsh && npm install --global --silent $PKG" "$MSG"
 }

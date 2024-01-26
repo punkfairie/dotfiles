@@ -6,4 +6,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-npm_install "gulp-cli" "gulp CLI"
+npm_install "gulp CLI" "gulp-cli"

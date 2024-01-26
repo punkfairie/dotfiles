@@ -1,0 +1,45 @@
+#!/usr/bin/env fish
+
+# Remove that annoying 'last logged in' message.
+# Tested this method vs in iTerm settings - latter is less portable and slower.
+printf '\33c\e[3J'
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# Base path.
+fish_add_path "$HOME/dotfiles/bin" "/usr/local/bin" "$HOME/bin"
+
+# Dotfiles root dir.
+set -gx DOT "$HOME/dotfiles"
+
+# Projects dir.
+set -gx HACK "$HOME/hackin"
+
+# Local environment variables.
+if [ -e "$HOME/.local.env" ]
+  source "~/.local.env"
+end
+
+# All fish dotfiles.
+set config_files $DOT/**/*.fish
+
+# Load path files first.
+for file in (string match -r '^.*\/path.fish$' $config_files)
+  source $file
+end
+
+# Load everything else, except completion.
+for file in (string match -v -r '^.*\/(path|completion)\.fish$' $config_files)
+  source $file
+end
+
+# Load completions functions.
+for file in (string match -r '^.*\/completion.fish$' $config_files)
+  source $file
+end
+
+set -e config_files
+
+# Starship
+set -gx STARSHIP_CONFIG "$DOT/zsh/starship.toml"
+starship init fish | source
