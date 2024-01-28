@@ -35,6 +35,11 @@ bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 bind | split-window -h -c "#{pane_current_path}"
 bind - split-window -v -c "#{pane_current_path}"
 
+bind-key J resize-pane -D
+bind-key K resize-pane -U
+bind-key H resize-pane -L
+bind-key L resize-pane -R
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Install tpm if not already installed.

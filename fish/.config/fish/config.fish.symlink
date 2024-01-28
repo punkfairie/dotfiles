@@ -31,7 +31,7 @@ for file in (string match -r '^.*\/path.fish$' $config_files)
 end
 
 # Load everything else, except completion.
-for file in (string match -v -r '^.*\/(path|completion)\.fish$' $config_files)
+for file in (string match -v -r '^.*\/(path|completion|install)\.fish$' $config_files)
   source $file
 end
 

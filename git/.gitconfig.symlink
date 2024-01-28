@@ -1,7 +1,4 @@
-# vim:set ft=toml sw=4 :
-
-[alias]
-    prevision =     nevermind = 
+# vim:set ft=gitconfig :
 
 [color]
     diff = always

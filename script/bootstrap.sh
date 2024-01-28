@@ -244,6 +244,8 @@ main()
 
   "$DOT/homebrew/brew.sh"
 
+  "$DOT/git/install.sh"
+
   "$DOT/fish/install.sh"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

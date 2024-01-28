@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
-# vim:set ft=bash:
+#!/usr/bin/env sh
 
-cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && . "../script/utils.sh"
+. "$DOT/script/utils.sh"
 
 ################################################################################
 #                                   Install                                    #
@@ -10,10 +8,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 install()
 {
-  if test ! $(which brew); then
+  if test ! "$(which brew)"; then
     NONINTERACTIVE=1 \
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
-      &> /dev/null
+      >/dev/null 2>&1
     
     print_result $? "Install"
   fi
@@ -25,18 +23,18 @@ install()
 
 add_to_path()
 {
-  if command -v brew &> /dev/null; then
+  if command -v brew >/dev/null 2>&1; then
     return
   fi
 
   HARDWARE="$(uname -m)"
   prefix=""
 
-  if [[ "$(uname)" == "Linux" ]]; then
+  if [ "$(uname)" = "Linux" ]; then
     prefix="/home/linuxbrew/.linuxbrew"
-  elif [[ "$HARDWARE" == "arm64" ]]; then
+  elif [ "$HARDWARE" = "arm64" ]; then
     prefix="/opt/homebrew"
-  elif [[ "$HARDWARE" == "x86_64" ]]; then
+  elif [ "$HARDWARE" = "x86_64" ]; then
     prefix="/usr/local"
   else
     print_error "Homebrew is only supported on macOS Intel/ARM or Linux!"
@@ -44,7 +42,7 @@ add_to_path()
 
   PATH="$prefix/bin:$PATH"
 
-  command -v brew &> /dev/null
+  command -v brew >/dev/null 2>&1
   print_result $? "Add to PATH"
 }
 
