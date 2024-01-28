@@ -25,9 +25,6 @@ function link_file
   set -f src $argv[1]
   set -f dst $argv[2]
 
-  set -f overwrite false
-  set -f backup false
-  set -f skip false
   set -f action
 
   if [ -f "$dst" ] || [ -d "$dst" ] || [ -L "$dst" ]
@@ -36,24 +33,25 @@ function link_file
       set -f current_src (readlink "$dst")
 
       if [ "$current_src" = "$src" ]
-        set skip true
+        set -f skip true
       else
-        print_question "File already exists: $dst ($(basename $src)), what do you want to do?\n([s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all)"
+        print_question "File already exists: $dst ($(basename $src)), what do you want to do?"
+        print_question "([s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all)"
         read -n 1 action
 
         switch $action
           case o
-            set overwrite true
+            set -f overwrite true
           case O
-            set overwrite_all true
+            set -f overwrite_all true
           case b
-            set backup true
+            set -f backup true
           case B
-            set backup_all true
+            set -f backup_all true
           case s
-            set skip true
+            set -f skip true
           case S
-            set skip_all true
+            set -f skip_all true
         end
       end
     end
@@ -83,17 +81,17 @@ function link_file
       mkdir -p (string replace -r '\/[^\/]+$' '' "$dst")
     end
 
-    ln -s "$src" "$dst"
+    ln -s "$src" "$dst" &> /dev/null
     print_success "Linked $src to $dst"
   end
 end
 
 function make_dst
-  set -l path (string escape --style=regex "$DOT")
-  set -l regex (string join '^\/' $path '\/[a-zA-Z]+\/(.+)\.symlink$')
+  set -l path (string replace -a '/' '\/' "$DOT")
+  set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.symlink$')
   set -l dst (string replace -r $regex '$1' "$argv[1]")
 
-  printf '%s' "$dst"
+  printf '%s' "$HOME/$dst"
 end
 
 function install_dotfiles
@@ -103,8 +101,9 @@ function install_dotfiles
   set -g backup_all false
   set -g skip_all false
 
-  find -H "$DOT" -name "*.symlink" -not -path ".git" | \
-    while read -l -t src; link_file "$src" "$(make_dst $src)"; end
+  for src in (find -H "$DOT" -name "*.symlink" -not -path ".git")
+    link_file $src (make_dst $src)
+  end
 end
 
 ################################################################################

@@ -2,7 +2,9 @@
 
 # Remove that annoying 'last logged in' message.
 # Tested this method vs in iTerm settings - latter is less portable and slower.
-printf '\33c\e[3J'
+if status is-login
+  printf '\33c\e[3J'
+end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
