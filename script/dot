@@ -1,0 +1,119 @@
+#!/usr/bin/env fish
+# vim:set ft=fish :
+
+set -q DOT || set -gx DOT "$HOME/dotfiles"
+
+source "$DOT/script/utils"
+
+################################################################################
+#                                OS Preferences                                #
+################################################################################
+
+function set_os_prefs
+  print_title "OS Preferences"
+
+  set os $(uname | string lower)
+
+  "$DOT/os/$os.fish"
+end
+
+################################################################################
+#                               Symlink Dotfiles                               #
+################################################################################
+
+function link_file
+  set -f src $argv[1]
+  set -f dst $argv[2]
+
+  set -f overwrite false
+  set -f backup false
+  set -f skip false
+  set -f action
+
+  if [ -f "$dst" ] || [ -d "$dst" ] || [ -L "$dst" ]
+    
+    if ! $overwrite_all && ! $backup_all && ! $skip_all
+      set -f current_src (readlink "$dst")
+
+      if [ "$current_src" = "$src" ]
+        set skip true
+      else
+        print_question "File already exists: $dst ($(basename $src)), what do you want to do?\n([s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all)"
+        read -n 1 action
+
+        switch $action
+          case o
+            set overwrite true
+          case O
+            set overwrite_all true
+          case b
+            set backup true
+          case B
+            set backup_all true
+          case s
+            set skip true
+          case S
+            set skip_all true
+        end
+      end
+    end
+
+    set -q overwrite || set overwrite $overwrite_all
+    set -q backup || set backup $backup_all
+    set -q skip || set skip $skip_all
+
+    if $overwrite
+      rm -rf "$dst"
+      print_success "Removed $dst"
+    end
+
+    if $backup
+      mv "$dst" "{$dst}.bak"
+      print_success "Moved $dst to {$dst}.bak"
+    end
+
+    if $skip
+      print_success "Skipped $src"
+    end
+  end
+
+  if ! $skip
+    # See of any directories need to be created.
+    if echo "$dst" | grep -q '/' 2> /dev/null
+      mkdir -p (string replace -r '\/[^\/]+$' '' "$dst")
+    end
+
+    ln -s "$src" "$dst"
+    print_success "Linked $src to $dst"
+  end
+end
+
+function make_dst
+  set -l path (string escape --style=regex "$DOT")
+  set -l regex (string join '^\/' $path '\/[a-zA-Z]+\/(.+)\.symlink$')
+  set -l dst (string replace -r $regex '$1' "$argv[1]")
+
+  printf '%s' "$dst"
+end
+
+function install_dotfiles
+  print_title "Installing Dotfiles"
+
+  set -g overwrite_all false
+  set -g backup_all false
+  set -g skip_all false
+
+  find -H "$DOT" -name "*.symlink" -not -path ".git" | \
+    while read -l -t src; link_file "$src" "$(make_dst $src)"; end
+end
+
+################################################################################
+#                                     Main                                     # 
+################################################################################
+
+print_title "Installers"
+find . -name install.fish | while read installer; fish -c "$installer"; end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+install_dotfiles
