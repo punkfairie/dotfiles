@@ -81,7 +81,12 @@ function link_file
       mkdir -p (string replace -r '\/[^\/]+$' '' "$dst")
     end
 
-    ln -s "$src" "$dst" &> /dev/null
+    if string match -e '.hardlink' "$src" &> /dev/null
+      ln "$src" "$dst" &> /dev/null
+    else
+      ls -s "$src" "$dst" &> /dev/null
+    end
+
     print_success "Linked $src to $dst"
   end
 end
