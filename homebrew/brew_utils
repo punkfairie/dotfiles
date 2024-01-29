@@ -16,8 +16,8 @@ function brew_prefix
   end
 end
 
-function brew_tap
-  brew tap "$argv[1]" &>/dev/null
+function brew_tap -a $tap
+  brew tap "$tap" &>/dev/null
 end
 
 function brew_update
@@ -30,12 +30,7 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function brew_install
-  set -f formula_readable_name $argv[1]
-  set -f formula $argv[2]
-  set -f arguments $argv[3]
-  set -f tap_value $argv[4]
-
+function brew_install -a $formula_readable_name $formula $arguments $tap_value
   # Check that Homebrew is installed
   if ! cmd_exists "brew"
     print_error "$formula_readable_name ('Homebrew' is not installed)"

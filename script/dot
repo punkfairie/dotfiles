@@ -21,10 +21,7 @@ end
 #                               Symlink Dotfiles                               #
 ################################################################################
 
-function link_file
-  set -f src $argv[1]
-  set -f dst $argv[2]
-
+function link_file -a $src $dst
   set -f action
 
   if [ -f "$dst" ] || [ -d "$dst" ] || [ -L "$dst" ]
@@ -91,10 +88,10 @@ function link_file
   end
 end
 
-function make_dst
+function make_dst -a $src
   set -l path (string replace -a '/' '\/' "$DOT")
   set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.symlink$')
-  set -l dst (string replace -r $regex '$1' "$argv[1]")
+  set -l dst (string replace -r $regex '$1' "$src")
 
   printf '%s' "$HOME/$dst"
 end
