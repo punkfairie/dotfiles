@@ -1,8 +1,6 @@
-#!/usr/bin/env bash
-# vim:set ft=bash:
+#!/usr/bin/env fish
 
-cd "$(dirname "${BASH_SOURCE[0]}")" \
-  && source "../node/node_utils.sh"
+source "$DOT/node/node_utils.fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 

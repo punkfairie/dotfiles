@@ -1,3 +1,0 @@
-bash-language-server
-gulp-cli
-vim-language-server
