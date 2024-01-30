@@ -112,6 +112,16 @@ end
 #                                     Main                                     # 
 ################################################################################
 
+# Ensure npm is available.
+
+"$DOT/node/volta.fish"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+set_os_prefs
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 print_title "Installers"
 find . -name install.fish | while read installer; fish -c "$installer"; end
 
