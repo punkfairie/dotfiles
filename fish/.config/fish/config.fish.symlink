@@ -17,6 +17,10 @@ set -gx DOT "$HOME/dotfiles"
 # Projects dir.
 set -gx HACK "$HOME/hackin"
 
+# Editor.
+set -gx EDITOR "nvim"
+set -gx VISUAL "$EDITOR"
+
 # Local environment variables.
 if [ -e "$HOME/.local.env" ]
   source "~/.local.env"
