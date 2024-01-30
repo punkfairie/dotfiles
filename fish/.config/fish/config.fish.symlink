@@ -23,20 +23,20 @@ if [ -e "$HOME/.local.env" ]
 end
 
 # All fish dotfiles.
-set config_files $DOT/**/*.fish
+set config_files $DOT/**/*.config.fish
 
 # Load path files first.
-for file in (string match -r '^.*\/path.fish$' $config_files)
+for file in (string match -r '^.*\/path.config.fish$' $config_files)
   source $file
 end
 
 # Load everything else, except completion.
-for file in (string match -v -r '^.*\/(path|completion|install)\.fish$' $config_files)
+for file in (string match -v -r '^.*\/(path|completion)\.config.fish$' $config_files)
   source $file
 end
 
 # Load completions functions.
-for file in (string match -r '^.*\/completion.fish$' $config_files)
+for file in (string match -r '^.*\/completion.config.fish$' $config_files)
   source $file
 end
 
