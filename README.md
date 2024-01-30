@@ -10,7 +10,6 @@ Set iTerm2 to use the preferences file, if applicable.
 
 ```fish
 tmux attach || tmux new -s main
-sudo ln -s ~/.tmux/plugins/tmux-open-nvim/scripts/ton /usr/local/bin/ton
 ```
 `<ctrl-a I>` to install plugins.
 
