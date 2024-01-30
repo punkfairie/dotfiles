@@ -96,7 +96,7 @@ function link_file -a src dst
     if string match -e '.hardlink' "$src" &> /dev/null
       ln "$src" "$dst" &> /dev/null
     else
-      ls -s "$src" "$dst" &> /dev/null
+      ln -s "$src" "$dst" &> /dev/null
     end
 
     print_success "Linked $src to $dst"
@@ -114,7 +114,7 @@ function install_dotfiles
   set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.(sym|hard)link$')
 
   for src in (find -H "$DOT" -name "*.symlink" -or -name "*.hardlink" -not -path ".git")
-    link_file $src "$(string replace -r $regex '$1' "$src")"
+    link_file $src "$HOME/$(string replace -r $regex '$1' "$src")"
   end
 end
 
