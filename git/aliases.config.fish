@@ -217,7 +217,7 @@ abbr -a glap --position command "git log --pretty=lf --graph --all --cc --patch"
 #                           Shortcuts to Feel Smart                            #
 ################################################################################
 
-function gprevision -a $N $path
+function gprevision -a N path
   git checkout \
     (git log --online $path | awk -v commit="$N" "FNR == -commit+1 {print $N}") \
     $path

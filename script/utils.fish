@@ -2,50 +2,50 @@
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-function print_in_color -a $color $text
+function print_in_color -a text color
   printf '%b' \
     "$(tput setaf $color 2> /dev/null)" \
     $text \
     "$(tput sgr0 2> /dev/null)"
 end
 
-function print_in_red -a $text
+function print_in_red -a text
   print_in_color $text 1
 end
 
-function print_in_yellow -a $text
+function print_in_yellow -a text
   print_in_color $text 3
 end
 
-function print_in_green -a $text
+function print_in_green -a text
   print_in_color $text 2
 end
 
-function print_in_purple -a $text
+function print_in_purple -a text
   print_in_color $text 5
 end
 
-function print_title -a $text
+function print_title -a text
   print_in_purple "\n • $text\n\n"
 end
 
-function print_success -a $text
+function print_success -a text
   print_in_green "   [✔] $text\n"
 end
 
-function print_warning -a $text
+function print_warning -a text
   print_in_yellow "   [!] $text\n"
 end
 
-function print_error -a $text $text2
+function print_error -a text text2
   print_in_red "   [✖] $text $text2\n"
 end
 
-function print_question -a $text
+function print_question -a text
   print_in_yellow "   [?] $text\n"
 end
 
-function print_result -a $exit_code $text
+function print_result -a exit_code text
   if [ "$exit_code" -eq 0 ]
     print_success $text
   else
@@ -63,7 +63,7 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-function show_spinner -a $pid $cmds $msg
+function show_spinner -a pid cmds msg
   set -l frames '/-\|'
 
   set -l number_of_frames (string length $FRAMES)
@@ -91,7 +91,7 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-function set_trap -a $sig $func
+function set_trap -a sig func
   trap -p "$sig" | grep "$func" &> /dev/null \
     || trap "$func" "$sig"
 end
@@ -107,10 +107,12 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-function execute -a $cmds
-  set -q $argv[2] and set -l msg $argv[2] or set -l msg "$cmds"
+function execute -a cmds msg
+  if ! set -q msg
+    set -f msg "$cmds"
+  end
 
-  set -l tmp_file "$(mktmp /tmp/XXXXX)"
+  set -l tmp_file "$(mktemp /tmp/XXXXX)"
 
   set -l exit_code 0
 
@@ -133,4 +135,10 @@ function execute -a $cmds
   rm -rf "$tmp_file"
 
   return $exit_code
+end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function cmd_exists -a cmd
+  command -v "$cmd" &>/dev/null
 end

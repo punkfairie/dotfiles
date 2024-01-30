@@ -12,20 +12,27 @@ source "$DOT/script/utils.fish"
 function set_os_prefs
   print_title "OS Preferences"
 
-  set os $(uname | string lower)
+  set -f os $(uname | string lower)
+  set -f file "{$DOT}/os/{$os}.fish"
 
-  "$DOT/os/$os.fish"
+  if [ -e "$file" -a -x "$file" ]
+    "$file"
+  end
 end
 
 ################################################################################
 #                               Symlink Dotfiles                               #
 ################################################################################
 
-function link_file -a $src $dst
+function link_file -a src dst
   set -f action
 
-  if [ -f "$dst" ] || [ -d "$dst" ] || [ -L "$dst" ]
-    
+  set -f overwrite ""
+  set -f backup ""
+  set -f skip ""
+
+  if [ -f "$dst" -o -d "$dst" -o -L "$dst" ]
+
     if ! $overwrite_all && ! $backup_all && ! $skip_all
       set -f current_src (readlink "$dst")
 
@@ -38,24 +45,32 @@ function link_file -a $src $dst
 
         switch $action
           case o
-            set -f overwrite true
+            set overwrite true
           case O
-            set -f overwrite_all true
+            set overwrite_all true
           case b
-            set -f backup true
+            set backup true
           case B
-            set -f backup_all true
+            set backup_all true
           case s
-            set -f skip true
+            set skip true
           case S
-            set -f skip_all true
+            set skip_all true
         end
       end
     end
 
-    set -q overwrite || set overwrite $overwrite_all
-    set -q backup || set backup $backup_all
-    set -q skip || set skip $skip_all
+    if [ -z "$overwrite" ]
+      set overwrite $overwrite_all
+    end
+
+    if [ -z "$backup" ]
+      set backup $backup_all
+    end
+
+    if [ -z $skip ]
+      set skip $skip_all
+    end
 
     if $overwrite
       rm -rf "$dst"
@@ -72,7 +87,7 @@ function link_file -a $src $dst
     end
   end
 
-  if ! $skip
+  if [ -z $skip ] || ! $skip
     # See of any directories need to be created.
     if echo "$dst" | grep -q '/' 2> /dev/null
       mkdir -p (string replace -r '\/[^\/]+$' '' "$dst")
@@ -88,14 +103,6 @@ function link_file -a $src $dst
   end
 end
 
-function make_dst -a $src
-  set -l path (string replace -a '/' '\/' "$DOT")
-  set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.symlink$')
-  set -l dst (string replace -r $regex '$1' "$src")
-
-  printf '%s' "$HOME/$dst"
-end
-
 function install_dotfiles
   print_title "Installing Dotfiles"
 
@@ -103,8 +110,11 @@ function install_dotfiles
   set -g backup_all false
   set -g skip_all false
 
-  for src in (find -H "$DOT" -name "*.symlink" -not -path ".git")
-    link_file $src (make_dst $src)
+  set -l path (string replace -a '/' '\/' "$DOT")
+  set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.(sym|hard)link$')
+
+  for src in (find -H "$DOT" -name "*.symlink" -or -name "*.hardlink" -not -path ".git")
+    link_file $src "$(string replace -r $regex '$1' "$src")"
   end
 end
 
