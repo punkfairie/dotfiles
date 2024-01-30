@@ -1,22 +1,18 @@
 #!/usr/bin/env fish
 
-source "$DOT/script/utils.fish"
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function up -d "Update all software across all package managers"
-  set -f cmd "brew update && brew upgrade && brew cleanup"
-  set -a cmd "npm install npm -g && npm update -g"
+  brew update && brew upgrade && brew cleanup
+  npm install npm -g && npm update -g
 
-  if cmd_exists 'gem'
-    set -a cmd "sudo gem update --system && sudo gem update && sudo gem cleanup"
+  if command -v gem &>/dev/null
+    sudo gem update --system && sudo gem update && sudo gem cleanup
   end
 
   if [ "$(uname)" = "Darwin" ]
-    set -p cmd "sudo softwareupdate --install --all"
+    sudo softwareupdate --install --all
   else if [ "$(uname)" = "Linux" ]
-    set -p cmd "sudo apt update && sudo apt upgrade"
+    sudo apt update && sudo apt upgrade
   end
-
-  echo (string join '; ' $cmd)
 end
