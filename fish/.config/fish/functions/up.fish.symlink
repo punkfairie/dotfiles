@@ -3,16 +3,28 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function up -d "Update all software across all package managers"
-  brew update && brew upgrade && brew cleanup
-  npm install npm -g && npm update -g
+  argparse 'h/help' 'o/update-os' -- $argv
+  or return
 
-  if command -v gem &>/dev/null
-    sudo gem update --system && sudo gem update && sudo gem cleanup
+  if set -q _flag_h
+    printf '%b' \
+    "Update all software across all package managers, and " \
+    "optionally the OS itself on macOS.\n" \
+    "\n" \
+    "Options:\n" \
+    "-h|--help: Show this help message.\n" \
+    "-o|--update-os: Update macOS, using softwareupdate. Has no effect on " \
+    "Linux.\n"
+      
+    return
   end
 
-  if [ "$(uname)" = "Darwin" ]
+  if set -q _flag_o && [ "$(uname)" = "Darwin" ]
     sudo softwareupdate --install --all
   else if [ "$(uname)" = "Linux" ]
     sudo apt update && sudo apt upgrade
   end
+
+  brew update && brew upgrade && brew cleanup
+  npm install npm -g && npm update -g
 end
