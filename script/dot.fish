@@ -3,7 +3,7 @@
 
 set -q DOT || set -gx DOT "$HOME/dotfiles"
 
-source "$DOT/script/utils"
+source "$DOT/script/utils.fish"
 
 ################################################################################
 #                                OS Preferences                                #
