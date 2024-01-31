@@ -59,13 +59,27 @@ abbr -a gaa  --position command "git add --all"
 # Interactively stage parts of a file.
 abbr -a gapa --position command "git add --patch"
 
-abbr -a gd   --position command "git diff"
-abbr -a gds  --position command "git diff --staged"
-abbr -a gdw  --position command "git diff --word-diff" # show diff by word
-abbr -a gdsw --position command "git diff --staged --word-diff"
+abbr -a gdl   --position command "git diff"
+abbr -a gdls  --position command "git diff --staged"
+abbr -a gdlw  --position command "git diff --word-diff" # show diff by word
+abbr -a gdlsw --position command "git diff --staged --word-diff"
 
-function gdnolock --wraps "git diff"
-  git diff $argv ":(exclude)package-lock.json" ":(exclude)*.lock"
+set exclude ":(exclude)package-lock.json" ":(exclude)*.lock"
+
+function gd --wraps "git diff"
+  git diff $argv $exclude
+end
+
+function gds --wraps "git diff"
+  git diff --staged $argv $exclude
+end
+
+function gdw --wraps "git diff"
+  git diff --word-diff $argv $exclude
+end
+
+function gdsw --wraps "git diff"
+  git diff --staged --word-diff $argv $exclude
 end
 
 abbr -a gst  --position command "git status"
@@ -75,16 +89,24 @@ abbr -a gsts --position command "git status --short"
 #                                  Committing                                  #
 ################################################################################
 
-abbr -a gc      --position command "git commit"
+abbr -a  gc     --position command "git commit"
 abbr -a "gc!"   --position command "git commit --amend"
 abbr -a "gcn!"  --position command "git commit --no-edit --amend"
-abbr -a gca     --position command "git commit -a"
+abbr -a  gca    --position command "git add --all && git commit"
 abbr -a "gca!"  --position command "git commit -a --amend"
 abbr -a "gcan!" --position command "git commit -a --no-edit --amend"
-abbr -a gcam    --position command "git commit -a -m"
-abbr -a gcmsg   --position command "git commit -m"
+abbr -a  gcam   --position command "git commit -a -m"
+abbr -a  gcmsg  --position command "git commit -m"
 
-abbr -a grev    --position command "git revert"
+abbr -a  grev   --position command "git revert"
+
+# Update the last commit with all staged changes.
+abbr -a  gu     --position command "git commit --amend"
+abbr -a "gu!"   --position command "git commit --amend --no-edit"
+
+# Update the last commit with all local changes.
+abbr -a  gua    --position command "git add --all && git commit --amend"
+abbr -a "gua!"  --position command "git add --all && git commit --amend --no-edit"
 
 ################################################################################
 #                       Working Dir & Index Manipulation                       #

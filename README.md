@@ -4,7 +4,15 @@ mar does dotfiles
 
 # post install
 
-Set iTerm2 to use the preferences file, if applicable.
+## iTerm2
+
+Set iTerm2 to use the preferences folder ~/dotfiles/os/.
+
+## fish
+
+```fish
+fish_config theme save "Catppuccin Mocha"
+```
 
 ## tmux
 
