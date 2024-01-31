@@ -45,7 +45,3 @@ for file in (string match -r '^.*\/completion.config.fish$' $config_files)
 end
 
 set -e config_files
-
-# Starship
-set -gx STARSHIP_CONFIG "$DOT/fish/starship.toml"
-starship init fish | source

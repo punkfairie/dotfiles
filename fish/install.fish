@@ -1,9 +1,13 @@
 #!/usr/bin/env fish
 
+source "$DOT/script/utils.fish"
 source "$DOT/homebrew/brew_utils.fish"
 source "$DOT/node/node_utils.fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+execute "fisher install catppuccin/fish" "catppuccin/fish"
+execute "fisher install decors/fish-colored-man" "fish-colored-man"
 
 brew_install "FiraCode Nerd Font" "font-fira-code-nerd-font" "" "homebrew/cask-fonts"
 brew_install "Starship Prompt" "starship"
