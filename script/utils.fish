@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function print_in_color -a text color
   printf '%b' \
@@ -21,12 +21,20 @@ function print_in_green -a text
   print_in_color $text 2
 end
 
+function print_in_cyan -a text
+  print_in_color $text 6
+end
+
 function print_in_purple -a text
   print_in_color $text 5
 end
 
 function print_title -a text
-  print_in_purple "\n • $text\n\n"
+  print_in_purple "\n󰣐 $text\n\n"
+end
+
+function print_subtitle -a text
+  print_in_cyan "    $text\n"
 end
 
 function print_success -a text
@@ -61,7 +69,7 @@ function print_error_stream
   end
 end
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function show_spinner -a pid cmds msg
   set -l frames '/-\|'
@@ -89,7 +97,7 @@ function show_spinner -a pid cmds msg
   end
 end
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function set_trap -a sig func
   trap -p "$sig" | grep "$func" &> /dev/null \
@@ -105,7 +113,7 @@ function kill_all_subproccesses
   end
 end
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function execute -a cmds msg
   if ! set -q msg
