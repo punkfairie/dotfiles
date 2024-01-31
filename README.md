@@ -4,6 +4,13 @@ mar does dotfiles
 
 # post install
 
+## Casks
+
+```fish
+open /usr/local/Caskroom/windscribe/[#.#.#]/windscribeInstaller.app
+
+```
+
 ## iTerm2
 
 Set iTerm2 to use the preferences folder ~/dotfiles/os/.

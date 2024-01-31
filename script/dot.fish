@@ -1,7 +1,8 @@
 #!/usr/bin/env fish
-# vim:set ft=fish :
 
 set -q DOT || set -gx DOT "$HOME/dotfiles"
+
+set -g yes_to_all false
 
 source "$DOT/script/utils.fish"
 
@@ -106,9 +107,23 @@ end
 function install_dotfiles
   print_title "Installing Dotfiles"
 
+  set -g skip_all false
   set -g overwrite_all false
   set -g backup_all false
-  set -g skip_all false
+
+  if set -q yes_to_all && $yes_to_all
+    set skip_all true
+  else if set -q _flag_s
+    set skip_all true
+  end
+
+  if set -q _flag_o
+    set overwrite_all true
+  end
+
+  if set -q _flag_b
+    set backup_all true
+  end
 
   set -l path (string replace -a '/' '\/' "$DOT")
   set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.(sym|hard)link$')
@@ -119,8 +134,16 @@ function install_dotfiles
 end
 
 ################################################################################
-#                                     Main                                     # 
+#                                     Main                                     #
 ################################################################################
+
+argparse "y/yes-to-all" "s/skip" "o/overwrite" "b/backup" -- $argv
+
+if set -q _flag_y
+  set yes_to_all true
+end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Ensure npm is available.
 
