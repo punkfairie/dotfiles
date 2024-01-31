@@ -30,11 +30,11 @@ function print_in_purple -a text
 end
 
 function print_title -a text
-  print_in_purple "\n󰣐 $text\n\n"
+  print_in_purple "\n 󰣐 $text\n\n"
 end
 
 function print_subtitle -a text
-  print_in_cyan "    $text\n"
+  print_in_cyan "\n  $text\n"
 end
 
 function print_success -a text
