@@ -8,6 +8,9 @@ source "$DOT/os/apt_utils.fish"
 
 print_subtitle "OS"
 
+brew_install "wget" "wget"
+brew_install "cURL" "curl"
+
 if [ "$(uname)" = "Darwin" ]
   brew_install "mas-cli" "mas"
 
@@ -36,9 +39,6 @@ if [ "$(uname)" = "Darwin" ]
   brew_install "The Unarchiver" "the-unarchiver" "--cask"
 
 else if [ "$(uname)" = "Linux" ] && cmd_exists snap
-  apt_install "wget" "wget"
-  apt_install "curl" "cURL"
-
   # Networking.
   if ! cmd_exists windscribe
     execute "sudo wget https://github.com/Windscribe/Desktop-App/releases/download/v2.8.6/windscribe_2.8.6_amd64.deb -O /tmp/ws.deb \
