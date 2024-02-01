@@ -37,7 +37,7 @@ if [ "$(uname)" = "Darwin" ]
 
 else if [ "$(uname)" = "Linux" ] && cmd_exists snap
   apt_install "wget" "wget"
-  apt_install "curl" "curl"
+  apt_install "curl" "cURL"
 
   # Networking.
   if ! cmd_exists windscribe
@@ -57,5 +57,9 @@ else if [ "$(uname)" = "Linux" ] && cmd_exists snap
     && /tmp/bd.AppImage" \
     "BetterDiscord"
 
+  # Productivity.
   execute "sudo snap install obsidian --classic" "Obsidian"
+
+  # Media.
+  execute "sudo snap install vlc" "VLC"
 end
