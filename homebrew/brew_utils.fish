@@ -30,7 +30,7 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function brew_install -a formula_readable_name formula arguments tap_value
+function brew_install -a formula_readable_name formula arguments tap_value service
   # Check that Homebrew is installed
   if ! cmd_exists "brew"
     print_error "$formula_readable_name ('Homebrew' is not installed)"
@@ -44,11 +44,16 @@ function brew_install -a formula_readable_name formula arguments tap_value
     end
   end
 
+  # Determine if a service needs to be started & restarted on login.
+  if set -q service
+    set -f service_cmd "&& brew services start $formula"
+  end
+
   # Install the formula.
   if brew list "$formula" &>/dev/null
     print_success "$formula_readable_name"
   else
-    execute "brew install $formula $arguments" \
+    execute "brew install $formula $arguments $service_cmd" \
       "$formula_readable_name"
   end
 end
