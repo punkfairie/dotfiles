@@ -4,11 +4,11 @@ source "$DOT/script/utils.fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function package_is_installed -a pkg
+function apt_package_is_installed -a pkg
   dpkg -s "$pkg" &>/dev/null
 end
 
-function install_package -a pkg_readable_name pkg args
+function apt_install -a pkg_readable_name pkg args
   if ! package_is_installed "$pkg"
     execute \
       "sudo apt-get install --allow-authenticated -qqy $args $pkg" "$pkg_readable_name"
@@ -21,17 +21,17 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-function add_key -a key
+function apt_add_key -a key
   wget -q0 - "$key" | sudo apt-key add - &> /dev/null
   #     │└─ write output to file
   #     └─ don't show output
 end
 
-function add_ppa -a ppa
+function apt_add_ppa -a ppa
   sudo add-apt-repository -y ppa:"$ppa" &>/dev/null
 end
 
-function add_to_source_list -a source list
+function apt_add_to_source_list -a source list
   sudo sh -c "printf 'deb $source' >> '/etc/apt/sources.list.d/$list'"
 end
 
