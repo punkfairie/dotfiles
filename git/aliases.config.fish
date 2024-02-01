@@ -3,13 +3,13 @@
 abbr -a g --position command git
 
 ################################################################################
-#                                  Functions                                   # 
+#                                  Functions                                   #
 ################################################################################
 
 function git_develop_branch
   command git rev-parse --git-dir &>/dev/null || return
   set -l branch
-  
+
   for branch in dev devel develop development
     if command git show-ref -q --verify refs/heads/$branch
       echo $branch
@@ -158,10 +158,10 @@ abbr -a gstas --position command "git stash show --text"
 function gwip
   git add -A
   git rm (git ls-files --deleted) 2> /dev/null
-  git commit -- -no-verify --no-gpg-sign --message "🚧 --wip-- [skip ci]"
+  git commit --no-verify --no-gpg-sign --message "🚧 --wip-- [skip ci]"
 end
 
-function unwip
+function gunwip
   git rev-list --max-count=1 --format="%s" HEAD | \
     grep -q "🚧 --wip-- [skip ci]" \
     && git reset HEAD~1
