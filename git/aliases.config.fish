@@ -163,7 +163,7 @@ end
 
 function gunwip
   git rev-list --max-count=1 --format="%s" HEAD | \
-    grep -q "🚧 --wip-- [skip ci]" \
+    grep -q "🚧 --wip--" \
     && git reset HEAD~1
 end
 
@@ -194,6 +194,15 @@ abbr -a gbsb --position command "git bisect bad"
 abbr -a gbsg --position command "git bisect good"
 abbr -a gbsr --position command "git bisect reset"
 abbr -a gbss --position command "git bisect start"
+
+abbr -a grb  --position command "git rebase"
+abbr -a grbi --position command "git rebase --interactive"
+abbr -a grbo --position command "git rebase --onto"
+abbr -a grba --position command "git rebase --abort"
+abbr -a grbc --position command "git rebase --continue"
+abbr -a grbs --position command "git rebase --skip"
+abbr -a grbd --position command "git rebase $(git_develop_branch)"
+abbr -a grbm --position command "git rebase $(git_main_branch)"
 
 ################################################################################
 #                           Interaction with Remote                            #
