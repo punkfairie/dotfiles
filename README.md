@@ -2,7 +2,14 @@
 
 mar does dotfiles
 
-# post install
+# Pre Install
+
+## macOS
+
+- Grant full disk access to iTerm2 (System Preferences -> Security & Privacy ->
+  Full Disk Access -> `+` Add iTerm2)
+
+# Post Install
 
 ## Casks
 
