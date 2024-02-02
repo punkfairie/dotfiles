@@ -1,3 +1,4 @@
 Brewfile
 git/.gitattributes
 git/.gitignore
+node_modules/
