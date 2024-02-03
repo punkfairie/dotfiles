@@ -1,3 +1,5 @@
+# vim:set ft=gitconfig :
+
 [core]
   attributesFile = ~/dotfiles/git/.gitattributes
   excludesFile = ~/dotfiles/git/.gitignore
@@ -21,6 +23,8 @@
 
 [init]
   defaultBranch = main
+[commit]
+  template = ~/dotfiles/git/commit_template
 [push]
   autoSetupRemote = true
 [rebase]
