@@ -12,7 +12,7 @@ execute "defaults write com.apple.finder _FXShowPosixPathInTitle -bool true" \
 execute "defaults write com.apple.finder WarnOnEmptyTrash -bool false" \
     "Disable the warning before emptying the trash"
 
-execite "defaults write com.apple.finder FXDefaultSearchScope -string 'SCcf'" \
+execute "defaults write com.apple.finder FXDefaultSearchScope -string 'SCcf'" \
     "Search the current directory by default"
 
 execute "defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false" \
@@ -30,7 +30,7 @@ execute "defaults write -g AppleShowAllExtensions -bool true" \
 execute "defaults write com.apple.finder AppleShowAllFiles -bool true" \
     "Show hidden files"
 
-execite "defaults write com.apple.finder _FXSortFoldersFirst -bool true" \
+execute "defaults write com.apple.finder _FXSortFoldersFirst -bool true" \
     "Keep folders on top when sorting by name"
 
 execute "defaults write com.apple.finder FXRemoveOldTrashItems -bool true" \

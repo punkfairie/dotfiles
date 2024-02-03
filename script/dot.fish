@@ -14,7 +14,7 @@ function set_os_prefs
     print_title "OS Preferences"
 
     set -f os $(uname | string lower)
-    set -f file "{$DOT}/os/{$os}.fish"
+    set -f file "$DOT/os/$os.fish"
 
     if [ -e "$file" -a -x "$file" ]
         "$file"

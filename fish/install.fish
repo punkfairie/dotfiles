@@ -15,3 +15,4 @@ brew_install "FiraCode Nerd Font" font-fira-code-nerd-font "" homebrew/cask-font
 brew_install "Starship Prompt" starship
 brew_install "The Fuck" thefuck
 npm_install "tldr pages" tldr
+brew_install exa exa

@@ -127,7 +127,7 @@ function execute -a cmds msg
     set_trap EXIT kill_all_subproccesses
 
     eval "$cmds" &>/dev/null 2>$tmp_file &
-    set cmds_pid $last_pid
+    set cmds_pid $fish_pid
 
     show_spinner $cmds_pid $cmds $msg
 
