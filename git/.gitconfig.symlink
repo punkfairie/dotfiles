@@ -3,6 +3,7 @@
 [core]
   attributesFile = ~/dotfiles/git/.gitattributes
   excludesFile = ~/dotfiles/git/.gitignore
+  hooksPath = ~/dotfiles/git/hooks
 
 [user]
   # Do not guess the user's identity.
