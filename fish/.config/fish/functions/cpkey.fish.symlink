@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+function cpkey -d "Copy the id_rsa public key to clipboard, generating the keypair if needed"
+    if ! [ -O "~/.ssh/id_rsa.pub" ]
+        echo "=> Generating id_rsa keypair..."
+        ssh-keygen -f "~/.ssh/id_rsa"
+    end
+
+    more "~/.ssh/id_rsa.pub" | pbcopy
+    echo "=> Public key copied to clipbard"
+end
