@@ -82,8 +82,8 @@ function gdsw --wraps "git diff"
     git diff --staged --word-diff $argv $exclude
 end
 
-abbr -a gst --position command "git status"
-abbr -a gsts --position command "git status --short"
+abbr -a gst --position command "git status --short --branch"
+abbr -a gstl --position command "git status"
 
 ################################################################################
 #                                  Committing                                  #
