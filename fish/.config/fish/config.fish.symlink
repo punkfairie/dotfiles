@@ -14,13 +14,6 @@ fish_add_path "$HOME/dotfiles/bin" /usr/local/bin "$HOME/bin"
 # Dotfiles root dir.
 set -gx DOT "$HOME/dotfiles"
 
-# Projects dir.
-set -gx HACK "$HOME/hackin"
-
-# Editor.
-set -gx EDITOR nvim
-set -gx VISUAL "$EDITOR"
-
 # Local environment variables.
 if [ -e "$HOME/.local.env" ]
     source "~/.local.env"
