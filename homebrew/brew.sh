@@ -6,13 +6,12 @@
 #                                   Install                                    #
 ################################################################################
 
-install()
-{
+install() {
   if test ! "$(which brew)"; then
     NONINTERACTIVE=1 \
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
       >/dev/null 2>&1
-    
+
     print_result $? "Install"
   fi
 }
@@ -21,8 +20,7 @@ install()
 #                                 Add to Path                                  #
 ################################################################################
 
-add_to_path()
-{
+add_to_path() {
   if command -v brew >/dev/null 2>&1; then
     return
   fi
@@ -50,13 +48,11 @@ add_to_path()
 #                               Update & Upgrade                               #
 ################################################################################
 
-update()
-{
+update() {
   execute "brew update" "Update"
 }
 
-upgrade()
-{
+upgrade() {
   execute "brew upgrade" "Upgrade"
 }
 
@@ -64,10 +60,9 @@ upgrade()
 #                                     Main                                     #
 ################################################################################
 
-main()
-{
+main() {
   print_title "Homebrew"
-  
+
   install
   add_to_path
 

@@ -4,8 +4,7 @@
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-brew_prefix()
-{
+brew_prefix() {
   path=""
 
   if path="$(brew --prefix 2>/dev/null)"; then
@@ -17,25 +16,21 @@ brew_prefix()
   fi
 }
 
-brew_tap()
-{
+brew_tap() {
   brew tap "$1" >/dev/null 2>&1
 }
 
-brew_update()
-{
+brew_update() {
   execute "brew update" "Homebrew (update)"
 }
 
-brew_upgrade()
-{
+brew_upgrade() {
   execute "brew upgrade" "Homebrew (upgrade)"
 }
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-brew_install()
-{
+brew_install() {
   readonly FORMULA_READABLE_NAME="$1"
   readonly FORMULA="$2"
   readonly ARGUMENTS="$3"

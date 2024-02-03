@@ -1,25 +1,23 @@
 #!/usr/bin/env sh
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-skip_questions()
-{
+skip_questions() {
   while :; do
     case $1 in
-      -y | --yes ) return 0 ;;
-      * ) break ;;
+    -y | --yes) return 0 ;;
+    *) break ;;
     esac
 
     shift 1
   done
 
-  return 1 
+  return 1
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-ask_for_sudo()
-{
+ask_for_sudo() {
   sudo -v >/dev/null 2>&1
 
   # Update existing 'sudo' timestamp until this script has finished.
@@ -33,65 +31,54 @@ ask_for_sudo()
   done >/dev/null 2>&1 &
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_color()
-{
+print_in_color() {
   string=$(echo "$1" | tr -s " ")
 
   printf "%b" \
-    "$(tput setaf "$2" 2> /dev/null)" \
+    "$(tput setaf "$2" 2>/dev/null)" \
     "$string" \
-    "$(tput sgr0 2> /dev/null)"
+    "$(tput sgr0 2>/dev/null)"
 }
 
-print_in_red()
-{
+print_in_red() {
   print_in_color "$1" 1
 }
 
-print_in_yellow()
-{
+print_in_yellow() {
   print_in_color "$1" 3
 }
 
-print_in_green()
-{
+print_in_green() {
   print_in_color "$1" 2
 }
 
-print_in_purple()
-{
+print_in_purple() {
   print_in_color "$1" 5
 }
 
-print_title()
-{
+print_title() {
   print_in_purple "\n • $1\n\n"
 }
 
-print_success()
-{
+print_success() {
   print_in_green "   [✔] $1\n"
 }
 
-print_warning()
-{
+print_warning() {
   print_in_yellow "   [!] $1\n"
 }
 
-print_error()
-{
+print_error() {
   print_in_red "   [✖] $1 $2\n"
 }
 
-print_question()
-{
+print_question() {
   print_in_yellow "   [?] $1\n"
 }
 
-print_result()
-{
+print_result() {
   if [ "$1" = 0 ]; then
     print_success "$2"
   else
@@ -101,52 +88,45 @@ print_result()
   return "$1"
 }
 
-print_error_stream()
-{
+print_error_stream() {
   while read -r line; do
     print_error "↳ ERROR: $line"
   done
 }
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # https://stackoverflow.com/a/32270158
 # POSIX read -n 1
 # Usage: var="$(read_char)"
-read_char()
-{
+read_char() {
   old=$(stty -g)
   stty raw -echo min 0
   printf '%s' "$(dd bs=1 count=1 2>/dev/null)"
   stty "$old"
 }
 
-ask()
-{
+ask() {
   print_question "$1"
   read -r
 }
 
-get_answer()
-{
+get_answer() {
   printf "%s" "$REPLY"
 }
 
-ask_for_confirmation()
-{
+ask_for_confirmation() {
   print_question "$1 (y/n) "
   REPLY="$(read_char)"
   printf "\n"
 }
 
-answer_is_yes()
-{
+answer_is_yes() {
   expr "$REPLY" : '[Yy]$'
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-show_spinner()
-{
+show_spinner() {
   readonly FRAMES='/-\|'
 
   readonly NUMBER_OF_FRAMES=${#FRAMES}
@@ -171,7 +151,7 @@ show_spinner()
   tput sc
 
   while kill -0 "$PID" >/dev/null 2>&1; do
-    i=$((i+1))
+    i=$((i + 1))
     num=$((i % NUMBER_OF_FRAMES))
     frame="$(echo $FRAMES | cut -c ${num}-$((num + 1)))"
     frame_text=" [$frame] $MSG"
@@ -186,47 +166,50 @@ show_spinner()
   done
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-cmd_exists()
-{
+cmd_exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
-is_git_repository()
-{
+is_git_repository() {
   git rev-parse >/dev/null 2>&1
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # https://stackoverflow.com/a/29835459
 # POSIX compliant way of finding BASH_SOURCE
 # Usage: sh_source "$0"
-rreadlink()
-(
+rreadlink() (
   target=$1
   fname=
   targetDir=
   CDPATH=
 
-  { \unalias command; \unset-f command; } >/dev/null 2>&1
+  {
+    \unalias command
+    \unset-f command
+  } >/dev/null 2>&1
   # shellcheck disable=SC2034
   [ -n "$ZSH_VERSION" ] && options[POSIX_BUILTINS]=on
 
   while :; do
-    [ -L "$target" ] || [ -e "$target" ] || { command printf '%s\n' "ERROR: $target does not exist." >&2; return 1; }
+    [ -L "$target" ] || [ -e "$target" ] || {
+      command printf '%s\n' "ERROR: $target does not exist." >&2
+      return 1
+    }
     # shellcheck disable=SC2164
     command cd "$(command dirname -- "$target")"
     fname=$(command basename -- "$target")
     [ "$fname" = '/' ] && fname=''
-    
+
     if [ -L "$fname" ]; then
       target=$(command ls -l "$fname")
       target=${target#* -> }
       continue
     fi
-    
+
     break
   done
 
@@ -238,21 +221,18 @@ rreadlink()
   fi
 )
 
-sh_source()
-{
+sh_source() {
   printf '%s' "$(dirname -- "$(rreadlink "$1")")"
 }
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-set_trap()
-{
-  trap | grep "'$2' $1" >/dev/null 2>&1 \
-    || trap '$2' "$1"
+set_trap() {
+  trap | grep "'$2' $1" >/dev/null 2>&1 ||
+    trap '$2' "$1"
 }
 
-kill_all_subproccesses()
-{
+kill_all_subproccesses() {
   i=""
 
   for i in $(jobs -p); do
@@ -261,8 +241,7 @@ kill_all_subproccesses()
   done
 }
 
-execute()
-{
+execute() {
   readonly CMDS="$1"
   readonly MSG="${2:-$1}"
 
@@ -279,7 +258,7 @@ execute()
   # shellcheck disable=SC2261
   eval "$CMDS" \
     >/dev/null 2>&1 \
-    2> "$TMP_FILE" &
+    2>"$TMP_FILE" &
 
   cmds_pid=$!
 
@@ -295,7 +274,7 @@ execute()
   print_result $exit_code "$MSG"
 
   if [ $exit_code -ne 0 ]; then
-    print_error_stream < "$TMP_FILE"
+    print_error_stream <"$TMP_FILE"
   fi
 
   rm -rf "$TMP_FILE"

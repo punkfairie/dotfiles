@@ -6,7 +6,7 @@ readonly DOTFILES_ORIGIN="git@github.com:$GITHUB_REPO.git"
 readonly DOTFILES_TARBALL="https://github.com/$GITHUB_REPO/tarball/main"
 readonly DOTFILES_UTILS="https://raw.githubusercontent.com/$GITHUB_REPO/main/scripts/utils.sh"
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 export DOT="$HOME/dotfiles" # MUST HAVE NO TRAILING SLASH!!
 yes_to_all=false
@@ -15,8 +15,7 @@ yes_to_all=false
 #                              Download Dotfiles                               #
 ################################################################################
 
-download()
-{
+download() {
   url="$1"
   output="$2"
 
@@ -44,21 +43,19 @@ download()
   return 1
 }
 
-download_utils()
-{
+download_utils() {
   tmp_file="$(mktemp /tmp/XXXXX)"
 
   # shellcheck source=/dev/null
-  download "$DOTFILES_UTILS" "$tmp_file" \
-    && . "$tmp_file" \
-    && rm -rf "$tmp_file" \
-    && return 0
+  download "$DOTFILES_UTILS" "$tmp_file" &&
+    . "$tmp_file" &&
+    rm -rf "$tmp_file" &&
+    return 0
 
   return 1
 }
 
-extract()
-{
+extract() {
   archive="$1"
   output_dir="$2"
 
@@ -76,8 +73,7 @@ extract()
   return 1
 }
 
-download_dotfiles()
-{
+download_dotfiles() {
   print_title "Download and extract dotfiles archive"
 
   tmp_file="$(mktemp /tmp/XXXXX)"
@@ -93,9 +89,15 @@ download_dotfiles()
       answer="$(get_answer)"
 
       case $answer in
-        o ) rm -rf "$DOT"; break;;
-        b ) mv "$DOT" "$DOT.bak"; break;;
-        * ) print_warning "Please enter a valid option."
+      o)
+        rm -rf "$DOT"
+        break
+        ;;
+      b)
+        mv "$DOT" "$DOT.bak"
+        break
+        ;;
+      *) print_warning "Please enter a valid option." ;;
       esac
 
     done
@@ -114,21 +116,19 @@ download_dotfiles()
   rm -rf "$tmp_file"
   print_result $? "Remove archive"
 
-  cd "$DOT/script" \
-    || return 1
+  cd "$DOT/script" ||
+    return 1
 }
 
 ################################################################################
 #                                    Xcode                                     #
 ################################################################################
 
-are_xcode_cli_tools_installed()
-{
+are_xcode_cli_tools_installed() {
   xcode-select --print-path >/dev/null 2>&1
 }
 
-install_xcode_cli_toools()
-{
+install_xcode_cli_toools() {
   if [ "$(uname)" = "Darwin" ]; then
 
     print_title "Xcode"
@@ -148,8 +148,7 @@ install_xcode_cli_toools()
 #                               Setup Gitconfig                                #
 ################################################################################
 
-setup_gitconfig()
-{
+setup_gitconfig() {
   cd "$DOT" || return
 
   if ! [ -f "$DOT/git/.gitconfig.local.symlink" ]; then
@@ -170,7 +169,7 @@ setup_gitconfig()
     sed -e "s/AUTHORNAME/$git_authorname/g" \
       -e "s/AUTHOREMAIL/$git_authoremail/g" \
       -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" \
-      "$DOT/git/.gitconfig.local.symlink.example" > "$DOT/.gitconfig.local.symlink"
+      "$DOT/git/.gitconfig.local.symlink.example" >"$DOT/.gitconfig.local.symlink"
 
     print_result $? "gitconfig"
   fi
@@ -180,8 +179,7 @@ setup_gitconfig()
 #                             Initialize Git Repo                              #
 ################################################################################
 
-git_init()
-{
+git_init() {
   print_title "Initialize Git repository"
 
   if [ -z "$DOTFILES_ORIGIN" ]; then
@@ -202,8 +200,7 @@ git_init()
 #                                     Main                                     #
 ################################################################################
 
-main()
-{
+main() {
   if [ "$(uname)" != "Linux" ] && [ "$(uname)" != "Darwin" ]; then
     printf "Sorry, this script is intended only for macOS and Ubuntu!"
     return 1
@@ -219,27 +216,27 @@ main()
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  skip_questions "$@" \
-    && yes_to_all=true
+  skip_questions "$@" &&
+    yes_to_all=true
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
+
   ask_for_sudo
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
+
   # Check if this script was run directly, and if not, dotfiles will need to be
   # downloaded.
 
-  printf "%s" "$(sh_source "$0")" | grep "bootstrap.sh" >/dev/null 2>&1 \
-    || download_dotfiles
+  printf "%s" "$(sh_source "$0")" | grep "bootstrap.sh" >/dev/null 2>&1 ||
+    download_dotfiles
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
+
   setup_gitconfig
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  
+
   install_xcode_cli_toools
 
   "$DOT/homebrew/brew.sh"

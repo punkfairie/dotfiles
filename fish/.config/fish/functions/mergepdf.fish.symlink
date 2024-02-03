@@ -1,24 +1,24 @@
 #!/usr/bin/env fish
 
 function mergepdf -d "Merge PDF files, preserving hyperlinks"
-  argparge 'h/help' -- $argv
+    argparge h/help -- $argv
 
-  if set -q _flag_h
-    printf '%b' \
-      "Merge PDF files, preserving hyperlinks.\n" \
-      "\n" \
-      "Usage: mergepdf [-h|--help] [input.pdf ...]\n" \
-      "\n" \
-      "Options:\n" \
-      "-h|--help: Show this message.\n"
+    if set -q _flag_h
+        printf '%b' \
+            "Merge PDF files, preserving hyperlinks.\n" \
+            "\n" \
+            "Usage: mergepdf [-h|--help] [input.pdf ...]\n" \
+            "\n" \
+            "Options:\n" \
+            "-h|--help: Show this message.\n"
 
-    return
-  end
+        return
+    end
 
-  if [ "$(uname)" != "Darwin" ]
-    echo "Sorry, this script is only for macOS!"
-    return
-  end
+    if [ "$(uname)" != Darwin ]
+        echo "Sorry, this script is only for macOS!"
+        return
+    end
 
-  gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf $argv
+    gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.pdf $argv
 end

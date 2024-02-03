@@ -3,13 +3,13 @@
 # Remove that annoying 'last logged in' message.
 # Tested this method vs in iTerm settings - latter is less portable and slower.
 if status is-login
-  printf '\33c\e[3J'
+    printf '\33c\e[3J'
 end
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Base path.
-fish_add_path "$HOME/dotfiles/bin" "/usr/local/bin" "$HOME/bin"
+fish_add_path "$HOME/dotfiles/bin" /usr/local/bin "$HOME/bin"
 
 # Dotfiles root dir.
 set -gx DOT "$HOME/dotfiles"
@@ -18,12 +18,12 @@ set -gx DOT "$HOME/dotfiles"
 set -gx HACK "$HOME/hackin"
 
 # Editor.
-set -gx EDITOR "nvim"
+set -gx EDITOR nvim
 set -gx VISUAL "$EDITOR"
 
 # Local environment variables.
 if [ -e "$HOME/.local.env" ]
-  source "~/.local.env"
+    source "~/.local.env"
 end
 
 # All fish dotfiles.
@@ -31,17 +31,17 @@ set config_files $DOT/**/*.config.fish
 
 # Load path files first.
 for file in (string match -r '^.*\/path.config.fish$' $config_files)
-  source $file
+    source $file
 end
 
 # Load everything else, except completion.
 for file in (string match -v -r '^.*\/(path|completion)\.config.fish$' $config_files)
-  source $file
+    source $file
 end
 
 # Load completions functions.
 for file in (string match -r '^.*\/completion.config.fish$' $config_files)
-  source $file
+    source $file
 end
 
 set -e config_files

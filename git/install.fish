@@ -5,7 +5,7 @@ source "$DOT/homebrew/brew_utils.fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_subtitle "Git"
+print_subtitle Git
 
-brew_install "Github CLI" "gh"
-brew_install "Gitmoji" "gitmoji"
+brew_install "Github CLI" gh
+brew_install Gitmoji gitmoji

@@ -1,4 +1,4 @@
-# vim:set ft=toml sw=4 :
+# vim:set ft=gitconfig :
 
 [user]
     name = Marley Rae

@@ -7,13 +7,13 @@ DOT="${DOT:-$HOME/dotfiles}"
 # shellcheck source=../script/utils.sh
 . "$DOT/script/utils.sh"
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 brew_install "Fish Shell" "fish"
 
 fish_path="$(which fish)"
 
-if ! grep "$fish_path" < /etc/shells >/dev/null 2>&1; then
+if ! grep "$fish_path" </etc/shells >/dev/null 2>&1; then
   execute \
     "printf '%s\n' '$fish_path' | sudo tee -a /etc/shells" \
     "Add '$fish_path' to '/etc/shells'"

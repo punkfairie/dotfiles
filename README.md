@@ -33,6 +33,7 @@ fish_config theme save "Catppuccin Mocha"
 ```fish
 tmux attach || tmux new -s main
 ```
+
 `<ctrl-a I>` to install plugins.
 
 ## sources
