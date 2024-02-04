@@ -145,6 +145,10 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ask_for_sudo
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 # Ensure npm is available.
 
 "$DOT/node/volta.fish"

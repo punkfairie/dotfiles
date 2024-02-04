@@ -156,3 +156,19 @@ end
 function cmd_exists -a cmd
     command -v "$cmd" &>/dev/null
 end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function ask_for_sudo
+    sudo -v &>/dev/null
+
+    # Update existing 'sudo' timestamp until this script has finished.
+    #
+    # https://gist.github.com/cowboy/3118588
+
+    while true
+        sudo -n true
+        sleep 60
+        kill -0 "$fish_pid" || exit
+    end &>/dev/null &
+end
