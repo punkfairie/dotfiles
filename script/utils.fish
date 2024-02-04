@@ -72,22 +72,24 @@ end
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 function show_spinner -a pid cmds msg
-    set -l frames '/-\|'
+    set -f frames '/-\|'
 
-    set -l number_of_frames (string length $FRAMES)
+    set -f number_of_frames (string length $frames)
 
-    set -l i 0
-    set -l frame_text ""
+    set -f i 0
+    set -f frame_text ""
 
     printf "\n\n\n"
     tput cuu 3
     tput sc
 
     while kill -0 "$pid" &>/dev/null
-        set i math $i + 1
-        set -l num math % $number_of_frames
-        set -l frame (string sub -s $num -l 1)
-        set frame_text " [$frame] $msg"
+        set i (math "$i + 1")
+        set -l num (math "($i % $number_of_frames) + 1")
+
+        set -l frame (string sub -s $num -l 1 $frames)
+
+        set frame_text "   [$frame] $msg"
 
         printf '%s' $frame_text
 
@@ -126,8 +128,8 @@ function execute -a cmds msg
 
     set_trap EXIT kill_all_subproccesses
 
-    eval "$cmds" &>/dev/null 2>$tmp_file &
-    set cmds_pid $fish_pid
+    fish -c "$cmds" >/dev/null 2>$tmp_file &
+    set cmds_pid (jobs -lp)
 
     show_spinner $cmds_pid $cmds $msg
 
