@@ -37,3 +37,16 @@ abbr -a rm --position command "rm -rf"
 abbr -a grep --position command "grep  --color=auto"
 abbr -a fgrep --position command "fgrep --color=auto"
 abbr -a egrep --position command "egrep --color=auto"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# eza.
+
+function ls --wraps eza
+    eza --all --icons=auto --sort=name --group-directories-first $argv
+end
+
+function lsl --wraps eza
+    eza --all --icons=auto --sort=name --group-directories-first --grid --long \
+        --git --header $argv
+end
