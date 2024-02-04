@@ -1,0 +1,18 @@
+# Use the server-provided last modification date, if available.
+timestamping = on
+
+# Wait 60 seconds before timing out.
+timeout = 60
+
+# Retry a few times when a download fails, but don't overdo it (the default is
+# 20!).
+tries = 3
+
+# Retry even when the connection was refused.
+retry_connrefused = on
+
+# Use the last component of a redirection URL for the local file name.
+trust_server_names = on
+
+# Disguise as IE 9 on Windows 7
+user_agent = Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
