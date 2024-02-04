@@ -18,4 +18,7 @@ execute "defaults write come.apple.SoftwareUpdate AutomaticDownload -int 1" \
 execute "defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1" \
     "Install system data files and security updates"
 
+execute "defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1" \
+    "Automatically download apps purchased on other Macs"
+
 killall "App Store" &>/dev/null

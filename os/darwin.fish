@@ -5,3 +5,6 @@
 find "$DOT/os/macos/" -name "*.pref.fish" | while read file
     fish -c "$file"
 end
+
+killall SystemUIServer &>/dev/null
+killall cfprefsd &>/dev/null

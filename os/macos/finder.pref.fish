@@ -6,6 +6,10 @@ source "$DOT/script/utils.fish"
 
 print_subtitle Finder
 
+execute "defaults write com.apple.finder NewWindowTarget -string 'PfHm' && \
+         defaults write com.apple.finder NewWindowTargetPath -string 'file:///Users/marley/'" \
+    "Set ~ as the default location for new Finder windows"
+
 execute "defaults write com.apple.finder _FXShowPosixPathInTitle -bool true" \
     "Use full POSIX path as window title"
 
@@ -39,10 +43,24 @@ execute "defaults write com.apple.finder FXRemoveOldTrashItems -bool true" \
 execute "defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true" \
     "Show folder icons in the title bar"
 
+execute "defaults write com.apple.finder FXPreferredViewStyle -string 'icnv'" \
+    "Use icon view by default"
 
 execute "/usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:arrangeBy name' ~/Library/Preferences/com.apple.finder.plist && \
+         /usr/libexec/PlistBuddy -c 'Set :FK_StandardViewSettings:IconViewSettings:arrangeBy name' ~/Library/Preferences/com.apple.finder.plist && \
          /usr/libexec/PlistBuddy -c 'Set :StandardViewSettings:IconViewSettings:arrangeBy name' ~/Library/Preferences/com.apple.finder.plist" \
     "Set sort method"
 
+execute "defaults write -g com.apple.springing.enabled -bool true" \
+    "Enable spring loading for directories"
+
+execute "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true && \
+         defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true" \
+    "Don't create .DS_Store files on network or USB volumes"
+
+execute "defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool false && \
+         defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool false && \
+         defaults write com.apple.finder OpenWindowForNewRemoveableDisk -bool true" \
+    "Don't automatically open a Finder window when a volume is mounted"
+
 killall Finder &>/dev/null
-killall cfprefsd &>/dev/null
