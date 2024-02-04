@@ -59,10 +59,10 @@ abbr -a gaa --position command "git add --all"
 # Interactively stage parts of a file.
 abbr -a gapa --position command "git add --patch"
 
-abbr -a gdl --position command "git diff"
-abbr -a gdls --position command "git diff --staged"
-abbr -a gdlw --position command "git diff --word-diff" # show diff by word
-abbr -a gdlsw --position command "git diff --staged --word-diff"
+abbr -a gda --position command "git diff"
+abbr -a gdas --position command "git diff --staged"
+abbr -a gdaw --position command "git diff --word-diff" # show diff by word
+abbr -a gdasw --position command "git diff --staged --word-diff"
 
 set exclude ":(exclude)package-lock.json" ":(exclude)*.lock"
 
