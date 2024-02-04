@@ -45,7 +45,7 @@ function brew_install -a formula_readable_name formula arguments tap_value servi
     end
 
     # Determine if a service needs to be started & restarted on login.
-    if set -q service
+    if set -q service && [ "$service" = true ]
         set -f service_cmd "&& brew services start $formula"
     end
 

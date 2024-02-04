@@ -6,5 +6,5 @@ source "$DOT/script/utils.fish"
 
 print_subtitle Networking
 
-execute "defaults write -g com.apple.NetworkBrowser BrowseAllInterfaces 1" \
+execute "defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true" \
     "Allow AirDrop over Ethernet"

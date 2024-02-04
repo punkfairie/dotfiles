@@ -7,4 +7,4 @@ source "$DOT/homebrew/brew_utils.fish"
 
 print_subtitle tmux
 
-brew_install tmux
+brew_install tmux tmux
