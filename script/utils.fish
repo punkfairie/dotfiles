@@ -64,7 +64,7 @@ function print_result -a exit_code text
 end
 
 function print_error_stream
-    while read -r line
+    while read -l line
         print_error "↳ ERROR: $line"
     end
 end
@@ -124,17 +124,21 @@ function execute -a cmds msg
 
     set -l tmp_file "$(mktemp /tmp/XXXXX)"
 
-    set -l exit_code 0
+    set -g exit_code 0
 
     set_trap EXIT kill_all_subproccesses
 
     fish -c "$cmds" >/dev/null 2>$tmp_file &
     set cmds_pid (jobs -lp)
 
+    function _exited_$cmds_pid --on-process-exit $cmds_pid -S
+        set -g exit_code $argv[3]
+        functions -e _exited_$cmds_pid
+    end
+
     show_spinner $cmds_pid $cmds $msg
 
     wait $cmds_pid &>/dev/null
-    set exit_code $status
 
     print_result $exit_code $msg
 
