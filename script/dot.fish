@@ -94,7 +94,7 @@ function link_file -a src dst
             mkdir -p (string replace -r '\/[^\/]+$' '' "$dst")
         end
 
-        if string match -e '.hardlink' "$src" &>/dev/null
+        if string match -q -e '.hardlink' "$src"
             ln "$src" "$dst" &>/dev/null
         else
             ln -s "$src" "$dst" &>/dev/null
