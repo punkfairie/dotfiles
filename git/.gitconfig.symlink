@@ -5,6 +5,25 @@
   excludesFile = ~/dotfiles/git/.gitignore
   hooksPath = ~/dotfiles/git/hooks
 
+  # Whitespace types to treat as errors.
+  # blank-at-eol: looks for spaces at EOL.
+  # -blank-at-eof: allows blank lines at EOF.
+  # space-before-tab: looks for spaces immediately before tabs at the beginning
+  #   of the line.
+  whitespace = blank-at-eol,-blank-at-eof,space-before-tab
+
+  # Make `git rebase` safer on macOS.
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+  # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
+  # Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
+
 [user]
   # Do not guess the user's identity.
   useConfigOnly = true
@@ -24,17 +43,41 @@
 
 [init]
   defaultBranch = main
+
 [commit]
   template = ~/dotfiles/git/commit_template
+
 [push]
   autoSetupRemote = true
+
+  # Push tags automatically.
+  followTags = true
+
 [rebase]
   autosquash = true
+
 [merge]
+  # Include summaries of merged commits in merge commit messages.
+  log = true
+
   tool = vimdiff
+
 [mergetool]
   keepBackup = false
   hideResolved = true
+
+[diff]
+  # Detect when files are copied as well as renamed.
+  renames = copies
+
+[apply]
+  # Fix whitespace errors when applying a patch, as specified in
+  # core.whitespace.
+  whitespace = true
+
+[branch]
+  # Show most recently changed branches first.
+  sort = -committerdate
 
 [include]
   path = ~/.gitconfig.local
