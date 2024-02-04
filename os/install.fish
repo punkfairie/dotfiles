@@ -9,11 +9,10 @@ source "$DOT/os/apt_utils.fish"
 print_subtitle OS
 
 if [ "$(uname)" = Darwin ]
-    brew_install mas-cli mas
+    # brew_install mas-cli mas
 
     # Window management.
     brew_install Rectangle rectangle --cask
-    execute "mas install 1563735522" Charmstone
 
     # Networking.
     brew_install Windscribe windscribe --cask
