@@ -8,9 +8,6 @@ source "$DOT/os/apt_utils.fish"
 
 print_subtitle OS
 
-brew_install wget wget
-brew_install cURL curl
-
 if [ "$(uname)" = Darwin ]
     brew_install mas-cli mas
 
