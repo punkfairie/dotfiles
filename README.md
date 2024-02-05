@@ -36,11 +36,24 @@ tmux attach || tmux new -s main
 
 `<ctrl-a I>` to install plugins.
 
-## sources
+# Sources
+
+## Main
+
+The overall structure and bootstrapping scripts are based heavily on these two
+dotfile repos:
 
 [holman does dotfiles](https://github.com/holman/dotfiles)
 
 [Cătălin’s dotfiles](https://github.com/alrra/dotfiles)
+
+## Others
+
+### Dotfile Repos
+
+[Mathias's dotfiles](https://github.com/mathiasbynens/dotfiles)
+
+### Misc
 
 [oh-my-zsh git](https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index)
 
