@@ -33,8 +33,6 @@ execute "defaults write com.apple.spotlight orderedItems -array \
 
 killall mds &>/dev/null
 
-# Make sure indexing is enabled for the main volume.
-sudo mdutil -i on / >/dev/null
+execute "sudo mdutil -i on / >/dev/null" "Enable indexing for the main volume"
 
-# Rebuild index from scratch.
-sudo mdutil -E / >/dev/null
+execute "sudo mdutil -E / >/dev/null" "Rebuild index"
