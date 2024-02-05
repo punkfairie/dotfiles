@@ -5,6 +5,9 @@ source "$DOT/homebrew/brew_utils.fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_subtitle vim
+print_subtitle Vim
 
-brew_install vim vim
+brew_install Vim vim
+brew_install Neovim neovim
+
+brew_install fzf fzf
