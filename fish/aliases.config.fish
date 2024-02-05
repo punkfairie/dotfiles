@@ -40,6 +40,18 @@ abbr -a egrep --position command "egrep --color=auto"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+# Combinations.
+
+function mkcd -d "Make a directory and CD into it"
+    mkdir "$argv" && cd "$argv"
+end
+
+function cdls -d "CD into a directory and list its contents"
+    cd "$argv" && ls
+end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 # eza.
 
 function ls --wraps eza

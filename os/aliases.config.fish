@@ -4,6 +4,10 @@ if [ "$(uname)" = Darwin ]
     abbr -a afk --position command "osascript -e 'tell application \"System Events\" to sleep'"
     abbr -a o --position command open
 
+    function trash -d "Move a file to the trash"
+        mv "$argv" ~/.Trash
+    end
+
 else if [ "$(uname)" = Linux ]
     abbr -a afk --position command "gnome-screensaver-command --lock"
     abbr -a o --position command xdg-open
