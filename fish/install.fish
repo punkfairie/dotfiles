@@ -27,4 +27,3 @@ brew_install "Starship Prompt" starship
 brew_install "The Fuck" thefuck
 npm_install "tldr pages" tldr
 brew_install eza eza
-brew_install GnuPG gnupg

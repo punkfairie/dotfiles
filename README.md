@@ -60,3 +60,7 @@ dotfile repos:
 [git-prevision](https://gist.github.com/TheCodeArtist/a90978ebca0ff6743036)
 
 [iTerm2 keymaps for tmux](https://web.archive.org/web/20230921160724/https://tangledhelix.com/blog/2012/04/28/iterm2-keymaps-for-tmux/)
+
+[signing-git-commits](https://gist.github.com/phortuin/cf24b1cca3258720c71ad42977e1ba57)
+
+[Correct_GnuPG_Permission](https://gist.github.com/oseme-techguy/bae2e309c084d93b75a9b25f49718f85)

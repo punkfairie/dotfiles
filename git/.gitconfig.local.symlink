@@ -1,5 +1,6 @@
 # vim:set ft=gitconfig :
 
 [user]
-    name = Marley Rae
-    email = marley@punkfairie.net
+  name = punkfairie
+  email = 23287005+punkfairie@users.noreply.github.com
+  signingkey = 8128A755
