@@ -5,6 +5,8 @@ source "$DOT/homebrew/brew_utils.fish"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+print_subtitle PHP
+
 if [ "$(uname)" = Darwin ]
     brew_install "Laravel Herd" herd --cask
     brew_install PhpStorm phpstorm --cask
