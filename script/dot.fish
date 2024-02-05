@@ -3,6 +3,7 @@
 set -q DOT || set -gx DOT "$HOME/dotfiles"
 
 set -g yes_to_all false
+set -g set_prefs true
 
 source "$DOT/script/utils.fish"
 
@@ -137,10 +138,14 @@ end
 #                                     Main                                     #
 ################################################################################
 
-argparse y/yes-to-all s/skip o/overwrite b/backup -- $argv
+argparse y/yes-to-all s/skip o/overwrite b/backup p/no-prefs -- $argv
 
 if set -q _flag_y
     set yes_to_all true
+end
+
+if set -q _flag_p
+    set set_prefs false
 end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -156,7 +161,9 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-set_os_prefs
+if $set_prefs
+    set_os_prefs
+end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
