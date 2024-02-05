@@ -161,9 +161,7 @@ set_os_prefs
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 print_title Installers
-find . -name install.fish | while read installer
-    fish -c "$installer"
-end
+find . -name install.fish -exec fish -c {} ';'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
