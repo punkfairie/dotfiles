@@ -17,6 +17,9 @@ set -g base-index 1
 # Make pane index start at 1.
 setw -g pane-base-index 1
 
+# Automatically renumber windows when one is deleted.
+set -g renumber-windows on
+
 set -g default-terminal "screen-256color"
 
 ################################################################################
@@ -51,6 +54,18 @@ bind l resize-pane -R # cmd-l in iTerm2
 
 # Easy reload config.
 bind r source-file ~/.tmux.conf
+
+# Popup.
+unbind i
+bind i if-shell -F '#{==:#{session_name},scratch}' { # cmd-i in iTerm2 
+    detach-client 
+  } { 
+    if-shell "tmux has-session -t scratch" {
+      display-popup -E -h 90% -w 90% "tmux attach-session -t scratch"
+    } {
+      display-popup -E -h 90% -w 90% "tmux new-session -d -c '#{pane_current_path}' -s scratch && tmux set-option -t scratch status off && tmux attach-session -t scratch"
+    }
+}
 
 ################################################################################
 #                                  Catppuccin                                  #
