@@ -44,6 +44,9 @@
 [init]
   defaultBranch = main
 
+[status]
+  showstash = true
+
 [commit]
   template = ~/dotfiles/git/commit_template
   gpgSign = true
