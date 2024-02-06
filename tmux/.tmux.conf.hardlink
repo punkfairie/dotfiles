@@ -34,30 +34,40 @@ bind C-a send-prefix
 # Vi copy mode.
 setw -g mode-keys vi
 unbind [
-bind Escape copy-mode
+bind -N 'Enter normal (copy) mode' Escape copy-mode # cmd-esc on macOS
 unbind p
 bind p paste-buffer
 bind -T copy-mode-vi 'v' send -X begin-selection
 bind -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 
 # Better split commands.
-bind | split-window -h -c "#{pane_current_path}" # cmd-| in iTerm2
-bind - split-window -v -c "#{pane_current_path}" # cmd-- in iTerm2
+bind -N 'vsplit' |  split-window -h -c "#{pane_current_path}" # cmd-| on macOS
+bind -N 'vsplit' \\ split-window -h -c "#{pane_current_path}" # cmd-\ on macOS
+bind -N 'hsplit' -  split-window -v -c "#{pane_current_path}" # cmd-- on macOS
 unbind '"'
 unbind %
 
+# Vi-like pane switching.
+bind -N 'Switch to pane (left)'  h select-pane -L # cmd-h on macOS
+bind -N 'Switch to pane (down)'  j select-pane -D # cmd-j on macOS
+bind -N 'Switch to pane (up)'    k select-pane -U # cmd-k on macOS
+bind -N 'Switch to pane (right)' l select-pane -R # cmd-l on macOS
+
 # Vi-like resizing.
-bind j resize-pane -D # cmd-j in iTerm2
-bind k resize-pane -U # cmd-k in iTerm2
-bind h resize-pane -L # cmd-h in iTerm2
-bind l resize-pane -R # cmd-l in iTerm2
+bind -N 'Resize pane (left)'  M-h resize-pane -L # cmd-opt-h on macOS
+bind -N 'Resize pane (down)'  M-j resize-pane -D # cmd-opt-j on macOS
+bind -N 'Resize pane (up)'    M-k resize-pane -U # cmd-opt-k on macOS
+bind -N 'Resize pane (right)' M-l resize-pane -R # cmd-opt-l on macOS
+
+bind -N 'Previous window' Left previous-window # cmd-left  on macOS
+bind -N 'Next window'     Right next-window    # cmd-right on macOS
 
 # Easy reload config.
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux.conf # cmd-r on macOS
 
 # Popup.
 unbind i
-bind i if-shell -F '#{==:#{session_name},scratch}' { # cmd-i in iTerm2 
+bind -N 'Popup shell' i if-shell -F '#{==:#{session_name},scratch}' { # cmd-i on macOS 
     detach-client 
   } { 
     if-shell "tmux has-session -t scratch" {

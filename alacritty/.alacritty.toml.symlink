@@ -1,0 +1,56 @@
+# vim:set ft=toml :
+
+import = [
+  '~/dotfiles/alacritty/catppuccin-mocha.toml'
+]
+
+[env]
+  TERM = 'alacritty'
+
+[window]
+  dynamic_padding = true
+  decorations_theme_variant = 'Dark'
+  option_as_alt = 'OnlyLeft'
+
+[font]
+  normal = { family = 'FiraCode Nerd Font', style = 'Regular' }
+  size = 14
+
+[cursor]
+  style = { shape = 'Underline', blinking = 'Off' }
+
+[keyboard]
+  bindings = [
+    ## TMUX BINDINGS ##
+  
+    # Split panes.
+    { key = '-', mods = 'Command',          chars = "\u0001\u002D" },
+    { key = '\', mods = 'Command|Shift',    chars = "\u0001\u007C" },
+    { key = '\', mods = 'Command',          chars = "\u0001\u005C" },
+
+    # Switch panes.
+    { key = 'h', mods = 'Command',          chars = "\u0001\u0068" },
+    { key = 'j', mods = 'Command',          chars = "\u0001\u006A" },
+    { key = 'k', mods = 'Command',          chars = "\u0001\u006B" },
+    { key = 'l', mods = 'Command',          chars = "\u0001\u006C" },
+
+    # Resize panes.
+    { key = 'h', mods = 'Command|Alt',      chars = "\u0001\u001B\u0068" },
+    { key = 'j', mods = 'Command|Alt',      chars = "\u0001\u001B\u006A" },
+    { key = 'k', mods = 'Command|Alt',      chars = "\u0001\u001B\u006B" },
+    { key = 'l', mods = 'Command|Alt',      chars = "\u0001\u001B\u006C" },
+
+    # Close panes.
+    { key = 'x', mods = 'Command',          chars = "\u0001\u0078" },
+
+    # Switch windows.
+    { key = 'h', mods = 'Command|Control',  chars = "\u0001\u001B\u005B\u0043" },
+    { key = 'l', mods = 'Command|Control',  chars = "\u0001\u001B\u005B\u0044" },
+
+    # Install plugins.
+    { key = 'i', mods = 'Command|Shift',    chars = "\u0001\u0049" },
+
+    # Reload config.
+    { key = 'r', mods = 'Command',          chars = "\u0001\u0072"},
+]
+
