@@ -30,11 +30,7 @@ fish_config theme save "Catppuccin Mocha"
 
 ## tmux
 
-```fish
-tmux attach || tmux new -s main
-```
-
-`<ctrl-a I>` to install plugins.
+`<cmd-I>` to install plugins.
 
 # Sources
 
@@ -52,6 +48,8 @@ dotfile repos:
 ### Dotfile Repos
 
 [Mathias's dotfiles](https://github.com/mathiasbynens/dotfiles)
+
+[benknoble's dotfiles](https://github.com/benknoble/Dotfiles)
 
 ### Misc
 
