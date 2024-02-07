@@ -51,6 +51,9 @@ import = [
     { key = 'h', mods = 'Command|Control',  chars = "\u0001\u001B\u005B\u0043" },
     { key = 'l', mods = 'Command|Control',  chars = "\u0001\u001B\u005B\u0044" },
 
+    # Popup term.
+    { key = 'i', mods = 'Command',          chars = "\u0001\u0069" },
+
     # Install plugins.
     { key = 'i', mods = 'Command|Shift',    chars = "\u0001\u0049" },
 
