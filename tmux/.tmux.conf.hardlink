@@ -85,24 +85,19 @@ bind -N 'Popup shell' i if-shell -F '#{==:#{session_name},scratch}' { # cmd-i on
 # catppuccin
 set -g @catppuccin_flavour 'mocha'
 
-set -g @catppuccin_window_left_separator " "
-set -g @catppuccin_window_right_separator ""
-set -g @catppuccin_window_middle_separator "█ "
-set -g @catppuccin_window_number_position "left"
+set -g @catppuccin_window_left_separator "█"
+set -g @catppuccin_window_right_separator "█ "
+set -g @catppuccin_window_number_position "right"
+set -g @catppuccin_window_middle_separator "  █"
 
 set -g @catppuccin_window_default_fill "number"
-set -g @catppuccin_window_default_text "#W"
 
 set -g @catppuccin_window_current_fill "number"
-set -g @catppuccin_window_current_text "#W"
+set -g @catppuccin_window_current_text "#{pane_current_path}"
 
-set -g @catppuccin_status_modules_left "directory"
-set -g @catppuccin_status_modules_right "user host session date_time"
-set -g @catppuccin_status_left_separator  " "
-set -g @catppuccin_status_right_separator ""
-set -g @catppuccin_status_right_separator_inverse "no"
-set -g @catppuccin_status_fill "icon"
-set -g @catppuccin_status_connect_separator "no"
+set -g @catppuccin_status_modules_right "application user host session date_time"
+set -g @catppuccin_status_left_separator "█"
+set -g @catppuccin_status_right_separator "█"
 
 set -g @catppuccin_directory_text "#{pane_current_path}"
 set -g @catppuccin_date_time_text "%b %d • %I:%M %p"
