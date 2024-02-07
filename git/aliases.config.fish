@@ -93,21 +93,13 @@ abbr -a gc --position command "git commit"
 abbr -a "gc!" --position command "git commit --amend"
 abbr -a "gcn!" --position command "git commit --no-edit --amend"
 abbr -a gca --position command "git add --all && git commit"
-abbr -a "gca!" --position command "git commit -a --amend"
-abbr -a "gcan!" --position command "git commit -a --no-edit --amend"
-abbr -a gcam --position command "git commit -a -m"
+abbr -a "gca!" --position command "git add --all && git commit --amend"
+abbr -a "gcan!" --position command "git add --all && git commit --no-edit --amend"
+abbr -a gcam --position command "git add --all && git commit -m"
 abbr -a gcmsg --position command "git commit -m"
 abbr -a gcfu --position command "git commit --fixup"
 
 abbr -a grev --position command "git revert"
-
-# Update the last commit with all staged changes.
-abbr -a gu --position command "git commit --amend"
-abbr -a "gu!" --position command "git commit --amend --no-edit"
-
-# Update the last commit with all local changes.
-abbr -a gua --position command "git add --all && git commit --amend"
-abbr -a "gua!" --position command "git add --all && git commit --amend --no-edit"
 
 ################################################################################
 #                       Working Dir & Index Manipulation                       #

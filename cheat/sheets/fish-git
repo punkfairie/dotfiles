@@ -1,0 +1,65 @@
+---
+syntax: fish
+---
+
+# Staging:
+ga:   'git add'
+gaa:  'git add --all'
+gapa: 'git add --patch'
+
+gd:   'git diff'
+gds:  'git diff --staged'
+gdw:  'git diff          --word-diff'
+gdsw: 'git diff --staged --word-diff'
+
+gst:  'git status --short --branch'
+gstl: 'git status'
+
+# Committing:
+gc:    'git commit'
+gc!:   'git commit --amend'
+gcn!:  'git commit --amend --no-edit'
+
+gca    'git add --all && git commit'
+gca!:  'git add --all && git commit --amend'
+gcan!: 'git add --all && git commit --amend --no-edit'
+
+gcfu: 'git commit --fixup'
+
+grev: 'git revert'
+
+# Working dir & index manipulation:
+gco:  'git checkout'
+
+grt:  'git reset'
+# grt <commit> -- [<path>]: undo <commit> but keep changes in working dir.
+
+grts: 'git reset --soft'
+# undo commits and stage their changes.
+
+grs:  'git restore --worktree'
+# grs <unstaged-path> - revert local changes for <unstaged-path>.
+# (--worktree is the default behavior, but included here for clarity).
+
+grss: 'git restore          --worktree --source'
+# grss <commit> <unstaged-path> - revert <unstaged-path> to <commit>"s version.
+
+grst: 'git restore --staged'
+# grst <staged-path> - unstage <staged-path>
+
+grsts: 'git restore --staged           --source'
+# See grss, but for <staged-path>s.
+
+grsa:  'git restore --staged --worktree'
+# grsa <path> - discard all changes for <path>, both staged and unstaged.
+
+grsas: 'git restore --staged --worktree --source'
+
+grm:   'git rm'
+# Remove paths from index & working dir.
+
+grmc:  'git rm --cached'
+# Unstage & remove only from index; leave in working dir.
+# grmc <path> - where <path> is already tracked: stages the removal of <path>
+
+
