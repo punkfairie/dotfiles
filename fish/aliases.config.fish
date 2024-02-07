@@ -11,7 +11,16 @@ abbr -a v --position command "$EDITOR"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Location aliases.
-abbr -a hack --position command "cd ~/hackin"
+abbr -a hack --position command "cd $HACK"
+abbr -a dotf --position command "cd $DOT"
+abbr -a dote --position command "cd $DOT && $EDITOR"
+
+abbr -a nvdir --position command "cd $NVIM"
+abbr -a nved --position command "cd $NVIM && $EDITOR"
+abbr -a nvl --position command "cd $NVLUA"
+abbr -a nvled --position command "cd $NVLUA && $EDITOR"
+abbr -a nvc --position command "cd $NVCUSTOM"
+abbr -a nvced --position command "cd $NVCUSTOM && $EDITOR"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
