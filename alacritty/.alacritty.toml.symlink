@@ -54,6 +54,9 @@ import = [
     # Popup term.
     { key = 'i', mods = 'Command',          chars = "\u0001\u0069" },
 
+    # Copy mode.
+    { key = 'Escape', mods = 'Command',        chars = "\u0001\u001B" },
+
     # Install plugins.
     { key = 'i', mods = 'Command|Shift',    chars = "\u0001\u0049" },
 
