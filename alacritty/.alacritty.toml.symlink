@@ -4,6 +4,10 @@ import = [
   '~/dotfiles/alacritty/catppuccin-mocha.toml'
 ]
 
+[shell]
+  program = "/usr/local/bin/fish"
+  args = ["-c", "tmux attach -t main || tmux new -s main"]
+
 [env]
   TERM = 'xterm-256color'
 
