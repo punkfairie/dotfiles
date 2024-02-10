@@ -1,0 +1,3 @@
+[submodule "git/gitmoji-fuzzy-hook"]
+	path = git/gitmoji-fuzzy-hook
+	url = https://gitlab.com/raabf/gitmoji-fuzzy-hook

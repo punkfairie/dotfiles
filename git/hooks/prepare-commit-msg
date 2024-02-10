@@ -17,8 +17,8 @@
 ## Dependencies: gitmoji-fuzzy-hook
 ###############################################################################
 
-[ -t 1 ]  # checks if this script is called from a terminal
-emoji="$(/Users/marley/.local/share/gitmoji-fuzzy-hook/bin/gitmoji-fuzzy-hook-exec.sh $? $@)"
+[ -t 1 ] # checks if this script is called from a terminal
+emoji="$(/Users/marley/dotfiles/git/gitmoji-fuzzy-hook/bin/gitmoji-fuzzy-hook-exec.sh $? $@)"
 
 msg_file="$1"
 msg="$(cat "$msg_file")"
@@ -26,8 +26,7 @@ msg="$(cat "$msg_file")"
 # Do here whatever you want with the commit message before prepending the emoji
 # to it and writing the message to the commit file.
 
-if [ ! -z "${emoji}" ]; then  # surpress the space if there is no emoji
+if [ ! -z "${emoji}" ]; then # surpress the space if there is no emoji
 	msg="${emoji} ${msg}"
 fi
-echo -e "$msg" > "$msg_file"
-
+echo -e "$msg" >"$msg_file"

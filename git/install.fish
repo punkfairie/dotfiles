@@ -9,16 +9,9 @@ print_subtitle Git
 
 brew_install "Github CLI" gh
 
-if ! [ -e "$HOME/.local/share/gitmoji-fuzzy-hook/" ]
-    execute \
-        "git clone https://gitlab.com/raabf/gitmoji-fuzzy-hook.git ~/.local/share/gitmoji-fuzzy-hook && \
-         ln -f -s ~/.local/share/gitmoji-fuzzy-hook/bin/gitmoji-fuzzy-hook-init.sh $HOME/bin/gitmoji-fuzzy-hook-init" \
-        gitmoji-fuzzy-hook
-else
-    execute \
-        "cd ~/.local/share/gitmoji-fuzzy-hook/ && git pull; cd $DOT" \
-        gitmoji-fuzzy-hook
-end
+execute \
+    "ln -f -s ~/dotfiles/git/gitmoji-fuzzy-hook/bin/gitmoji-fuzzy-hook-init.sh $HOME/bin/gitmoji-fuzzy-hook-init" \
+    gitmoji-fuzzy-hook
 
 print_subtitle "Git GPG"
 
