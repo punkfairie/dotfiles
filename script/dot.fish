@@ -131,7 +131,7 @@ function install_dotfiles
     set -l path (string replace -a '/' '\/' "$DOT")
     set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.(sym|hard)link$')
 
-    for src in (find -H "$DOT" -name "*.symlink" -or -name "*.hardlink" -not -path ".git/*")
+    for src in (find -H "$DOT" -not \( -path "$DOT/.git/*" -prune \) -name "*.symlink" -or -name "*.hardlink")
         link_file $src "$HOME/$(string replace -r $regex '$1' "$src")"
     end
 end
@@ -170,7 +170,9 @@ end
 
 # Ensure npm is available.
 
-"$DOT/node/volta.fish"
+if $run_installers
+    "$DOT/node/volta.fish"
+end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
