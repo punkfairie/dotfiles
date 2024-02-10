@@ -4,6 +4,8 @@ set -q DOT || set -gx DOT "$HOME/dotfiles"
 
 set -g yes_to_all false
 set -g set_prefs true
+set -g link_files true
+set -g run_installers true
 
 source "$DOT/script/utils.fish"
 
@@ -129,7 +131,7 @@ function install_dotfiles
     set -l path (string replace -a '/' '\/' "$DOT")
     set -l regex (string join '' '^' "$path" '\/[a-zA-Z]+\/(.+)\.(sym|hard)link$')
 
-    for src in (find -H "$DOT" -name "*.symlink" -or -name "*.hardlink" -not -path ".git")
+    for src in (find -H "$DOT" -name "*.symlink" -or -name "*.hardlink" -not -path ".git/*")
         link_file $src "$HOME/$(string replace -r $regex '$1' "$src")"
     end
 end
@@ -138,13 +140,24 @@ end
 #                                     Main                                     #
 ################################################################################
 
-argparse y/yes-to-all s/skip o/overwrite b/backup p/no-prefs -- $argv
+argparse y/yes-to-all s/skip o/overwrite b/backup p/only-prefs i/only-installers l/only-link -- $argv
 
 if set -q _flag_y
     set yes_to_all true
 end
 
 if set -q _flag_p
+    set run_installers false
+    set link_files false
+end
+
+if set -q _flag_i
+    set set_prefs false
+    set link_files false
+end
+
+if set -q _flag_l
+    set run_installers false
     set set_prefs false
 end
 
@@ -167,9 +180,13 @@ end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_title Installers
-find . -name install.fish -exec fish -c {} ';'
+if $run_installers
+    print_title Installers
+    find . -name install.fish -exec fish -c {} ';'
+end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-install_dotfiles
+if $link_files
+    install_dotfiles
+end

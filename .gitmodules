@@ -1,3 +1,6 @@
 [submodule "git/gitmoji-fuzzy-hook"]
 	path = git/gitmoji-fuzzy-hook
-	url = https://gitlab.com/raabf/gitmoji-fuzzy-hook
+	url = https://gitlab.com/raabf/gitmoji-fuzzy-hook.git/
+[submodule "vim/.config/nvim.symlink"]
+	path = vim/.config/nvim.symlink
+	url = https://github.com/NvChad/NvChad
