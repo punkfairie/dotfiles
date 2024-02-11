@@ -62,3 +62,5 @@ dotfile repos:
 [signing-git-commits](https://gist.github.com/phortuin/cf24b1cca3258720c71ad42977e1ba57)
 
 [Correct_GnuPG_Permission](https://gist.github.com/oseme-techguy/bae2e309c084d93b75a9b25f49718f85)
+
+[A Practical Guide to fzf](https://thevaluable.dev/practical-guide-fzf-example/)
