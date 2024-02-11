@@ -9,6 +9,7 @@ source "$DOT/os/apt_utils.fish"
 print_subtitle OS
 
 brew_install Bash bash
+brew_install Zsh zsh
 
 if [ "$(uname)" = Darwin ]
     # brew_install mas-cli mas

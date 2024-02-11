@@ -17,6 +17,7 @@ brew_install grep grep
 brew_install OpenSSH openssh
 brew_install ImageMagick imagemagick
 brew_install ssh-copy-id ssh-copy-id
+brew_install less less
 
 brew_install "FiraCode Nerd Font" font-fira-code-nerd-font "" homebrew/cask-fonts
 brew_install "Starship Prompt" starship
