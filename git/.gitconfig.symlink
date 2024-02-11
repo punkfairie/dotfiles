@@ -24,9 +24,22 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
+  # Use delta.
+  pager = delta
+
 [user]
   # Do not guess the user's identity.
   useConfigOnly = true
+
+[include]
+  path = ~/dotfiles/git/delta-themes.gitconfig
+
+[delta]
+  navigate = true
+  syntax-theme = Catppuccin-mocha
+  features = mellow-barbet
+  true-color = always
+  hyperlinks = true
 
 [color]
   diff = always
@@ -43,6 +56,9 @@
 
 [init]
   defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
 
 [status]
   showstash = true
@@ -67,7 +83,8 @@
   # Include summaries of merged commits in merge commit messages.
   log = true
 
-  tool = vimdiff
+  # delta.
+  conflictstyle = diff3
 
 [mergetool]
   keepBackup = false
@@ -76,6 +93,9 @@
 [diff]
   # Detect when files are copied as well as renamed.
   renames = copies
+
+  # delta
+  colorMoved = default
 
 [apply]
   # Fix whitespace errors when applying a patch, as specified in
