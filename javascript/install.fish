@@ -12,6 +12,4 @@ npm_install "gulp CLI" gulp-cli
 
 if [ "$(uname)" = Darwin ]
     brew_install WebStorm webstorm --cask
-else if [ "$(uname)" = Linux ] && cmd_exists snap
-    execute "sudo snap install webstorm --classic" WebStorm
 end
