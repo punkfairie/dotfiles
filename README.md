@@ -32,6 +32,14 @@ fish_config theme save "Catppuccin Mocha"
 
 `<cmd-I>` to install plugins.
 
+## Firefox
+
+Find profile directory and link the userChrome file.
+
+```fish
+ln -s "$DOT/os/firefox/userChrome.css" "{profile dir}/chrome/userChrome.css"
+```
+
 # Sources
 
 ## Main
