@@ -2,10 +2,9 @@
 
 set -q DOT || set -gx DOT "$HOME/dotfiles"
 
-set -g yes_to_all false
-set -g set_prefs true
-set -g link_files true
-set -g run_installers true
+set -g set_prefs false
+set -g link_files false
+set -g run_installers false
 
 source "$DOT/script/utils.fish"
 
@@ -114,9 +113,7 @@ function install_dotfiles
     set -g overwrite_all false
     set -g backup_all false
 
-    if set -q yes_to_all && $yes_to_all
-        set skip_all true
-    else if set -q _flag_s
+    if set -q _flag_s
         set skip_all true
     end
 
@@ -140,25 +137,24 @@ end
 #                                     Main                                     #
 ################################################################################
 
-argparse y/yes-to-all s/skip o/overwrite b/backup p/only-prefs i/only-installers l/only-link -- $argv
-
-if set -q _flag_y
-    set yes_to_all true
-end
+argparse s/skip o/overwrite b/backup p/only-prefs i/only-installers l/only-link -- $argv
 
 if set -q _flag_p
-    set run_installers false
-    set link_files false
+    set set_prefs true
 end
 
 if set -q _flag_i
-    set set_prefs false
-    set link_files false
+    set run_installers true
 end
 
 if set -q _flag_l
-    set run_installers false
-    set set_prefs false
+    set link_files true
+end
+
+if ! set -q _flag_p && ! set -q _flag_i && ! set -q _flag_l
+    set set_prefs true
+    set run_installers true
+    set link_files true
 end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
