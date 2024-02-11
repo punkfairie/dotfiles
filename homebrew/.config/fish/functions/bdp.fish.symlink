@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+function bdp -d "Delete one or more selected Homebrew packages"
+    set -f uninst (brew leaves | fzf -m)
+
+    if test -n "$uninst"
+        for pkg in (echo $uninst)
+            brew uninstall $pkg
+        end
+    end
+end

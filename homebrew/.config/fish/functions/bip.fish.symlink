@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+function bip -d "fzf and install one or more Homebrew packages"
+    set -f inst (brew search "$argv" | fzf -m)
+
+    if test -n "$inst"
+        for pkg in (echo $inst)
+            brew install $pkg
+        end
+    end
+end
