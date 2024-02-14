@@ -1,0 +1,9 @@
+[submodule ".themes/grub/catppuccin"]
+	path = .themes/grub/catppuccin
+	url = https://github.com/catppuccin/grub.git
+[submodule ".themes/sddm/catppuccin"]
+	path = .themes/sddm/catppuccin
+	url = https://github.com/catppuccin/sddm.git
+[submodule ".themes/tty/catppuccin"]
+	path = .themes/tty/catppuccin
+	url = https://github.com/catppuccin/tty.git
