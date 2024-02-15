@@ -7,3 +7,6 @@
 [submodule ".themes/tty/catppuccin"]
 	path = .themes/tty/catppuccin
 	url = https://github.com/catppuccin/tty.git
+[submodule "/home/marley/.config/nvim"]
+	path = /home/marley/.config/nvim
+	url = https://github.com/NvChad/NvChad
