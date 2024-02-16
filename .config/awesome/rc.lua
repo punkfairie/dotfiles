@@ -10,53 +10,21 @@ require("awful.autofocus")
 local wibox = require("wibox")
 -- Theme handling library
 local beautiful = require("beautiful")
--- Notification library
-local naughty = require("naughty")
+
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
--- {{{ Error handling
--- Check if awesome encountered an error during startup and fell back to
--- another config (This code will only ever execute for the fallback config)
-if awesome.startup_errors then
-	naughty.notify({
-		preset = naughty.config.presets.critical,
-		title = "Oops, there were errors during startup!",
-		text = awesome.startup_errors,
-	})
-end
-
--- Handle runtime errors after startup
-do
-	local in_error = false
-	awesome.connect_signal("debug::error", function(err)
-		-- Make sure we don't go into an endless error loop
-		if in_error then
-			return
-		end
-		in_error = true
-
-		naughty.notify({
-			preset = naughty.config.presets.critical,
-			title = "Oops, an error happened!",
-			text = tostring(err),
-		})
-		in_error = false
-	end)
-end
--- }}}
+-- Main/Configuration --
+require("main")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
--- This is used later as the default terminal and editor to run.
-terminal = "wezterm"
-editor = os.getenv("EDITOR") or "nvim"
-editor_cmd = terminal .. " -e " .. editor
+local vars = require("main.apps")
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -65,25 +33,6 @@ editor_cmd = terminal .. " -e " .. editor
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
--- Table of layouts to cover with awful.layout.inc, order matters.
-awful.layout.layouts = {
-	awful.layout.suit.floating,
-	awful.layout.suit.tile,
-	awful.layout.suit.tile.left,
-	awful.layout.suit.tile.bottom,
-	awful.layout.suit.tile.top,
-	awful.layout.suit.fair,
-	awful.layout.suit.fair.horizontal,
-	awful.layout.suit.spiral,
-	awful.layout.suit.spiral.dwindle,
-	awful.layout.suit.max,
-	awful.layout.suit.max.fullscreen,
-	awful.layout.suit.magnifier,
-	awful.layout.suit.corner.nw,
-	-- awful.layout.suit.corner.ne,
-	-- awful.layout.suit.corner.sw,
-	-- awful.layout.suit.corner.se,
-}
 -- }}}
 
 -- {{{ Menu
@@ -95,8 +44,7 @@ myawesomemenu = {
 			hotkeys_popup.show_help(nil, awful.screen.focused())
 		end,
 	},
-	{ "manual", terminal .. " -e man awesome" },
-	{ "edit config", editor_cmd .. " " .. awesome.conffile },
+	{ "manual", vars.terminal .. " -e man awesome" },
 	{ "restart", awesome.restart },
 	{
 		"quit",
@@ -109,14 +57,14 @@ myawesomemenu = {
 mymainmenu = awful.menu({
 	items = {
 		{ "awesome", myawesomemenu, beautiful.awesome_icon },
-		{ "open terminal", terminal },
+		{ "open terminal", vars.terminal },
 	},
 })
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = mymainmenu })
 
 -- Menubar configuration
-menubar.utils.terminal = terminal -- Set the terminal for applications that require it
+menubar.utils.terminal = vars.terminal -- Set the terminal for applications that require it
 -- }}}
 
 -- Keyboard map indicator and switcher
@@ -298,7 +246,7 @@ globalkeys = gears.table.join(
 
 	-- Standard program
 	awful.key({ modkey }, "Return", function()
-		awful.spawn(terminal)
+		awful.spawn(vars.terminal)
 	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
 	awful.key({ modkey, "Shift" }, "q", awesome.quit, { description = "quit awesome", group = "awesome" }),
@@ -522,17 +470,7 @@ awful.rules.rules = {
 
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
-client.connect_signal("manage", function(c)
-	-- Set the windows at the slave,
-	-- i.e. put it at the end of others instead of setting it master.
-	-- if not awesome.startup then awful.client.setslave(c) end
-
-	if awesome.startup and not c.size_hints.user_position and not c.size_hints.program_position then
-		-- Prevent clients from being unreachable after screen count changes.
-		awful.placement.no_offscreen(c)
-	end
-end)
-
+--
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
 	-- buttons for the titlebar
