@@ -10,3 +10,6 @@
 [submodule "/home/marley/.config/nvim"]
 	path = /home/marley/.config/nvim
 	url = https://github.com/NvChad/NvChad
+[submodule "/home/marley/.config/awesome/lib/bling"]
+	path = /home/marley/.config/awesome/lib/bling
+	url = https://github.com/BlingCorp/bling.git
