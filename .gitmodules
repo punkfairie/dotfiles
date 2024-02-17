@@ -13,3 +13,15 @@
 [submodule "/home/marley/.config/awesome/lib/bling"]
 	path = /home/marley/.config/awesome/lib/bling
 	url = https://github.com/BlingCorp/bling.git
+[submodule "/home/marley/.config/awesome/lib/layout-machi"]
+	path = /home/marley/.config/awesome/lib/layout-machi
+	url = git@github.com:xinhaoyuan/layout-machi.git
+[submodule "/home/marley/.tmux/plugins/tpm"]
+	path = /home/marley/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "/home/marley/.config/git/gitmoji-fuzzy-hook"]
+	path = /home/marley/.config/git/gitmoji-fuzzy-hook
+	url = https://gitlab.com/raabf/gitmoji-fuzzy-hook.git
+[submodule "/home/marley/.themes/lazygit/catppuccin"]
+	path = /home/marley/.themes/lazygit/catppuccin
+	url = git@github.com:catppuccin/lazygit.git
