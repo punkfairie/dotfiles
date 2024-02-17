@@ -6,7 +6,7 @@ local config = wezterm.config_builder()
 config.color_scheme = "Catppuccin Macchiato"
 config.enable_tab_bar = false
 
-config.default_prog = { "/usr/bin/fish" }
+config.default_prog = { "/usr/bin/fish", "-c tmux attach -t main || tmux new -s main" }
 
 config.font = wezterm.font({
 	family = "FiraCode Nerd Font",
