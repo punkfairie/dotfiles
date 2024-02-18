@@ -1,4 +1,3 @@
-local apps = require("main.apps")
 local gears = require("gears")
 local awful = require("awful")
 local hotkeys_popup = require("awful.hotkeys_popup")
@@ -6,6 +5,7 @@ local beautiful = require("beautiful")
 local wibox = require("wibox")
 
 local helpers = require("helpers")
+local apps = require("config").apps
 
 local menu = {}
 

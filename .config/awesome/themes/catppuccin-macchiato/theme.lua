@@ -1,4 +1,4 @@
-local palette = require("catppuccin.mocha")
+local palette = require("lib.catppuccin.catppuccin.macchiato")
 local filesystem = require("gears.filesystem")
 local dpi = require("beautiful.xresources").apply_dpi
 local theme_assets = require("beautiful.theme_assets")
@@ -11,8 +11,42 @@ local theme = {}
 -- Transparent Color
 theme.transparent = "#00000000"
 
+-- Theme colors
+theme.color = {
+	base = palette.base.hex,
+	mantle = palette.mantle.hex,
+	crust = palette.crust.hex,
+
+	surface0 = palette.surface0.hex,
+	surface1 = palette.surface1.hex,
+	surface2 = palette.surface2.hex,
+
+	text = palette.text.hex,
+	subtext0 = palette.subtext0.hex,
+	subtext1 = palette.subtext1.hex,
+
+	overlay0 = palette.overlay0.hex,
+	overlay1 = palette.overlay1.hex,
+	overlay2 = palette.overlay2.hex,
+
+	rosewater = palette.rosewater.hex,
+	flamingo = palette.flamingo.hex,
+	pink = palette.pink.hex,
+	mauve = palette.mauve.hex,
+	red = palette.red.hex,
+	maroon = palette.maroon.hex,
+	peach = palette.peach.hex,
+	yellow = palette.yellow.hex,
+	green = palette.green.hex,
+	teal = palette.teal.hex,
+	sky = palette.sky.hex,
+	sapphire = palette.sapphire.hex,
+	blue = palette.blue.hex,
+	lavender = palette.lavender.hex,
+}
+
 -- Font
-theme.font_name = "FiraCode Nerd Font "
+theme.font_name = "FiraCode Nerd Font Propo" .. " "
 theme.font = theme.font_name .. "10"
 
 -- Assets

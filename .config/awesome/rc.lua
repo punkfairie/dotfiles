@@ -7,7 +7,7 @@ local beautiful = require("beautiful")
 require("awful.autofocus")
 
 -- Theme --
-beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/catppuccin/theme.lua")
+beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/catppuccin-macchiato/theme.lua")
 
 -- Main/Configuration --
 require("main")
@@ -23,3 +23,4 @@ require("ui")
 
 -- Autostart --
 awful.spawn.with_shell("picom --experimental-backends")
+awful.spawn("copyq")

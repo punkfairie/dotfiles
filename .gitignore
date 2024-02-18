@@ -50,6 +50,7 @@ Videos/
 *.tmp
 
 # Automatically appended
-.mozilla/
 .config/dconf/
 .config/fish/fish_variables
+.local/
+.config/autostart/

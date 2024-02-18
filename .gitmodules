@@ -25,3 +25,12 @@
 [submodule "/home/marley/.themes/lazygit/catppuccin"]
 	path = /home/marley/.themes/lazygit/catppuccin
 	url = git@github.com:catppuccin/lazygit.git
+[submodule "/home/marley/.themes/ventoy/catppuccin"]
+	path = /home/marley/.themes/ventoy/catppuccin
+	url = git@github.com:Dooez/ventoy-catppuccin.git
+[submodule ".config/awesome/lib/rubato"]
+	path = .config/awesome/lib/rubato
+	url = git@github.com:andOrlando/rubato.git
+[submodule ".config/awesome/lib/catppuccin"]
+	path = .config/awesome/lib/catppuccin
+	url = git@github.com:catppuccin/lua.git

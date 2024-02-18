@@ -1,0 +1,16 @@
+return {
+	audio = require("ui.top-panel.widgets.audio"),
+	clock = require("ui.top-panel.widgets.clock"),
+	cpu = require("ui.top-panel.widgets.cpu"),
+	date = require("ui.top-panel.widgets.date"),
+	disk = require("ui.top-panel.widgets.disk"),
+	layoutbox = require("ui.top-panel.widgets.layoutbox"),
+	mem = require("ui.top-panel.widgets.mem"),
+	menu = require("ui.top-panel.widgets.menu"),
+	power = require("ui.top-panel.widgets.power"),
+	promptbox = require("ui.top-panel.widgets.promptbox"),
+	seperator = require("ui.top-panel.widgets.seperator"),
+	systray = require("ui.top-panel.widgets.systray"),
+	taglist = require("ui.top-panel.widgets.taglist"),
+	tasklist = require("ui.top-panel.widgets.tasklist"),
+}
