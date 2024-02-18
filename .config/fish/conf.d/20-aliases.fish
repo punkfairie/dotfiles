@@ -49,16 +49,3 @@ end
 function cdls -d "CD into a directory and list its contents"
     cd "$argv" && ls
 end
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-# eza.
-
-function ls --wraps eza
-    eza --all --icons=auto --sort=name --group-directories-first $argv
-end
-
-function lsl --wraps eza
-    eza --all --icons=auto --sort=name --group-directories-first --grid --long \
-        --git --header $argv
-end
