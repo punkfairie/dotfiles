@@ -1,5 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
   "diagnostics.globals": ["awesome", "client", "button", "dbus", "drawable", "drawin", "key", "keygrabber", "mousegrabber", "root", "selection", "tag", "window", "table.unpack", "unpack", "math.atan2", "jit", "pack", "mouse", "screen", "nlog", "log", "context"],
-  "workspace.library": ["/usr/share/awesome/lib/"]
+  "workspace.library": ["/usr/share/awesome/lib/", "/usr/share/lua/5.4/"]
 }
