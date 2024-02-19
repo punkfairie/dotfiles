@@ -7,26 +7,26 @@
 [submodule ".themes/tty/catppuccin"]
 	path = .themes/tty/catppuccin
 	url = https://github.com/catppuccin/tty.git
-[submodule "/home/marley/.config/nvim"]
-	path = /home/marley/.config/nvim
+[submodule ".config/nvim"]
+	path = .config/nvim
 	url = https://github.com/NvChad/NvChad
-[submodule "/home/marley/.config/awesome/lib/bling"]
-	path = /home/marley/.config/awesome/lib/bling
+[submodule ".config/awesome/lib/bling"]
+	path = .config/awesome/lib/bling
 	url = https://github.com/BlingCorp/bling.git
-[submodule "/home/marley/.config/awesome/lib/layout-machi"]
-	path = /home/marley/.config/awesome/lib/layout-machi
+[submodule ".config/awesome/lib/layout-machi"]
+	path = .config/awesome/lib/layout-machi
 	url = git@github.com:xinhaoyuan/layout-machi.git
-[submodule "/home/marley/.tmux/plugins/tpm"]
-	path = /home/marley/.tmux/plugins/tpm
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "/home/marley/.config/git/gitmoji-fuzzy-hook"]
-	path = /home/marley/.config/git/gitmoji-fuzzy-hook
+[submodule ".config/git/gitmoji-fuzzy-hook"]
+	path = .config/git/gitmoji-fuzzy-hook
 	url = https://gitlab.com/raabf/gitmoji-fuzzy-hook.git
-[submodule "/home/marley/.themes/lazygit/catppuccin"]
-	path = /home/marley/.themes/lazygit/catppuccin
+[submodule ".themes/lazygit/catppuccin"]
+	path = .themes/lazygit/catppuccin
 	url = git@github.com:catppuccin/lazygit.git
-[submodule "/home/marley/.themes/ventoy/catppuccin"]
-	path = /home/marley/.themes/ventoy/catppuccin
+[submodule ".themes/ventoy/catppuccin"]
+	path = .themes/ventoy/catppuccin
 	url = git@github.com:Dooez/ventoy-catppuccin.git
 [submodule ".config/awesome/lib/rubato"]
 	path = .config/awesome/lib/rubato

@@ -1,9 +1,9 @@
-local awful = require("awful")
-local beautiful = require("beautiful")
-local wibox = require("wibox")
+local awful = require "awful"
+local wibox = require "wibox"
+local beautiful = require "beautiful"
 
 local function set_wall(s)
-	awful.wallpaper({
+	awful.wallpaper {
 		screen = s,
 		widget = {
 			{
@@ -16,8 +16,8 @@ local function set_wall(s)
 			halign = "center",
 			tiled = true,
 			widget = wibox.container.tile,
-		},
-	})
+		}
+	}
 end
 
 screen.connect_signal("request::wallpaper", function(s)

@@ -25,7 +25,7 @@ M.widget.github = {
 }
 
 M.widget.mic = {
-	name = "alsa_input...",
+	name = "",
 }
 
 M.widget.disk = {

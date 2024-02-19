@@ -1,3 +1,3 @@
 return {
-	ui = require("helpers.ui"),
+	ui = require(... .. ".ui"),
 }

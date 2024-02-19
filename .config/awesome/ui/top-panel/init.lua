@@ -1,112 +1,148 @@
-local beautiful = require("beautiful")
-local wibox = require("wibox")
+-- Standard awesome library --
+local gears = require("gears")
 local awful = require("awful")
+local wibox = require("wibox")
 
-local widgets = require("ui.top-panel.widgets")
+local widgets = require ("ui.top-panel.widgets")
+local bling = require ("lib.bling")
+local helpers = require "helpers"
+
+local beautiful = require("beautiful")
+
+local menubar = require("menubar")
+local hotkeys_popup = require("awful.hotkeys_popup")
 
 local dpi = beautiful.xresources.apply_dpi
 
-local function create_icon(i, c)
-	local widget = {
-		{
-			font = beautiful.font_name .. "12.5",
-			text = " " .. i,
-			widget = wibox.widget.textbox,
-		},
-		fg = c,
-		widget = wibox.container.background,
-	}
 
-	return widget
-end
+local clock = widgets.clock
+local date = widgets.date
+local cpu = widgets.cpu
+local disk = widgets.disk
+local keyboard = widgets.keyboard
+local mem = widgets.mem
+local menu = widgets.menu
+local systray = widgets.systray
+local promptbox = widgets.promptbox
+local audio = widgets.audio
+local seperator = widgets.seperator
+local taglist = widgets.taglist
+local tasklist = widgets.tasklist
+local layoutbox = widgets.layoutbox
+local power = widgets.power
 
--- Create icons with color.
-local calendar_icon = create_icon("", beautiful.color.teal)
-local clock_icon = create_icon(" ", beautiful.color.pink)
+
+local function create_icon(i, c) --Icon Creation
+    local widget = {
+       {
+          font = beautiful.font_name.."12.5",
+          text = ' ' .. i,
+          widget = wibox.widget.textbox
+       },
+       fg = c,
+       widget = wibox.container.background
+    }
+    return widget
+ end
+
+-- Create Icons with Color --
+local calendar_icon = create_icon('', beautiful.xcolor5)
+local clock_icon = create_icon('', beautiful.xcolor12)
+local keyboard_icon = create_icon('', beautiful.xcolor4)
 
 screen.connect_signal("request::desktop_decoration", function(s)
-	local clockdate = wibox.widget({
-		layout = wibox.layout.fixed.horizontal,
-		calendar_icon,
-		widgets.date,
-		clock_icon,
-		widgets.clock,
-	})
+  -- Create Clock with Colerfull Widget -- 
+    local clockdate = wibox.widget {
+        layout = wibox.layout.fixed.horizontal,
+        calendar_icon,
+        date,
+        clock_icon,
+        clock, -- Middle widget
 
-	local tasklist = wibox.widget({
-		{
-			layout = wibox.layout.fixed.horizontal,
-			s.tasklist,
-		},
-		forced_width = 300,
-		layout = wibox.layout.fixed.horizontal,
-	})
+        
+    }
+   
+    local tasklist = wibox.widget {
+        {
+        layout = wibox.layout.fixed.horizontal,
+        s.tasklist, -- needs to be here (under the screen.connect_signal) bc of the s
+        },
+        forced_width = 300,
+        layout = wibox.layout.fixed.horizontal,
+        
+    }
 
-	-- Create the wibox.
-	s.wibox = awful.wibar({
-		position = "top",
-		screen = s,
-		margins = {
-			top = dpi(10),
-			left = dpi(20),
-			right = dpi(20),
-		},
-		border_width = dpi(2),
-		border_color = beautiful.color.surface0,
 
-		widget = {
-			layout = wibox.layout.align.horizontal,
-			expand = "none",
-			{
-				{ -- left widgets
-					layout = wibox.layout.fixed.horizontal,
-					widgets.menu,
-					widgets.seperator,
-					s.taglist,
-					widgets.seperator,
-					tasklist,
-				},
-				left = 5,
-				right = 0,
-				top = 2,
-				bottom = 2,
-				layout = wibox.container.margin,
-			},
-			{
-				{
-					layout = wibox.layout.align.horizontal,
-					clockdate,
-				},
-				left = 0,
-				right = 0,
-				top = 1,
-				bottom = 1,
-				layout = wibox.container.margin,
-			},
-			{ -- right widgets
-				{
-					layout = wibox.layout.fixed.horizontal,
-					widgets.systray,
-					widgets.seperator,
-					widgets.audio,
-					widgets.mem,
-					widgets.cpu,
-					widgets.disk,
-					widgets.layoutbox,
-				},
-				left = 0,
-				right = 2,
-				top = 1,
-				bottom = 1,
-				layout = wibox.container.margin,
-			},
-		},
-	})
+   
+    
+    -- Create the wibox
+    s.mywibox = awful.wibar {
+        position = "top",
+        screen   = s,
+        
+        widget   = {
+            layout = wibox.layout.align.horizontal,
+            expand = "none",
+            { 
+                {-- Left widgets
+                layout = wibox.layout.fixed.horizontal,
+                menu,
+                --launcher,
+                seperator,
+                s.taglist,
+                seperator,
+               -- s.tasklist,
+               tasklist,
+            },
+        left = 5, --Padding
+        right = 0,
+        top = 2,
+        bottom = 2,
+        layout = wibox.container.margin,
+            },
+            {
+                {
+            layout = wibox.layout.align.horizontal,
+            clockdate,
+            },
+        left = 0, 
+        right = 0,
+        top = 1,
+        bottom = 1,
+        layout = wibox.container.margin,
+            },
+            { -- Right widgets
+                {
+                layout = wibox.layout.fixed.horizontal,
+                --temp.text,
+                systray,
+                seperator,
+                audio,
+                mem,
+                cpu,
+                disk,
+                keyboard_icon,
+                keyboard,
+                --awful.widget.systray(),
+                --power,
+                layoutbox,
+                --pacing = 2,
+                },
+        left = 0,
+        right = 2,
+        top = 1,
+        bottom = 1,
+        layout = wibox.container.margin
+            },
+        
+        }
 
-	-- s.border2 = awful.wibar({
-	-- 	position = "top",
-	-- 	screen = s,
-	-- 	bg = beautiful.color.surface0,
-	-- 	height = dpi(2),
-	-- })
+    }
+    s.border2 = awful.wibar {
+        position = "top",
+        screen = s,
+        bg = "#313244",
+        height = dpi(2),
+    }
+  
 end)
