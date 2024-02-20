@@ -5,8 +5,8 @@ local beautiful = require("beautiful")
 local helpers = require("helpers")
 local dpi = beautiful.xresources.apply_dpi
 
-local user_vars = require("user_variables")
-local microphone = user_vars.widget.mic.name
+local config = require("config")
+local microphone = config.widget.mic.name
 
 local slider = wibox.widget({
 	bar_shape = helpers.ui.rrect(9),

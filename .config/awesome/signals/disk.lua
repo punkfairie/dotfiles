@@ -1,8 +1,8 @@
 local awful = require("awful")
 local gears = require("gears")
 
-local user_vars = require("user_variables")
-local which_disk = user_vars.widget.disk.name
+local config = require("config")
+local which_disk = config.widget.disk.name
 
 local function get_disk()
 	local script = [[

@@ -5,7 +5,7 @@ local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local filesystem = gears.filesystem
 local json = require("lib.json")
-local user_vars = require("user_variables")
+local config = require("config")
 local icon_dir = filesystem.get_configuration_dir() .. "ui/info-panel/weather/icons/"
 
 --- Weather Widget
@@ -165,8 +165,8 @@ local weather_widget = wibox.widget({
 	layout = wibox.layout.fixed.vertical,
 })
 
-local api_key = user_vars.widget.weather.key
-local coordinates = user_vars.widget.weather.coordinates
+local api_key = config.widget.weather.api_key
+local coordinates = config.widget.weather.coordinates
 
 local show_hourly_forecast = true
 local show_daily_forecast = true
@@ -175,9 +175,9 @@ local units = "imperial"
 local url = (
 	"https://api.openweathermap.org/data/2.5/onecall"
 	.. "?lat="
-	.. coordinates[1]
+	.. coordinates.lat
 	.. "&lon="
-	.. coordinates[2]
+	.. coordinates.lon
 	.. "&appid="
 	.. api_key
 	.. "&units="

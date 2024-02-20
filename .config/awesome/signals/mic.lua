@@ -1,7 +1,7 @@
 local awful = require("awful")
 
-local user_vars = require("user_variables")
-local microphone = user_vars.widget.mic.name
+local config = require("config")
+local microphone = config.widget.mic.name
 
 local vol_sc = "pamixer --source " .. microphone .. " --get-volume"
 local mute_sc = "pamixer --source " .. microphone .. " --get-mute"
