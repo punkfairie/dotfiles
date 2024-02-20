@@ -26,9 +26,11 @@
   order: 0;
   width: calc(100% - 146px);
 }
-#PersonalToolbar {
-  order: 2;
-}
+
+/* Shove bookmarks bar over for macOS titlebar buttons */
+/* #PersonalToolbar { */
+/*   order: 2; */
+/* } */
 
 /* Update - Hides the new Firefox home + tab dropdown. If you want to 
 * keep/customize those buttons. remove the CSS below and adjust the widths above 

@@ -12,7 +12,7 @@ local function mouse_resize_handler(m, c)
 	local x, y = start.x, start.y
 	local wa = m(c.screen.workarea)
 	local idx = awful.client.idx(c)
-	local c_above, c_below
+	local c_above
 	local idx_above, idx_below
 	local wfact_above, wfact_below
 	local jump_to = { x = x, y = y }
@@ -23,17 +23,17 @@ local function mouse_resize_handler(m, c)
 
 		local v_border = 0.2 * g.height
 
-		if idx.idx > 1 and y >= g.y and y <= g.y + v_border then
+		if idx and idx.idx > 1 and y >= g.y and y <= g.y + v_border then
 			-- we are near the top edge of the window
 			c_above = awful.client.next(-1, c)
-			c_below = c
+			C_BELOW = c
 			jump_to.y = g.y
 			idx_above = idx.idx - 1
 			idx_below = idx.idx
-		elseif idx.idx < idx.num and y >= g.y + g.height - v_border then
+		elseif idx and idx.idx < idx.num and y >= g.y + g.height - v_border then
 			-- we are near the bottom edge of the window
 			c_above = c
-			c_below = awful.client.next(1, c)
+			C_BELOW = awful.client.next(1, c)
 			idx_above = idx.idx
 			idx_below = idx.idx + 1
 			jump_to.y = g.y + g.height
@@ -49,7 +49,7 @@ local function mouse_resize_handler(m, c)
 		end
 	end
 
-	if idx_above then
+	if idx and idx_above then
 		local t = c.screen.selected_tag
 		local data = t.windowfact or {}
 		local colfact = data[idx.col] or {}
@@ -58,11 +58,11 @@ local function mouse_resize_handler(m, c)
 	end
 
 	if idx_above and move_mwfact then
-		cursor = "cross"
+		CURSOR = "cross"
 	elseif idx_above then
-		cursor = m({ y = "sb_v_double_arrow", x = "sb_h_double_arrow" }).y
+		CURSOR = m({ y = "sb_v_double_arrow", x = "sb_h_double_arrow" }).y
 	elseif move_mwfact then
-		cursor = m({ y = "sb_v_double_arrow", x = "sb_h_double_arrow" }).x
+		CURSOR = m({ y = "sb_v_double_arrow", x = "sb_h_double_arrow" }).x
 	else
 		return false
 	end
@@ -89,7 +89,7 @@ local function mouse_resize_handler(m, c)
 				c.screen.selected_tag.master_width_factor = math.min(math.max((_mouse.x - wa.x) / wa.width, 0.01), 0.99)
 			end
 
-			if idx_above then
+			if idx and idx_above then
 				local factor_delta = (_mouse.y - jump_to.y) / wa.height
 
 				if factor_delta < 0 then
@@ -109,7 +109,7 @@ local function mouse_resize_handler(m, c)
 		else
 			return false
 		end
-	end, cursor)
+	end, CURSOR)
 
 	return true
 end
@@ -119,6 +119,7 @@ awful.layout.suit.tile.mouse_resize_handler = function(c)
 		return x
 	end, c)
 end
+---@diagnostic disable-next-line: duplicate-set-field
 awful.layout.suit.tile.bottom.mouse_resize_handler = function(c)
 	return mouse_resize_handler(function(q)
 		return { x = q.y, y = q.x, width = q.height, height = q.width }

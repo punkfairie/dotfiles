@@ -1,12 +1,11 @@
 local bling = require("lib.bling")
 
-local playerctl = {}
 local instance = nil
 
 local function new()
 	return bling.signal.playerctl.lib({
 		update_on_activity = true,
-		player = { "mpd", "spotify", "%any", },
+		player = { "mopidy", "spotify", "%any" },
 		debounce_delay = 1,
 	})
 end

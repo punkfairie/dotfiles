@@ -9,13 +9,13 @@ local function rel(screen, win)
 	}
 end
 
-local function unrel(s, rel)
-	return rel
+local function unrel(s, _rel)
+	return _rel
 		and {
-			x = s.x + s.width * rel.x,
-			y = s.y + s.height * rel.y,
-			width = s.width * rel.width,
-			height = rel.aspect * s.width * rel.width,
+			x = s.x + s.width * _rel.x,
+			y = s.y + s.height * _rel.y,
+			width = s.width * _rel.width,
+			height = _rel.aspect * s.width * _rel.width,
 		}
 end
 
@@ -27,13 +27,13 @@ end
 
 local floating = awful.layout.suit.floating
 
-function remember(c)
+function Remember(c)
 	if floating == awful.layout.get(c.screen) or c.floating then
 		stored[c.window] = rel(c.screen.geometry, c:geometry())
 	end
 end
 
-function restore(c)
+function Restore(c)
 	local s = stored[c.window]
 	if s then
 		c:geometry(unrel(c.screen.geometry, stored[c.window]))
@@ -43,8 +43,8 @@ function restore(c)
 	end
 end
 
-client.connect_signal("manage", remember)
-client.connect_signal("property::geometry", remember)
+client.connect_signal("manage", Remember)
+client.connect_signal("property::geometry", Remember)
 client.connect_signal("unmanage", forget)
 
 tag.connect_signal("property::layout", function(t)
@@ -55,4 +55,4 @@ tag.connect_signal("property::layout", function(t)
 	end
 end)
 
-return restore
+return Restore

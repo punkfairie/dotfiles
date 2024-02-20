@@ -4,18 +4,16 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local helpers = require("helpers")
---local lock_screen = require("modules.lockscreen")
---lock_screen.init()
 
 --- Minimalist Exit Screen
 --- ~~~~~~~~~~~~~~~~~~~~~~
 
 --- Icons
-local icon_font = beautiful.font_name.."bold 45"
+local icon_font = beautiful.font_name .. "bold 45"
 local poweroff_text_icon = ""
 local reboot_text_icon = ""
 local suspend_text_icon = ""
-local exit_text_icon = ""
+local exit_text_icon = "󰗼"
 local lock_text_icon = ""
 
 local button_bg = beautiful.xcolorbase
@@ -34,7 +32,6 @@ end
 
 local suspend_command = function()
 	awesome.emit_signal("module::exit_screen:hide")
-	--lock_screen_show()
 	awful.spawn.with_shell("systemctl suspend")
 end
 
@@ -44,10 +41,9 @@ end
 
 local lock_command = function()
 	awesome.emit_signal("module::exit_screen:hide")
-	--lock_screen_show()
 end
 
-local create_button = function(symbol, hover_color, text, command)
+local create_button = function(symbol, hover_color, _, command)
 	local icon = wibox.widget({
 		forced_height = button_size,
 		forced_width = button_size,
@@ -154,7 +150,7 @@ end)
 local exit_screen_grabber = awful.keygrabber({
 	auto_start = true,
 	stop_event = "release",
-	keypressed_callback = function(self, mod, key, command)
+	keypressed_callback = function(_, _, key, _)
 		if key == "s" then
 			suspend_command()
 		elseif key == "e" then

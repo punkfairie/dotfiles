@@ -1,9 +1,8 @@
-local awful = require "awful"
-local gears = require "gears"
+local awful = require("awful")
 
 -- Script
-local title_sc = 'mpc -f %title% | head -1' 
-local artist_sc = 'mpc -f %artist% | head -1'
+local title_sc = "mpc -f %title% | head -1"
+local artist_sc = "mpc -f %artist% | head -1"
 local length_sc = "mpc | awk '{print $3}' | awk 'NR==2'"
 local status_sc = "mpc | awk '{print $1}' | awk 'NR==2' | sed 's/[[]*//g' | sed 's/[]]*//g'"
 
@@ -27,4 +26,3 @@ awesome.connect_signal("widget::update_player", function()
 	get_player()
 end)
 get_player()
-

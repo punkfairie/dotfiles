@@ -4,13 +4,13 @@ local beautiful = require("beautiful")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local wibox = require("wibox")
-local helpers = require ("helpers")
+local helpers = require("helpers")
 
 --- Volume OSD
 --- ~~~~~~~~~~
 local icon = wibox.widget({
 	{
-		id = 'icon2',
+		id = "icon2",
 		image = beautiful.volume_on,
 		resize = true,
 		widget = wibox.widget.imagebox,
@@ -61,7 +61,7 @@ local slider_osd = wibox.widget({
 
 local vol_osd_slider = slider_osd.vol_osd_slider
 vol_osd_slider:buttons(gears.table.join(
-  awful.button({}, 4, nil, function()
+	awful.button({}, 4, nil, function()
 		if vol_osd_slider:get_value() > 100 then
 			vol_osd_slider:set_value(100)
 			return
@@ -79,15 +79,15 @@ vol_osd_slider:buttons(gears.table.join(
 
 helpers.ui.add_hover_cursor(vol_osd_slider, "hand1")
 
-local update_volume = function()  -- Sets the Volume Correct
-	awful.spawn.easy_async_with_shell("pamixer --get-volume", function(stdout) 
+local update_volume = function() -- Sets the Volume Correct
+	awful.spawn.easy_async_with_shell("pamixer --get-volume", function(stdout)
 		vol_osd_slider.value = tonumber(stdout:match("%d+"))
 	end)
 end
 awesome.connect_signal("widget::update_vol", function()
 	update_volume()
-  end)
-  
+end)
+
 update_volume()
 vol_osd_slider:connect_signal("property::value", function(_, new_value)
 	local volume_level = vol_osd_slider:get_value()
@@ -121,7 +121,7 @@ local volume_osd_height = dpi(250)
 local volume_osd_width = dpi(250)
 
 screen.connect_signal("request::desktop_decoration", function(s)
-	local s = s or {}
+	s = s or {}
 	s.show_vol_osd = false
 
 	s.volume_osd_overlay = awful.popup({
@@ -209,20 +209,30 @@ local placement_placer = function()
 end
 
 -- Get Vol
-function get_vol()
-	script = 'pamixer --get-volume'
-	script2 = 'pamixer --get-mute'
-	awful.spawn.easy_async_with_shell(script, function(vol)
- 	awful.spawn.easy_async_with_shell(script2, function(is_mute)
-	 if is_mute:match("true") then muted = true else
-		 muted = false
-	 end
+local function get_vol()
+	local script = "pamixer --get-volume"
+	local script2 = "pamixer --get-mute"
+	awful.spawn.easy_async_with_shell(script, function()
+		awful.spawn.easy_async_with_shell(script2, function(is_mute)
+			local muted
 
-	 if muted then vol_osd_slider.bar_active_color = beautiful.xcolor10 vol_osd_slider.handle_color = beautiful.xcolor10 icon3.image = beautiful.volume_off else
-		 vol_osd_slider.bar_active_color = beautiful.xcolor2 vol_osd_slider.handle_color = beautiful.xcolor2 icon3.image = beautiful.volume_on
-	 end
- end)
-end)
+			if is_mute:match("true") then
+				muted = true
+			else
+				muted = false
+			end
+
+			if muted then
+				vol_osd_slider.bar_active_color = beautiful.xcolor10
+				vol_osd_slider.handle_color = beautiful.xcolor10
+				icon3.image = beautiful.volume_off
+			else
+				vol_osd_slider.bar_active_color = beautiful.xcolor2
+				vol_osd_slider.handle_color = beautiful.xcolor2
+				icon3.image = beautiful.volume_on
+			end
+		end)
+	end)
 end
 
 awesome.connect_signal("module::volume_osd:show", function(bool)
@@ -266,4 +276,3 @@ volume.mute = function()
 end
 
 return volume
-

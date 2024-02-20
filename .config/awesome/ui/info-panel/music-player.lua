@@ -75,7 +75,7 @@ local function volume_control()
 	})
 
 	-- Update bar
-	local function set_slider_value(self, volume)
+	local function set_slider_value(_, volume)
 		volume_bar.value = volume * 100
 	end
 
@@ -109,27 +109,27 @@ local function volume_control()
 end
 -- Player's Button
 local toggle = wibox.widget.textbox()
-toggle.font = beautiful.font_name.."26"
+toggle.font = beautiful.font_name .. "26"
 
-toggle:buttons(gears.table.join(
-	awful.button({}, 1, function() playerctl_daemon:play_pause() end)
-))
+toggle:buttons(gears.table.join(awful.button({}, 1, function()
+	playerctl_daemon:play_pause()
+end)))
 
 local next = wibox.widget.textbox()
-next.font = beautiful.font_name.."26"
+next.font = beautiful.font_name .. "26"
 next.markup = "怜"
 
-next:buttons(gears.table.join(
-	awful.button({}, 1, function() playerctl_daemon:next()  end)
-))
+next:buttons(gears.table.join(awful.button({}, 1, function()
+	playerctl_daemon:next()
+end)))
 
 local back = wibox.widget.textbox()
-back.font = beautiful.font_name.."26"
+back.font = beautiful.font_name .. "26"
 back.markup = "玲"
 
-back:buttons(gears.table.join(
-	awful.button({}, 1, function() playerctl_daemon:previous()  end)
-))
+back:buttons(gears.table.join(awful.button({}, 1, function()
+	playerctl_daemon:previous()
+end)))
 
 local function music()
 	return wibox.widget({
@@ -223,7 +223,7 @@ local music_widget = wibox.widget({
 
 --- playerctl
 --- -------------
-playerctl_daemon:connect_signal("metadata", function(_, title, artist, album_path, __, ___, ____)
+playerctl_daemon:connect_signal("metadata", function(_, title, artist, album_path, _, _, _)
 	if title == "" then
 		title = "Nothing Playing"
 	end
@@ -239,13 +239,13 @@ playerctl_daemon:connect_signal("metadata", function(_, title, artist, album_pat
 	music_artist:set_markup_silently(helpers.ui.colorize_text(artist, beautiful.xcolor2))
 end)
 
-playerctl_daemon:connect_signal("playback_status", function(_, playing, __)
+playerctl_daemon:connect_signal("playback_status", function(_, playing, _)
 	if playing then
-		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", beautiful.xcolorO0 )) --"#666c79"
-		toggle.markup = helpers.ui.colorize_text("", beautiful.xcolor2 )
+		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", beautiful.xcolorO0)) --"#666c79"
+		toggle.markup = helpers.ui.colorize_text("󰏤", beautiful.xcolor2)
 	else
-		music_text:set_markup_silently(helpers.ui.colorize_text("Music", beautiful.xcolorO0 ))
-		toggle.markup = helpers.ui.colorize_text("契", beautiful.xcolor2 )
+		music_text:set_markup_silently(helpers.ui.colorize_text("Music", beautiful.xcolorO0))
+		toggle.markup = helpers.ui.colorize_text("󰐊", beautiful.xcolor2)
 	end
 end)
 

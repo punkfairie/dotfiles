@@ -55,9 +55,9 @@ naughty.connect_signal("request::display", function(n)
 	--- table of icons
 	local app_icons = {
 		["firefox"] = { icon = "" },
-		["discord"] = { icon = "ﭮ" },
-		["music"] = { icon = "ﱘ" },
-		["screenshot tool"] = { icon = "" },
+		["discord"] = { icon = "󰙯" },
+		["music"] = { icon = "󰝚" },
+		["screenshot tool"] = { icon = "󰊓" },
 	}
 
 	local app_icon = nil
@@ -66,7 +66,7 @@ naughty.connect_signal("request::display", function(n)
 	if app_icons[tolow(n.app_name)] then
 		app_icon = app_icons[tolow(n.app_name)].icon
 	else
-		app_icon = ""
+		app_icon = "󰂚"
 	end
 
 	local app_icon_n = wibox.widget({
@@ -121,30 +121,27 @@ naughty.connect_signal("request::display", function(n)
 		layout = wibox.layout.stack,
 	})
 
-	local app_name = wibox.widget {
-		font = beautiful.font_name.."Bold 12",
+	local app_name = wibox.widget({
+		font = beautiful.font_name .. "Bold 12",
 		text = n.app_name:gsub("^%l", string.upper),
 		widget = wibox.widget.textbox,
-	}
+	})
 
-	local dismiss = wibox.widget {
+	local dismiss = wibox.widget({
 		{
-		font = beautiful.font_name.."Bold 10",
-		markup = helpers.ui.colorize_text("", beautiful.xcolor2),
-		widget = wibox.widget.textbox,
-		valign = center,
-		align = center,
+			font = beautiful.font_name .. "Bold 10",
+			markup = helpers.ui.colorize_text("", beautiful.xcolor2),
+			widget = wibox.widget.textbox,
+			valign = "center",
+			align = "center",
 		},
 		margins = dpi(4),
 		widget = wibox.container.margin,
-	}
-	
-	dismiss:buttons(gears.table.join(
-	awful.button({ }, 1, function()
-		n:destroy(naughty.notification_closed_reason.dismissed_by_user)
-	end)
-	))
+	})
 
+	dismiss:buttons(gears.table.join(awful.button({}, 1, function()
+		n:destroy(naughty.notification_closed_reason.dismissed_by_user)
+	end)))
 
 	local timeout_arc = wibox.widget({
 		widget = wibox.container.arcchart,
@@ -173,7 +170,7 @@ naughty.connect_signal("request::display", function(n)
 		dismiss,
 	})
 	local title2 = wibox.widget.textbox()
-	title2.font = beautiful.font_name.."Bold 11"
+	title2.font = beautiful.font_name .. "Bold 11"
 	title2.text = n.title
 
 	local title = wibox.widget({
@@ -185,7 +182,7 @@ naughty.connect_signal("request::display", function(n)
 	})
 
 	local message2 = wibox.widget.textbox()
-	message2.font = beautiful.font_name.."11"
+	message2.font = beautiful.font_name .. "11"
 	message2.text = n.message
 
 	local message = wibox.widget({
@@ -207,7 +204,7 @@ naughty.connect_signal("request::display", function(n)
 				{
 					{
 						id = "text_role",
-						font = "FiraCode Nerd Font 10",
+						font = beautiful.font_name .. "10",
 						widget = wibox.widget.textbox,
 					},
 					left = dpi(6),
@@ -232,8 +229,6 @@ naughty.connect_signal("request::display", function(n)
 		notification = n,
 		type = "notification",
 		cursor = "hand2",
-		--- For antialiasing: The real shape is set in widget_template
-		--shape = gears.shape.rectangle,
 		shape = helpers.ui.rrect(12),
 		border_color = beautiful.xcolorS0,
 		border_width = dpi(3),
@@ -299,7 +294,7 @@ naughty.connect_signal("request::display", function(n)
 	})
 
 	--- Don't destroy the notification on click ---
-    widget.buttons = {}
+	widget.buttons = {}
 
 	--- Disables Hand Cursor in Whole wibox ---
 	helpers.ui.add_hover_cursor(widget, "left_ptr")
@@ -307,13 +302,12 @@ naughty.connect_signal("request::display", function(n)
 	--- Adds Close Cursor on Close Sign ---
 	helpers.ui.add_hover_cursor(dismiss, "hand2")
 
-
 	local anim = animation:new({
 		duration = n.timeout,
 		target = 100,
-	    easing = animation.easing.linear,
+		easing = animation.easing.linear,
 		reset_on_stop = false,
-		update = function(self, pos)
+		update = function(_, pos)
 			timeout_arc.value = pos
 		end,
 	})
@@ -331,7 +325,7 @@ naughty.connect_signal("request::display", function(n)
 	widget:connect_signal("mouse::leave", function()
 		anim:start()
 	end)
-	
+
 	local notification_height = widget.height + beautiful.notification_spacing
 	local total_notifications_height = #naughty.active * notification_height
 
@@ -342,10 +336,10 @@ naughty.connect_signal("request::display", function(n)
 	anim:start()
 
 	--- Destroy popups notifs if dont_disturb mode is on
+	---@diagnostic disable-next-line: undefined-field
 	if _G.dnd_state then
 		naughty.destroy_all_notifications(nil, 1)
 	end
 end)
 
 require(... .. ".error")
---require(... .. ".playerctl")

@@ -1,6 +1,5 @@
-local awful = require "awful"
-local gears = require "gears"
-
+local awful = require("awful")
+local gears = require("gears")
 
 local function get_cpu()
 	local script = [[
@@ -13,11 +12,12 @@ local function get_cpu()
 	end)
 end
 
-gears.timer {
+gears.timer({
 	timeout = 1,
 	call_now = true,
 	autostart = true,
 	callback = function()
 		get_cpu()
-	end
-}
+	end,
+})
+

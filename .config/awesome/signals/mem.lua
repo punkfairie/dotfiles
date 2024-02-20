@@ -1,6 +1,5 @@
-local awful = require "awful"
-local gears = require "gears"
-
+local awful = require("awful")
+local gears = require("gears")
 
 local function get_mem()
 	local script = [[
@@ -13,11 +12,12 @@ local function get_mem()
 	end)
 end
 
-gears.timer {
+gears.timer({
 	timeout = 4,
 	call_now = true,
 	autostart = true,
 	callback = function()
 		get_mem()
-	end
-}
+	end,
+})
+

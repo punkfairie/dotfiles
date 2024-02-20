@@ -1,12 +1,12 @@
-local awful = require "awful"
-local gears = require "gears"
+local awful = require("awful")
+local gears = require("gears")
 
-local user_vars = require "user_variables"
+local user_vars = require("user_variables")
 local which_disk = user_vars.widget.disk.name
 
 local function get_disk()
 	local script = [[
-	df -kH -B 1MB ]]..which_disk..[[ | tail -1 | awk '{printf $5}'
+	df -kH -B 1MB ]] .. which_disk .. [[ | tail -1 | awk '{printf $5}'
 	]]
 
 	awful.spawn.easy_async_with_shell(script, function(disk_perc)
@@ -15,11 +15,11 @@ local function get_disk()
 	end)
 end
 
-gears.timer {
+gears.timer({
 	timeout = 2000,
 	call_now = true,
 	autostart = true,
 	callback = function()
 		get_disk()
-	end
-}
+	end,
+})

@@ -3,7 +3,6 @@ local wibox = require("wibox")
 local gshape = require("gears.shape")
 local gmatrix = require("gears.matrix")
 local ipairs = ipairs
-local table = table
 local capi = { mouse = mouse }
 
 local _ui = {}
@@ -94,8 +93,8 @@ local function _get_widget_geometry(_hierarchy, widget)
 	end
 end
 
-function _ui.get_widget_geometry(wibox, widget)
-	return _get_widget_geometry(wibox._drawable._widget_hierarchy, widget)
+function _ui.get_widget_geometry(_wibox, widget)
+	return _get_widget_geometry(_wibox._drawable._widget_hierarchy, widget)
 end
 
 function _ui.screen_mask(s, bg)
@@ -110,18 +109,18 @@ function _ui.screen_mask(s, bg)
 	return mask
 end
 
-function _ui.grouping_widget(w1,w2,dpi1)
-	local container = wibox.widget {
+function _ui.grouping_widget(w1, w2, dpi1)
+	local container = wibox.widget({
 		w1,
 		{
 			nil,
 			w2,
-			expand = 'none',
+			expand = "none",
 			layout = wibox.layout.flex.vertical,
 		},
 		spacing = dpi1,
 		layout = wibox.layout.fixed.horizontal,
-	}
+	})
 
 	return container
 end

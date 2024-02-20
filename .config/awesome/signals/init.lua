@@ -1,4 +1,4 @@
-req = {
+local req = {
 	"volume",
 	"mic",
 	"cpu",
@@ -10,5 +10,5 @@ req = {
 }
 
 for _, x in pairs(req) do
-	require("signals."..x)
+	require("signals." .. x)
 end

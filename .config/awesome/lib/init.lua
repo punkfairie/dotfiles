@@ -1,3 +1,4 @@
-require (... .. ".better-resize")
-require (... .. ".savefloats")
-require (... .. ".exit-screen")
+require(... .. ".better-resize")
+require(... .. ".savefloats")
+require(... .. ".exit-screen")
+
