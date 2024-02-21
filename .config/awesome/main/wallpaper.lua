@@ -1,6 +1,6 @@
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 
 local function set_wall(s)
 	awful.wallpaper({

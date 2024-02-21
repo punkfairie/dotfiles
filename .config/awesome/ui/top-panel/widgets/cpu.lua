@@ -1,6 +1,6 @@
 local wibox = require("wibox")
-local beautiful = require("beautiful")
-local dpi = beautiful.xresources.apply_dpi
+local beautiful = require("beautiful").get()
+local dpi = require("beautiful.xresources").apply_dpi
 
 -- Icon
 local icon = wibox.widget.textbox()
@@ -15,7 +15,13 @@ cpu.align = "center"
 
 local function get_val()
 	awesome.connect_signal("signal::cpu", function(cpu_perc)
-		cpu.markup = tonumber(cpu_perc) .. "%"
+		if cpu_perc then
+			cpu_perc = tonumber(cpu_perc)
+		else
+			cpu_perc = "?"
+		end
+
+		cpu.markup = cpu_perc .. "%"
 	end)
 end
 

@@ -1,11 +1,11 @@
 local gears = require("gears")
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local helpers = require("helpers")
 local naughty = require("naughty")
 local rubato = require("lib.rubato")
-local dpi = beautiful.xresources.apply_dpi
+local dpi = require("beautiful.xresources").apply_dpi
 
 local notifs_text = wibox.widget({
 	font = beautiful.font .. " Bold 20",

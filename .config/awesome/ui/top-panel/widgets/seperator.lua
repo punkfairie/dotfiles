@@ -1,4 +1,4 @@
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local wibox = require("wibox")
 
 local seperator = wibox.widget.textbox()

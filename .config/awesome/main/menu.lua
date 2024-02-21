@@ -1,6 +1,6 @@
 ---@diagnostic disable: undefined-global
 local awful = require("awful")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local gears = require("gears")
 local wibox = require("wibox")
 local helpers = require("helpers")

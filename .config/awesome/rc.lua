@@ -1,7 +1,6 @@
 pcall(require, "luarocks.loader")
 
 local gears = require("gears")
-local awful = require("awful")
 local beautiful = require("beautiful")
 
 require("awful.autofocus")
@@ -20,6 +19,3 @@ require("signals")
 
 -- Ui/Panels --
 require("ui")
-
--- Autostart --
-awful.spawn.with_shell("picom --experimental-backends")

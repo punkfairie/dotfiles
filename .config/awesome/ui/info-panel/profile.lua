@@ -1,10 +1,10 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local gears = require("gears")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local helpers = require("helpers")
 
-local dpi = beautiful.xresources.apply_dpi
+local dpi = require("beautiful.xresources").apply_dpi
 local user1 = os.getenv("USER")
 
 -- Create Widgets

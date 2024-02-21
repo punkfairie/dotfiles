@@ -1,7 +1,7 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local gears = require("gears")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local helpers = require("helpers")
 
 -- Menu

@@ -1,6 +1,6 @@
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 require("awful.hotkeys_popup.keys")
 
 -- Clock

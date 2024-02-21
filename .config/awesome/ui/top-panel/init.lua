@@ -2,9 +2,9 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local widgets = require("ui.top-panel.widgets")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 
-local dpi = beautiful.xresources.apply_dpi
+local dpi = require("beautiful.xresources").apply_dpi
 
 local clock = widgets.clock
 local date = widgets.date
@@ -117,4 +117,3 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		height = dpi(2),
 	})
 end)
-

@@ -1,6 +1,6 @@
 local wibox = require("wibox")
-local beautiful = require("beautiful")
-local dpi = beautiful.xresources.apply_dpi
+local beautiful = require("beautiful").get()
+local dpi = require("beautiful.xresources").apply_dpi
 
 -- Icon
 local icon = wibox.widget.textbox()

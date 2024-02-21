@@ -1,7 +1,7 @@
 local gears = require("gears")
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local helpers = require("helpers")
 
 local slider = wibox.widget({

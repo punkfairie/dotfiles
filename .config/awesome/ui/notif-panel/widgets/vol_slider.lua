@@ -1,9 +1,9 @@
 local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local helpers = require("helpers")
-local dpi = beautiful.xresources.apply_dpi
+local dpi = require("beautiful.xresources").apply_dpi
 
 local slider = wibox.widget({
 	bar_shape = helpers.ui.rrect(9),

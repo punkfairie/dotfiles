@@ -1,8 +1,6 @@
 local awful = require("awful")
-local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
-beautiful.init(gears.filesystem.get_configuration_dir() .. "themes/catppuccin/theme.lua")
+local beautiful = require("beautiful").get()
 local bling = require("lib.bling")
 
 local keys = require("config").keys

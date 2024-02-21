@@ -12,7 +12,7 @@ local keys = config.keys
 awful.keyboard.append_global_keybindings({
 	awful.key({ keys.mod, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
 	awful.key({ keys.mod, "Shift" }, "q", awesome.quit, { description = "quit awesome", group = "awesome" }),
-	awful.key({}, "Nothing Set", function()
+	awful.key({ keys.mod, "Control", "Shift" }, "x", function()
 		awful.prompt.run({
 			prompt = "Run Lua code: ",
 			textbox = awful.screen.focused().promptbox.widget,

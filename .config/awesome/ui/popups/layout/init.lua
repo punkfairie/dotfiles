@@ -1,6 +1,6 @@
 local awful = require("awful")
 local gears = require("gears")
-local beautiful = require("beautiful")
+local beautiful = require("beautiful").get()
 local wibox = require("wibox")
 
 local keys = require("config").keys
@@ -102,7 +102,7 @@ awful.keygrabber({
 		layout_popup.visible = false
 	end,
 	export_keybindings = true,
-	release_event = "release",
+	stop_event = "release",
 	stop_key = { "Escape", "Super_L", "Super_R" },
 	keybindings = {
 		{

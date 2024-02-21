@@ -1,8 +1,8 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local gears = require("gears")
-local beautiful = require("beautiful")
-local dpi = beautiful.xresources.apply_dpi
+local beautiful = require("beautiful").get()
+local dpi = require("beautiful.xresources").apply_dpi
 local filesystem = gears.filesystem
 local json = require("lib.json")
 local config = require("config")
@@ -190,6 +190,11 @@ local url = (
 awful.widget.watch(string.format(GET_FORECAST_CMD, url), 600, function(_, stdout, stderr)
 	if stderr == "" then
 		local result = json.decode(stdout)
+
+		if not result.current then
+			return
+		end
+
 		-- Current weather setup
 		local icon = current_weather_widget:get_children_by_id("icon")[1]
 		local description = current_weather_widget:get_children_by_id("description")[1]
