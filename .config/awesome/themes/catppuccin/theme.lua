@@ -1,70 +1,54 @@
 ---------------------------
 -- Default awesome theme --
 ---------------------------
-local gears = require("gears")
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 local gfs = require("gears.filesystem")
+local palette = require("lib.catppuccin.catppuccin.macchiato")
 
 local themes_path = gfs.get_configuration_dir() .. "themes/"
 local helpers = require("helpers")
 
 local theme = {}
 
--- Moche Color Theme from "github.com/catppuccin/catppuccin" --
-
 -- Transparent Color --
 theme.transparent = "#00000000"
 
 -- Base --
-theme.xcolorcrust = "#11111b"
-theme.xcolormantle = "#181825"
-theme.xcolorbase = "#1E1E2E"
+theme.xcolorcrust = palette.crust.hex
+theme.xcolormantle = palette.mantle.hex
+theme.xcolorbase = palette.base.hex
 
 -- Surface --
-theme.xcolorS0 = "#313244"
-theme.xcolorS1 = "#45475a"
-theme.xcolorS2 = "#585b70"
+theme.xcolorS0 = palette.surface0.hex
+theme.xcolorS1 = palette.surface1.hex
+theme.xcolorS2 = palette.surface2.hex
 
 -- Overlay --
-theme.xcolorO0 = "#6c7086"
-theme.xcolorO1 = "#7f849c"
-theme.xcolorO2 = "#585b70"
+theme.xcolorO0 = palette.overlay0.hex
+theme.xcolorO1 = palette.overlay1.hex
+theme.xcolorO2 = palette.overlay2.hex
 
 -- Text --
-theme.xcolorT0 = "#a6adc8"
-theme.xcolorT1 = "#bac2de"
-theme.xcolorT2 = "#cdd6f4"
+theme.xcolorT0 = palette.text.hex
+theme.xcolorT1 = palette.subtext0.hex
+theme.xcolorT2 = palette.subtext1.hex
 
--- Lavender --
-theme.xcolor1 = "#b4befe"
--- Blue --
-theme.xcolor2 = "#89b4fa"
--- Sapphire --
-theme.xcolor3 = "#74c7ec"
--- Sky --
-theme.xcolor4 = "#89dceb"
--- Teal --
-theme.xcolor5 = "#94e2d5"
--- Green --
-theme.xcolor6 = "#a6e3a1"
--- Yellow --
-theme.xcolor7 = "#f9e2af"
--- Peach --
-theme.xcolor8 = "#fab387"
--- Maroon --
-theme.xcolor9 = "#eba0ac"
--- Red --
-theme.xcolor10 = "#f38ba8"
--- Mauve --
-theme.xcolor11 = "#cba6f7"
--- Pink --
-theme.xcolor12 = "#f5c2e7"
--- Flamingo --
-theme.xcolor13 = "#f2cdcd"
--- Rosewater --
-theme.xcolor14 = "#f5e0dc"
+theme.xcolor1 = palette.lavender.hex
+theme.xcolor2 = palette.blue.hex
+theme.xcolor3 = palette.sapphire.hex
+theme.xcolor4 = palette.sky.hex
+theme.xcolor5 = palette.teal.hex
+theme.xcolor6 = palette.green.hex
+theme.xcolor7 = palette.yellow.hex
+theme.xcolor8 = palette.peach.hex
+theme.xcolor9 = palette.maroon.hex
+theme.xcolor10 = palette.peach.hex
+theme.xcolor11 = palette.mauve.hex
+theme.xcolor12 = palette.pink.hex
+theme.xcolor13 = palette.flamingo.hex
+theme.xcolor14 = palette.rosewater.hex
 
 theme.music = themes_path .. "catppuccin/assets/music.png"
 theme.volume_on = themes_path .. "catppuccin/assets/volume-on.png"
