@@ -54,3 +54,17 @@ Videos/
 .config/fish/fish_variables
 .local/
 .config/autostart/
+.config/gh/hosts.yml
+.config/cheat/cheatsheets/community/
+.config/copyq/copyq_tab_JmNsaXBib2FyZA==.dat
+.tmux/plugins/
+.config/copyq/copyq-commands.ini
+.config/copyq/copyq-filter.ini
+.config/copyq/
+.config/lazygit/state.yml
+data/
+.volta/
+.mozilla/
+.dot/
+.luarocks/lib/luarocks/rocks-5.4/manifest
+.config/pulse/cookie

@@ -31,3 +31,6 @@
 [submodule ".config/awesome/lib/catppuccin"]
 	path = .config/awesome/lib/catppuccin
 	url = git@github.com:catppuccin/lua.git
+[submodule ".themes/bat/catppuccin"]
+	path = .themes/bat/catppuccin
+	url = git@github.com:catppuccin/bat.git
