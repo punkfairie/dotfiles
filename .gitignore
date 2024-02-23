@@ -69,3 +69,4 @@ data/
 .luarocks/lib/luarocks/rocks-5.4/manifest
 .config/pulse/cookie
 .gnupg/
+.config/nvim/lazy-lock.json
