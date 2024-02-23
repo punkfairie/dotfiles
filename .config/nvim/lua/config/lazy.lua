@@ -35,6 +35,9 @@ require("lazy").setup({
     -- linting
     { import = "lazyvim.plugins.extras.linting.eslint" },
 
+    -- lsp
+    { import = "lazyvim.plugins.extras.lsp.none-ls" },
+
     -- test
     { import = "lazyvim.plugins.extras.test.core" },
 

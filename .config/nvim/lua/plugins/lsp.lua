@@ -3,14 +3,23 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        -- web
-        "deno",
-        "prettier",
+        -- general
+        "commitlint",
+
+        -- data/conf
+        "yamllint",
 
         -- shell
         "shellcheck",
         "shfmt",
       },
+    },
+  },
+
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      automatic_installation = true,
     },
   },
 
@@ -27,6 +36,7 @@ return {
         -- web
         html = {},
         cssls = {},
+        denols = {},
         volar = {
           filetypes = {
             "typescript",
@@ -88,45 +98,6 @@ return {
 
         -- shell
         bashls = {},
-      },
-    },
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        -- general
-        "comment",
-
-        -- git
-        "diff",
-        "git_config",
-        "git_rebase",
-        "gitattributes",
-        "gitcommit",
-        "gitignore",
-
-        -- data/conf
-        "ini",
-        "ssh_config",
-        "toml",
-
-        -- web
-        "html",
-        "css",
-        "scss",
-        "javascript",
-        "jsdoc",
-        "vue",
-
-        -- php
-        "php",
-        "phpdoc",
-
-        -- shell
-        "bash",
-        "fish",
       },
     },
   },
