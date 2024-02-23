@@ -68,3 +68,4 @@ data/
 .dot/
 .luarocks/lib/luarocks/rocks-5.4/manifest
 .config/pulse/cookie
+.gnupg/
