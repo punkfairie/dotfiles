@@ -63,16 +63,8 @@ local instance = nil
 
 local ANIMATION_FRAME_DELAY = 5
 
-local function micro_to_milli(micro)
-	return micro / 1000
-end
-
 local function second_to_micro(sec)
 	return sec * 1000000
-end
-
-local function second_to_milli(sec)
-	return sec * 1000
 end
 
 function animation:start(args)
@@ -122,8 +114,8 @@ function animation:stop()
 	self:emit_signal("stopped")
 end
 
-function animation:abort(reset)
-	animation:stop(reset)
+function animation:abort()
+	animation:stop()
 	self:emit_signal("aborted")
 end
 
@@ -183,6 +175,7 @@ local function new()
 	ret._private.instant = false
 
 	GLib.timeout_add(GLib.PRIORITY_DEFAULT, ANIMATION_FRAME_DELAY, function()
+		---@diagnostic disable-next-line: redefined-local
 		for index, animation in ipairs(ret._private.animations) do
 			if animation.state == true then
 				-- compute delta time

@@ -7,9 +7,13 @@ local capi = { mouse = mouse }
 
 local _ui = {}
 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
 function _ui.colorize_text(text, color)
 	return "<span foreground='" .. color .. "'>" .. text .. "</span>"
 end
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 function _ui.add_hover_cursor(w, hover_cursor)
 	local original_cursor = "left_ptr"
@@ -29,6 +33,8 @@ function _ui.add_hover_cursor(w, hover_cursor)
 	end)
 end
 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
 function _ui.vertical_pad(height)
 	return wibox.widget({
 		forced_height = height,
@@ -36,12 +42,16 @@ function _ui.vertical_pad(height)
 	})
 end
 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
 function _ui.horizontal_pad(width)
 	return wibox.widget({
 		forced_width = width,
 		layout = wibox.layout.fixed.horizontal,
 	})
 end
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 function _ui.rrect(radius)
 	return function(cr, width, height)
@@ -55,17 +65,23 @@ function _ui.pie(width, height, start_angle, end_angle, radius)
 	end
 end
 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
 function _ui.prgram(height, base)
 	return function(cr, width)
 		gshape.parallelogram(cr, width, height, base)
 	end
 end
 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
 function _ui.prrect(radius, tl, tr, br, bl)
 	return function(cr, width, height)
 		gshape.partially_rounded_rect(cr, width, height, tl, tr, br, bl, radius)
 	end
 end
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 function _ui.custom_shape(cr, width, height)
 	cr:move_to(0, height / 25)
@@ -76,6 +92,8 @@ function _ui.custom_shape(cr, width, height)
 	cr:line_to(0, height)
 	cr:close_path()
 end
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 local function _get_widget_geometry(_hierarchy, widget)
 	local width, height = _hierarchy:get_size()
@@ -97,6 +115,8 @@ function _ui.get_widget_geometry(_wibox, widget)
 	return _get_widget_geometry(_wibox._drawable._widget_hierarchy, widget)
 end
 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
 function _ui.screen_mask(s, bg)
 	local mask = wibox({
 		visible = false,
@@ -108,6 +128,8 @@ function _ui.screen_mask(s, bg)
 	mask.bg = bg
 	return mask
 end
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 function _ui.grouping_widget(w1, w2, dpi1)
 	local container = wibox.widget({
@@ -124,5 +146,7 @@ function _ui.grouping_widget(w1, w2, dpi1)
 
 	return container
 end
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
 return _ui

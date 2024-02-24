@@ -45,7 +45,7 @@ ruled.client.connect_signal("request::rules", function()
 
 	ruled.client.append_rule({
 		rule = { instance = "bf1.exe" },
-		properties = { shape = helpers.ui.rrect(0), fullscreen = true, tag = "", switchtotag = true },
+		properties = { shape = helpers.ui.rrect(0), fullscreen = true, tag = "󰍹", switchtotag = true },
 	})
 	ruled.client.append_rule({
 		rule = { instance = "wine" },

@@ -7,7 +7,7 @@ M.keys = {
 
 M.apps = {
 	terminal = "wezterm",
-	launcher = "rofi -no-lazy-grab -show drun -theme ~/.config/rofi/launcher.rasi",
+	launcher = "rofi -show drun -theme ~/.config/rofi/launcher.rasi",
 	browser = "firefox",
 	file_manager = "thunar",
 	editor = os.getenv("EDITOR") or "nvim",

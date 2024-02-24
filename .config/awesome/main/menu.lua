@@ -1,6 +1,5 @@
----@diagnostic disable: undefined-global
 local awful = require("awful")
-local beautiful = require("beautiful").get()
+local theme = require("beautiful").get()
 local gears = require("gears")
 local wibox = require("wibox")
 local helpers = require("helpers")
@@ -16,7 +15,7 @@ rofi.timer = gears.timer({
 	timeout = 0.1,
 	single_shot = true,
 	callback = function()
-		awful.spawn("rofi -show drun -theme ~/.config/rofi/launcher.rasi")
+		awful.spawn(apps.launcher)
 	end,
 })
 
@@ -77,10 +76,10 @@ menu.mainmenu = awful.menu({
 -- apply rounded corners to menus when picom isn't available, thanks to u/signalsourcesexy
 -- also applies antialiasing! - By me.
 menu.mainmenu.wibox.shape = helpers.ui.rrect(10)
-menu.mainmenu.wibox.bg = beautiful.bg_normal .. "00"
+menu.mainmenu.wibox.bg = theme.bg_normal .. "00"
 menu.mainmenu.wibox:set_widget(wibox.widget({
 	menu.mainmenu.wibox.widget,
-	bg = beautiful.bg_normal,
+	bg = theme.bg_normal,
 	shape = helpers.ui.rrect(0),
 	widget = wibox.container.background,
 }))
@@ -94,11 +93,11 @@ function awful.menu.new(...)
 	local ret = awful.menu.original_new(...)
 
 	ret.wibox.shape = helpers.ui.rrect(10)
-	ret.wibox.bg = beautiful.bg_normal .. "00"
+	ret.wibox.bg = theme.bg_normal .. "00"
 	ret.wibox:set_widget(wibox.widget({
 		ret.wibox.widget,
 		widget = wibox.container.background,
-		bg = beautiful.xcolorbase,
+		bg = theme.xcolorbase,
 		shape = helpers.ui.rrect(0),
 	}))
 

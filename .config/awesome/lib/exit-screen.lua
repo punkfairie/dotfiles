@@ -1,22 +1,24 @@
 local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
+local beautiful = require("beautiful")
 local helpers = require("helpers")
+
+local dpi = beautiful.xresources.apply_dpi
+local theme = beautiful.get()
 
 --- Minimalist Exit Screen
 --- ~~~~~~~~~~~~~~~~~~~~~~
 
 --- Icons
-local icon_font = beautiful.font_name .. "bold 45"
+local icon_font = theme.font_name .. "bold 45"
 local poweroff_text_icon = ""
 local reboot_text_icon = ""
 local suspend_text_icon = ""
 local exit_text_icon = "󰗼"
 local lock_text_icon = ""
 
-local button_bg = beautiful.xcolorbase
+local button_bg = theme.xcolorbase
 local button_size = dpi(120)
 
 --- Commands
@@ -50,7 +52,7 @@ local create_button = function(symbol, hover_color, _, command)
 		align = "center",
 		valign = "center",
 		font = icon_font,
-		markup = helpers.ui.colorize_text(symbol, beautiful.xcolorS0),
+		markup = helpers.ui.colorize_text(symbol, theme.xcolorS0),
 		widget = wibox.widget.textbox(),
 	})
 
@@ -64,8 +66,8 @@ local create_button = function(symbol, hover_color, _, command)
 		forced_height = button_size,
 		forced_width = button_size,
 		border_width = dpi(8),
-		border_color = beautiful.xcolorS0,
-		shape = helpers.ui.rrect(beautiful.border_width * 2),
+		border_color = theme.xcolorS0,
+		shape = helpers.ui.rrect(theme.border_width * 2),
 		bg = button_bg,
 		widget = wibox.container.background,
 	})
@@ -79,8 +81,8 @@ local create_button = function(symbol, hover_color, _, command)
 		button.border_color = hover_color
 	end)
 	button:connect_signal("mouse::leave", function()
-		icon.markup = helpers.ui.colorize_text(icon.text, beautiful.xcolorS0)
-		button.border_color = beautiful.xcolorS0
+		icon.markup = helpers.ui.colorize_text(icon.text, theme.xcolorS0)
+		button.border_color = theme.xcolorS0
 	end)
 
 	helpers.ui.add_hover_cursor(button, "hand1")
@@ -89,11 +91,11 @@ local create_button = function(symbol, hover_color, _, command)
 end
 
 --- Create the buttons
-local poweroff = create_button(poweroff_text_icon, beautiful.xcolor10, "Poweroff", poweroff_command)
-local reboot = create_button(reboot_text_icon, beautiful.xcolor6, "Reboot", reboot_command)
-local suspend = create_button(suspend_text_icon, beautiful.xcolor8, "Suspend", suspend_command)
-local exit = create_button(exit_text_icon, beautiful.xcolor2, "Exit", exit_command)
-local lock = create_button(lock_text_icon, beautiful.xcolor12, "Lock", lock_command)
+local poweroff = create_button(poweroff_text_icon, theme.xcolor10, "Poweroff", poweroff_command)
+local reboot = create_button(reboot_text_icon, theme.xcolor6, "Reboot", reboot_command)
+local suspend = create_button(suspend_text_icon, theme.xcolor8, "Suspend", suspend_command)
+local exit = create_button(exit_text_icon, theme.xcolor2, "Exit", exit_command)
+local lock = create_button(lock_text_icon, theme.xcolor12, "Lock", lock_command)
 
 local create_exit_screen = function(s)
 	s.exit_screen = wibox({
@@ -101,8 +103,8 @@ local create_exit_screen = function(s)
 		type = "splash",
 		visible = false,
 		ontop = true,
-		bg = beautiful.transparent,
-		fg = beautiful.fg_normal,
+		bg = theme.transparent,
+		fg = theme.fg_normal,
 		height = s.geometry.height,
 		width = s.geometry.width,
 		x = s.geometry.x,
