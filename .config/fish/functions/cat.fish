@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
 
-function cat --wraps cat
+function cat --wraps bat
     bat $argv
 end
