@@ -70,3 +70,4 @@ data/
 .config/pulse/cookie
 .gnupg/
 .config/nvim/lazy-lock.json
+.config/browsh/

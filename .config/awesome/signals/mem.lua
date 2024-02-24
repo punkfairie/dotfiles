@@ -20,4 +20,3 @@ gears.timer({
 		get_mem()
 	end,
 })
-

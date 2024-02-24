@@ -1,4 +1,10 @@
-require(... .. ".layout")
-require(... .. ".notifications")
-require(... .. ".scratchpad")
-require(... .. ".volume")
+local req = {
+	"layout",
+	"notifications",
+	"scratchpad",
+	"volume",
+}
+
+for _, x in pairs(req) do
+	require(... .. "." .. x)
+end

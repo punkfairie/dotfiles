@@ -1,49 +1,16 @@
--- Standard awesome library --
 local awful = require("awful")
 local wibox = require("wibox")
 local widgets = require("ui.top-panel.widgets")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
 
-local dpi = require("beautiful.xresources").apply_dpi
-
-local clock = widgets.clock
-local date = widgets.date
-local cpu = widgets.cpu
-local disk = widgets.disk
-local keyboard = widgets.keyboard
-local mem = widgets.mem
-local menu = widgets.menu
-local systray = widgets.systray
-local audio = widgets.audio
-local seperator = widgets.seperator
-local layoutbox = widgets.layoutbox
-
-local function create_icon(i, c) --Icon Creation
-	local widget = {
-		{
-			font = beautiful.font_name .. "12.5",
-			text = " " .. i,
-			widget = wibox.widget.textbox,
-		},
-		fg = c,
-		widget = wibox.container.background,
-	}
-	return widget
-end
-
--- Create Icons with Color --
-local calendar_icon = create_icon("", beautiful.xcolor5)
-local clock_icon = create_icon("", beautiful.xcolor12)
-local keyboard_icon = create_icon("", beautiful.xcolor4)
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 screen.connect_signal("request::desktop_decoration", function(s)
-	-- Create Clock with Colerfull Widget --
 	local clockdate = wibox.widget({
 		layout = wibox.layout.fixed.horizontal,
-		calendar_icon,
-		date,
-		clock_icon,
-		clock, -- Middle widget
+		widgets.date,
+		widgets.clock,
 	})
 
 	local tasklist = wibox.widget({
@@ -51,7 +18,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 			layout = wibox.layout.fixed.horizontal,
 			s.tasklist, -- needs to be here (under the screen.connect_signal) bc of the s
 		},
-		forced_width = 300,
+		forced_width = dpi(300),
 		layout = wibox.layout.fixed.horizontal,
 	})
 
@@ -66,16 +33,16 @@ screen.connect_signal("request::desktop_decoration", function(s)
 			{
 				{ -- Left widgets
 					layout = wibox.layout.fixed.horizontal,
-					menu,
-					seperator,
+					widgets.menu,
+					widgets.seperator,
 					s.taglist,
-					seperator,
+					widgets.seperator,
 					tasklist,
 				},
-				left = 5, --Padding
+				left = dpi(5),
 				right = 0,
-				top = 2,
-				bottom = 2,
+				top = dpi(2),
+				bottom = dpi(2),
 				layout = wibox.container.margin,
 			},
 			{
@@ -85,35 +52,34 @@ screen.connect_signal("request::desktop_decoration", function(s)
 				},
 				left = 0,
 				right = 0,
-				top = 1,
-				bottom = 1,
+				top = dpi(1),
+				bottom = dpi(1),
 				layout = wibox.container.margin,
 			},
 			{ -- Right widgets
 				{
 					layout = wibox.layout.fixed.horizontal,
-					systray,
-					seperator,
-					audio,
-					mem,
-					cpu,
-					disk,
-					keyboard_icon,
-					keyboard,
-					layoutbox,
+					widgets.systray,
+					widgets.seperator,
+					widgets.audio,
+					widgets.mem,
+					widgets.cpu,
+					widgets.disk,
+					widgets.layoutbox,
 				},
 				left = 0,
-				right = 2,
-				top = 1,
-				bottom = 1,
+				right = dpi(2),
+				top = dpi(1),
+				bottom = dpi(1),
 				layout = wibox.container.margin,
 			},
 		},
 	})
+
 	s.border2 = awful.wibar({
 		position = "top",
 		screen = s,
-		bg = beautiful.xcolorS0,
+		bg = theme.xcolorS0,
 		height = dpi(2),
 	})
 end)

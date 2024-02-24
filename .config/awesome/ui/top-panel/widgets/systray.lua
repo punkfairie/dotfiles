@@ -1,35 +1,38 @@
 local awful = require("awful")
 local wibox = require("wibox")
-local gears = require("gears")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
 local rubato = require("lib.rubato")
-local dpi = require("beautiful.xresources").apply_dpi
+local helpers = require("helpers")
+local config = require("config")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 local arrow = wibox.widget.textbox()
-arrow.font = beautiful.font_name .. "13"
-arrow.markup = "»"
+arrow.font = helpers.ui.set_font("13")
+arrow.markup = config.icons.arr.r
 
-local mysystray = wibox.widget.systray()
-mysystray.visible = true
-beautiful.systray_icon_spacing = dpi(4)
+local systray = wibox.widget.systray()
+systray.visible = true
+theme.systray_icon_spacing = dpi(4)
 
-local widget = wibox.widget({
+local sys = wibox.widget({
 	widget = wibox.container.constraint,
 	strategy = "max",
-	width = dpi(0),
+	visible = true,
+	width = 0,
 	{
 		widget = wibox.container.margin,
 		margins = dpi(2),
-		mysystray,
+		systray,
 	},
 })
-widget.visible = true
 
 local slide = rubato.timed({
 	duration = 0.9,
 	awestore_compat = true,
 	subscribed = function(pos)
-		widget.width = pos
+		sys.width = pos
 	end,
 })
 
@@ -37,29 +40,25 @@ local value = true
 
 arrow.toggle = function()
 	if value == false then
-		arrow.markup = "»"
+		arrow.markup = config.icons.arr.r
 		value = true
 		slide:set(2)
 	else
-		arrow.markup = "«"
+		arrow.markup = config.icons.arr.l
 		slide:set(500)
 		value = false
 	end
 end
 
-awesome.connect_signal("arrow::toggle", function()
+arrow:add_button(awful.button({}, 1, function()
 	arrow.toggle()
-end)
+end))
 
-arrow:buttons(gears.table.join(awful.button({}, 1, function()
-	awesome.emit_signal("arrow::toggle")
-end)))
-
-local sys = wibox.widget({
+local full = wibox.widget({
 	layout = wibox.layout.fixed.horizontal,
 	arrow,
-	widget,
+	sys,
 	spacing = dpi(2),
 })
 
-return sys
+return full

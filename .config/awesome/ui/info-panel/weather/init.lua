@@ -1,12 +1,14 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local gears = require("gears")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
-local filesystem = gears.filesystem
+local beautiful = require("beautiful")
 local json = require("lib.json")
-local config = require("config")
-local icon_dir = filesystem.get_configuration_dir() .. "ui/info-panel/weather/icons/"
+local helpers = require("helpers")
+
+local config = require("config").widget.weather
+
+local dpi = beautiful.xresources.apply_dpi
+local icon_dir = gears.filesystem.get_configuration_dir() .. "ui/info-panel/weather/icons/"
 
 --- Weather Widget
 --- ~~~~~~~~~~~~~~
@@ -49,13 +51,13 @@ local current_weather_widget = wibox.widget({
 				{
 					id = "description",
 					text = "Mostly cloudy",
-					font = beautiful.font_name .. "Bold 10",
+					font = helpers.ui.set_font("Bold 10"),
 					widget = wibox.widget.textbox,
 				},
 				{
 					id = "humidity",
 					text = "Humidity: 80%",
-					font = beautiful.font_name .. " 9",
+					font = helpers.ui.set_font("9"),
 					widget = wibox.widget.textbox,
 				},
 				layout = wibox.layout.fixed.vertical,
@@ -69,16 +71,16 @@ local current_weather_widget = wibox.widget({
 	{
 		{
 			{
-				id = "tempareture_current",
+				id = "temp_current",
 				markup = "20<sup><span>°</span></sup>",
 				align = "right",
-				font = beautiful.font_name .. "Bold 16",
+				font = helpers.ui.set_font("Bold 16"),
 				widget = wibox.widget.textbox,
 			},
 			{
 				id = "feels_like",
 				markup = "Feels like: 19<sup><span>°</span></sup>",
-				font = beautiful.font_name .. " 8",
+				font = helpers.ui.set_font("8"),
 				widget = wibox.widget.textbox,
 			},
 			spacing = dpi(-6),
@@ -95,7 +97,7 @@ local hourly_widget = function()
 			{
 				id = "time",
 				text = "12PM",
-				font = beautiful.font_name .. " 9",
+				font = helpers.ui.set_font("9"),
 				widget = wibox.widget.textbox,
 			},
 			widget = wibox.container.place,
@@ -113,9 +115,9 @@ local hourly_widget = function()
 		},
 		{
 			{
-				id = "tempareture",
+				id = "temp",
 				markup = "1<sup><span>°</span></sup>",
-				font = beautiful.font_name .. " 9",
+				font = helpers.ui.set_font("9"),
 				widget = wibox.widget.textbox,
 			},
 			widget = wibox.container.place,
@@ -127,12 +129,17 @@ local hourly_widget = function()
 	widget.update = function(result)
 		local time = widget:get_children_by_id("time")[1]
 		local icon = widget:get_children_by_id("icon")[1]
-		local temp = widget:get_children_by_id("tempareture")[1]
+		local temp = widget:get_children_by_id("temp")[1]
+
 		temp:set_markup(math.floor(result.temp) .. "<sup><span>°</span></sup>")
+
 		time:set_text(os.date("%I%p", tonumber(result.dt)))
+
 		icon.image = icon_dir .. icon_map[result.weather[1].icon] .. ".svg"
+
 		icon:emit_signal("widget::redraw_needed")
 	end
+
 	return widget
 end
 
@@ -146,7 +153,7 @@ local hourly_widget_6 = hourly_widget()
 local weather_widget = wibox.widget({
 	{
 		text = "Weather",
-		font = beautiful.font_name .. "Bold 16",
+		font = helpers.ui.set_font("Bold 16"),
 		align = "center",
 		widget = wibox.widget.textbox,
 	},
@@ -165,23 +172,19 @@ local weather_widget = wibox.widget({
 	layout = wibox.layout.fixed.vertical,
 })
 
-local api_key = config.widget.weather.api_key
-local coordinates = config.widget.weather.coordinates
-
 local show_hourly_forecast = true
 local show_daily_forecast = true
-local units = "imperial"
 
 local url = (
 	"https://api.openweathermap.org/data/2.5/onecall"
 	.. "?lat="
-	.. coordinates.lat
+	.. config.coordinates.lat
 	.. "&lon="
-	.. coordinates.lon
+	.. config.coordinates.lon
 	.. "&appid="
-	.. api_key
+	.. config.api_key
 	.. "&units="
-	.. units
+	.. config.units
 	.. "&exclude=minutely"
 	.. (show_hourly_forecast == false and ",hourly" or "")
 	.. (show_daily_forecast == false and ",daily" or "")
@@ -199,14 +202,20 @@ awful.widget.watch(string.format(GET_FORECAST_CMD, url), 600, function(_, stdout
 		local icon = current_weather_widget:get_children_by_id("icon")[1]
 		local description = current_weather_widget:get_children_by_id("description")[1]
 		local humidity = current_weather_widget:get_children_by_id("humidity")[1]
-		local temp_current = current_weather_widget:get_children_by_id("tempareture_current")[1]
+		local temp_current = current_weather_widget:get_children_by_id("temp_current")[1]
 		local feels_like = current_weather_widget:get_children_by_id("feels_like")[1]
+
 		icon.image = icon_dir .. icon_map[result.current.weather[1].icon] .. ".svg"
 		icon:emit_signal("widget::redraw_needed")
+
 		description:set_text(result.current.weather[1].description:gsub("^%l", string.upper))
+
 		humidity:set_text("Humidity: " .. result.current.humidity .. "%")
+
 		temp_current:set_markup(math.floor(result.current.temp) .. "<sup><span>°</span></sup>")
+
 		feels_like:set_markup("Feels like: " .. math.floor(result.current.feels_like) .. "<sup><span>°</span></sup>")
+
 		-- Hourly widget setup
 		hourly_widget_1.update(result.hourly[1])
 		hourly_widget_2.update(result.hourly[2])

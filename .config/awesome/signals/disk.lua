@@ -2,12 +2,10 @@ local awful = require("awful")
 local gears = require("gears")
 
 local config = require("config")
-local which_disk = config.widget.disk.name
+local disk = config.widget.disk.name
 
 local function get_disk()
-	local script = [[
-	df -kH -B 1MB ]] .. which_disk .. [[ | tail -1 | awk '{printf $5}'
-	]]
+	local script = "df -kH -B 1MB" .. disk .. "| tail -1 | awk '{printf $5}'"
 
 	awful.spawn.easy_async_with_shell(script, function(disk_perc)
 		disk_perc = disk_perc:match("%d+")

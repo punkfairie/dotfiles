@@ -1,15 +1,18 @@
 local awful = require("awful")
 local wibox = require("wibox")
-local gears = require("gears")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
+local config = require("config")
+local helpers = require("helpers")
+
+local theme = beautiful.get()
 
 -- Menu
 local menu = wibox.widget.textbox()
-menu.font = beautiful.font_name .. "16"
-menu.markup = "<span foreground='" .. beautiful.xcolor10 .. "'></span>"
+menu.font = helpers.ui.set_font("16")
+menu.markup = helpers.ui.colorize_text(config.icons.power, theme.xcolor10)
 
-menu:buttons(gears.table.join(awful.button({}, 1, function()
+menu:add_button(awful.button({}, 1, function()
 	awesome.emit_signal("module::exit_screen:show")
-end)))
+end))
 
 return menu

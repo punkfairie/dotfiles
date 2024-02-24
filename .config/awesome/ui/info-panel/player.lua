@@ -1,36 +1,39 @@
 local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
+local beautiful = require("beautiful")
+local helpers = require("helpers")
+
+local dpi = beautiful.xresources.apply_dpi
 
 -- Make Widgets
 -----------------
 
 -- Song's Title
 local title = wibox.widget.textbox()
-title.font = beautiful.font_name .. "Medium 16"
+title.font = helpers.ui.set_font("Medium 16")
 title.align = "left"
 title.valign = "bottom"
 
 -- Song's Artist
 local artist = wibox.widget.textbox()
-artist.font = beautiful.font_name .. "Regular 16"
+artist.font = helpers.ui.set_font("Regular 16")
 artist.align = "left"
 artist.valign = "bottom"
 
 -- Song's Length
 local length = wibox.widget.textbox()
-length.font = beautiful.font_name .. "Regular 14"
+length.font = helpers.ui.set_font("Regular 14")
 length.align = "center"
 length.valign = "center"
 
 -- Player's Button
 local toggle = wibox.widget.textbox()
-toggle.font = beautiful.font_name .. "26"
+toggle.font = helpers.ui.set_font("26")
 
 toggle:buttons(gears.table.join(awful.button({}, 1, function()
 	awful.spawn("mpc toggle", false)
+
 	if toggle.markup:match("󰏤") then
 		toggle.markup = "󰐊"
 	else
@@ -39,7 +42,7 @@ toggle:buttons(gears.table.join(awful.button({}, 1, function()
 end)))
 
 local next = wibox.widget.textbox()
-next.font = beautiful.font_name .. "26"
+next.font = helpers.ui.set_font("26")
 next.markup = "󰒭"
 
 next:buttons(gears.table.join(awful.button({}, 1, function()
@@ -47,7 +50,7 @@ next:buttons(gears.table.join(awful.button({}, 1, function()
 end)))
 
 local back = wibox.widget.textbox()
-back.font = beautiful.font_name .. "26"
+back.font = helpers.ui.set_font("26")
 back.markup = "󰒮"
 
 back:buttons(gears.table.join(awful.button({}, 1, function()
@@ -104,7 +107,7 @@ return wibox.widget({
 			spacing = dpi(6),
 			layout = wibox.layout.fixed.vertical,
 		},
-		top = 30,
+		top = dpi(30),
 		bottom = 0,
 		layout = wibox.container.margin,
 	},

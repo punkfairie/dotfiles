@@ -1,23 +1,13 @@
 local bling = require("lib.bling")
-local rubato = require("lib.rubato") -- Totally optional, only required if you are using animations.
+local rubato = require("lib.rubato")
 
 -- These are example rubato tables. You can use one for just y, just x, or both.
 -- The duration and easing is up to you. Please check out the rubato docs to learn more.
 local anim_y = rubato.timed({
 	pos = -1000,
 	rate = 60,
-	--easing = rubato.quadratic,
 	intro = 0.2,
 	duration = 0.4,
-	awestore_compat = true, -- This option must be set to true.
-})
-
-local anim_x = rubato.timed({
-	pos = 1720,
-	rate = 60,
-	easing = rubato.quadratic,
-	intro = 0.1,
-	duration = 0.3,
 	awestore_compat = true, -- This option must be set to true.
 })
 

@@ -1,31 +1,33 @@
 local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
 local helpers = require("helpers")
-local dpi = require("beautiful.xresources").apply_dpi
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 local slider = wibox.widget({
 	bar_shape = helpers.ui.rrect(9),
-	bar_height = 6,
-	bar_color = beautiful.xcolorbase,
-	bar_active_color = beautiful.xcolor2,
+	bar_height = dpi(6),
+	bar_color = theme.xcolorbase,
+	bar_active_color = theme.xcolor2,
 	handle_shape = gears.shape.circle,
-	handle_color = beautiful.xcolor2,
-	handle_width = 12,
-	value = 75,
+	handle_color = theme.xcolor2,
+	handle_width = dpi(12),
+	value = dpi(75),
 	forced_width = dpi(239),
 	widget = wibox.widget.slider,
 })
 
 local osd_value = wibox.widget({
 	text = "0%",
-	font = beautiful.font_name .. "10",
+	font = helpers.ui.set_font("10"),
 	widget = wibox.widget.textbox(),
 })
 local icon = wibox.widget({
-	markup = helpers.ui.colorize_text("󰕾 ", beautiful.xcolor2),
-	font = beautiful.font_name .. "14",
+	markup = helpers.ui.colorize_text("󰕾 ", theme.xcolor2),
+	font = helpers.ui.set_font("14"),
 	align = "center",
 	valign = "center",
 	widget = wibox.widget.textbox(),
@@ -34,9 +36,9 @@ local icon = wibox.widget({
 local function get_val()
 	awesome.connect_signal("signal::volume", function(_, muted)
 		if muted then
-			icon.markup = "<span foreground='" .. beautiful.xcolor2 .. "'>󰖁</span>"
+			icon.markup = helpers.ui.colorize_text("󰖁", theme.xcolor2)
 		else
-			icon.markup = "<span foreground='" .. beautiful.xcolor2 .. "'>󰕾</span>"
+			icon.markup = helpers.ui.colorize_text("󰕾", theme.xcolor2)
 		end
 	end)
 end
@@ -44,9 +46,7 @@ end
 get_val()
 
 icon:buttons(gears.table.join(awful.button({}, 1, function()
-	local script = [[
-      pamixer -t
-      ]]
+	local script = "pamixer -t"
 
 	awful.spawn(script, false)
 	awesome.emit_signal("widget::update_vol")
@@ -60,6 +60,7 @@ slider:buttons(gears.table.join(
 		end
 		slider:set_value(slider:get_value() + 5)
 	end),
+
 	awful.button({}, 5, nil, function()
 		if slider:get_value() < 0 then
 			slider:set_value(0)
@@ -80,8 +81,8 @@ local vol_slider = wibox.widget({
 		},
 		left = 0,
 		right = dpi(14),
-		top = 5,
-		bottom = 5,
+		top = dpi(5),
+		bottom = dpi(5),
 		layout = wibox.container.margin,
 	},
 	slider,
@@ -119,4 +120,5 @@ slider:connect_signal("property::value", function(_, new_value)
 	local volume_level = slider:get_value()
 	osd_value.text = volume_level .. "%"
 end)
+
 return vol_slider

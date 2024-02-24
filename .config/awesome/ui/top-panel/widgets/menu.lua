@@ -1,24 +1,26 @@
 local awful = require("awful")
 local wibox = require("wibox")
-local gears = require("gears")
-local beautiful = require("beautiful").get()
-local helpers = require("helpers")
+local beautiful = require("beautiful")
+local helpers = require("helpers.ui")
+local config = require("config")
+
+local dpi = beautiful.xresources.apply_dpi
 
 -- Menu
 local menu = wibox.widget({
 	{
-		font = beautiful.font_name .. "16",
-		markup = "󰜬",
+		font = helpers.set_font("16"),
+		markup = config.icons.menu,
 		widget = wibox.widget.textbox(),
 	},
-	bottom = 2,
+	bottom = dpi(2),
 	widget = wibox.container.margin,
 })
 
-helpers.ui.add_hover_cursor(menu, "hand2")
+helpers.add_hover_cursor(menu, "hand2")
 
-menu:buttons(gears.table.join(awful.button({}, 1, function()
+menu:add_button(awful.button({}, 1, function()
 	awesome.emit_signal("sidebar::toggle")
-end)))
+end))
 
 return menu

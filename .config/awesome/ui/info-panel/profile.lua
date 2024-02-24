@@ -1,57 +1,55 @@
 local awful = require("awful")
 local wibox = require("wibox")
 local gears = require("gears")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
 local helpers = require("helpers")
 
-local dpi = require("beautiful.xresources").apply_dpi
-local user1 = os.getenv("USER")
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
+
+local os_user = os.getenv("USER")
 
 -- Create Widgets
 -------------------
 
 -- Pfp
 local pfp = wibox.widget.imagebox()
-pfp.image = beautiful.pfp
+pfp.image = require("config").theme.pfp
 pfp.clip_shape = gears.shape.circle
 pfp.forced_width = dpi(130)
 pfp.forced_height = dpi(130)
 
 -- User
 local user = wibox.widget.textbox()
-user.font = beautiful.font_name .. "SemiBold 18"
+user.font = helpers.ui.set_font("SemiBold 18")
 user.align = "left"
-user.markup = "<span foreground='" .. beautiful.fg_normal .. "'>" .. user1 .. "</span>"
+user.markup = helpers.ui.colorize_text(os_user, theme.fg_normal)
 
 -- Hostname
 local hostname = wibox.widget.textbox()
-hostname.font = beautiful.font_name .. "Regular 14"
+hostname.font = helpers.ui.set_font("Regular 14")
 hostname.align = "left"
 
-awful.spawn.easy_async_with_shell("echo $HOST", function(stdout)
-	hostname.markup = "<span foreground='" .. beautiful.xcolor1 .. "'>" .. "@" .. tostring(stdout) .. "</span>"
+awful.spawn.easy_async_with_shell("hostnamectl --static", function(stdout)
+	hostname.markup = helpers.ui.colorize_text("@" .. tostring(stdout), theme.xcolor1)
 end)
 
 -- Battery
 local uptimeosd = wibox.widget.textbox()
-uptimeosd.font = beautiful.font_name .. "12"
+uptimeosd.font = helpers.ui.set_font("12")
 uptimeosd.align = "center"
 
 -- Get data 4 widgets!
 awesome.connect_signal("signal::uptime", function(uptime)
-	uptimeosd.markup = "<span foreground='" .. beautiful.fg_normal .. "'>" .. "up " .. uptime .. "</span>"
+	uptimeosd.markup = helpers.ui.colorize_text("up " .. uptime, theme.fg_normal)
 end)
 
 -- Spacing horizontally
-local space = wibox.widget({
-	forced_height = dpi(6),
-	layout = wibox.layout.align.horizontal,
-})
 local shutdown = wibox.widget({
 	{
 		{
-			font = beautiful.font_name .. "30",
-			markup = "<span foreground='" .. beautiful.xcolor10 .. "'>" .. "" .. "</span>",
+			font = helpers.ui.set_font("30"),
+			markup = helpers.ui.colorize_text("", theme.xcolor10),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -62,7 +60,7 @@ local shutdown = wibox.widget({
 		right = dpi(11),
 		widget = wibox.container.margin,
 	},
-	bg = beautiful.xcolorS1,
+	bg = theme.xcolorS1,
 	shape = helpers.ui.rrect(8),
 	widget = wibox.container.background,
 })
@@ -70,8 +68,8 @@ local shutdown = wibox.widget({
 local reboot = wibox.widget({
 	{
 		{
-			font = beautiful.font_name .. "30",
-			markup = "<span foreground='" .. beautiful.xcolor2 .. "'>" .. "" .. "</span>",
+			font = helpers.ui.set_font("30"),
+			markup = helpers.ui.colorize_text("", theme.xcolor2),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -82,24 +80,24 @@ local reboot = wibox.widget({
 		right = dpi(11),
 		widget = wibox.container.margin,
 	},
-	bg = beautiful.xcolorS1,
+	bg = theme.xcolorS1,
 	shape = helpers.ui.rrect(8),
 	widget = wibox.container.background,
 })
 shutdown:connect_signal("mouse::enter", function()
-	shutdown.bg = beautiful.xcolorS2
+	shutdown.bg = theme.xcolorS2
 end)
 
 shutdown:connect_signal("mouse::leave", function()
-	shutdown.bg = beautiful.xcolorS1
+	shutdown.bg = theme.xcolorS1
 end)
 
 reboot:connect_signal("mouse::enter", function()
-	reboot.bg = beautiful.xcolorS2
+	reboot.bg = theme.xcolorS2
 end)
 
 reboot:connect_signal("mouse::leave", function()
-	reboot.bg = beautiful.xcolorS1
+	reboot.bg = theme.xcolorS1
 end)
 
 shutdown:buttons(gears.table.join(awful.button({}, 1, function()
@@ -119,8 +117,8 @@ local buttons = wibox.widget({
 		spacing = dpi(8),
 		layout = wibox.layout.fixed.horizontal,
 	},
-	top = 10,
-	left = 57,
+	top = dpi(10),
+	left = dpi(57),
 	widget = wibox.container.margin,
 })
 
@@ -134,6 +132,7 @@ local name = wibox.widget({
 	left = 0,
 	widget = wibox.container.margin,
 })
+
 local uptimebox = wibox.widget({
 	{
 		{
@@ -141,11 +140,11 @@ local uptimebox = wibox.widget({
 			spacing = dpi(2),
 			layout = wibox.layout.fixed.vertical,
 		},
-		top = 3,
-		bottom = 3,
+		top = dpi(3),
+		bottom = dpi(3),
 		widget = wibox.container.margin,
 	},
-	bg = beautiful.xcolorS0,
+	bg = theme.xcolorS0,
 	shape = helpers.ui.rrect(7),
 	widget = wibox.container.background,
 })
@@ -167,7 +166,7 @@ return wibox.widget({
 			buttons,
 			layout = wibox.layout.fixed.vertical,
 		},
-		top = 30,
+		top = dpi(30),
 		layout = wibox.container.margin,
 	},
 	spacing = dpi(30),

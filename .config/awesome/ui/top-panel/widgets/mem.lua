@@ -1,16 +1,17 @@
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
+local beautiful = require("beautiful")
+local helpers = require("helpers.ui")
+local config = require("config")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 -- Icon
-local icon = wibox.widget.textbox()
-icon.font = beautiful.font_name .. "12.5"
-icon.align = "center"
-icon.markup = "<span foreground='" .. beautiful.xcolor6 .. "'>󰍛</span>"
+local icon = helpers.create_icon(config.icons.mem, theme.xcolor6)
 
 -- Uptime
 local mem = wibox.widget.textbox()
-mem.font = beautiful.font_name .. "10"
+mem.font = helpers.set_font("10")
 mem.align = "center"
 
 local function get_val()
@@ -29,11 +30,11 @@ local full = wibox.widget({
 			spacing = dpi(8),
 			layout = wibox.layout.fixed.horizontal,
 		},
-		left = 1,
+		left = dpi(1),
 		right = 0,
 		layout = wibox.container.margin,
 	},
-	forced_width = 73,
+	forced_width = dpi(73),
 	layout = wibox.layout.fixed.horizontal,
 })
 

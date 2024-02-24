@@ -19,3 +19,6 @@ require("signals")
 
 -- Ui/Panels --
 require("ui")
+
+-- local f = beautiful.get().font
+-- beautiful.get_merged_font(f, "50"):to_string()

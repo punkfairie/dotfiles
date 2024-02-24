@@ -1,13 +1,15 @@
 local gears = require("gears")
 local wibox = require("wibox")
 local awful = require("awful")
-local beautiful = require("beautiful").get()
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+local beautiful = require("beautiful")
 local naughty = require("naughty")
 local helpers = require("helpers")
 local menubar = require("menubar")
 local animation = require("lib.animation")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
+
 --- Naughty Notifications with animation
 --- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -44,13 +46,13 @@ naughty.connect_signal("request::icon", function(n, context, hints)
 end)
 
 --- Use XDG icon
-naughty.connect_signal("request::action_icon", function(a, context, hints)
+naughty.connect_signal("request::action_icon", function(a, _, hints)
 	a.icon = menubar.utils.lookup_icon(hints.id)
 end)
 
 naughty.connect_signal("request::display", function(n)
 	--- random accent color
-	local accent_colors = beautiful.xcolor2
+	local accent_colors = theme.xcolor2
 
 	--- table of icons
 	local app_icons = {
@@ -71,8 +73,8 @@ naughty.connect_signal("request::display", function(n)
 
 	local app_icon_n = wibox.widget({
 		{
-			font = beautiful.font_name .. "Round 13",
-			markup = "<span foreground='" .. beautiful.xcolorbase .. "'>" .. app_icon .. "</span>",
+			font = helpers.ui.set_font("Round 13"),
+			markup = helpers.ui.colorize_text(app_icon, theme.xcolorbase),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -122,15 +124,15 @@ naughty.connect_signal("request::display", function(n)
 	})
 
 	local app_name = wibox.widget({
-		font = beautiful.font_name .. "Bold 12",
+		font = helpers.ui.set_font("Bold 12"),
 		text = n.app_name:gsub("^%l", string.upper),
 		widget = wibox.widget.textbox,
 	})
 
 	local dismiss = wibox.widget({
 		{
-			font = beautiful.font_name .. "Bold 10",
-			markup = helpers.ui.colorize_text("", beautiful.xcolor2),
+			font = helpers.ui.set_font("Bold 10"),
+			markup = helpers.ui.colorize_text("", theme.xcolor2),
 			widget = wibox.widget.textbox,
 			valign = "center",
 			align = "center",
@@ -152,7 +154,7 @@ naughty.connect_signal("request::display", function(n)
 		value = 0,
 		thickness = dpi(4),
 		rounded_edge = true,
-		bg = beautiful.xcolorbase,
+		bg = theme.xcolorbase,
 		colors = {
 			{
 				type = "linear",
@@ -169,8 +171,9 @@ naughty.connect_signal("request::display", function(n)
 		},
 		dismiss,
 	})
+
 	local title2 = wibox.widget.textbox()
-	title2.font = beautiful.font_name .. "Bold 11"
+	title2.font = helpers.ui.set_font("Bold 11")
 	title2.text = n.title
 
 	local title = wibox.widget({
@@ -182,7 +185,7 @@ naughty.connect_signal("request::display", function(n)
 	})
 
 	local message2 = wibox.widget.textbox()
-	message2.font = beautiful.font_name .. "11"
+	message2.font = helpers.ui.set_font("11")
 	message2.text = n.message
 
 	local message = wibox.widget({
@@ -195,16 +198,18 @@ naughty.connect_signal("request::display", function(n)
 
 	local actions = wibox.widget({
 		notification = n,
+
 		base_layout = wibox.widget({
 			spacing = dpi(3),
 			layout = wibox.layout.flex.horizontal,
 		}),
+
 		widget_template = {
 			{
 				{
 					{
 						id = "text_role",
-						font = beautiful.font_name .. "10",
+						font = helpers.ui.set_font("10"),
 						widget = wibox.widget.textbox,
 					},
 					left = dpi(6),
@@ -213,7 +218,7 @@ naughty.connect_signal("request::display", function(n)
 				},
 				widget = wibox.container.place,
 			},
-			bg = beautiful.xcolorbase,
+			bg = theme.xcolorbase,
 			forced_height = dpi(25),
 			forced_width = dpi(70),
 			widget = wibox.container.background,
@@ -230,11 +235,12 @@ naughty.connect_signal("request::display", function(n)
 		type = "notification",
 		cursor = "hand2",
 		shape = helpers.ui.rrect(12),
-		border_color = beautiful.xcolorS0,
+		border_color = theme.xcolorS0,
 		border_width = dpi(3),
 		maximum_width = dpi(350),
 		maximum_height = dpi(180),
 		bg = "#00000000",
+
 		widget_template = {
 			{
 				layout = wibox.layout.fixed.vertical,
@@ -249,7 +255,7 @@ naughty.connect_signal("request::display", function(n)
 						margins = { top = dpi(3), bottom = dpi(3), left = dpi(15), right = dpi(15) },
 						widget = wibox.container.margin,
 					},
-					bg = beautiful.xcolorS0,
+					bg = theme.xcolorS0,
 					widget = wibox.container.background,
 				},
 				{
@@ -288,7 +294,7 @@ naughty.connect_signal("request::display", function(n)
 			},
 			--- Anti-aliasing container
 			shape = helpers.ui.rrect(0),
-			bg = beautiful.xcolorbase,
+			bg = theme.xcolorbase,
 			widget = wibox.container.background,
 		},
 	})
@@ -326,7 +332,7 @@ naughty.connect_signal("request::display", function(n)
 		anim:start()
 	end)
 
-	local notification_height = widget.height + beautiful.notification_spacing
+	local notification_height = widget.height + theme.notification_spacing
 	local total_notifications_height = #naughty.active * notification_height
 
 	if total_notifications_height > n.screen.workarea.height then

@@ -1,18 +1,21 @@
 local gears = require("gears")
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
 local helpers = require("helpers")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 local slider = wibox.widget({
 	bar_shape = helpers.ui.rrect(9),
 	bar_height = 6,
-	bar_color = beautiful.bg_focus,
-	bar_active_color = beautiful.xcolor7,
+	bar_color = theme.bg_focus,
+	bar_active_color = theme.xcolor7,
 	handle_shape = gears.shape.circle,
-	handle_color = beautiful.xcolor7,
-	handle_width = 12,
-	value = 25,
+	handle_color = theme.xcolor7,
+	handle_width = dpi(12),
+	value = dpi(25),
 	widget = wibox.widget.slider,
 })
 
@@ -20,8 +23,8 @@ helpers.ui.add_hover_cursor(slider, "hand1")
 
 local bri_slider = wibox.widget({
 	{
-		markup = helpers.ui.colorize_text(" ", beautiful.xcolor7),
-		font = beautiful.font .. " 14",
+		markup = helpers.ui.colorize_text("󰃞 ", theme.xcolor7),
+		font = helpers.ui.set_font("14"),
 		align = "center",
 		valign = "center",
 		widget = wibox.widget.textbox(),

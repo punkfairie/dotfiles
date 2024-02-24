@@ -1,23 +1,24 @@
 local awful = require("awful")
 local gears = require("gears")
-local beautiful = require("beautiful").get()
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+local beautiful = require("beautiful")
 local wibox = require("wibox")
 local helpers = require("helpers")
 local playerctl_daemon = require("signals.playerctl")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 ---- Music Player
 ---- ~~~~~~~~~~~~
 
 local music_text = wibox.widget({
-	font = beautiful.font_name .. "Medium 10",
+	font = helpers.ui.set_font("Medium 10"),
 	valign = "center",
 	widget = wibox.widget.textbox,
 })
 
 local music_art = wibox.widget({
-	image = beautiful.music,
+	image = theme.music,
 	resize = true,
 	widget = wibox.widget.imagebox,
 })
@@ -33,7 +34,7 @@ local filter_color = {
 	type = "linear",
 	from = { 0, 0 },
 	to = { 0, 160 },
-	stops = { { 0, beautiful.xcolorS0 .. "cc" }, { 1, beautiful.xcolorS0 } },
+	stops = { { 0, theme.xcolorS0 .. "cc" }, { 1, theme.xcolorS0 } },
 }
 
 local music_art_filter = wibox.widget({
@@ -48,13 +49,13 @@ local music_art_filter = wibox.widget({
 })
 
 local music_title = wibox.widget({
-	font = beautiful.font_name .. "Regular 13",
+	font = helpers.ui.set_font("Regular 13"),
 	valign = "center",
 	widget = wibox.widget.textbox,
 })
 
 local music_artist = wibox.widget({
-	font = beautiful.font_name .. "Bold 16",
+	font = helpers.ui.set_font("Bold 16"),
 	valign = "center",
 	widget = wibox.widget.textbox,
 })
@@ -68,8 +69,8 @@ local function volume_control()
 		bar_width = dpi(4),
 		shape = helpers.ui.rrect(6),
 		bar_shape = helpers.ui.rrect(6),
-		color = beautiful.xcolor2,
-		background_color = beautiful.xcolorS0,
+		color = theme.xcolor2,
+		background_color = theme.xcolorS0,
 		border_width = 0,
 		widget = wibox.widget.progressbar,
 	})
@@ -100,6 +101,7 @@ local function volume_control()
 		awful.button({}, 4, function()
 			awful.spawn.with_shell("playerctl volume 0.05+")
 		end),
+
 		awful.button({}, 5, function()
 			awful.spawn.with_shell("playerctl volume 0.05-")
 		end)
@@ -107,25 +109,26 @@ local function volume_control()
 
 	return volume
 end
+
 -- Player's Button
 local toggle = wibox.widget.textbox()
-toggle.font = beautiful.font_name .. "26"
+toggle.font = helpers.ui.set_font("26")
 
 toggle:buttons(gears.table.join(awful.button({}, 1, function()
 	playerctl_daemon:play_pause()
 end)))
 
 local next = wibox.widget.textbox()
-next.font = beautiful.font_name .. "26"
-next.markup = "怜"
+next.font = helpers.ui.set_font("26")
+next.markup = "󰒭"
 
 next:buttons(gears.table.join(awful.button({}, 1, function()
 	playerctl_daemon:next()
 end)))
 
 local back = wibox.widget.textbox()
-back.font = beautiful.font_name .. "26"
-back.markup = "玲"
+back.font = helpers.ui.set_font("26")
+back.markup = "󰒮"
 
 back:buttons(gears.table.join(awful.button({}, 1, function()
 	playerctl_daemon:previous()
@@ -194,7 +197,7 @@ local function music()
 		},
 		forced_width = dpi(350),
 		shape = helpers.ui.prrect(8, false, true, true, false),
-		bg = beautiful.xcolorS0,
+		bg = theme.xcolorS0,
 		widget = wibox.container.background,
 	})
 end
@@ -211,7 +214,7 @@ local music_widget = wibox.widget({
 			layout = wibox.layout.align.horizontal,
 		},
 		forced_height = dpi(150),
-		bg = beautiful.xcolorbase,
+		bg = theme.xcolorbase,
 		shape = helpers.ui.rrect(8),
 		widget = wibox.container.background,
 	},
@@ -231,21 +234,21 @@ playerctl_daemon:connect_signal("metadata", function(_, title, artist, album_pat
 		artist = "Nothing Playing"
 	end
 	if album_path == "" then
-		album_path = beautiful.music
+		album_path = theme.music
 	end
 
 	music_art:set_image(gears.surface.load_uncached(album_path))
-	music_title:set_markup_silently(helpers.ui.colorize_text(title, beautiful.xcolorT2))
-	music_artist:set_markup_silently(helpers.ui.colorize_text(artist, beautiful.xcolor2))
+	music_title:set_markup_silently(helpers.ui.colorize_text(title, theme.xcolorT2))
+	music_artist:set_markup_silently(helpers.ui.colorize_text(artist, theme.xcolor2))
 end)
 
 playerctl_daemon:connect_signal("playback_status", function(_, playing, _)
 	if playing then
-		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", beautiful.xcolorO0)) --"#666c79"
-		toggle.markup = helpers.ui.colorize_text("󰏤", beautiful.xcolor2)
+		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", theme.xcolorO0))
+		toggle.markup = helpers.ui.colorize_text("󰏤", theme.xcolor2)
 	else
-		music_text:set_markup_silently(helpers.ui.colorize_text("Music", beautiful.xcolorO0))
-		toggle.markup = helpers.ui.colorize_text("󰐊", beautiful.xcolor2)
+		music_text:set_markup_silently(helpers.ui.colorize_text("Music", theme.xcolorO0))
+		toggle.markup = helpers.ui.colorize_text("󰐊", theme.xcolor2)
 	end
 end)
 

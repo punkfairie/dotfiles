@@ -22,6 +22,7 @@ M.theme = {
 	flavor = "macchiato",
 	accent = "pink",
 	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
+	pfp = config_dir .. "themes/catppuccin/assets/pfp.jpg",
 	icons = {},
 }
 
@@ -34,11 +35,49 @@ M.theme.icons.tags = {
 	misc = "󰍹 ",
 }
 
+M.icons = {
+	menu = "󰜬",
+	power = "",
+	tags = {
+		general = " ",
+		files = " ",
+		media = " ",
+		terminal = " ",
+		coding = " ",
+		misc = "󰍹 ",
+	},
+	cal = "",
+	clock = "",
+	arr = {
+		r = "»",
+		l = "«",
+	},
+	vol = {
+		on = "󰕾",
+		off = "󰖁",
+		low = "󰕿",
+		med = "󰖀",
+		high = "󰕾",
+	},
+	mem = "󰍛",
+	cpu = "",
+	disk = "",
+}
+
 M.widget = {}
+
+M.widget.clock = {
+	format = "%I:%M %p",
+}
+
+M.widget.date = {
+	format = "%a %b %d",
+}
 
 M.widget.weather = {
 	api_key = "e894c3e6c1a9d2217eee94791e845c96",
 	coordinates = { lat = "47.773140", lon = "-122.303660" },
+	units = "imperial",
 }
 
 M.widget.github = {

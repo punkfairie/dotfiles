@@ -1,19 +1,34 @@
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-require("awful.hotkeys_popup.keys")
+local helpers = require("helpers")
+local config = require("config")
+local beautiful = require("beautiful")
 
--- Clock
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
+
+local clock_icon = helpers.ui.create_icon(config.icons.clock, theme.xcolor12)
 
 local clock = wibox.widget.textbox()
-clock.font = beautiful.font_name .. "11"
+clock.font = helpers.ui.set_font("11")
+
 gears.timer({
 	timeout = 60,
 	autostart = true,
 	call_now = true,
 	callback = function()
-		clock.markup = os.date(" %I:%M %p")
+		clock.markup = os.date(config.widget.clock.format)
 	end,
 })
 
-return clock
+return wibox.widget({
+	{
+		clock_icon,
+		clock,
+		spacing = dpi(8),
+		layout = wibox.layout.fixed.horizontal,
+	},
+	left = dpi(1),
+	right = dpi(1),
+	layout = wibox.container.margin,
+})

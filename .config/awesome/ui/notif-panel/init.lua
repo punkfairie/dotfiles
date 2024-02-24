@@ -1,22 +1,24 @@
 local gears = require("gears")
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
+local beautiful = require("beautiful")
 local helpers = require("helpers")
 local naughty = require("naughty")
 local rubato = require("lib.rubato")
-local dpi = require("beautiful.xresources").apply_dpi
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 local notifs_text = wibox.widget({
-	font = beautiful.font .. " Bold 20",
+	font = helpers.ui.set_font("Bold 20"),
 	markup = "Notifications",
 	halign = "center",
 	widget = wibox.widget.textbox,
 })
 
 local notifs_clear = wibox.widget({
-	markup = "<span foreground='" .. beautiful.xcolor10 .. "'> </span>",
-	font = beautiful.font_name .. " Bold 21",
+	markup = helpers.ui.colorize_text(" ", theme.xcolor10),
+	font = helpers.ui.set_font("Bold 21"),
 	align = "center",
 	valign = "center",
 	widget = wibox.widget.textbox,
@@ -25,6 +27,7 @@ local notifs_clear = wibox.widget({
 notifs_clear:buttons(gears.table.join(awful.button({}, 1, function()
 	_G.Notif_center_reset_notifs_container()
 end)))
+
 helpers.ui.add_hover_cursor(notifs_clear, "hand2")
 
 local notifs_empty = wibox.widget({
@@ -33,8 +36,8 @@ local notifs_empty = wibox.widget({
 		{
 			nil,
 			{
-				markup = "<span foreground='" .. beautiful.xcolorT2 .. "'>Nothing Here!</span>",
-				font = beautiful.font .. " Bold 17",
+				markup = helpers.ui.colorize_text("Nothing Here!", theme.xcolorT2),
+				font = helpers.ui.set_font("Bold 17"),
 				align = "center",
 				valign = "center",
 				widget = wibox.widget.textbox,
@@ -43,27 +46,27 @@ local notifs_empty = wibox.widget({
 		},
 		layout = wibox.layout.align.horizontal,
 	},
-	forced_height = 730,
+	forced_height = dpi(730),
 	widget = wibox.container.background,
-	bg = beautiful.xcolorS0,
+	bg = theme.xcolorS0,
 	shape = helpers.ui.rrect(8),
 })
 
 local notifs_container = wibox.widget({
-	spacing = 10,
+	spacing = dpi(10),
 	spacing_widget = {
 		{
 			shape = helpers.ui.rrect(8),
 			widget = wibox.container.background,
 		},
-		top = 2,
-		bottom = 2,
-		left = 6,
-		right = 6,
+		top = dpi(2),
+		bottom = dpi(2),
+		left = dpi(6),
+		right = dpi(6),
 		widget = wibox.container.margin,
 	},
-	forced_width = 320,
-	forced_height = 730, --Use it like in notifs_empty else it will look weird
+	forced_width = dpi(320),
+	forced_height = dpi(730), --Use it like in notifs_empty else it will look weird
 	layout = wibox.layout.fixed.vertical,
 })
 
@@ -101,8 +104,8 @@ local create_notif = function(icon, n)
 						widget = wibox.widget.imagebox,
 					},
 					strategy = "exact",
-					height = 50,
-					width = 50,
+					height = dpi(50),
+					width = dpi(50),
 					widget = wibox.container.constraint,
 				},
 				{
@@ -112,22 +115,22 @@ local create_notif = function(icon, n)
 							{
 								{
 									step_function = wibox.container.scroll.step_functions.waiting_nonlinear_back_and_forth,
-									speed = 50,
+									speed = dpi(50),
 									{
 										markup = n.title,
-										font = beautiful.font .. " Bold 9",
+										font = helpers.ui.set_font("Bold 9"),
 										align = "left",
 										widget = wibox.widget.textbox,
 									},
-									forced_width = 140,
+									forced_width = dpi(140),
 									widget = wibox.container.scroll.horizontal,
 								},
 								nil,
 								{
-									markup = "<span foreground='" .. beautiful.xcolorT2 .. "'>" .. time .. "</span>",
+									markup = helpers.ui.colorize_text(time, theme.xcolorT2),
 									align = "right",
 									valign = "bottom",
-									font = beautiful.font .. " Bold 10",
+									font = helpers.ui.set_font("Bold 10"),
 									widget = wibox.widget.textbox,
 								},
 								expand = "none",
@@ -135,32 +138,32 @@ local create_notif = function(icon, n)
 							},
 							{
 								step_function = wibox.container.scroll.step_functions.waiting_nonlinear_back_and_forth,
-								speed = 50,
+								speed = dpi(50),
 								{
 									markup = n.message,
 									align = "left",
 									widget = wibox.widget.textbox,
 								},
-								forced_width = 165,
+								forced_width = dpi(165),
 								widget = wibox.container.scroll.horizontal,
 							},
-							spacing = 3,
+							spacing = dpi(3),
 							layout = wibox.layout.fixed.vertical,
 						},
 						expand = "none",
 						layout = wibox.layout.align.vertical,
 					},
-					left = 17,
+					left = dpi(17),
 					widget = wibox.container.margin,
 				},
 				layout = wibox.layout.align.horizontal,
 			},
-			margins = 15,
+			margins = dpi(15),
 			widget = wibox.container.margin,
 		},
-		forced_height = 85,
+		forced_height = dpi(85),
 		widget = wibox.container.background,
-		bg = beautiful.xcolorS0,
+		bg = theme.xcolorS0,
 		shape = helpers.ui.rrect(8),
 	})
 
@@ -199,7 +202,7 @@ naughty.connect_signal("request::display", function(n)
 
 	local appicon = n.icon or n.app_icon
 	if not appicon then
-		appicon = beautiful.pfp --notification_icon
+		appicon = theme.pfp --notification_icon
 	end
 
 	notifs_container:insert(1, create_notif(appicon, n))
@@ -215,18 +218,18 @@ local notifs = wibox.widget({
 				expand = "none",
 				layout = wibox.layout.align.horizontal,
 			},
-			left = 5,
-			right = 5,
-			top = 7,
-			bottom = 7,
+			left = dpi(5),
+			right = dpi(5),
+			top = dpi(7),
+			bottom = dpi(7),
 			layout = wibox.container.margin,
 		},
 		widget = wibox.container.background,
-		bg = beautiful.xcolorS0,
+		bg = theme.xcolorS0,
 		shape = helpers.ui.rrect(8),
 	},
 	notifs_container,
-	spacing = 20,
+	spacing = dpi(20),
 	layout = wibox.layout.fixed.vertical,
 })
 
@@ -240,20 +243,20 @@ local actions = wibox.widget({
 				widget = require("ui.notif-panel.widgets.mic_slider"),
 			},
 			layout = wibox.layout.flex.vertical,
-			spacing = 1,
+			spacing = dpi(1),
 		},
 		widget = wibox.container.margin,
-		top = 20,
-		bottom = 20,
-		left = 35,
-		right = 35,
+		top = dpi(20),
+		bottom = dpi(20),
+		left = dpi(35),
+		right = dpi(35),
 	},
-	forced_height = 120,
+	forced_height = dpi(120),
 	widget = wibox.container.background,
-	bg = beautiful.xcolorS0,
+	bg = theme.xcolorS0,
 	shape = helpers.ui.rrect(8),
 })
---
+
 -- Sidebar
 local action = wibox({
 	visible = false,
@@ -261,20 +264,26 @@ local action = wibox({
 	width = dpi(410),
 	height = awful.screen.focused().geometry.height - dpi(100),
 	y = dpi(60),
-	bg = beautiful.bg_normal,
+	bg = theme.bg_normal,
 	border_width = dpi(3),
-	border_color = beautiful.xcolorS0,
+	border_color = theme.xcolorS0,
 })
 
 -- Sidebar widget setup
 action:setup({
 	{
 		notifs,
+		nil,
 		actions,
 		spacing = dpi(20),
-		layout = wibox.layout.fixed.vertical,
+		layout = wibox.layout.align.vertical,
 	},
-	margins = { top = dpi(20), bottom = dpi(20), left = dpi(20), right = dpi(20) },
+	margins = {
+		top = dpi(20),
+		bottom = dpi(20),
+		left = dpi(20),
+		right = dpi(20),
+	},
 	widget = wibox.container.margin,
 })
 
@@ -300,6 +309,7 @@ action.timer = gears.timer({
 action.shape = function(cr, w, h) --Rounded Corners
 	gears.shape.rounded_rect(cr, w, h, 14)
 end
+
 -- Toggle function
 action.toggle = function()
 	if action.visible then

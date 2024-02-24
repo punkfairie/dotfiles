@@ -1,10 +1,11 @@
 local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
-
+local beautiful = require("beautiful")
 local rubato = require("lib.rubato")
+
+local dpi = beautiful.xresources.apply_dpi
+local theme = beautiful.get()
 
 -- Var
 local width = dpi(410)
@@ -19,23 +20,7 @@ local function round_widget(radius)
 	end
 end
 
-local function center_widget(widgets)
-	return wibox.widget({
-		nil,
-		{
-			nil,
-			widgets,
-			expand = "none",
-			layout = wibox.layout.align.horizontal,
-		},
-		expand = "none",
-		layout = wibox.layout.align.vertical,
-	})
-end
-
 local function box_widget(widgets, _width, _height)
-	--local centered_widget = center_widget(widgets)
-
 	return wibox.widget({
 		{
 			{
@@ -46,7 +31,7 @@ local function box_widget(widgets, _width, _height)
 			forced_width = dpi(_width),
 			forced_height = dpi(_height),
 			shape = round_widget(8),
-			bg = beautiful.bg_focus, --for widget Rounded and Border
+			bg = theme.bg_focus, --for widget Rounded and Border
 			widget = wibox.container.background,
 		},
 		margins = { left = dpi(20), right = dpi(20) },
@@ -57,7 +42,6 @@ end
 -- Get widgets
 local weather_widget = require("ui.info-panel.weather")
 local profile_widget = require("ui.info-panel.profile")
---local player_widget = require "ui.info-panel.player" -- Old MPD widget
 
 local calendar_widget = require("ui.info-panel.calendar")
 local music_widget = require("ui.info-panel.music-player")
@@ -65,15 +49,7 @@ local music_widget = require("ui.info-panel.music-player")
 -- Combine some widgets
 local weather = box_widget(weather_widget, 380, 180)
 local profile = box_widget(profile_widget, 380, 210)
---local player = box_widget(player_widget, 380, 150) -- Box MPD widget
 local calendar = box_widget(calendar_widget, 380, 340)
--- Spacing
-local space = function(_height)
-	return wibox.widget({
-		forced_height = dpi(_height),
-		layout = wibox.layout.align.horizontal,
-	})
-end
 
 -- Sidebar
 local sidebar = wibox({
@@ -82,17 +58,15 @@ local sidebar = wibox({
 	width = width,
 	height = height,
 	y = dpi(60),
-	bg = beautiful.bg_normal,
+	bg = theme.bg_normal,
 	border_width = dpi(3),
-	border_color = beautiful.xcolorS0,
+	border_color = theme.xcolorS0,
 })
 
 -- Sidebar widget setup
 sidebar:setup({
 	{
 		profile,
-		--player,
-		--stats,
 		music_widget,
 		weather,
 		calendar,
@@ -122,26 +96,18 @@ sidebar.timer = gears.timer({
 		sidebar.visible = not sidebar.visible
 	end,
 })
---aa.timer = gears.timer { -- Updates the Player every second
---	timeout = 1,
---	autostart = false,
---	callback = function()
---		awesome.emit_signal("widget::update_player")
---	end
---}
+
 sidebar.shape = function(cr, w, h) --Rounded Corners
 	gears.shape.rounded_rect(cr, w, h, 14)
 end
+
 -- Toggle function
 sidebar.toggle = function()
 	if sidebar.visible then
-		--	aa.timer:stop() -- Stops to Update the Player Signal
 		slide.target = awful.screen.focused().geometry.x - sidebar.width
 		sidebar.timer:start()
 	else
-		--	awesome.emit_signal("widget::update_player") -- Updates it before the Timer so it doesn't Jump the Length
 		awesome.emit_signal("widget::update_uptime")
-		--	aa.timer:start()
 		slide.target = awful.screen.focused().geometry.x + dpi(20)
 		sidebar.visible = not sidebar.visible
 	end

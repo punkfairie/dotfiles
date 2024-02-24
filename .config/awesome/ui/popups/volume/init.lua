@@ -1,17 +1,18 @@
 local gears = require("gears")
 local awful = require("awful")
-local beautiful = require("beautiful").get()
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+local beautiful = require("beautiful")
 local wibox = require("wibox")
 local helpers = require("helpers")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 --- Volume OSD
 --- ~~~~~~~~~~
 local icon = wibox.widget({
 	{
 		id = "icon2",
-		image = beautiful.volume_on,
+		image = theme.volume_on,
 		resize = true,
 		widget = wibox.widget.imagebox,
 	},
@@ -20,11 +21,12 @@ local icon = wibox.widget({
 	bottom = dpi(12),
 	widget = wibox.container.margin,
 })
+
 local icon3 = icon.icon2
 
 local osd_header = wibox.widget({
 	text = "Volume",
-	font = beautiful.font_name .. "Bold 12",
+	font = helpers.ui.set_font("Bold 12"),
 	align = "left",
 	valign = "center",
 	widget = wibox.widget.textbox,
@@ -32,7 +34,7 @@ local osd_header = wibox.widget({
 
 local osd_value = wibox.widget({
 	text = "0%",
-	font = beautiful.font_name .. "Bold 12",
+	font = helpers.ui.set_font("Bold 12"),
 	align = "center",
 	valign = "center",
 	widget = wibox.widget.textbox,
@@ -44,9 +46,9 @@ local slider_osd = wibox.widget({
 		id = "vol_osd_slider",
 		bar_shape = gears.shape.rounded_rect,
 		bar_height = dpi(12),
-		bar_color = beautiful.xcolorS0,
-		bar_active_color = beautiful.xcolor2,
-		handle_color = beautiful.xcolor2,
+		bar_color = theme.xcolorS0,
+		bar_active_color = theme.xcolor2,
+		handle_color = theme.xcolor2,
 		handle_shape = gears.shape.circle,
 		handle_width = dpi(24),
 		handle_border_color = "#00000012",
@@ -60,6 +62,7 @@ local slider_osd = wibox.widget({
 })
 
 local vol_osd_slider = slider_osd.vol_osd_slider
+
 vol_osd_slider:buttons(gears.table.join(
 	awful.button({}, 4, nil, function()
 		if vol_osd_slider:get_value() > 100 then
@@ -68,6 +71,7 @@ vol_osd_slider:buttons(gears.table.join(
 		end
 		vol_osd_slider:set_value(vol_osd_slider:get_value() + 5)
 	end),
+
 	awful.button({}, 5, nil, function()
 		if vol_osd_slider:get_value() < 0 then
 			vol_osd_slider:set_value(0)
@@ -84,11 +88,13 @@ local update_volume = function() -- Sets the Volume Correct
 		vol_osd_slider.value = tonumber(stdout:match("%d+"))
 	end)
 end
+
 awesome.connect_signal("widget::update_vol", function()
 	update_volume()
 end)
 
 update_volume()
+
 vol_osd_slider:connect_signal("property::value", function(_, new_value)
 	local volume_level = vol_osd_slider:get_value()
 	awful.spawn("pamixer --set-volume " .. new_value, false)
@@ -99,6 +105,7 @@ vol_osd_slider:connect_signal("property::value", function(_, new_value)
 	-- Update the volume slider if values here change
 	awesome.emit_signal("widget::update_vol_pulse")
 	awesome.emit_signal("widget::update_vol_slider", volume_level)
+
 	if awful.screen.focused().show_vol_osd then
 		awesome.emit_signal("module::volume_osd:show", true)
 	end
@@ -132,10 +139,10 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		width = volume_osd_width,
 		maximum_height = volume_osd_height,
 		maximum_width = volume_osd_width,
-		bg = beautiful.transparent,
+		bg = theme.transparent,
 		offset = dpi(5),
 		border_width = dpi(3),
-		border_color = beautiful.xcolorS0,
+		border_color = theme.xcolorS0,
 		ontop = true,
 		visible = false,
 		preferred_anchors = "middle",
@@ -172,7 +179,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 				right = dpi(24),
 				widget = wibox.container.margin,
 			},
-			bg = beautiful.xcolorbase,
+			bg = theme.xcolorbase,
 			widget = wibox.container.background,
 		},
 	})
@@ -212,6 +219,7 @@ end
 local function get_vol()
 	local script = "pamixer --get-volume"
 	local script2 = "pamixer --get-mute"
+
 	awful.spawn.easy_async_with_shell(script, function()
 		awful.spawn.easy_async_with_shell(script2, function(is_mute)
 			local muted
@@ -223,13 +231,13 @@ local function get_vol()
 			end
 
 			if muted then
-				vol_osd_slider.bar_active_color = beautiful.xcolor10
-				vol_osd_slider.handle_color = beautiful.xcolor10
-				icon3.image = beautiful.volume_off
+				vol_osd_slider.bar_active_color = theme.xcolor10
+				vol_osd_slider.handle_color = theme.xcolor10
+				icon3.image = theme.volume_off
 			else
-				vol_osd_slider.bar_active_color = beautiful.xcolor2
-				vol_osd_slider.handle_color = beautiful.xcolor2
-				icon3.image = beautiful.volume_on
+				vol_osd_slider.bar_active_color = theme.xcolor2
+				vol_osd_slider.handle_color = theme.xcolor2
+				icon3.image = theme.volume_on
 			end
 		end)
 	end)
@@ -237,7 +245,9 @@ end
 
 awesome.connect_signal("module::volume_osd:show", function(bool)
 	placement_placer()
+
 	awful.screen.focused().volume_osd_overlay.visible = bool
+
 	if bool then
 		awesome.emit_signal("module::volume_osd:rerun")
 		awesome.emit_signal("module::brightness_osd:show", false)
@@ -247,29 +257,25 @@ awesome.connect_signal("module::volume_osd:show", function(bool)
 		end
 	end
 end)
+
 local volume = {}
+
 volume.increase = function()
-	local script = [[
-	pamixer -i 5
-	]]
+	local script = "pamixer -i 5"
 
 	awful.spawn(script, false)
 	get_vol()
 end
 
 volume.decrease = function()
-	local script = [[
-	pamixer -d 5
-	]]
+	local script = "pamixer -d 5"
 
 	awful.spawn(script, false)
 	get_vol()
 end
 
 volume.mute = function()
-	local script = [[
-	pamixer -t
-	]]
+	local script = "pamixer -t"
 
 	awful.spawn(script, false)
 	get_vol()

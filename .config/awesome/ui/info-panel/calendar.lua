@@ -1,6 +1,9 @@
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
+local beautiful = require("beautiful")
+local helpers = require("helpers")
+
+local dpi = beautiful.xresources.apply_dpi
+local theme = beautiful.get()
 
 -- Creating Calendar
 ----------------------
@@ -8,29 +11,30 @@ local dpi = require("beautiful.xresources").apply_dpi
 -- copied from awesome doc and adjusted a bit
 local styles = {}
 
-styles.month = { bg_color = beautiful.xcolorS0 }
+styles.month = { bg_color = theme.xcolorS0 }
 styles.normal = {
-	bg_color = beautiful.xcolorS0,
+	bg_color = theme.xcolorS0,
 	padding = dpi(6),
-	fg_color = beautiful.xcolorT2,
+	fg_color = theme.xcolorT2,
 }
 styles.focus = {
-	fg_color = beautiful.xcolor7,
+	fg_color = theme.xcolor7,
 	padding = dpi(6),
 	markup = function(t)
 		return "<b>" .. t .. "</b>"
 	end,
 }
 styles.header = {
-	fg_color = beautiful.xcolor2,
+	fg_color = theme.xcolor2,
 	markup = function(t)
 		return "<b>" .. t .. "</b>"
 	end,
 }
 styles.weekday = {
-	fg_color = beautiful.xcolorT2,
+	fg_color = theme.xcolorT2,
 	markup = function(t)
-		return '<span font_desc="FiraCode Nerd Font Medium 16">' .. t .. "</span>"
+		local f = helpers.ui.set_font("16")
+		return '<span font_desc="' .. f .. '">' .. t .. "</span>"
 	end,
 }
 
@@ -45,6 +49,7 @@ local function decorate_cell(widget, flag)
 	if props.markup and widget.get_text and widget.set_markup then
 		widget:set_markup(props.markup(widget:get_text()))
 	end
+
 	-- Change bg color for weekends
 	local ret = wibox.widget({
 		{
@@ -62,7 +67,7 @@ end
 
 local calendar = wibox.widget({
 	date = os.date("*t"),
-	font = beautiful.font_name .. "14",
+	font = helpers.ui.set_font("14"),
 	fn_embed = decorate_cell,
 	widget = wibox.widget.calendar.month,
 })

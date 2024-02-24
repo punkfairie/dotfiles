@@ -21,7 +21,9 @@ local function get_vol()
 		end)
 	end)
 end
+
 awesome.connect_signal("widget::update_mic", function() -- Needs to be Updated if muted! For Mute in Sidebar Widget
 	get_vol()
 end)
+
 get_vol()

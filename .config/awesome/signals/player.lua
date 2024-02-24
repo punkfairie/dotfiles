@@ -16,13 +16,16 @@ local function get_player()
 					artist = string.gsub(artist, "\n", "")
 					length = string.gsub(length, "\n", "")
 					status = string.gsub(status, "\n", "")
+
 					awesome.emit_signal("signal::player", title, artist, length, status)
 				end)
 			end)
 		end)
 	end)
 end
+
 awesome.connect_signal("widget::update_player", function()
 	get_player()
 end)
+
 get_player()

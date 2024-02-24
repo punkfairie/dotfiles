@@ -1,6 +1,9 @@
 local awful = require("awful")
 local gears = require("gears")
 local wibox = require("wibox")
+local xresources = require("beautiful.xresources")
+
+local dpi = xresources.apply_dpi
 
 --- Rounded Corners Client Side ---
 -- Use Picom If you Can --
@@ -25,6 +28,7 @@ client.connect_signal("request::titlebars", function(c)
 		awful.button({}, 1, function()
 			c:activate({ context = "titlebar", action = "mouse_move" })
 		end),
+
 		awful.button({}, 3, function()
 			c:activate({ context = "titlebar", action = "mouse_resize" })
 		end)
@@ -34,19 +38,22 @@ client.connect_signal("request::titlebars", function(c)
 		size = 30,
 		expand = "none",
 	})
+
 	local left = {
 		buttons = buttons,
 		layout = wibox.layout.fixed.horizontal(),
 	}
+
 	local middle = {
 		buttons = buttons,
 		layout = wibox.layout.fixed.horizontal(),
 	}
+
 	local right = {
 		awful.titlebar.widget.maximizedbutton(c),
 		awful.titlebar.widget.minimizebutton(c),
 		awful.titlebar.widget.closebutton(c),
-		spacing = 11.5,
+		spacing = dpi(11.5),
 		layout = wibox.layout.fixed.horizontal(),
 	}
 
@@ -57,10 +64,10 @@ client.connect_signal("request::titlebars", function(c)
 			right,
 			layout = wibox.layout.align.horizontal(),
 		},
-		left = 13.5,
-		right = 13.5,
-		top = 7.4,
-		bottom = 7.4,
+		left = dpi(13.5),
+		right = dpi(13.5),
+		top = dpi(7.4),
+		bottom = dpi(7.4),
 		layout = wibox.container.margin,
 	})
 end)

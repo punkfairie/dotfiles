@@ -1,21 +1,24 @@
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
-local dpi = require("beautiful.xresources").apply_dpi
+local beautiful = require("beautiful")
+local helpers = require("helpers.ui")
+local config = require("config")
+
+local theme = beautiful.get()
+local dpi = beautiful.xresources.apply_dpi
 
 -- Icon
-local icon = wibox.widget.textbox()
-icon.font = beautiful.font_name .. "12.5"
-icon.align = "center"
-icon.markup = "<span foreground='" .. beautiful.xcolor7 .. "'></span>"
+local icon = helpers.create_icon(config.icons.disk, theme.xcolor7)
 
 -- Uptime
 local disk = wibox.widget.textbox()
-disk.font = beautiful.font_name .. "10"
+disk.font = helpers.set_font("10")
 disk.align = "center"
 
 local function get_val()
 	awesome.connect_signal("signal::disk", function(disk_perc)
-		disk.markup = tonumber(disk_perc) .. "%"
+		if disk_perc then
+			disk.markup = tonumber(disk_perc) .. "%"
+		end
 	end)
 end
 
@@ -28,8 +31,8 @@ local full = wibox.widget({
 		spacing = dpi(8),
 		layout = wibox.layout.fixed.horizontal,
 	},
-	left = 1,
-	right = 8,
+	left = dpi(1),
+	right = dpi(8),
 	layout = wibox.container.margin,
 })
 
