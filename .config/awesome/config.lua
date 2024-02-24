@@ -1,3 +1,5 @@
+local config_dir = require("gears.filesystem").get_configuration_dir()
+
 local M = {}
 
 M.keys = {
@@ -19,6 +21,7 @@ M.apps.music_player = M.apps.terminal .. "--class music -e ncmpcpp"
 M.theme = {
 	flavor = "macchiato",
 	accent = "pink",
+	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
 	icons = {},
 }
 

@@ -1,13 +1,14 @@
 local awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful").get()
+
+local image = require("config").theme.wallpaper
 
 local function set_wall(s)
 	awful.wallpaper({
 		screen = s,
 		widget = {
 			{
-				image = beautiful.wallpaper,
+				image = image,
 				upscale = true,
 				downscale = true,
 				widget = wibox.widget.imagebox,

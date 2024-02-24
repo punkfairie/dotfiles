@@ -205,8 +205,6 @@ theme.titlebar_maximized_button_focus_inactive = themes_path .. "catppuccin/titl
 theme.titlebar_maximized_button_normal_inactive_hover = themes_path .. "catppuccin/titlebar/maximize_hover.svg"
 theme.titlebar_maximized_button_focus_inactive_hover = themes_path .. "catppuccin/titlebar/maximize_hover.svg"
 
-theme.wallpaper = themes_path .. "catppuccin/buttons.png"
-
 -- You can use your own layout icons like this:
 theme.layout_floating = themes_path .. "catppuccin/layouts/floating.png"
 theme.layout_max = themes_path .. "catppuccin/layouts/max.png"
