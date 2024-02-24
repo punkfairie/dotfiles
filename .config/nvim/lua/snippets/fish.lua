@@ -7,7 +7,7 @@ local fmt = require("luasnip.extras.fmt").fmt
 local fill = require("snippets.helpers").fill
 
 return {
-  s({ trig = "dc", desc = "divider comment" }, f(fill, {}, { user_args = { "#% -" } })),
+  s({ trig = "dc", desc = "divider comment" }, f(fill, {}, { user_args = { "#%- " } })),
 
   s({ trig = "#!", desc = "shebang" }, t("#!/usr/bin/env fish")),
 

@@ -1,6 +1,9 @@
 return {
   {
     "L3MON4D3/LuaSnip",
+    opts = {
+      store_selection_keys = "<Tab>",
+    },
     config = function(_, opts)
       require("luasnip").setup(opts)
 
