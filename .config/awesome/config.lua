@@ -16,6 +16,21 @@ M.apps = {
 M.apps.start_editor = M.apps.terminal .. "-e" .. M.apps.editor
 M.apps.music_player = M.apps.terminal .. "--class music -e ncmpcpp"
 
+M.theme = {
+	flavor = "macchiato",
+	accent = "pink",
+	icons = {},
+}
+
+M.theme.icons.tags = {
+	general = " ",
+	files = " ",
+	media = " ",
+	terminal = " ",
+	coding = " ",
+	misc = "󰍹 ",
+}
+
 M.widget = {}
 
 M.widget.weather = {

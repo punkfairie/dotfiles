@@ -1,10 +1,10 @@
 local awful = require("awful")
-local theme = require("beautiful").get()
 local gears = require("gears")
 local wibox = require("wibox")
 local helpers = require("helpers")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
+local theme = require("beautiful").get()
 local apps = require("config").apps
 
 local menu = {}
