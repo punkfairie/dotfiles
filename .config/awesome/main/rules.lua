@@ -2,7 +2,7 @@ local awful = require("awful")
 local ruled = require("ruled")
 local dpi = require("beautiful.xresources").apply_dpi
 local helpers = require("helpers")
-local apps = require("main.apps")
+local config = require("config")
 
 ruled.client.connect_signal("request::rules", function()
 	ruled.client.append_rule({
@@ -27,7 +27,7 @@ ruled.client.connect_signal("request::rules", function()
 	})
 
 	ruled.client.append_rule({
-		rule = { class = apps["launcher"] },
+		rule = { class = config.apps.launcher },
 		properties = {
 			titlebars_enabled = false,
 		},
