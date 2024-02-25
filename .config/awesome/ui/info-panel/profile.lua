@@ -3,11 +3,16 @@ local wibox = require("wibox")
 local gears = require("gears")
 local beautiful = require("beautiful")
 local helpers = require("helpers")
+local config = require("config")
 
 local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
 
 local os_user = os.getenv("USER")
+
+if not os_user then
+	os_user = "user"
+end
 
 -- Create Widgets
 -------------------
@@ -49,7 +54,7 @@ local shutdown = wibox.widget({
 	{
 		{
 			font = helpers.ui.set_font("30"),
-			markup = helpers.ui.colorize_text("", theme.xcolor10),
+			markup = helpers.ui.colorize_text(config.icons.power, theme.xcolor10),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -69,7 +74,7 @@ local reboot = wibox.widget({
 	{
 		{
 			font = helpers.ui.set_font("30"),
-			markup = helpers.ui.colorize_text("", theme.xcolor2),
+			markup = helpers.ui.colorize_text(config.icons.restart, theme.xcolor2),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,

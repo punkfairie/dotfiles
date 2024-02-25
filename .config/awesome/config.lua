@@ -38,6 +38,13 @@ M.theme.icons.tags = {
 M.icons = {
 	menu = "󰜬",
 	power = "",
+	restart = "",
+	music = {
+		next = "󰒭",
+		prev = "󰒮",
+		pause = "󰏤",
+		play = "󰐊",
+	},
 	tags = {
 		general = " ",
 		files = " ",

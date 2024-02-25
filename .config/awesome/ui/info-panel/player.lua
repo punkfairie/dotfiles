@@ -3,6 +3,7 @@ local gears = require("gears")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local helpers = require("helpers")
+local config = require("config")
 
 local dpi = beautiful.xresources.apply_dpi
 
@@ -35,15 +36,15 @@ toggle:buttons(gears.table.join(awful.button({}, 1, function()
 	awful.spawn("mpc toggle", false)
 
 	if toggle.markup:match("󰏤") then
-		toggle.markup = "󰐊"
+		toggle.markup = config.icons.music.play
 	else
-		toggle.markup = "󰏤"
+		toggle.markup = config.icons.music.pause
 	end
 end)))
 
 local next = wibox.widget.textbox()
 next.font = helpers.ui.set_font("26")
-next.markup = "󰒭"
+next.markup = config.icons.music.next
 
 next:buttons(gears.table.join(awful.button({}, 1, function()
 	awful.spawn("mpc next", false)
@@ -51,7 +52,7 @@ end)))
 
 local back = wibox.widget.textbox()
 back.font = helpers.ui.set_font("26")
-back.markup = "󰒮"
+back.markup = config.icons.music.prev
 
 back:buttons(gears.table.join(awful.button({}, 1, function()
 	awful.spawn("mpc prev", false)
@@ -60,9 +61,9 @@ end)))
 -- Get data
 awesome.connect_signal("signal::player", function(t, a, l, s)
 	if not s:match("playing") then
-		toggle.markup = "󰐊"
+		toggle.markup = config.icons.music.play
 	else
-		toggle.markup = "󰏤"
+		toggle.markup = config.icons.music.pause
 	end
 
 	title.markup = t

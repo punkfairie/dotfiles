@@ -4,6 +4,7 @@ local beautiful = require("beautiful")
 local wibox = require("wibox")
 local helpers = require("helpers")
 local playerctl_daemon = require("signals.playerctl")
+local config = require("config")
 
 local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
@@ -120,7 +121,7 @@ end)))
 
 local next = wibox.widget.textbox()
 next.font = helpers.ui.set_font("26")
-next.markup = "󰒭"
+next.markup = config.icons.music.next
 
 next:buttons(gears.table.join(awful.button({}, 1, function()
 	playerctl_daemon:next()
@@ -128,7 +129,7 @@ end)))
 
 local back = wibox.widget.textbox()
 back.font = helpers.ui.set_font("26")
-back.markup = "󰒮"
+back.markup = config.icons.music.prev
 
 back:buttons(gears.table.join(awful.button({}, 1, function()
 	playerctl_daemon:previous()
@@ -245,10 +246,10 @@ end)
 playerctl_daemon:connect_signal("playback_status", function(_, playing, _)
 	if playing then
 		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", theme.xcolorO0))
-		toggle.markup = helpers.ui.colorize_text("󰏤", theme.xcolor2)
+		toggle.markup = helpers.ui.colorize_text(config.icons.music.pause, theme.xcolor2)
 	else
 		music_text:set_markup_silently(helpers.ui.colorize_text("Music", theme.xcolorO0))
-		toggle.markup = helpers.ui.colorize_text("󰐊", theme.xcolor2)
+		toggle.markup = helpers.ui.colorize_text(config.icons.music.play, theme.xcolor2)
 	end
 end)
 
