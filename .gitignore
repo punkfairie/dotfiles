@@ -71,3 +71,4 @@ data/
 .gnupg/
 .config/nvim/lazy-lock.json
 .config/browsh/
+.config/qalculate/qalc.history

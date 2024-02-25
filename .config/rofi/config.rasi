@@ -2,8 +2,8 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{name}";
-  font: "JetBrainsMono Nerd Font Medium 10";
-  modi: "window,run,drun";
+  font: "FiraCode Nerd Font Propo 10";
+  modi: "window,run,drun,calc";
   show-icons: true;
 }
  
