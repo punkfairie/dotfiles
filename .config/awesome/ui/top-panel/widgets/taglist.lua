@@ -3,6 +3,7 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local bling = require("lib.bling")
 local keys = require("config").keys
+local vars = require("ui.top-panel.config")
 
 local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
@@ -97,8 +98,8 @@ awful.screen.connect_for_each_screen(function(s)
 		placement_fn = function(c) -- Place the widget using awful.placement (this overrides x & y)
 			awful.placement.top_left(c, {
 				margins = {
-					top = dpi(31),
-					left = 0,
+					top = vars.height + (vars.margin * 1.5),
+					left = vars.margin,
 				},
 			})
 		end,

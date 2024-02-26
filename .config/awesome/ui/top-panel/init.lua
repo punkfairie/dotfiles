@@ -2,6 +2,7 @@ local awful = require("awful")
 local wibox = require("wibox")
 local widgets = require("ui.top-panel.widgets")
 local beautiful = require("beautiful")
+local vars = require("ui.top-panel.config")
 
 local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
@@ -26,6 +27,14 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	s.mywibox = awful.wibar({
 		position = "top",
 		screen = s,
+		margins = {
+			top = vars.margin,
+			right = vars.margin,
+			left = vars.margin,
+		},
+		border_width = theme.border_width,
+		border_color = theme.border_normal,
+		height = vars.height,
 
 		widget = {
 			layout = wibox.layout.align.horizontal,
@@ -39,10 +48,10 @@ screen.connect_signal("request::desktop_decoration", function(s)
 					widgets.seperator,
 					tasklist,
 				},
-				left = dpi(5),
+				left = theme.useless_gap,
 				right = 0,
-				top = dpi(2),
-				bottom = dpi(2),
+				top = vars.padding,
+				bottom = vars.padding,
 				layout = wibox.container.margin,
 			},
 			{
@@ -52,8 +61,8 @@ screen.connect_signal("request::desktop_decoration", function(s)
 				},
 				left = 0,
 				right = 0,
-				top = dpi(1),
-				bottom = dpi(1),
+				top = vars.padding,
+				bottom = vars.padding,
 				layout = wibox.container.margin,
 			},
 			{ -- Right widgets
@@ -68,18 +77,11 @@ screen.connect_signal("request::desktop_decoration", function(s)
 					widgets.layoutbox,
 				},
 				left = 0,
-				right = dpi(2),
-				top = dpi(1),
-				bottom = dpi(1),
+				right = theme.useless_gap,
+				top = vars.padding,
+				bottom = vars.padding,
 				layout = wibox.container.margin,
 			},
 		},
-	})
-
-	s.border2 = awful.wibar({
-		position = "top",
-		screen = s,
-		bg = theme.color.surface0,
-		height = dpi(2),
 	})
 end)
