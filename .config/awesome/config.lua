@@ -20,15 +20,20 @@ M.apps.music_player = M.apps.terminal .. "--class music -e ncmpcpp"
 
 M.theme = {
 	flavor = "macchiato",
-	accent = "pink",
+	accent1 = "pink",
+	accent2 = "rosewater",
 	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
 	pfp = config_dir .. "themes/catppuccin/assets/pfp.jpg",
+	icon_theme = "Papirus",
 }
 
 M.icons = {
 	menu = "󰜬",
 	power = "",
 	restart = "",
+	sleep = "",
+	exit = "󰗼",
+	lock = "",
 	music = {
 		next = "󰒭",
 		prev = "󰒮",

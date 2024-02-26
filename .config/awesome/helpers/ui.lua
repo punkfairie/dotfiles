@@ -21,9 +21,12 @@ end
 
 ---Change a font attribute
 ---@param attr string attribute(s) to add, e.g. "Bold 16"
+---@param font? string base font to use, for use in the theme file itself
 ---@return string
-function ui.set_font(attr)
-	return beautiful.get_merged_font(theme.font, attr):to_string()
+function ui.set_font(attr, font)
+	font = font or theme.font
+
+	return beautiful.get_merged_font(font, attr):to_string()
 end
 
 ---Create an icon widget
