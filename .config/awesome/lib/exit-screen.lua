@@ -3,6 +3,7 @@ local gears = require("gears")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local helpers = require("helpers")
+local config = require("config")
 
 local dpi = beautiful.xresources.apply_dpi
 local theme = beautiful.get()
@@ -11,12 +12,12 @@ local theme = beautiful.get()
 --- ~~~~~~~~~~~~~~~~~~~~~~
 
 --- Icons
-local icon_font = theme.font_name .. "bold 45"
-local poweroff_text_icon = ""
-local reboot_text_icon = ""
-local suspend_text_icon = ""
-local exit_text_icon = "󰗼"
-local lock_text_icon = ""
+local icon_font = helpers.ui.set_font("bold 45")
+local poweroff_text_icon = config.icons.power
+local reboot_text_icon = config.icons.restart
+local suspend_text_icon = config.icons.sleep
+local exit_text_icon = config.icons.exit
+local lock_text_icon = config.icons.lock
 
 local button_bg = theme.color.base
 local button_size = dpi(120)
