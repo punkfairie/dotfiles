@@ -36,7 +36,7 @@ hostname.font = helpers.ui.set_font("Regular 14")
 hostname.align = "left"
 
 awful.spawn.easy_async_with_shell("hostnamectl --static", function(stdout)
-	hostname.markup = helpers.ui.colorize_text("@" .. tostring(stdout), theme.xcolor1)
+	hostname.markup = helpers.ui.colorize_text("@" .. tostring(stdout), theme.color.lavender)
 end)
 
 -- Battery
@@ -54,7 +54,7 @@ local shutdown = wibox.widget({
 	{
 		{
 			font = helpers.ui.set_font("30"),
-			markup = helpers.ui.colorize_text(config.icons.power, theme.xcolor10),
+			markup = helpers.ui.colorize_text(config.icons.power, theme.color.red),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -65,7 +65,7 @@ local shutdown = wibox.widget({
 		right = dpi(11),
 		widget = wibox.container.margin,
 	},
-	bg = theme.xcolorS1,
+	bg = theme.color.surface1,
 	shape = helpers.ui.rrect(8),
 	widget = wibox.container.background,
 })
@@ -74,7 +74,7 @@ local reboot = wibox.widget({
 	{
 		{
 			font = helpers.ui.set_font("30"),
-			markup = helpers.ui.colorize_text(config.icons.restart, theme.xcolor2),
+			markup = helpers.ui.colorize_text(config.icons.restart, theme.color.blue),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -85,24 +85,24 @@ local reboot = wibox.widget({
 		right = dpi(11),
 		widget = wibox.container.margin,
 	},
-	bg = theme.xcolorS1,
+	bg = theme.color.surface1,
 	shape = helpers.ui.rrect(8),
 	widget = wibox.container.background,
 })
 shutdown:connect_signal("mouse::enter", function()
-	shutdown.bg = theme.xcolorS2
+	shutdown.bg = theme.color.surface2
 end)
 
 shutdown:connect_signal("mouse::leave", function()
-	shutdown.bg = theme.xcolorS1
+	shutdown.bg = theme.color.surface1
 end)
 
 reboot:connect_signal("mouse::enter", function()
-	reboot.bg = theme.xcolorS2
+	reboot.bg = theme.color.surface2
 end)
 
 reboot:connect_signal("mouse::leave", function()
-	reboot.bg = theme.xcolorS1
+	reboot.bg = theme.color.surface1
 end)
 
 shutdown:buttons(gears.table.join(awful.button({}, 1, function()
@@ -149,7 +149,7 @@ local uptimebox = wibox.widget({
 		bottom = dpi(3),
 		widget = wibox.container.margin,
 	},
-	bg = theme.xcolorS0,
+	bg = theme.color.surface0,
 	shape = helpers.ui.rrect(7),
 	widget = wibox.container.background,
 })

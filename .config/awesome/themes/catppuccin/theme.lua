@@ -1,54 +1,56 @@
----------------------------
--- Default awesome theme --
----------------------------
-local theme_assets = require("beautiful.theme_assets")
-local xresources = require("beautiful.xresources")
-local dpi = xresources.apply_dpi
+local beautiful = require("beautiful")
 local gfs = require("gears.filesystem")
-local palette = require("lib.catppuccin.catppuccin.macchiato")
-
-local themes_path = gfs.get_configuration_dir() .. "themes/"
+local config = require("config")
 local helpers = require("helpers")
 
+local palette = require("lib.catppuccin.catppuccin." .. config.theme.flavor)
+
+local theme_assets = beautiful.theme_assets
+local dpi = beautiful.xresources.apply_dpi
+
+local themes_path = gfs.get_configuration_dir() .. "themes/"
+
 local theme = {}
+
+theme.color = {}
 
 -- Transparent Color --
 theme.transparent = "#00000000"
 
 -- Base --
-theme.xcolorcrust = palette.crust.hex
-theme.xcolormantle = palette.mantle.hex
-theme.xcolorbase = palette.base.hex
+theme.color.crust = palette.crust.hex
+theme.color.mantle = palette.mantle.hex
+theme.color.base = palette.base.hex
 
 -- Surface --
-theme.xcolorS0 = palette.surface0.hex
-theme.xcolorS1 = palette.surface1.hex
-theme.xcolorS2 = palette.surface2.hex
+theme.color.surface0 = palette.surface0.hex
+theme.color.surface1 = palette.surface1.hex
+theme.color.surface2 = palette.surface2.hex
 
 -- Overlay --
-theme.xcolorO0 = palette.overlay0.hex
-theme.xcolorO1 = palette.overlay1.hex
-theme.xcolorO2 = palette.overlay2.hex
+theme.color.overlay0 = palette.overlay0.hex
+theme.color.overlay1 = palette.overlay1.hex
+theme.color.overlay2 = palette.overlay2.hex
 
 -- Text --
-theme.xcolorT0 = palette.text.hex
-theme.xcolorT1 = palette.subtext0.hex
-theme.xcolorT2 = palette.subtext1.hex
+theme.color.text = palette.text.hex
+theme.color.subtext0 = palette.subtext0.hex
+theme.color.subtext1 = palette.subtext1.hex
 
-theme.xcolor1 = palette.lavender.hex
-theme.xcolor2 = palette.blue.hex
-theme.xcolor3 = palette.sapphire.hex
-theme.xcolor4 = palette.sky.hex
-theme.xcolor5 = palette.teal.hex
-theme.xcolor6 = palette.green.hex
-theme.xcolor7 = palette.yellow.hex
-theme.xcolor8 = palette.peach.hex
-theme.xcolor9 = palette.maroon.hex
-theme.xcolor10 = palette.peach.hex
-theme.xcolor11 = palette.mauve.hex
-theme.xcolor12 = palette.pink.hex
-theme.xcolor13 = palette.flamingo.hex
-theme.xcolor14 = palette.rosewater.hex
+theme.color.lavender = palette.lavender.hex
+theme.color.blue = palette.blue.hex
+theme.color.sapphire = palette.sapphire.hex
+theme.color.sky = palette.sky.hex
+theme.color.teal = palette.teal.hex
+theme.color.green = palette.green.hex
+theme.color.yellow = palette.yellow.hex
+theme.color.peach = palette.peach.hex
+theme.color.maroon = palette.maroon.hex
+theme.color.red = palette.red.hex
+theme.color.mauve = palette.mauve.hex
+theme.color.pink = palette.pink.hex
+theme.color.flamingo = palette.flamingo.hex
+theme.color.rosewater = palette.rosewater.hex
 
 theme.music = themes_path .. "catppuccin/assets/music.png"
 theme.volume_on = themes_path .. "catppuccin/assets/volume-on.png"
@@ -58,63 +60,63 @@ theme.font = "FiraCode Nerd Font Propo 10"
 
 theme.font_name = "FiraCode Nerd Font Propo "
 
-theme.titlebar_bg_focus = theme.xcolorbase
-theme.titlebar_bg = theme.xcolorbase
-theme.bg_normal = theme.xcolorbase
-theme.bg_focus = theme.xcolorS0
+theme.titlebar_bg_focus = theme.color.base
+theme.titlebar_bg = theme.color.base
+theme.bg_normal = theme.color.base
+theme.bg_focus = theme.color.surface0
 theme.bg_urgent = "#ff0000"
 theme.bg_minimize = "#444444"
 theme.bg_systray = theme.bg_normal
 
-theme.fg_normal = theme.xcolorT2 --Text Color
-theme.fg_focus = theme.xcolor5
+theme.fg_normal = theme.color.subtext1 --Text Color
+theme.fg_focus = theme.color.teal
 theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
 theme.useless_gap = dpi(10)
 theme.border_width = dpi(3)
-theme.border_normal = theme.xcolorS0
-theme.border_focus = theme.xcolor5
+theme.border_normal = theme.color.surface0
+theme.border_focus = theme.color.teal
 theme.border_marked = "#91231c"
 
 theme.menu_font = "FiraCode Nerd Font 12"
-theme.menu_bg_focus = theme.xcolorbase
-theme.menu_fg_focus = theme.xcolor2
+theme.menu_bg_focus = theme.color.base
+theme.menu_fg_focus = theme.color.blue
 theme.menu_border_width = dpi(2)
 --theme.menu_border_radius = dpi()
-theme.menu_border_color = theme.xcolorS0
+theme.menu_border_color = theme.color.surface0
 --theme.menu_submenu_icon = themes_path.."catppuccin/submenu.png"
 theme.submenu = "»  "
 theme.menu_height = dpi(37)
 theme.menu_width = dpi(194)
 
-theme.tasklist_bg_focus = theme.xcolorbase
-theme.tasklist_fg_focus = theme.xcolor1
+theme.tasklist_bg_focus = theme.color.base
+theme.tasklist_fg_focus = theme.color.lavender
 theme.tasklist_disable_icon = true
 theme.tasklist_font = "FiraCode Nerd Font 11"
 
 theme.taglist_spacing = dpi(2)
-theme.taglist_bg_focus = theme.xcolorbase
+theme.taglist_bg_focus = theme.color.base
 theme.taglist_disable_icon = true
 theme.taglist_font = "FiraCode Nerd Font 11"
-theme.taglist_fg_focus = theme.xcolor2 --"#7e9dde"
-theme.taglist_fg_empty = theme.xcolorS2
+theme.taglist_fg_focus = theme.color.blue --"#7e9dde"
+theme.taglist_fg_empty = theme.color.surface2
 theme.taglist_fg_occupied = "#526c96"
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(0)
-theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.xcolor2)
+theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.color.blue)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.taglist_fg_occupied)
 
 -- Edge Snap
-theme.snap_bg = theme.xcolor5
+theme.snap_bg = theme.color.teal
 theme.snap_border_width = dpi(5)
 theme.snap_shape = helpers.ui.rrect(0)
 
 -- Hotkey Popup
 theme.hotkeys_shape = helpers.ui.rrect(12)
-theme.hotkeys_border_color = theme.xcolor5
-theme.hotkeys_modifiers_fg = theme.xcolorO2
+theme.hotkeys_border_color = theme.color.teal
+theme.hotkeys_modifiers_fg = theme.color.overlay2
 theme.hotkeys_font = "FiraCode Nerd Font 9"
 theme.hotkeys_description_font = "FiraCode Nerd Font 9"
 
@@ -130,14 +132,14 @@ theme.mstab_bar_ontop = false
 theme.mstab_tabbar_position = "top"
 theme.mstab_tabbar_style = "default"
 theme.mstab_bar_disable = true
---theme.tabbar_bg_focus = theme.xcolorS0
---theme.tabbar_bg_normal = theme.xcolorS0
+--theme.tabbar_bg_focus = theme.color.surface0
+--theme.tabbar_bg_normal = theme.color.surface0
 --theme.tabbar_radius = dpi(6)
 
 -- Layout Machi
-theme.machi_switcher_border_color = theme.xcolorS0
+theme.machi_switcher_border_color = theme.color.surface0
 theme.machi_switcher_border_opacity = 0.4
-theme.machi_editor_border_color = theme.xcolorS1
+theme.machi_editor_border_color = theme.color.surface1
 theme.machi_editor_border_opacity = 0.4
 theme.machi_editor_active_opacity = 0.4
 
@@ -145,16 +147,16 @@ theme.machi_editor_active_opacity = 0.4
 theme.tag_preview_widget_border_radius = dpi(6)
 theme.tag_preview_client_border_radius = dpi(6)
 theme.tag_preview_client_opacity = 1
-theme.tag_preview_client_bg = theme.xcolorbase
-theme.tag_preview_client_border_color = theme.xcolorS0
+theme.tag_preview_client_bg = theme.color.base
+theme.tag_preview_client_border_color = theme.color.surface0
 theme.tag_preview_client_border_width = dpi(2)
-theme.tag_preview_widget_border_color = theme.xcolor5
+theme.tag_preview_widget_border_color = theme.color.teal
 theme.tag_preview_widget_border_width = dpi(2)
 theme.tag_preview_widget_margin = 4
 -- Variables set for theming notifications:
 -- notification_font
 theme.notification_spacing = dpi(4)
-theme.notification_bg = theme.xcolorbase
+theme.notification_bg = theme.color.base
 -- notification_[bg|fg]
 -- notification_[width|height|margin]
 -- notification_[border_color|border_width|shape|opacity]
@@ -185,16 +187,6 @@ theme.titlebar_ontop_button_focus_inactive = themes_path .. "catppuccin/titlebar
 theme.titlebar_ontop_button_normal_active = themes_path .. "catppuccin/titlebar/unfocus.svg"
 theme.titlebar_ontop_button_focus_active = themes_path .. "catppuccin/titlebar/ontop.svg"
 
--- theme.titlebar_sticky_button_normal_inactive = themes_path.."catppuccin/titlebar/sticky_normal_inactive.png"
--- theme.titlebar_sticky_button_focus_inactive  = themes_path.."catppuccin/titlebar/sticky_focus_inactive.png"
--- theme.titlebar_sticky_button_normal_active = themes_path.."catppuccin/titlebar/sticky_normal_active.png"
--- theme.titlebar_sticky_button_focus_active  = themes_path.."catppuccin/titlebar/sticky_focus_active.png"
-
--- theme.titlebar_floating_button_normal_inactive = themes_path.."catppuccin/titlebar/floating_normal_inactive.png"
--- theme.titlebar_floating_button_focus_inactive  = themes_path.."catppuccin/titlebar/floating_focus_inactive.png"
--- theme.titlebar_floating_button_normal_active = themes_path.."catppuccin/titlebar/floating_normal_active.png"
--- theme.titlebar_floating_button_focus_active  = themes_path.."catppuccin/titlebar/floating_focus_active.png"
-
 theme.titlebar_maximized_button_normal_active = themes_path .. "catppuccin/titlebar/unfocus.svg"
 theme.titlebar_maximized_button_focus_active = themes_path .. "catppuccin/titlebar/maximize.svg"
 theme.titlebar_maximized_button_normal_active_hover = themes_path .. "catppuccin/titlebar/maximize_hover.svg"
@@ -223,5 +215,3 @@ theme.awesome_icon = theme_assets.awesome_icon(theme.menu_height, theme.bg_focus
 theme.icon_theme = "Tela-circle-dark"
 
 return theme
-
--- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80

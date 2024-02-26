@@ -7,7 +7,7 @@ local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
 
 -- Icon
-local icon = helpers.create_icon(config.icons.disk, theme.xcolor7)
+local icon = helpers.create_icon(config.icons.disk, theme.color.yellow)
 
 -- Uptime
 local disk = wibox.widget.textbox()

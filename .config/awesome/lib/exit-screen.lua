@@ -18,7 +18,7 @@ local suspend_text_icon = ""
 local exit_text_icon = "󰗼"
 local lock_text_icon = ""
 
-local button_bg = theme.xcolorbase
+local button_bg = theme.color.base
 local button_size = dpi(120)
 
 --- Commands
@@ -52,7 +52,7 @@ local create_button = function(symbol, hover_color, _, command)
 		align = "center",
 		valign = "center",
 		font = icon_font,
-		markup = helpers.ui.colorize_text(symbol, theme.xcolorS0),
+		markup = helpers.ui.colorize_text(symbol, theme.color.surface0),
 		widget = wibox.widget.textbox(),
 	})
 
@@ -66,7 +66,7 @@ local create_button = function(symbol, hover_color, _, command)
 		forced_height = button_size,
 		forced_width = button_size,
 		border_width = dpi(8),
-		border_color = theme.xcolorS0,
+		border_color = theme.color.surface0,
 		shape = helpers.ui.rrect(theme.border_width * 2),
 		bg = button_bg,
 		widget = wibox.container.background,
@@ -81,8 +81,8 @@ local create_button = function(symbol, hover_color, _, command)
 		button.border_color = hover_color
 	end)
 	button:connect_signal("mouse::leave", function()
-		icon.markup = helpers.ui.colorize_text(icon.text, theme.xcolorS0)
-		button.border_color = theme.xcolorS0
+		icon.markup = helpers.ui.colorize_text(icon.text, theme.color.surface0)
+		button.border_color = theme.color.surface0
 	end)
 
 	helpers.ui.add_hover_cursor(button, "hand1")
@@ -91,11 +91,11 @@ local create_button = function(symbol, hover_color, _, command)
 end
 
 --- Create the buttons
-local poweroff = create_button(poweroff_text_icon, theme.xcolor10, "Poweroff", poweroff_command)
-local reboot = create_button(reboot_text_icon, theme.xcolor6, "Reboot", reboot_command)
-local suspend = create_button(suspend_text_icon, theme.xcolor8, "Suspend", suspend_command)
-local exit = create_button(exit_text_icon, theme.xcolor2, "Exit", exit_command)
-local lock = create_button(lock_text_icon, theme.xcolor12, "Lock", lock_command)
+local poweroff = create_button(poweroff_text_icon, theme.color.red, "Poweroff", poweroff_command)
+local reboot = create_button(reboot_text_icon, theme.color.green, "Reboot", reboot_command)
+local suspend = create_button(suspend_text_icon, theme.color.peach, "Suspend", suspend_command)
+local exit = create_button(exit_text_icon, theme.color.blue, "Exit", exit_command)
+local lock = create_button(lock_text_icon, theme.color.pink, "Lock", lock_command)
 
 local create_exit_screen = function(s)
 	s.exit_screen = wibox({

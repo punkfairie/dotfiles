@@ -79,7 +79,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	s.border2 = awful.wibar({
 		position = "top",
 		screen = s,
-		bg = theme.xcolorS0,
+		bg = theme.color.surface0,
 		height = dpi(2),
 	})
 end)

@@ -17,7 +17,7 @@ local notifs_text = wibox.widget({
 })
 
 local notifs_clear = wibox.widget({
-	markup = helpers.ui.colorize_text(" ", theme.xcolor10),
+	markup = helpers.ui.colorize_text(" ", theme.color.red),
 	font = helpers.ui.set_font("Bold 21"),
 	align = "center",
 	valign = "center",
@@ -36,7 +36,7 @@ local notifs_empty = wibox.widget({
 		{
 			nil,
 			{
-				markup = helpers.ui.colorize_text("Nothing Here!", theme.xcolorT2),
+				markup = helpers.ui.colorize_text("Nothing Here!", theme.color.subtext1),
 				font = helpers.ui.set_font("Bold 17"),
 				align = "center",
 				valign = "center",
@@ -48,7 +48,7 @@ local notifs_empty = wibox.widget({
 	},
 	forced_height = dpi(730),
 	widget = wibox.container.background,
-	bg = theme.xcolorS0,
+	bg = theme.color.surface0,
 	shape = helpers.ui.rrect(8),
 })
 
@@ -127,7 +127,7 @@ local create_notif = function(icon, n)
 								},
 								nil,
 								{
-									markup = helpers.ui.colorize_text(time, theme.xcolorT2),
+									markup = helpers.ui.colorize_text(time, theme.color.subtext1),
 									align = "right",
 									valign = "bottom",
 									font = helpers.ui.set_font("Bold 10"),
@@ -163,7 +163,7 @@ local create_notif = function(icon, n)
 		},
 		forced_height = dpi(85),
 		widget = wibox.container.background,
-		bg = theme.xcolorS0,
+		bg = theme.color.surface0,
 		shape = helpers.ui.rrect(8),
 	})
 
@@ -225,7 +225,7 @@ local notifs = wibox.widget({
 			layout = wibox.container.margin,
 		},
 		widget = wibox.container.background,
-		bg = theme.xcolorS0,
+		bg = theme.color.surface0,
 		shape = helpers.ui.rrect(8),
 	},
 	notifs_container,
@@ -253,7 +253,7 @@ local actions = wibox.widget({
 	},
 	forced_height = dpi(120),
 	widget = wibox.container.background,
-	bg = theme.xcolorS0,
+	bg = theme.color.surface0,
 	shape = helpers.ui.rrect(8),
 })
 
@@ -266,7 +266,7 @@ local action = wibox({
 	y = dpi(60),
 	bg = theme.bg_normal,
 	border_width = dpi(3),
-	border_color = theme.xcolorS0,
+	border_color = theme.color.surface0,
 })
 
 -- Sidebar widget setup

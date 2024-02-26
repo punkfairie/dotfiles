@@ -97,7 +97,7 @@ function awful.menu.new(...)
 	ret.wibox:set_widget(wibox.widget({
 		ret.wibox.widget,
 		widget = wibox.container.background,
-		bg = theme.xcolorbase,
+		bg = theme.color.base,
 		shape = helpers.ui.rrect(0),
 	}))
 

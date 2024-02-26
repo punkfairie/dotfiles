@@ -7,7 +7,7 @@ local beautiful = require("beautiful")
 local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
 
-local clock_icon = helpers.ui.create_icon(config.icons.clock, theme.xcolor12)
+local clock_icon = helpers.ui.create_icon(config.icons.clock, theme.color.pink)
 
 local clock = wibox.widget.textbox()
 clock.font = helpers.ui.set_font("11")

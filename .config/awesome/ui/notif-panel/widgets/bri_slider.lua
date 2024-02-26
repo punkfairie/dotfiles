@@ -11,9 +11,9 @@ local slider = wibox.widget({
 	bar_shape = helpers.ui.rrect(9),
 	bar_height = 6,
 	bar_color = theme.bg_focus,
-	bar_active_color = theme.xcolor7,
+	bar_active_color = theme.color.yellow,
 	handle_shape = gears.shape.circle,
-	handle_color = theme.xcolor7,
+	handle_color = theme.color.yellow,
 	handle_width = dpi(12),
 	value = dpi(25),
 	widget = wibox.widget.slider,
@@ -23,7 +23,7 @@ helpers.ui.add_hover_cursor(slider, "hand1")
 
 local bri_slider = wibox.widget({
 	{
-		markup = helpers.ui.colorize_text("󰃞 ", theme.xcolor7),
+		markup = helpers.ui.colorize_text("󰃞 ", theme.color.yellow),
 		font = helpers.ui.set_font("14"),
 		align = "center",
 		valign = "center",

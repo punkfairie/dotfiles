@@ -7,6 +7,6 @@ local theme = beautiful.get()
 local seperator = wibox.widget.textbox()
 
 seperator.font = helpers.ui.set_font("14")
-seperator.markup = helpers.ui.colorize_text("|", theme.xcolorT2)
+seperator.markup = helpers.ui.colorize_text("|", theme.color.subtext1)
 
 return seperator

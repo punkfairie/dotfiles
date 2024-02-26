@@ -8,7 +8,7 @@ local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
 
 -- Icon
-local icon = helpers.ui.create_icon(config.icons.vol.on, theme.xcolor2)
+local icon = helpers.ui.create_icon(config.icons.vol.on, theme.color.blue)
 
 -- Uptime
 local pulseaudio = wibox.widget.textbox()
@@ -19,10 +19,10 @@ local function get_val()
 	awesome.connect_signal("signal::volume", function(vol, muted)
 		if muted then
 			pulseaudio.markup = "muted"
-			icon.markup = helpers.ui.colorize_text(config.icons.vol.off, theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text(config.icons.vol.off, theme.color.blue)
 		else
 			pulseaudio.markup = tonumber(vol) .. "%"
-			icon.markup = helpers.ui.colorize_text(config.icons.vol.on, theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text(config.icons.vol.on, theme.color.blue)
 		end
 	end)
 end
@@ -55,11 +55,11 @@ local update_volume = function()
 		pulseaudio.markup = tonumber(stdout:match("%d+")) .. "%"
 
 		if tonumber(stdout:match("%d+")) < 10 then
-			icon.markup = helpers.ui.colorize_text(config.icons.vol.low, theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text(config.icons.vol.low, theme.color.blue)
 		elseif tonumber(stdout:match("%d+")) < 50 then
-			icon.markup = helpers.ui.colorize_text(config.icons.vol.med, theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text(config.icons.vol.med, theme.color.blue)
 		elseif tonumber(stdout:match("%d+")) < 100 then
-			icon.markup = helpers.ui.colorize_text(config.icons.vol.high, theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text(config.icons.vol.high, theme.color.blue)
 		else
 		end
 	end)

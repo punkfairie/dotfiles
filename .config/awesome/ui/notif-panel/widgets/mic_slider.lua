@@ -13,10 +13,10 @@ local microphone = config.widget.mic.name
 local slider = wibox.widget({
 	bar_shape = helpers.ui.rrect(9),
 	bar_height = dpi(6),
-	bar_color = theme.xcolorbase,
-	bar_active_color = theme.xcolor2,
+	bar_color = theme.color.base,
+	bar_active_color = theme.color.blue,
 	handle_shape = gears.shape.circle,
-	handle_color = theme.xcolor2,
+	handle_color = theme.color.blue,
 	handle_width = dpi(12),
 	value = dpi(75),
 	forced_width = dpi(239),
@@ -29,7 +29,7 @@ local osd_value = wibox.widget({
 	widget = wibox.widget.textbox(),
 })
 local icon = wibox.widget({
-	markup = helpers.ui.colorize_text("󰍬", theme.xcolor2),
+	markup = helpers.ui.colorize_text("󰍬", theme.color.blue),
 	font = helpers.ui.set_font("14"),
 	align = "center",
 	valign = "center",
@@ -39,10 +39,10 @@ local icon = wibox.widget({
 local function get_val()
 	awesome.connect_signal("signal::mic", function(_, muted)
 		if muted then
-			icon.markup = helpers.ui.colorize_text("󰍭", theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text("󰍭", theme.color.blue)
 			icon.font = helpers.ui.set_font("14")
 		else
-			icon.markup = helpers.ui.colorize_text("󰍬", theme.xcolor2)
+			icon.markup = helpers.ui.colorize_text("󰍬", theme.color.blue)
 			icon.font = helpers.ui.set_font("17")
 		end
 	end)

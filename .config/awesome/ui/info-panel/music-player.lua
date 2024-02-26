@@ -35,7 +35,7 @@ local filter_color = {
 	type = "linear",
 	from = { 0, 0 },
 	to = { 0, 160 },
-	stops = { { 0, theme.xcolorS0 .. "cc" }, { 1, theme.xcolorS0 } },
+	stops = { { 0, theme.color.surface0 .. "cc" }, { 1, theme.color.surface0 } },
 }
 
 local music_art_filter = wibox.widget({
@@ -70,8 +70,8 @@ local function volume_control()
 		bar_width = dpi(4),
 		shape = helpers.ui.rrect(6),
 		bar_shape = helpers.ui.rrect(6),
-		color = theme.xcolor2,
-		background_color = theme.xcolorS0,
+		color = theme.color.blue,
+		background_color = theme.color.surface0,
 		border_width = 0,
 		widget = wibox.widget.progressbar,
 	})
@@ -198,7 +198,7 @@ local function music()
 		},
 		forced_width = dpi(350),
 		shape = helpers.ui.prrect(8, false, true, true, false),
-		bg = theme.xcolorS0,
+		bg = theme.color.surface0,
 		widget = wibox.container.background,
 	})
 end
@@ -215,7 +215,7 @@ local music_widget = wibox.widget({
 			layout = wibox.layout.align.horizontal,
 		},
 		forced_height = dpi(150),
-		bg = theme.xcolorbase,
+		bg = theme.color.base,
 		shape = helpers.ui.rrect(8),
 		widget = wibox.container.background,
 	},
@@ -239,17 +239,17 @@ playerctl_daemon:connect_signal("metadata", function(_, title, artist, album_pat
 	end
 
 	music_art:set_image(gears.surface.load_uncached(album_path))
-	music_title:set_markup_silently(helpers.ui.colorize_text(title, theme.xcolorT2))
-	music_artist:set_markup_silently(helpers.ui.colorize_text(artist, theme.xcolor2))
+	music_title:set_markup_silently(helpers.ui.colorize_text(title, theme.color.subtext1))
+	music_artist:set_markup_silently(helpers.ui.colorize_text(artist, theme.color.blue))
 end)
 
 playerctl_daemon:connect_signal("playback_status", function(_, playing, _)
 	if playing then
-		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", theme.xcolorO0))
-		toggle.markup = helpers.ui.colorize_text(config.icons.music.pause, theme.xcolor2)
+		music_text:set_markup_silently(helpers.ui.colorize_text("Now Playing", theme.color.overlay0))
+		toggle.markup = helpers.ui.colorize_text(config.icons.music.pause, theme.color.blue)
 	else
-		music_text:set_markup_silently(helpers.ui.colorize_text("Music", theme.xcolorO0))
-		toggle.markup = helpers.ui.colorize_text(config.icons.music.play, theme.xcolor2)
+		music_text:set_markup_silently(helpers.ui.colorize_text("Music", theme.color.overlay0))
+		toggle.markup = helpers.ui.colorize_text(config.icons.music.play, theme.color.blue)
 	end
 end)
 

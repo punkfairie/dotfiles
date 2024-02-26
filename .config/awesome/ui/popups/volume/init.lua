@@ -46,9 +46,9 @@ local slider_osd = wibox.widget({
 		id = "vol_osd_slider",
 		bar_shape = gears.shape.rounded_rect,
 		bar_height = dpi(12),
-		bar_color = theme.xcolorS0,
-		bar_active_color = theme.xcolor2,
-		handle_color = theme.xcolor2,
+		bar_color = theme.color.surface0,
+		bar_active_color = theme.color.blue,
+		handle_color = theme.color.blue,
 		handle_shape = gears.shape.circle,
 		handle_width = dpi(24),
 		handle_border_color = "#00000012",
@@ -142,7 +142,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		bg = theme.transparent,
 		offset = dpi(5),
 		border_width = dpi(3),
-		border_color = theme.xcolorS0,
+		border_color = theme.color.surface0,
 		ontop = true,
 		visible = false,
 		preferred_anchors = "middle",
@@ -179,7 +179,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 				right = dpi(24),
 				widget = wibox.container.margin,
 			},
-			bg = theme.xcolorbase,
+			bg = theme.color.base,
 			widget = wibox.container.background,
 		},
 	})
@@ -231,12 +231,12 @@ local function get_vol()
 			end
 
 			if muted then
-				vol_osd_slider.bar_active_color = theme.xcolor10
-				vol_osd_slider.handle_color = theme.xcolor10
+				vol_osd_slider.bar_active_color = theme.color.red
+				vol_osd_slider.handle_color = theme.color.red
 				icon3.image = theme.volume_off
 			else
-				vol_osd_slider.bar_active_color = theme.xcolor2
-				vol_osd_slider.handle_color = theme.xcolor2
+				vol_osd_slider.bar_active_color = theme.color.blue
+				vol_osd_slider.handle_color = theme.color.blue
 				icon3.image = theme.volume_on
 			end
 		end)

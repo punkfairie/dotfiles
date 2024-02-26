@@ -1,5 +1,5 @@
 local awful = require("awful")
-local icons = require("config").theme.icons.tags
+local icons = require("config").icons.tags
 
 screen.connect_signal("request::desktop_decoration", function(s)
 	awful.tag(

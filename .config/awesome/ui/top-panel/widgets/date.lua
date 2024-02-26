@@ -7,7 +7,7 @@ local config = require("config")
 local theme = beautiful.get()
 local dpi = beautiful.xresources.apply_dpi
 
-local icon = helpers.ui.create_icon(config.icons.cal, theme.xcolor5)
+local icon = helpers.ui.create_icon(config.icons.cal, theme.color.teal)
 
 local date = wibox.widget.textbox()
 date.font = helpers.ui.set_font("11")

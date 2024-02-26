@@ -52,7 +52,7 @@ end)
 
 naughty.connect_signal("request::display", function(n)
 	--- random accent color
-	local accent_colors = theme.xcolor2
+	local accent_colors = theme.color.blue
 
 	--- table of icons
 	local app_icons = {
@@ -74,7 +74,7 @@ naughty.connect_signal("request::display", function(n)
 	local app_icon_n = wibox.widget({
 		{
 			font = helpers.ui.set_font("Round 13"),
-			markup = helpers.ui.colorize_text(app_icon, theme.xcolorbase),
+			markup = helpers.ui.colorize_text(app_icon, theme.color.base),
 			align = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
@@ -132,7 +132,7 @@ naughty.connect_signal("request::display", function(n)
 	local dismiss = wibox.widget({
 		{
 			font = helpers.ui.set_font("Bold 10"),
-			markup = helpers.ui.colorize_text("", theme.xcolor2),
+			markup = helpers.ui.colorize_text("", theme.color.blue),
 			widget = wibox.widget.textbox,
 			valign = "center",
 			align = "center",
@@ -154,7 +154,7 @@ naughty.connect_signal("request::display", function(n)
 		value = 0,
 		thickness = dpi(4),
 		rounded_edge = true,
-		bg = theme.xcolorbase,
+		bg = theme.color.base,
 		colors = {
 			{
 				type = "linear",
@@ -218,7 +218,7 @@ naughty.connect_signal("request::display", function(n)
 				},
 				widget = wibox.container.place,
 			},
-			bg = theme.xcolorbase,
+			bg = theme.color.base,
 			forced_height = dpi(25),
 			forced_width = dpi(70),
 			widget = wibox.container.background,
@@ -235,7 +235,7 @@ naughty.connect_signal("request::display", function(n)
 		type = "notification",
 		cursor = "hand2",
 		shape = helpers.ui.rrect(12),
-		border_color = theme.xcolorS0,
+		border_color = theme.color.surface0,
 		border_width = dpi(3),
 		maximum_width = dpi(350),
 		maximum_height = dpi(180),
@@ -255,7 +255,7 @@ naughty.connect_signal("request::display", function(n)
 						margins = { top = dpi(3), bottom = dpi(3), left = dpi(15), right = dpi(15) },
 						widget = wibox.container.margin,
 					},
-					bg = theme.xcolorS0,
+					bg = theme.color.surface0,
 					widget = wibox.container.background,
 				},
 				{
@@ -294,7 +294,7 @@ naughty.connect_signal("request::display", function(n)
 			},
 			--- Anti-aliasing container
 			shape = helpers.ui.rrect(0),
-			bg = theme.xcolorbase,
+			bg = theme.color.base,
 			widget = wibox.container.background,
 		},
 	})

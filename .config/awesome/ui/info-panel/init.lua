@@ -60,7 +60,7 @@ local sidebar = wibox({
 	y = dpi(60),
 	bg = theme.bg_normal,
 	border_width = dpi(3),
-	border_color = theme.xcolorS0,
+	border_color = theme.color.surface0,
 })
 
 -- Sidebar widget setup

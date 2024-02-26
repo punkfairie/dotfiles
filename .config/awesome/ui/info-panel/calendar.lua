@@ -11,27 +11,27 @@ local theme = beautiful.get()
 -- copied from awesome doc and adjusted a bit
 local styles = {}
 
-styles.month = { bg_color = theme.xcolorS0 }
+styles.month = { bg_color = theme.color.surface0 }
 styles.normal = {
-	bg_color = theme.xcolorS0,
+	bg_color = theme.color.surface0,
 	padding = dpi(6),
-	fg_color = theme.xcolorT2,
+	fg_color = theme.color.subtext1,
 }
 styles.focus = {
-	fg_color = theme.xcolor7,
+	fg_color = theme.color.yellow,
 	padding = dpi(6),
 	markup = function(t)
 		return "<b>" .. t .. "</b>"
 	end,
 }
 styles.header = {
-	fg_color = theme.xcolor2,
+	fg_color = theme.color.blue,
 	markup = function(t)
 		return "<b>" .. t .. "</b>"
 	end,
 }
 styles.weekday = {
-	fg_color = theme.xcolorT2,
+	fg_color = theme.color.subtext1,
 	markup = function(t)
 		local f = helpers.ui.set_font("16")
 		return '<span font_desc="' .. f .. '">' .. t .. "</span>"

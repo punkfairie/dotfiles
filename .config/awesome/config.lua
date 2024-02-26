@@ -23,16 +23,6 @@ M.theme = {
 	accent = "pink",
 	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
 	pfp = config_dir .. "themes/catppuccin/assets/pfp.jpg",
-	icons = {},
-}
-
-M.theme.icons.tags = {
-	general = " ",
-	files = " ",
-	media = " ",
-	terminal = " ",
-	coding = " ",
-	misc = "󰍹 ",
 }
 
 M.icons = {
