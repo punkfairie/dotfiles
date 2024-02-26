@@ -16,3 +16,13 @@ configuration {
 }
  
 @theme "catppuccin-macchiato"
+
+* {
+  blue: #f5bde6;
+  border-col: @blue;
+  font: "FiraCode Nerd Font Propo 12";
+}
+
+window {
+  border: 1px;
+}
