@@ -34,3 +34,6 @@
 [submodule ".themes/bat/catppuccin"]
 	path = .themes/bat/catppuccin
 	url = git@github.com:catppuccin/bat.git
+[submodule "/home/marley/.themes/rofi/catppuccin"]
+	path = /home/marley/.themes/rofi/catppuccin
+	url = git@github.com:catppuccin/rofi.git
