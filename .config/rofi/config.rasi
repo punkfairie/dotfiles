@@ -20,7 +20,7 @@ configuration {
 * {
   blue: #f5bde6;
   border-col: @blue;
-  font: "FiraCode Nerd Font Propo 12";
+  font: "FairiesevkaSans Nerd Font Propo 12";
 }
 
 window {

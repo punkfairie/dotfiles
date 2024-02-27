@@ -25,6 +25,10 @@ M.theme = {
 	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
 	pfp = config_dir .. "themes/catppuccin/assets/pfp.jpg",
 	icon_theme = "Papirus",
+	font = {
+		family = "FairiesevkaSans Nerd Font Propo",
+		size = "10",
+	},
 }
 
 M.icons = {

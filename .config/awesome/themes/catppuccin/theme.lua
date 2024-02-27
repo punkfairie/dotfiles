@@ -60,7 +60,7 @@ theme.volume_on = theme_path .. "assets/volume-on.png"
 theme.volume_off = theme_path .. "assets/volume-off.png"
 theme.pfp = config.theme.pfp
 theme.wallpaper = config.theme.wallpaper
-theme.font = "FiraCode Nerd Font Propo 10"
+theme.font = config.theme.font.family .. " " .. config.theme.font.size
 
 theme.titlebar_bg_focus = theme.color.base
 theme.titlebar_bg = theme.color.base
