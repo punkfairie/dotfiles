@@ -34,9 +34,9 @@
 [submodule ".themes/bat/catppuccin"]
 	path = .themes/bat/catppuccin
 	url = git@github.com:catppuccin/bat.git
-[submodule "/home/marley/.themes/rofi/catppuccin"]
+[submodule ".themes/rofi/catppuccin"]
 	path = /home/marley/.themes/rofi/catppuccin
 	url = git@github.com:catppuccin/rofi.git
-[submodule "/home/marley/.fonts/Iosevka"]
-	path = /home/marley/.fonts/Iosevka
-	url = https://github.com/be5invis/Iosevka.git
+[submodule ".fonts"]
+	path = .fonts
+	url = git@github.com:punkfairie/Fairiesevka.git
