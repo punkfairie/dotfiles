@@ -35,7 +35,7 @@
 	path = .themes/bat/catppuccin
 	url = git@github.com:catppuccin/bat.git
 [submodule ".themes/rofi/catppuccin"]
-	path = /home/marley/.themes/rofi/catppuccin
+	path = .themes/rofi/catppuccin
 	url = git@github.com:catppuccin/rofi.git
 [submodule ".fonts"]
 	path = .fonts
