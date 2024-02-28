@@ -9,7 +9,9 @@ M.fill = function(_, parent, args)
   local chars = {}
 
   if #parent.snippet.env.LS_SELECT_RAW > 0 then
-    title = print(parent.snippet.env.LS_SELECT_RAW) .. " "
+    for _, ele in ipairs(parent.snippet.env.LS_SELECT_RAW) do
+      title = title .. ele .. " "
+    end
   end
 
   for str in string.gmatch(args, "([^%%]+)") do

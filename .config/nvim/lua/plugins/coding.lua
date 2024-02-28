@@ -3,6 +3,7 @@ local cmp = require("cmp")
 return {
   {
     "L3MON4D3/LuaSnip",
+    keys = { { "<Tab>" } },
     opts = {
       store_selection_keys = "<Tab>",
     },
