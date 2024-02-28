@@ -15,10 +15,10 @@
   daw  = diff          --word-diff # show diff by word
   dasw = diff --staged --word-diff
 
-  d   = "!f() { git diff                      "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"; }; f"
-  ds  = "!f() { git diff --staged             "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"; }; f"
-  dw  = "!f() { git diff          --word-diff "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"; }; f"
-  dsw = "!f() { git diff --staged --word-diff "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"; }; f"
+  d   = "!f() { git diff                      "$@" ':(exclude)package-lock.json' ':(exclude)*.lock'; }; f"
+  ds  = "!f() { git diff --staged             "$@" ':(exclude)package-lock.json' ':(exclude)*.lock'; }; f"
+  dw  = "!f() { git diff          --word-diff "$@" ':(exclude)package-lock.json' ':(exclude)*.lock'; }; f"
+  dsw = "!f() { git diff --staged --word-diff "$@" ':(exclude)package-lock.json' ':(exclude)*.lock'; }; f"
 
   st  = status --short --branch
   stu = status --short --branch -u

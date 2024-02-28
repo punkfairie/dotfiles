@@ -74,3 +74,4 @@ data/
 .config/qalculate/qalc.history
 .config/wireshark/
 hackin/
+.config/fontforge/plugin/plugin_config.ini
