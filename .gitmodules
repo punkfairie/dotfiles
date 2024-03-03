@@ -43,3 +43,6 @@
 [submodule "/home/marley/.themes/btop/catppuccin"]
 	path = /home/marley/.themes/btop/catppuccin
 	url = git@github.com:catppuccin/btop.git
+[submodule ".themes/zathura/catppuccin"]
+	path = .themes/zathura/catppuccin
+	url = git@github.com:catppuccin/zathura.git
