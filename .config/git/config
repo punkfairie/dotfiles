@@ -103,5 +103,17 @@
   # Show most recently changed branches first.
   sort = -committerdate
 
+[url "git@github.com:"]
+	insteadOf = @gh:
+
+[url "aur@aur.archlinux.org"]
+  insteadOf = @aur:
+
+[url "https://github.com/"]
+	insteadOf = gh://
+
+[url "https://aur.archlinux.org/"]
+	insteadOf = aur://
+
 [include]
   path = ~/.config/git/config.local
