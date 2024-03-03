@@ -75,3 +75,4 @@ data/
 .config/wireshark/
 hackin/
 .config/fontforge/plugin/plugin_config.ini
+.config/Thunar/
