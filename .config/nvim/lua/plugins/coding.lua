@@ -38,4 +38,9 @@ return {
       return opts
     end,
   },
+
+  {
+    "m-pilia/vim-pkgbuild",
+    ft = { "pkgbuild" },
+  },
 }

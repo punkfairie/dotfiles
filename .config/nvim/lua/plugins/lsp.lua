@@ -35,6 +35,7 @@ return {
 
         -- web
         html = {},
+        css_variables = { mason = false },
         cssls = {},
         denols = {},
         volar = {
@@ -98,6 +99,7 @@ return {
 
         -- shell
         bashls = {},
+        pkgbuild_language_server = { mason = false },
       },
     },
   },
