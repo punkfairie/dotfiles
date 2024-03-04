@@ -46,3 +46,6 @@
 [submodule ".themes/zathura/catppuccin"]
 	path = .themes/zathura/catppuccin
 	url = git@github.com:catppuccin/zathura.git
+[submodule ".themes/glamour/catppuccin"]
+	path = .themes/glamour/catppuccin
+	url = git@github.com:catppuccin/glamour.git
