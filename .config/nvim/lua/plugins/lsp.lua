@@ -34,7 +34,9 @@ return {
         taplo = {},
 
         -- web
-        html = {},
+        html = {
+          filetypes = { "html", "liquid" },
+        },
         css_variables = { mason = false },
         cssls = {},
         denols = {},
