@@ -126,6 +126,8 @@
 
   open = "!f() { URL=$(git config remote.${1:-origin}.url); xdg-open \"${URL%%.git}\"; }; f"
 
+  chash = "!git log --oneline | gum filter --height 10 | cut -d' ' -f1 | copyq copy - &>/dev/null"
+
   # Notes - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
   # A note on reset, restore, and revert, paraphrased from `man git`, plus myown
