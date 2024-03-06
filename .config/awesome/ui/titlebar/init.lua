@@ -5,22 +5,6 @@ local xresources = require("beautiful.xresources")
 
 local dpi = xresources.apply_dpi
 
---- Rounded Corners Client Side ---
--- Use Picom If you Can --
-local function shapemanager(c)
-	c.shape = function(cr, w, h)
-		if not c.fullscreen and not c.maximized then
-			gears.shape.rounded_rect(cr, w, h, 15)
-		else
-			gears.shape.rounded_rect(cr, w, h, 0)
-		end
-	end
-end
-
-client.connect_signal("property::fullscreen", function(c)
-	shapemanager(c)
-end)
-
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
 	-- buttons for the titlebar

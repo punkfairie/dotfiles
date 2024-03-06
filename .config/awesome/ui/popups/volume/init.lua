@@ -139,7 +139,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		width = volume_osd_width,
 		maximum_height = volume_osd_height,
 		maximum_width = volume_osd_width,
-		bg = theme.transparent,
+		bg = theme.color.transparent,
 		offset = dpi(5),
 		border_width = dpi(3),
 		border_color = theme.color.surface0,

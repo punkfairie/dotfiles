@@ -15,7 +15,7 @@ local theme = {}
 theme.color = {}
 
 -- Transparent Color --
-theme.transparent = "#00000000"
+theme.color.transparent = "#00000000"
 
 -- Base --
 theme.color.crust = palette.crust.hex
@@ -117,8 +117,8 @@ theme.snap_shape = helpers.ui.rrect(0)
 theme.hotkeys_shape = helpers.ui.rrect(12)
 theme.hotkeys_border_color = theme.color.accent1
 theme.hotkeys_modifiers_fg = theme.color.overlay2
-theme.hotkeys_font = helpers.ui.set_font("9", theme.font)
-theme.hotkeys_description_font = helpers.ui.set_font("9", theme.font)
+theme.hotkeys_font = helpers.ui.set_font("10", theme.font)
+theme.hotkeys_description_font = helpers.ui.set_font("10", theme.font)
 
 -- Layoutlist
 theme.layoutlist_shape_selected = helpers.ui.rrect(7)
