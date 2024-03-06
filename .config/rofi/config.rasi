@@ -25,4 +25,5 @@ configuration {
 
 window {
   border: 1px;
+  border-radius: 12px;
 }
