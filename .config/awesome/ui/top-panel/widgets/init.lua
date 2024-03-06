@@ -3,7 +3,6 @@ return {
 	cpu = require(... .. ".cpu"),
 	date = require(... .. ".date"),
 	disk = require(... .. ".disk"),
-	layoutbox = require(... .. ".layoutbox"),
 	mem = require(... .. ".mem"),
 	menu = require(... .. ".menu"),
 	promptbox = require(... .. ".promptbox"),

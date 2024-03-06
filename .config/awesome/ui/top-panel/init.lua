@@ -23,6 +23,27 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		layout = wibox.layout.fixed.horizontal,
 	})
 
+	local layoutbox = awful.widget.layoutbox({
+		screen = s,
+		buttons = {
+			awful.button({}, 1, function()
+				awful.layout.inc(1)
+			end),
+
+			awful.button({}, 3, function()
+				awful.layout.inc(-1)
+			end),
+
+			awful.button({}, 4, function()
+				awful.layout.inc(-1)
+			end),
+
+			awful.button({}, 5, function()
+				awful.layout.inc(1)
+			end),
+		},
+	})
+
 	-- Create the wibox
 	s.mywibox = awful.wibar({
 		position = "top",
@@ -74,7 +95,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 					widgets.mem,
 					widgets.cpu,
 					widgets.disk,
-					widgets.layoutbox,
+					layoutbox,
 				},
 				left = 0,
 				right = theme.useless_gap,
