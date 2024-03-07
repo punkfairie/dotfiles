@@ -2,6 +2,7 @@ local awful = require("awful")
 local wibox = require("wibox")
 local widgets = require("ui.top-panel.widgets")
 local beautiful = require("beautiful")
+local gears = require("gears")
 local vars = require("ui.top-panel.config")
 
 local theme = beautiful.get()
@@ -56,6 +57,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
 		border_width = theme.border_width,
 		border_color = theme.border_normal,
 		height = vars.height,
+		shape = gears.shape.rounded_rect,
 
 		widget = {
 			layout = wibox.layout.align.horizontal,
