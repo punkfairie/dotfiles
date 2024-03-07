@@ -265,8 +265,8 @@ local action = wibox({
 	height = awful.screen.focused().geometry.height - dpi(100),
 	y = dpi(60),
 	bg = theme.bg_normal,
-	border_width = dpi(3),
-	border_color = theme.color.surface0,
+	border_width = theme.border_width * 2,
+	border_color = theme.border_normal,
 })
 
 -- Sidebar widget setup
