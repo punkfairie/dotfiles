@@ -27,7 +27,7 @@ local icon3 = icon.icon2
 local osd_header = wibox.widget({
 	text = "Volume",
 	font = helpers.ui.set_font("Bold 12"),
-	align = "left",
+	halign = "left",
 	valign = "center",
 	widget = wibox.widget.textbox,
 })
@@ -35,7 +35,7 @@ local osd_header = wibox.widget({
 local osd_value = wibox.widget({
 	text = "0%",
 	font = helpers.ui.set_font("Bold 12"),
-	align = "center",
+	halign = "center",
 	valign = "center",
 	widget = wibox.widget.textbox,
 })

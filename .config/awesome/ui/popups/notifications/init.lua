@@ -75,7 +75,7 @@ naughty.connect_signal("request::display", function(n)
 		{
 			font = helpers.ui.set_font("Round 13"),
 			markup = helpers.ui.colorize_text(app_icon, theme.color.base),
-			align = "center",
+			halign = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
 		},
@@ -135,7 +135,7 @@ naughty.connect_signal("request::display", function(n)
 			markup = helpers.ui.colorize_text("", theme.color.blue),
 			widget = wibox.widget.textbox,
 			valign = "center",
-			align = "center",
+			halign = "center",
 		},
 		margins = dpi(4),
 		widget = wibox.container.margin,

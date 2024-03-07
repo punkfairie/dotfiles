@@ -13,19 +13,19 @@ local dpi = beautiful.xresources.apply_dpi
 -- Song's Title
 local title = wibox.widget.textbox()
 title.font = helpers.ui.set_font("Medium 16")
-title.align = "left"
+title.halign = "left"
 title.valign = "bottom"
 
 -- Song's Artist
 local artist = wibox.widget.textbox()
 artist.font = helpers.ui.set_font("Regular 16")
-artist.align = "left"
+artist.halign = "left"
 artist.valign = "bottom"
 
 -- Song's Length
 local length = wibox.widget.textbox()
 length.font = helpers.ui.set_font("Regular 14")
-length.align = "center"
+length.halign = "center"
 length.valign = "center"
 
 -- Player's Button

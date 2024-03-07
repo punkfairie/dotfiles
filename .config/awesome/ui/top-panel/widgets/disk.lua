@@ -12,7 +12,7 @@ local icon = helpers.create_icon(config.icons.disk, theme.color.yellow)
 -- Uptime
 local disk = wibox.widget.textbox()
 disk.font = helpers.set_font("10")
-disk.align = "center"
+disk.halign = "center"
 
 local function get_val()
 	awesome.connect_signal("signal::disk", function(disk_perc)

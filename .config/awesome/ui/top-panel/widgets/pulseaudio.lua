@@ -13,7 +13,7 @@ local icon = helpers.ui.create_icon(config.icons.vol.on, theme.color.blue)
 -- Uptime
 local pulseaudio = wibox.widget.textbox()
 pulseaudio.font = helpers.ui.set_font("10")
-pulseaudio.align = "center"
+pulseaudio.halign = "center"
 
 local function get_val()
 	awesome.connect_signal("signal::volume", function(vol, muted)

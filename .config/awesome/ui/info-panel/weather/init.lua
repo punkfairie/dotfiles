@@ -73,7 +73,7 @@ local current_weather_widget = wibox.widget({
 			{
 				id = "temp_current",
 				markup = "20<sup><span>°</span></sup>",
-				align = "right",
+				halign = "right",
 				font = helpers.ui.set_font("Bold 16"),
 				widget = wibox.widget.textbox,
 			},
@@ -154,7 +154,7 @@ local weather_widget = wibox.widget({
 	{
 		text = "Weather",
 		font = helpers.ui.set_font("Bold 16"),
-		align = "center",
+		halign = "center",
 		widget = wibox.widget.textbox,
 	},
 	current_weather_widget,

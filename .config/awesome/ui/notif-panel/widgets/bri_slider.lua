@@ -25,7 +25,7 @@ local bri_slider = wibox.widget({
 	{
 		markup = helpers.ui.colorize_text("󰃞 ", theme.color.yellow),
 		font = helpers.ui.set_font("14"),
-		align = "center",
+		halign = "center",
 		valign = "center",
 		widget = wibox.widget.textbox(),
 	},

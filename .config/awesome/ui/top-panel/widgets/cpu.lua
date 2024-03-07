@@ -12,7 +12,7 @@ local icon = helpers.create_icon(config.icons.cpu, theme.color.maroon)
 -- Uptime
 local cpu = wibox.widget.textbox()
 cpu.font = helpers.set_font("10")
-cpu.align = "center"
+cpu.halign = "center"
 
 local function get_val()
 	awesome.connect_signal("signal::cpu", function(cpu_perc)

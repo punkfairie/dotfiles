@@ -28,7 +28,7 @@ local osd_value = wibox.widget({
 local icon = wibox.widget({
 	markup = helpers.ui.colorize_text("󰕾 ", theme.color.blue),
 	font = helpers.ui.set_font("14"),
-	align = "center",
+	halign = "center",
 	valign = "center",
 	widget = wibox.widget.textbox(),
 })

@@ -12,7 +12,7 @@ local icon = helpers.create_icon(config.icons.mem, theme.color.green)
 -- Uptime
 local mem = wibox.widget.textbox()
 mem.font = helpers.set_font("10")
-mem.align = "center"
+mem.halign = "center"
 
 local function get_val()
 	awesome.connect_signal("signal::mem", function(mem_perc)

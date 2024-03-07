@@ -19,7 +19,7 @@ local notifs_text = wibox.widget({
 local notifs_clear = wibox.widget({
 	markup = helpers.ui.colorize_text(" ", theme.color.red),
 	font = helpers.ui.set_font("Bold 21"),
-	align = "center",
+	halign = "center",
 	valign = "center",
 	widget = wibox.widget.textbox,
 })
@@ -38,7 +38,7 @@ local notifs_empty = wibox.widget({
 			{
 				markup = helpers.ui.colorize_text("Nothing Here!", theme.color.subtext1),
 				font = helpers.ui.set_font("Bold 17"),
-				align = "center",
+				halign = "center",
 				valign = "center",
 				widget = wibox.widget.textbox,
 			},
@@ -119,7 +119,7 @@ local create_notif = function(icon, n)
 									{
 										markup = n.title,
 										font = helpers.ui.set_font("Bold 9"),
-										align = "left",
+										halign = "left",
 										widget = wibox.widget.textbox,
 									},
 									forced_width = dpi(140),
@@ -128,7 +128,7 @@ local create_notif = function(icon, n)
 								nil,
 								{
 									markup = helpers.ui.colorize_text(time, theme.color.subtext1),
-									align = "right",
+									halign = "right",
 									valign = "bottom",
 									font = helpers.ui.set_font("Bold 10"),
 									widget = wibox.widget.textbox,
@@ -141,7 +141,7 @@ local create_notif = function(icon, n)
 								speed = dpi(50),
 								{
 									markup = n.message,
-									align = "left",
+									halign = "left",
 									widget = wibox.widget.textbox,
 								},
 								forced_width = dpi(165),

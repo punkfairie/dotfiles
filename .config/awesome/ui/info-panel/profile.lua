@@ -27,13 +27,13 @@ pfp.forced_height = dpi(130)
 -- User
 local user = wibox.widget.textbox()
 user.font = helpers.ui.set_font("SemiBold 18")
-user.align = "left"
+user.halign = "left"
 user.markup = helpers.ui.colorize_text(os_user, theme.fg_normal)
 
 -- Hostname
 local hostname = wibox.widget.textbox()
 hostname.font = helpers.ui.set_font("Regular 14")
-hostname.align = "left"
+hostname.halign = "left"
 
 awful.spawn.easy_async_with_shell("hostnamectl --static", function(stdout)
 	hostname.markup = helpers.ui.colorize_text("@" .. tostring(stdout), theme.color.lavender)
@@ -42,7 +42,7 @@ end)
 -- Battery
 local uptimeosd = wibox.widget.textbox()
 uptimeosd.font = helpers.ui.set_font("12")
-uptimeosd.align = "center"
+uptimeosd.halign = "center"
 
 -- Get data 4 widgets!
 awesome.connect_signal("signal::uptime", function(uptime)
@@ -55,7 +55,7 @@ local shutdown = wibox.widget({
 		{
 			font = helpers.ui.set_font("30"),
 			markup = helpers.ui.colorize_text(config.icons.power, theme.color.red),
-			align = "center",
+		halign = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
 		},
@@ -75,7 +75,7 @@ local reboot = wibox.widget({
 		{
 			font = helpers.ui.set_font("30"),
 			markup = helpers.ui.colorize_text(config.icons.restart, theme.color.blue),
-			align = "center",
+		halign = "center",
 			valign = "center",
 			widget = wibox.widget.textbox,
 		},
