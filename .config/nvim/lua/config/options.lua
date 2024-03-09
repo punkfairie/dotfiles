@@ -15,3 +15,15 @@ vim.o.relativenumber = true
 vim.o.wrap = false
 
 vim.g.diffopt = "filler,vertical,closeoff,internal"
+
+vim.filetype.add({
+  extension = {
+    env = "conf",
+  },
+  filename = {
+    [".env"] = "conf",
+  },
+  pattern = {
+    ["%.env%.[%w_.-]+"] = "conf",
+  },
+})

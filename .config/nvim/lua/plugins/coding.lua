@@ -43,4 +43,13 @@ return {
     "m-pilia/vim-pkgbuild",
     ft = { "pkgbuild" },
   },
+
+  {
+    "jwalton512/vim-blade",
+  },
+
+  {
+    "tpope/vim-dotenv",
+    ft = { "dotenv" },
+  },
 }

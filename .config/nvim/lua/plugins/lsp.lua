@@ -5,9 +5,15 @@ return {
       ensure_installed = {
         -- general
         "commitlint",
+        "prettier",
 
         -- data/conf
         "yamllint",
+
+        -- php
+        "blade-formatter",
+        "pint",
+        "rustywind",
 
         -- shell
         "shellcheck",
@@ -71,6 +77,7 @@ return {
             "pug",
             "typescriptreact",
             "vue",
+            "blade",
           },
           -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
           -- **Note:** only the options listed in the table are supported.
@@ -97,7 +104,18 @@ return {
         },
 
         -- php
-        intelephense = {},
+        intelephense = {
+          filetypes = { "php", "blade" },
+          settings = {
+            intelephense = {
+              filetypes = { "php", "blade" },
+              files = {
+                associations = { "*.php", "*.blade.php" },
+                maxSize = 5000000,
+              },
+            },
+          },
+        },
 
         -- shell
         bashls = {},
