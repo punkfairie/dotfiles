@@ -77,3 +77,4 @@ hackin/
 .config/fontforge/plugin/plugin_config.ini
 .config/Thunar/
 .config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+.config/composer/vendor/
