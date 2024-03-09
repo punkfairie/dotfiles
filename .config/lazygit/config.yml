@@ -4,7 +4,7 @@ gui:
 git:
   paging:
     colorArg: always
-    pager: delta --paging=never
+    pager: delta --paging=never --features=arctic-fox
 os:
   copyToClipboardCmd: "copyq copy {{text}}"
   editPreset: nvim-remote
