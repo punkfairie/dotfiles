@@ -16,7 +16,7 @@ return {
     fmt(
       [[
         if {}
-          {}
+            {}
         end
       ]],
       { i(1), i(0) }
@@ -28,7 +28,7 @@ return {
     fmt(
       [[
         else if {}
-          {}
+            {}
       ]],
       { i(1), i(0) }
     )
@@ -39,7 +39,7 @@ return {
     fmt(
       [[
         for {} in {}
-          {}
+            {}
         end
       ]],
       { i(1), i(2), i(0) }
@@ -51,7 +51,7 @@ return {
     fmt(
       [[
         while {}
-          {}
+            {}
         end
       ]],
       { i(1), i(0) }
@@ -63,7 +63,7 @@ return {
     fmt(
       [[
         while true
-          {}
+            {}
         end
       ]],
       { i(0) }
@@ -75,8 +75,8 @@ return {
     fmt(
       [[
         switch {}
-          case {}
-            {}
+            case {}
+                {}
         end
       ]],
       { i(1), i(2), i(0) }
@@ -88,7 +88,7 @@ return {
     fmt(
       [[
         function {}
-          {}
+            {}
         end
       ]],
       { i(1), i(0) }
