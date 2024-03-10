@@ -28,10 +28,10 @@
 
   c    = commit
   ce   = commit --amend
-  cen  = commit --amend --no-edit
+  cen  = commit --amend --no-edit --no-verify
   ca   = "!git add --all && git commit"
   cae  = "!git add --all && git commit --amend"
-  caen = "!git add --all && git commit --amend --no-edit"
+  caen = "!git add --all && git commit --amend --no-edit --no-verify"
   cfu  = commit --fixup
 
   rev = revert

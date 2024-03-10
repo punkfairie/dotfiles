@@ -1,5 +1,20 @@
 #!/usr/bin/env fish
 
+set -l msg_file $argv[1]
+set -l commit_type $(string trim $argv[2])
+set -l commit_sha $(string trim $argv[3])
+
+# Rebasing.
+if test "$commit_type" = messageg
+    exit 0
+end
+
+if test -n "$commit_sha"
+    gum confirm "Create a new commit message?" || exit 0
+end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 set -l gitmojis $(curl -s https://gitmoji.dev/api/gitmojis | jello -rl '\
 result = []
 for entry in _.gitmojis:
@@ -29,6 +44,12 @@ set -l types \
 
 # HAS to be global so the function has access to it.
 set -g gitmoji "$(gum filter --height=10 $gitmojis)"
+
+# Abort if no emoji was selected
+if ! test -n "$gitmoji"
+    exit 1
+end
+
 set -l emoji $(string sub --length 1 $gitmoji)
 
 function breaking
@@ -82,7 +103,6 @@ breaking && set footer $(gum input --value "BREAKING CHANGE: " --placeholder "Th
 
 # gum confirm "Commit changes?" && git commit -m "$emoji $summary" -m "$description" -m "$footer"
 
-set -l msg_file $argv[1]
 set -l msg "$(cat $msg_file)"
 
 set -l new_msg "$emoji $summary\n\n"
