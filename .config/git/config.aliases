@@ -124,7 +124,7 @@
 
   nevermind = "!git reset --hard HEAD && git clean -df"
 
-  open = "!f() { URL=$(git config remote.${1:-origin}.url); xdg-open \"${URL%%.git}\"; }; f"
+  open = "!fish -c git_open"
 
   chash = "!git log --oneline | gum filter --height 10 | cut -d' ' -f1 | copyq copy - &>/dev/null"
 
