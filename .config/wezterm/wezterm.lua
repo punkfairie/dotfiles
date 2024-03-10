@@ -29,6 +29,7 @@ config.font = wezterm.font_with_fallback({
 			"ss07",
 		},
 	},
+	{ family = "Apple Color Emoji" },
 })
 config.font_size = 11.0
 
