@@ -102,6 +102,8 @@
   # Show most recently changed branches first.
   sort = -committerdate
 
+  autoSetupMerge = simple
+
 [url "git@github.com:"]
 	insteadOf = @gh:
 
