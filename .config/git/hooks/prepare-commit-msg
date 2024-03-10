@@ -14,7 +14,7 @@ result
 ')
 
 set -l types \
-    "build: Changes that affect the build system or external dependancies" \
+    "build: Changes that affect the build system or external dependencies" \
     "ci: Changes to the CI configuration files and scripts" \
     "docs: Documentation only changes" \
     "feat: A new feature" \
@@ -22,7 +22,8 @@ set -l types \
     "perf: A code change that improves performance" \
     "refactor: A code change that neither fixes a bug nor adds a feature" \
     "style: Changes that do not affect the meaning of the code" \
-    "test: Adding missing tests or correcting existing tests"
+    "test: Adding missing tests or correcting existing tests" \
+    "chore: Update dependencies; bump version numbers; etc"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 

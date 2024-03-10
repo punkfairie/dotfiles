@@ -3,7 +3,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Shell aliases.
-abbr -a rl --position command "source ~/.config/fish/config.fish"
+abbr -a rl --position command "source $XDG_CONFIG_HOME/fish/config.fish"
 abbr -a c --position command clear
 abbr -a e --position command "$EDITOR"
 abbr -a v --position command "$EDITOR"
