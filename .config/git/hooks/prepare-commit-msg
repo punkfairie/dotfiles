@@ -81,10 +81,6 @@ set summary $(gum input --value "$summary" --placeholder "Summary of this change
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-set -l description $(gum write --placeholder "Details of this change (Ctrl-D to finish)")
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
 set -l footer ""
 breaking && set footer $(gum input --value "BREAKING CHANGE: " --placeholder "The breaking change being introduced")
 
@@ -101,15 +97,9 @@ breaking && set footer $(gum input --value "BREAKING CHANGE: " --placeholder "Th
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-# gum confirm "Commit changes?" && git commit -m "$emoji $summary" -m "$description" -m "$footer"
-
 set -l msg "$(cat $msg_file)"
 
 set -l new_msg "$emoji $summary\n\n"
-
-if test ! -z "$description"
-    set new_msg "$new_msg$description\n\n"
-end
 
 if test ! -z "$footer"
     set new_msg "$new_msg$footer\n\n"
