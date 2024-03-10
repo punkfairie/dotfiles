@@ -61,7 +61,6 @@
   showstash = true
 
 [commit]
-  template = ~/.config/git/commit_template
   gpgSign = true
 
 [tag]

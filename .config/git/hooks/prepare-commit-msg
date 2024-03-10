@@ -1,33 +1,126 @@
-#!/bin/bash
-###############################################################################
-## Title: gitmoji-fuzzy-hook-init
-## Brief: It opens a fuzzy searcher with gitmojis, to allow the git commit
-##        caller to select one. For git commit visual mode
-##        it adds a description of the selected emoji.
-## Args:
-##      $1: File of the commit message
-##      $2: Commit type
-##      $3: Commit Hash
-##
-## Returns:
-##      Prepends a selectable gitmoji to the git commit message.
-##
-## Source: https://gitlab.com/raabf/gitmoji-fuzzy-hook
-## Author: Fabian Raab <fabian@raab.link>
-## Dependencies: gitmoji-fuzzy-hook
-###############################################################################
+#!/usr/bin/env fish
 
-[ -t 1 ]  # checks if this script is called from a terminal
-emoji="$(/home/marley/.config/git/gitmoji-fuzzy-hook/bin/gitmoji-fuzzy-hook-exec.sh $? $@)"
+set -l gitmojis $(curl -s https://gitmoji.dev/api/gitmojis | jello -rl '\
+result = []
+for entry in _.gitmojis:
+    item = entry.emoji + " - " + entry.description
 
-msg_file="$1"
-msg="$(cat "$msg_file")"
+    if entry.semver is not None:
+        item += " \033[91;3m(" + entry.semver + ")\033[0m"
 
-# Do here whatever you want with the commit message before prepending the emoji
-# to it and writing the message to the commit file.
+    result.append(item)
 
-if [ ! -z "${emoji}" ]; then  # surpress the space if there is no emoji
-	msg="${emoji} ${msg}"
-fi
-echo -e "$msg" > "$msg_file"
+result
+')
 
+set -l types \
+    "build: Changes that affect the build system or external dependancies" \
+    "ci: Changes to the CI configuration files and scripts" \
+    "docs: Documentation only changes" \
+    "feat: A new feature" \
+    "fix: A bug fix" \
+    "perf: A code change that improves performance" \
+    "refactor: A code change that neither fixes a bug nor adds a feature" \
+    "style: Changes that do not affect the meaning of the code" \
+    "test: Adding missing tests or correcting existing tests"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# HAS to be global so the function has access to it.
+set -g gitmoji "$(gum filter --height=10 $gitmojis)"
+set -l emoji $(string sub --length 1 $gitmoji)
+
+function breaking
+    string match -rq '\(major\)' "$gitmoji"
+end
+
+# function minor
+#     string match -rq '\(minor\)' "$gitmoji"
+# end
+#
+# function patch
+#     string match -r '\(patch\)' "$gitmoji"
+# end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+set -l type $(gum filter --height=10 $types)
+set type $(string match --regex '^[a-z]+' $type)
+
+set -l scope $(gum input --placeholder "scope")
+
+test -n "$scope" && set scope "($scope)"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+set -l summary "$type$scope: "
+breaking && set summary "$type$scope!: "
+set summary $(gum input --value "$summary" --placeholder "Summary of this change")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+set -l description $(gum write --placeholder "Details of this change (Ctrl-D to finish)")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+set -l footer ""
+breaking && set footer $(gum input --value "BREAKING CHANGE: " --placeholder "The breaking change being introduced")
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# if breaking && test "$(git_current_branch)" = "$(git_main_branch)"
+#     set -l msg "You are commiting a breaking change on to the main branch. Continue commit?\n(Selecting no will save your commit message to the clipboard)"
+#
+#     gum confirm $msg || begin
+#         copyq copy "$emoji $summary\n$description$footer"
+#         exit
+#     end
+# end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# gum confirm "Commit changes?" && git commit -m "$emoji $summary" -m "$description" -m "$footer"
+
+set -l msg_file $argv[1]
+set -l msg "$(cat $msg_file)"
+
+set -l new_msg "$emoji $summary\n\n"
+
+if test ! -z "$description"
+    set new_msg "$new_msg$description\n\n"
+end
+
+if test ! -z "$footer"
+    set new_msg "$new_msg$footer\n\n"
+end
+
+set new_msg "$new_msg$msg"
+
+echo -e "$new_msg" >"$msg_file"
+
+# function tag
+#     if breaking || minor || patch
+#         if test "$(git_current_branch)" = "$(git_main_branch)"
+#             gum confirm "Bump version number and tag commit?" || return
+#
+#             set -f last $(git describe --tags --abbrev=0 || 'v0.0.0')
+#             set last $(string replace v '' $last | string split .)
+#
+#             set -f i 0
+#             if breaking
+#                 set i 1
+#             else if minor
+#                 set i 2
+#             else if patch
+#                 set i 3
+#             end
+#
+#             if test $i -gt 0
+#                 set last[$i] $(math $last[$i] + 1)
+#             end
+#
+#             set -f new "$last[1].$last[2].$last[3]"
+#             git tag -a "v$new" -m "Version $new"
+#         end
+#     end
+# end
