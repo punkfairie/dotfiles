@@ -114,5 +114,11 @@
 [url "https://aur.archlinux.org/"]
 	insteadOf = aur://
 
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
 [include]
   path = ~/.config/git/config.local
