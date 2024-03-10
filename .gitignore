@@ -78,3 +78,4 @@ hackin/
 go/pkg
 .config/systemd/
 .config/tmux/plugins/
+.config/luarocks/lib/
