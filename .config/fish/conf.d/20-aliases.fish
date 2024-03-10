@@ -10,11 +10,6 @@ abbr -a v --position command "$EDITOR"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Location aliases.
-abbr -a hack --position command "cd $HACK"
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 # Default command options.
 
 abbr -a cp --position command "cp -iv"
