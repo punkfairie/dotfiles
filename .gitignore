@@ -57,7 +57,6 @@ Videos/
 .config/gh/hosts.yml
 .config/cheat/cheatsheets/community/
 .config/copyq/copyq_tab_JmNsaXBib2FyZA==.dat
-.tmux/plugins/
 .config/copyq/copyq-commands.ini
 .config/copyq/copyq-filter.ini
 .config/copyq/
@@ -68,8 +67,6 @@ data/
 .dot/
 .luarocks/lib/luarocks/rocks-5.4/manifest
 .config/pulse/cookie
-.gnupg/
-.config/nvim/lazy-lock.json
 .config/browsh/
 .config/qalculate/qalc.history
 .config/wireshark/
@@ -80,3 +77,4 @@ hackin/
 .config/composer/vendor/
 go/pkg
 .config/systemd/
+.config/tmux/plugins/
