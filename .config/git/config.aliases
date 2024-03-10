@@ -112,12 +112,12 @@
   ld = log --pretty=lf --graph --cc --stat
   lp = log --pretty=lf --graph --cc        --patch
 
-  ls  = log -10 --pretty=lc --graph
-  los = log -10 --pretty=lo --graph --date=human
-  lss = log -10 --pretty=lo --graph --date=human --simplify-by-decoration
-  lfs = log -10 --pretty=lf --graph
-  lds = log -10 --pretty=lf --graph --cc --stat
-  lps = log -10 --pretty=lf --graph --cc        --patch
+  ls  = log -5 --pretty=lc --graph
+  los = log -5 --pretty=lo --graph --date=human
+  lss = log -5 --pretty=lo --graph --date=human --simplify-by-decoration
+  lfs = log -5 --pretty=lf --graph
+  lds = log -5 --pretty=lf --graph --cc --stat
+  lps = log -5 --pretty=lf --graph --cc        --patch
 
   # All branches on all remotes.
   la  = log --pretty=lc --graph --all
@@ -127,12 +127,12 @@
   lad = log --pretty=lf --graph --all --cc --stat
   lap = log --pretty=lf --graph --all --cc        --patch
 
-  las  = log -10 --pretty=lc --graph --all
-  laos = log -10 --pretty=lo --graph --all --date=human
-  lass = log -10 --pretty=lo --graph --all --date=human --simplify-by-decoration
-  lafs = log -10 --pretty=lf --graph --all
-  lads = log -10 --pretty=lf --graph --all --cc --stat
-  laps = log -10 --pretty=lf --graph --all --cc        --patch
+  las  = log -5 --pretty=lc --graph --all
+  laos = log -5 --pretty=lo --graph --all --date=human
+  lass = log -5 --pretty=lo --graph --all --date=human --simplify-by-decoration
+  lafs = log -5 --pretty=lf --graph --all
+  lads = log -5 --pretty=lf --graph --all --cc --stat
+  laps = log -5 --pretty=lf --graph --all --cc        --patch
 
 
   # Shortcuts - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
