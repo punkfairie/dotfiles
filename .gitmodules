@@ -40,8 +40,8 @@
 [submodule ".fonts"]
 	path = .fonts
 	url = git@github.com:punkfairie/Fairiesevka.git
-[submodule "/home/marley/.themes/btop/catppuccin"]
-	path = /home/marley/.themes/btop/catppuccin
+[submodule ".themes/btop/catppuccin"]
+	path = .themes/btop/catppuccin
 	url = git@github.com:catppuccin/btop.git
 [submodule ".themes/zathura/catppuccin"]
 	path = .themes/zathura/catppuccin
