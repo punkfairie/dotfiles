@@ -13,7 +13,7 @@ return {
         -- data/conf
         sql = { "prettier" },
         json = { "prettier" },
-        toml = { "prettier" },
+        toml = { "taplo" },
         yaml = { "prettier" },
 
         -- web
