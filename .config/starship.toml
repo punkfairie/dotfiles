@@ -3,7 +3,7 @@
 palette = "catppuccin_mocha"
 
 [character]
-success_symbol = "[[](pink) ❯](green)"
+success_symbol = "[[](pink) ](green)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 vimcmd_replace_one_symbol = "[❮](green)"
