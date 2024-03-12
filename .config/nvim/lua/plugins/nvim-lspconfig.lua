@@ -1,35 +1,5 @@
 return {
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        -- general
-        "commitlint",
-        "prettier",
-
-        -- data/conf
-        "yamllint",
-
-        -- php
-        "blade-formatter",
-        "pint",
-        "rustywind",
-
-        -- shell
-        "shellcheck",
-        "shfmt",
-      },
-    },
-  },
-
-  {
-    "williamboman/mason-lspconfig.nvim",
-    opts = {
-      automatic_installation = true,
-    },
-  },
-
-  {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
@@ -122,19 +92,5 @@ return {
         pkgbuild_language_server = { mason = false },
       },
     },
-  },
-
-  {
-    "olrtg/nvim-emmet",
-    config = function()
-      vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-    end,
-    ft = { "html", "css", "scss", "vue" },
-  },
-
-  {
-    "0oAstro/dim.lua",
-    event = "LspAttach",
-    config = true,
   },
 }

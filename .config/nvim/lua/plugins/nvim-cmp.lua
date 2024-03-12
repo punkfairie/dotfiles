@@ -2,20 +2,8 @@ local cmp = require("cmp")
 
 return {
   {
-    "L3MON4D3/LuaSnip",
-    keys = { { "<Tab>" } },
-    opts = {
-      store_selection_keys = "<Tab>",
-    },
-    config = function(_, opts)
-      require("luasnip").setup(opts)
-
-      require("luasnip.loaders.from_lua").lazy_load({ lazy_paths = { "~/.config/nvim/lua/snippets" } })
-    end,
-  },
-
-  {
     "hrsh7th/nvim-cmp",
+    dependencies = { "hrsh7th/cmp-emoji" },
     opts = function(_, opts)
       opts.mapping = cmp.mapping.preset.insert({
         ["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
@@ -35,21 +23,9 @@ return {
         end,
       })
 
+      table.insert(opts.sources, { name = "emoji" })
+
       return opts
     end,
-  },
-
-  {
-    "m-pilia/vim-pkgbuild",
-    ft = { "pkgbuild" },
-  },
-
-  {
-    "jwalton512/vim-blade",
-  },
-
-  {
-    "tpope/vim-dotenv",
-    ft = { "dotenv" },
   },
 }
