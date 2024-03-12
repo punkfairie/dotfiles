@@ -80,3 +80,5 @@ go/pkg
 .config/tmux/plugins/
 .config/luarocks/lib/
 .asdf/
+.config/composer/keys.dev.pub
+.config/composer/keys.tags.pub
