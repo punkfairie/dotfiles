@@ -52,7 +52,7 @@ end)
 
 naughty.connect_signal("request::display", function(n)
 	--- random accent color
-	local accent_colors = theme.color.blue
+	local accent_colors = theme.color.accent
 
 	--- table of icons
 	local app_icons = {
@@ -132,7 +132,7 @@ naughty.connect_signal("request::display", function(n)
 	local dismiss = wibox.widget({
 		{
 			font = helpers.ui.set_font("Bold 10"),
-			markup = helpers.ui.colorize_text("", theme.color.blue),
+			markup = helpers.ui.colorize_text("", theme.color.accent),
 			widget = wibox.widget.textbox,
 			valign = "center",
 			halign = "center",
@@ -319,12 +319,11 @@ naughty.connect_signal("request::display", function(n)
 	})
 
 	anim:connect_signal("ended", function()
-		n:destroy()
+		n:reset_timeout(0.0000001)
 	end)
 
 	widget:connect_signal("mouse::enter", function()
-		--- Absurdly big number because setting it to 0 doesn't work
-		n:set_timeout(4294967)
+		n:reset_timeout(0)
 		anim:stop()
 	end)
 
