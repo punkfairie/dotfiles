@@ -1,9 +1,9 @@
 #!/usr/bin/env fish
 
 function fzf --wraps=fzf
-    if test "$TERM_PROGRAM" = tmux
+    if set --query TMUX
         fzf-tmux -p 90%,95% $argv
     else
-        fzf $argv
+        command fzf $argv
     end
 end
