@@ -32,5 +32,7 @@ fi
 
 "$HOME/.screenlayout/multihead.sh"
 
+"$HOME/.config/.fehbg"
+
 copyq &
 mopidy &
