@@ -6,11 +6,9 @@ return {
       store_selection_keys = "<Tab>",
     },
     config = function(_, opts)
-      local luasnip = require("luasnip")
+      require("luasnip").setup(opts)
 
-      luasnip.setup(opts)
-
-      luasnip.loaders.from_lua.lazy_load({ lazy_paths = { "~/.config/nvim/lua/snippets" } })
+      require("luasnip.loaders.from_lua").lazy_load({ lazy_paths = { "~/.config/nvim/lua/snippets" } })
     end,
   },
 }
