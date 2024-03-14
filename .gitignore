@@ -84,3 +84,4 @@ go/pkg
 .config/composer/keys.tags.pub
 .config/transmission/*
 !.config/transmission/settings.json
+.config/nvim/lazy-lock.json
