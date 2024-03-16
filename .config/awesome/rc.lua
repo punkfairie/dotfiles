@@ -23,3 +23,4 @@ require("ui")
 
 -- Autostart --
 awful.spawn.with_shell("picom")
+awful.spawn.with_shell("~/.config/.fehbg")
