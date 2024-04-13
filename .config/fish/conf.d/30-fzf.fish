@@ -16,4 +16,4 @@ set -gx FZF_DEFAULT_OPTS "\
 
 # fzf.fish
 set -g fzf_preview_dir_cmd eza --all --color=always --sort=name --group-directories-first
-set -g fzf_diff_highlighter delta --paging=never --width=20
+set -g fzf_diff_highlighter delta --paging=never --features=arctic-fox

@@ -8,6 +8,8 @@ config.enable_tab_bar = false
 
 -- config.default_prog = { "/usr/bin/fish" }
 
+config.enable_wayland = false
+
 config.font = wezterm.font_with_fallback({
 	{ family = "FairiesevkaTerm Nerd Font Mono" },
 	{

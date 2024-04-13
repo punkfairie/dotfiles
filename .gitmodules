@@ -49,3 +49,6 @@
 [submodule ".themes/glamour/catppuccin"]
 	path = .themes/glamour/catppuccin
 	url = git@github.com:catppuccin/glamour.git
+[submodule ".themes/hyprland/catppuccin"]
+	path = .themes/hyprland/catppuccin
+	url = https://github.com/catppuccin/hyprland.git

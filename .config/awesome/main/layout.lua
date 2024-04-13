@@ -10,9 +10,10 @@ local deck = bling.layout.deck
 
 machi.editor.nested_layouts = {
 	["0"] = deck,
-	["1"] = awful.layout.suit.spiral,
-	["2"] = awful.layout.suit.fair,
-	["3"] = awful.layout.suit.fair.horizontal,
+	["1"] = mstab,
+	["2"] = awful.layout.suit.spiral,
+	["3"] = awful.layout.suit.fair,
+	["4"] = awful.layout.suit.fair.horizontal,
 }
 
 -- Table of layouts to cover with awful.layout.inc, order matters.

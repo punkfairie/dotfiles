@@ -4,8 +4,8 @@ set -l msg_file $argv[1]
 set -l commit_type $(string trim $argv[2])
 set -l commit_sha $(string trim $argv[3])
 
-# Rebasing.
-if test "$commit_type" = messageg
+# Rebasing || cherry-picking.
+if test "$commit_type" = messageg || test "$commit_type" = message
     exit 0
 end
 

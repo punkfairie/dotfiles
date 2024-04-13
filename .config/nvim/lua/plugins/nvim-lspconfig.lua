@@ -3,7 +3,6 @@ return {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
-      --@type lspconfig.options
       servers = {
         -- data/conf
         sqlls = {},
@@ -74,17 +73,8 @@ return {
         },
 
         -- php
-        intelephense = {
+        phpactor = {
           filetypes = { "php", "blade" },
-          settings = {
-            intelephense = {
-              filetypes = { "php", "blade" },
-              files = {
-                associations = { "*.php", "*.blade.php" },
-                maxSize = 5000000,
-              },
-            },
-          },
         },
 
         -- shell
