@@ -11,5 +11,4 @@
 # Custom commands
 [commands]
 "Fish Shell Completions" = "fish_update_completions"
-"Update dotfiles dependencies" = "dotfiles submodule update --init --recursive"
-"Update package list" = "yay -Qeq > ~/.config/packages/all && set_color green && printf '%s'  && set_color normal && printf '%s' ' done\n'"
+"Update package list" = "yay -Qeq > ~/.config/packages/{{ .chezmoi.hostname }} && set_color green && printf '%s'  && set_color normal && printf '%s' ' done\n'"
