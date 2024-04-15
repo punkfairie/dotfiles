@@ -85,8 +85,9 @@ Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vi -N 'Copy mode: Switch
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vi -N 'Copy mode: switch to pane (left)'  C-h if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (right)' C-l if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (up)'    C-k if-shell "${IS_VIM} || ${IS_FZF}/;"	k
+GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
-How to setup GPG because it makes me want to toss the computer out the window	README.md	/^# How to setup GPG because it makes me want to toss the computer out the window$/;"	c
+How to setup GPG because it makes me want to toss the computer out the window	README.md	/^## How to setup GPG because it makes me want to toss the computer out the window$/;"	s	chapter:mar does dotfiles
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
 IS_FZF	dot_config/tmux/tmux.conf	/^IS_FZF="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?fzf$'"$/;"	k
 IS_VIM	dot_config/tmux/tmux.conf	/^IS_VIM="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?g?(view|n?/;"	k
@@ -96,8 +97,11 @@ Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/
 PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
+SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
 Settings	dot_config/gtk-3.0/settings.ini	/^[Settings]$/;"	s
 Startup	dot_config/openrazer/razer.conf	/^[Startup]$/;"	s
+TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
+Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
 ["<C-CR>"]	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^        ["<C-CR>"] = function(fallback)$/;"	f
 ["<S-Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
 ["<Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f

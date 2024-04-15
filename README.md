@@ -12,7 +12,7 @@ things got complex enough that I needed it.
 The branches all contain previous iterations, with the exception of fish-shell
 which was used to test out using fish as my login shell before committing.
 
-# How to setup GPG because it makes me want to toss the computer out the window
+## How to setup GPG because it makes me want to toss the computer out the window
 
 ```fish
 gpg --full-gen-key
@@ -48,3 +48,28 @@ gpg --armor --export $key | copyq copy -
 ```
 
 Go to <https://github.com/settings/keys> and add the copied key to your account.
+
+## Themes
+
+### GRUB
+
+```conf
+# /etc/default/grub
+GRUB_THEME="/usr/share/grub/themes/catppuccin-<flavor>/theme.txt"
+```
+
+`sudo grub-mkconfig -o /boot/grub/grub.cfg`
+
+### SDDM
+
+### TTY
+
+```fish
+git clone https://github.com/catppuccin/tty.git
+cd tty
+./generate.sh <flavor> | copyq copy -
+```
+
+Edit `/etc/default/grub` and append copied content to `GRUB_CMDLINE_LINUX`.
+
+`sudo grub-mkconfig -o /boot/grub/grub.cfg`
