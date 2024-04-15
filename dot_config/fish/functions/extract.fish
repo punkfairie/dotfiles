@@ -4,8 +4,8 @@
 # Usage: extract <file>
 
 function extract -a file
-    if [ -f "$file" ]
-        switch file
+    if test -f "$file"
+        switch $file
             case "*.tar.bz2"
                 tar -jxvf $file
             case "*.tar.gz"
@@ -13,7 +13,7 @@ function extract -a file
             case "*.bz2"
                 bunzip2 $file
             case "*.dmg"
-                if [ "$(uname)" = Darwin ]
+                if test "$(uname)" = Darwin
                     hdiutil mount $file
                 end
             case "*.gz"
