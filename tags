@@ -23,6 +23,14 @@
 !_TAG_KIND_DESCRIPTION!JSON	s,string	/strings/
 !_TAG_KIND_DESCRIPTION!JSON	z,null	/nulls/
 !_TAG_KIND_DESCRIPTION!Lua	f,function	/functions/
+!_TAG_KIND_DESCRIPTION!Markdown	S,subsection	/level 2 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	T,l4subsection	/level 4 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	c,chapter	/chapters/
+!_TAG_KIND_DESCRIPTION!Markdown	h,hashtag	/hashtags/
+!_TAG_KIND_DESCRIPTION!Markdown	n,footnote	/footnotes/
+!_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
+!_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
 !_TAG_KIND_DESCRIPTION!SVG	d,def	/ids in defs tags/
 !_TAG_KIND_DESCRIPTION!Scheme	f,function	/functions/
 !_TAG_KIND_DESCRIPTION!Scheme	s,set	/sets/
@@ -42,6 +50,7 @@
 !_TAG_PARSER_VERSION!Iniconf	0.0	/current.age/
 !_TAG_PARSER_VERSION!JSON	0.0	/current.age/
 !_TAG_PARSER_VERSION!Lua	0.0	/current.age/
+!_TAG_PARSER_VERSION!Markdown	1.1	/current.age/
 !_TAG_PARSER_VERSION!SVG	0.0	/current.age/
 !_TAG_PARSER_VERSION!Scheme	0.0	/current.age/
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
@@ -77,6 +86,7 @@ Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vi -N 'Copy mode: switch
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (right)' C-l if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (up)'    C-k if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
+How to setup GPG because it makes me want to toss the computer out the window	README.md	/^# How to setup GPG because it makes me want to toss the computer out the window$/;"	c
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
 IS_FZF	dot_config/tmux/tmux.conf	/^IS_FZF="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?fzf$'"$/;"	k
 IS_VIM	dot_config/tmux/tmux.conf	/^IS_VIM="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?g?(view|n?/;"	k
@@ -438,6 +448,7 @@ main-window-x	dot_config/transmission/settings.json	/^    "main-window-x": 50,$/
 main-window-y	dot_config/transmission/settings.json	/^    "main-window-y": 50,$/;"	n
 makepkgbin	dot_config/yay/config.json	/^	"makepkgbin": "makepkg",$/;"	s
 makepkgconf	dot_config/yay/config.json	/^	"makepkgconf": "",$/;"	s
+mar does dotfiles	README.md	/^# mar does dotfiles$/;"	c
 markup	dot_config/awesome/ui/info-panel/calendar.lua	/^	markup = function(t)$/;"	f
 mass	dot_config/picom.conf	/^animation-window-mass = 1.0$/;"	k
 maxconcurrentdownloads	dot_config/yay/config.json	/^	"maxconcurrentdownloads": 1,$/;"	n
