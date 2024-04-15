@@ -1,4 +1,0 @@
-[".themes/grub/catppuccin"]
-type = "git-repo"
-url = "https://github.com/catppuccin/grub.git"
-refreshPeriod = "672h"
