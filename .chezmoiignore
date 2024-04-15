@@ -7,6 +7,10 @@ tags
 .config/openrazer
 .config/razercommander
 .config/zathura
+.config/fish/conf.d/30-gtk.fish
+.config/fish/conf.d/30-journalctl.fish
+.config/fish/conf.d/30-systemctl.fish
+.config/fish/conf.d/30-yay.fish
 .icons
 {{- end }}
 

@@ -1,3 +1,7 @@
 #!/usr/bin/env fish
 
-source /opt/asdf-vm/asdf.fish
+set file /opt/asdf-vm/asdf.fish
+
+if test -e "$file"
+    source "$file"
+end
