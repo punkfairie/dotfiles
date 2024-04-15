@@ -25,6 +25,15 @@ end
 
 abbr -a _cd_up --position command --regex "\.{2,}" --function _cd_up_func
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# Execute .txt files as a command.
+function _edit_txt_func --argument-names file
+    echo "$EDITOR $file"
+end
+
+abbr -a _edit_txt --position command --regex ".+\.txt" --function _edit_txt_func
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Default command options.
