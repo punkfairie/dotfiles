@@ -1,0 +1,25 @@
+README.md
+tags
+
+{{- if ne .chezmoi.os "linux" }}
+.config/gtk-3.0
+.config/gtk-4.0
+.config/openrazer
+.config/razercommander
+.config/zathura
+.icons
+{{- end }}
+
+{{- if ne .chezmoi.osRelease.id "arch" }}
+.config/awesome
+.config/mopidy
+.config/ncmpcpp
+.config/qalculate
+.config/rofi
+.config/yay
+.config/.fehbg
+.config/picom.conf
+.screenlayout
+.xprofile
+.Xresources
+{{- end }}
