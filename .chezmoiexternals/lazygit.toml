@@ -1,0 +1,19 @@
+[".config/lazygit/catppuccin/frappe.yml"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/lazygit/main/themes-mergable/frappe/pink.yml"
+refreshPeriod = "672h"
+
+[".config/lazygit/catppuccin/latte.yml"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/lazygit/main/themes-mergable/latte/pink.yml"
+refreshPeriod = "672h"
+
+[".config/lazygit/catppuccin/macchiato.yml"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/lazygit/main/themes-mergable/macchiato/pink.yml"
+refreshPeriod = "672h"
+
+[".config/lazygit/catppuccin/mocha.yml"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/lazygit/main/themes-mergable/mocha/pink.yml"
+refreshPeriod = "672h"

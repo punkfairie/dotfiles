@@ -1,0 +1,19 @@
+[".config/zathura/catppuccin-frappe"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/zathura/main/src/catppuccin-frappe"
+refreshPeriod = "672h"
+
+[".config/zathura/catppuccin-latte"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/zathura/main/src/catppuccin-latte"
+refreshPeriod = "672h"
+
+[".config/zathura/catppuccin-macchiato"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/zathura/main/src/catppuccin-macchiato"
+refreshPeriod = "672h"
+
+[".config/zathura/catppuccin-mocha"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/zathura/main/src/catppuccin-mocha"
+refreshPeriod = "672h"

@@ -1,0 +1,6 @@
+about:config
+"userprof"
+switch "toolkit.legacyUserProfileCustomizations.stylesheets" to true
+about:support
+find profile folder
+softlink userChrome.css to $PROFILE_FOLDER/chrome/userChrome.css

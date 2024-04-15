@@ -1,0 +1,29 @@
+configuration {
+  modi: "window,run,drun,calc";
+  icon-theme: "Papirus";
+  show-icons: true;
+  terminal: "wezterm";
+  drun-display-format: "{icon} {name}";
+  location: 0;
+  disable-history: false;
+  hide-scrollbar: true;
+  display-drun: "   Apps ";
+  display-run: "   Run ";
+  display-window: " 󰕰  Window ";
+  display-Network: " 󰤨  Network ";
+  display-calc: " 󰪚  Calc ";
+  sidebar-mode: true;
+}
+ 
+@theme "catppuccin-macchiato"
+
+* {
+  blue: #f5bde6;
+  border-col: @blue;
+  font: "FairiesevkaSans Nerd Font Propo 12";
+}
+
+window {
+  border: 1px;
+  border-radius: 12px;
+}

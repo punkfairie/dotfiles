@@ -1,0 +1,19 @@
+[".config/awesome/lib/bling"]
+type = "git-repo"
+url = "https://github.com/BlingCorp/bling.git"
+refreshPeriod = "672h"
+
+[".config/awesome/lib/catppuccin"]
+type = "git-repo"
+url = "https://github.com/catppuccin/lua.git"
+refreshPeriod = "672h"
+
+[".config/awesome/lib/layout-machi"]
+type = "git-repo"
+url = "https://github.com/xinhaoyuan/layout-machi.git"
+refreshPeriod = "672h"
+
+[".config/awesome/lib/rubato"]
+type = "git-repo"
+url = "https://github.com/andOrlando/rubato.git"
+refreshPeriod = "672h"

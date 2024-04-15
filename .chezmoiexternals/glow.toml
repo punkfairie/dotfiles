@@ -1,0 +1,19 @@
+[".config/glow/catppuccin/frappe.json"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/glamour/main/themes/catppuccin-frappe.json"
+refreshPeriod = "672h"
+
+[".config/glow/catppuccin/latte.json"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/glamour/main/themes/catppuccin-latte.json"
+refreshPeriod = "672h"
+
+[".config/glow/catppuccin/macchiato.json"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/glamour/main/themes/catppuccin-macchiato.json"
+refreshPeriod = "672h"
+
+[".config/glow/catppuccin/mocha.json"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/glamour/main/themes/catppuccin-mocha.json"
+refreshPeriod = "672h"
