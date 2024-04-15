@@ -8,6 +8,23 @@ abbr -a c --position command clear
 abbr -a e --position command "$EDITOR"
 abbr -a v --position command "$EDITOR"
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# CD up on steriods.
+function _cd_up_func --argument-names dots
+    set -f dots (string sub --start 3 "$dots")
+    set -f cmd "cd .."
+
+    while string length -q "$dots"
+        set cmd "$cmd/.."
+        set dots (string sub --start 2 "$dots")
+    end
+
+    echo "$cmd"
+end
+
+abbr -a _cd_up --position command --regex "\.{2,}" --function _cd_up_func
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Default command options.
