@@ -16,8 +16,13 @@ bluez-utils
 browsh-bin
 btop
 catppuccin-cursors-macchiato
+catppuccin-frappe-grub-theme-git
 catppuccin-gtk-theme-macchiato
+catppuccin-latte-grub-theme-git
+catppuccin-macchiato-grub-theme-git
+catppuccin-mocha-grub-theme-git
 cheat-bin
+chezmoi
 cmake
 colord
 composer
@@ -64,6 +69,7 @@ libheif
 libmythes
 libreoffice-fresh
 libtransmission
+libva-nvidia-driver-git
 linux
 linux-firmware
 linux-firmware-qlogic
@@ -92,6 +98,8 @@ networkmanager
 nginx
 nm-connection-editor
 ntfs-3g
+nvidia
+nvidia-settings
 openrazer-daemon
 pamixer
 papirus-folders-catppuccin-git
@@ -117,7 +125,6 @@ python-pipenv
 python-pipx
 python-pynvim
 qt5-graphicaleffects
-qt5-quickcontrols2
 qt5-svg
 qt5ct
 qt6-wayland
@@ -131,6 +138,7 @@ rofi-calc
 rsync
 rust
 sddm
+sddm-theme-catppuccin-git
 shfmt
 smbclient
 starship
@@ -173,6 +181,7 @@ xclip
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
+xf86-video-nouveau
 xfce4-settings
 xorg-server
 xorg-server-xephyr
