@@ -4,4 +4,4 @@ progress = true
 autoPush = true
 
 [data]
-gpgKey = ''
+gpgKey = {{ output "copy-gpg-key" | trim | quote }}
