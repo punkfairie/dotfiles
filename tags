@@ -87,10 +87,10 @@ Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vi -N 'Copy mode: switch
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (right)' C-l if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (up)'    C-k if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
+GPG makes me want to toss the computer out the window	README.md	/^### GPG makes me want to toss the computer out the window$/;"	S	section:mar does dotfiles""First-Time Setup
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
 General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setup
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
-How to setup GPG because it makes me want to toss the computer out the window	README.md	/^## How to setup GPG because it makes me want to toss the computer out the window$/;"	s	chapter:mar does dotfiles
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
 IS_FZF	dot_config/tmux/tmux.conf	/^IS_FZF="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?fzf$'"$/;"	k
 IS_VIM	dot_config/tmux/tmux.conf	/^IS_VIM="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?g?(view|n?/;"	k

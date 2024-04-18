@@ -14,6 +14,24 @@ which was used to test out using fish as my login shell before committing.
 
 ## First-Time Setup
 
+### GPG makes me want to toss the computer out the window
+
+```fish
+gpg --full-gen-key
+# kind of key: 4
+# key size: 4096
+# expiration: 0 && y
+# real name: punkfairie
+# email: 23287005+punkfairie@users.noreply.github.com
+
+sudo -k
+chown -R (whoami) "$HOME/.gnupg/"
+find "$HOME/.gnupg" -type f -exec chmod 600 {} \;
+find "$HOME/.gnupg" -type d -exec chmod 700 {} \;
+
+chezmoi init --apply punkfairie
+```
+
 ### Arch
 
 ```fish
@@ -25,13 +43,14 @@ cd ..
 rm -rf yay-bin
 
 yay -Syu
-yay -S --needed - < ~/.config/packages/<list>
+yay -S --needed - < ~/.config/packages/arch
+
+gpg --armor --export (get-gpg-key) | copyq copy -
 ```
 
-Make sure to edit the list first (copy and rename to current hostname) if needed
-to remove unneeded GPU drivers!
-
 ### General
+
+Go to <https://github.com/settings/keys> and add the copied key to your account.
 
 ```fish
 volta install node
@@ -62,40 +81,3 @@ cd tty
 Edit `/etc/default/grub` and append copied content to `GRUB_CMDLINE_LINUX`.
 
 `sudo grub-mkconfig -o /boot/grub/grub.cfg`
-
-## How to setup GPG because it makes me want to toss the computer out the window
-
-```fish
-gpg --full-gen-key
-# kind of key: 4
-# key size: 4096
-# expiration: 0 && y
-# real name: punkfairie
-# email: 23287005+punkfairie@users.noreply.github.com
-
-sudo -k
-chown -R (whoami) "$HOME/.gnupg/"
-find "$HOME/.gnupg" -type f -exec chmod 600 {} \;
-find "$HOME/.gnupg" -type d -exec chmod 700 {} \;
-
-set key (\
-    gpg --list-secret-keys --keyid-format SHORT\
-    | grep 'rsa4096'\
-    | sed 's/sec   rsa4096\///'\
-    | awk '{print $1}'\
-)
-copyq copy "$key"
-```
-
-```toml
-# ~/.config/chezmoi/chezmoi.toml
-
-[data]
-gpgKey = # PASTE HERE
-```
-
-```fish
-gpg --armor --export $key | copyq copy -
-```
-
-Go to <https://github.com/settings/keys> and add the copied key to your account.
