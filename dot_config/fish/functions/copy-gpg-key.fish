@@ -8,7 +8,7 @@ function copy-gpg-key
         | awk '{print $1}'\
     )
 
-    copyq copy "$key" && return 0
+    copyq copy "$key" &>/dev/null && return 0
 
     return 1
 end
