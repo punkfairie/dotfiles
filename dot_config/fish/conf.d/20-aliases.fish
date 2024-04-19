@@ -8,7 +8,7 @@ abbr -a c --position command clear
 abbr -a e --position command "$EDITOR"
 abbr -a v --position command "$EDITOR"
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # CD up on steriods.
 function _cd_up_func --argument-names dots
@@ -25,7 +25,7 @@ end
 
 abbr -a _cd_up --position command --regex "\.{2,}" --function _cd_up_func
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Execute .txt files as a command.
 function _edit_txt_func --argument-names file
@@ -33,6 +33,10 @@ function _edit_txt_func --argument-names file
 end
 
 abbr -a _edit_txt --position command --regex ".+\.txt" --function _edit_txt_func
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+abbr -a L --position anywhere --set-cursor "% | less"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
