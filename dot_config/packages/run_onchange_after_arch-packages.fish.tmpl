@@ -19,9 +19,9 @@ sed -i '/{{ . }}/d' arch
 {{ end -}}
 
 if ! test "{{ .chezmoi.hostname }}" = "$file"
-    set_color yellow && echo "Package list has changed, please reinstall!"
-    copyq copy "yay -S --needed - < ~/.config/packages/arch" &>/dev/null \
-        && echo "(Command copied)"
-    set_color normal
+    set_color yellow && echo "Package list has changed, reinstalling..."
+    yay -S --needed - <~/.config/packages/arch
 end
+
+yay -Qeq >{{ joinPath .chezmoi.sourceDir "dot_config/packages" .chezmoi.hostname }}
 {{ end -}}
