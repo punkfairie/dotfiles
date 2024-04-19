@@ -5,7 +5,7 @@ function ls --wraps eza
 end
 
 function lst --wraps eza
-    ls --tree --color=always $argv | less
+    ls --tree --color=always $argv
 end
 
 function lsl --wraps eza
@@ -14,5 +14,5 @@ function lsl --wraps eza
 end
 
 function lslt --wraps eza
-    lsl --tree --color=always $argv | less
+    lsl --tree --color=always $argv
 end
