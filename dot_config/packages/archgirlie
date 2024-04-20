@@ -9,7 +9,9 @@ base
 base-devel
 bat
 bat-extras
+bcachefs-tools
 bind
+bitwarden-cli
 bluetuith
 bluez
 bluez-utils
@@ -33,10 +35,12 @@ ctags
 dnsmasq
 dunst
 efibootmgr
+exfatprogs
 eza
 fd
 feh
 firefox
+firewalld
 fish
 fontforge
 fortune-mod-archlinux
@@ -82,6 +86,7 @@ lutris
 mailhog-bin
 man-db
 man-pages
+mediainfo
 meilisearch
 mesa
 mopidy
@@ -121,6 +126,7 @@ polkit-kde-agent
 postgresql
 protonup-qt
 python-catppuccin
+python-html2text
 python-pip
 python-pipenv
 python-pipx
@@ -131,15 +137,18 @@ qt5-svg
 qt5ct
 qt6-wayland
 razercommander
+rbw
 re2c
 redis
 reflector
 ripgrep
 rofi
 rofi-calc
+rofi-rbw
 rsync
 rust
 sddm
+sddm-catppuccin-git
 sddm-theme-catppuccin-git
 shfmt
 smbclient
@@ -148,6 +157,7 @@ steam
 swaylock-effects-git
 swww-git
 termux-language-server
+thefuck
 thunar
 timeshift
 tmux
@@ -165,6 +175,7 @@ ttf-nerd-fonts-symbols
 ttfautohint
 udisks2
 ufw
+unrar
 unzip
 upd72020x-fw
 ventoy-bin
@@ -178,6 +189,7 @@ wget
 wine
 wireshark-gtk2
 wishlist-bin
+wl-clipboard
 wofi
 xclip
 xdg-desktop-portal
