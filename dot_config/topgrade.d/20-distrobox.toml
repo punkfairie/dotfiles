@@ -1,0 +1,4 @@
+[distrobox]
+# use_root = false
+
+# containers = ["archlinux-latest"]
