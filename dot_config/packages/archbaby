@@ -1,5 +1,6 @@
 aic94xx-firmware
 alsa-utils
+amd-ucode
 arandr
 argparse
 asdf-vm
@@ -19,7 +20,10 @@ browsh-bin
 btop
 catppuccin-cursors-macchiato
 catppuccin-frappe-grub-theme-git
+catppuccin-gtk-theme-frappe
+catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-macchiato
+catppuccin-gtk-theme-mocha
 catppuccin-latte-grub-theme-git
 catppuccin-macchiato-grub-theme-git
 catppuccin-mocha-grub-theme-git
@@ -56,6 +60,8 @@ github-cli
 glow
 gparted
 grub
+gtk3
+gtk4
 gum
 gvfs-smb
 hunspell-en_us
@@ -69,13 +75,14 @@ jc
 jello-bin
 jq
 lazygit
+less
 lib32-gamemode
 lib32-vkd3d
 libheif
 libmythes
 libreoffice-fresh
 libtransmission
-libva-nvidia-driver-git
+libva-mesa-driver
 linux
 linux-firmware
 linux-firmware-qlogic
@@ -89,7 +96,6 @@ man-db
 man-pages
 mediainfo
 meilisearch
-mesa
 mopidy
 mopidy-alsamixer
 mopidy-iris
@@ -105,9 +111,8 @@ networkmanager
 nginx
 nm-connection-editor
 ntfs-3g
-nvidia
-nvidia-settings
 openrazer-daemon
+openssh
 pamixer
 papirus-folders-catppuccin-git
 papirus-icon-theme
@@ -117,7 +122,6 @@ php-redis
 php-sqlite
 php83-iconv
 picom-git
-pipewire
 pipewire-alsa
 pipewire-pulse
 pkgfile
@@ -132,6 +136,7 @@ python-pip
 python-pipenv
 python-pipx
 python-pynvim
+python-toml
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-svg
@@ -155,9 +160,12 @@ shfmt
 smbclient
 starship
 steam
+steamlink
+sudo
 swaylock-effects-git
 swww-git
 termux-language-server
+texinfo
 thefuck
 thunar
 timeshift
@@ -183,6 +191,7 @@ ventoy-bin
 vesktop
 vkd3d
 volta
+vulkan-radeon
 vulkan-tools
 wd719x-firmware
 wezterm
@@ -196,7 +205,7 @@ xclip
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
-xf86-video-nouveau
+xf86-video-amdgpu
 xfce4-settings
 xorg-server
 xorg-server-xephyr
@@ -205,5 +214,6 @@ xorg-xrandr
 xorg-xwayland
 xsel
 yay
+yay-debug
 zathura
 zathura-pdf-mupdf
