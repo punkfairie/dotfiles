@@ -7,5 +7,5 @@ sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.ta
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
 printf '%b' "[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | copyq copy -
-set_color yellow && echo 'Please paste in /etc/pacman.conf then run sudo pacman -Sy' && set_color normal
+echo 'Please paste in /etc/pacman.conf then run sudo pacman -Sy'
 {{- end -}}
