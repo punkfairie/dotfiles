@@ -1,0 +1,19 @@
+[".config/qt5ct/colors/Catppuccin-Frappe.conf"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Frappe.conf"
+refreshPeriod = "672h"
+
+[".config/qt5ct/colors/Catppuccin-Latte.conf"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Latte.conf"
+refreshPeriod = "672h"
+
+[".config/qt5ct/colors/Catppuccin-Macchiato.conf"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Macchiato.conf"
+refreshPeriod = "672h"
+
+[".config/qt5ct/colors/Catppuccin-Mocha.conf"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Mocha.conf"
+refreshPeriod = "672h"
