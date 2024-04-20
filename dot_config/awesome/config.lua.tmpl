@@ -22,7 +22,7 @@ M.theme = {
 	flavor = {{ .drapeau.colors.flavor | quote }},
 	accent1 = "pink",
 	accent2 = "rosewater",
-  {{ if eq .chezmoi.hostname "archgirlie" -}}
+  {{- if eq .chezmoi.hostname "archgirlie" -}}
 	wallpaper = "~/data/photos/wallpaper/city.png",
   {{ else }}
 	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
