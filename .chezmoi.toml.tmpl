@@ -12,7 +12,9 @@ symmetric = true
 args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache"]
 
 [data]
-gpgKey = {{ output "get-gpg-key" | trim | quote }}
+{{ if lookPath "get-gpg-key" -}}
+  gpgKey = {{ output "get-gpg-key" | trim | quote }}
+{{- end }}
 passphrase = {{ $passphrase | quote }}
 
 [data.drapeau]
