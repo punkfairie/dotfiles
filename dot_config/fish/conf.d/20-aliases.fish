@@ -59,7 +59,7 @@ abbr -a rm --position command "rm -rf"
 #                                  └─ recursively remove directories and files
 
 # Colored grep output.
-abbr -a grep --position command "grep  --color=auto"
+abbr -a grep --position command "grep --color=auto"
 abbr -a fgrep --position command "fgrep --color=auto"
 abbr -a egrep --position command "egrep --color=auto"
 
