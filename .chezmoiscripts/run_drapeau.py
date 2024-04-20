@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import os
 import toml
+from pprint import pprint
+
 
 def main():
     # Chech if config file exists
@@ -28,20 +30,28 @@ def main():
     # Produce dict of {"name": "path"} for all schemes
     drapeau_config_dir = os.path.join(os.environ["HOME"], ".config", "drapeau")
     if os.path.exists(drapeau_config_dir):
-        drapeau_color_scheme_files = {".".join(scheme.split(".")[:-1]): os.path.join(drapeau_config_dir, scheme) for scheme in os.listdir(drapeau_config_dir) if os.path.isfile(os.path.join(drapeau_config_dir, scheme))}
+        drapeau_color_scheme_files = {
+            ".".join(scheme.split(".")[:-1]): os.path.join(drapeau_config_dir, scheme)
+            for scheme in os.listdir(drapeau_config_dir)
+            if os.path.isfile(os.path.join(drapeau_config_dir, scheme))
+        }
     else:
         drapeau_color_scheme_files = {}
 
+    pprint(drapeau_color_scheme_files)
     # Extract colorscheme data from desired scheme
-    drapeau_color_scheme_dict = toml.load(drapeau_color_scheme_files[drapeau_color_scheme])
+    drapeau_color_scheme_dict = toml.load(
+        drapeau_color_scheme_files[drapeau_color_scheme]
+    )
 
     # Add colorscheme to chezmoi config data
     chezmoi_config_dict["data"]["drapeau"]["colors"] = drapeau_color_scheme_dict
 
     # Write out modified dict to chezmoi config file
-    with open(chezmoi_config_file, 'w') as f:
+    with open(chezmoi_config_file, "w") as f:
         toml.dump(chezmoi_config_dict, f)
 
     return "=== SUCCESS ==="
+
 
 main()
