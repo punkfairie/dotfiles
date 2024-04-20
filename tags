@@ -436,7 +436,7 @@ logo_wave_dir	dot_config/openrazer/persistence.conf	/^logo_wave_dir = 1$/;"	k	se
 lpd-enabled	dot_config/transmission/settings.json	/^    "lpd-enabled": true,$/;"	b
 lua_ls	dot_config/nvim/dot_neoconf.json	/^      "lua_ls": {$/;"	o	object:neoconf.plugins
 m3u	dot_config/mopidy/mopidy.conf	/^[m3u]$/;"	s
-main	.chezmoiscripts/run_before_drapeau.py	/^def main():$/;"	f
+main	.chezmoiscripts/run_after_drapeau.py	/^def main():$/;"	f
 main-window-height	dot_config/transmission/settings.json	/^    "main-window-height": 465,$/;"	n
 main-window-is-maximized	dot_config/transmission/settings.json	/^    "main-window-is-maximized": false,$/;"	b
 main-window-width	dot_config/transmission/settings.json	/^    "main-window-width": 808,$/;"	n

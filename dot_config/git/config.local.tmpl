@@ -3,4 +3,8 @@
 [user]
   name = punkfairie
   email = 23287005+punkfairie@users.noreply.github.com
+  {{ if .gpgKey -}}
   signingkey = {{ .gpgKey }}
+  {{- else -}}
+  {{- output "echo" ".gpgKey not set, please run chezmoi apply again!" -}}
+  {{- end }}
