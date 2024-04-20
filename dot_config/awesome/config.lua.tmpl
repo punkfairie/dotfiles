@@ -24,9 +24,9 @@ M.theme = {
 	accent2 = "rosewater",
   {{ if eq .chezmoi.hostname "archgirlie" -}}
 	wallpaper = "~/data/photos/wallpaper/city.png",
-  {{ else -}}
+  {{ else }}
 	wallpaper = config_dir .. "themes/catppuccin/buttons.png",
-  {{ end -}}
+  {{- end }}
 	pfp = config_dir .. "themes/catppuccin/assets/pfp.jpg",
 	icon_theme = "Papirus",
 	font = {
