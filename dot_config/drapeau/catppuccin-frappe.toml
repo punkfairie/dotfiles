@@ -1,3 +1,4 @@
+name = 'catppuccin'
 flavor = 'frappe'
 
 rosewater = '#f2d5cf'
