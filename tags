@@ -152,7 +152,6 @@ aururl	dot_config/yay/config.json	/^	"aururl": "https:\/\/aur.archlinux.org",$/;
 backend	dot_config/hyfetch.json	/^    "backend": "neofetch",$/;"	s
 backend	dot_config/picom.conf	/^backend = "glx";$/;"	k
 background_color	dot_config/neofetch/config.conf	/^background_color=$/;"	k
-background_update	dot_config/btop/btop.conf	/^background_update = True$/;"	k
 backlight_active	dot_config/openrazer/persistence.conf	/^backlight_active = True$/;"	k	section:IO2049F50104914
 backlight_brightness	dot_config/openrazer/persistence.conf	/^backlight_brightness = 75$/;"	k	section:IO2049F50104914
 backlight_colors	dot_config/openrazer/persistence.conf	/^backlight_colors = 0 255 0 0 255 255 0 0 255$/;"	k	section:IO2049F50104914
@@ -165,7 +164,6 @@ bar_char_total	dot_config/neofetch/config.conf	/^bar_char_total="="$/;"	k
 bar_color_elapsed	dot_config/neofetch/config.conf	/^bar_color_elapsed="distro"$/;"	k
 bar_color_total	dot_config/neofetch/config.conf	/^bar_color_total="distro"$/;"	k
 bar_length	dot_config/neofetch/config.conf	/^bar_length=15$/;"	k
-base_10_sizes	dot_config/btop/btop.conf	/^base_10_sizes = False$/;"	k
 batchinstall	dot_config/yay/config.json	/^	"batchinstall": false,$/;"	b
 battery_display	dot_config/neofetch/config.conf	/^battery_display="off"$/;"	k
 battery_notifier	dot_config/openrazer/razer.conf	/^battery_notifier = True$/;"	k	section:Startup
@@ -203,16 +201,13 @@ cc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version=
 changed	dot_config/awesome/ui/popups/layout/init.lua	/^function layout_popup.changed()$/;"	f	unknown:layout_popup
 checkNewParams	dot_config/awesome/lib/animation/tween.lua	/^local function checkNewParams(_, _, subject, target, easing)$/;"	f
 checkSubjectAndTargetRecursively	dot_config/awesome/lib/animation/tween.lua	/^local function checkSubjectAndTargetRecursively(subject, target, path)$/;"	f
-check_temp	dot_config/btop/btop.conf	/^check_temp = True$/;"	k
 clamping	dot_config/picom.conf	/^animation-clamping = false$/;"	k
 cleanAfter	dot_config/yay/config.json	/^	"cleanAfter": false,$/;"	b
 cleanmenu	dot_config/yay/config.json	/^	"cleanmenu": false,$/;"	b
-clock_format	dot_config/btop/btop.conf	/^clock_format = "%X"$/;"	k
 codepoint_to_utf8	dot_config/awesome/lib/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
 col_offset	dot_config/neofetch/config.conf	/^col_offset=49$/;"	k
 color_align	dot_config/hyfetch.json	/^    "color_align": {$/;"	o
 color_blocks	dot_config/neofetch/config.conf	/^color_blocks="on"$/;"	k
-color_theme	dot_config/btop/btop.conf	/^color_theme = "\/home\/marley\/.config\/btop\/themes\/catppuccin_macchiato.theme"$/;"	k
 colorize_text	dot_config/awesome/helpers/ui.lua	/^function ui.colorize_text(text, color)$/;"	f	unknown:ui
 colors	dot_config/neofetch/config.conf	/^colors=(distro)$/;"	k
 combinedupgrade	dot_config/yay/config.json	/^	"combinedupgrade": true,$/;"	b
@@ -227,15 +222,8 @@ copyTables	dot_config/awesome/lib/animation/tween.lua	/^local function copyTable
 core	dot_config/mopidy/mopidy.conf	/^[core]$/;"	s
 corners	dot_config/picom.conf	/^detect-rounded-corners = true;$/;"	k
 cpriego/valet-linux	dot_config/composer/composer.json	/^        "cpriego\/valet-linux": "^2.3"$/;"	s	object:require
-cpu_bottom	dot_config/btop/btop.conf	/^cpu_bottom = False$/;"	k
 cpu_brand	dot_config/neofetch/config.conf	/^cpu_brand="on"$/;"	k
-cpu_core_map	dot_config/btop/btop.conf	/^cpu_core_map = ""$/;"	k
 cpu_cores	dot_config/neofetch/config.conf	/^cpu_cores="off"$/;"	k
-cpu_graph_lower	dot_config/btop/btop.conf	/^cpu_graph_lower = "Auto"$/;"	k
-cpu_graph_upper	dot_config/btop/btop.conf	/^cpu_graph_upper = "Auto"$/;"	k
-cpu_invert_lower	dot_config/btop/btop.conf	/^cpu_invert_lower = True$/;"	k
-cpu_sensor	dot_config/btop/btop.conf	/^cpu_sensor = "Auto"$/;"	k
-cpu_single_graph	dot_config/btop/btop.conf	/^cpu_single_graph = False$/;"	k
 cpu_speed	dot_config/neofetch/config.conf	/^cpu_speed="off"$/;"	k
 cpu_temp	dot_config/neofetch/config.conf	/^cpu_temp="off"$/;"	k
 create_button	dot_config/awesome/lib/exit-screen.lua	/^local create_button = function(symbol, hover_color, _, command)$/;"	f
@@ -263,13 +251,6 @@ current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-snow
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-storm.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	d
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-storm.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	i
 custom_colors	dot_config/hyfetch.json	/^        "custom_colors": [],$/;"	a	object:color_align
-custom_cpu_name	dot_config/btop/btop.conf	/^custom_cpu_name = ""$/;"	k
-custom_gpu_name0	dot_config/btop/btop.conf	/^custom_gpu_name0 = ""$/;"	k
-custom_gpu_name1	dot_config/btop/btop.conf	/^custom_gpu_name1 = ""$/;"	k
-custom_gpu_name2	dot_config/btop/btop.conf	/^custom_gpu_name2 = ""$/;"	k
-custom_gpu_name3	dot_config/btop/btop.conf	/^custom_gpu_name3 = ""$/;"	k
-custom_gpu_name4	dot_config/btop/btop.conf	/^custom_gpu_name4 = ""$/;"	k
-custom_gpu_name5	dot_config/btop/btop.conf	/^custom_gpu_name5 = ""$/;"	k
 custom_shape	dot_config/awesome/helpers/ui.lua	/^function ui.custom_shape(cr, width, height)$/;"	f	unknown:ui
 damage	dot_config/picom.conf	/^use-damage = true$/;"	k
 dampening	dot_config/picom.conf	/^animation-dampening = 18$/;"	k
@@ -291,11 +272,9 @@ devices_off_on_screensaver	dot_config/openrazer/razer.conf	/^devices_off_on_scre
 dht-enabled	dot_config/transmission/settings.json	/^    "dht-enabled": true,$/;"	b
 diffmenu	dot_config/yay/config.json	/^	"diffmenu": false,$/;"	b
 disk_display	dot_config/neofetch/config.conf	/^disk_display="off"$/;"	k
-disk_free_priv	dot_config/btop/btop.conf	/^disk_free_priv = False$/;"	k
 disk_percent	dot_config/neofetch/config.conf	/^disk_percent="on"$/;"	k
 disk_show	dot_config/neofetch/config.conf	/^disk_show=('\/')$/;"	k
 disk_subtitle	dot_config/neofetch/config.conf	/^disk_subtitle="mount"$/;"	k
-disks_filter	dot_config/btop/btop.conf	/^disks_filter = ""$/;"	k
 distro	dot_config/hyfetch.json	/^    "distro": null,$/;"	z
 distro_shorthand	dot_config/neofetch/config.conf	/^distro_shorthand="on"$/;"	k
 dont_focus_before_close	dot_config/awesome/ui/popups/scratchpad/init.lua	/^	dont_focus_before_close = false, -- When set to true, the scratchpad will be closed by the togg/;"	f
@@ -337,7 +316,6 @@ fill	dot_config/nvim/lua/snippets/helpers.lua	/^M.fill = function(_, parent, arg
 fire	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:fire(...)$/;"	f	unknown:ret
 focused	dot_config/picom.conf	/^mark-ovredir-focused = false$/;"	k
 focused	dot_config/picom.conf	/^mark-wmwin-focused = true;$/;"	k
-force_tty	dot_config/btop/btop.conf	/^force_tty = False$/;"	k
 fore_back	dot_config/hyfetch.json	/^        "fore_back": null$/;"	z	object:color_align
 forget	dot_config/awesome/lib/savefloats.lua	/^local function forget(c)$/;"	f
 gap	dot_config/neofetch/config.conf	/^gap=3$/;"	k
@@ -364,14 +342,7 @@ gitflags	dot_config/yay/config.json	/^	"gitflags": "",$/;"	s
 gpgbin	dot_config/yay/config.json	/^	"gpgbin": "gpg",$/;"	s
 gpgflags	dot_config/yay/config.json	/^	"gpgflags": "",$/;"	s
 gpu_brand	dot_config/neofetch/config.conf	/^gpu_brand="on"$/;"	k
-gpu_mirror_graph	dot_config/btop/btop.conf	/^gpu_mirror_graph = True$/;"	k
 gpu_type	dot_config/neofetch/config.conf	/^gpu_type="all"$/;"	k
-graph_symbol	dot_config/btop/btop.conf	/^graph_symbol = "braille"$/;"	k
-graph_symbol_cpu	dot_config/btop/btop.conf	/^graph_symbol_cpu = "default"$/;"	k
-graph_symbol_gpu	dot_config/btop/btop.conf	/^graph_symbol_gpu = "default"$/;"	k
-graph_symbol_mem	dot_config/btop/btop.conf	/^graph_symbol_mem = "default"$/;"	k
-graph_symbol_net	dot_config/btop/btop.conf	/^graph_symbol_net = "default"$/;"	k
-graph_symbol_proc	dot_config/btop/btop.conf	/^graph_symbol_proc = "default"$/;"	k
 grouping_widget	dot_config/awesome/helpers/ui.lua	/^function ui.grouping_widget(w1, w2, dpi1)$/;"	f	unknown:ui
 gtk-4.0	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	c
 gtk-4.0	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	c
@@ -424,9 +395,6 @@ initial	dot_config/awesome/lib/animation/init.lua	/^function animation:initial()
 inkscape	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
-io_graph_combined	dot_config/btop/btop.conf	/^io_graph_combined = False$/;"	k
-io_graph_speeds	dot_config/btop/btop.conf	/^io_graph_speeds = ""$/;"	k
-io_mode	dot_config/btop/btop.conf	/^io_mode = False$/;"	k
 iterate_value	dot_config/awesome/ui/popups/layout/init.lua	/^function gears.table.iterate_value(t, value, step_size, filter, _)$/;"	f	unknown:gears.table
 keepSrc	dot_config/yay/config.json	/^	"keepSrc": false,$/;"	b
 kern	dot_config/picom.conf	/^blur-kern = "11x11gaussian";$/;"	k
@@ -451,7 +419,6 @@ linear	dot_config/awesome/lib/animation/tween.lua	/^local function linear(t, b, 
 local	dot_config/mopidy/mopidy.conf	/^[local]$/;"	s
 local_ip_interface	dot_config/neofetch/config.conf	/^local_ip_interface=('auto')$/;"	k
 lock_command	dot_config/awesome/lib/exit-screen.lua	/^local lock_command = function()$/;"	f
-log_level	dot_config/btop/btop.conf	/^log_level = "WARNING"$/;"	k
 logging	dot_config/mopidy/mopidy.conf	/^[logging]$/;"	s
 logo_active	dot_config/openrazer/persistence.conf	/^logo_active = True$/;"	k	section:PM2038H11502057
 logo_brightness	dot_config/openrazer/persistence.conf	/^logo_brightness = 75$/;"	k	section:PM2038H11502057
@@ -484,8 +451,6 @@ mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg 
 mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 media_dir	dot_config/mopidy/mopidy.conf	/^media_dir = \/mnt\/babeshare\/babez\/Music\/$/;"	k	section:local
 media_dirs	dot_config/mopidy/mopidy.conf	/^media_dirs =$/;"	k	section:file
-mem_below_net	dot_config/btop/btop.conf	/^mem_below_net = False$/;"	k
-mem_graphs	dot_config/btop/btop.conf	/^mem_graphs = True$/;"	k
 memory_display	dot_config/neofetch/config.conf	/^memory_display="off"$/;"	k
 memory_percent	dot_config/neofetch/config.conf	/^memory_percent="on"$/;"	k
 memory_unit	dot_config/neofetch/config.conf	/^memory_unit="gib"$/;"	k
@@ -512,11 +477,6 @@ namedview4251	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/
 namedview6	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     inkscape:current-layer="svg4" \/>$/;"	i
 neoconf	dot_config/nvim/dot_neoconf.json	/^  "neoconf": {$/;"	o
 neodev	dot_config/nvim/dot_neoconf.json	/^  "neodev": {$/;"	o
-net_auto	dot_config/btop/btop.conf	/^net_auto = True$/;"	k
-net_download	dot_config/btop/btop.conf	/^net_download = 100$/;"	k
-net_iface	dot_config/btop/btop.conf	/^net_iface = ""$/;"	k
-net_sync	dot_config/btop/btop.conf	/^net_sync = True$/;"	k
-net_upload	dot_config/btop/btop.conf	/^net_upload = 100$/;"	k
 new	dot_config/awesome/lib/animation/init.lua	/^function animation_manager:new(args)$/;"	f	unknown:animation_manager
 new	dot_config/awesome/lib/animation/init.lua	/^local function new()$/;"	f
 new	dot_config/awesome/lib/animation/tween.lua	/^function tween.new(args)$/;"	f	unknown:tween
@@ -551,9 +511,7 @@ nsd40cb4a50101	dot_config/awesome/ui/info-panel/weather/icons/weather-showers.sv
 nsd40e4e580101	dot_config/awesome/ui/info-panel/weather/icons/weather-snow-rain.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="16" height="16" version="1.1">$/;"	n	uri:http://www.w3.org/2000/svg
 nsd5ece3780101	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/2000/svg
 nsd7c0ddd60101	dot_config/awesome/ui/info-panel/weather/icons/weather-fog.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="16" height="16" version="1.1">$/;"	n	uri:http://www.w3.org/2000/svg
-nvml_measure_pcie_speeds	dot_config/btop/btop.conf	/^nvml_measure_pcie_speeds = True$/;"	k
 on_press	dot_config/awesome/main/bindings.lua	/^		on_press = function(index)$/;"	f
-only_physical	dot_config/btop/btop.conf	/^only_physical = True$/;"	k
 opacity	dot_config/picom.conf	/^active-opacity = 0.92;$/;"	k
 opacity	dot_config/picom.conf	/^detect-client-opacity = true;$/;"	k
 opacity	dot_config/picom.conf	/^inactive-opacity = 0.68;$/;"	k
@@ -622,22 +580,9 @@ poweroff_command	dot_config/awesome/lib/exit-screen.lua	/^local poweroff_command
 preallocation	dot_config/transmission/settings.json	/^    "preallocation": 1,$/;"	n
 prefetch-enabled	dot_config/transmission/settings.json	/^    "prefetch-enabled": true,$/;"	b
 preset	dot_config/hyfetch.json	/^    "preset": "lesbian",$/;"	s
-presets	dot_config/btop/btop.conf	/^presets = "cpu:1:default,proc:0:default cpu:0:default,mem:0:default,net:0:default cpu:0:block,ne/;"	k
 prgram	dot_config/awesome/helpers/ui.lua	/^function ui.prgram(height, base)$/;"	f	unknown:ui
 pride_month_disable	dot_config/hyfetch.json	/^    "pride_month_disable": false$/;"	b
 pride_month_shown	dot_config/hyfetch.json	/^    "pride_month_shown": [],$/;"	a
-proc_aggregate	dot_config/btop/btop.conf	/^proc_aggregate = True$/;"	k
-proc_colors	dot_config/btop/btop.conf	/^proc_colors = True$/;"	k
-proc_cpu_graphs	dot_config/btop/btop.conf	/^proc_cpu_graphs = True$/;"	k
-proc_filter_kernel	dot_config/btop/btop.conf	/^proc_filter_kernel = False$/;"	k
-proc_gradient	dot_config/btop/btop.conf	/^proc_gradient = True$/;"	k
-proc_info_smaps	dot_config/btop/btop.conf	/^proc_info_smaps = False$/;"	k
-proc_left	dot_config/btop/btop.conf	/^proc_left = False$/;"	k
-proc_mem_bytes	dot_config/btop/btop.conf	/^proc_mem_bytes = True$/;"	k
-proc_per_core	dot_config/btop/btop.conf	/^proc_per_core = False$/;"	k
-proc_reversed	dot_config/btop/btop.conf	/^proc_reversed = False$/;"	k
-proc_sorting	dot_config/btop/btop.conf	/^proc_sorting = "name"$/;"	k
-proc_tree	dot_config/btop/btop.conf	/^proc_tree = True$/;"	k
 provides	dot_config/yay/config.json	/^	"provides": true,$/;"	b
 proxy	dot_config/mopidy/mopidy.conf	/^[proxy]$/;"	s
 prrect	dot_config/awesome/helpers/ui.lua	/^function ui.prrect(radius, tl, tr, br, bl)$/;"	f	unknown:ui
@@ -666,7 +611,6 @@ require	dot_config/composer/composer.json	/^    "require": {$/;"	o
 reset	dot_config/awesome/lib/animation/tween.lua	/^function Tween:reset()$/;"	f	unknown:Tween
 restore_persistence	dot_config/openrazer/razer.conf	/^restore_persistence = False$/;"	k	section:Startup
 round_widget	dot_config/awesome/ui/info-panel/init.lua	/^local function round_widget(radius)$/;"	f
-rounded_corners	dot_config/btop/btop.conf	/^rounded_corners = True$/;"	k
 rpc	dot_config/yay/config.json	/^	"rpc": true,$/;"	b
 rpc-authentication-required	dot_config/transmission/settings.json	/^    "rpc-authentication-required": false,$/;"	b
 rpc-bind-address	dot_config/transmission/settings.json	/^    "rpc-bind-address": "0.0.0.0",$/;"	s
@@ -699,7 +643,6 @@ searchby	dot_config/yay/config.json	/^	"searchby": "name-desc",$/;"	s
 second_to_micro	dot_config/awesome/lib/animation/init.lua	/^local function second_to_micro(sec)$/;"	f
 seed-queue-enabled	dot_config/transmission/settings.json	/^    "seed-queue-enabled": false,$/;"	b
 seed-queue-size	dot_config/transmission/settings.json	/^    "seed-queue-size": 10,$/;"	n
-selected_battery	dot_config/btop/btop.conf	/^selected_battery = "Auto"$/;"	k
 separatesources	dot_config/yay/config.json	/^	"separatesources": true,$/;"	b
 separator	dot_config/neofetch/config.conf	/^separator=" 󰾞"$/;"	k
 set	dot_config/awesome/lib/animation/init.lua	/^function animation:set(args)$/;"	f	unknown:animation
@@ -723,16 +666,6 @@ show-options-window	dot_config/transmission/settings.json	/^    "show-options-wi
 show-statusbar	dot_config/transmission/settings.json	/^    "show-statusbar": true,$/;"	b
 show-toolbar	dot_config/transmission/settings.json	/^    "show-toolbar": true,$/;"	b
 show-tracker-scrapes	dot_config/transmission/settings.json	/^    "show-tracker-scrapes": false,$/;"	b
-show_battery	dot_config/btop/btop.conf	/^show_battery = True$/;"	k
-show_battery_watts	dot_config/btop/btop.conf	/^show_battery_watts = True$/;"	k
-show_coretemp	dot_config/btop/btop.conf	/^show_coretemp = True$/;"	k
-show_cpu_freq	dot_config/btop/btop.conf	/^show_cpu_freq = True$/;"	k
-show_disks	dot_config/btop/btop.conf	/^show_disks = True$/;"	k
-show_gpu_info	dot_config/btop/btop.conf	/^show_gpu_info = "Auto"$/;"	k
-show_io_stat	dot_config/btop/btop.conf	/^show_io_stat = True$/;"	k
-show_swap	dot_config/btop/btop.conf	/^show_swap = False$/;"	k
-show_uptime	dot_config/btop/btop.conf	/^show_uptime = True$/;"	k
-shown_boxes	dot_config/btop/btop.conf	/^shown_boxes = "cpu mem proc net"$/;"	k
 singlelineresults	dot_config/yay/config.json	/^	"singlelineresults": false,$/;"	b
 size	dot_config/picom.conf	/^blur-size = 30$/;"	k
 sodipodi	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
@@ -776,11 +709,8 @@ svg	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmln
 svg4	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	i
 svg4249	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	i
 svg4249	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	i
-swap_disk	dot_config/btop/btop.conf	/^swap_disk = True$/;"	k
 sync_effects_enabled	dot_config/openrazer/razer.conf	/^sync_effects_enabled = True$/;"	k	section:Startup
 tcp-enabled	dot_config/transmission/settings.json	/^    "tcp-enabled": true,$/;"	b
-temp_scale	dot_config/btop/btop.conf	/^temp_scale = "celsius"$/;"	k
-theme_background	dot_config/btop/btop.conf	/^theme_background = False$/;"	k
 themes	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 themes	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
 thumbnail_dir	dot_config/neofetch/config.conf	/^thumbnail_dir="${XDG_CACHE_HOME:-${HOME}\/.cache}\/thumbnails\/neofetch"$/;"	k
@@ -798,7 +728,6 @@ transient	dot_config/picom.conf	/^detect-transient = true$/;"	k
 trash-can-enabled	dot_config/transmission/settings.json	/^    "trash-can-enabled": true,$/;"	b
 trash-original-torrent-files	dot_config/transmission/settings.json	/^    "trash-original-torrent-files": false,$/;"	b
 trig	dot_config/nvim/lua/snippets/fish.lua	/^    { trig = "func", desc = "function ... end" },$/;"	f
-truecolor	dot_config/btop/btop.conf	/^truecolor = True$/;"	k
 tsserver	dot_config/nvim/lua/plugins/example.lua	/^        tsserver = function(_, opts)$/;"	f
 umask	dot_config/transmission/settings.json	/^    "umask": "022",$/;"	s
 underline_char	dot_config/neofetch/config.conf	/^underline_char="-"$/;"	k
@@ -810,13 +739,11 @@ update	dot_config/awesome/ui/info-panel/weather/init.lua	/^	widget.update = func
 update	dot_config/awesome/ui/popups/notifications/init.lua	/^		update = function(_, pos)$/;"	f
 update_callback	dot_config/awesome/ui/top-panel/widgets/taglist.lua	/^			update_callback = function(self, _, index, _)$/;"	f
 update_microphone	dot_config/awesome/ui/notif-panel/widgets/mic_slider.lua	/^local update_microphone = function() -- Sets the Volume Correct$/;"	f
-update_ms	dot_config/btop/btop.conf	/^update_ms = 2000$/;"	k
 update_volume	dot_config/awesome/ui/notif-panel/widgets/vol_slider.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/popups/volume/init.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/top-panel/widgets/pulseaudio.lua	/^local update_volume = function()$/;"	f
 upload-slots-per-torrent	dot_config/transmission/settings.json	/^    "upload-slots-per-torrent": 8,$/;"	n
 uptime_shorthand	dot_config/neofetch/config.conf	/^uptime_shorthand="on"$/;"	k
-use_fstab	dot_config/btop/btop.conf	/^use_fstab = True$/;"	k
 useask	dot_config/yay/config.json	/^	"useask": false,$/;"	b
 user-has-given-informed-consent	dot_config/transmission/settings.json	/^    "user-has-given-informed-consent": true,$/;"	b
 usr	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
@@ -826,7 +753,6 @@ verbose_logging	dot_config/openrazer/razer.conf	/^verbose_logging = False$/;"	k	
 version	dot_config/nvim/lazyvim.json	/^  "version": 3$/;"	n
 version	dot_config/yay/config.json	/^	"version": "12.3.0",$/;"	s
 vertical_pad	dot_config/awesome/helpers/ui.lua	/^function ui.vertical_pad(height)$/;"	f	unknown:ui
-vim_keys	dot_config/btop/btop.conf	/^vim_keys = True$/;"	k
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
 vsync	dot_config/picom.conf	/^vsync = true$/;"	k
 watch-dir	dot_config/transmission/settings.json	/^    "watch-dir": "\/home\/marley\/Desktop",$/;"	s
@@ -845,6 +771,4 @@ xlink	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="
 xoffset	dot_config/neofetch/config.conf	/^xoffset=0$/;"	k
 y	dot_config/picom.conf	/^shadow-offset-y = -7;$/;"	k
 yoffset	dot_config/neofetch/config.conf	/^yoffset=0$/;"	k
-zfs_arc_cached	dot_config/btop/btop.conf	/^zfs_arc_cached = True$/;"	k
-zfs_hide_datasets	dot_config/btop/btop.conf	/^zfs_hide_datasets = False$/;"	k
 ~	dot_config/awesome/lib/animation/tween.lua	/^		if type(easing) ~= "function" then$/;"	f
