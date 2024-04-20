@@ -5,8 +5,10 @@
 # {{ include (joinPath "dot_config/packages/" (base .)) | sha256sum }}
 {{ end -}}
 
+cd "$HOME/.config/packages/"
+
 set file (\
-  find . -type f -iname "arch*" -print0\
+  find . -type f -iname "arch?*" -print0\
   | xargs -0 ls -tr\
   | tail -n 1\
   | string sub -s 3\
@@ -25,4 +27,6 @@ if ! test "{{ .chezmoi.hostname }}" = "$file"
 end
 
 yay -Qeq >{{ joinPath .chezmoi.sourceDir "dot_config/packages" .chezmoi.hostname }}
+
+cd "$HOME"
 {{ end -}}
