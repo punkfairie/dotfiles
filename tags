@@ -123,7 +123,6 @@ PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
-Settings	dot_config/gtk-3.0/settings.ini	/^[Settings]$/;"	s
 Startup	dot_config/openrazer/razer.conf	/^[Startup]$/;"	s
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
 Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
@@ -477,9 +476,6 @@ mpris	dot_config/mopidy/mopidy.conf	/^[mpris]$/;"	s
 music	dot_config/awesome/ui/info-panel/music-player.lua	/^local function music()$/;"	f
 music_player	dot_config/neofetch/config.conf	/^music_player="auto"$/;"	k
 mute	dot_config/awesome/ui/popups/volume/init.lua	/^volume.mute = function()$/;"	f	unknown:volume
-name	dot_config/gtk-3.0/settings.ini	/^gtk-cursor-theme-name = Catppuccin-Macchiato-Pink-Cursors$/;"	k	section:Settings
-name	dot_config/gtk-3.0/settings.ini	/^gtk-icon-theme-name = Papirus$/;"	k	section:Settings
-name	dot_config/gtk-3.0/settings.ini	/^gtk-theme-name = Catppuccin-Macchiato-Standard-Pink-Dark$/;"	k	section:Settings
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview6	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     inkscape:current-layer="svg4" \/>$/;"	i
