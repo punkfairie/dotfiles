@@ -5,6 +5,4 @@
   email = 23287005+punkfairie@users.noreply.github.com
   {{ if hasKey . "gpgKey" -}}
   signingkey = {{ .gpgKey }}
-  {{- else -}}
-  {{- output "echo" ".gpgKey not set, please run chezmoi apply again!" -}}
   {{- end }}
