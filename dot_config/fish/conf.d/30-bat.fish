@@ -7,3 +7,4 @@ function cat --wraps bat
 end
 
 abbr -a B --position anywhere --set-cursor "% | bat"
+abbr -a --position anywhere -- -h "-h 2>&1 | bat --plain --language=help"
