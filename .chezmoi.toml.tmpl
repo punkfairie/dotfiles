@@ -1,10 +1,19 @@
+{{ $passphrase := promptStringOnce . "passphrase" "passphrase" -}}
+
 progress = true
 
 [git]
 autoPush = true
 
+encryption = "gpg"
+
+[gpg]
+symmetric = true
+args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache"]
+
 [data]
 gpgKey = {{ output "get-gpg-key" | trim | quote }}
+passphrase = {{ $passphrase | quote }}
 
 [data.drapeau]
 colorscheme = 'catppuccin-macchiato'
