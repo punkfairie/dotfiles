@@ -38,7 +38,6 @@ def main():
     else:
         drapeau_color_scheme_files = {}
 
-    pprint(drapeau_color_scheme_files)
     # Extract colorscheme data from desired scheme
     drapeau_color_scheme_dict = toml.load(
         drapeau_color_scheme_files[drapeau_color_scheme]
