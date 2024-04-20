@@ -1,19 +1,19 @@
-[".config/bat/themes/Catppuccin-latte.tmTheme"]
+[".config/bat/themes/catppuccin-latte.tmTheme"]
 type = "file"
 url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme"
 refreshPeriod = "672h"
 
-[".config/bat/themes/Catppuccin-frappe.tmTheme"]
+[".config/bat/themes/catppuccin-frappe.tmTheme"]
 type = "file"
 url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme"
 refreshPeriod = "672h"
 
-[".config/bat/themes/Catppuccin-macchiato.tmTheme"]
+[".config/bat/themes/catppuccin-macchiato.tmTheme"]
 type = "file"
 url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme"
 refreshPeriod = "672h"
 
-[".config/bat/themes/Catppuccin-mocha.tmTheme"]
+[".config/bat/themes/catppuccin-mocha.tmTheme"]
 type = "file"
 url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme"
 refreshPeriod = "672h"
