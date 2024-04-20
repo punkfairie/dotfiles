@@ -115,7 +115,7 @@ bind -T copy-mode-vi Escape if-shell -F '#{selection_present}' 'send -X clear-se
 ################################################################################
 
 # catppuccin
-set -g @catppuccin_flavour 'macchiato'
+set -g @catppuccin_flavour {{ .drapeau.colors.flavor | squote }}
 
 set -g @catppuccin_window_left_separator ""
 set -g @catppuccin_window_right_separator " "

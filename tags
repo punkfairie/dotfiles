@@ -104,18 +104,12 @@
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
-Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vi -N 'Copy mode: Switch to pane (down)'  C-j if-shell "${IS_VIM} || ${IS_FZF}/;"	k
-Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vi -N 'Copy mode: switch to pane (left)'  C-h if-shell "${IS_VIM} || ${IS_FZF}/;"	k
-Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (right)' C-l if-shell "${IS_VIM} || ${IS_FZF}/;"	k
-Copy mode	dot_config/tmux/tmux.conf	/^bind -T copy-mode-vn -N 'Copy mode: Switch to pane (up)'    C-k if-shell "${IS_VIM} || ${IS_FZF}/;"	k
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
 GPG makes me want to toss the computer out the window	README.md	/^### GPG makes me want to toss the computer out the window$/;"	S	section:mar does dotfiles""First-Time Setup
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
 General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setup
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
-IS_FZF	dot_config/tmux/tmux.conf	/^IS_FZF="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?fzf$'"$/;"	k
-IS_VIM	dot_config/tmux/tmux.conf	/^IS_VIM="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\\\S+\\\\\/)?g?(view|n?/;"	k
 NEWS.md	dot_config/nvim/lazyvim.json	/^    "NEWS.md": "3314"$/;"	s	object:news
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
