@@ -18,6 +18,7 @@ cp $file arch
 sed -i '/{{ . }}/d' arch
 {{ end -}}
 
+echo "$file"
 if ! test "{{ .chezmoi.hostname }}" = "$file"
     set_color yellow && echo "Package list has changed, reinstalling..."
     yay -S --needed - <~/.config/packages/arch
