@@ -1,14 +1,14 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-palette = "catppuccin_mocha"
+palette = "default"
 
 [character]
 success_symbol = "[[](pink) ](green)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
-vimcmd_replace_one_symbol = "[❮](green)"
-vimcmd_replace_symbol = "[❮](green)"
-vimcmd_visual_symbol = "[❮](peach)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[](green)"
+vimcmd_replace_one_symbol = "[](green)"
+vimcmd_replace_symbol = "[](green)"
+vimcmd_visual_symbol = "[](peach)"
 
 [status]
 disabled = false
@@ -24,33 +24,33 @@ disabled = false
 style = 'blue'
 symbol = '󰌋 '
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-mauve = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.default]
+rosewater = {{ .drapeau.colors.rosewater | quote }}
+flamingo = {{ .drapeau.colors.flamingo | quote }}
+pink = {{ .drapeau.colors.pink | quote }}
+mauve = {{ .drapeau.colors.mauve | quote }}
+red = {{ .drapeau.colors.red | quote }}
+maroon = {{ .drapeau.colors.maroon | quote }}
+peach = {{ .drapeau.colors.peach | quote }}
+yellow = {{ .drapeau.colors.yellow | quote }}
+green = {{ .drapeau.colors.green | quote }}
+teal = {{ .drapeau.colors.teal | quote }}
+sky = {{ .drapeau.colors.sky | quote }}
+sapphire = {{ .drapeau.colors.sapphire | quote }}
+blue = {{ .drapeau.colors.blue | quote }}
+lavender = {{ .drapeau.colors.lavender | quote }}
+text = {{ .drapeau.colors.text | quote }}
+subtext1 = {{ .drapeau.colors.subtext1 | quote }}
+subtext0 = {{ .drapeau.colors.subtext0 | quote }}
+overlay2 = {{ .drapeau.colors.overlay2 | quote }}
+overlay1 = {{ .drapeau.colors.overlay1 | quote }}
+overlay0 = {{ .drapeau.colors.overlay0 | quote }}
+surface2 = {{ .drapeau.colors.surface2 | quote }}
+surface1 = {{ .drapeau.colors.surface1 | quote }}
+surface0 = {{ .drapeau.colors.surface0 | quote }}
+base = {{ .drapeau.colors.base | quote }}
+mantle = {{ .drapeau.colors.mantle | quote }}
+crust = {{ .drapeau.colors.crust | quote }}
 
 # Presets - NerdFonts
 [aws]
