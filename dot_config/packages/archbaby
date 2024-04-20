@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 amd-ucode
@@ -143,14 +144,12 @@ qt5-svg
 qt5ct
 qt6-wayland
 razercommander
-rbw
 re2c
 redis
 reflector
 ripgrep
 rofi
 rofi-calc
-rofi-rbw
 rsync
 rust
 sddm
