@@ -19,7 +19,7 @@ M.apps.start_editor = M.apps.terminal .. "-e" .. M.apps.editor
 M.apps.music_player = M.apps.terminal .. "--class music -e ncmpcpp"
 
 M.theme = {
-	flavor = "macchiato",
+	flavor = {{ .drapeau.colors.flavor | quote }},
 	accent1 = "pink",
 	accent2 = "rosewater",
 	-- wallpaper = config_dir .. "themes/catppuccin/buttons.png",
