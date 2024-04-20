@@ -15,10 +15,10 @@ configuration {
   sidebar-mode: true;
 }
  
-@theme "catppuccin-macchiato"
+@theme {{ .drapeau.colorscheme | quote }}
 
 * {
-  blue: #f5bde6;
+  blue: {{ .drapeau.colors.pink }};
   border-col: @blue;
   font: "FairiesevkaSans Nerd Font Propo 12";
 }
