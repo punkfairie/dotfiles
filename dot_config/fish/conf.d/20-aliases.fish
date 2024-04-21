@@ -3,7 +3,14 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Shell aliases.
-abbr -a rl --position command "source $XDG_CONFIG_HOME/fish/config.fish"
+function rl -d "Reload all configs"
+    source "$XDG_CONFIG_HOME/fish/config.fish"
+
+    for file in "$XDG_CONFIG_HOME/fish/conf.d/*.fish"
+        source $file
+    end
+end
+
 abbr -a c --position command clear
 abbr -a e --position command "$EDITOR"
 abbr -a v --position command "$EDITOR"
