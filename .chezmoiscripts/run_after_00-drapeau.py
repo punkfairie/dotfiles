@@ -1,7 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 import os
 import toml
-from pprint import pprint
 
 
 def main():
