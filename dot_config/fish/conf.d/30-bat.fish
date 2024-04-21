@@ -1,14 +1,19 @@
 #!/usr/bin/env fish
 
 set -gx BATDIFF_USE_DELTA true
+
 set -g batcmd
+
+if command -v bat &>/dev/null
+    set batcmd bat
+else if command -v batcat &>/dev/null
+    set batcmd batcat
+end
 
 function cat --wraps bat
     if command -v bat &>/dev/null
-        set -g batcmd bat
         bat $argv
     else if command -v batcat &>/dev/null
-        set -g batcmd batcat
         batcat $argv
     end
 end
