@@ -5,10 +5,10 @@ set -g batcmd
 
 function cat --wraps bat
     if command -v bat &>/dev/null
-        set batcmd bat
+        set -g batcmd bat
         bat $argv
     else if command -v batcat &>/dev/null
-        set batcmd batcat
+        set -g batcmd batcat
         batcat $argv
     end
 end
