@@ -10,20 +10,6 @@ vimcmd_replace_one_symbol = "[](green)"
 vimcmd_replace_symbol = "[](green)"
 vimcmd_visual_symbol = "[](peach)"
 
-[status]
-disabled = false
-style = 'red'
-symbol = '✗'
-not_executable_symbol = ''
-not_found_symbol = ''
-sigint_symbol = '󱠰'
-signal_symbol = '󱐋'
-
-[sudo]
-disabled = false
-style = 'blue'
-symbol = '󰌋 '
-
 [palettes.default]
 rosewater = {{ .drapeau.colors.rosewater | quote }}
 flamingo = {{ .drapeau.colors.flamingo | quote }}
@@ -208,8 +194,25 @@ symbol = " "
 [scala]
 symbol = " "
 
+[status]
+disabled = false
+style = 'red'
+symbol = '✗'
+not_executable_symbol = ''
+not_found_symbol = ''
+sigint_symbol = '󱠰'
+signal_symbol = '󱐋'
+
+[sudo]
+disabled = false
+style = 'blue'
+symbol = '󰌋 '
+
 [swift]
 symbol = " "
+
+[username]
+format = '[$user]($style) on '
 
 [zig]
 symbol = " "
