@@ -35,7 +35,9 @@ fi
 "$HOME/.screenlayout/desktop.sh"
 {{- end }}
 
-{{ if eq .osid "linux-arch" -}}
+{{ if lookPath "copyq" -}}
 copyq &
+{{- end -}}
+{{ if lookPath "mopidy" -}}
 mopidy &
 {{- end -}}
