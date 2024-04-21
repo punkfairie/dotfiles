@@ -13,6 +13,10 @@ tags*
 .config/fish/conf.d/30-qt.fish
 {{- end }}
 
+{{- if ne .osid "darwin" }}
+.config/fish/conf.d/30-python.fish
+{{- end }}
+
 {{- if ne .chezmoi.os "linux" }}
 .config/gtk-3.0
 .config/gtk-4.0
