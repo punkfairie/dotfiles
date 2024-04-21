@@ -7,4 +7,4 @@ abbr -a czc --position command "chezmoi cd"
 abbr -a cze --position command "chezmoi edit"
 abbr -a czu --position command "chezmoi update"
 
-abbr -a czcm --position command 'git c -m "$(chezmoi generate git-commit-message)"'
+abbr -a czcm --position command 'git aa && git c -m "$(chezmoi generate git-commit-message)" && git p'
