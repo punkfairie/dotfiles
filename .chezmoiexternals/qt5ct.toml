@@ -1,3 +1,4 @@
+{{- if ne .chezmoi.hostname "marleycentre" -}}
 [".config/qt5ct/colors/Catppuccin-Frappe.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Frappe.conf"
@@ -17,3 +18,4 @@ refreshPeriod = "672h"
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Mocha.conf"
 refreshPeriod = "672h"
+{{- end -}}
