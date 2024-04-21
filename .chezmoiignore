@@ -8,6 +8,9 @@ tags*
 .config/gtk-4.0
 .config/transmission
 .config/zathura
+.icons
+.config/fish/conf.d/30-gtk.fish
+.config/fish/conf.d/30-qt.fish
 {{- end }}
 
 {{- if ne .chezmoi.os "linux" }}
@@ -18,8 +21,8 @@ tags*
 .config/zathura
 .config/fish/conf.d/30-gtk.fish
 .config/fish/conf.d/30-journalctl.fish
+.config/fish/conf.d/30-qt.fish
 .config/fish/conf.d/30-systemctl.fish
-.config/fish/conf.d/30-yay.fish
 .icons
 {{- end }}
 
@@ -34,6 +37,8 @@ tags*
 .config/yay
 .config/.fehbg
 .config/picom.conf
+.config/fish/conf.d/30-yay.fish
+.config/fish/functions/pkgsearch.fish
 .screenlayout
 .xprofile
 .Xresources
