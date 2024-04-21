@@ -6,7 +6,7 @@
 function rl -d "Reload all configs"
     source "$XDG_CONFIG_HOME/fish/config.fish"
 
-    for file in "$XDG_CONFIG_HOME/fish/conf.d/*.fish"
+    for file in $XDG_CONFIG_HOME/fish/conf.d/*.fish
         source $file
     end
 end
