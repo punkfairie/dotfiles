@@ -1,6 +1,15 @@
 README.md
 tags*
 
+{{- if eq .chezmoi.hostname "marleycentre" }}
+.config/composer
+.config/firefox
+.config/gtk-3.0
+.config/gtk-4.0
+.config/transmission
+.config/zathura
+{{- end }}
+
 {{- if ne .chezmoi.os "linux" }}
 .config/gtk-3.0
 .config/gtk-4.0
@@ -14,10 +23,12 @@ tags*
 .icons
 {{- end }}
 
-{{- if ne .chezmoi.osRelease.id "arch" }}
+{{- if ne .osid "linux-arch" }}
 .config/awesome
 .config/mopidy
 .config/ncmpcpp
+.config/packages/arch*
+.config/pacman
 .config/qalculate
 .config/rofi
 .config/yay
