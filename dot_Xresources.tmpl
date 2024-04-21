@@ -33,7 +33,7 @@
 *color7: {{ .drapeau.colors.subtext1 }}
 *color15: {{ .drapeau.colors.subtext0 }}
 
-{{ if eq .osid "linux-arch" -}}
+{{ if lookPath "rofi" -}}
 ! Make Rofi use fish shell
 rofi.run-command: fish -c '{cmd}'
 rofi.run-list-command: 'fish -c functions'
