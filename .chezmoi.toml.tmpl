@@ -1,4 +1,9 @@
-{{ $passphrase := promptStringOnce . "passphrase" "passphrase" -}}
+{{- $passphrase := promptStringOnce . "passphrase" "passphrase" -}}
+
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
 
 progress = true
 
@@ -16,6 +21,7 @@ args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache
   gpgKey = {{ output "get-gpg-key" | trim | quote }}
 {{- end }}
 passphrase = {{ $passphrase | quote }}
+osid = {{ $osid | quote }}
 
 [data.drapeau]
 colorscheme = 'catppuccin-macchiato'

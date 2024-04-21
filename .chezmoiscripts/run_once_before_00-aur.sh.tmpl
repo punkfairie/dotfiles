@@ -1,4 +1,4 @@
-{{ if (and (eq .chezmoi.osRelease.id "arch") (not (lookPath "yay"))) -}}
+{{- if (and (eq .chezmoi.osRelease.id "arch") (not (lookPath "yay"))) -}}
 #!/usr/bin/env bash
 
 sudo pacman -S --needed git base-devel
