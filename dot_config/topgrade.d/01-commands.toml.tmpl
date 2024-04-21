@@ -11,4 +11,6 @@
 # Custom commands
 [commands]
 "Fish Shell Completions" = "fish_update_completions"
+{{- if lookPath "yay" }}
 "Update package list" = "-i yay -Qeq > {{ joinPath .chezmoi.sourceDir "dot_config/packages/" .chezmoi.hostname }} && set_color green && printf '%s'  && set_color normal && printf '%s' ' done\n'; exit"
+{{- end -}}
