@@ -74,3 +74,9 @@ end
 function cdls -d "CD into a directory and list its contents"
     cd "$argv" && ls
 end
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Check battery.
+
+upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time to|percentage"
