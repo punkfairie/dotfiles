@@ -16,4 +16,4 @@
 {{ end -}}
 {{if lookPath "brew" -}}
 "Update Brewfile" = "brew bundle dump --describe --force --file={{ joinPath .chezmoi.sourceDir "dot_config/packages/Brewfile" }} && set_color green && printf '%s'  && set_color normal && printf '%s' ' done\n'"
-
+{{ end -}}
