@@ -15,6 +15,7 @@ tags*
 
 {{- if ne .osid "darwin" }}
 .config/fish/conf.d/30-python.fish
+.config/packages/Brewfile
 {{- end }}
 
 {{- if ne .chezmoi.os "linux" }}
