@@ -1,0 +1,7 @@
+{{ if (and (eq .osid "darwin") (lookPath "brew")) -}}
+#!/usr/bin/env fish
+
+#{{ include "dot_config/packages/Brewfile" | sha256sum }}
+
+brew bundle install --file "$HOME/.config/packages/Brewfile"
+{{- end -}}

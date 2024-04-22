@@ -1,0 +1,78 @@
+tap "dart-lang/dart"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "shivammathur/php"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Secure and free password manager for all of your devices
+brew "bitwarden-cli"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Statistics utility to count lines of code
+brew "cloc"
+# Configurable talking characters in ASCII art
+brew "cowsay"
+# Lightweight DNS forwarder and DHCP server
+brew "dnsmasq"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
+# GitHub command-line tool
+brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Tool for glamorous shell scripts
+brew "gum"
+# Command-line interface for SQLite
+brew "sqlite"
+# Fast, highly customisable system info script with LGBTQ+ pride flags
+brew "hyfetch"
+# Filter JSON and JSON Lines data with Python syntax
+brew "jello"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Rainbows and unicorns in your console!
+brew "lolcat"
+# Web and API based SMTP testing tool
+brew "mailhog", restart_service: true
+# Ultra relevant, instant and typo-tolerant full-text search API
+brew "meilisearch", restart_service: true
+# Open source relational database management system
+brew "mysql"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx", restart_service: true
+# General-purpose scripting language
+brew "php", restart_service: true
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Safe, concurrent, practical language
+brew "rust"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Internet file retriever
+brew "wget"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
