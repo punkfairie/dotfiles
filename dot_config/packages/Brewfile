@@ -72,7 +72,11 @@ brew "ripgrep"
 brew "rust"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Upgrade all the things
+brew "topgrade"
 # Internet file retriever
 brew "wget"
+# Laravel and PHP development environment manager
+cask "herd"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
