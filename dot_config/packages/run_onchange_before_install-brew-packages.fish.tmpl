@@ -3,5 +3,5 @@
 
 #{{ include "dot_config/packages/Brewfile" | sha256sum }}
 
-brew bundle install --file "$HOME/.config/packages/Brewfile"
+brew bundle install --file {{ joinPath .chezmoi.homeDir ".config/packages/Brewfile" }}
 {{- end -}}
