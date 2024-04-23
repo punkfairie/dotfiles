@@ -24,7 +24,9 @@ passphrase = {{ $passphrase | quote }}
 osid = {{ $osid | quote }}
 {{ if eq .chezmoi.hostname "marleycentre" -}}
   isServer = true
-{{ end -}}
+{{ else }}
+  isServer = false
+{{ end }}
 
 [data.drapeau]
 colorscheme = 'catppuccin-macchiato'
