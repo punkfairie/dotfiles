@@ -1,5 +1,7 @@
 {{- if eq .osid "linux-arch" -}}
 #!/usr/bin/env bash
 
+# {{ include "dot_config/pacman/pacman.conf" | sha256sum }}
+
 sudo cp -v "$HOME/.config/pacman/pacman.conf" "/etc/pacman.conf"
 {{ end -}}
