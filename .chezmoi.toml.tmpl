@@ -19,9 +19,12 @@ args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache
 [data]
 {{ if lookPath "get-gpg-key" -}}
   gpgKey = {{ output "get-gpg-key" | trim | quote }}
-{{- end }}
+{{ end -}}
 passphrase = {{ $passphrase | quote }}
 osid = {{ $osid | quote }}
+{{ if eq .chezmoi.hostname "marleycentre" -}}
+  isServer = true
+{{ end -}}
 
 [data.drapeau]
 colorscheme = 'catppuccin-macchiato'
