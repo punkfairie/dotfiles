@@ -1,8 +1,8 @@
-{{ if lookPath "fish" -}}
+{{- if lookPath "fish" -}}
 #!/usr/bin/env bash
 
 if [ "$SHELL" != "$(which fish)" ]; then
 	chsh -s "$(which fish)"
 fi
 
-{{ end -}}
+{{- end -}}
