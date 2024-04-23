@@ -195,8 +195,6 @@ callback	dot_config/awesome/ui/popups/layout/init.lua	/^	callback = function()$/
 callback	dot_config/awesome/ui/popups/volume/init.lua	/^	callback = function()$/;"	f
 callback	dot_config/awesome/ui/top-panel/widgets/clock.lua	/^	callback = function()$/;"	f
 callback	dot_config/awesome/ui/top-panel/widgets/date.lua	/^	callback = function()$/;"	f
-callback	dot_config/nvim/lua/config/autocmds.lua	/^  callback = function()$/;"	f
-callback	dot_config/nvim/lua/config/autocmds.lua	/^  callback = function(args)$/;"	f
 catimg_size	dot_config/neofetch/config.conf	/^catimg_size="2"$/;"	k
 cc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://creativecommons.org/ns#
 changed	dot_config/awesome/ui/popups/layout/init.lua	/^function layout_popup.changed()$/;"	f	unknown:layout_popup

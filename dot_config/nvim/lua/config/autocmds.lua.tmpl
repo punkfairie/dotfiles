@@ -13,6 +13,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   end,
 })
 
+{{ if not .isServer -}}
 -- Define an autocmd group for the blade workaround
 local augroup = vim.api.nvim_create_augroup("lsp_blade_workaround", { clear = true })
 
@@ -42,3 +43,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end)
   end,
 })
+{{ end -}}
