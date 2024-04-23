@@ -17,7 +17,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.yanky" },
 
     -- editor
+    {{ if ne .chezmoi.hostname "marleycentre" -}}
     { import = "lazyvim.plugins.extras.editor.aerial" },
+    {{ end -}}
     { import = "lazyvim.plugins.extras.editor.leap" },
     { import = "lazyvim.plugins.extras.editor.navic" },
 
@@ -29,25 +31,35 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.ruby" },
+    {{ if ne .chezmoi.hostname "marleycentre" -}}
     { import = "lazyvim.plugins.extras.lang.typescript" },
+    {{ end -}}
     { import = "lazyvim.plugins.extras.lang.yaml" },
 
     -- linting
+    {{ if ne .chezmoi.hostname "marleycentre" -}}
     { import = "lazyvim.plugins.extras.linting.eslint" },
+    {{ end -}}
 
     -- lsp
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
 
     -- test
+    {{ if ne .chezmoi.hostname "marleycentre" -}}
     { import = "lazyvim.plugins.extras.test.core" },
+    {{ end -}}
 
     -- ui
+    {{ if ne .chezmoi.hostname "marleycentre" -}}
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    {{ end -}}
 
     -- util
     { import = "lazyvim.plugins.extras.util.dot" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+    {{ if ne .chezmoi.hostname "marleycentre" -}}
     { import = "lazyvim.plugins.extras.util.project" },
+    {{ end -}}
 
     -- import/override with your plugins
     { import = "plugins" },
@@ -61,7 +73,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "catppuccin-macchiato", "tokyonight", "habamax" } },
+  install = { colorscheme = { "catppuccin-macchiato" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
