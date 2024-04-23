@@ -1,7 +1,7 @@
 README.md
 tags*
 
-{{- if eq .chezmoi.hostname "marleycentre" }}
+{{- if not .isServer }}
 .config/composer
 .config/firefox
 .config/fish/conf.d/30-gtk.fish
@@ -16,6 +16,7 @@ tags*
 .config/nvim/lua/plugins/nvim-devdocs.lua
 .config/nvim/lua/plugins/refactoring.lua
 .config/nvim/lua/plugins/ssr.lua
+.config/nvim/lua/plugins/vim-blade.lua
 .config/transmission
 .config/zathura
 .icons
