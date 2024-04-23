@@ -1,5 +1,5 @@
 {{- if eq .osid "linux-arch" -}}
 #!/usr/bin/env bash
 
-sudo cp "$HOME/.config/pacman/pacman.conf" "/etc/pacman.conf"
+sudo cp -v "$HOME/.config/pacman/pacman.conf" "/etc/pacman.conf"
 {{ end -}}
