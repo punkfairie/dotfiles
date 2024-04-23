@@ -5,15 +5,18 @@ return {
     opts = {
       servers = {
         -- data/conf
+        {{ if not .isServer -}}
         sqlls = {},
+        {{ end -}}
         taplo = {},
 
         -- web
         html = {
-          filetypes = { "html", "liquid" },
+          filetypes = { "html" {{ if not .isServer }}, "liquid"{{ end }} },
         },
         css_variables = { mason = false },
         cssls = {},
+        {{ if not .isServer -}}
         denols = {},
         volar = {
           filetypes = {
@@ -34,6 +37,7 @@ return {
             },
           },
         },
+        {{ end -}}
         emmet_language_server = {
           filetypes = {
             "css",
@@ -72,10 +76,12 @@ return {
           },
         },
 
+        {{ if not .isServer -}}
         -- php
         phpactor = {
           filetypes = { "php", "blade" },
         },
+        {{ end -}}
 
         -- shell
         bashls = {},
