@@ -10,10 +10,12 @@ return {
         -- data/conf
         "yamllint",
 
+        {{ if not .isServer -}}
         -- php
         "blade-formatter",
         "pint",
         "rustywind",
+        {{ end -}}
 
         -- shell
         "shellcheck",
