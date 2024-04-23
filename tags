@@ -218,7 +218,6 @@ cond	dot_config/nvim/lua/plugins/beacon.lua	/^    cond = function()$/;"	f
 config	dot_config/nvim/lua/plugins/example.lua	/^      config = function()$/;"	f
 config	dot_config/nvim/lua/plugins/luasnip.lua	/^    config = function(_, opts)$/;"	f
 config	dot_config/nvim/lua/plugins/nvim-emmet.lua	/^    config = function()$/;"	f
-config	dot_config/nvim/lua/plugins/nvim-treesitter.lua	/^    config = function(_, opts)$/;"	f
 copyTables	dot_config/awesome/lib/animation/tween.lua	/^local function copyTables(destination, keysTable, valuesTable)$/;"	f
 core	dot_config/mopidy/mopidy.conf	/^[core]$/;"	s
 corners	dot_config/picom.conf	/^detect-rounded-corners = true;$/;"	k
