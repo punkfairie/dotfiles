@@ -102,6 +102,7 @@
 3	dot_config/transmission/settings.json	/^        "-d",$/;"	s	array:torrent-complete-sound-command
 4	dot_config/transmission/settings.json	/^        "transmission torrent downloaded"$/;"	s	array:torrent-complete-sound-command
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
+Architecture	dot_config/pacman/pacman.conf	/^Architecture = auto$/;"	k	section:options
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
@@ -109,7 +110,14 @@ GPG makes me want to toss the computer out the window	README.md	/^### GPG makes 
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
 General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setup
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
+HoldPkg	dot_config/pacman/pacman.conf	/^HoldPkg     = pacman glibc$/;"	k	section:options
+HookDir	dot_config/pacman/pacman.conf	/^HookDir     = \/home\/marley\/.config\/pacman\/hooks\/$/;"	k	section:options
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
+Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/chaotic-mirrorlist$/;"	k	section:chaotic-aur
+Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:core
+Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:extra
+Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:multilib
+LocalFileSigLevel	dot_config/pacman/pacman.conf	/^LocalFileSigLevel = Optional$/;"	k	section:options
 NEWS.md	dot_config/nvim/lazyvim.json	/^    "NEWS.md": "3314"$/;"	s	object:news
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
@@ -117,6 +125,7 @@ PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
+SigLevel	dot_config/pacman/pacman.conf	/^SigLevel    = Required DatabaseOptional$/;"	k	section:options
 Startup	dot_config/openrazer/razer.conf	/^[Startup]$/;"	s
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
 Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
@@ -198,6 +207,7 @@ callback	dot_config/awesome/ui/top-panel/widgets/date.lua	/^	callback = function
 catimg_size	dot_config/neofetch/config.conf	/^catimg_size="2"$/;"	k
 cc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://creativecommons.org/ns#
 changed	dot_config/awesome/ui/popups/layout/init.lua	/^function layout_popup.changed()$/;"	f	unknown:layout_popup
+chaotic-aur	dot_config/pacman/pacman.conf	/^[chaotic-aur]$/;"	s
 checkNewParams	dot_config/awesome/lib/animation/tween.lua	/^local function checkNewParams(_, _, subject, target, easing)$/;"	f
 checkSubjectAndTargetRecursively	dot_config/awesome/lib/animation/tween.lua	/^local function checkSubjectAndTargetRecursively(subject, target, path)$/;"	f
 clamping	dot_config/picom.conf	/^animation-clamping = false$/;"	k
@@ -218,6 +228,7 @@ config	dot_config/nvim/lua/plugins/luasnip.lua	/^    config = function(_, opts)$
 config	dot_config/nvim/lua/plugins/nvim-emmet.lua	/^    config = function()$/;"	f
 copyTables	dot_config/awesome/lib/animation/tween.lua	/^local function copyTables(destination, keysTable, valuesTable)$/;"	f
 core	dot_config/mopidy/mopidy.conf	/^[core]$/;"	s
+core	dot_config/pacman/pacman.conf	/^[core]$/;"	s
 corners	dot_config/picom.conf	/^detect-rounded-corners = true;$/;"	k
 cpriego/valet-linux	dot_config/composer/composer.json	/^        "cpriego\/valet-linux": "^2.3"$/;"	s	object:require
 cpu_brand	dot_config/neofetch/config.conf	/^cpu_brand="on"$/;"	k
@@ -304,6 +315,7 @@ exclude	dot_config/picom.conf	/^focus-exclude = [ $/;"	k
 exclude	dot_config/picom.conf	/^rounded-corners-exclude = [ $/;"	k
 exclude	dot_config/picom.conf	/^shadow-exclude = [$/;"	k
 exit_command	dot_config/awesome/lib/exit-screen.lua	/^local exit_command = function()$/;"	f
+extra	dot_config/pacman/pacman.conf	/^[extra]$/;"	s
 extras	dot_config/nvim/lazyvim.json	/^  "extras": [$/;"	a
 f	dot_config/nvim/lua/snippets/fish.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/gitconfig.lua	/^local f = ls.function_node$/;"	f
@@ -464,6 +476,7 @@ mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^local function m
 mpc_args	dot_config/neofetch/config.conf	/^mpc_args=()$/;"	k
 mpd	dot_config/mopidy/mopidy.conf	/^[mpd]$/;"	s
 mpris	dot_config/mopidy/mopidy.conf	/^[mpris]$/;"	s
+multilib	dot_config/pacman/pacman.conf	/^[multilib]$/;"	s
 music	dot_config/awesome/ui/info-panel/music-player.lua	/^local function music()$/;"	f
 music_player	dot_config/neofetch/config.conf	/^music_player="auto"$/;"	k
 mute	dot_config/awesome/ui/popups/volume/init.lua	/^volume.mute = function()$/;"	f	unknown:volume
@@ -511,6 +524,7 @@ opacity	dot_config/picom.conf	/^active-opacity = 0.92;$/;"	k
 opacity	dot_config/picom.conf	/^detect-client-opacity = true;$/;"	k
 opacity	dot_config/picom.conf	/^inactive-opacity = 0.68;$/;"	k
 open-dialog-dir	dot_config/transmission/settings.json	/^    "open-dialog-dir": "\/home\/marley",$/;"	s
+options	dot_config/pacman/pacman.conf	/^[options]$/;"	s
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function()$/;"	f
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function(_, opts)$/;"	f
 opts	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^    opts = function(_, opts)$/;"	f
