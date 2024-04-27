@@ -1,4 +1,0 @@
-Host marleycentre
-  HostName marleycentre.blackcat.vip
-  User marley
-  IdentityFile ~/.ssh/id_ed25519
