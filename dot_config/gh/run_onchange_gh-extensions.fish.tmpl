@@ -1,0 +1,10 @@
+{{- if lookPath "gh" -}}
+#!/usr/bin/env fish
+
+# {{ include ".chezmoidata/gh-extensions.toml" | sha256sum }}
+
+{{ range .packages.gh.install -}}
+gh extension install {{ . }}
+{{ end -}}
+
+{{- end -}}

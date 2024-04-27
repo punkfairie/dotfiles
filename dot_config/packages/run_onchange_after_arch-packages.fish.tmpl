@@ -1,4 +1,4 @@
-{{ if eq .chezmoi.osRelease.id "arch" -}}
+{{ if lookPath "yay" -}}
 #!/usr/bin/env fish
 
 {{ range (glob ".config/packages/arch?*") -}}
