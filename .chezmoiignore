@@ -57,6 +57,7 @@ tags*
 .config/yay
 .config/.fehbg
 .config/picom.conf
+.local/bin/update-package-list
 .screenlayout
 .xprofile
 .Xresources
