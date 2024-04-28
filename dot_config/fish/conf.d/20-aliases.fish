@@ -43,10 +43,6 @@ abbr -a _edit_txt --position command --regex ".+\.txt" --function _edit_txt_func
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-abbr -a L --position anywhere --set-cursor "% | less"
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 # Default command options.
 
 abbr -a cp --position command "cp -iv"
