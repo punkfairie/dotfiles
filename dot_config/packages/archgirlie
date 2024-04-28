@@ -1,8 +1,8 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
 argparse
-asdf-vm
 ast-firmware
 awesome-git
 base
@@ -56,6 +56,8 @@ git-delta
 git-filter-repo
 github-cli
 glow
+goland
+goland-jre
 gparted
 grub
 gum
@@ -117,7 +119,6 @@ php-fpm
 php-mcrypt
 php-redis
 php-sqlite
-php83-iconv
 picom-git
 pipewire
 pipewire-alsa
