@@ -1,6 +1,10 @@
 README.md
 tags*
 
+{{- if ne .chezmoi.hostname "archbaby" }}
+.config/fish/functions/batt.fish
+{{- end }}
+
 {{- if not .isServer }}
 .config/composer
 .config/firefox
