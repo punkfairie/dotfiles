@@ -1,3 +1,4 @@
+tap "charmbracelet/tap"
 tap "dart-lang/dart"
 tap "homebrew/bundle"
 tap "homebrew/services"
@@ -76,6 +77,8 @@ brew "starship"
 brew "topgrade"
 # Internet file retriever
 brew "wget"
+# The SSH directory
+brew "charmbracelet/tap/wishlist"
 # Laravel and PHP development environment manager
 cask "herd"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
