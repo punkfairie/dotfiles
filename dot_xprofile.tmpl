@@ -44,3 +44,6 @@ mopidy &
 {{ if lookPath "numlockx" -}}
 numlockx on
 {{ end -}}
+{{ if eq .chezmoi.hostname "archgirlie" -}}
+setxkbmap -option "apple:alupckeys"
+{{ end -}}
