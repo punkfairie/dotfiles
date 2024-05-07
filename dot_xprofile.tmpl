@@ -37,7 +37,10 @@ fi
 
 {{ if lookPath "copyq" -}}
 copyq &
-{{- end -}}
+{{ end -}}
 {{ if lookPath "mopidy" -}}
 mopidy &
-{{- end -}}
+{{ end -}}
+{{ if lookPath "numlockx" -}}
+numlockx on
+{{ end -}}

@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -108,6 +109,7 @@ networkmanager
 nginx
 nm-connection-editor
 ntfs-3g
+numlockx
 nvidia
 nvidia-settings
 openrazer-daemon
@@ -135,6 +137,7 @@ python-pipenv
 python-pipx
 python-pynvim
 qt5-graphicaleffects
+qt5-quickcontrols
 qt5-quickcontrols2
 qt5-svg
 qt5ct
@@ -153,6 +156,7 @@ rust
 sddm
 sddm-catppuccin-git
 sddm-theme-catppuccin-git
+sdl2-gamepad-mapper
 shfmt
 smbclient
 starship
