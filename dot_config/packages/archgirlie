@@ -1,4 +1,3 @@
-[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -184,7 +183,6 @@ ttf-liberation
 ttf-nerd-fonts-symbols
 ttfautohint
 tty-clock-git
-tty-clock-git-debug
 udisks2
 ufw
 ungoogled-chromium-bin
