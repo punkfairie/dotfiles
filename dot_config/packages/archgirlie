@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -22,6 +23,7 @@ catppuccin-gtk-theme-macchiato
 catppuccin-latte-grub-theme-git
 catppuccin-macchiato-grub-theme-git
 catppuccin-mocha-grub-theme-git
+cava
 chaotic-keyring
 chaotic-mirrorlist
 cheat-bin
@@ -58,13 +60,14 @@ glow
 goland
 goland-jre
 gparted
+grim
 grub
 gum
 gvfs-smb
 hunspell-en_us
 hyfetch
 hyphen-en
-hyprland
+hyprland-git
 imagemagick
 inotify-tools
 iptables-nft
@@ -157,6 +160,7 @@ sddm-catppuccin-git
 sddm-theme-catppuccin-git
 sdl2-gamepad-mapper
 shfmt
+slurp
 smbclient
 starship
 steam
@@ -179,8 +183,11 @@ ttf-firacode-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols
 ttfautohint
+tty-clock-git
+tty-clock-git-debug
 udisks2
 ufw
+ungoogled-chromium-bin
 unrar
 unzip
 upd72020x-fw
@@ -189,6 +196,8 @@ vesktop
 vkd3d
 volta
 vulkan-tools
+waybar
+waybar-mpris-git
 wd719x-firmware
 wezterm
 wget
@@ -200,7 +209,7 @@ wofi
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
+xdg-desktop-portal-hyprland-git
 xf86-video-nouveau
 xfce4-settings
 xorg-server
