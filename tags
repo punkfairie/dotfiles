@@ -88,14 +88,85 @@
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
 !_TAG_ROLE_DESCRIPTION!Yaml!anchor	alias	/alias/
 #TabsToolbar .toolbar-items	dot_config/firefox/userChrome.css	/^#TabsToolbar .toolbar-items {$/;"	c
+#backlight	dot_config/hypr/component/waybar/style.css	/^#backlight {$/;"	i
+#backlight	dot_config/hypr/component/waybar/style.css	/^#backlight,$/;"	i
+#battery	dot_config/hypr/component/waybar/style.css	/^#battery {$/;"	i
+#battery	dot_config/hypr/component/waybar/style.css	/^#battery,$/;"	i
+#battery.charging	dot_config/hypr/component/waybar/style.css	/^#battery.charging, #battery.plugged {$/;"	c
+#battery.critical:not(.charging)	dot_config/hypr/component/waybar/style.css	/^#battery.critical:not(.charging) {$/;"	c
+#battery.plugged	dot_config/hypr/component/waybar/style.css	/^#battery.charging, #battery.plugged {$/;"	c
+#clock	dot_config/hypr/component/waybar/style.css	/^#clock {$/;"	i
+#clock	dot_config/hypr/component/waybar/style.css	/^#clock,$/;"	i
+#cpu	dot_config/hypr/component/waybar/style.css	/^#cpu {$/;"	i
+#cpu	dot_config/hypr/component/waybar/style.css	/^#cpu,$/;"	i
+#custom-cycle_wall	dot_config/hypr/component/waybar/style.css	/^#custom-cycle_wall,$/;"	i
+#custom-cycle_wall	dot_config/hypr/component/waybar/style.css	/^#custom-cycle_wall{$/;"	i
+#custom-dynamic_pill	dot_config/hypr/component/waybar/style.css	/^#custom-dynamic_pill,$/;"	i
+#custom-dynamic_pill.critical	dot_config/hypr/component/waybar/style.css	/^#custom-dynamic_pill.critical{$/;"	c
+#custom-dynamic_pill.low	dot_config/hypr/component/waybar/style.css	/^#custom-dynamic_pill.low{$/;"	c
+#custom-dynamic_pill.normal	dot_config/hypr/component/waybar/style.css	/^#custom-dynamic_pill.normal{$/;"	c
+#custom-dynamic_pill.paused	dot_config/hypr/component/waybar/style.css	/^#custom-dynamic_pill.paused{$/;"	c
+#custom-dynamic_pill.playing	dot_config/hypr/component/waybar/style.css	/^#custom-dynamic_pill.playing{$/;"	c
+#custom-expand	dot_config/hypr/component/waybar/style.css	/^#custom-expand,$/;"	i
+#custom-media	dot_config/hypr/component/waybar/style.css	/^#custom-media {$/;"	i
+#custom-media	dot_config/hypr/component/waybar/style.css	/^#custom-media,$/;"	i
+#custom-media.custom-spotify	dot_config/hypr/component/waybar/style.css	/^#custom-media.custom-spotify {$/;"	c
+#custom-media.custom-vlc	dot_config/hypr/component/waybar/style.css	/^#custom-media.custom-vlc {$/;"	c
+#custom-ss	dot_config/hypr/component/waybar/style.css	/^#custom-ss,$/;"	i
+#custom-ss	dot_config/hypr/component/waybar/style.css	/^#custom-ss{$/;"	i
+#disk	dot_config/hypr/component/waybar/style.css	/^#disk {$/;"	i
+#disk	dot_config/hypr/component/waybar/style.css	/^#disk,$/;"	i
+#entry	dot_config/wofi/style.css	/^#entry {$/;"	i
+#entry:selected	dot_config/wofi/style.css	/^#entry:selected {$/;"	i
+#idle_inhibitor	dot_config/hypr/component/waybar/style.css	/^#idle_inhibitor {$/;"	i
+#idle_inhibitor	dot_config/hypr/component/waybar/style.css	/^#idle_inhibitor,$/;"	i
+#idle_inhibitor.activated	dot_config/hypr/component/waybar/style.css	/^#idle_inhibitor.activated {$/;"	c
+#inner-box	dot_config/wofi/style.css	/^#inner-box {$/;"	i
+#input	dot_config/wofi/style.css	/^#input {$/;"	i
+#input:focus	dot_config/wofi/style.css	/^#input:focus {$/;"	i
+#keyboard-state	dot_config/hypr/component/waybar/style.css	/^#keyboard-state {$/;"	i
+#keyboard-state > label	dot_config/hypr/component/waybar/style.css	/^#keyboard-state > label {$/;"	s
+#keyboard-state > label.locked	dot_config/hypr/component/waybar/style.css	/^#keyboard-state > label.locked {$/;"	c
+#language	dot_config/hypr/component/waybar/style.css	/^#language {$/;"	i
+#memory	dot_config/hypr/component/waybar/style.css	/^#memory {$/;"	i
+#memory	dot_config/hypr/component/waybar/style.css	/^#memory,$/;"	i
+#mode	dot_config/hypr/component/waybar/style.css	/^#mode,$/;"	i
+#mpd	dot_config/hypr/component/waybar/style.css	/^#mpd {$/;"	i
+#mpd.disconnected	dot_config/hypr/component/waybar/style.css	/^#mpd.disconnected {$/;"	c
+#mpd.paused	dot_config/hypr/component/waybar/style.css	/^#mpd.paused {$/;"	c
+#mpd.stopped	dot_config/hypr/component/waybar/style.css	/^#mpd.stopped {$/;"	c
 #nav-bar	dot_config/firefox/userChrome.css	/^#nav-bar {$/;"	i
 #navigator-toolbox	dot_config/firefox/userChrome.css	/^#navigator-toolbox {$/;"	i
+#network	dot_config/hypr/component/waybar/style.css	/^#network,$/;"	i
+#network	dot_config/hypr/component/waybar/style.css	/^#network{$/;"	i
+#network.disabled	dot_config/hypr/component/waybar/style.css	/^#network.disabled{$/;"	c
+#network.disconnected	dot_config/hypr/component/waybar/style.css	/^#network.disconnected{$/;"	c
+#network.ethernet	dot_config/hypr/component/waybar/style.css	/^#network.ethernet{$/;"	c
+#network.linked	dot_config/hypr/component/waybar/style.css	/^#network.linked, #network.wifi{$/;"	c
+#network.wifi	dot_config/hypr/component/waybar/style.css	/^#network.linked, #network.wifi{$/;"	c
+#outer-box	dot_config/wofi/style.css	/^#outer-box {$/;"	i
+#pulseaudio	dot_config/hypr/component/waybar/style.css	/^#pulseaudio {$/;"	i
+#pulseaudio	dot_config/hypr/component/waybar/style.css	/^#pulseaudio,$/;"	i
+#pulseaudio.muted	dot_config/hypr/component/waybar/style.css	/^#pulseaudio.muted {$/;"	c
+#scroll	dot_config/wofi/style.css	/^#scroll {$/;"	i
 #sidebar-header	dot_config/firefox/userChrome.css	/^#sidebar-header {$/;"	i
 #tabbrowser-tabs	dot_config/firefox/userChrome.css	/^#tabbrowser-tabs {$/;"	i
+#temperature	dot_config/hypr/component/waybar/style.css	/^#temperature {$/;"	i
+#temperature	dot_config/hypr/component/waybar/style.css	/^#temperature,$/;"	i
+#temperature.critical	dot_config/hypr/component/waybar/style.css	/^#temperature.critical {$/;"	c
+#text:selected	dot_config/wofi/style.css	/^#text:selected {$/;"	i
 #titlebar	dot_config/firefox/userChrome.css	/^#titlebar {$/;"	i
 #titlebar #TabsToolbar	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar {$/;"	i
 #titlebar #TabsToolbar .titlebar-spacer	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer {$/;"	c
 #titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"]	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {$/;"	c
+#tray	dot_config/hypr/component/waybar/style.css	/^#tray {$/;"	i
+#tray	dot_config/hypr/component/waybar/style.css	/^#tray,$/;"	i
+#tray > .needs-attention	dot_config/hypr/component/waybar/style.css	/^#tray > .needs-attention {$/;"	c
+#tray > .passive	dot_config/hypr/component/waybar/style.css	/^#tray > .passive {$/;"	c
+#workspaces	dot_config/hypr/component/waybar/style.css	/^#workspaces{$/;"	i
+#workspaces button	dot_config/hypr/component/waybar/style.css	/^#workspaces button{$/;"	s
+#workspaces button.active	dot_config/hypr/component/waybar/style.css	/^#workspaces button.active{$/;"	c
+*	dot_config/hypr/component/waybar/style.css	/^* {$/;"	s
 0	dot_config/transmission/settings.json	/^        "canberra-gtk-play",$/;"	s	array:torrent-complete-sound-command
 1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
 2	dot_config/transmission/settings.json	/^        "complete-download",$/;"	s	array:torrent-complete-sound-command
@@ -179,8 +250,51 @@ battery_display	dot_config/neofetch/config.conf	/^battery_display="off"$/;"	k
 battery_notifier	dot_config/openrazer/razer.conf	/^battery_notifier = True$/;"	k	section:Startup
 battery_notifier_freq	dot_config/openrazer/razer.conf	/^battery_notifier_freq = 600$/;"	k	section:Startup
 battery_notifier_percent	dot_config/openrazer/razer.conf	/^battery_notifier_percent = 33$/;"	k	section:Startup
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=,Print,exec,~\/.config\/hypr\/scripts\/screenshot$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,0,movetoworkspace,10$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,1,movetoworkspace,1$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,2,movetoworkspace,2$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,3,movetoworkspace,3$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,4,movetoworkspace,4$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,5,movetoworkspace,5$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,6,movetoworkspace,6$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,7,movetoworkspace,7$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,8,movetoworkspace,8$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=ALT,9,movetoworkspace,9$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=CTRL,1,exec,kitty --title fly_is_kitty --hold cava$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=CTRL,2,exec,code-insiders$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=CTRL,3,exec,kitty --single-instance --hold donut.c$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=CTRL,4,exec,kitty --title clock_is_kitty --hold tty-clock -C5$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,0,workspace,10$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,1,workspace,1$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,2,workspace,2$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,3,workspace,3$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,4,workspace,4$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,5,workspace,5$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,6,workspace,6$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,7,workspace,7$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,8,workspace,8$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,9,workspace,9$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,E,exec,nautilus$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,M,exit,$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,P,pseudo,$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,Q,exec,~\/.config\/hypr\/scripts\/lock$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,R,exec,wofi --show drun -o DP-3$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,RETURN,exec,wezterm$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,S,togglefloating,$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,W,killactive,$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,down,movefocus,d$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,g,togglegroup$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,left,movefocus,l$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,mouse_down,workspace,e+1$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,mouse_up,workspace,e-1$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,right,movefocus,r$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,tab,changegroupactive$/;"	k
+bind	dot_config/hypr/executable_hyprland.conf	/^bind=SUPER,up,movefocus,u$/;"	k
 bind-address-ipv4	dot_config/transmission/settings.json	/^    "bind-address-ipv4": "0.0.0.0",$/;"	s
 bind-address-ipv6	dot_config/transmission/settings.json	/^    "bind-address-ipv6": "::",$/;"	s
+bindm	dot_config/hypr/executable_hyprland.conf	/^bindm=SUPER,mouse:272,movewindow$/;"	k
+bindm	dot_config/hypr/executable_hyprland.conf	/^bindm=SUPER,mouse:273,resizewindow$/;"	k
 block_height	dot_config/neofetch/config.conf	/^block_height=1$/;"	k
 block_range	dot_config/neofetch/config.conf	/^block_range=(0 15)$/;"	k
 block_width	dot_config/neofetch/config.conf	/^block_width=3$/;"	k
@@ -411,6 +525,7 @@ kern	dot_config/picom.conf	/^blur-kern = "11x11gaussian";$/;"	k
 kernel_shorthand	dot_config/neofetch/config.conf	/^kernel_shorthand="on"$/;"	k
 keypressed_callback	dot_config/awesome/lib/exit-screen.lua	/^	keypressed_callback = function(_, _, key, _)$/;"	f
 keys	dot_config/nvim/lua/plugins/example.lua	/^    keys = function()$/;"	f
+label:focus	dot_config/hypr/component/waybar/style.css	/^label:focus {$/;"	s
 laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6",$/;"	s	object:require
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close_hover.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
@@ -470,6 +585,7 @@ method	dot_config/picom.conf	/^blur-method = "dual_kawase"$/;"	k
 mflags	dot_config/yay/config.json	/^	"mflags": "",$/;"	s
 mode	dot_config/hyfetch.json	/^        "mode": "horizontal",$/;"	s	object:color_align
 mode	dot_config/hyfetch.json	/^    "mode": "rgb",$/;"	s
+monitor	dot_config/hypr/executable_hyprland.conf	/^monitor=,preferred,auto,1$/;"	k
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.bottom.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile.bottom
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^local function mouse_resize_handler(m, c)$/;"	f
@@ -520,6 +636,8 @@ nsd40e4e580101	dot_config/awesome/ui/info-panel/weather/icons/weather-snow-rain.
 nsd5ece3780101	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/2000/svg
 nsd7c0ddd60101	dot_config/awesome/ui/info-panel/weather/icons/weather-fog.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="16" height="16" version="1.1">$/;"	n	uri:http://www.w3.org/2000/svg
 on_press	dot_config/awesome/main/bindings.lua	/^		on_press = function(index)$/;"	f
+once	dot_config/hypr/executable_hyprland.conf	/^exec-once=$HOME\/.config\/hypr\/autostart$/;"	k
+once	dot_config/hypr/executable_hyprland.conf	/^exec-once=copyq --start-server$/;"	k
 opacity	dot_config/picom.conf	/^active-opacity = 0.92;$/;"	k
 opacity	dot_config/picom.conf	/^detect-client-opacity = true;$/;"	k
 opacity	dot_config/picom.conf	/^inactive-opacity = 0.68;$/;"	k
@@ -769,6 +887,17 @@ watch-dir-enabled	dot_config/transmission/settings.json	/^    "watch-dir-enabled
 window	dot_config/picom.conf	/^animation-for-open-window = "zoom"; #open window$/;"	k
 window	dot_config/picom.conf	/^animation-for-transient-window = "slide-up"; #popup windows$/;"	k
 window	dot_config/picom.conf	/^animation-for-unmap-window = "zoom"; #minimize window$/;"	k
+window	dot_config/wofi/menu.css	/^window {$/;"	s
+window	dot_config/wofi/style.css	/^window {$/;"	s
+window#waybar	dot_config/hypr/component/waybar/style.css	/^window#waybar {$/;"	i
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=animation slide,title:^(all_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=float,title:^(all_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=float,title:^(clock_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=float,title:^(fly_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=move center,title:^(fly_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=size 418 234,title:^(clock_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=size 800 500,title:^(fly_is_kitty)\$$/;"	k
+windowrule	dot_config/hypr/executable_hyprland.conf	/^windowrule=tile,title:^(kitty)\$$/;"	k
 wintypes	dot_config/picom.conf	/^wintypes:$/;"	k
 x	dot_config/picom.conf	/^shadow-offset-x = -7;$/;"	k
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
