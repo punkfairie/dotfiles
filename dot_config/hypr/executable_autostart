@@ -17,5 +17,9 @@ dunst &
 # effects
 "$scripts/rgb" &
 
+# clipboard
+copyq --start-server &
+clipboard-sync &
+
 # other
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &

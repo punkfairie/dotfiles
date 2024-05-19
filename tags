@@ -638,7 +638,6 @@ nsd5ece3780101	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg ve
 nsd7c0ddd60101	dot_config/awesome/ui/info-panel/weather/icons/weather-fog.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="16" height="16" version="1.1">$/;"	n	uri:http://www.w3.org/2000/svg
 on_press	dot_config/awesome/main/bindings.lua	/^		on_press = function(index)$/;"	f
 once	dot_config/hypr/executable_hyprland.conf	/^exec-once=$HOME\/.config\/hypr\/autostart$/;"	k
-once	dot_config/hypr/executable_hyprland.conf	/^exec-once=copyq --start-server$/;"	k
 opacity	dot_config/picom.conf	/^active-opacity = 0.92;$/;"	k
 opacity	dot_config/picom.conf	/^detect-client-opacity = true;$/;"	k
 opacity	dot_config/picom.conf	/^inactive-opacity = 0.68;$/;"	k
