@@ -76,7 +76,7 @@ theme.fg_urgent = theme.color.text
 theme.fg_minimize = theme.color.text
 
 theme.useless_gap = dpi(10)
-theme.border_width = dpi(1)
+theme.border_width = dpi(3)
 theme.border_normal = theme.color.surface0
 theme.border_focus = theme.color.accent1
 theme.border_marked = theme.color.maroon
