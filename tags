@@ -190,7 +190,6 @@ Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:extra
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:multilib
 LocalFileSigLevel	dot_config/pacman/pacman.conf	/^LocalFileSigLevel = Optional$/;"	k	section:options
-NEWS.md	dot_config/nvim/lazyvim.json	/^    "NEWS.md": "3314"$/;"	s	object:news
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
 PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
@@ -431,7 +430,6 @@ exclude	dot_config/picom.conf	/^rounded-corners-exclude = [ $/;"	k
 exclude	dot_config/picom.conf	/^shadow-exclude = [$/;"	k
 exit_command	dot_config/awesome/lib/exit-screen.lua	/^local exit_command = function()$/;"	f
 extra	dot_config/pacman/pacman.conf	/^[extra]$/;"	s
-extras	dot_config/nvim/lazyvim.json	/^  "extras": [$/;"	a
 f	dot_config/nvim/lua/snippets/fish.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/gitconfig.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/lua.lua	/^local f = ls.function_node$/;"	f
@@ -607,7 +605,6 @@ new	dot_config/awesome/lib/animation/init.lua	/^local function new()$/;"	f
 new	dot_config/awesome/lib/animation/tween.lua	/^function tween.new(args)$/;"	f	unknown:tween
 new	dot_config/awesome/main/menu.lua	/^function awful.menu.new(...)$/;"	f	unknown:awful.menu
 new	dot_config/awesome/signals/playerctl.lua	/^local function new()$/;"	f
-news	dot_config/nvim/lazyvim.json	/^  "news": {$/;"	o
 next_char	dot_config/awesome/lib/json.lua	/^local function next_char(str, idx, set, negate)$/;"	f
 ns0280cbf60101	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.w3.org/2000/svg
 ns148527250101	dot_config/awesome/ui/info-panel/weather/icons/weather-clear-sky.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="16" height="16" version="1.1">$/;"	n	uri:http://www.w3.org/2000/svg
@@ -877,7 +874,6 @@ usr	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-M
 usr	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
 utp-enabled	dot_config/transmission/settings.json	/^    "utp-enabled": true,$/;"	b
 verbose_logging	dot_config/openrazer/razer.conf	/^verbose_logging = False$/;"	k	section:General
-version	dot_config/nvim/lazyvim.json	/^  "version": 3$/;"	n
 version	dot_config/yay/config.json	/^	"version": "12.3.0",$/;"	s
 vertical_pad	dot_config/awesome/helpers/ui.lua	/^function ui.vertical_pad(height)$/;"	f	unknown:ui
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
