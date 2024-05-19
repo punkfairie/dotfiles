@@ -10,7 +10,7 @@ window {
   margin: 4px;
   padding-left: 20px;
   border: none;
-  color: #fff;
+  color: #fff !important;
   font-weight: bold;
   background-color: #fff;
   background: linear-gradient(
@@ -23,6 +23,7 @@ window {
   margin: 10px;
   margin-bottom: 2px;
 }
+
 #input:focus {
   border: 0px solid #fff;
   margin-bottom: 0px;
