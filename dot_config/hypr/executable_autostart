@@ -8,14 +8,14 @@ scripts=$config/scripts
 dunst &
 
 # waybar
-$scripts/launch_waybar &
-$scripts/tools/dynamic &
+"$scripts/launch_waybar" &
+"$scripts/tools/dynamic" &
 
 # wallpaper
-$scripts/wall $config/wallpapers/cloud.png &
+"$scripts/wall" "$config/wallpapers/cloud.png" &
 
 # effects
-$scripts/rgb &
+"$scripts/rgb" &
 
 # other
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
