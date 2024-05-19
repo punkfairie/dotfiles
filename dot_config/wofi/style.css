@@ -52,6 +52,10 @@ window {
   /* background: rgb(255,255,255); */
 }
 
+#text {
+  color: #cba6f7;
+}
+
 #text:selected {
   color: #fff;
   margin: 0px 0px;
@@ -62,7 +66,6 @@ window {
 #entry {
   margin: 0px 0px;
   border: none;
-  color: #cba6f7;
   border-radius: 15px;
   background-color: transparent;
 }

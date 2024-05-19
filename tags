@@ -154,6 +154,7 @@
 #temperature	dot_config/hypr/component/waybar/style.css	/^#temperature {$/;"	i
 #temperature	dot_config/hypr/component/waybar/style.css	/^#temperature,$/;"	i
 #temperature.critical	dot_config/hypr/component/waybar/style.css	/^#temperature.critical {$/;"	c
+#text	dot_config/wofi/style.css	/^#text {$/;"	i
 #text:selected	dot_config/wofi/style.css	/^#text:selected {$/;"	i
 #titlebar	dot_config/firefox/userChrome.css	/^#titlebar {$/;"	i
 #titlebar #TabsToolbar	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar {$/;"	i
