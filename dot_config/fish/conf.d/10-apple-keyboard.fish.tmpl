@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
 
+{{ if lookPath "numlockx" -}}
 numlockx on
-setxkbmap -option "apple:alupckeys"
+{{ end -}}
