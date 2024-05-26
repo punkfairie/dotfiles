@@ -59,6 +59,11 @@ ruled.client.connect_signal("request::rules", function()
 	})
 
 	ruled.client.append_rule({
+		rule = { class = "edmarketconnector" },
+		properties = { floating = true },
+	})
+
+	ruled.client.append_rule({
 		rule_any = {
 			floating = true,
 		},

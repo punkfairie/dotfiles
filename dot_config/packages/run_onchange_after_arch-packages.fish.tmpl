@@ -16,9 +16,13 @@ set file (\
 
 cp $file arch
 
-{{ range .packages.arch.exclude -}}
+{{ range .packages.arch -}}
+{{   range . -}}
 sed -i '/{{ . }}/d' arch
+{{   end -}}
 {{ end -}}
+
+{{ range .packages.arch}}
 
 if ! test "{{ .chezmoi.hostname }}" = "$file"
     set_color yellow && echo "Package list has changed, reinstalling..."

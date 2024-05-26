@@ -1,16 +1,18 @@
 [packages.arch]
-exclude = [
-  "amd-ucode",
+archgirlie = [
   "lib32-gamemode",
   "lib32-vkd3d",
-  "libva-mesa-driver",
   "vkd3d",
-  "vulkan-radeon",
   "vulkan-tools",
-  "xf86-video-amdgpu",
   "libva-nvidia-driver-git",
   "nvidia",
   "nvidia-settings",
   "xf86-video-nouveau",
+]
+archbaby = [
+  "amd-ucode",
+  "libva-mesa-driver",
+  "vulkan-radeon",
+  "xf86-video-amdgpu",
   "steamlink",
 ]

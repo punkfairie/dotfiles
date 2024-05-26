@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -164,6 +165,7 @@ termux-language-server
 thefuck
 thunar
 timeshift
+tk
 tmux
 topgrade
 transmission-cli
@@ -180,7 +182,6 @@ ttfautohint
 tty-clock-git
 udisks2
 ufw
-ungoogled-chromium-bin
 unrar
 unzip
 upd72020x-fw
