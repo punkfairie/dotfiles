@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -22,7 +23,6 @@ catppuccin-gtk-theme-macchiato
 catppuccin-latte-grub-theme-git
 catppuccin-macchiato-grub-theme-git
 catppuccin-mocha-grub-theme-git
-cava
 chaotic-keyring
 chaotic-mirrorlist
 cheat-bin
@@ -61,14 +61,12 @@ goland
 goland-jre
 google-chrome
 gparted
-grim
 grub
 gum
 gvfs-smb
 hunspell-en_us
 hyfetch
 hyphen-en
-hyprland-git
 imagemagick
 inotify-tools
 iptables-nft
@@ -132,6 +130,7 @@ playerctl
 plocate
 polkit-kde-agent
 postgresql
+protontricks-git
 protonup-qt
 python-catppuccin
 python-html2text
@@ -146,14 +145,12 @@ qt5-svg
 qt5ct
 qt6-wayland
 razercommander
-rbw
 re2c
 redis
 reflector
 ripgrep
 rofi
 rofi-calc
-rofi-rbw
 rsync
 rust
 sddm
@@ -161,12 +158,9 @@ sddm-catppuccin-git
 sddm-theme-catppuccin-git
 sdl2-gamepad-mapper
 shfmt
-slurp
 smbclient
 starship
 steam
-swaylock-effects-git
-swww-git
 termux-language-server
 thefuck
 thunar
@@ -196,20 +190,15 @@ vesktop
 vkd3d
 volta
 vulkan-tools
-waybar
-waybar-mpris-git
 wd719x-firmware
 wezterm
 wget
 wine
 wireshark-gtk2
 wishlist-bin
-wl-clipboard
-wofi
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland-git
 xf86-video-nouveau
 xfce4-settings
 xorg-server
