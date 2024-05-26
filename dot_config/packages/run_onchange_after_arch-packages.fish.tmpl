@@ -22,8 +22,6 @@ sed -i '/{{ . }}/d' arch
 {{   end -}}
 {{ end -}}
 
-{{ range .packages.arch}}
-
 if ! test "{{ .chezmoi.hostname }}" = "$file"
     set_color yellow && echo "Package list has changed, reinstalling..."
     yay -S --needed - <~/.config/packages/arch
