@@ -54,7 +54,7 @@ ruled.client.connect_signal("request::rules", function()
 	})
 
 	ruled.client.append_rule({
-		rule = { instance = "FarmingSimulator2022Game.exe" },
+		rule = { class = "steam_app_489830" },
 		properties = { fullscreen = true },
 	})
 
