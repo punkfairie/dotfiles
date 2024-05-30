@@ -194,7 +194,6 @@ buildDir	dot_config/yay/config.json	/^	"buildDir": "\/home\/marley\/.cache\/yay"
 cache-size-mb	dot_config/transmission/settings.json	/^    "cache-size-mb": 4,$/;"	n
 calculatePAS	dot_config/awesome/lib/animation/tween.lua	/^local function calculatePAS(p, a, c, d)$/;"	f
 callback	dot_config/awesome/main/menu.lua	/^	callback = function()$/;"	f
-callback	dot_config/awesome/main/rules.lua	/^		callback = function(c)$/;"	f
 callback	dot_config/awesome/signals/cpu.lua	/^	callback = function()$/;"	f
 callback	dot_config/awesome/signals/disk.lua	/^	callback = function()$/;"	f
 callback	dot_config/awesome/signals/mem.lua	/^	callback = function()$/;"	f

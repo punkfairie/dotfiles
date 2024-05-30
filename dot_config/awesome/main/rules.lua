@@ -76,16 +76,12 @@ ruled.client.connect_signal("request::rules", function()
 			instance = {
 				"xfce",
 			},
+			name = {
+				"E:D Market Connector",
+			},
 		},
 		properties = {
 			floating = true,
 		},
-	})
-
-	ruled.client.append_rule({
-		rule = { class = "edmarketconnector" },
-		callback = function(c)
-			c.floating = true
-		end,
 	})
 end)
