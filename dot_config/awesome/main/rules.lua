@@ -84,10 +84,8 @@ ruled.client.connect_signal("request::rules", function()
 
 	ruled.client.append_rule({
 		rule = { class = "edmarketconnector" },
-		properties = {
-			floating = true,
-			placement = awful.placement.centered,
-			ontop = true,
-		},
+		callback = function(c)
+			c.floating = true
+		end,
 	})
 end)
