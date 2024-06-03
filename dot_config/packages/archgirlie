@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -92,6 +93,7 @@ lutris
 mailhog-bin
 man-db
 man-pages
+mariadb
 mediainfo
 meilisearch
 mesa
@@ -126,6 +128,7 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 pkgfile
+plasma-meta
 playerctl
 plocate
 polkit-kde-agent
