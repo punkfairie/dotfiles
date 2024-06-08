@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 accessibility-inspector
 aic94xx-firmware
 alsa-utils
@@ -215,8 +216,6 @@ timeshift
 tk
 tmux
 topgrade
-transmission-cli
-transmission-gtk
 ttf-apple-emoji
 ttf-comic-sans
 ttf-fairiesevka
