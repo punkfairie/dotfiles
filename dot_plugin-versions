@@ -1,3 +1,0 @@
-# plugin-name        git-url                                                    git-ref
-asdf-plugin-manager  https://github.com/asdf-community/asdf-plugin-manager.git  0ea8bb5
-php                  https://github.com/asdf-community/asdf-php.git             1eaf4de
