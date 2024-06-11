@@ -8,7 +8,6 @@ return {
 
         -- data/conf
         "yamllint",
-        "sqlfluff",
 
         {{ if not .isServer -}}
         -- php
@@ -18,7 +17,6 @@ return {
         {{ end -}}
 
         -- shell
-        "shellcheck",
         "shfmt",
       },
     },

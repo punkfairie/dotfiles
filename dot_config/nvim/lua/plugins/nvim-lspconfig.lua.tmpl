@@ -5,9 +5,7 @@ return {
     opts = {
       servers = {
         -- data/conf
-        {{ if not .isServer -}}
         sqlls = {},
-        {{ end -}}
         taplo = {},
 
         -- web
@@ -18,16 +16,6 @@ return {
         cssls = {},
         {{ if not .isServer -}}
         denols = {},
-        volar = {
-          filetypes = {
-            "typescript",
-            "javascript",
-            "javascriptreact",
-            "typescriptreact",
-            "vue",
-            "json",
-          },
-        },
         stylelint_lsp = {
           settings = {
             stylelintplus = {
@@ -84,7 +72,6 @@ return {
         {{ end -}}
 
         -- shell
-        bashls = {},
         pkgbuild_language_server = { mason = false },
       },
     },
