@@ -1,5 +1,6 @@
 README.md
 tags*
+**/*.src.ini
 
 {{- if ne .chezmoi.hostname "archbaby" }}
 .config/fish/functions/batt.fish
