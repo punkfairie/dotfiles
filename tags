@@ -126,6 +126,7 @@ BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=30, 32
 BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=36, 39, 58$/;"	k	section:Colors:Tooltip
 BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=36, 39, 58$/;"	k	section:Colors:View
 BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=54, 58, 79$/;"	k	section:Colors:Button
+BorderActivate	dot_config/private_kwinrc.src.ini	/^BorderActivate=5$/;"	k	section:Effect-overview
 Breadcrumb Navigation	dot_config/private_kdeglobals.src.ini	/^Breadcrumb Navigation=true$/;"	k	section:KFileDialog Settings
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
@@ -177,12 +178,15 @@ Decrease Keyboard Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Dec
 Decrease Opacity	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Opacity=none,,Decrease Opacity of Active Window by 5%$/;"	k	section:kwin
 Decrease Screen Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brigh/;"	k	section:org_kde_powerdevil
 Decrease Screen Brightness Small	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness Small=Shift+Monitor Brightness Down,Shift+Monitor Brightness Down,Dec/;"	k	section:org_kde_powerdevil
+Desktops	dot_config/private_kwinrc.src.ini	/^[Desktops]$/;"	s
 Diff Options	dot_config/private_komparerc.src.ini	/^[Diff Options]$/;"	s
 DiffProgram	dot_config/private_komparerc.src.ini	/^DiffProgram=$/;"	k	section:Diff Options
 DirSelect Dialog	dot_config/private_kdeglobals.src.ini	/^[DirSelect Dialog]$/;"	s
 DirSelectDialog Size	dot_config/private_kdeglobals.src.ini	/^DirSelectDialog Size=820,584$/;"	k	section:DirSelect Dialog
 Disable Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad$/;"	k	section:kcm_touchpad
 Edit Tiles	dot_config/private_kglobalshortcutsrc.src.ini	/^Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor$/;"	k	section:kwin
+Effect-overview	dot_config/private_kwinrc.src.ini	/^[Effect-overview]$/;"	s
+Effect-translucency	dot_config/private_kwinrc.src.ini	/^[Effect-translucency]$/;"	s
 Enable	dot_config/private_kdeglobals.src.ini	/^Enable=$/;"	k	section:ColorEffects:Disabled
 Enable	dot_config/private_kdeglobals.src.ini	/^Enable=true$/;"	k	section:ColorEffects:Inactive
 Enable Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad$/;"	k	section:kcm_touchpad
@@ -268,6 +272,7 @@ HoldPkg	dot_config/pacman/pacman.conf	/^HoldPkg     = pacman glibc$/;"	k	section
 HookDir	dot_config/pacman/pacman.conf	/^HookDir     = \/home\/marley\/.config\/pacman\/hooks\/$/;"	k	section:options
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
 Icons	dot_config/private_kdeglobals.src.ini	/^[Icons]$/;"	s
+Id_1	dot_config/private_kwinrc.src.ini	/^Id_1=ecf46e1e-fa8b-4ddf-98d8-25e1de61ad41$/;"	k	section:Desktops
 IgnoreAllWhiteSpace	dot_config/private_komparerc.src.ini	/^IgnoreAllWhiteSpace=false$/;"	k	section:Diff Options
 IgnoreChangesDueToTabExpansion	dot_config/private_komparerc.src.ini	/^IgnoreChangesDueToTabExpansion=false$/;"	k	section:Diff Options
 IgnoreChangesInCase	dot_config/private_komparerc.src.ini	/^IgnoreChangesInCase=false$/;"	k	section:Diff Options
@@ -276,6 +281,7 @@ IgnoreRegExp	dot_config/private_komparerc.src.ini	/^IgnoreRegExp=false$/;"	k	sec
 IgnoreRegExpText	dot_config/private_komparerc.src.ini	/^IgnoreRegExpText=$/;"	k	section:Diff Options
 IgnoreRegExpTextHistory	dot_config/private_komparerc.src.ini	/^IgnoreRegExpTextHistory=$/;"	k	section:Diff Options
 IgnoreWhiteSpace	dot_config/private_komparerc.src.ini	/^IgnoreWhiteSpace=false$/;"	k	section:Diff Options
+Inactive	dot_config/private_kwinrc.src.ini	/^Inactive=80$/;"	k	section:Effect-translucency
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/chaotic-mirrorlist$/;"	k	section:chaotic-aur
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:core
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:extra
@@ -296,6 +302,7 @@ LargeFiles	dot_config/private_komparerc.src.ini	/^LargeFiles=true$/;"	k	section:
 LastChosenDestinationListEntry	dot_config/private_komparerc.src.ini	/^LastChosenDestinationListEntry=\/home\/marley\/data\/games\/anno-1800-broken\/drive_c\/Games\/An/;"	k	section:Recent Compare Files
 LastChosenSourceListEntry	dot_config/private_komparerc.src.ini	/^LastChosenSourceListEntry=\/home\/marley\/data\/games\/anno-1800\/drive_c\/Games\/Anno 1800$/;"	k	section:Recent Compare Files
 LastUsedCustomAccentColor	dot_config/private_kdeglobals.src.ini	/^LastUsedCustomAccentColor=233,58,154$/;"	k	section:General
+LayoutName	dot_config/private_kwinrc.src.ini	/^LayoutName=compact$/;"	k	section:TabBox
 LinesOfContext	dot_config/private_komparerc.src.ini	/^LinesOfContext=3$/;"	k	section:Diff Options
 LocalFileSigLevel	dot_config/pacman/pacman.conf	/^LocalFileSigLevel = Optional$/;"	k	section:options
 LocationCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^LocationCombo Completionmode=5$/;"	k	section:KFileDialog Settings
@@ -313,9 +320,12 @@ MoveZoomDown	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomDown=none,n
 MoveZoomLeft	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomLeft=none,none,Move Zoomed Area to Left$/;"	k	section:kwin
 MoveZoomRight	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomRight=none,none,Move Zoomed Area to Right$/;"	k	section:kwin
 MoveZoomUp	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomUp=none,none,Move Zoomed Area Upwards$/;"	k	section:kwin
+MultiScreenMode	dot_config/private_kwinrc.src.ini	/^MultiScreenMode=1$/;"	k	section:TabBox
+Name_1	dot_config/private_kwinrc.src.ini	/^Name_1=Desktop 2$/;"	k	section:Desktops
 NewFiles	dot_config/private_komparerc.src.ini	/^NewFiles=true$/;"	k	section:Diff Options
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
+Number	dot_config/private_kwinrc.src.ini	/^Number=1$/;"	k	section:Desktops
 Options	dot_config/copyq/copyq.conf	/^[Options]$/;"	s
 Overview	dot_config/private_kglobalshortcutsrc.src.ini	/^Overview=Launch (B),Meta+W,Toggle Overview$/;"	k	section:kwin
 PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
@@ -323,6 +333,7 @@ PathCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^PathCombo Compl
 Pattern	dot_config/private_komparerc.src.ini	/^Pattern=false$/;"	k	section:Exclude File Options
 PatternList	dot_config/private_komparerc.src.ini	/^PatternList=$/;"	k	section:Exclude File Options
 Plugins	dot_config/copyq/copyq.conf	/^[Plugins]$/;"	s
+Plugins	dot_config/private_kwinrc.src.ini	/^[Plugins]$/;"	s
 PowerDown	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerDown=Power Down,Power Down,Power Down$/;"	k	section:org_kde_powerdevil
 PowerOff	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerOff=Power Off,Power Off,Power Off$/;"	k	section:org_kde_powerdevil
 PreviewSettings	dot_config/private_kdeglobals.src.ini	/^[PreviewSettings]$/;"	s
@@ -335,7 +346,9 @@ Recent Sources	dot_config/private_komparerc.src.ini	/^Recent Sources=file:\/\/\/
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
 RemoveColor	dot_config/private_komparerc.src.ini	/^RemoveColor=190,237,190$/;"	k	section:View Options
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
+Rows	dot_config/private_kwinrc.src.ini	/^Rows=1$/;"	k	section:Desktops
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
+Scale	dot_config/private_kwinrc.src.ini	/^Scale=1$/;"	k	section:Xwayland
 ScrollNoOfLines	dot_config/private_komparerc.src.ini	/^ScrollNoOfLines=3$/;"	k	section:View Options
 Setup Window Shortcut	dot_config/private_kglobalshortcutsrc.src.ini	/^Setup Window Shortcut=none,,Setup Window Shortcut$/;"	k	section:kwin
 Shortcuts	dot_config/copyq/copyq.conf	/^[Shortcuts]$/;"	s
@@ -405,6 +418,7 @@ Switch to Screen Below	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to
 Switch to Screen to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Left=none,,Switch to Screen to the Left$/;"	k	section:kwin
 Switch to Screen to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Right=none,,Switch to Screen to the Right$/;"	k	section:kwin
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
+TabBox	dot_config/private_kwinrc.src.ini	/^[TabBox]$/;"	s
 TabToNumberOfSpaces	dot_config/private_komparerc.src.ini	/^TabToNumberOfSpaces=4$/;"	k	section:View Options
 Tabs	dot_config/copyq/copyq.conf	/^[Tabs]$/;"	s
 TerminalApplication	dot_config/private_kdeglobals.src.ini	/^TerminalApplication=wezterm start --cwd .$/;"	k	section:General
@@ -413,6 +427,11 @@ TextFont	dot_config/private_komparerc.src.ini	/^TextFont=Noto Sans,10,-1,5,50,0,
 Theme	dot_config/copyq/copyq.conf	/^[Theme]$/;"	s
 Theme	dot_config/private_kdeglobals.src.ini	/^Theme=BeautyDream$/;"	k	section:Icons
 Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
+Tiling	dot_config/private_kwinrc.src.ini	/^[Tiling]$/;"	s
+Tiling	dot_config/private_kwinrc.src.ini	/^[Tiling][34d2ff18-2384-579a-9858-4dc2027aa109]$/;"	s
+Tiling	dot_config/private_kwinrc.src.ini	/^[Tiling][47d534c5-b69a-57c4-9eca-a658a8b2e26d]$/;"	s
+Tiling	dot_config/private_kwinrc.src.ini	/^[Tiling][65ada6c6-b256-5660-b0ef-387c84522efa]$/;"	s
+Tiling	dot_config/private_kwinrc.src.ini	/^[Tiling][a01d0cac-34db-5808-884f-9ff5f68025c9]$/;"	s
 Toggle Keyboard Backlight	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Keyboard Backlight=Keyboard Light On\/Off,Keyboard Light On\/Off,Toggle Keyboard Backligh/;"	k	section:org_kde_powerdevil
 Toggle Night Color	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Night Color=none,none,Toggle Night Light$/;"	k	section:kwin
 Toggle Screen Reader On and Off	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off$/;"	k	section:kaccess
@@ -502,6 +521,7 @@ Window to Screen 6	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Scr
 Window to Screen 7	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 7=none,,Move Window to Screen 7$/;"	k	section:kwin
 XftHintStyle	dot_config/private_kdeglobals.src.ini	/^XftHintStyle=hintslight$/;"	k	section:General
 XftSubPixel	dot_config/private_kdeglobals.src.ini	/^XftSubPixel=rgb$/;"	k	section:General
+Xwayland	dot_config/private_kwinrc.src.ini	/^[Xwayland]$/;"	s
 ["<C-CR>"]	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^        ["<C-CR>"] = function(fallback)$/;"	f
 ["<S-Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
 ["<Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
@@ -612,6 +632,7 @@ block_width	dot_config/neofetch/config.conf	/^block_width=3$/;"	k
 blocklist-enabled	dot_config/transmission/settings.json	/^    "blocklist-enabled": false,$/;"	b
 blocklist-updates-enabled	dot_config/transmission/settings.json	/^    "blocklist-updates-enabled": true,$/;"	b
 blocklist-url	dot_config/transmission/settings.json	/^    "blocklist-url": "http:\/\/www.example.com\/blocklist",$/;"	s
+blurEnabled	dot_config/private_kwinrc.src.ini	/^blurEnabled=true$/;"	k	section:Plugins
 bold	dot_config/neofetch/config.conf	/^bold="on"$/;"	k
 borders	dot_config/picom.conf	/^round-borders = 1;$/;"	k
 bottomup	dot_config/yay/config.json	/^	"bottomup": true,$/;"	b
@@ -975,6 +996,7 @@ logo_wave_dir	dot_config/openrazer/persistence.conf	/^logo_wave_dir = 1$/;"	k	se
 lpd-enabled	dot_config/transmission/settings.json	/^    "lpd-enabled": true,$/;"	b
 lua_ls	dot_config/nvim/dot_neoconf.json	/^      "lua_ls": {$/;"	o	object:neoconf.plugins
 m3u	dot_config/mopidy/mopidy.conf	/^[m3u]$/;"	s
+magiclampEnabled	dot_config/private_kwinrc.src.ini	/^magiclampEnabled=true$/;"	k	section:Plugins
 main	.chezmoiscripts/run_after_00-drapeau.py	/^def main():$/;"	f
 main-window-height	dot_config/transmission/settings.json	/^    "main-window-height": 465,$/;"	n
 main-window-is-maximized	dot_config/transmission/settings.json	/^    "main-window-is-maximized": false,$/;"	b
@@ -1114,6 +1136,7 @@ options	dot_config/pacman/pacman.conf	/^[options]$/;"	s
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function()$/;"	f
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function(_, opts)$/;"	f
 opts	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^    opts = function(_, opts)$/;"	f
+org.kde.kdecoration2	dot_config/private_kwinrc.src.ini	/^[org.kde.kdecoration2]$/;"	s
 org_kde_powerdevil	dot_config/private_kglobalshortcutsrc.src.ini	/^[org_kde_powerdevil]$/;"	s
 os_arch	dot_config/neofetch/config.conf	/^os_arch="off"$/;"	k
 out	dot_config/picom.conf	/^animation-for-workspace-switch-out = "fly-in"; #the windows in the workspace that are coming out$/;"	k
@@ -1142,6 +1165,7 @@ override	dot_config/picom.conf	/^inactive-opacity-override = true;$/;"	k
 package_managers	dot_config/neofetch/config.conf	/^package_managers="on"$/;"	k
 pacmanbin	dot_config/yay/config.json	/^	"pacmanbin": "pacman",$/;"	s
 pacmanconf	dot_config/yay/config.json	/^	"pacmanconf": "\/etc\/pacman.conf",$/;"	s
+padding	dot_config/private_kwinrc.src.ini	/^padding=4$/;"	k	section:Tiling
 panels	dot_config/private_kglobalshortcutsrc.src.ini	/^cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels$/;"	k	section:plasmashell
 parse	dot_config/awesome/lib/json.lua	/^parse = function(str, idx)$/;"	f
 parse_array	dot_config/awesome/lib/json.lua	/^local function parse_array(str, i)$/;"	f
@@ -1286,10 +1310,12 @@ set_instant	dot_config/awesome/lib/animation/init.lua	/^function animation_manag
 set_slider_value	dot_config/awesome/ui/info-panel/music-player.lua	/^	local function set_slider_value(_, volume)$/;"	f
 set_wall	dot_config/awesome/main/wallpaper.lua	/^local function set_wall(s)$/;"	f
 shadow	dot_config/picom.conf	/^shadow = true;$/;"	k
+shakecursorEnabled	dot_config/private_kwinrc.src.ini	/^shakecursorEnabled=true$/;"	k	section:Plugins
 shape	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.shape = function(cr, w, h) --Rounded Corners$/;"	f	unknown:sidebar
 shape	dot_config/awesome/ui/notif-panel/init.lua	/^action.shape = function(cr, w, h) --Rounded Corners$/;"	f	unknown:action
 share	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 share	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
+sheetEnabled	dot_config/private_kwinrc.src.ini	/^sheetEnabled=true$/;"	k	section:Plugins
 shell_path	dot_config/neofetch/config.conf	/^shell_path="off"$/;"	k
 shell_version	dot_config/neofetch/config.conf	/^shell_version="off"$/;"	k
 show dashboard	dot_config/private_kglobalshortcutsrc.src.ini	/^show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop$/;"	k	section:plasmashell
@@ -1329,6 +1355,7 @@ speed-limit-up	dot_config/transmission/settings.json	/^    "speed-limit-up": 100
 speed-limit-up-enabled	dot_config/transmission/settings.json	/^    "speed-limit-up-enabled": false,$/;"	b
 speed_shorthand	dot_config/neofetch/config.conf	/^speed_shorthand="off"$/;"	k
 speed_type	dot_config/neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
+squashEnabled	dot_config/private_kwinrc.src.ini	/^squashEnabled=false$/;"	k	section:Plugins
 start	dot_config/awesome/lib/animation/init.lua	/^function animation:start(args)$/;"	f	unknown:animation
 start-added-torrents	dot_config/transmission/settings.json	/^    "start-added-torrents": true,$/;"	b
 start_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	start_callback = function()$/;"	f
@@ -1380,9 +1407,11 @@ tabs	dot_config/copyq/copyq.conf	/^tabs=&clipboard$/;"	k	section:Options
 tcp-enabled	dot_config/transmission/settings.json	/^    "tcp-enabled": true,$/;"	b
 text_tab_width	dot_config/copyq/copyq.conf	/^text_tab_width=8$/;"	k	section:Options
 text_wrap	dot_config/copyq/copyq.conf	/^text_wrap=true$/;"	k	section:Options
+theme	dot_config/private_kwinrc.src.ini	/^theme=__aurorae__svg__Infinity-Blur-Aurorae-6$/;"	k	section:org.kde.kdecoration2
 themes	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 themes	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
 thumbnail_dir	dot_config/neofetch/config.conf	/^thumbnail_dir="${XDG_CACHE_HOME:-${HOME}\/.cache}\/thumbnails\/neofetch"$/;"	k
+tiles	dot_config/private_kwinrc.src.ini	/^tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}$/;"	k	section:Tiling
 timeupdate	dot_config/yay/config.json	/^	"timeupdate": false,$/;"	b
 title_fqdn	dot_config/neofetch/config.conf	/^title_fqdn="off"$/;"	k
 toggle	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.toggle = function()$/;"	f	unknown:sidebar
@@ -1401,6 +1430,7 @@ torrent-complete-notification-enabled	dot_config/transmission/settings.json	/^  
 torrent-complete-sound-command	dot_config/transmission/settings.json	/^    "torrent-complete-sound-command": [$/;"	a
 torrent-complete-sound-enabled	dot_config/transmission/settings.json	/^    "torrent-complete-sound-enabled": true,$/;"	b
 transient	dot_config/picom.conf	/^detect-transient = true$/;"	k
+translucencyEnabled	dot_config/private_kwinrc.src.ini	/^translucencyEnabled=true$/;"	k	section:Plugins
 transparency	dot_config/copyq/copyq.conf	/^transparency=0$/;"	k	section:Options
 transparency_focused	dot_config/copyq/copyq.conf	/^transparency_focused=0$/;"	k	section:Options
 trash-can-enabled	dot_config/transmission/settings.json	/^    "trash-can-enabled": true,$/;"	b
@@ -1459,6 +1489,7 @@ window_wait_before_raise_ms	dot_config/copyq/copyq.conf	/^window_wait_before_rai
 window_wait_for_modifier_released_ms	dot_config/copyq/copyq.conf	/^window_wait_for_modifier_released_ms=2000$/;"	k	section:Options
 window_wait_raised_ms	dot_config/copyq/copyq.conf	/^window_wait_raised_ms=150$/;"	k	section:Options
 wintypes	dot_config/picom.conf	/^wintypes:$/;"	k
+wobblywindowsEnabled	dot_config/private_kwinrc.src.ini	/^wobblywindowsEnabled=true$/;"	k	section:Plugins
 x	dot_config/picom.conf	/^shadow-offset-x = -7;$/;"	k
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close_hover.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
