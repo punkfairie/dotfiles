@@ -99,15 +99,23 @@
 $Version	dot_config/private_kdeglobals.src.ini	/^[$Version]$/;"	s
 0	dot_config/transmission/settings.json	/^        "canberra-gtk-play",$/;"	s	array:torrent-complete-sound-command
 1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
+1680x1050	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ItemGeometries-1680x1050=$/;"	k	section:Containments
+1920x1200	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ItemGeometries-1920x1200=$/;"	k	section:Containments
 2	dot_config/transmission/settings.json	/^        "complete-download",$/;"	s	array:torrent-complete-sound-command
 2 screens	dot_config/private_komparerc.src.ini	/^2 screens: Window-Maximized=true$/;"	k	section:General Options
 3	dot_config/transmission/settings.json	/^        "-d",$/;"	s	array:torrent-complete-sound-command
 34950b41293c	dot_config/private_kglobalshortcutsrc.src.ini	/^switch-to-activity-93518f0d-148e-42b9-acd8-34950b41293c=none,none,Switch to activity "Default"$/;"	k	section:ActivityManager
 4	dot_config/transmission/settings.json	/^        "transmission torrent downloaded"$/;"	s	array:torrent-complete-sound-command
+ActionPlugins	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[ActionPlugins][0]$/;"	s
+ActionPlugins	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[ActionPlugins][1]$/;"	s
 Activate Window Demanding Attention	dot_config/private_kglobalshortcutsrc.src.ini	/^Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention$/;"	k	section:kwin
 ActivityManager	dot_config/private_kglobalshortcutsrc.src.ini	/^[ActivityManager]$/;"	s
 AddColor	dot_config/private_komparerc.src.ini	/^AddColor=190,190,237$/;"	k	section:View Options
 Allow Expansion	dot_config/private_kdeglobals.src.ini	/^Allow Expansion=false$/;"	k	section:KFileDialog Settings
+AppletOrder	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^AppletOrder=32;28;33;77;54;55;34$/;"	k	section:Containments
+AppletOrder	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^AppletOrder=59$/;"	k	section:Containments
+AppletOrder	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^AppletOrder=63$/;"	k	section:Containments
+AppletOrder	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^AppletOrder=69;67$/;"	k	section:Containments
 AppliedColor	dot_config/private_komparerc.src.ini	/^AppliedColor=237,237,190$/;"	k	section:View Options
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
 Architecture	dot_config/pacman/pacman.conf	/^Architecture = auto$/;"	k	section:options
@@ -150,6 +158,111 @@ Colors:Tooltip	dot_config/private_kdeglobals.src.ini	/^[Colors:Tooltip]$/;"	s
 Colors:View	dot_config/private_kdeglobals.src.ini	/^[Colors:View]$/;"	s
 Colors:Window	dot_config/private_kdeglobals.src.ini	/^[Colors:Window]$/;"	s
 CompareRecursively	dot_config/private_komparerc.src.ini	/^CompareRecursively=true$/;"	k	section:Diff Options
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][1]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][1][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][1][Wallpaper][org.kde.image][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][28]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][28][Configuration][ConfigDialog]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][32]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][32][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][32][Configuration][ConfigDialog]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][32][Configuration][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][33]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][34]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][34][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][54]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][54][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][54][Configuration][Appearance]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][54][Configuration][ConfigDialog]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][55]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][Applets][77]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][27][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][2]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][2][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][2][Wallpaper][org.kde.image][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][36]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][37]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][37][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][37][Configuration][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][38]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][38][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][39]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][39][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][40]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][41]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][41][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][42]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][42][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][43]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][43][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][44]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][45]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][45][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][46]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][47]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][47][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][48]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][48][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][49]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][49][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][50]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][50][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][79]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][Applets][79][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][35][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][58]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][58][Applets][59]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][58][Applets][59][Configuration][ConfigDialog]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][58][Applets][59][Configuration][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][58][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][62]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][62][Applets][63]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][62][Applets][63][Configuration][ConfigDialog]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][62][Applets][63][Configuration][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][62][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][66]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][66][Applets][67]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][66][Applets][69]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][66][Applets][69][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][66][Applets][69][Configuration][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][66][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][10]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][10][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][11]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][11][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][11][Configuration][General]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][12]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][12][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][13]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][13][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][14]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][14][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][15]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][15][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][16]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][16][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][17]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][17][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][18]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][18][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][19]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][19][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][20]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][20][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][23]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][23][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][24]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][24][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][25]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][25][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][26]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][26][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Applets][78]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][Configuration]$/;"	s
+Containments	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[Containments][9][General]$/;"	s
 ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0$/;"	k	section:ColorEffects:Inactive
 ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0.1$/;"	k	section:ColorEffects:Disabled
 ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Disabled
@@ -179,6 +292,8 @@ Decrease Opacity	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Opacit
 Decrease Screen Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brigh/;"	k	section:org_kde_powerdevil
 Decrease Screen Brightness Small	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness Small=Shift+Monitor Brightness Down,Shift+Monitor Brightness Down,Dec/;"	k	section:org_kde_powerdevil
 Desktops	dot_config/private_kwinrc.src.ini	/^[Desktops]$/;"	s
+DialogHeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^DialogHeight=540$/;"	k	section:Containments
+DialogWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^DialogWidth=720$/;"	k	section:Containments
 Diff Options	dot_config/private_komparerc.src.ini	/^[Diff Options]$/;"	s
 DiffProgram	dot_config/private_komparerc.src.ini	/^DiffProgram=$/;"	k	section:Diff Options
 DirSelect Dialog	dot_config/private_kdeglobals.src.ini	/^[DirSelect Dialog]$/;"	s
@@ -281,6 +396,7 @@ IgnoreRegExp	dot_config/private_komparerc.src.ini	/^IgnoreRegExp=false$/;"	k	sec
 IgnoreRegExpText	dot_config/private_komparerc.src.ini	/^IgnoreRegExpText=$/;"	k	section:Diff Options
 IgnoreRegExpTextHistory	dot_config/private_komparerc.src.ini	/^IgnoreRegExpTextHistory=$/;"	k	section:Diff Options
 IgnoreWhiteSpace	dot_config/private_komparerc.src.ini	/^IgnoreWhiteSpace=false$/;"	k	section:Diff Options
+Image	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^Image=\/home\/marley\/data\/photos\/wallpaper\/sunrise-illustration.jpg$/;"	k	section:Containments
 Inactive	dot_config/private_kwinrc.src.ini	/^Inactive=80$/;"	k	section:Effect-translucency
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/chaotic-mirrorlist$/;"	k	section:chaotic-aur
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:core
@@ -294,6 +410,7 @@ IntensityAmount	dot_config/private_kdeglobals.src.ini	/^IntensityAmount=-1$/;"	k
 IntensityAmount	dot_config/private_kdeglobals.src.ini	/^IntensityAmount=0$/;"	k	section:ColorEffects:Inactive
 IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	section:ColorEffects:Disabled
 IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	section:ColorEffects:Inactive
+ItemGeometriesHorizontal	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ItemGeometriesHorizontal=$/;"	k	section:Containments
 KDE	dot_config/private_kdeglobals.src.ini	/^[KDE]$/;"	s
 KDE Keyboard Layout Switcher	dot_config/private_kglobalshortcutsrc.src.ini	/^[KDE Keyboard Layout Switcher]$/;"	s
 KFileDialog Settings	dot_config/private_kdeglobals.src.ini	/^[KFileDialog Settings]$/;"	s
@@ -323,6 +440,8 @@ MoveZoomUp	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomUp=none,none,
 MultiScreenMode	dot_config/private_kwinrc.src.ini	/^MultiScreenMode=1$/;"	k	section:TabBox
 Name_1	dot_config/private_kwinrc.src.ini	/^Name_1=Desktop 2$/;"	k	section:Desktops
 NewFiles	dot_config/private_komparerc.src.ini	/^NewFiles=true$/;"	k	section:Diff Options
+NoModifier	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^MiddleButton;NoModifier=org.kde.paste$/;"	k	section:ActionPlugins
+NoModifier	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^RightButton;NoModifier=org.kde.contextmenu$/;"	k	section:ActionPlugins
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
 Number	dot_config/private_kwinrc.src.ini	/^Number=1$/;"	k	section:Desktops
@@ -336,6 +455,16 @@ Plugins	dot_config/copyq/copyq.conf	/^[Plugins]$/;"	s
 Plugins	dot_config/private_kwinrc.src.ini	/^[Plugins]$/;"	s
 PowerDown	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerDown=Power Down,Power Down,Power Down$/;"	k	section:org_kde_powerdevil
 PowerOff	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerOff=Power Off,Power Off,Power Off$/;"	k	section:org_kde_powerdevil
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=0$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=100$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=2$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=42$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=55$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=60$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=65$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=70$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=75$/;"	k	section:Containments
+PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=80$/;"	k	section:Containments
 PreviewSettings	dot_config/private_kdeglobals.src.ini	/^[PreviewSettings]$/;"	s
 Quit	dot_config/private_kdeglobals.src.ini	/^Quit=Meta+W$/;"	k	section:Shortcuts
 Reboot	dot_config/private_kglobalshortcutsrc.src.ini	/^Reboot=none,,Reboot$/;"	k	section:ksmserver
@@ -349,6 +478,7 @@ Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
 Rows	dot_config/private_kwinrc.src.ini	/^Rows=1$/;"	k	section:Desktops
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
 Scale	dot_config/private_kwinrc.src.ini	/^Scale=1$/;"	k	section:Xwayland
+ScreenMapping	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[ScreenMapping]$/;"	s
 ScrollNoOfLines	dot_config/private_komparerc.src.ini	/^ScrollNoOfLines=3$/;"	k	section:View Options
 Setup Window Shortcut	dot_config/private_kglobalshortcutsrc.src.ini	/^Setup Window Shortcut=none,,Setup Window Shortcut$/;"	k	section:kwin
 Shortcuts	dot_config/copyq/copyq.conf	/^[Shortcuts]$/;"	s
@@ -364,6 +494,7 @@ ShowCFunctionChange	dot_config/private_komparerc.src.ini	/^ShowCFunctionChange=f
 Shut Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Shut Down=none,,Shut Down$/;"	k	section:ksmserver
 SigLevel	dot_config/pacman/pacman.conf	/^SigLevel    = Required DatabaseOptional$/;"	k	section:options
 Sleep	dot_config/private_kglobalshortcutsrc.src.ini	/^Sleep=Sleep,Sleep,Suspend$/;"	k	section:org_kde_powerdevil
+SlidePaths	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^SlidePaths=\/home\/marley\/.local\/share\/wallpapers\/,\/usr\/share\/wallpapers\/$/;"	k	section:Containments
 Sort by	dot_config/private_kdeglobals.src.ini	/^Sort by=Name$/;"	k	section:KFileDialog Settings
 Sort directories first	dot_config/private_kdeglobals.src.ini	/^Sort directories first=true$/;"	k	section:KFileDialog Settings
 Sort hidden files last	dot_config/private_kdeglobals.src.ini	/^Sort hidden files last=false$/;"	k	section:KFileDialog Settings
@@ -417,6 +548,7 @@ Switch to Screen Above	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to
 Switch to Screen Below	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen Below=none,,Switch to Screen Below$/;"	k	section:kwin
 Switch to Screen to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Left=none,,Switch to Screen to the Left$/;"	k	section:kwin
 Switch to Screen to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Right=none,,Switch to Screen to the Right$/;"	k	section:kwin
+SystrayContainmentId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^SystrayContainmentId=35$/;"	k	section:Containments
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
 TabBox	dot_config/private_kwinrc.src.ini	/^[TabBox]$/;"	s
 TabToNumberOfSpaces	dot_config/private_komparerc.src.ini	/^TabToNumberOfSpaces=4$/;"	k	section:View Options
@@ -437,6 +569,11 @@ Toggle Night Color	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Night 
 Toggle Screen Reader On and Off	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off$/;"	k	section:kaccess
 Toggle Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Touchpad=Touchpad Toggle\\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\\tMeta+Ctrl+Zenkaku /;"	k	section:kcm_touchpad
 ToolBarsMovable	dot_config/private_komparerc.src.ini	/^ToolBarsMovable=Disabled$/;"	k	section:General Options
+ToolBoxButtonState	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonState=topcenter$/;"	k	section:Containments
+ToolBoxButtonX	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonX=264$/;"	k	section:Containments
+ToolBoxButtonX	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonX=384$/;"	k	section:Containments
+ToolBoxButtonY	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonY=40$/;"	k	section:Containments
+ToolBoxButtonY	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonY=41$/;"	k	section:Containments
 Turn Off Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Turn Off Screen=none,none,Turn Off Screen$/;"	k	section:org_kde_powerdevil
 Used Keyboard Layout	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout$/;"	k	section:KDE Keyboard Layout Switcher
 View Options	dot_config/private_komparerc.src.ini	/^[View Options]$/;"	s
@@ -572,6 +709,8 @@ activeFont	dot_config/private_kdeglobals.src.ini	/^activeFont=Noto Sans,10,-1,5,
 activeForeground	dot_config/Trolltech.conf	/^KWinPalette\\activeForeground=#cad3f5$/;"	k	section:qt
 activeForeground	dot_config/private_kdeglobals.src.ini	/^activeForeground=202,211,245$/;"	k	section:WM
 activeTitleBtnBg	dot_config/Trolltech.conf	/^KWinPalette\\activeTitleBtnBg=#1e2030$/;"	k	section:qt
+activityId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^activityId=$/;"	k	section:Containments
+activityId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^activityId=93518f0d-148e-42b9-acd8-34950b41293c$/;"	k	section:Containments
 add_hover_cursor	dot_config/awesome/helpers/ui.lua	/^function ui.add_hover_cursor(w, hover_cursor)$/;"	f	unknown:ui
 alsamixer	dot_config/mopidy/mopidy.conf	/^[alsamixer]$/;"	s
 alt-speed-down	dot_config/transmission/settings.json	/^    "alt-speed-down": 50,$/;"	n
@@ -600,6 +739,7 @@ ascii_distro	dot_config/neofetch/config.conf	/^ascii_distro="auto"$/;"	k
 audio	dot_config/mopidy/mopidy.conf	/^[audio]$/;"	s
 aurrpcurl	dot_config/yay/config.json	/^	"aurrpcurl": "https:\/\/aur.archlinux.org\/rpc?",$/;"	s
 aururl	dot_config/yay/config.json	/^	"aururl": "https:\/\/aur.archlinux.org",$/;"	s
+autoFontAndSize	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^autoFontAndSize=false$/;"	k	section:Containments
 autocompletion	dot_config/copyq/copyq.conf	/^autocompletion=true$/;"	k	section:Options
 autostart	dot_config/copyq/copyq.conf	/^autostart=false$/;"	k	section:Options
 backend	dot_config/hyfetch.json	/^    "backend": "neofetch",$/;"	s
@@ -727,12 +867,15 @@ current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-snow
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-snow.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	i
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-storm.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	d
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-storm.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	i
+customDateFormat	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^customDateFormat=d MMMM yyyy$/;"	k	section:Containments
 custom_colors	dot_config/hyfetch.json	/^        "custom_colors": [],$/;"	a	object:color_align
 custom_shape	dot_config/awesome/helpers/ui.lua	/^function ui.custom_shape(cr, width, height)$/;"	f	unknown:ui
 cycleNextAction	dot_config/private_kglobalshortcutsrc.src.ini	/^cycleNextAction=none,,Next History Item$/;"	k	section:plasmashell
 cyclePrevAction	dot_config/private_kglobalshortcutsrc.src.ini	/^cyclePrevAction=none,,Previous History Item$/;"	k	section:plasmashell
 damage	dot_config/picom.conf	/^use-damage = true$/;"	k
 dampening	dot_config/picom.conf	/^animation-dampening = 18$/;"	k
+dateDisplayFormat	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^dateDisplayFormat=BesideTime$/;"	k	section:Containments
+dateFormat	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^dateFormat=custom$/;"	k	section:Containments
 dc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://purl.org/dc/elements/1.1/
 de_version	dot_config/neofetch/config.conf	/^de_version="on"$/;"	k
 debug	dot_config/yay/config.json	/^	"debug": false,$/;"	b
@@ -807,6 +950,7 @@ enabled	dot_config/mopidy/mopidy.conf	/^enabled = false$/;"	k	section:podcast
 enabled	dot_config/mopidy/mopidy.conf	/^enabled = false$/;"	k	section:stream
 enabled	dot_config/nvim/dot_neoconf.json	/^        "enabled": true$/;"	b	object:neoconf.plugins.lua_ls
 enabled	dot_config/nvim/dot_neoconf.json	/^      "enabled": true,$/;"	b	object:neodev.library
+enabledCalendarPlugins	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^enabledCalendarPlugins=holidaysevents$/;"	k	section:Containments
 encode	dot_config/awesome/lib/json.lua	/^encode = function(val, stack)$/;"	f
 encode	dot_config/awesome/lib/json.lua	/^function json.encode(val)$/;"	f	unknown:json
 encode_nil	dot_config/awesome/lib/json.lua	/^local function encode_nil(_)$/;"	f
@@ -825,10 +969,12 @@ exit_command	dot_config/awesome/lib/exit-screen.lua	/^local exit_command = funct
 expire_tab	dot_config/copyq/copyq.conf	/^expire_tab=0$/;"	k	section:Options
 export	dot_config/copyq/copyq.conf	/^export=ctrl+s$/;"	k	section:Shortcuts
 extra	dot_config/pacman/pacman.conf	/^[extra]$/;"	s
+extraItems	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^extraItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.volum/;"	k	section:Containments
 f	dot_config/nvim/lua/snippets/fish.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/gitconfig.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/lua.lua	/^local f = ls.function_node$/;"	f
 fading	dot_config/picom.conf	/^fading = true$/;"	k
+favoritesPortedToKAstats	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^favoritesPortedToKAstats=true$/;"	k	section:Containments
 fg	dot_config/copyq/copyq.conf	/^fg=#515151$/;"	k	section:Theme
 file	dot_config/mopidy/mopidy.conf	/^[file]$/;"	s
 fill	dot_config/nvim/lua/snippets/helpers.lua	/^M.fill = function(_, parent, args)$/;"	f	unknown:M
@@ -839,16 +985,22 @@ find_fg	dot_config/copyq/copyq.conf	/^find_fg=#fff$/;"	k	section:Theme
 find_font	dot_config/copyq/copyq.conf	/^find_font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,1,0,0,0,Regular"$/;"	k	section:Theme
 find_items	dot_config/copyq/copyq.conf	/^find_items=f3$/;"	k	section:Shortcuts
 fire	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:fire(...)$/;"	f	unknown:ret
+firstDayOfWeek	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^firstDayOfWeek=1$/;"	k	section:Containments
 fixed	dot_config/private_kdeglobals.src.ini	/^fixed=Fairiesevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 focused	dot_config/picom.conf	/^mark-ovredir-focused = false$/;"	k
 focused	dot_config/picom.conf	/^mark-wmwin-focused = true;$/;"	k
 font	dot_config/Trolltech.conf	/^font="Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"$/;"	k	section:qt
 font	dot_config/copyq/copyq.conf	/^font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,0,0,0,0,Regular"$/;"	k	section:Theme
 font	dot_config/private_kdeglobals.src.ini	/^font=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
+fontFamily	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^fontFamily=Noto Sans$/;"	k	section:Containments
+fontStyleName	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^fontStyleName=Regular$/;"	k	section:Containments
+fontWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^fontWeight=400$/;"	k	section:Containments
 font_antialiasing	dot_config/copyq/copyq.conf	/^font_antialiasing=true$/;"	k	section:Theme
 fore_back	dot_config/hyfetch.json	/^        "fore_back": null$/;"	z	object:color_align
 forget	dot_config/awesome/lib/savefloats.lua	/^local function forget(c)$/;"	f
 format_settings	dot_config/copyq/copyq.conf	/^itemsync\\format_settings=@Invalid()$/;"	k	section:Plugins
+formfactor	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^formfactor=0$/;"	k	section:Containments
+formfactor	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^formfactor=2$/;"	k	section:Containments
 frame	dot_config/Trolltech.conf	/^KWinPalette\\frame=#1e2030$/;"	k	section:qt
 gap	dot_config/neofetch/config.conf	/^gap=3$/;"	k
 getEasingFunction	dot_config/awesome/lib/animation/tween.lua	/^local function getEasingFunction(easing)$/;"	f
@@ -890,6 +1042,7 @@ hide_main_window_in_task_bar	dot_config/copyq/copyq.conf	/^hide_main_window_in_t
 hide_tabs	dot_config/copyq/copyq.conf	/^hide_tabs=false$/;"	k	section:Options
 hide_toolbar	dot_config/copyq/copyq.conf	/^hide_toolbar=false$/;"	k	section:Options
 hide_toolbar_labels	dot_config/copyq/copyq.conf	/^hide_toolbar_labels=true$/;"	k	section:Options
+highlightWindows	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^highlightWindows=false$/;"	k	section:Containments
 history	dot_config/private_kglobalshortcutsrc.src.ini	/^clear-history=none,,Clear Clipboard History$/;"	k	section:plasmashell
 horizontal_pad	dot_config/awesome/helpers/ui.lua	/^function ui.horizontal_pad(width)$/;"	f	unknown:ui
 hostname	dot_config/mopidy/mopidy.conf	/^hostname = 127.0.0.1$/;"	k	section:mpd
@@ -907,6 +1060,7 @@ image_editor	dot_config/copyq/copyq.conf	/^itemimage\\image_editor=$/;"	k	sectio
 image_loop	dot_config/neofetch/config.conf	/^image_loop="off"$/;"	k
 image_size	dot_config/neofetch/config.conf	/^image_size="auto"$/;"	k
 image_source	dot_config/neofetch/config.conf	/^image_source="auto"$/;"	k
+immutability	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^immutability=1$/;"	k	section:Containments
 import	dot_config/copyq/copyq.conf	/^import=ctrl+i$/;"	k	section:Shortcuts
 in	dot_config/picom.conf	/^animation-for-workspace-switch-in = "fly-in"; #the windows in the workspace that is coming in$/;"	k
 inBack	dot_config/awesome/lib/animation/tween.lua	/^local function inBack(t, b, c, d, s)$/;"	f
@@ -955,6 +1109,7 @@ item_css	dot_config/copyq/copyq.conf	/^item_css=$/;"	k	section:Theme
 item_data_threshold	dot_config/copyq/copyq.conf	/^item_data_threshold=1024$/;"	k	section:Options
 item_popup_interval	dot_config/copyq/copyq.conf	/^item_popup_interval=0$/;"	k	section:Options
 item_spacing	dot_config/copyq/copyq.conf	/^item_spacing=$/;"	k	section:Theme
+itemsOnDisabledScreens	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^itemsOnDisabledScreens=$/;"	k	section:ScreenMapping
 iterate_value	dot_config/awesome/ui/popups/layout/init.lua	/^function gears.table.iterate_value(t, value, step_size, filter, _)$/;"	f	unknown:gears.table
 kaccess	dot_config/private_kglobalshortcutsrc.src.ini	/^[kaccess]$/;"	s
 kcm_touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^[kcm_touchpad]$/;"	s
@@ -964,10 +1119,16 @@ kernel_shorthand	dot_config/neofetch/config.conf	/^kernel_shorthand="on"$/;"	k
 keypressed_callback	dot_config/awesome/lib/exit-screen.lua	/^	keypressed_callback = function(_, _, key, _)$/;"	f
 keys	dot_config/nvim/lua/plugins/example.lua	/^    keys = function()$/;"	f
 kmix	dot_config/private_kglobalshortcutsrc.src.ini	/^[kmix]$/;"	s
+knownItems	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^knownItems=org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.volum/;"	k	section:Containments
 ksmserver	dot_config/private_kglobalshortcutsrc.src.ini	/^[ksmserver]$/;"	s
 kwin	dot_config/private_kglobalshortcutsrc.src.ini	/^[kwin]$/;"	s
 language	dot_config/copyq/copyq.conf	/^language=en$/;"	k	section:Options
 laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6",$/;"	s	object:require
+lastScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^lastScreen=-1$/;"	k	section:Containments
+lastScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^lastScreen=0$/;"	k	section:Containments
+lastScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^lastScreen=1$/;"	k	section:Containments
+launchers	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^launchers=applications:org.wezfurlong.wezterm.desktop,applications:systemsettings.desktop,prefer/;"	k	section:Containments
+launchers	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^launchers=applications:systemsettings.desktop,preferred:\/\/filemanager,preferred:\/\/browser$/;"	k	section:Containments
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close_hover.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layer1	dot_config/awesome/themes/catppuccin/titlebar/maximize.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
@@ -984,6 +1145,9 @@ lightness	dot_config/hyfetch.json	/^    "lightness": 0.7,$/;"	n
 linear	dot_config/awesome/lib/animation/tween.lua	/^local function linear(t, b, c, d)$/;"	f
 local	dot_config/mopidy/mopidy.conf	/^[local]$/;"	s
 local_ip_interface	dot_config/neofetch/config.conf	/^local_ip_interface=('auto')$/;"	k
+location	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^location=0$/;"	k	section:Containments
+location	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^location=3$/;"	k	section:Containments
+location	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^location=4$/;"	k	section:Containments
 lock_command	dot_config/awesome/lib/exit-screen.lua	/^local lock_command = function()$/;"	f
 log	dot_config/copyq/copyq.conf	/^show-log=f12$/;"	k	section:Shortcuts
 logging	dot_config/mopidy/mopidy.conf	/^[logging]$/;"	s
@@ -1044,6 +1208,7 @@ metadata10	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="met
 method	dot_config/picom.conf	/^blur-method = "dual_kawase"$/;"	k
 mflags	dot_config/yay/config.json	/^	"mflags": "",$/;"	s
 mic_mute	dot_config/private_kglobalshortcutsrc.src.ini	/^mic_mute=Microphone Mute\\tMeta+Volume Mute,Microphone Mute\\tMeta+Volume Mute,Mute Microphone$/;"	k	section:kmix
+migrated	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^migrated=true$/;"	k	section:Containments
 mode	dot_config/hyfetch.json	/^        "mode": "horizontal",$/;"	s	object:color_align
 mode	dot_config/hyfetch.json	/^    "mode": "rgb",$/;"	s
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.bottom.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile.bottom
@@ -1197,11 +1362,43 @@ placement_placer	dot_config/awesome/ui/popups/volume/init.lua	/^local placement_
 plasmashell	dot_config/private_kglobalshortcutsrc.src.ini	/^[plasmashell]$/;"	s
 playmedia	dot_config/private_kglobalshortcutsrc.src.ini	/^playmedia=none,,Play media playback$/;"	k	section:mediacontrol
 playpausemedia	dot_config/private_kglobalshortcutsrc.src.ini	/^playpausemedia=Media Play,Media Play,Play\/Pause media playback$/;"	k	section:mediacontrol
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.kscreen$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.panel$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.appmenu$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.battery$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.bluetooth$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.brightness$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.cameraindicator$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.clipboard$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.devicenotifier$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.digitalclock$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.folder$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.icontasks$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.keyboardindicator$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.keyboardlayout$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.kickoff$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.manage-inputmethod$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.mediacontroller$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.networkmanagement$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.notifications$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.panelspacer$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.printmanager$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.private.systemtray$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.systemtray$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.vault$/;"	k	section:Containments
+plugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^plugin=org.kde.plasma.volume$/;"	k	section:Containments
 plugin_priority	dot_config/copyq/copyq.conf	/^plugin_priority=itemimage, itemencrypted, itemfakevim, itemnotes, itempinned, itemsync, itemtags/;"	k	section:General
 plugins	dot_config/nvim/dot_neoconf.json	/^      "plugins": true$/;"	b	object:neodev.library
 plugins	dot_config/nvim/dot_neoconf.json	/^    "plugins": {$/;"	o	object:neoconf
 podcast	dot_config/mopidy/mopidy.conf	/^[podcast]$/;"	s
 poll_rate	dot_config/openrazer/persistence.conf	/^poll_rate = 500$/;"	k	section:PM2038H11502057
+popupHeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupHeight=432$/;"	k	section:Containments
+popupHeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupHeight=450$/;"	k	section:Containments
+popupHeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupHeight=506$/;"	k	section:Containments
+popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=432$/;"	k	section:Containments
+popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=647$/;"	k	section:Containments
+popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=658$/;"	k	section:Containments
+popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=810$/;"	k	section:Containments
 port-forwarding-enabled	dot_config/transmission/settings.json	/^    "port-forwarding-enabled": true,$/;"	b
 pos	dot_config/private_kglobalshortcutsrc.src.ini	/^show-on-mouse-pos=Meta+V,Meta+V,Show Clipboard Items at Mouse Position$/;"	k	section:plasmashell
 powerProfile	dot_config/private_kglobalshortcutsrc.src.ini	/^powerProfile=Battery\\tMeta+B,Battery\\tMeta+B,Switch Power Profile$/;"	k	section:org_kde_powerdevil
@@ -1276,6 +1473,7 @@ save_delay_ms_on_item_removed	dot_config/copyq/copyq.conf	/^save_delay_ms_on_ite
 save_filter_history	dot_config/copyq/copyq.conf	/^save_filter_history=false$/;"	k	section:Options
 save_on_app_deactivated	dot_config/copyq/copyq.conf	/^save_on_app_deactivated=true$/;"	k	section:Options
 scrape-paused-torrents-enabled	dot_config/transmission/settings.json	/^    "scrape-paused-torrents-enabled": true,$/;"	b
+screenMapping	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^screenMapping=desktop:\/anno-1800,0,93518f0d-148e-42b9-acd8-34950b41293c$/;"	k	section:ScreenMapping
 screen_mask	dot_config/awesome/helpers/ui.lua	/^function ui.screen_mask(s, bg)$/;"	f	unknown:ui
 script-torrent-added-enabled	dot_config/transmission/settings.json	/^    "script-torrent-added-enabled": false,$/;"	b
 script-torrent-added-filename	dot_config/transmission/settings.json	/^    "script-torrent-added-filename": "",$/;"	s
@@ -1327,6 +1525,8 @@ show-options-window	dot_config/transmission/settings.json	/^    "show-options-wi
 show-statusbar	dot_config/transmission/settings.json	/^    "show-statusbar": true,$/;"	b
 show-toolbar	dot_config/transmission/settings.json	/^    "show-toolbar": true,$/;"	b
 show-tracker-scrapes	dot_config/transmission/settings.json	/^    "show-tracker-scrapes": false,$/;"	b
+showOnlyCurrentScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^showOnlyCurrentScreen=true$/;"	k	section:Containments
+showToolTips	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^showToolTips=false$/;"	k	section:Containments
 show_advanced_command_settings	dot_config/copyq/copyq.conf	/^show_advanced_command_settings=false$/;"	k	section:Options
 show_clipboard_content	dot_config/copyq/copyq.conf	/^show_clipboard_content=ctrl+shift+c$/;"	k	section:Shortcuts
 show_item_content	dot_config/copyq/copyq.conf	/^show_item_content=f4$/;"	k	section:Shortcuts
@@ -1392,6 +1592,7 @@ switch to next activity	dot_config/private_kglobalshortcutsrc.src.ini	/^switch t
 switch to previous activity	dot_config/private_kglobalshortcutsrc.src.ini	/^switch to previous activity=none,,Switch to Previous Activity$/;"	k	section:plasmashell
 sync_effects_enabled	dot_config/openrazer/razer.conf	/^sync_effects_enabled = True$/;"	k	section:Startup
 sync_tabs	dot_config/copyq/copyq.conf	/^itemsync\\sync_tabs=@Invalid()$/;"	k	section:Plugins
+systemFavorites	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^systemFavorites=suspend\\\\,hibernate\\\\,reboot\\\\,shutdown$/;"	k	section:Containments
 tab_bar_css	dot_config/copyq/copyq.conf	/^tab_bar_css="\\n    ;background: ${bg - #222}"$/;"	k	section:Theme
 tab_bar_item_counter	dot_config/copyq/copyq.conf	/^tab_bar_item_counter="\\n    ;color: ${fg - #044 + #400}\\n    ;font-size: 6pt"$/;"	k	section:Theme
 tab_bar_scroll_buttons_css	dot_config/copyq/copyq.conf	/^tab_bar_scroll_buttons_css="\\n    ;background: ${bg - #222}\\n    ;color: ${fg}\\n    ;border: /;"	k	section:Theme
@@ -1477,6 +1678,7 @@ view_zoom_in	dot_config/private_kglobalshortcutsrc.src.ini	/^view_zoom_in=Meta++
 view_zoom_out	dot_config/private_kglobalshortcutsrc.src.ini	/^view_zoom_out=Meta+-,Meta+-,Zoom Out$/;"	k	section:kwin
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
 vsync	dot_config/picom.conf	/^vsync = true$/;"	k
+wallpaperplugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^wallpaperplugin=org.kde.image$/;"	k	section:Containments
 watch-dir	dot_config/transmission/settings.json	/^    "watch-dir": "\/home\/marley\/Desktop",$/;"	s
 watch-dir-enabled	dot_config/transmission/settings.json	/^    "watch-dir-enabled": false$/;"	b
 window	dot_config/picom.conf	/^animation-for-open-window = "zoom"; #open window$/;"	k
