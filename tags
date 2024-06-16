@@ -487,6 +487,7 @@ SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
 Scale	dot_config/private_kwinrc.src.ini	/^Scale=1$/;"	k	section:Xwayland
 ScreenMapping	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[ScreenMapping]$/;"	s
 ScrollNoOfLines	dot_config/private_komparerc.src.ini	/^ScrollNoOfLines=3$/;"	k	section:View Options
+Settings	dot_config/gtk-3.0/settings.ini.src.ini	/^[Settings]$/;"	s
 Setup Window Shortcut	dot_config/private_kglobalshortcutsrc.src.ini	/^Setup Window Shortcut=none,,Setup Window Shortcut$/;"	k	section:kwin
 Shortcuts	dot_config/copyq/copyq.conf	/^[Shortcuts]$/;"	s
 Shortcuts	dot_config/private_kdeglobals.src.ini	/^[Shortcuts]$/;"	s
@@ -733,6 +734,7 @@ alt-speed-up	dot_config/transmission/settings.json	/^    "alt-speed-up": 50,$/;"
 alt_bg	dot_config/copyq/copyq.conf	/^alt_bg=bg-#101a1a$/;"	k	section:Theme
 alt_item_css	dot_config/copyq/copyq.conf	/^alt_item_css="\\n    ;border: 0px solid transparent\\n    ;border-radius: 5px\\n    "$/;"	k	section:Theme
 always_on_top	dot_config/copyq/copyq.conf	/^always_on_top=false$/;"	k	section:Options
+animations	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-enable-animations=true$/;"	k	section:Settings
 animations	dot_config/picom.conf	/^animations: false;$/;"	k
 announce-ip	dot_config/transmission/settings.json	/^    "announce-ip": "",$/;"	s
 announce-ip-enabled	dot_config/transmission/settings.json	/^    "announce-ip-enabled": false,$/;"	b
@@ -921,6 +923,7 @@ doubleconfirm	dot_config/yay/config.json	/^	"doubleconfirm": true,$/;"	b
 download-dir	dot_config/transmission/settings.json	/^    "download-dir": "\/home\/marley\/data\/piracy",$/;"	s
 download-queue-enabled	dot_config/transmission/settings.json	/^    "download-queue-enabled": true,$/;"	b
 download-queue-size	dot_config/transmission/settings.json	/^    "download-queue-size": 5,$/;"	n
+dpi	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi_x	dot_config/openrazer/persistence.conf	/^dpi_x = 1800$/;"	k	section:PM2038H11502057
 dpi_y	dot_config/openrazer/persistence.conf	/^dpi_y = 1800$/;"	k	section:PM2038H11502057
 edit	dot_config/copyq/copyq.conf	/^edit=f2$/;"	k	section:Shortcuts
@@ -1070,6 +1073,8 @@ image_editor	dot_config/copyq/copyq.conf	/^itemimage\\image_editor=$/;"	k	sectio
 image_loop	dot_config/neofetch/config.conf	/^image_loop="off"$/;"	k
 image_size	dot_config/neofetch/config.conf	/^image_size="auto"$/;"	k
 image_source	dot_config/neofetch/config.conf	/^image_source="auto"$/;"	k
+images	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-button-images=true$/;"	k	section:Settings
+images	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-menu-images=true$/;"	k	section:Settings
 immutability	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^immutability=1$/;"	k	section:Containments
 import	dot_config/copyq/copyq.conf	/^import=ctrl+i$/;"	k	section:Shortcuts
 in	dot_config/picom.conf	/^animation-for-workspace-switch-in = "fly-in"; #the windows in the workspace that is coming in$/;"	k
@@ -1147,6 +1152,7 @@ layer1	dot_config/awesome/themes/catppuccin/titlebar/minimize.svg	/^<svg version
 layer1	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">$/;"	i
 layer1	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layer1	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
+layout	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
 leader	dot_config/picom.conf	/^detect-client-leader = true$/;"	k
 level	dot_config/picom.conf	/^log-level = "warn";$/;"	k
 library	dot_config/nvim/dot_neoconf.json	/^    "library": {$/;"	o	object:neodev
@@ -1213,6 +1219,7 @@ menu_bar_css	dot_config/copyq/copyq.conf	/^menu_bar_css="\\n    ;background: ${b
 menu_bar_disabled_css	dot_config/copyq/copyq.conf	/^menu_bar_disabled_css="\\n    ;color: ${bg - #666}"$/;"	k	section:Theme
 menu_bar_selected_css	dot_config/copyq/copyq.conf	/^menu_bar_selected_css="\\n    ;background: ${sel_bg}\\n    ;color: ${sel_fg}"$/;"	k	section:Theme
 menu_css	dot_config/copyq/copyq.conf	/^menu_css="\\n    ;border: 1px solid ${sel_bg}\\n    ;background: ${bg}\\n    ;color: ${fg}"$/;"	k	section:Theme
+menubar	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-shell-shows-menubar=1$/;"	k	section:Settings
 message-level	dot_config/transmission/settings.json	/^    "message-level": 4,$/;"	n
 metadata10	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="metadata10">$/;"	i
 method	dot_config/picom.conf	/^blur-method = "dual_kawase"$/;"	k
@@ -1221,6 +1228,7 @@ mic_mute	dot_config/private_kglobalshortcutsrc.src.ini	/^mic_mute=Microphone Mut
 migrated	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^migrated=true$/;"	k	section:Containments
 mode	dot_config/hyfetch.json	/^        "mode": "horizontal",$/;"	s	object:color_align
 mode	dot_config/hyfetch.json	/^    "mode": "rgb",$/;"	s
+modules	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-modules=colorreload-gtk-module:appmenu-gtk-module$/;"	k	section:Settings
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.bottom.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile.bottom
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^local function mouse_resize_handler(m, c)$/;"	f
@@ -1239,6 +1247,11 @@ music_player	dot_config/neofetch/config.conf	/^music_player="auto"$/;"	k
 mute	dot_config/awesome/ui/popups/volume/init.lua	/^volume.mute = function()$/;"	f	unknown:volume
 mute	dot_config/private_kglobalshortcutsrc.src.ini	/^mute=Volume Mute,Volume Mute,Mute$/;"	k	section:kmix
 name	dot_config/copyq/copyq.conf	/^1\\name=&clipboard$/;"	k	section:Tabs
+name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-cursor-theme-name=Bibata-Rainbow-Modern$/;"	k	section:Settings
+name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-font-name=Noto Sans,  10$/;"	k	section:Settings
+name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-icon-theme-name=BeautyDream$/;"	k	section:Settings
+name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-sound-theme-name=ocean$/;"	k	section:Settings
+name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-theme-name=catppuccin-macchiato-pink-standard+default$/;"	k	section:Settings
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview6	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     inkscape:current-layer="svg4" \/>$/;"	i
@@ -1548,7 +1561,9 @@ show_simple_items	dot_config/copyq/copyq.conf	/^show_simple_items=true$/;"	k	sec
 show_tab_item_count	dot_config/copyq/copyq.conf	/^show_tab_item_count=false$/;"	k	section:Options
 singlelineresults	dot_config/yay/config.json	/^	"singlelineresults": false,$/;"	b
 size	dot_config/copyq/copyq.conf	/^size=1$/;"	k	section:Tabs
+size	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-cursor-theme-size=24$/;"	k	section:Settings
 size	dot_config/picom.conf	/^blur-size = 30$/;"	k
+slider	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-primary-button-warps-slider=true$/;"	k	section:Settings
 smallestReadableFont	dot_config/private_kdeglobals.src.ini	/^smallestReadableFont=Noto Sans,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 sodipodi	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
 sodipodi	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
@@ -1582,6 +1597,7 @@ stopmedia	dot_config/private_kglobalshortcutsrc.src.ini	/^stopmedia=Media Stop,M
 store_items	dot_config/copyq/copyq.conf	/^1\\store_items=true$/;"	k	section:Tabs
 stream	dot_config/mopidy/mopidy.conf	/^[stream]$/;"	s
 style	dot_config/copyq/copyq.conf	/^style=$/;"	k	section:Options
+style	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-toolbar-style=3$/;"	k	section:Settings
 style_main_window	dot_config/copyq/copyq.conf	/^style_main_window=true$/;"	k	section:Theme
 subscribable	dot_config/awesome/lib/animation/subscribable.lua	/^local function subscribable()$/;"	f
 subscribe	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:subscribe(func)$/;"	f	unknown:ret
@@ -1619,6 +1635,7 @@ tabs	dot_config/copyq/copyq.conf	/^tabs=&clipboard$/;"	k	section:Options
 tcp-enabled	dot_config/transmission/settings.json	/^    "tcp-enabled": true,$/;"	b
 text_tab_width	dot_config/copyq/copyq.conf	/^text_tab_width=8$/;"	k	section:Options
 text_wrap	dot_config/copyq/copyq.conf	/^text_wrap=true$/;"	k	section:Options
+theme	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-application-prefer-dark-theme=true$/;"	k	section:Settings
 theme	dot_config/private_kwinrc.src.ini	/^theme=__aurorae__svg__Infinity-Blur-Aurorae-6$/;"	k	section:org.kde.kdecoration2
 themes	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 themes	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
