@@ -2,5 +2,5 @@
 
 source auto
 
-ignore section "Desktops"
-ignore regex "Tiling" "^(?!padding).*$"
+ignore regex "Desktops" "Id_.*"
+ignore regex "Tiling\\]\\[.*" ".*"
