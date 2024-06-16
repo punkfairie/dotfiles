@@ -101,7 +101,10 @@ $Version	dot_config/private_kdeglobals.src.ini	/^[$Version]$/;"	s
 1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
 2	dot_config/transmission/settings.json	/^        "complete-download",$/;"	s	array:torrent-complete-sound-command
 3	dot_config/transmission/settings.json	/^        "-d",$/;"	s	array:torrent-complete-sound-command
+34950b41293c	dot_config/private_kglobalshortcutsrc.src.ini	/^switch-to-activity-93518f0d-148e-42b9-acd8-34950b41293c=none,none,Switch to activity "Default"$/;"	k	section:ActivityManager
 4	dot_config/transmission/settings.json	/^        "transmission torrent downloaded"$/;"	s	array:torrent-complete-sound-command
+Activate Window Demanding Attention	dot_config/private_kglobalshortcutsrc.src.ini	/^Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention$/;"	k	section:kwin
+ActivityManager	dot_config/private_kglobalshortcutsrc.src.ini	/^[ActivityManager]$/;"	s
 Allow Expansion	dot_config/private_kdeglobals.src.ini	/^Allow Expansion=false$/;"	k	section:KFileDialog Settings
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
 Architecture	dot_config/pacman/pacman.conf	/^Architecture = auto$/;"	k	section:options
@@ -145,6 +148,9 @@ ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0$/;"	k	se
 ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0.1$/;"	k	section:ColorEffects:Disabled
 ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Disabled
 ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Inactive
+Cube	dot_config/private_kglobalshortcutsrc.src.ini	/^Cube=none,Meta+C,Toggle Cube$/;"	k	section:kwin
+Cycle Overview	dot_config/private_kglobalshortcutsrc.src.ini	/^Cycle Overview=none,none,Cycle through Overview and Grid View$/;"	k	section:kwin
+Cycle Overview Opposite	dot_config/private_kglobalshortcutsrc.src.ini	/^Cycle Overview Opposite=none,none,Cycle through Grid View and Overview$/;"	k	section:kwin
 Decoration position	dot_config/private_kdeglobals.src.ini	/^Decoration position=2$/;"	k	section:KFileDialog Settings
 DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Button
 DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Complementary
@@ -160,10 +166,21 @@ DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 
 DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Tooltip
 DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:View
 DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Window
+Decrease Keyboard Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard/;"	k	section:org_kde_powerdevil
+Decrease Opacity	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Opacity=none,,Decrease Opacity of Active Window by 5%$/;"	k	section:kwin
+Decrease Screen Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brigh/;"	k	section:org_kde_powerdevil
+Decrease Screen Brightness Small	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness Small=Shift+Monitor Brightness Down,Shift+Monitor Brightness Down,Dec/;"	k	section:org_kde_powerdevil
 DirSelect Dialog	dot_config/private_kdeglobals.src.ini	/^[DirSelect Dialog]$/;"	s
 DirSelectDialog Size	dot_config/private_kdeglobals.src.ini	/^DirSelectDialog Size=820,584$/;"	k	section:DirSelect Dialog
+Disable Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad$/;"	k	section:kcm_touchpad
+Edit Tiles	dot_config/private_kglobalshortcutsrc.src.ini	/^Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor$/;"	k	section:kwin
 Enable	dot_config/private_kdeglobals.src.ini	/^Enable=$/;"	k	section:ColorEffects:Disabled
 Enable	dot_config/private_kdeglobals.src.ini	/^Enable=true$/;"	k	section:ColorEffects:Inactive
+Enable Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad$/;"	k	section:kcm_touchpad
+Expose	dot_config/private_kglobalshortcutsrc.src.ini	/^Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)$/;"	k	section:kwin
+ExposeAll	dot_config/private_kglobalshortcutsrc.src.ini	/^ExposeAll=Ctrl+F10\\tLaunch (C),Ctrl+F10\\tLaunch (C),Toggle Present Windows (All desktops)$/;"	k	section:kwin
+ExposeClass	dot_config/private_kglobalshortcutsrc.src.ini	/^ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)$/;"	k	section:kwin
+ExposeClassCurrentDesktop	dot_config/private_kglobalshortcutsrc.src.ini	/^ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)$/;"	k	section:kwin
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
 ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Button
 ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Complementary
@@ -228,6 +245,9 @@ General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setu
 General	dot_config/copyq/copyq.conf	/^[General]$/;"	s
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
 General	dot_config/private_kdeglobals.src.ini	/^[General]$/;"	s
+Grid View	dot_config/private_kglobalshortcutsrc.src.ini	/^Grid View=Meta+G,Meta+G,Toggle Grid View$/;"	k	section:kwin
+Halt Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Halt Without Confirmation=none,,Shut Down Without Confirmation$/;"	k	section:ksmserver
+Hibernate	dot_config/private_kglobalshortcutsrc.src.ini	/^Hibernate=Hibernate,Hibernate,Hibernate$/;"	k	section:org_kde_powerdevil
 HoldPkg	dot_config/pacman/pacman.conf	/^HoldPkg     = pacman glibc$/;"	k	section:options
 HookDir	dot_config/pacman/pacman.conf	/^HookDir     = \/home\/marley\/.config\/pacman\/hooks\/$/;"	k	section:options
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
@@ -236,43 +256,115 @@ Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/chaotic-mirro
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:core
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:extra
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:multilib
+Increase Keyboard Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Increase Keyboard Bri/;"	k	section:org_kde_powerdevil
+Increase Opacity	dot_config/private_kglobalshortcutsrc.src.ini	/^Increase Opacity=none,,Increase Opacity of Active Window by 5%$/;"	k	section:kwin
+Increase Screen Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Increase Screen Brightnes/;"	k	section:org_kde_powerdevil
+Increase Screen Brightness Small	dot_config/private_kglobalshortcutsrc.src.ini	/^Increase Screen Brightness Small=Shift+Monitor Brightness Up,Shift+Monitor Brightness Up,Increas/;"	k	section:org_kde_powerdevil
 IntensityAmount	dot_config/private_kdeglobals.src.ini	/^IntensityAmount=-1$/;"	k	section:ColorEffects:Disabled
 IntensityAmount	dot_config/private_kdeglobals.src.ini	/^IntensityAmount=0$/;"	k	section:ColorEffects:Inactive
 IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	section:ColorEffects:Disabled
 IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	section:ColorEffects:Inactive
 KDE	dot_config/private_kdeglobals.src.ini	/^[KDE]$/;"	s
+KDE Keyboard Layout Switcher	dot_config/private_kglobalshortcutsrc.src.ini	/^[KDE Keyboard Layout Switcher]$/;"	s
 KFileDialog Settings	dot_config/private_kdeglobals.src.ini	/^[KFileDialog Settings]$/;"	s
+Kill Window	dot_config/private_kglobalshortcutsrc.src.ini	/^Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window$/;"	k	section:kwin
 LastUsedCustomAccentColor	dot_config/private_kdeglobals.src.ini	/^LastUsedCustomAccentColor=233,58,154$/;"	k	section:General
 LocalFileSigLevel	dot_config/pacman/pacman.conf	/^LocalFileSigLevel = Optional$/;"	k	section:options
 LocationCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^LocationCombo Completionmode=5$/;"	k	section:KFileDialog Settings
+Lock Session	dot_config/private_kglobalshortcutsrc.src.ini	/^Lock Session=Meta+L\\tScreensaver,Meta+L\\tScreensaver,Lock Session$/;"	k	section:ksmserver
+Log Out	dot_config/private_kglobalshortcutsrc.src.ini	/^Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out$/;"	k	section:ksmserver
+Log Out Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Log Out Without Confirmation=none,,Log Out Without Confirmation$/;"	k	section:ksmserver
 LookAndFeelPackage	dot_config/private_kdeglobals.src.ini	/^LookAndFeelPackage=Vivid-Magna-Dark-Global-6$/;"	k	section:KDE
+Lower	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Window Raise\/Lower=none,,Toggle Window Raise\/Lower$/;"	k	section:kwin
 MaximumRemoteSize	dot_config/private_kdeglobals.src.ini	/^MaximumRemoteSize=0$/;"	k	section:PreviewSettings
+Move Tablet to Next Output	dot_config/private_kglobalshortcutsrc.src.ini	/^Move Tablet to Next Output=none,none,Move the tablet to the next output$/;"	k	section:kwin
+MoveMouseToCenter	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center$/;"	k	section:kwin
+MoveMouseToFocus	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus$/;"	k	section:kwin
+MoveZoomDown	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomDown=none,none,Move Zoomed Area Downwards$/;"	k	section:kwin
+MoveZoomLeft	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomLeft=none,none,Move Zoomed Area to Left$/;"	k	section:kwin
+MoveZoomRight	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomRight=none,none,Move Zoomed Area to Right$/;"	k	section:kwin
+MoveZoomUp	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomUp=none,none,Move Zoomed Area Upwards$/;"	k	section:kwin
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
 Options	dot_config/copyq/copyq.conf	/^[Options]$/;"	s
+Overview	dot_config/private_kglobalshortcutsrc.src.ini	/^Overview=Launch (B),Meta+W,Toggle Overview$/;"	k	section:kwin
 PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
 PathCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^PathCombo Completionmode=5$/;"	k	section:KFileDialog Settings
 Plugins	dot_config/copyq/copyq.conf	/^[Plugins]$/;"	s
+PowerDown	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerDown=Power Down,Power Down,Power Down$/;"	k	section:org_kde_powerdevil
+PowerOff	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerOff=Power Off,Power Off,Power Off$/;"	k	section:org_kde_powerdevil
 PreviewSettings	dot_config/private_kdeglobals.src.ini	/^[PreviewSettings]$/;"	s
 Quit	dot_config/private_kdeglobals.src.ini	/^Quit=Meta+W$/;"	k	section:Shortcuts
+Reboot	dot_config/private_kglobalshortcutsrc.src.ini	/^Reboot=none,,Reboot$/;"	k	section:ksmserver
+Reboot Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Reboot Without Confirmation=none,,Reboot Without Confirmation$/;"	k	section:ksmserver
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
+Setup Window Shortcut	dot_config/private_kglobalshortcutsrc.src.ini	/^Setup Window Shortcut=none,,Setup Window Shortcut$/;"	k	section:kwin
 Shortcuts	dot_config/copyq/copyq.conf	/^[Shortcuts]$/;"	s
 Shortcuts	dot_config/private_kdeglobals.src.ini	/^[Shortcuts]$/;"	s
 Show Bookmarks	dot_config/private_kdeglobals.src.ini	/^Show Bookmarks=false$/;"	k	section:KFileDialog Settings
+Show Desktop	dot_config/private_kglobalshortcutsrc.src.ini	/^Show Desktop=Meta+D,Meta+D,Peek at Desktop$/;"	k	section:kwin
 Show Full Path	dot_config/private_kdeglobals.src.ini	/^Show Full Path=false$/;"	k	section:KFileDialog Settings
 Show Inline Previews	dot_config/private_kdeglobals.src.ini	/^Show Inline Previews=true$/;"	k	section:KFileDialog Settings
 Show Preview	dot_config/private_kdeglobals.src.ini	/^Show Preview=false$/;"	k	section:KFileDialog Settings
 Show Speedbar	dot_config/private_kdeglobals.src.ini	/^Show Speedbar=true$/;"	k	section:KFileDialog Settings
 Show hidden files	dot_config/private_kdeglobals.src.ini	/^Show hidden files=true$/;"	k	section:KFileDialog Settings
+Shut Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Shut Down=none,,Shut Down$/;"	k	section:ksmserver
 SigLevel	dot_config/pacman/pacman.conf	/^SigLevel    = Required DatabaseOptional$/;"	k	section:options
+Sleep	dot_config/private_kglobalshortcutsrc.src.ini	/^Sleep=Sleep,Sleep,Suspend$/;"	k	section:org_kde_powerdevil
 Sort by	dot_config/private_kdeglobals.src.ini	/^Sort by=Name$/;"	k	section:KFileDialog Settings
 Sort directories first	dot_config/private_kdeglobals.src.ini	/^Sort directories first=true$/;"	k	section:KFileDialog Settings
 Sort hidden files last	dot_config/private_kdeglobals.src.ini	/^Sort hidden files last=false$/;"	k	section:KFileDialog Settings
 Sort reversed	dot_config/private_kdeglobals.src.ini	/^Sort reversed=false$/;"	k	section:KFileDialog Settings
 Speedbar Width	dot_config/private_kdeglobals.src.ini	/^Speedbar Width=152$/;"	k	section:KFileDialog Settings
 Startup	dot_config/openrazer/razer.conf	/^[Startup]$/;"	s
+Suspend Compositing	dot_config/private_kglobalshortcutsrc.src.ini	/^Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing$/;"	k	section:kwin
+Switch One Desktop Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch One Desktop Down=Meta+Ctrl+Down,Meta+Ctrl+Down,Switch One Desktop Down$/;"	k	section:kwin
+Switch One Desktop Up	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch One Desktop Up=Meta+Ctrl+Up,Meta+Ctrl+Up,Switch One Desktop Up$/;"	k	section:kwin
+Switch One Desktop to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch One Desktop to the Left=Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left$/;"	k	section:kwin
+Switch One Desktop to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch One Desktop to the Right=Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right$/;"	k	section:kwin
+Switch Window Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below$/;"	k	section:kwin
+Switch Window Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left$/;"	k	section:kwin
+Switch Window Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right$/;"	k	section:kwin
+Switch Window Up	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch Window Up=Meta+Alt+Up,Meta+Alt+Up,Switch to Window Above$/;"	k	section:kwin
+Switch to Desktop 1	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 1=Ctrl+F1,Ctrl+F1,Switch to Desktop 1$/;"	k	section:kwin
+Switch to Desktop 10	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 10=none,,Switch to Desktop 10$/;"	k	section:kwin
+Switch to Desktop 11	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 11=none,,Switch to Desktop 11$/;"	k	section:kwin
+Switch to Desktop 12	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 12=none,,Switch to Desktop 12$/;"	k	section:kwin
+Switch to Desktop 13	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 13=none,,Switch to Desktop 13$/;"	k	section:kwin
+Switch to Desktop 14	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 14=none,,Switch to Desktop 14$/;"	k	section:kwin
+Switch to Desktop 15	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 15=none,,Switch to Desktop 15$/;"	k	section:kwin
+Switch to Desktop 16	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 16=none,,Switch to Desktop 16$/;"	k	section:kwin
+Switch to Desktop 17	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 17=none,,Switch to Desktop 17$/;"	k	section:kwin
+Switch to Desktop 18	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 18=none,,Switch to Desktop 18$/;"	k	section:kwin
+Switch to Desktop 19	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 19=none,,Switch to Desktop 19$/;"	k	section:kwin
+Switch to Desktop 2	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 2=Ctrl+F2,Ctrl+F2,Switch to Desktop 2$/;"	k	section:kwin
+Switch to Desktop 20	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 20=none,,Switch to Desktop 20$/;"	k	section:kwin
+Switch to Desktop 3	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 3=Ctrl+F3,Ctrl+F3,Switch to Desktop 3$/;"	k	section:kwin
+Switch to Desktop 4	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 4=Ctrl+F4,Ctrl+F4,Switch to Desktop 4$/;"	k	section:kwin
+Switch to Desktop 5	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 5=none,,Switch to Desktop 5$/;"	k	section:kwin
+Switch to Desktop 6	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 6=none,,Switch to Desktop 6$/;"	k	section:kwin
+Switch to Desktop 7	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 7=none,,Switch to Desktop 7$/;"	k	section:kwin
+Switch to Desktop 8	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 8=none,,Switch to Desktop 8$/;"	k	section:kwin
+Switch to Desktop 9	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Desktop 9=none,,Switch to Desktop 9$/;"	k	section:kwin
+Switch to Next Desktop	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Next Desktop=none,,Switch to Next Desktop$/;"	k	section:kwin
+Switch to Next Keyboard Layout	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout$/;"	k	section:KDE Keyboard Layout Switcher
+Switch to Next Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Next Screen=none,,Switch to Next Screen$/;"	k	section:kwin
+Switch to Previous Desktop	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Previous Desktop=none,,Switch to Previous Desktop$/;"	k	section:kwin
+Switch to Previous Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Previous Screen=none,,Switch to Previous Screen$/;"	k	section:kwin
+Switch to Screen 0	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 0=none,,Switch to Screen 0$/;"	k	section:kwin
+Switch to Screen 1	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 1=none,,Switch to Screen 1$/;"	k	section:kwin
+Switch to Screen 2	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 2=none,,Switch to Screen 2$/;"	k	section:kwin
+Switch to Screen 3	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 3=none,,Switch to Screen 3$/;"	k	section:kwin
+Switch to Screen 4	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 4=none,,Switch to Screen 4$/;"	k	section:kwin
+Switch to Screen 5	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 5=none,,Switch to Screen 5$/;"	k	section:kwin
+Switch to Screen 6	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 6=none,,Switch to Screen 6$/;"	k	section:kwin
+Switch to Screen 7	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen 7=none,,Switch to Screen 7$/;"	k	section:kwin
+Switch to Screen Above	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen Above=none,,Switch to Screen Above$/;"	k	section:kwin
+Switch to Screen Below	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen Below=none,,Switch to Screen Below$/;"	k	section:kwin
+Switch to Screen to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Left=none,,Switch to Screen to the Left$/;"	k	section:kwin
+Switch to Screen to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Right=none,,Switch to Screen to the Right$/;"	k	section:kwin
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
 Tabs	dot_config/copyq/copyq.conf	/^[Tabs]$/;"	s
 TerminalApplication	dot_config/private_kdeglobals.src.ini	/^TerminalApplication=wezterm start --cwd .$/;"	k	section:General
@@ -280,16 +372,130 @@ TerminalService	dot_config/private_kdeglobals.src.ini	/^TerminalService=org.wezf
 Theme	dot_config/copyq/copyq.conf	/^[Theme]$/;"	s
 Theme	dot_config/private_kdeglobals.src.ini	/^Theme=BeautyDream$/;"	k	section:Icons
 Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
+Toggle Keyboard Backlight	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Keyboard Backlight=Keyboard Light On\/Off,Keyboard Light On\/Off,Toggle Keyboard Backligh/;"	k	section:org_kde_powerdevil
+Toggle Night Color	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Night Color=none,none,Toggle Night Light$/;"	k	section:kwin
+Toggle Screen Reader On and Off	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off$/;"	k	section:kaccess
+Toggle Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Touchpad=Touchpad Toggle\\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\\tMeta+Ctrl+Zenkaku /;"	k	section:kcm_touchpad
+Turn Off Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Turn Off Screen=none,none,Turn Off Screen$/;"	k	section:org_kde_powerdevil
+Used Keyboard Layout	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout$/;"	k	section:KDE Keyboard Layout Switcher
 View Style	dot_config/private_kdeglobals.src.ini	/^View Style=DetailTree$/;"	k	section:KFileDialog Settings
 WM	dot_config/private_kdeglobals.src.ini	/^[WM]$/;"	s
+Walk Through Windows	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows$/;"	k	section:kwin
+Walk Through Windows Alternative	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows Alternative=none,,Walk Through Windows Alternative$/;"	k	section:kwin
+Walk Through Windows of Current Application	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of Current Applicat/;"	k	section:kwin
+Walk Through Windows of Current Application Alternative	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows of Current Application Alternative=none,,Walk Through Windows of Current Ap/;"	k	section:kwin
+Window Above Other Windows	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Above Other Windows=none,,Keep Window Above Others$/;"	k	section:kwin
+Window Below Other Windows	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Below Other Windows=none,,Keep Window Below Others$/;"	k	section:kwin
+Window Close	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Close=Alt+F4,Alt+F4,Close Window$/;"	k	section:kwin
+Window Fullscreen	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Fullscreen=none,,Make Window Fullscreen$/;"	k	section:kwin
+Window Grow Horizontal	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Grow Horizontal=none,,Expand Window Horizontally$/;"	k	section:kwin
+Window Grow Vertical	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Grow Vertical=none,,Expand Window Vertically$/;"	k	section:kwin
+Window Lower	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Lower=none,,Lower Window$/;"	k	section:kwin
+Window Maximize	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Maximize=Meta+PgUp,Meta+PgUp,Maximize Window$/;"	k	section:kwin
+Window Maximize Horizontal	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Maximize Horizontal=none,,Maximize Window Horizontally$/;"	k	section:kwin
+Window Maximize Vertical	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Maximize Vertical=none,,Maximize Window Vertically$/;"	k	section:kwin
+Window Minimize	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Minimize=Meta+PgDown,Meta+PgDown,Minimize Window$/;"	k	section:kwin
+Window Move	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Move=none,,Move Window$/;"	k	section:kwin
+Window Move Center	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Move Center=none,,Move Window to the Center$/;"	k	section:kwin
+Window No Border	dot_config/private_kglobalshortcutsrc.src.ini	/^Window No Border=none,,Toggle Window Titlebar and Frame$/;"	k	section:kwin
+Window On All Desktops	dot_config/private_kglobalshortcutsrc.src.ini	/^Window On All Desktops=none,,Keep Window on All Desktops$/;"	k	section:kwin
+Window One Desktop Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Desktop Down=Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Window One Desktop Down$/;"	k	section:kwin
+Window One Desktop Up	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Desktop Up=Meta+Ctrl+Shift+Up,Meta+Ctrl+Shift+Up,Window One Desktop Up$/;"	k	section:kwin
+Window One Desktop to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Desktop to the Left=Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to t/;"	k	section:kwin
+Window One Desktop to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Desktop to the Right=Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop t/;"	k	section:kwin
+Window One Screen Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Screen Down=none,,Move Window One Screen Down$/;"	k	section:kwin
+Window One Screen Up	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Screen Up=none,,Move Window One Screen Up$/;"	k	section:kwin
+Window One Screen to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Screen to the Left=none,,Move Window One Screen to the Left$/;"	k	section:kwin
+Window One Screen to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Window One Screen to the Right=none,,Move Window One Screen to the Right$/;"	k	section:kwin
+Window Operations Menu	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu$/;"	k	section:kwin
+Window Pack Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Pack Down=none,,Move Window Down$/;"	k	section:kwin
+Window Pack Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Pack Left=none,,Move Window Left$/;"	k	section:kwin
+Window Pack Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Pack Right=none,,Move Window Right$/;"	k	section:kwin
+Window Pack Up	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Pack Up=none,,Move Window Up$/;"	k	section:kwin
+Window Quick Tile Bottom	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Bottom=Meta+Down,Meta+Down,Quick Tile Window to the Bottom$/;"	k	section:kwin
+Window Quick Tile Bottom Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Bottom Left=none,,Quick Tile Window to the Bottom Left$/;"	k	section:kwin
+Window Quick Tile Bottom Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Bottom Right=none,,Quick Tile Window to the Bottom Right$/;"	k	section:kwin
+Window Quick Tile Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Left=Meta+Left,Meta+Left,Quick Tile Window to the Left$/;"	k	section:kwin
+Window Quick Tile Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Right=Meta+Right,Meta+Right,Quick Tile Window to the Right$/;"	k	section:kwin
+Window Quick Tile Top	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Top=Meta+Up,Meta+Up,Quick Tile Window to the Top$/;"	k	section:kwin
+Window Quick Tile Top Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left$/;"	k	section:kwin
+Window Quick Tile Top Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right$/;"	k	section:kwin
+Window Raise	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Raise=none,,Raise Window$/;"	k	section:kwin
+Window Resize	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Resize=none,,Resize Window$/;"	k	section:kwin
+Window Shade	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Shade=none,,Shade Window$/;"	k	section:kwin
+Window Shrink Horizontal	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Shrink Horizontal=none,,Shrink Window Horizontally$/;"	k	section:kwin
+Window Shrink Vertical	dot_config/private_kglobalshortcutsrc.src.ini	/^Window Shrink Vertical=none,,Shrink Window Vertically$/;"	k	section:kwin
+Window to Desktop 1	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 1=none,,Window to Desktop 1$/;"	k	section:kwin
+Window to Desktop 10	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 10=none,,Window to Desktop 10$/;"	k	section:kwin
+Window to Desktop 11	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 11=none,,Window to Desktop 11$/;"	k	section:kwin
+Window to Desktop 12	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 12=none,,Window to Desktop 12$/;"	k	section:kwin
+Window to Desktop 13	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 13=none,,Window to Desktop 13$/;"	k	section:kwin
+Window to Desktop 14	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 14=none,,Window to Desktop 14$/;"	k	section:kwin
+Window to Desktop 15	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 15=none,,Window to Desktop 15$/;"	k	section:kwin
+Window to Desktop 16	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 16=none,,Window to Desktop 16$/;"	k	section:kwin
+Window to Desktop 17	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 17=none,,Window to Desktop 17$/;"	k	section:kwin
+Window to Desktop 18	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 18=none,,Window to Desktop 18$/;"	k	section:kwin
+Window to Desktop 19	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 19=none,,Window to Desktop 19$/;"	k	section:kwin
+Window to Desktop 2	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 2=none,,Window to Desktop 2$/;"	k	section:kwin
+Window to Desktop 20	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 20=none,,Window to Desktop 20$/;"	k	section:kwin
+Window to Desktop 3	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 3=none,,Window to Desktop 3$/;"	k	section:kwin
+Window to Desktop 4	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 4=none,,Window to Desktop 4$/;"	k	section:kwin
+Window to Desktop 5	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 5=none,,Window to Desktop 5$/;"	k	section:kwin
+Window to Desktop 6	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 6=none,,Window to Desktop 6$/;"	k	section:kwin
+Window to Desktop 7	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 7=none,,Window to Desktop 7$/;"	k	section:kwin
+Window to Desktop 8	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 8=none,,Window to Desktop 8$/;"	k	section:kwin
+Window to Desktop 9	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Desktop 9=none,,Window to Desktop 9$/;"	k	section:kwin
+Window to Next Desktop	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Next Desktop=none,,Window to Next Desktop$/;"	k	section:kwin
+Window to Next Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Next Screen=Meta+Shift+Right,Meta+Shift+Right,Move Window to Next Screen$/;"	k	section:kwin
+Window to Previous Desktop	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Previous Desktop=none,,Window to Previous Desktop$/;"	k	section:kwin
+Window to Previous Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Previous Screen=Meta+Shift+Left,Meta+Shift+Left,Move Window to Previous Screen$/;"	k	section:kwin
+Window to Screen 0	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 0=none,,Move Window to Screen 0$/;"	k	section:kwin
+Window to Screen 1	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 1=none,,Move Window to Screen 1$/;"	k	section:kwin
+Window to Screen 2	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 2=none,,Move Window to Screen 2$/;"	k	section:kwin
+Window to Screen 3	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 3=none,,Move Window to Screen 3$/;"	k	section:kwin
+Window to Screen 4	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 4=none,,Move Window to Screen 4$/;"	k	section:kwin
+Window to Screen 5	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 5=none,,Move Window to Screen 5$/;"	k	section:kwin
+Window to Screen 6	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 6=none,,Move Window to Screen 6$/;"	k	section:kwin
+Window to Screen 7	dot_config/private_kglobalshortcutsrc.src.ini	/^Window to Screen 7=none,,Move Window to Screen 7$/;"	k	section:kwin
 XftHintStyle	dot_config/private_kdeglobals.src.ini	/^XftHintStyle=hintslight$/;"	k	section:General
 XftSubPixel	dot_config/private_kdeglobals.src.ini	/^XftSubPixel=rgb$/;"	k	section:General
 ["<C-CR>"]	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^        ["<C-CR>"] = function(fallback)$/;"	f
 ["<S-Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
 ["<Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
 _get_widget_geometry	dot_config/awesome/helpers/ui.lua	/^local function _get_widget_geometry(_hierarchy, widget)$/;"	f
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Accessibility$/;"	k	section:kaccess
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Activity Manager$/;"	k	section:ActivityManager
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Audio Volume$/;"	k	section:kmix
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=KDE Power Management System$/;"	k	section:org_kde_powerdevil
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=KWin$/;"	k	section:kwin
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Keyboard Layout Switcher$/;"	k	section:KDE Keyboard Layout Switcher
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Media Controller$/;"	k	section:mediacontrol
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Session Management$/;"	k	section:ksmserver
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=Touchpad$/;"	k	section:kcm_touchpad
+_k_friendly_name	dot_config/private_kglobalshortcutsrc.src.ini	/^_k_friendly_name=plasmashell$/;"	k	section:plasmashell
+_launch	dot_config/private_kglobalshortcutsrc.src.ini	/^_launch=Meta+Return$/;"	k	section:services
+_launch	dot_config/private_kglobalshortcutsrc.src.ini	/^_launch=none$/;"	k	section:services
 abort	dot_config/awesome/lib/animation/init.lua	/^function animation:abort()$/;"	f	unknown:animation
 about	dot_config/copyq/copyq.conf	/^about=shift+f1$/;"	k	section:Shortcuts
+activate task manager entry 1	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1$/;"	k	section:plasmashell
+activate task manager entry 10	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 10=none,Meta+0,Activate Task Manager Entry 10$/;"	k	section:plasmashell
+activate task manager entry 2	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2$/;"	k	section:plasmashell
+activate task manager entry 3	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 3=Meta+3,Meta+3,Activate Task Manager Entry 3$/;"	k	section:plasmashell
+activate task manager entry 4	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 4=Meta+4,Meta+4,Activate Task Manager Entry 4$/;"	k	section:plasmashell
+activate task manager entry 5	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 5=Meta+5,Meta+5,Activate Task Manager Entry 5$/;"	k	section:plasmashell
+activate task manager entry 6	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6$/;"	k	section:plasmashell
+activate task manager entry 7	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7$/;"	k	section:plasmashell
+activate task manager entry 8	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8$/;"	k	section:plasmashell
+activate task manager entry 9	dot_config/private_kglobalshortcutsrc.src.ini	/^activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9$/;"	k	section:plasmashell
+activate widget 111	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 111=none,none,Activate Application Launcher Widget$/;"	k	section:plasmashell
+activate widget 27	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 27=none,none,Activate Activity Pager Widget$/;"	k	section:plasmashell
+activate widget 31	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 31=none,none,Activate Icons-only Task Manager Widget$/;"	k	section:plasmashell
+activate widget 32	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 32=none,none,Activate Application Launcher Widget$/;"	k	section:plasmashell
+activate widget 35	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 35=none,none,Activate Application Launcher Widget$/;"	k	section:plasmashell
+activate widget 4	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 4=Alt+F1,none,Activate Application Launcher Widget$/;"	k	section:plasmashell
+activate widget 54	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 54=none,none,Activate Digital Clock Widget$/;"	k	section:plasmashell
+activate widget 71	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 71=none,none,Activate Total CPU Use Widget$/;"	k	section:plasmashell
+activate widget 85	dot_config/private_kglobalshortcutsrc.src.ini	/^activate widget 85=none,none,Activate Application Launcher Widget$/;"	k	section:plasmashell
 activate_closes	dot_config/copyq/copyq.conf	/^activate_closes=true$/;"	k	section:Options
 activate_focuses	dot_config/copyq/copyq.conf	/^activate_focuses=true$/;"	k	section:Options
 activate_item_with_single_click	dot_config/copyq/copyq.conf	/^activate_item_with_single_click=false$/;"	k	section:Options
@@ -348,6 +554,7 @@ bar_char_total	dot_config/neofetch/config.conf	/^bar_char_total="="$/;"	k
 bar_color_elapsed	dot_config/neofetch/config.conf	/^bar_color_elapsed="distro"$/;"	k
 bar_color_total	dot_config/neofetch/config.conf	/^bar_color_total="distro"$/;"	k
 bar_length	dot_config/neofetch/config.conf	/^bar_length=15$/;"	k
+barcode	dot_config/private_kglobalshortcutsrc.src.ini	/^show-barcode=none,,Show Barcode…$/;"	k	section:plasmashell
 batchinstall	dot_config/yay/config.json	/^	"batchinstall": false,$/;"	b
 battery_display	dot_config/neofetch/config.conf	/^battery_display="off"$/;"	k
 battery_notifier	dot_config/openrazer/razer.conf	/^battery_notifier = True$/;"	k	section:Startup
@@ -392,6 +599,7 @@ check_selection	dot_config/copyq/copyq.conf	/^check_selection=false$/;"	k	sectio
 clamping	dot_config/picom.conf	/^animation-clamping = false$/;"	k
 cleanAfter	dot_config/yay/config.json	/^	"cleanAfter": false,$/;"	b
 cleanmenu	dot_config/yay/config.json	/^	"cleanmenu": false,$/;"	b
+clipboard_action	dot_config/private_kglobalshortcutsrc.src.ini	/^clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu$/;"	k	section:plasmashell
 clipboard_notification_lines	dot_config/copyq/copyq.conf	/^clipboard_notification_lines=0$/;"	k	section:Options
 clipboard_tab	dot_config/copyq/copyq.conf	/^clipboard_tab=&clipboard$/;"	k	section:Options
 close_on_unfocus	dot_config/copyq/copyq.conf	/^close_on_unfocus=false$/;"	k	section:Options
@@ -457,6 +665,8 @@ current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-stor
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-storm.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	i
 custom_colors	dot_config/hyfetch.json	/^        "custom_colors": [],$/;"	a	object:color_align
 custom_shape	dot_config/awesome/helpers/ui.lua	/^function ui.custom_shape(cr, width, height)$/;"	f	unknown:ui
+cycleNextAction	dot_config/private_kglobalshortcutsrc.src.ini	/^cycleNextAction=none,,Next History Item$/;"	k	section:plasmashell
+cyclePrevAction	dot_config/private_kglobalshortcutsrc.src.ini	/^cyclePrevAction=none,,Previous History Item$/;"	k	section:plasmashell
 damage	dot_config/picom.conf	/^use-damage = true$/;"	k
 dampening	dot_config/picom.conf	/^animation-dampening = 18$/;"	k
 dc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://purl.org/dc/elements/1.1/
@@ -466,6 +676,9 @@ decode	dot_config/awesome/lib/json.lua	/^function json.decode(str)$/;"	f	unknown
 decode_error	dot_config/awesome/lib/json.lua	/^local function decode_error(str, idx, msg)$/;"	f
 decorate_cell	dot_config/awesome/ui/info-panel/calendar.lua	/^local function decorate_cell(widget, flag)$/;"	f
 decrease	dot_config/awesome/ui/popups/volume/init.lua	/^volume.decrease = function()$/;"	f	unknown:volume
+decrease_microphone_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Vol/;"	k	section:kmix
+decrease_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^decrease_volume=Volume Down,Volume Down,Decrease Volume$/;"	k	section:kmix
+decrease_volume_small	dot_config/private_kglobalshortcutsrc.src.ini	/^decrease_volume_small=Shift+Volume Down,Shift+Volume Down,Decrease Volume by 1%$/;"	k	section:kmix
 default-trackers	dot_config/transmission/settings.json	/^    "default-trackers": "",$/;"	s
 default_style_sheet	dot_config/copyq/copyq.conf	/^itemtext\\default_style_sheet=$/;"	k	section:Plugins
 defs4246	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^  <defs id="defs4246"\/>$/;"	i
@@ -613,6 +826,7 @@ hide_main_window_in_task_bar	dot_config/copyq/copyq.conf	/^hide_main_window_in_t
 hide_tabs	dot_config/copyq/copyq.conf	/^hide_tabs=false$/;"	k	section:Options
 hide_toolbar	dot_config/copyq/copyq.conf	/^hide_toolbar=false$/;"	k	section:Options
 hide_toolbar_labels	dot_config/copyq/copyq.conf	/^hide_toolbar_labels=true$/;"	k	section:Options
+history	dot_config/private_kglobalshortcutsrc.src.ini	/^clear-history=none,,Clear Clipboard History$/;"	k	section:plasmashell
 horizontal_pad	dot_config/awesome/helpers/ui.lua	/^function ui.horizontal_pad(width)$/;"	f	unknown:ui
 hostname	dot_config/mopidy/mopidy.conf	/^hostname = 127.0.0.1$/;"	k	section:mpd
 hourly_widget	dot_config/awesome/ui/info-panel/weather/init.lua	/^local hourly_widget = function()$/;"	f
@@ -663,6 +877,9 @@ inactiveTitleBtnBg	dot_config/Trolltech.conf	/^KWinPalette\\inactiveTitleBtnBg=#
 incomplete-dir	dot_config/transmission/settings.json	/^    "incomplete-dir": "\/home\/marley\/Downloads",$/;"	s
 incomplete-dir-enabled	dot_config/transmission/settings.json	/^    "incomplete-dir-enabled": false,$/;"	b
 increase	dot_config/awesome/ui/popups/volume/init.lua	/^volume.increase = function()$/;"	f	unknown:volume
+increase_microphone_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume$/;"	k	section:kmix
+increase_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^increase_volume=Volume Up,Volume Up,Increase Volume$/;"	k	section:kmix
+increase_volume_small	dot_config/private_kglobalshortcutsrc.src.ini	/^increase_volume_small=Shift+Volume Up,Shift+Volume Up,Increase Volume by 1%$/;"	k	section:kmix
 inhibit-desktop-hibernation	dot_config/transmission/settings.json	/^    "inhibit-desktop-hibernation": false,$/;"	b
 init	dot_config/nvim/lua/plugins/chezmoi-vim.lua	/^  init = function()$/;"	f
 init	dot_config/nvim/lua/plugins/example.lua	/^      init = function()$/;"	f
@@ -675,11 +892,16 @@ item_data_threshold	dot_config/copyq/copyq.conf	/^item_data_threshold=1024$/;"	k
 item_popup_interval	dot_config/copyq/copyq.conf	/^item_popup_interval=0$/;"	k	section:Options
 item_spacing	dot_config/copyq/copyq.conf	/^item_spacing=$/;"	k	section:Theme
 iterate_value	dot_config/awesome/ui/popups/layout/init.lua	/^function gears.table.iterate_value(t, value, step_size, filter, _)$/;"	f	unknown:gears.table
+kaccess	dot_config/private_kglobalshortcutsrc.src.ini	/^[kaccess]$/;"	s
+kcm_touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^[kcm_touchpad]$/;"	s
 keepSrc	dot_config/yay/config.json	/^	"keepSrc": false,$/;"	b
 kern	dot_config/picom.conf	/^blur-kern = "11x11gaussian";$/;"	k
 kernel_shorthand	dot_config/neofetch/config.conf	/^kernel_shorthand="on"$/;"	k
 keypressed_callback	dot_config/awesome/lib/exit-screen.lua	/^	keypressed_callback = function(_, _, key, _)$/;"	f
 keys	dot_config/nvim/lua/plugins/example.lua	/^    keys = function()$/;"	f
+kmix	dot_config/private_kglobalshortcutsrc.src.ini	/^[kmix]$/;"	s
+ksmserver	dot_config/private_kglobalshortcutsrc.src.ini	/^[ksmserver]$/;"	s
+kwin	dot_config/private_kglobalshortcutsrc.src.ini	/^[kwin]$/;"	s
 language	dot_config/copyq/copyq.conf	/^language=en$/;"	k	section:Options
 laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6",$/;"	s	object:require
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
@@ -718,6 +940,7 @@ main-window-x	dot_config/transmission/settings.json	/^    "main-window-x": 50,$/
 main-window-y	dot_config/transmission/settings.json	/^    "main-window-y": 50,$/;"	n
 makepkgbin	dot_config/yay/config.json	/^	"makepkgbin": "makepkg",$/;"	s
 makepkgconf	dot_config/yay/config.json	/^	"makepkgconf": "",$/;"	s
+manage activities	dot_config/private_kglobalshortcutsrc.src.ini	/^manage activities=Meta+Q,Meta+Q,Show Activity Switcher$/;"	k	section:plasmashell
 mar does dotfiles	README.md	/^# mar does dotfiles$/;"	c
 markup	dot_config/awesome/ui/info-panel/calendar.lua	/^	markup = function(t)$/;"	f
 mass	dot_config/picom.conf	/^animation-window-mass = 1.0$/;"	k
@@ -739,6 +962,9 @@ mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg 
 mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 media_dir	dot_config/mopidy/mopidy.conf	/^media_dir = \/mnt\/babeshare\/babez\/Music\/$/;"	k	section:local
 media_dirs	dot_config/mopidy/mopidy.conf	/^media_dirs =$/;"	k	section:file
+mediacontrol	dot_config/private_kglobalshortcutsrc.src.ini	/^[mediacontrol]$/;"	s
+mediavolumedown	dot_config/private_kglobalshortcutsrc.src.ini	/^mediavolumedown=none,,Media volume down$/;"	k	section:mediacontrol
+mediavolumeup	dot_config/private_kglobalshortcutsrc.src.ini	/^mediavolumeup=none,,Media volume up$/;"	k	section:mediacontrol
 memory_display	dot_config/neofetch/config.conf	/^memory_display="off"$/;"	k
 memory_percent	dot_config/neofetch/config.conf	/^memory_percent="on"$/;"	k
 memory_unit	dot_config/neofetch/config.conf	/^memory_unit="gib"$/;"	k
@@ -752,6 +978,7 @@ message-level	dot_config/transmission/settings.json	/^    "message-level": 4,$/;
 metadata10	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="metadata10">$/;"	i
 method	dot_config/picom.conf	/^blur-method = "dual_kawase"$/;"	k
 mflags	dot_config/yay/config.json	/^	"mflags": "",$/;"	s
+mic_mute	dot_config/private_kglobalshortcutsrc.src.ini	/^mic_mute=Microphone Mute\\tMeta+Volume Mute,Microphone Mute\\tMeta+Volume Mute,Mute Microphone$/;"	k	section:kmix
 mode	dot_config/hyfetch.json	/^        "mode": "horizontal",$/;"	s	object:color_align
 mode	dot_config/hyfetch.json	/^    "mode": "rgb",$/;"	s
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.bottom.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile.bottom
@@ -770,6 +997,7 @@ multilib	dot_config/pacman/pacman.conf	/^[multilib]$/;"	s
 music	dot_config/awesome/ui/info-panel/music-player.lua	/^local function music()$/;"	f
 music_player	dot_config/neofetch/config.conf	/^music_player="auto"$/;"	k
 mute	dot_config/awesome/ui/popups/volume/init.lua	/^volume.mute = function()$/;"	f	unknown:volume
+mute	dot_config/private_kglobalshortcutsrc.src.ini	/^mute=Volume Mute,Volume Mute,Mute$/;"	k	section:kmix
 name	dot_config/copyq/copyq.conf	/^1\\name=&clipboard$/;"	k	section:Tabs
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
@@ -786,8 +1014,10 @@ new	dot_config/awesome/main/menu.lua	/^function awful.menu.new(...)$/;"	f	unknow
 new	dot_config/awesome/signals/playerctl.lua	/^local function new()$/;"	f
 new	dot_config/copyq/copyq.conf	/^new=ctrl+n$/;"	k	section:Shortcuts
 new_tab	dot_config/copyq/copyq.conf	/^new_tab=ctrl+t$/;"	k	section:Shortcuts
+next activity	dot_config/private_kglobalshortcutsrc.src.ini	/^next activity=Meta+A,none,Walk through activities$/;"	k	section:plasmashell
 next_char	dot_config/awesome/lib/json.lua	/^local function next_char(str, idx, set, negate)$/;"	f
 next_tab	dot_config/copyq/copyq.conf	/^next_tab=right$/;"	k	section:Shortcuts
+nextmedia	dot_config/private_kglobalshortcutsrc.src.ini	/^nextmedia=Media Next,Media Next,Media playback next$/;"	k	section:mediacontrol
 notes_bg	dot_config/copyq/copyq.conf	/^notes_bg=#610001$/;"	k	section:Theme
 notes_css	dot_config/copyq/copyq.conf	/^notes_css=$/;"	k	section:Theme
 notes_fg	dot_config/copyq/copyq.conf	/^notes_fg=#ffffff$/;"	k	section:Theme
@@ -841,6 +1071,7 @@ options	dot_config/pacman/pacman.conf	/^[options]$/;"	s
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function()$/;"	f
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function(_, opts)$/;"	f
 opts	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^    opts = function(_, opts)$/;"	f
+org_kde_powerdevil	dot_config/private_kglobalshortcutsrc.src.ini	/^[org_kde_powerdevil]$/;"	s
 os_arch	dot_config/neofetch/config.conf	/^os_arch="off"$/;"	k
 out	dot_config/picom.conf	/^animation-for-workspace-switch-out = "fly-in"; #the windows in the workspace that are coming out$/;"	k
 outBack	dot_config/awesome/lib/animation/tween.lua	/^local function outBack(t, b, c, d, s)$/;"	f
@@ -868,6 +1099,7 @@ override	dot_config/picom.conf	/^inactive-opacity-override = true;$/;"	k
 package_managers	dot_config/neofetch/config.conf	/^package_managers="on"$/;"	k
 pacmanbin	dot_config/yay/config.json	/^	"pacmanbin": "pacman",$/;"	s
 pacmanconf	dot_config/yay/config.json	/^	"pacmanconf": "\/etc\/pacman.conf",$/;"	s
+panels	dot_config/private_kglobalshortcutsrc.src.ini	/^cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels$/;"	k	section:plasmashell
 parse	dot_config/awesome/lib/json.lua	/^parse = function(str, idx)$/;"	f
 parse_array	dot_config/awesome/lib/json.lua	/^local function parse_array(str, i)$/;"	f
 parse_literal	dot_config/awesome/lib/json.lua	/^local function parse_literal(str, i)$/;"	f
@@ -879,6 +1111,7 @@ paste_selected_items	dot_config/copyq/copyq.conf	/^paste_selected_items=ctrl+v$/
 path2	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     style="fill:#ffffff;stroke-width:11.11111164" \/>$/;"	i
 path7007	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^    <path style="fill: #52e0ad;fill-opacity:1;stroke-width:0.264583" d="M 10.768947,5.8246909 10/;"	i
 path7007	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^    <path style="fill: #f0fc52;fill-opacity:1;stroke-width:0.264583" d="M 10.768947,5.8246909 10/;"	i
+pausemedia	dot_config/private_kglobalshortcutsrc.src.ini	/^pausemedia=Media Pause,Media Pause,Pause media playback$/;"	k	section:mediacontrol
 peer-congestion-algorithm	dot_config/transmission/settings.json	/^    "peer-congestion-algorithm": "",$/;"	s
 peer-limit-global	dot_config/transmission/settings.json	/^    "peer-limit-global": 200,$/;"	n
 peer-limit-per-torrent	dot_config/transmission/settings.json	/^    "peer-limit-per-torrent": 50,$/;"	n
@@ -894,18 +1127,25 @@ pgpfetch	dot_config/yay/config.json	/^	"pgpfetch": true,$/;"	b
 pie	dot_config/awesome/helpers/ui.lua	/^function ui.pie(width, height, start_angle, end_angle, radius)$/;"	f	unknown:ui
 placement_fn	dot_config/awesome/ui/top-panel/widgets/taglist.lua	/^		placement_fn = function(c) -- Place the widget using awful.placement (this overrides x & y)$/;"	f
 placement_placer	dot_config/awesome/ui/popups/volume/init.lua	/^local placement_placer = function()$/;"	f
+plasmashell	dot_config/private_kglobalshortcutsrc.src.ini	/^[plasmashell]$/;"	s
+playmedia	dot_config/private_kglobalshortcutsrc.src.ini	/^playmedia=none,,Play media playback$/;"	k	section:mediacontrol
+playpausemedia	dot_config/private_kglobalshortcutsrc.src.ini	/^playpausemedia=Media Play,Media Play,Play\/Pause media playback$/;"	k	section:mediacontrol
 plugin_priority	dot_config/copyq/copyq.conf	/^plugin_priority=itemimage, itemencrypted, itemfakevim, itemnotes, itempinned, itemsync, itemtags/;"	k	section:General
 plugins	dot_config/nvim/dot_neoconf.json	/^      "plugins": true$/;"	b	object:neodev.library
 plugins	dot_config/nvim/dot_neoconf.json	/^    "plugins": {$/;"	o	object:neoconf
 podcast	dot_config/mopidy/mopidy.conf	/^[podcast]$/;"	s
 poll_rate	dot_config/openrazer/persistence.conf	/^poll_rate = 500$/;"	k	section:PM2038H11502057
 port-forwarding-enabled	dot_config/transmission/settings.json	/^    "port-forwarding-enabled": true,$/;"	b
+pos	dot_config/private_kglobalshortcutsrc.src.ini	/^show-on-mouse-pos=Meta+V,Meta+V,Show Clipboard Items at Mouse Position$/;"	k	section:plasmashell
+powerProfile	dot_config/private_kglobalshortcutsrc.src.ini	/^powerProfile=Battery\\tMeta+B,Battery\\tMeta+B,Switch Power Profile$/;"	k	section:org_kde_powerdevil
 poweroff_command	dot_config/awesome/lib/exit-screen.lua	/^local poweroff_command = function()$/;"	f
 preallocation	dot_config/transmission/settings.json	/^    "preallocation": 1,$/;"	n
 preferences	dot_config/copyq/copyq.conf	/^preferences=ctrl+p$/;"	k	section:Shortcuts
 prefetch-enabled	dot_config/transmission/settings.json	/^    "prefetch-enabled": true,$/;"	b
 preset	dot_config/hyfetch.json	/^    "preset": "lesbian",$/;"	s
+previous activity	dot_config/private_kglobalshortcutsrc.src.ini	/^previous activity=Meta+Shift+A,none,Walk through activities (Reverse)$/;"	k	section:plasmashell
 previous_tab	dot_config/copyq/copyq.conf	/^previous_tab=left$/;"	k	section:Shortcuts
+previousmedia	dot_config/private_kglobalshortcutsrc.src.ini	/^previousmedia=Media Previous,Media Previous,Media playback previous$/;"	k	section:mediacontrol
 prgram	dot_config/awesome/helpers/ui.lua	/^function ui.prgram(height, base)$/;"	f	unknown:ui
 pride_month_disable	dot_config/hyfetch.json	/^    "pride_month_disable": false$/;"	b
 pride_month_shown	dot_config/hyfetch.json	/^    "pride_month_shown": [],$/;"	a
@@ -936,6 +1176,7 @@ remove_tab	dot_config/copyq/copyq.conf	/^remove_tab=ctrl+w$/;"	k	section:Shortcu
 removemake	dot_config/yay/config.json	/^	"removemake": "yes",$/;"	s
 rename-partial-files	dot_config/transmission/settings.json	/^    "rename-partial-files": false,$/;"	b
 rename_tab	dot_config/copyq/copyq.conf	/^rename_tab=ctrl+f2$/;"	k	section:Shortcuts
+repeat_action	dot_config/private_kglobalshortcutsrc.src.ini	/^repeat_action=none,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard$/;"	k	section:plasmashell
 requestsplitn	dot_config/yay/config.json	/^	"requestsplitn": 150,$/;"	n
 require	dot_config/composer/composer.json	/^    "require": {$/;"	o
 reset	dot_config/awesome/lib/animation/tween.lua	/^function Tween:reset()$/;"	f	unknown:Tween
@@ -993,6 +1234,8 @@ sel_fg	dot_config/copyq/copyq.conf	/^sel_fg=#fff$/;"	k	section:Theme
 sel_item_css	dot_config/copyq/copyq.conf	/^sel_item_css="\\n    ;background: qlineargradient(\\n        x1: 0, y1: 0,\\n        x2: 0, y2: /;"	k	section:Theme
 separatesources	dot_config/yay/config.json	/^	"separatesources": true,$/;"	b
 separator	dot_config/neofetch/config.conf	/^separator=" 󰾞"$/;"	k
+services	dot_config/private_kglobalshortcutsrc.src.ini	/^[services][org.kde.konsole.desktop]$/;"	s
+services	dot_config/private_kglobalshortcutsrc.src.ini	/^[services][org.wezfurlong.wezterm.desktop]$/;"	s
 set	dot_config/awesome/lib/animation/init.lua	/^function animation:set(args)$/;"	f	unknown:animation
 set	dot_config/awesome/lib/animation/tween.lua	/^function Tween:set(clock)$/;"	f	unknown:Tween
 set_font	dot_config/awesome/helpers/ui.lua	/^function ui.set_font(attr, font)$/;"	f	unknown:ui
@@ -1006,6 +1249,7 @@ share	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin
 share	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
 shell_path	dot_config/neofetch/config.conf	/^shell_path="off"$/;"	k
 shell_version	dot_config/neofetch/config.conf	/^shell_version="off"$/;"	k
+show dashboard	dot_config/private_kglobalshortcutsrc.src.ini	/^show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop$/;"	k	section:plasmashell
 show-backup-trackers	dot_config/transmission/settings.json	/^    "show-backup-trackers": false,$/;"	b
 show-extra-peer-details	dot_config/transmission/settings.json	/^    "show-extra-peer-details": false,$/;"	b
 show-filterbar	dot_config/transmission/settings.json	/^    "show-filterbar": true,$/;"	b
@@ -1051,7 +1295,9 @@ step	dot_config/picom.conf	/^fade-in-step = 0.03;$/;"	k
 step	dot_config/picom.conf	/^fade-out-step = 0.03;$/;"	k
 stiffness	dot_config/picom.conf	/^animation-stiffness = 125$/;"	k
 stop	dot_config/awesome/lib/animation/init.lua	/^function animation:stop()$/;"	f	unknown:animation
+stop current activity	dot_config/private_kglobalshortcutsrc.src.ini	/^stop current activity=Meta+S,Meta+S,Stop Current Activity$/;"	k	section:plasmashell
 stop_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	stop_callback = function()$/;"	f
+stopmedia	dot_config/private_kglobalshortcutsrc.src.ini	/^stopmedia=Media Stop,Media Stop,Stop media playback$/;"	k	section:mediacontrol
 store_items	dot_config/copyq/copyq.conf	/^1\\store_items=true$/;"	k	section:Tabs
 stream	dot_config/mopidy/mopidy.conf	/^[stream]$/;"	s
 style	dot_config/copyq/copyq.conf	/^style=$/;"	k	section:Options
@@ -1072,6 +1318,8 @@ svg4	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:versio
 svg4249	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	i
 svg4249	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	i
 svg_editor	dot_config/copyq/copyq.conf	/^itemimage\\svg_editor=$/;"	k	section:Plugins
+switch to next activity	dot_config/private_kglobalshortcutsrc.src.ini	/^switch to next activity=none,,Switch to Next Activity$/;"	k	section:plasmashell
+switch to previous activity	dot_config/private_kglobalshortcutsrc.src.ini	/^switch to previous activity=none,,Switch to Previous Activity$/;"	k	section:plasmashell
 sync_effects_enabled	dot_config/openrazer/razer.conf	/^sync_effects_enabled = True$/;"	k	section:Startup
 sync_tabs	dot_config/copyq/copyq.conf	/^itemsync\\sync_tabs=@Invalid()$/;"	k	section:Plugins
 tab_bar_css	dot_config/copyq/copyq.conf	/^tab_bar_css="\\n    ;background: ${bg - #222}"$/;"	k	section:Theme
@@ -1097,6 +1345,7 @@ title_fqdn	dot_config/neofetch/config.conf	/^title_fqdn="off"$/;"	k
 toggle	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.toggle = function()$/;"	f	unknown:sidebar
 toggle	dot_config/awesome/ui/notif-panel/init.lua	/^action.toggle = function()$/;"	f	unknown:action
 toggle	dot_config/awesome/ui/top-panel/widgets/systray.lua	/^arrow.toggle = function()$/;"	f	unknown:arrow
+toggle do not disturb	dot_config/private_kglobalshortcutsrc.src.ini	/^toggle do not disturb=none,,Toggle do not disturb$/;"	k	section:plasmashell
 toggle_clipboard_storing	dot_config/copyq/copyq.conf	/^toggle_clipboard_storing=ctrl+shift+x$/;"	k	section:Shortcuts
 toolBarFont	dot_config/private_kdeglobals.src.ini	/^toolBarFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 tool_bar_css	dot_config/copyq/copyq.conf	/^tool_bar_css="\\n    ;color: ${fg}\\n    ;background-color: ${bg}\\n    ;border: 0"$/;"	k	section:Theme
@@ -1150,6 +1399,9 @@ verbose_logging	dot_config/openrazer/razer.conf	/^verbose_logging = False$/;"	k	
 version	dot_config/yay/config.json	/^	"version": "12.3.0",$/;"	s
 vertical_pad	dot_config/awesome/helpers/ui.lua	/^function ui.vertical_pad(height)$/;"	f	unknown:ui
 vi	dot_config/copyq/copyq.conf	/^vi=true$/;"	k	section:Options
+view_actual_size	dot_config/private_kglobalshortcutsrc.src.ini	/^view_actual_size=Meta+0,Meta+0,Zoom to Actual Size$/;"	k	section:kwin
+view_zoom_in	dot_config/private_kglobalshortcutsrc.src.ini	/^view_zoom_in=Meta++\\tMeta+=,Meta++\\tMeta+=,Zoom In$/;"	k	section:kwin
+view_zoom_out	dot_config/private_kglobalshortcutsrc.src.ini	/^view_zoom_out=Meta+-,Meta+-,Zoom Out$/;"	k	section:kwin
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
 vsync	dot_config/picom.conf	/^vsync = true$/;"	k
 watch-dir	dot_config/transmission/settings.json	/^    "watch-dir": "\/home\/marley\/Desktop",$/;"	s
