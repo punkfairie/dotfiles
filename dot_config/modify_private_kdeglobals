@@ -3,3 +3,7 @@
 source auto
 
 ignore section "$Version"
+ignore "General" "ColorSchemeHash"
+ignore "KFileDialog Settings" "Show hidden files"
+ignore "KFileDialog Settings" "Show Inline Previews"
+ignore section "DirSelect Dialog"
