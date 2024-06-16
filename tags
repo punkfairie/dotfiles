@@ -375,7 +375,7 @@ ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198,
 Format	dot_config/private_komparerc.src.ini	/^Format=4$/;"	k	section:Diff Options
 GPG makes me want to toss the computer out the window	README.md	/^### GPG makes me want to toss the computer out the window$/;"	S	section:mar does dotfiles""First-Time Setup
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
-GUIEffects	dot_config/Trolltech.conf	/^GUIEffects=none$/;"	k	section:qt
+GUIEffects	dot_config/Trolltech.conf.src.ini	/^GUIEffects=none$/;"	k	section:qt
 General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setup
 General	dot_config/copyq/copyq.conf	/^[General]$/;"	s
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
@@ -710,15 +710,15 @@ activate_closes	dot_config/copyq/copyq.conf	/^activate_closes=true$/;"	k	section
 activate_focuses	dot_config/copyq/copyq.conf	/^activate_focuses=true$/;"	k	section:Options
 activate_item_with_single_click	dot_config/copyq/copyq.conf	/^activate_item_with_single_click=false$/;"	k	section:Options
 activate_pastes	dot_config/copyq/copyq.conf	/^activate_pastes=true$/;"	k	section:Options
-active	dot_config/Trolltech.conf	/^Palette\\active=#cad3f5, #363a4f, #3e4263, #31344e, #0f1017, #1a1c29, #cad3f5, #ffffff, #cad3f5,/;"	k	section:qt
-activeBackground	dot_config/Trolltech.conf	/^KWinPalette\\activeBackground=#24273a$/;"	k	section:qt
+active	dot_config/Trolltech.conf.src.ini	/^Palette\\active=#cad3f5, #363a4f, #3e4263, #31344e, #0f1017, #1a1c29, #cad3f5, #ffffff, #cad3f5,/;"	k	section:qt
+activeBackground	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\activeBackground=#24273a$/;"	k	section:qt
 activeBackground	dot_config/private_kdeglobals.src.ini	/^activeBackground=36,39,58$/;"	k	section:WM
-activeBlend	dot_config/Trolltech.conf	/^KWinPalette\\activeBlend=#cad3f5$/;"	k	section:qt
+activeBlend	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\activeBlend=#cad3f5$/;"	k	section:qt
 activeBlend	dot_config/private_kdeglobals.src.ini	/^activeBlend=202,211,245$/;"	k	section:WM
 activeFont	dot_config/private_kdeglobals.src.ini	/^activeFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:WM
-activeForeground	dot_config/Trolltech.conf	/^KWinPalette\\activeForeground=#cad3f5$/;"	k	section:qt
+activeForeground	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\activeForeground=#cad3f5$/;"	k	section:qt
 activeForeground	dot_config/private_kdeglobals.src.ini	/^activeForeground=202,211,245$/;"	k	section:WM
-activeTitleBtnBg	dot_config/Trolltech.conf	/^KWinPalette\\activeTitleBtnBg=#1e2030$/;"	k	section:qt
+activeTitleBtnBg	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\activeTitleBtnBg=#1e2030$/;"	k	section:qt
 activityId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^activityId=$/;"	k	section:Containments
 activityId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^activityId=93518f0d-148e-42b9-acd8-34950b41293c$/;"	k	section:Containments
 add_hover_cursor	dot_config/awesome/helpers/ui.lua	/^function ui.add_hover_cursor(w, hover_cursor)$/;"	f	unknown:ui
@@ -834,7 +834,7 @@ config	dot_config/nvim/lua/plugins/example.lua	/^      config = function()$/;"	f
 config	dot_config/nvim/lua/plugins/luasnip.lua	/^    config = function(_, opts)$/;"	f
 config	dot_config/nvim/lua/plugins/nvim-emmet.lua	/^    config = function()$/;"	f
 confirm_exit	dot_config/copyq/copyq.conf	/^confirm_exit=true$/;"	k	section:Options
-contrast	dot_config/Trolltech.conf	/^KDE\\contrast=7$/;"	k	section:qt
+contrast	dot_config/Trolltech.conf.src.ini	/^KDE\\contrast=7$/;"	k	section:qt
 copyTables	dot_config/awesome/lib/animation/tween.lua	/^local function copyTables(destination, keysTable, valuesTable)$/;"	f
 copy_clipboard	dot_config/copyq/copyq.conf	/^copy_clipboard=false$/;"	k	section:Options
 copy_selected_items	dot_config/copyq/copyq.conf	/^copy_selected_items=ctrl+c$/;"	k	section:Shortcuts
@@ -909,7 +909,7 @@ devices_off_on_screensaver	dot_config/openrazer/razer.conf	/^devices_off_on_scre
 dht-enabled	dot_config/transmission/settings.json	/^    "dht-enabled": true,$/;"	b
 diffmenu	dot_config/yay/config.json	/^	"diffmenu": false,$/;"	b
 disable_tray	dot_config/copyq/copyq.conf	/^disable_tray=false$/;"	k	section:Options
-disabled	dot_config/Trolltech.conf	/^Palette\\disabled=#989fbd, #313449, #3f4364, #323650, #0f1119, #1b1d2c, #989fbd, #ffffff, #989fb/;"	k	section:qt
+disabled	dot_config/Trolltech.conf.src.ini	/^Palette\\disabled=#989fbd, #313449, #3f4364, #323650, #0f1119, #1b1d2c, #989fbd, #ffffff, #989fb/;"	k	section:qt
 disk_display	dot_config/neofetch/config.conf	/^disk_display="off"$/;"	k
 disk_percent	dot_config/neofetch/config.conf	/^disk_percent="on"$/;"	k
 disk_show	dot_config/neofetch/config.conf	/^disk_show=('\/')$/;"	k
@@ -999,7 +999,7 @@ firstDayOfWeek	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.in
 fixed	dot_config/private_kdeglobals.src.ini	/^fixed=Fairiesevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 focused	dot_config/picom.conf	/^mark-ovredir-focused = false$/;"	k
 focused	dot_config/picom.conf	/^mark-wmwin-focused = true;$/;"	k
-font	dot_config/Trolltech.conf	/^font="Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"$/;"	k	section:qt
+font	dot_config/Trolltech.conf.src.ini	/^font="Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"$/;"	k	section:qt
 font	dot_config/copyq/copyq.conf	/^font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,0,0,0,0,Regular"$/;"	k	section:Theme
 font	dot_config/private_kdeglobals.src.ini	/^font=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 fontFamily	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^fontFamily=Noto Sans$/;"	k	section:Containments
@@ -1011,7 +1011,7 @@ forget	dot_config/awesome/lib/savefloats.lua	/^local function forget(c)$/;"	f
 format_settings	dot_config/copyq/copyq.conf	/^itemsync\\format_settings=@Invalid()$/;"	k	section:Plugins
 formfactor	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^formfactor=0$/;"	k	section:Containments
 formfactor	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^formfactor=2$/;"	k	section:Containments
-frame	dot_config/Trolltech.conf	/^KWinPalette\\frame=#1e2030$/;"	k	section:qt
+frame	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\frame=#1e2030$/;"	k	section:qt
 gap	dot_config/neofetch/config.conf	/^gap=3$/;"	k
 getEasingFunction	dot_config/awesome/lib/animation/tween.lua	/^local function getEasingFunction(easing)$/;"	f
 get_cpu	dot_config/awesome/signals/cpu.lua	/^local function get_cpu()$/;"	f
@@ -1093,15 +1093,15 @@ inQuad	dot_config/awesome/lib/animation/tween.lua	/^local function inQuad(t, b, 
 inQuart	dot_config/awesome/lib/animation/tween.lua	/^local function inQuart(t, b, c, d)$/;"	f
 inQuint	dot_config/awesome/lib/animation/tween.lua	/^local function inQuint(t, b, c, d)$/;"	f
 inSine	dot_config/awesome/lib/animation/tween.lua	/^local function inSine(t, b, c, d)$/;"	f
-inactive	dot_config/Trolltech.conf	/^Palette\\inactive=#7f84a2, #26293e, #414769, #353955, #12131c, #1f2232, #7f84a2, #ffffff, #7f84a/;"	k	section:qt
-inactiveBackground	dot_config/Trolltech.conf	/^KWinPalette\\inactiveBackground=#181926$/;"	k	section:qt
+inactive	dot_config/Trolltech.conf.src.ini	/^Palette\\inactive=#7f84a2, #26293e, #414769, #353955, #12131c, #1f2232, #7f84a2, #ffffff, #7f84a/;"	k	section:qt
+inactiveBackground	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveBackground=#181926$/;"	k	section:qt
 inactiveBackground	dot_config/private_kdeglobals.src.ini	/^inactiveBackground=24,25,38$/;"	k	section:WM
-inactiveBlend	dot_config/Trolltech.conf	/^KWinPalette\\inactiveBlend=#a5adcb$/;"	k	section:qt
+inactiveBlend	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveBlend=#a5adcb$/;"	k	section:qt
 inactiveBlend	dot_config/private_kdeglobals.src.ini	/^inactiveBlend=165,173,203$/;"	k	section:WM
-inactiveForeground	dot_config/Trolltech.conf	/^KWinPalette\\inactiveForeground=#a5adcb$/;"	k	section:qt
+inactiveForeground	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveForeground=#a5adcb$/;"	k	section:qt
 inactiveForeground	dot_config/private_kdeglobals.src.ini	/^inactiveForeground=165,173,203$/;"	k	section:WM
-inactiveFrame	dot_config/Trolltech.conf	/^KWinPalette\\inactiveFrame=#24273a$/;"	k	section:qt
-inactiveTitleBtnBg	dot_config/Trolltech.conf	/^KWinPalette\\inactiveTitleBtnBg=#24273a$/;"	k	section:qt
+inactiveFrame	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveFrame=#24273a$/;"	k	section:qt
+inactiveTitleBtnBg	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveTitleBtnBg=#24273a$/;"	k	section:qt
 incomplete-dir	dot_config/transmission/settings.json	/^    "incomplete-dir": "\/home\/marley\/Downloads",$/;"	s
 incomplete-dir-enabled	dot_config/transmission/settings.json	/^    "incomplete-dir-enabled": false,$/;"	b
 increase	dot_config/awesome/ui/popups/volume/init.lua	/^volume.increase = function()$/;"	f	unknown:volume
@@ -1429,7 +1429,7 @@ proxy	dot_config/mopidy/mopidy.conf	/^[proxy]$/;"	s
 prrect	dot_config/awesome/helpers/ui.lua	/^function ui.prrect(radius, tl, tr, br, bl)$/;"	f	unknown:ui
 public_ip_host	dot_config/neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
 public_ip_timeout	dot_config/neofetch/config.conf	/^public_ip_timeout=2$/;"	k
-qt	dot_config/Trolltech.conf	/^[qt]$/;"	s
+qt	dot_config/Trolltech.conf.src.ini	/^[qt]$/;"	s
 queue-stalled-enabled	dot_config/transmission/settings.json	/^    "queue-stalled-enabled": true,$/;"	b
 queue-stalled-minutes	dot_config/transmission/settings.json	/^    "queue-stalled-minutes": 30,$/;"	n
 radius	dot_config/picom.conf	/^corner-radius = 12.0;$/;"	k
