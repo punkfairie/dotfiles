@@ -100,12 +100,15 @@ $Version	dot_config/private_kdeglobals.src.ini	/^[$Version]$/;"	s
 0	dot_config/transmission/settings.json	/^        "canberra-gtk-play",$/;"	s	array:torrent-complete-sound-command
 1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
 2	dot_config/transmission/settings.json	/^        "complete-download",$/;"	s	array:torrent-complete-sound-command
+2 screens	dot_config/private_komparerc.src.ini	/^2 screens: Window-Maximized=true$/;"	k	section:General Options
 3	dot_config/transmission/settings.json	/^        "-d",$/;"	s	array:torrent-complete-sound-command
 34950b41293c	dot_config/private_kglobalshortcutsrc.src.ini	/^switch-to-activity-93518f0d-148e-42b9-acd8-34950b41293c=none,none,Switch to activity "Default"$/;"	k	section:ActivityManager
 4	dot_config/transmission/settings.json	/^        "transmission torrent downloaded"$/;"	s	array:torrent-complete-sound-command
 Activate Window Demanding Attention	dot_config/private_kglobalshortcutsrc.src.ini	/^Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention$/;"	k	section:kwin
 ActivityManager	dot_config/private_kglobalshortcutsrc.src.ini	/^[ActivityManager]$/;"	s
+AddColor	dot_config/private_komparerc.src.ini	/^AddColor=190,190,237$/;"	k	section:View Options
 Allow Expansion	dot_config/private_kdeglobals.src.ini	/^Allow Expansion=false$/;"	k	section:KFileDialog Settings
+AppliedColor	dot_config/private_komparerc.src.ini	/^AppliedColor=237,237,190$/;"	k	section:View Options
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
 Architecture	dot_config/pacman/pacman.conf	/^Architecture = auto$/;"	k	section:options
 Automatically select filename extension	dot_config/private_kdeglobals.src.ini	/^Automatically select filename extension=true$/;"	k	section:KFileDialog Settings
@@ -126,6 +129,7 @@ BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=54, 58
 Breadcrumb Navigation	dot_config/private_kdeglobals.src.ini	/^Breadcrumb Navigation=true$/;"	k	section:KFileDialog Settings
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
+ChangeColor	dot_config/private_komparerc.src.ini	/^ChangeColor=237,190,190$/;"	k	section:View Options
 ChangeSelectionColor	dot_config/private_kdeglobals.src.ini	/^ChangeSelectionColor=$/;"	k	section:ColorEffects:Disabled
 ChangeSelectionColor	dot_config/private_kdeglobals.src.ini	/^ChangeSelectionColor=true$/;"	k	section:ColorEffects:Inactive
 Color	dot_config/private_kdeglobals.src.ini	/^Color=36, 39, 58$/;"	k	section:ColorEffects:Disabled
@@ -144,10 +148,13 @@ Colors:Selection	dot_config/private_kdeglobals.src.ini	/^[Colors:Selection]$/;"	
 Colors:Tooltip	dot_config/private_kdeglobals.src.ini	/^[Colors:Tooltip]$/;"	s
 Colors:View	dot_config/private_kdeglobals.src.ini	/^[Colors:View]$/;"	s
 Colors:Window	dot_config/private_kdeglobals.src.ini	/^[Colors:Window]$/;"	s
+CompareRecursively	dot_config/private_komparerc.src.ini	/^CompareRecursively=true$/;"	k	section:Diff Options
 ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0$/;"	k	section:ColorEffects:Inactive
 ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0.1$/;"	k	section:ColorEffects:Disabled
 ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Disabled
 ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Inactive
+ConvertTabsToSpaces	dot_config/private_komparerc.src.ini	/^ConvertTabsToSpaces=false$/;"	k	section:Diff Options
+CreateSmallerDiff	dot_config/private_komparerc.src.ini	/^CreateSmallerDiff=true$/;"	k	section:Diff Options
 Cube	dot_config/private_kglobalshortcutsrc.src.ini	/^Cube=none,Meta+C,Toggle Cube$/;"	k	section:kwin
 Cycle Overview	dot_config/private_kglobalshortcutsrc.src.ini	/^Cycle Overview=none,none,Cycle through Overview and Grid View$/;"	k	section:kwin
 Cycle Overview Opposite	dot_config/private_kglobalshortcutsrc.src.ini	/^Cycle Overview Opposite=none,none,Cycle through Grid View and Overview$/;"	k	section:kwin
@@ -170,6 +177,8 @@ Decrease Keyboard Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Dec
 Decrease Opacity	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Opacity=none,,Decrease Opacity of Active Window by 5%$/;"	k	section:kwin
 Decrease Screen Brightness	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brigh/;"	k	section:org_kde_powerdevil
 Decrease Screen Brightness Small	dot_config/private_kglobalshortcutsrc.src.ini	/^Decrease Screen Brightness Small=Shift+Monitor Brightness Down,Shift+Monitor Brightness Down,Dec/;"	k	section:org_kde_powerdevil
+Diff Options	dot_config/private_komparerc.src.ini	/^[Diff Options]$/;"	s
+DiffProgram	dot_config/private_komparerc.src.ini	/^DiffProgram=$/;"	k	section:Diff Options
 DirSelect Dialog	dot_config/private_kdeglobals.src.ini	/^[DirSelect Dialog]$/;"	s
 DirSelectDialog Size	dot_config/private_kdeglobals.src.ini	/^DirSelectDialog Size=820,584$/;"	k	section:DirSelect Dialog
 Disable Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad$/;"	k	section:kcm_touchpad
@@ -177,10 +186,15 @@ Edit Tiles	dot_config/private_kglobalshortcutsrc.src.ini	/^Edit Tiles=Meta+T,Met
 Enable	dot_config/private_kdeglobals.src.ini	/^Enable=$/;"	k	section:ColorEffects:Disabled
 Enable	dot_config/private_kdeglobals.src.ini	/^Enable=true$/;"	k	section:ColorEffects:Inactive
 Enable Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad$/;"	k	section:kcm_touchpad
+Encoding	dot_config/private_komparerc.src.ini	/^Encoding=Default$/;"	k	section:Recent Compare Files
+Exclude File Options	dot_config/private_komparerc.src.ini	/^[Exclude File Options]$/;"	s
 Expose	dot_config/private_kglobalshortcutsrc.src.ini	/^Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)$/;"	k	section:kwin
 ExposeAll	dot_config/private_kglobalshortcutsrc.src.ini	/^ExposeAll=Ctrl+F10\\tLaunch (C),Ctrl+F10\\tLaunch (C),Toggle Present Windows (All desktops)$/;"	k	section:kwin
 ExposeClass	dot_config/private_kglobalshortcutsrc.src.ini	/^ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)$/;"	k	section:kwin
 ExposeClassCurrentDesktop	dot_config/private_kglobalshortcutsrc.src.ini	/^ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)$/;"	k	section:kwin
+File	dot_config/private_komparerc.src.ini	/^File=false$/;"	k	section:Exclude File Options
+FileHistoryList	dot_config/private_komparerc.src.ini	/^FileHistoryList=$/;"	k	section:Exclude File Options
+FileURL	dot_config/private_komparerc.src.ini	/^FileURL=$/;"	k	section:Exclude File Options
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
 ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Button
 ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Complementary
@@ -238,6 +252,7 @@ ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198,
 ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Tooltip
 ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:View
 ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Window
+Format	dot_config/private_komparerc.src.ini	/^Format=4$/;"	k	section:Diff Options
 GPG makes me want to toss the computer out the window	README.md	/^### GPG makes me want to toss the computer out the window$/;"	S	section:mar does dotfiles""First-Time Setup
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
 GUIEffects	dot_config/Trolltech.conf	/^GUIEffects=none$/;"	k	section:qt
@@ -245,6 +260,7 @@ General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setu
 General	dot_config/copyq/copyq.conf	/^[General]$/;"	s
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
 General	dot_config/private_kdeglobals.src.ini	/^[General]$/;"	s
+General Options	dot_config/private_komparerc.src.ini	/^[General Options]$/;"	s
 Grid View	dot_config/private_kglobalshortcutsrc.src.ini	/^Grid View=Meta+G,Meta+G,Toggle Grid View$/;"	k	section:kwin
 Halt Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Halt Without Confirmation=none,,Shut Down Without Confirmation$/;"	k	section:ksmserver
 Hibernate	dot_config/private_kglobalshortcutsrc.src.ini	/^Hibernate=Hibernate,Hibernate,Hibernate$/;"	k	section:org_kde_powerdevil
@@ -252,6 +268,14 @@ HoldPkg	dot_config/pacman/pacman.conf	/^HoldPkg     = pacman glibc$/;"	k	section
 HookDir	dot_config/pacman/pacman.conf	/^HookDir     = \/home\/marley\/.config\/pacman\/hooks\/$/;"	k	section:options
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
 Icons	dot_config/private_kdeglobals.src.ini	/^[Icons]$/;"	s
+IgnoreAllWhiteSpace	dot_config/private_komparerc.src.ini	/^IgnoreAllWhiteSpace=false$/;"	k	section:Diff Options
+IgnoreChangesDueToTabExpansion	dot_config/private_komparerc.src.ini	/^IgnoreChangesDueToTabExpansion=false$/;"	k	section:Diff Options
+IgnoreChangesInCase	dot_config/private_komparerc.src.ini	/^IgnoreChangesInCase=false$/;"	k	section:Diff Options
+IgnoreEmptyLines	dot_config/private_komparerc.src.ini	/^IgnoreEmptyLines=false$/;"	k	section:Diff Options
+IgnoreRegExp	dot_config/private_komparerc.src.ini	/^IgnoreRegExp=false$/;"	k	section:Diff Options
+IgnoreRegExpText	dot_config/private_komparerc.src.ini	/^IgnoreRegExpText=$/;"	k	section:Diff Options
+IgnoreRegExpTextHistory	dot_config/private_komparerc.src.ini	/^IgnoreRegExpTextHistory=$/;"	k	section:Diff Options
+IgnoreWhiteSpace	dot_config/private_komparerc.src.ini	/^IgnoreWhiteSpace=false$/;"	k	section:Diff Options
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/chaotic-mirrorlist$/;"	k	section:chaotic-aur
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:core
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:extra
@@ -268,7 +292,11 @@ KDE	dot_config/private_kdeglobals.src.ini	/^[KDE]$/;"	s
 KDE Keyboard Layout Switcher	dot_config/private_kglobalshortcutsrc.src.ini	/^[KDE Keyboard Layout Switcher]$/;"	s
 KFileDialog Settings	dot_config/private_kdeglobals.src.ini	/^[KFileDialog Settings]$/;"	s
 Kill Window	dot_config/private_kglobalshortcutsrc.src.ini	/^Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window$/;"	k	section:kwin
+LargeFiles	dot_config/private_komparerc.src.ini	/^LargeFiles=true$/;"	k	section:Diff Options
+LastChosenDestinationListEntry	dot_config/private_komparerc.src.ini	/^LastChosenDestinationListEntry=\/home\/marley\/data\/games\/anno-1800-broken\/drive_c\/Games\/An/;"	k	section:Recent Compare Files
+LastChosenSourceListEntry	dot_config/private_komparerc.src.ini	/^LastChosenSourceListEntry=\/home\/marley\/data\/games\/anno-1800\/drive_c\/Games\/Anno 1800$/;"	k	section:Recent Compare Files
 LastUsedCustomAccentColor	dot_config/private_kdeglobals.src.ini	/^LastUsedCustomAccentColor=233,58,154$/;"	k	section:General
+LinesOfContext	dot_config/private_komparerc.src.ini	/^LinesOfContext=3$/;"	k	section:Diff Options
 LocalFileSigLevel	dot_config/pacman/pacman.conf	/^LocalFileSigLevel = Optional$/;"	k	section:options
 LocationCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^LocationCombo Completionmode=5$/;"	k	section:KFileDialog Settings
 Lock Session	dot_config/private_kglobalshortcutsrc.src.ini	/^Lock Session=Meta+L\\tScreensaver,Meta+L\\tScreensaver,Lock Session$/;"	k	section:ksmserver
@@ -277,6 +305,7 @@ Log Out Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Log
 LookAndFeelPackage	dot_config/private_kdeglobals.src.ini	/^LookAndFeelPackage=Vivid-Magna-Dark-Global-6$/;"	k	section:KDE
 Lower	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Window Raise\/Lower=none,,Toggle Window Raise\/Lower$/;"	k	section:kwin
 MaximumRemoteSize	dot_config/private_kdeglobals.src.ini	/^MaximumRemoteSize=0$/;"	k	section:PreviewSettings
+MenuBar	dot_config/private_komparerc.src.ini	/^MenuBar=Disabled$/;"	k	section:General Options
 Move Tablet to Next Output	dot_config/private_kglobalshortcutsrc.src.ini	/^Move Tablet to Next Output=none,none,Move the tablet to the next output$/;"	k	section:kwin
 MoveMouseToCenter	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center$/;"	k	section:kwin
 MoveMouseToFocus	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus$/;"	k	section:kwin
@@ -284,12 +313,15 @@ MoveZoomDown	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomDown=none,n
 MoveZoomLeft	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomLeft=none,none,Move Zoomed Area to Left$/;"	k	section:kwin
 MoveZoomRight	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomRight=none,none,Move Zoomed Area to Right$/;"	k	section:kwin
 MoveZoomUp	dot_config/private_kglobalshortcutsrc.src.ini	/^MoveZoomUp=none,none,Move Zoomed Area Upwards$/;"	k	section:kwin
+NewFiles	dot_config/private_komparerc.src.ini	/^NewFiles=true$/;"	k	section:Diff Options
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
 Options	dot_config/copyq/copyq.conf	/^[Options]$/;"	s
 Overview	dot_config/private_kglobalshortcutsrc.src.ini	/^Overview=Launch (B),Meta+W,Toggle Overview$/;"	k	section:kwin
 PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
 PathCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^PathCombo Completionmode=5$/;"	k	section:KFileDialog Settings
+Pattern	dot_config/private_komparerc.src.ini	/^Pattern=false$/;"	k	section:Exclude File Options
+PatternList	dot_config/private_komparerc.src.ini	/^PatternList=$/;"	k	section:Exclude File Options
 Plugins	dot_config/copyq/copyq.conf	/^[Plugins]$/;"	s
 PowerDown	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerDown=Power Down,Power Down,Power Down$/;"	k	section:org_kde_powerdevil
 PowerOff	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerOff=Power Off,Power Off,Power Off$/;"	k	section:org_kde_powerdevil
@@ -297,9 +329,14 @@ PreviewSettings	dot_config/private_kdeglobals.src.ini	/^[PreviewSettings]$/;"	s
 Quit	dot_config/private_kdeglobals.src.ini	/^Quit=Meta+W$/;"	k	section:Shortcuts
 Reboot	dot_config/private_kglobalshortcutsrc.src.ini	/^Reboot=none,,Reboot$/;"	k	section:ksmserver
 Reboot Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Reboot Without Confirmation=none,,Reboot Without Confirmation$/;"	k	section:ksmserver
+Recent Compare Files	dot_config/private_komparerc.src.ini	/^[Recent Compare Files]$/;"	s
+Recent Destinations	dot_config/private_komparerc.src.ini	/^Recent Destinations=file:\/\/\/home\/marley\/data\/games\/anno-1800-broken\/drive_c\/Games\/Anno/;"	k	section:Recent Compare Files
+Recent Sources	dot_config/private_komparerc.src.ini	/^Recent Sources=file:\/\/\/home\/marley\/data\/games\/anno-1800\/drive_c\/Games\/Anno 1800,file:\//;"	k	section:Recent Compare Files
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
+RemoveColor	dot_config/private_komparerc.src.ini	/^RemoveColor=190,237,190$/;"	k	section:View Options
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
+ScrollNoOfLines	dot_config/private_komparerc.src.ini	/^ScrollNoOfLines=3$/;"	k	section:View Options
 Setup Window Shortcut	dot_config/private_kglobalshortcutsrc.src.ini	/^Setup Window Shortcut=none,,Setup Window Shortcut$/;"	k	section:kwin
 Shortcuts	dot_config/copyq/copyq.conf	/^[Shortcuts]$/;"	s
 Shortcuts	dot_config/private_kdeglobals.src.ini	/^[Shortcuts]$/;"	s
@@ -310,6 +347,7 @@ Show Inline Previews	dot_config/private_kdeglobals.src.ini	/^Show Inline Preview
 Show Preview	dot_config/private_kdeglobals.src.ini	/^Show Preview=false$/;"	k	section:KFileDialog Settings
 Show Speedbar	dot_config/private_kdeglobals.src.ini	/^Show Speedbar=true$/;"	k	section:KFileDialog Settings
 Show hidden files	dot_config/private_kdeglobals.src.ini	/^Show hidden files=true$/;"	k	section:KFileDialog Settings
+ShowCFunctionChange	dot_config/private_komparerc.src.ini	/^ShowCFunctionChange=false$/;"	k	section:Diff Options
 Shut Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Shut Down=none,,Shut Down$/;"	k	section:ksmserver
 SigLevel	dot_config/pacman/pacman.conf	/^SigLevel    = Required DatabaseOptional$/;"	k	section:options
 Sleep	dot_config/private_kglobalshortcutsrc.src.ini	/^Sleep=Sleep,Sleep,Suspend$/;"	k	section:org_kde_powerdevil
@@ -319,6 +357,7 @@ Sort hidden files last	dot_config/private_kdeglobals.src.ini	/^Sort hidden files
 Sort reversed	dot_config/private_kdeglobals.src.ini	/^Sort reversed=false$/;"	k	section:KFileDialog Settings
 Speedbar Width	dot_config/private_kdeglobals.src.ini	/^Speedbar Width=152$/;"	k	section:KFileDialog Settings
 Startup	dot_config/openrazer/razer.conf	/^[Startup]$/;"	s
+State	dot_config/private_komparerc.src.ini	/^State=AAAA\/wAAAAD9AAAAAQAAAAIAAAeAAAAA0\/wBAAAAAfsAAAAUAE4AYQB2AGkAZwBhAHQAaQBvAG4BAAAAAAAAB4AA/;"	k	section:General Options
 Suspend Compositing	dot_config/private_kglobalshortcutsrc.src.ini	/^Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing$/;"	k	section:kwin
 Switch One Desktop Down	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch One Desktop Down=Meta+Ctrl+Down,Meta+Ctrl+Down,Switch One Desktop Down$/;"	k	section:kwin
 Switch One Desktop Up	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch One Desktop Up=Meta+Ctrl+Up,Meta+Ctrl+Up,Switch One Desktop Up$/;"	k	section:kwin
@@ -366,9 +405,11 @@ Switch to Screen Below	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to
 Switch to Screen to the Left	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Left=none,,Switch to Screen to the Left$/;"	k	section:kwin
 Switch to Screen to the Right	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Screen to the Right=none,,Switch to Screen to the Right$/;"	k	section:kwin
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
+TabToNumberOfSpaces	dot_config/private_komparerc.src.ini	/^TabToNumberOfSpaces=4$/;"	k	section:View Options
 Tabs	dot_config/copyq/copyq.conf	/^[Tabs]$/;"	s
 TerminalApplication	dot_config/private_kdeglobals.src.ini	/^TerminalApplication=wezterm start --cwd .$/;"	k	section:General
 TerminalService	dot_config/private_kdeglobals.src.ini	/^TerminalService=org.wezfurlong.wezterm.desktop$/;"	k	section:General
+TextFont	dot_config/private_komparerc.src.ini	/^TextFont=Noto Sans,10,-1,5,50,0,0,0,0,0$/;"	k	section:View Options
 Theme	dot_config/copyq/copyq.conf	/^[Theme]$/;"	s
 Theme	dot_config/private_kdeglobals.src.ini	/^Theme=BeautyDream$/;"	k	section:Icons
 Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
@@ -376,8 +417,10 @@ Toggle Keyboard Backlight	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle
 Toggle Night Color	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Night Color=none,none,Toggle Night Light$/;"	k	section:kwin
 Toggle Screen Reader On and Off	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off$/;"	k	section:kaccess
 Toggle Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Touchpad=Touchpad Toggle\\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\\tMeta+Ctrl+Zenkaku /;"	k	section:kcm_touchpad
+ToolBarsMovable	dot_config/private_komparerc.src.ini	/^ToolBarsMovable=Disabled$/;"	k	section:General Options
 Turn Off Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Turn Off Screen=none,none,Turn Off Screen$/;"	k	section:org_kde_powerdevil
 Used Keyboard Layout	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout$/;"	k	section:KDE Keyboard Layout Switcher
+View Options	dot_config/private_komparerc.src.ini	/^[View Options]$/;"	s
 View Style	dot_config/private_kdeglobals.src.ini	/^View Style=DetailTree$/;"	k	section:KFileDialog Settings
 WM	dot_config/private_kdeglobals.src.ini	/^[WM]$/;"	s
 Walk Through Windows	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows$/;"	k	section:kwin
