@@ -6,7 +6,7 @@ tags*
 .config/fish/functions/batt.fish
 {{- end }}
 
-{{- if not .isServer }}
+{{- if .isServer }}
 .config/composer
 .config/firefox
 .config/fish/conf.d/30-gtk.fish
