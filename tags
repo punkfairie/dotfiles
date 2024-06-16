@@ -96,6 +96,7 @@
 #titlebar #TabsToolbar	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar {$/;"	i
 #titlebar #TabsToolbar .titlebar-spacer	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer {$/;"	c
 #titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"]	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {$/;"	c
+$Version	dot_config/private_dolphinrc.src.ini	/^[$Version]$/;"	s
 $Version	dot_config/private_kdeglobals.src.ini	/^[$Version]$/;"	s
 0	dot_config/transmission/settings.json	/^        "canberra-gtk-play",$/;"	s	array:torrent-complete-sound-command
 1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
@@ -378,6 +379,7 @@ GUIEffects	dot_config/Trolltech.conf	/^GUIEffects=none$/;"	k	section:qt
 General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setup
 General	dot_config/copyq/copyq.conf	/^[General]$/;"	s
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
+General	dot_config/private_dolphinrc.src.ini	/^[General]$/;"	s
 General	dot_config/private_kdeglobals.src.ini	/^[General]$/;"	s
 General Options	dot_config/private_komparerc.src.ini	/^[General Options]$/;"	s
 Grid View	dot_config/private_kglobalshortcutsrc.src.ini	/^Grid View=Meta+G,Meta+G,Toggle Grid View$/;"	k	section:kwin
@@ -413,6 +415,7 @@ IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	
 ItemGeometriesHorizontal	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ItemGeometriesHorizontal=$/;"	k	section:Containments
 KDE	dot_config/private_kdeglobals.src.ini	/^[KDE]$/;"	s
 KDE Keyboard Layout Switcher	dot_config/private_kglobalshortcutsrc.src.ini	/^[KDE Keyboard Layout Switcher]$/;"	s
+KFileDialog Settings	dot_config/private_dolphinrc.src.ini	/^[KFileDialog Settings]$/;"	s
 KFileDialog Settings	dot_config/private_kdeglobals.src.ini	/^[KFileDialog Settings]$/;"	s
 Kill Window	dot_config/private_kglobalshortcutsrc.src.ini	/^Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window$/;"	k	section:kwin
 LargeFiles	dot_config/private_komparerc.src.ini	/^LargeFiles=true$/;"	k	section:Diff Options
@@ -428,6 +431,7 @@ Log Out	dot_config/private_kglobalshortcutsrc.src.ini	/^Log Out=Ctrl+Alt+Del,Ctr
 Log Out Without Confirmation	dot_config/private_kglobalshortcutsrc.src.ini	/^Log Out Without Confirmation=none,,Log Out Without Confirmation$/;"	k	section:ksmserver
 LookAndFeelPackage	dot_config/private_kdeglobals.src.ini	/^LookAndFeelPackage=Vivid-Magna-Dark-Global-6$/;"	k	section:KDE
 Lower	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Window Raise\/Lower=none,,Toggle Window Raise\/Lower$/;"	k	section:kwin
+MainWindow	dot_config/private_dolphinrc.src.ini	/^[MainWindow]$/;"	s
 MaximumRemoteSize	dot_config/private_kdeglobals.src.ini	/^MaximumRemoteSize=0$/;"	k	section:PreviewSettings
 MenuBar	dot_config/private_komparerc.src.ini	/^MenuBar=Disabled$/;"	k	section:General Options
 Move Tablet to Next Output	dot_config/private_kglobalshortcutsrc.src.ini	/^Move Tablet to Next Output=none,none,Move the tablet to the next output$/;"	k	section:kwin
@@ -451,7 +455,9 @@ PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
 PathCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^PathCombo Completionmode=5$/;"	k	section:KFileDialog Settings
 Pattern	dot_config/private_komparerc.src.ini	/^Pattern=false$/;"	k	section:Exclude File Options
 PatternList	dot_config/private_komparerc.src.ini	/^PatternList=$/;"	k	section:Exclude File Options
+Places Icons Static Size	dot_config/private_dolphinrc.src.ini	/^Places Icons Static Size=22$/;"	k	section:KFileDialog Settings
 Plugins	dot_config/copyq/copyq.conf	/^[Plugins]$/;"	s
+Plugins	dot_config/private_dolphinrc.src.ini	/^Plugins=mobithumbnail,ffmpegthumbs,imagethumbnail,directorythumbnail,ebookthumbnail,comicbookthu/;"	k	section:PreviewSettings
 Plugins	dot_config/private_kwinrc.src.ini	/^[Plugins]$/;"	s
 PowerDown	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerDown=Power Down,Power Down,Power Down$/;"	k	section:org_kde_powerdevil
 PowerOff	dot_config/private_kglobalshortcutsrc.src.ini	/^PowerOff=Power Off,Power Off,Power Off$/;"	k	section:org_kde_powerdevil
@@ -465,6 +471,7 @@ PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini
 PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=70$/;"	k	section:Containments
 PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=75$/;"	k	section:Containments
 PreloadWeight	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^PreloadWeight=80$/;"	k	section:Containments
+PreviewSettings	dot_config/private_dolphinrc.src.ini	/^[PreviewSettings]$/;"	s
 PreviewSettings	dot_config/private_kdeglobals.src.ini	/^[PreviewSettings]$/;"	s
 Quit	dot_config/private_kdeglobals.src.ini	/^Quit=Meta+W$/;"	k	section:Shortcuts
 Reboot	dot_config/private_kglobalshortcutsrc.src.ini	/^Reboot=none,,Reboot$/;"	k	section:ksmserver
@@ -568,6 +575,7 @@ Toggle Keyboard Backlight	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle
 Toggle Night Color	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Night Color=none,none,Toggle Night Light$/;"	k	section:kwin
 Toggle Screen Reader On and Off	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off$/;"	k	section:kaccess
 Toggle Touchpad	dot_config/private_kglobalshortcutsrc.src.ini	/^Toggle Touchpad=Touchpad Toggle\\tMeta+Ctrl+Zenkaku Hankaku,Touchpad Toggle\\tMeta+Ctrl+Zenkaku /;"	k	section:kcm_touchpad
+ToolBarsMovable	dot_config/private_dolphinrc.src.ini	/^ToolBarsMovable=Disabled$/;"	k	section:MainWindow
 ToolBarsMovable	dot_config/private_komparerc.src.ini	/^ToolBarsMovable=Disabled$/;"	k	section:General Options
 ToolBoxButtonState	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonState=topcenter$/;"	k	section:Containments
 ToolBoxButtonX	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonX=264$/;"	k	section:Containments
@@ -576,8 +584,10 @@ ToolBoxButtonY	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.in
 ToolBoxButtonY	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ToolBoxButtonY=41$/;"	k	section:Containments
 Turn Off Screen	dot_config/private_kglobalshortcutsrc.src.ini	/^Turn Off Screen=none,none,Turn Off Screen$/;"	k	section:org_kde_powerdevil
 Used Keyboard Layout	dot_config/private_kglobalshortcutsrc.src.ini	/^Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout$/;"	k	section:KDE Keyboard Layout Switcher
+Version	dot_config/private_dolphinrc.src.ini	/^Version=202$/;"	k	section:General
 View Options	dot_config/private_komparerc.src.ini	/^[View Options]$/;"	s
 View Style	dot_config/private_kdeglobals.src.ini	/^View Style=DetailTree$/;"	k	section:KFileDialog Settings
+ViewPropsTimestamp	dot_config/private_dolphinrc.src.ini	/^ViewPropsTimestamp=2024,6,5,17,30,20.727$/;"	k	section:General
 WM	dot_config/private_kdeglobals.src.ini	/^[WM]$/;"	s
 Walk Through Windows	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows$/;"	k	section:kwin
 Walk Through Windows Alternative	dot_config/private_kglobalshortcutsrc.src.ini	/^Walk Through Windows Alternative=none,,Walk Through Windows Alternative$/;"	k	section:kwin
@@ -1444,6 +1454,7 @@ repeat_action	dot_config/private_kglobalshortcutsrc.src.ini	/^repeat_action=none
 requestsplitn	dot_config/yay/config.json	/^	"requestsplitn": 150,$/;"	n
 require	dot_config/composer/composer.json	/^    "require": {$/;"	o
 reset	dot_config/awesome/lib/animation/tween.lua	/^function Tween:reset()$/;"	f	unknown:Tween
+resize	dot_config/private_dolphinrc.src.ini	/^Places Icons Auto-resize=false$/;"	k	section:KFileDialog Settings
 restore_geometry	dot_config/copyq/copyq.conf	/^restore_geometry=true$/;"	k	section:Options
 restore_persistence	dot_config/openrazer/razer.conf	/^restore_persistence = False$/;"	k	section:Startup
 reverse_selected_items	dot_config/copyq/copyq.conf	/^reverse_selected_items=ctrl+shift+r$/;"	k	section:Shortcuts
@@ -1655,6 +1666,7 @@ update	dot_config/awesome/ui/info-panel/weather/init.lua	/^	widget.update = func
 update	dot_config/awesome/ui/popups/notifications/init.lua	/^		update = function(_, pos)$/;"	f
 update_callback	dot_config/awesome/ui/top-panel/widgets/taglist.lua	/^			update_callback = function(self, _, index, _)$/;"	f
 update_clipboard_owner_delay_ms	dot_config/copyq/copyq.conf	/^update_clipboard_owner_delay_ms=-1$/;"	k	section:Options
+update_info	dot_config/private_dolphinrc.src.ini	/^update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.u/;"	k	section:$Version
 update_info	dot_config/private_kdeglobals.src.ini	/^update_info=filepicker.upd:filepicker-remove-old-previews-entry$/;"	k	section:$Version
 update_microphone	dot_config/awesome/ui/notif-panel/widgets/mic_slider.lua	/^local update_microphone = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/notif-panel/widgets/vol_slider.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
