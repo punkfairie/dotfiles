@@ -96,45 +96,194 @@
 #titlebar #TabsToolbar	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar {$/;"	i
 #titlebar #TabsToolbar .titlebar-spacer	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer {$/;"	c
 #titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"]	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {$/;"	c
+$Version	dot_config/private_kdeglobals.src.ini	/^[$Version]$/;"	s
 0	dot_config/transmission/settings.json	/^        "canberra-gtk-play",$/;"	s	array:torrent-complete-sound-command
 1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
 2	dot_config/transmission/settings.json	/^        "complete-download",$/;"	s	array:torrent-complete-sound-command
 3	dot_config/transmission/settings.json	/^        "-d",$/;"	s	array:torrent-complete-sound-command
 4	dot_config/transmission/settings.json	/^        "transmission torrent downloaded"$/;"	s	array:torrent-complete-sound-command
+Allow Expansion	dot_config/private_kdeglobals.src.ini	/^Allow Expansion=false$/;"	k	section:KFileDialog Settings
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
 Architecture	dot_config/pacman/pacman.conf	/^Architecture = auto$/;"	k	section:options
+Automatically select filename extension	dot_config/private_kdeglobals.src.ini	/^Automatically select filename extension=true$/;"	k	section:KFileDialog Settings
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=24, 25, 38$/;"	k	section:Colors:Complementary
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=24, 25, 38$/;"	k	section:Colors:Header
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=24, 25, 38$/;"	k	section:Colors:Window
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=240,198,198$/;"	k	section:Colors:Button
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=240,198,198$/;"	k	section:Colors:Selection
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=27,25,35$/;"	k	section:Colors:Tooltip
+BackgroundAlternate	dot_config/private_kdeglobals.src.ini	/^BackgroundAlternate=30, 32, 48$/;"	k	section:Colors:View
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=240,198,198$/;"	k	section:Colors:Selection
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=30, 32, 48$/;"	k	section:Colors:Complementary
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=30, 32, 48$/;"	k	section:Colors:Header
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=30, 32, 48$/;"	k	section:Colors:Window
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=36, 39, 58$/;"	k	section:Colors:Tooltip
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=36, 39, 58$/;"	k	section:Colors:View
+BackgroundNormal	dot_config/private_kdeglobals.src.ini	/^BackgroundNormal=54, 58, 79$/;"	k	section:Colors:Button
+Breadcrumb Navigation	dot_config/private_kdeglobals.src.ini	/^Breadcrumb Navigation=true$/;"	k	section:KFileDialog Settings
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
+ChangeSelectionColor	dot_config/private_kdeglobals.src.ini	/^ChangeSelectionColor=$/;"	k	section:ColorEffects:Disabled
+ChangeSelectionColor	dot_config/private_kdeglobals.src.ini	/^ChangeSelectionColor=true$/;"	k	section:ColorEffects:Inactive
+Color	dot_config/private_kdeglobals.src.ini	/^Color=36, 39, 58$/;"	k	section:ColorEffects:Disabled
+Color	dot_config/private_kdeglobals.src.ini	/^Color=36, 39, 58$/;"	k	section:ColorEffects:Inactive
+ColorAmount	dot_config/private_kdeglobals.src.ini	/^ColorAmount=0.30000000000000004$/;"	k	section:ColorEffects:Disabled
+ColorAmount	dot_config/private_kdeglobals.src.ini	/^ColorAmount=0.5$/;"	k	section:ColorEffects:Inactive
+ColorEffect	dot_config/private_kdeglobals.src.ini	/^ColorEffect=2$/;"	k	section:ColorEffects:Disabled
+ColorEffect	dot_config/private_kdeglobals.src.ini	/^ColorEffect=3$/;"	k	section:ColorEffects:Inactive
+ColorEffects:Disabled	dot_config/private_kdeglobals.src.ini	/^[ColorEffects:Disabled]$/;"	s
+ColorEffects:Inactive	dot_config/private_kdeglobals.src.ini	/^[ColorEffects:Inactive]$/;"	s
+ColorSchemeHash	dot_config/private_kdeglobals.src.ini	/^ColorSchemeHash=34c400844d443e1f934671ac8959626281339589$/;"	k	section:General
+Colors:Button	dot_config/private_kdeglobals.src.ini	/^[Colors:Button]$/;"	s
+Colors:Complementary	dot_config/private_kdeglobals.src.ini	/^[Colors:Complementary]$/;"	s
+Colors:Header	dot_config/private_kdeglobals.src.ini	/^[Colors:Header]$/;"	s
+Colors:Selection	dot_config/private_kdeglobals.src.ini	/^[Colors:Selection]$/;"	s
+Colors:Tooltip	dot_config/private_kdeglobals.src.ini	/^[Colors:Tooltip]$/;"	s
+Colors:View	dot_config/private_kdeglobals.src.ini	/^[Colors:View]$/;"	s
+Colors:Window	dot_config/private_kdeglobals.src.ini	/^[Colors:Window]$/;"	s
+ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0$/;"	k	section:ColorEffects:Inactive
+ContrastAmount	dot_config/private_kdeglobals.src.ini	/^ContrastAmount=0.1$/;"	k	section:ColorEffects:Disabled
+ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Disabled
+ContrastEffect	dot_config/private_kdeglobals.src.ini	/^ContrastEffect=0$/;"	k	section:ColorEffects:Inactive
+Decoration position	dot_config/private_kdeglobals.src.ini	/^Decoration position=2$/;"	k	section:KFileDialog Settings
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Button
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Complementary
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Header
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Selection
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Tooltip
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:View
+DecorationFocus	dot_config/private_kdeglobals.src.ini	/^DecorationFocus=240,198,198$/;"	k	section:Colors:Window
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Button
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Complementary
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Header
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Selection
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Tooltip
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:View
+DecorationHover	dot_config/private_kdeglobals.src.ini	/^DecorationHover=54, 58, 79$/;"	k	section:Colors:Window
+DirSelect Dialog	dot_config/private_kdeglobals.src.ini	/^[DirSelect Dialog]$/;"	s
+DirSelectDialog Size	dot_config/private_kdeglobals.src.ini	/^DirSelectDialog Size=820,584$/;"	k	section:DirSelect Dialog
+Enable	dot_config/private_kdeglobals.src.ini	/^Enable=$/;"	k	section:ColorEffects:Disabled
+Enable	dot_config/private_kdeglobals.src.ini	/^Enable=true$/;"	k	section:ColorEffects:Inactive
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Button
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Complementary
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Header
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Selection
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Tooltip
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:View
+ForegroundActive	dot_config/private_kdeglobals.src.ini	/^ForegroundActive=245, 169, 127$/;"	k	section:Colors:Window
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=165, 173, 203$/;"	k	section:Colors:Button
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=165, 173, 203$/;"	k	section:Colors:Complementary
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=165, 173, 203$/;"	k	section:Colors:Header
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=165, 173, 203$/;"	k	section:Colors:Tooltip
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=165, 173, 203$/;"	k	section:Colors:View
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=165, 173, 203$/;"	k	section:Colors:Window
+ForegroundInactive	dot_config/private_kdeglobals.src.ini	/^ForegroundInactive=30, 32, 48$/;"	k	section:Colors:Selection
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:Button
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:Complementary
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:Header
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:Selection
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:Tooltip
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:View
+ForegroundLink	dot_config/private_kdeglobals.src.ini	/^ForegroundLink=240,198,198$/;"	k	section:Colors:Window
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:Button
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:Complementary
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:Header
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:Selection
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:Tooltip
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:View
+ForegroundNegative	dot_config/private_kdeglobals.src.ini	/^ForegroundNegative=237, 135, 150$/;"	k	section:Colors:Window
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:Button
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:Complementary
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:Header
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:Selection
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:Tooltip
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:View
+ForegroundNeutral	dot_config/private_kdeglobals.src.ini	/^ForegroundNeutral=238, 212, 159$/;"	k	section:Colors:Window
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=202, 211, 245$/;"	k	section:Colors:Button
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=202, 211, 245$/;"	k	section:Colors:Complementary
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=202, 211, 245$/;"	k	section:Colors:Header
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=202, 211, 245$/;"	k	section:Colors:Tooltip
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=202, 211, 245$/;"	k	section:Colors:View
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=202, 211, 245$/;"	k	section:Colors:Window
+ForegroundNormal	dot_config/private_kdeglobals.src.ini	/^ForegroundNormal=24, 25, 38$/;"	k	section:Colors:Selection
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:Button
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:Complementary
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:Header
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:Selection
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:Tooltip
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:View
+ForegroundPositive	dot_config/private_kdeglobals.src.ini	/^ForegroundPositive=166, 218, 149$/;"	k	section:Colors:Window
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Button
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Complementary
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Header
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Selection
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Tooltip
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:View
+ForegroundVisited	dot_config/private_kdeglobals.src.ini	/^ForegroundVisited=198, 160, 246$/;"	k	section:Colors:Window
 GPG makes me want to toss the computer out the window	README.md	/^### GPG makes me want to toss the computer out the window$/;"	S	section:mar does dotfiles""First-Time Setup
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
 GUIEffects	dot_config/Trolltech.conf	/^GUIEffects=none$/;"	k	section:qt
 General	README.md	/^### General$/;"	S	section:mar does dotfiles""First-Time Setup
 General	dot_config/copyq/copyq.conf	/^[General]$/;"	s
 General	dot_config/openrazer/razer.conf	/^[General]$/;"	s
+General	dot_config/private_kdeglobals.src.ini	/^[General]$/;"	s
 HoldPkg	dot_config/pacman/pacman.conf	/^HoldPkg     = pacman glibc$/;"	k	section:options
 HookDir	dot_config/pacman/pacman.conf	/^HookDir     = \/home\/marley\/.config\/pacman\/hooks\/$/;"	k	section:options
 IO2049F50104914	dot_config/openrazer/persistence.conf	/^[IO2049F50104914]$/;"	s
+Icons	dot_config/private_kdeglobals.src.ini	/^[Icons]$/;"	s
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/chaotic-mirrorlist$/;"	k	section:chaotic-aur
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:core
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:extra
 Include	dot_config/pacman/pacman.conf	/^Include = \/etc\/pacman.d\/mirrorlist$/;"	k	section:multilib
+IntensityAmount	dot_config/private_kdeglobals.src.ini	/^IntensityAmount=-1$/;"	k	section:ColorEffects:Disabled
+IntensityAmount	dot_config/private_kdeglobals.src.ini	/^IntensityAmount=0$/;"	k	section:ColorEffects:Inactive
+IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	section:ColorEffects:Disabled
+IntensityEffect	dot_config/private_kdeglobals.src.ini	/^IntensityEffect=0$/;"	k	section:ColorEffects:Inactive
+KDE	dot_config/private_kdeglobals.src.ini	/^[KDE]$/;"	s
+KFileDialog Settings	dot_config/private_kdeglobals.src.ini	/^[KFileDialog Settings]$/;"	s
+LastUsedCustomAccentColor	dot_config/private_kdeglobals.src.ini	/^LastUsedCustomAccentColor=233,58,154$/;"	k	section:General
 LocalFileSigLevel	dot_config/pacman/pacman.conf	/^LocalFileSigLevel = Optional$/;"	k	section:options
+LocationCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^LocationCombo Completionmode=5$/;"	k	section:KFileDialog Settings
+LookAndFeelPackage	dot_config/private_kdeglobals.src.ini	/^LookAndFeelPackage=Vivid-Magna-Dark-Global-6$/;"	k	section:KDE
+MaximumRemoteSize	dot_config/private_kdeglobals.src.ini	/^MaximumRemoteSize=0$/;"	k	section:PreviewSettings
 Notif_center_remove_notif	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_remove_notif = function(box)$/;"	f
 Notif_center_reset_notifs_container	dot_config/awesome/ui/notif-panel/init.lua	/^Notif_center_reset_notifs_container = function()$/;"	f
 Options	dot_config/copyq/copyq.conf	/^[Options]$/;"	s
 PM2038H11502057	dot_config/openrazer/persistence.conf	/^[PM2038H11502057]$/;"	s
+PathCombo Completionmode	dot_config/private_kdeglobals.src.ini	/^PathCombo Completionmode=5$/;"	k	section:KFileDialog Settings
 Plugins	dot_config/copyq/copyq.conf	/^[Plugins]$/;"	s
+PreviewSettings	dot_config/private_kdeglobals.src.ini	/^[PreviewSettings]$/;"	s
+Quit	dot_config/private_kdeglobals.src.ini	/^Quit=Meta+W$/;"	k	section:Shortcuts
 Remember	dot_config/awesome/lib/savefloats.lua	/^function Remember(c)$/;"	f
 Restore	dot_config/awesome/lib/savefloats.lua	/^function Restore(c)$/;"	f
 SDDM	README.md	/^### SDDM$/;"	S	section:mar does dotfiles""Themes
 Shortcuts	dot_config/copyq/copyq.conf	/^[Shortcuts]$/;"	s
+Shortcuts	dot_config/private_kdeglobals.src.ini	/^[Shortcuts]$/;"	s
+Show Bookmarks	dot_config/private_kdeglobals.src.ini	/^Show Bookmarks=false$/;"	k	section:KFileDialog Settings
+Show Full Path	dot_config/private_kdeglobals.src.ini	/^Show Full Path=false$/;"	k	section:KFileDialog Settings
+Show Inline Previews	dot_config/private_kdeglobals.src.ini	/^Show Inline Previews=true$/;"	k	section:KFileDialog Settings
+Show Preview	dot_config/private_kdeglobals.src.ini	/^Show Preview=false$/;"	k	section:KFileDialog Settings
+Show Speedbar	dot_config/private_kdeglobals.src.ini	/^Show Speedbar=true$/;"	k	section:KFileDialog Settings
+Show hidden files	dot_config/private_kdeglobals.src.ini	/^Show hidden files=true$/;"	k	section:KFileDialog Settings
 SigLevel	dot_config/pacman/pacman.conf	/^SigLevel    = Required DatabaseOptional$/;"	k	section:options
+Sort by	dot_config/private_kdeglobals.src.ini	/^Sort by=Name$/;"	k	section:KFileDialog Settings
+Sort directories first	dot_config/private_kdeglobals.src.ini	/^Sort directories first=true$/;"	k	section:KFileDialog Settings
+Sort hidden files last	dot_config/private_kdeglobals.src.ini	/^Sort hidden files last=false$/;"	k	section:KFileDialog Settings
+Sort reversed	dot_config/private_kdeglobals.src.ini	/^Sort reversed=false$/;"	k	section:KFileDialog Settings
+Speedbar Width	dot_config/private_kdeglobals.src.ini	/^Speedbar Width=152$/;"	k	section:KFileDialog Settings
 Startup	dot_config/openrazer/razer.conf	/^[Startup]$/;"	s
 TTY	README.md	/^### TTY$/;"	S	section:mar does dotfiles""Themes
 Tabs	dot_config/copyq/copyq.conf	/^[Tabs]$/;"	s
+TerminalApplication	dot_config/private_kdeglobals.src.ini	/^TerminalApplication=wezterm start --cwd .$/;"	k	section:General
+TerminalService	dot_config/private_kdeglobals.src.ini	/^TerminalService=org.wezfurlong.wezterm.desktop$/;"	k	section:General
 Theme	dot_config/copyq/copyq.conf	/^[Theme]$/;"	s
+Theme	dot_config/private_kdeglobals.src.ini	/^Theme=BeautyDream$/;"	k	section:Icons
 Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
+View Style	dot_config/private_kdeglobals.src.ini	/^View Style=DetailTree$/;"	k	section:KFileDialog Settings
+WM	dot_config/private_kdeglobals.src.ini	/^[WM]$/;"	s
+XftHintStyle	dot_config/private_kdeglobals.src.ini	/^XftHintStyle=hintslight$/;"	k	section:General
+XftSubPixel	dot_config/private_kdeglobals.src.ini	/^XftSubPixel=rgb$/;"	k	section:General
 ["<C-CR>"]	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^        ["<C-CR>"] = function(fallback)$/;"	f
 ["<S-Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
 ["<Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
@@ -147,8 +296,12 @@ activate_item_with_single_click	dot_config/copyq/copyq.conf	/^activate_item_with
 activate_pastes	dot_config/copyq/copyq.conf	/^activate_pastes=true$/;"	k	section:Options
 active	dot_config/Trolltech.conf	/^Palette\\active=#cad3f5, #363a4f, #3e4263, #31344e, #0f1017, #1a1c29, #cad3f5, #ffffff, #cad3f5,/;"	k	section:qt
 activeBackground	dot_config/Trolltech.conf	/^KWinPalette\\activeBackground=#24273a$/;"	k	section:qt
+activeBackground	dot_config/private_kdeglobals.src.ini	/^activeBackground=36,39,58$/;"	k	section:WM
 activeBlend	dot_config/Trolltech.conf	/^KWinPalette\\activeBlend=#cad3f5$/;"	k	section:qt
+activeBlend	dot_config/private_kdeglobals.src.ini	/^activeBlend=202,211,245$/;"	k	section:WM
+activeFont	dot_config/private_kdeglobals.src.ini	/^activeFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:WM
 activeForeground	dot_config/Trolltech.conf	/^KWinPalette\\activeForeground=#cad3f5$/;"	k	section:qt
+activeForeground	dot_config/private_kdeglobals.src.ini	/^activeForeground=202,211,245$/;"	k	section:WM
 activeTitleBtnBg	dot_config/Trolltech.conf	/^KWinPalette\\activeTitleBtnBg=#1e2030$/;"	k	section:qt
 add_hover_cursor	dot_config/awesome/helpers/ui.lua	/^function ui.add_hover_cursor(w, hover_cursor)$/;"	f	unknown:ui
 alsamixer	dot_config/mopidy/mopidy.conf	/^[alsamixer]$/;"	s
@@ -409,10 +562,12 @@ find_fg	dot_config/copyq/copyq.conf	/^find_fg=#fff$/;"	k	section:Theme
 find_font	dot_config/copyq/copyq.conf	/^find_font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,1,0,0,0,Regular"$/;"	k	section:Theme
 find_items	dot_config/copyq/copyq.conf	/^find_items=f3$/;"	k	section:Shortcuts
 fire	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:fire(...)$/;"	f	unknown:ret
+fixed	dot_config/private_kdeglobals.src.ini	/^fixed=Fairiesevka Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 focused	dot_config/picom.conf	/^mark-ovredir-focused = false$/;"	k
 focused	dot_config/picom.conf	/^mark-wmwin-focused = true;$/;"	k
 font	dot_config/Trolltech.conf	/^font="Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"$/;"	k	section:qt
 font	dot_config/copyq/copyq.conf	/^font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,0,0,0,0,Regular"$/;"	k	section:Theme
+font	dot_config/private_kdeglobals.src.ini	/^font=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 font_antialiasing	dot_config/copyq/copyq.conf	/^font_antialiasing=true$/;"	k	section:Theme
 fore_back	dot_config/hyfetch.json	/^        "fore_back": null$/;"	z	object:color_align
 forget	dot_config/awesome/lib/savefloats.lua	/^local function forget(c)$/;"	f
@@ -498,8 +653,11 @@ inQuint	dot_config/awesome/lib/animation/tween.lua	/^local function inQuint(t, b
 inSine	dot_config/awesome/lib/animation/tween.lua	/^local function inSine(t, b, c, d)$/;"	f
 inactive	dot_config/Trolltech.conf	/^Palette\\inactive=#7f84a2, #26293e, #414769, #353955, #12131c, #1f2232, #7f84a2, #ffffff, #7f84a/;"	k	section:qt
 inactiveBackground	dot_config/Trolltech.conf	/^KWinPalette\\inactiveBackground=#181926$/;"	k	section:qt
+inactiveBackground	dot_config/private_kdeglobals.src.ini	/^inactiveBackground=24,25,38$/;"	k	section:WM
 inactiveBlend	dot_config/Trolltech.conf	/^KWinPalette\\inactiveBlend=#a5adcb$/;"	k	section:qt
+inactiveBlend	dot_config/private_kdeglobals.src.ini	/^inactiveBlend=165,173,203$/;"	k	section:WM
 inactiveForeground	dot_config/Trolltech.conf	/^KWinPalette\\inactiveForeground=#a5adcb$/;"	k	section:qt
+inactiveForeground	dot_config/private_kdeglobals.src.ini	/^inactiveForeground=165,173,203$/;"	k	section:WM
 inactiveFrame	dot_config/Trolltech.conf	/^KWinPalette\\inactiveFrame=#24273a$/;"	k	section:qt
 inactiveTitleBtnBg	dot_config/Trolltech.conf	/^KWinPalette\\inactiveTitleBtnBg=#24273a$/;"	k	section:qt
 incomplete-dir	dot_config/transmission/settings.json	/^    "incomplete-dir": "\/home\/marley\/Downloads",$/;"	s
@@ -585,6 +743,7 @@ memory_display	dot_config/neofetch/config.conf	/^memory_display="off"$/;"	k
 memory_percent	dot_config/neofetch/config.conf	/^memory_percent="on"$/;"	k
 memory_unit	dot_config/neofetch/config.conf	/^memory_unit="gib"$/;"	k
 menu	dot_config/copyq/copyq.conf	/^item-menu=shift+f10$/;"	k	section:Shortcuts
+menuFont	dot_config/private_kdeglobals.src.ini	/^menuFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 menu_bar_css	dot_config/copyq/copyq.conf	/^menu_bar_css="\\n    ;background: ${bg}\\n    ;color: ${fg}"$/;"	k	section:Theme
 menu_bar_disabled_css	dot_config/copyq/copyq.conf	/^menu_bar_disabled_css="\\n    ;color: ${bg - #666}"$/;"	k	section:Theme
 menu_bar_selected_css	dot_config/copyq/copyq.conf	/^menu_bar_selected_css="\\n    ;background: ${sel_bg}\\n    ;color: ${sel_fg}"$/;"	k	section:Theme
@@ -866,6 +1025,7 @@ show_tab_item_count	dot_config/copyq/copyq.conf	/^show_tab_item_count=false$/;"	
 singlelineresults	dot_config/yay/config.json	/^	"singlelineresults": false,$/;"	b
 size	dot_config/copyq/copyq.conf	/^size=1$/;"	k	section:Tabs
 size	dot_config/picom.conf	/^blur-size = 30$/;"	k
+smallestReadableFont	dot_config/private_kdeglobals.src.ini	/^smallestReadableFont=Noto Sans,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 sodipodi	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
 sodipodi	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
 sodipodi	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
@@ -938,6 +1098,7 @@ toggle	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.toggle = function()$/
 toggle	dot_config/awesome/ui/notif-panel/init.lua	/^action.toggle = function()$/;"	f	unknown:action
 toggle	dot_config/awesome/ui/top-panel/widgets/systray.lua	/^arrow.toggle = function()$/;"	f	unknown:arrow
 toggle_clipboard_storing	dot_config/copyq/copyq.conf	/^toggle_clipboard_storing=ctrl+shift+x$/;"	k	section:Shortcuts
+toolBarFont	dot_config/private_kdeglobals.src.ini	/^toolBarFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1$/;"	k	section:General
 tool_bar_css	dot_config/copyq/copyq.conf	/^tool_bar_css="\\n    ;color: ${fg}\\n    ;background-color: ${bg}\\n    ;border: 0"$/;"	k	section:Theme
 tool_button_css	dot_config/copyq/copyq.conf	/^tool_button_css="\\n    ;color: ${fg}\\n    ;background: ${bg}\\n    ;border: 0\\n    ;border-ra/;"	k	section:Theme
 tool_button_pressed_css	dot_config/copyq/copyq.conf	/^tool_button_pressed_css="\\n    ;background: ${sel_bg}"$/;"	k	section:Theme
@@ -971,6 +1132,7 @@ update	dot_config/awesome/ui/info-panel/weather/init.lua	/^	widget.update = func
 update	dot_config/awesome/ui/popups/notifications/init.lua	/^		update = function(_, pos)$/;"	f
 update_callback	dot_config/awesome/ui/top-panel/widgets/taglist.lua	/^			update_callback = function(self, _, index, _)$/;"	f
 update_clipboard_owner_delay_ms	dot_config/copyq/copyq.conf	/^update_clipboard_owner_delay_ms=-1$/;"	k	section:Options
+update_info	dot_config/private_kdeglobals.src.ini	/^update_info=filepicker.upd:filepicker-remove-old-previews-entry$/;"	k	section:$Version
 update_microphone	dot_config/awesome/ui/notif-panel/widgets/mic_slider.lua	/^local update_microphone = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/notif-panel/widgets/vol_slider.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/popups/volume/init.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
