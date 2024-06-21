@@ -98,15 +98,10 @@
 #titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"]	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {$/;"	c
 $Version	dot_config/private_dolphinrc.src.ini	/^[$Version]$/;"	s
 $Version	dot_config/private_kdeglobals.src.ini	/^[$Version]$/;"	s
-0	dot_config/transmission/settings.json	/^        "canberra-gtk-play",$/;"	s	array:torrent-complete-sound-command
-1	dot_config/transmission/settings.json	/^        "-i",$/;"	s	array:torrent-complete-sound-command
 1680x1050	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ItemGeometries-1680x1050=$/;"	k	section:Containments
 1920x1200	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^ItemGeometries-1920x1200=$/;"	k	section:Containments
-2	dot_config/transmission/settings.json	/^        "complete-download",$/;"	s	array:torrent-complete-sound-command
 2 screens	dot_config/private_komparerc.src.ini	/^2 screens: Window-Maximized=true$/;"	k	section:General Options
-3	dot_config/transmission/settings.json	/^        "-d",$/;"	s	array:torrent-complete-sound-command
 34950b41293c	dot_config/private_kglobalshortcutsrc.src.ini	/^switch-to-activity-93518f0d-148e-42b9-acd8-34950b41293c=none,none,Switch to activity "Default"$/;"	k	section:ActivityManager
-4	dot_config/transmission/settings.json	/^        "transmission torrent downloaded"$/;"	s	array:torrent-complete-sound-command
 ActionPlugins	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[ActionPlugins][0]$/;"	s
 ActionPlugins	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^[ActionPlugins][1]$/;"	s
 Activate Window Demanding Attention	dot_config/private_kglobalshortcutsrc.src.ini	/^Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention$/;"	k	section:kwin
@@ -725,27 +720,16 @@ activityId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^
 activityId	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^activityId=93518f0d-148e-42b9-acd8-34950b41293c$/;"	k	section:Containments
 add_hover_cursor	dot_config/awesome/helpers/ui.lua	/^function ui.add_hover_cursor(w, hover_cursor)$/;"	f	unknown:ui
 alsamixer	dot_config/mopidy/mopidy.conf	/^[alsamixer]$/;"	s
-alt-speed-down	dot_config/transmission/settings.json	/^    "alt-speed-down": 50,$/;"	n
-alt-speed-enabled	dot_config/transmission/settings.json	/^    "alt-speed-enabled": false,$/;"	b
-alt-speed-time-begin	dot_config/transmission/settings.json	/^    "alt-speed-time-begin": 540,$/;"	n
-alt-speed-time-day	dot_config/transmission/settings.json	/^    "alt-speed-time-day": 127,$/;"	n
-alt-speed-time-enabled	dot_config/transmission/settings.json	/^    "alt-speed-time-enabled": false,$/;"	b
-alt-speed-time-end	dot_config/transmission/settings.json	/^    "alt-speed-time-end": 1020,$/;"	n
-alt-speed-up	dot_config/transmission/settings.json	/^    "alt-speed-up": 50,$/;"	n
 alt_bg	dot_config/copyq/copyq.conf	/^alt_bg=bg-#101a1a$/;"	k	section:Theme
 alt_item_css	dot_config/copyq/copyq.conf	/^alt_item_css="\\n    ;border: 0px solid transparent\\n    ;border-radius: 5px\\n    "$/;"	k	section:Theme
 always_on_top	dot_config/copyq/copyq.conf	/^always_on_top=false$/;"	k	section:Options
 animations	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-enable-animations=true$/;"	k	section:Settings
 animations	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-enable-animations=true$/;"	k	section:Settings
 animations	dot_config/picom.conf	/^animations: false;$/;"	k
-announce-ip	dot_config/transmission/settings.json	/^    "announce-ip": "",$/;"	s
-announce-ip-enabled	dot_config/transmission/settings.json	/^    "announce-ip-enabled": false,$/;"	b
 answerclean	dot_config/yay/config.json	/^	"answerclean": "None",$/;"	s
 answerdiff	dot_config/yay/config.json	/^	"answerdiff": "Installed",$/;"	s
 answeredit	dot_config/yay/config.json	/^	"answeredit": "",$/;"	s
 answerupgrade	dot_config/yay/config.json	/^	"answerupgrade": "",$/;"	s
-anti-brute-force-enabled	dot_config/transmission/settings.json	/^    "anti-brute-force-enabled": false,$/;"	b
-anti-brute-force-threshold	dot_config/transmission/settings.json	/^    "anti-brute-force-threshold": 100,$/;"	n
 args	dot_config/hyfetch.json	/^    "args": null,$/;"	z
 ascii_bold	dot_config/neofetch/config.conf	/^ascii_bold="on"$/;"	k
 ascii_colors	dot_config/neofetch/config.conf	/^ascii_colors=(distro)$/;"	k
@@ -778,21 +762,15 @@ battery_notifier	dot_config/openrazer/razer.conf	/^battery_notifier = True$/;"	k
 battery_notifier_freq	dot_config/openrazer/razer.conf	/^battery_notifier_freq = 600$/;"	k	section:Startup
 battery_notifier_percent	dot_config/openrazer/razer.conf	/^battery_notifier_percent = 33$/;"	k	section:Startup
 bg	dot_config/copyq/copyq.conf	/^bg=#ffffff$/;"	k	section:Theme
-bind-address-ipv4	dot_config/transmission/settings.json	/^    "bind-address-ipv4": "0.0.0.0",$/;"	s
-bind-address-ipv6	dot_config/transmission/settings.json	/^    "bind-address-ipv6": "::",$/;"	s
 block_height	dot_config/neofetch/config.conf	/^block_height=1$/;"	k
 block_range	dot_config/neofetch/config.conf	/^block_range=(0 15)$/;"	k
 block_width	dot_config/neofetch/config.conf	/^block_width=3$/;"	k
-blocklist-enabled	dot_config/transmission/settings.json	/^    "blocklist-enabled": false,$/;"	b
-blocklist-updates-enabled	dot_config/transmission/settings.json	/^    "blocklist-updates-enabled": true,$/;"	b
-blocklist-url	dot_config/transmission/settings.json	/^    "blocklist-url": "http:\/\/www.example.com\/blocklist",$/;"	s
 blurEnabled	dot_config/private_kwinrc.src.ini	/^blurEnabled=true$/;"	k	section:Plugins
 bold	dot_config/neofetch/config.conf	/^bold="on"$/;"	k
 borders	dot_config/picom.conf	/^round-borders = 1;$/;"	k
 bottomup	dot_config/yay/config.json	/^	"bottomup": true,$/;"	b
 box_widget	dot_config/awesome/ui/info-panel/init.lua	/^local function box_widget(widgets, _width, _height)$/;"	f
 buildDir	dot_config/yay/config.json	/^	"buildDir": "\/home\/marley\/.cache\/yay",$/;"	s
-cache-size-mb	dot_config/transmission/settings.json	/^    "cache-size-mb": 4,$/;"	n
 calculatePAS	dot_config/awesome/lib/animation/tween.lua	/^local function calculatePAS(p, a, c, d)$/;"	f
 callback	dot_config/awesome/main/menu.lua	/^	callback = function()$/;"	f
 callback	dot_config/awesome/signals/cpu.lua	/^	callback = function()$/;"	f
@@ -831,7 +809,6 @@ colors	dot_config/neofetch/config.conf	/^colors=(distro)$/;"	k
 combinedupgrade	dot_config/yay/config.json	/^	"combinedupgrade": true,$/;"	b
 command_history_size	dot_config/copyq/copyq.conf	/^command_history_size=100$/;"	k	section:Options
 commands	dot_config/copyq/copyq.conf	/^commands=f6$/;"	k	section:Shortcuts
-compact-view	dot_config/transmission/settings.json	/^    "compact-view": false,$/;"	b
 completionrefreshtime	dot_config/yay/config.json	/^	"completionrefreshtime": 7,$/;"	n
 cond	dot_config/nvim/lua/plugins/beacon.lua	/^    cond = function()$/;"	f
 config	dot_config/nvim/lua/plugins/example.lua	/^      config = function()$/;"	f
@@ -899,17 +876,13 @@ decrease	dot_config/awesome/ui/popups/volume/init.lua	/^volume.decrease = functi
 decrease_microphone_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Vol/;"	k	section:kmix
 decrease_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^decrease_volume=Volume Down,Volume Down,Decrease Volume$/;"	k	section:kmix
 decrease_volume_small	dot_config/private_kglobalshortcutsrc.src.ini	/^decrease_volume_small=Shift+Volume Down,Shift+Volume Down,Decrease Volume by 1%$/;"	k	section:kmix
-default-trackers	dot_config/transmission/settings.json	/^    "default-trackers": "",$/;"	s
 default_style_sheet	dot_config/copyq/copyq.conf	/^itemtext\\default_style_sheet=$/;"	k	section:Plugins
 defs4246	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^  <defs id="defs4246"\/>$/;"	i
 defs4246	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^  <defs id="defs4246"\/>$/;"	i
 defs8	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="defs8" \/>$/;"	i
 delete_item	dot_config/copyq/copyq.conf	/^delete_item=del$/;"	k	section:Shortcuts
-details-window-height	dot_config/transmission/settings.json	/^    "details-window-height": 500,$/;"	n
-details-window-width	dot_config/transmission/settings.json	/^    "details-window-width": 700,$/;"	n
 devel	dot_config/yay/config.json	/^	"devel": false,$/;"	b
 devices_off_on_screensaver	dot_config/openrazer/razer.conf	/^devices_off_on_screensaver = True$/;"	k	section:Startup
-dht-enabled	dot_config/transmission/settings.json	/^    "dht-enabled": true,$/;"	b
 diffmenu	dot_config/yay/config.json	/^	"diffmenu": false,$/;"	b
 disable_tray	dot_config/copyq/copyq.conf	/^disable_tray=false$/;"	k	section:Options
 disabled	dot_config/Trolltech.conf.src.ini	/^Palette\\disabled=#989fbd, #313449, #3f4364, #323650, #0f1119, #1b1d2c, #989fbd, #ffffff, #989fb/;"	k	section:qt
@@ -921,9 +894,6 @@ distro	dot_config/hyfetch.json	/^    "distro": null,$/;"	z
 distro_shorthand	dot_config/neofetch/config.conf	/^distro_shorthand="on"$/;"	k
 dont_focus_before_close	dot_config/awesome/ui/popups/scratchpad/init.lua	/^	dont_focus_before_close = false, -- When set to true, the scratchpad will be closed by the togg/;"	f
 doubleconfirm	dot_config/yay/config.json	/^	"doubleconfirm": true,$/;"	b
-download-dir	dot_config/transmission/settings.json	/^    "download-dir": "\/home\/marley\/data\/piracy",$/;"	s
-download-queue-enabled	dot_config/transmission/settings.json	/^    "download-queue-enabled": true,$/;"	b
-download-queue-size	dot_config/transmission/settings.json	/^    "download-queue-size": 5,$/;"	n
 dpi	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi_x	dot_config/openrazer/persistence.conf	/^dpi_x = 1800$/;"	k	section:PM2038H11502057
@@ -972,7 +942,6 @@ encode_nil	dot_config/awesome/lib/json.lua	/^local function encode_nil(_)$/;"	f
 encode_number	dot_config/awesome/lib/json.lua	/^local function encode_number(val)$/;"	f
 encode_string	dot_config/awesome/lib/json.lua	/^local function encode_string(val)$/;"	f
 encode_table	dot_config/awesome/lib/json.lua	/^local function encode_table(val, stack)$/;"	f
-encryption	dot_config/transmission/settings.json	/^    "encryption": 1,$/;"	n
 escape_char	dot_config/awesome/lib/json.lua	/^local function escape_char(c)$/;"	f
 exclude	dot_config/picom.conf	/^blur-background-exclude = [$/;"	k
 exclude	dot_config/picom.conf	/^fade-exclude = [$/;"	k
@@ -1068,8 +1037,6 @@ icon	dot_config/copyq/copyq.conf	/^1\\icon=$/;"	k	section:Tabs
 icon_size	dot_config/copyq/copyq.conf	/^icon_size=16$/;"	k	section:Theme
 id	dot_config/awesome/lib/animation/subscribable.lua	/^			local id = tostring(func):gsub("function: ", "")$/;"	f
 id	dot_config/awesome/lib/animation/subscribable.lua	/^		local id = tostring(func):gsub("function: ", "")$/;"	f
-idle-seeding-limit	dot_config/transmission/settings.json	/^    "idle-seeding-limit": 30,$/;"	n
-idle-seeding-limit-enabled	dot_config/transmission/settings.json	/^    "idle-seeding-limit-enabled": false,$/;"	b
 image_backend	dot_config/neofetch/config.conf	/^image_backend="ascii"$/;"	k
 image_editor	dot_config/copyq/copyq.conf	/^itemimage\\image_editor=$/;"	k	section:Plugins
 image_loop	dot_config/neofetch/config.conf	/^image_loop="off"$/;"	k
@@ -1109,13 +1076,10 @@ inactiveForeground	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveFore
 inactiveForeground	dot_config/private_kdeglobals.src.ini	/^inactiveForeground=165,173,203$/;"	k	section:WM
 inactiveFrame	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveFrame=#24273a$/;"	k	section:qt
 inactiveTitleBtnBg	dot_config/Trolltech.conf.src.ini	/^KWinPalette\\inactiveTitleBtnBg=#24273a$/;"	k	section:qt
-incomplete-dir	dot_config/transmission/settings.json	/^    "incomplete-dir": "\/home\/marley\/Downloads",$/;"	s
-incomplete-dir-enabled	dot_config/transmission/settings.json	/^    "incomplete-dir-enabled": false,$/;"	b
 increase	dot_config/awesome/ui/popups/volume/init.lua	/^volume.increase = function()$/;"	f	unknown:volume
 increase_microphone_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume$/;"	k	section:kmix
 increase_volume	dot_config/private_kglobalshortcutsrc.src.ini	/^increase_volume=Volume Up,Volume Up,Increase Volume$/;"	k	section:kmix
 increase_volume_small	dot_config/private_kglobalshortcutsrc.src.ini	/^increase_volume_small=Shift+Volume Up,Shift+Volume Up,Increase Volume by 1%$/;"	k	section:kmix
-inhibit-desktop-hibernation	dot_config/transmission/settings.json	/^    "inhibit-desktop-hibernation": false,$/;"	b
 init	dot_config/nvim/lua/plugins/chezmoi-vim.lua	/^  init = function()$/;"	f
 init	dot_config/nvim/lua/plugins/example.lua	/^      init = function()$/;"	f
 initial	dot_config/awesome/lib/animation/init.lua	/^function animation:initial()$/;"	f	unknown:animation
@@ -1176,16 +1140,10 @@ logo_colors	dot_config/openrazer/persistence.conf	/^logo_colors = 0 255 0 0 255 
 logo_effect	dot_config/openrazer/persistence.conf	/^logo_effect = spectrum$/;"	k	section:PM2038H11502057
 logo_speed	dot_config/openrazer/persistence.conf	/^logo_speed = 1$/;"	k	section:PM2038H11502057
 logo_wave_dir	dot_config/openrazer/persistence.conf	/^logo_wave_dir = 1$/;"	k	section:PM2038H11502057
-lpd-enabled	dot_config/transmission/settings.json	/^    "lpd-enabled": true,$/;"	b
 lua_ls	dot_config/nvim/dot_neoconf.json	/^      "lua_ls": {$/;"	o	object:neoconf.plugins
 m3u	dot_config/mopidy/mopidy.conf	/^[m3u]$/;"	s
 magiclampEnabled	dot_config/private_kwinrc.src.ini	/^magiclampEnabled=true$/;"	k	section:Plugins
 main	.chezmoiscripts/run_after_00-drapeau.py	/^def main():$/;"	f
-main-window-height	dot_config/transmission/settings.json	/^    "main-window-height": 465,$/;"	n
-main-window-is-maximized	dot_config/transmission/settings.json	/^    "main-window-is-maximized": false,$/;"	b
-main-window-width	dot_config/transmission/settings.json	/^    "main-window-width": 808,$/;"	n
-main-window-x	dot_config/transmission/settings.json	/^    "main-window-x": 50,$/;"	n
-main-window-y	dot_config/transmission/settings.json	/^    "main-window-y": 50,$/;"	n
 makepkgbin	dot_config/yay/config.json	/^	"makepkgbin": "makepkg",$/;"	s
 makepkgconf	dot_config/yay/config.json	/^	"makepkgconf": "",$/;"	s
 manage activities	dot_config/private_kglobalshortcutsrc.src.ini	/^manage activities=Meta+Q,Meta+Q,Show Activity Switcher$/;"	k	section:plasmashell
@@ -1223,7 +1181,6 @@ menu_bar_disabled_css	dot_config/copyq/copyq.conf	/^menu_bar_disabled_css="\\n  
 menu_bar_selected_css	dot_config/copyq/copyq.conf	/^menu_bar_selected_css="\\n    ;background: ${sel_bg}\\n    ;color: ${sel_fg}"$/;"	k	section:Theme
 menu_css	dot_config/copyq/copyq.conf	/^menu_css="\\n    ;border: 1px solid ${sel_bg}\\n    ;background: ${bg}\\n    ;color: ${fg}"$/;"	k	section:Theme
 menubar	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-shell-shows-menubar=1$/;"	k	section:Settings
-message-level	dot_config/transmission/settings.json	/^    "message-level": 4,$/;"	n
 metadata10	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="metadata10">$/;"	i
 method	dot_config/picom.conf	/^blur-method = "dual_kawase"$/;"	k
 mflags	dot_config/yay/config.json	/^	"mflags": "",$/;"	s
@@ -1327,7 +1284,6 @@ on_press	dot_config/awesome/main/bindings.lua	/^		on_press = function(index)$/;"
 opacity	dot_config/picom.conf	/^active-opacity = 0.92;$/;"	k
 opacity	dot_config/picom.conf	/^detect-client-opacity = true;$/;"	k
 opacity	dot_config/picom.conf	/^inactive-opacity = 0.68;$/;"	k
-open-dialog-dir	dot_config/transmission/settings.json	/^    "open-dialog-dir": "\/home\/marley",$/;"	s
 open_windows_on_current_screen	dot_config/copyq/copyq.conf	/^open_windows_on_current_screen=true$/;"	k	section:Options
 options	dot_config/pacman/pacman.conf	/^[options]$/;"	s
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function()$/;"	f
@@ -1376,17 +1332,8 @@ path2	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     style="fill:
 path7007	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^    <path style="fill: #52e0ad;fill-opacity:1;stroke-width:0.264583" d="M 10.768947,5.8246909 10/;"	i
 path7007	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^    <path style="fill: #f0fc52;fill-opacity:1;stroke-width:0.264583" d="M 10.768947,5.8246909 10/;"	i
 pausemedia	dot_config/private_kglobalshortcutsrc.src.ini	/^pausemedia=Media Pause,Media Pause,Pause media playback$/;"	k	section:mediacontrol
-peer-congestion-algorithm	dot_config/transmission/settings.json	/^    "peer-congestion-algorithm": "",$/;"	s
-peer-limit-global	dot_config/transmission/settings.json	/^    "peer-limit-global": 200,$/;"	n
-peer-limit-per-torrent	dot_config/transmission/settings.json	/^    "peer-limit-per-torrent": 50,$/;"	n
-peer-port	dot_config/transmission/settings.json	/^    "peer-port": 51413,$/;"	n
-peer-port-random-high	dot_config/transmission/settings.json	/^    "peer-port-random-high": 65535,$/;"	n
-peer-port-random-low	dot_config/transmission/settings.json	/^    "peer-port-random-low": 49152,$/;"	n
-peer-port-random-on-start	dot_config/transmission/settings.json	/^    "peer-port-random-on-start": false,$/;"	b
-peer-socket-tos	dot_config/transmission/settings.json	/^    "peer-socket-tos": "le",$/;"	s
 performEasing	dot_config/awesome/lib/animation/tween.lua	/^local function performEasing(table, initial, target, clock, duration, easing)$/;"	f
 performEasingOnSubject	dot_config/awesome/lib/animation/tween.lua	/^local function performEasingOnSubject(subject, target, initial, clock, duration, easing)$/;"	f
-pex-enabled	dot_config/transmission/settings.json	/^    "pex-enabled": true,$/;"	b
 pgpfetch	dot_config/yay/config.json	/^	"pgpfetch": true,$/;"	b
 pie	dot_config/awesome/helpers/ui.lua	/^function ui.pie(width, height, start_angle, end_angle, radius)$/;"	f	unknown:ui
 placement_fn	dot_config/awesome/ui/top-panel/widgets/taglist.lua	/^		placement_fn = function(c) -- Place the widget using awful.placement (this overrides x & y)$/;"	f
@@ -1431,13 +1378,10 @@ popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^
 popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=647$/;"	k	section:Containments
 popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=658$/;"	k	section:Containments
 popupWidth	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^popupWidth=810$/;"	k	section:Containments
-port-forwarding-enabled	dot_config/transmission/settings.json	/^    "port-forwarding-enabled": true,$/;"	b
 pos	dot_config/private_kglobalshortcutsrc.src.ini	/^show-on-mouse-pos=Meta+V,Meta+V,Show Clipboard Items at Mouse Position$/;"	k	section:plasmashell
 powerProfile	dot_config/private_kglobalshortcutsrc.src.ini	/^powerProfile=Battery\\tMeta+B,Battery\\tMeta+B,Switch Power Profile$/;"	k	section:org_kde_powerdevil
 poweroff_command	dot_config/awesome/lib/exit-screen.lua	/^local poweroff_command = function()$/;"	f
-preallocation	dot_config/transmission/settings.json	/^    "preallocation": 1,$/;"	n
 preferences	dot_config/copyq/copyq.conf	/^preferences=ctrl+p$/;"	k	section:Shortcuts
-prefetch-enabled	dot_config/transmission/settings.json	/^    "prefetch-enabled": true,$/;"	b
 preset	dot_config/hyfetch.json	/^    "preset": "lesbian",$/;"	s
 previous activity	dot_config/private_kglobalshortcutsrc.src.ini	/^previous activity=Meta+Shift+A,none,Walk through activities (Reverse)$/;"	k	section:plasmashell
 previous_tab	dot_config/copyq/copyq.conf	/^previous_tab=left$/;"	k	section:Shortcuts
@@ -1452,25 +1396,16 @@ prrect	dot_config/awesome/helpers/ui.lua	/^function ui.prrect(radius, tl, tr, br
 public_ip_host	dot_config/neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
 public_ip_timeout	dot_config/neofetch/config.conf	/^public_ip_timeout=2$/;"	k
 qt	dot_config/Trolltech.conf.src.ini	/^[qt]$/;"	s
-queue-stalled-enabled	dot_config/transmission/settings.json	/^    "queue-stalled-enabled": true,$/;"	b
-queue-stalled-minutes	dot_config/transmission/settings.json	/^    "queue-stalled-minutes": 30,$/;"	n
 radius	dot_config/picom.conf	/^corner-radius = 12.0;$/;"	k
 radius	dot_config/picom.conf	/^shadow-radius = 7;$/;"	k
-ratio-limit	dot_config/transmission/settings.json	/^    "ratio-limit": 2,$/;"	n
-ratio-limit-enabled	dot_config/transmission/settings.json	/^    "ratio-limit-enabled": true,$/;"	b
 rdf	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 reboot_command	dot_config/awesome/lib/exit-screen.lua	/^local reboot_command = function()$/;"	f
 rebuild	dot_config/yay/config.json	/^	"rebuild": "no"$/;"	s
-recent-download-dir-1	dot_config/transmission/settings.json	/^    "recent-download-dir-1": "\/home\/marley\/data\/piracy",$/;"	s
-recent-download-dir-2	dot_config/transmission/settings.json	/^    "recent-download-dir-2": "",$/;"	s
-recent-download-dir-3	dot_config/transmission/settings.json	/^    "recent-download-dir-3": "",$/;"	s
-recent-download-dir-4	dot_config/transmission/settings.json	/^    "recent-download-dir-4": "",$/;"	s
 redownload	dot_config/yay/config.json	/^	"redownload": "no",$/;"	s
 refresh_rate	dot_config/neofetch/config.conf	/^refresh_rate="off"$/;"	k
 rel	dot_config/awesome/lib/savefloats.lua	/^local function rel(screen, win)$/;"	f
 remove_tab	dot_config/copyq/copyq.conf	/^remove_tab=ctrl+w$/;"	k	section:Shortcuts
 removemake	dot_config/yay/config.json	/^	"removemake": "yes",$/;"	s
-rename-partial-files	dot_config/transmission/settings.json	/^    "rename-partial-files": false,$/;"	b
 rename_tab	dot_config/copyq/copyq.conf	/^rename_tab=ctrl+f2$/;"	k	section:Shortcuts
 repeat_action	dot_config/private_kglobalshortcutsrc.src.ini	/^repeat_action=none,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard$/;"	k	section:plasmashell
 requestsplitn	dot_config/yay/config.json	/^	"requestsplitn": 150,$/;"	n
@@ -1483,18 +1418,6 @@ reverse_selected_items	dot_config/copyq/copyq.conf	/^reverse_selected_items=ctrl
 round_widget	dot_config/awesome/ui/info-panel/init.lua	/^local function round_widget(radius)$/;"	f
 row_index_from_one	dot_config/copyq/copyq.conf	/^row_index_from_one=true$/;"	k	section:Options
 rpc	dot_config/yay/config.json	/^	"rpc": true,$/;"	b
-rpc-authentication-required	dot_config/transmission/settings.json	/^    "rpc-authentication-required": false,$/;"	b
-rpc-bind-address	dot_config/transmission/settings.json	/^    "rpc-bind-address": "0.0.0.0",$/;"	s
-rpc-enabled	dot_config/transmission/settings.json	/^    "rpc-enabled": false,$/;"	b
-rpc-host-whitelist	dot_config/transmission/settings.json	/^    "rpc-host-whitelist": "",$/;"	s
-rpc-host-whitelist-enabled	dot_config/transmission/settings.json	/^    "rpc-host-whitelist-enabled": true,$/;"	b
-rpc-password	dot_config/transmission/settings.json	/^    "rpc-password": "{5696d56b762c22da89f3034fd5fea64113da04b9OrSJjgb5",$/;"	s
-rpc-port	dot_config/transmission/settings.json	/^    "rpc-port": 9091,$/;"	n
-rpc-socket-mode	dot_config/transmission/settings.json	/^    "rpc-socket-mode": "0750",$/;"	s
-rpc-url	dot_config/transmission/settings.json	/^    "rpc-url": "\/transmission\/",$/;"	s
-rpc-username	dot_config/transmission/settings.json	/^    "rpc-username": "",$/;"	s
-rpc-whitelist	dot_config/transmission/settings.json	/^    "rpc-whitelist": "127.0.0.1,::1",$/;"	s
-rpc-whitelist-enabled	dot_config/transmission/settings.json	/^    "rpc-whitelist-enabled": true,$/;"	b
 rrect	dot_config/awesome/helpers/ui.lua	/^function ui.rrect(radius)$/;"	f	unknown:ui
 run	dot_config/copyq/copyq.conf	/^system-run=f5$/;"	k	section:Shortcuts
 run_selection	dot_config/copyq/copyq.conf	/^run_selection=true$/;"	k	section:Options
@@ -1505,15 +1428,8 @@ save_delay_ms_on_item_moved	dot_config/copyq/copyq.conf	/^save_delay_ms_on_item_
 save_delay_ms_on_item_removed	dot_config/copyq/copyq.conf	/^save_delay_ms_on_item_removed=600000$/;"	k	section:Options
 save_filter_history	dot_config/copyq/copyq.conf	/^save_filter_history=false$/;"	k	section:Options
 save_on_app_deactivated	dot_config/copyq/copyq.conf	/^save_on_app_deactivated=true$/;"	k	section:Options
-scrape-paused-torrents-enabled	dot_config/transmission/settings.json	/^    "scrape-paused-torrents-enabled": true,$/;"	b
 screenMapping	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^screenMapping=desktop:\/anno-1800,0,93518f0d-148e-42b9-acd8-34950b41293c$/;"	k	section:ScreenMapping
 screen_mask	dot_config/awesome/helpers/ui.lua	/^function ui.screen_mask(s, bg)$/;"	f	unknown:ui
-script-torrent-added-enabled	dot_config/transmission/settings.json	/^    "script-torrent-added-enabled": false,$/;"	b
-script-torrent-added-filename	dot_config/transmission/settings.json	/^    "script-torrent-added-filename": "",$/;"	s
-script-torrent-done-enabled	dot_config/transmission/settings.json	/^    "script-torrent-done-enabled": false,$/;"	b
-script-torrent-done-filename	dot_config/transmission/settings.json	/^    "script-torrent-done-filename": "",$/;"	s
-script-torrent-done-seeding-enabled	dot_config/transmission/settings.json	/^    "script-torrent-done-seeding-enabled": false,$/;"	b
-script-torrent-done-seeding-filename	dot_config/transmission/settings.json	/^    "script-torrent-done-seeding-filename": "",$/;"	s
 script_paste_delay_ms	dot_config/copyq/copyq.conf	/^script_paste_delay_ms=250$/;"	k	section:Options
 scroll_active	dot_config/openrazer/persistence.conf	/^scroll_active = True$/;"	k	section:PM2038H11502057
 scroll_brightness	dot_config/openrazer/persistence.conf	/^scroll_brightness = 75$/;"	k	section:PM2038H11502057
@@ -1525,8 +1441,6 @@ search_bar	dot_config/copyq/copyq.conf	/^search_bar="\\n    ;background: ${edit_
 search_bar_focused	dot_config/copyq/copyq.conf	/^search_bar_focused="\\n    ;border: 1px solid ${sel_bg}"$/;"	k	section:Theme
 searchby	dot_config/yay/config.json	/^	"searchby": "name-desc",$/;"	s
 second_to_micro	dot_config/awesome/lib/animation/init.lua	/^local function second_to_micro(sec)$/;"	f
-seed-queue-enabled	dot_config/transmission/settings.json	/^    "seed-queue-enabled": false,$/;"	b
-seed-queue-size	dot_config/transmission/settings.json	/^    "seed-queue-size": 10,$/;"	n
 sel_bg	dot_config/copyq/copyq.conf	/^sel_bg=#a04$/;"	k	section:Theme
 sel_fg	dot_config/copyq/copyq.conf	/^sel_fg=#fff$/;"	k	section:Theme
 sel_item_css	dot_config/copyq/copyq.conf	/^sel_item_css="\\n    ;background: qlineargradient(\\n        x1: 0, y1: 0,\\n        x2: 0, y2: /;"	k	section:Theme
@@ -1550,14 +1464,6 @@ sheetEnabled	dot_config/private_kwinrc.src.ini	/^sheetEnabled=true$/;"	k	section
 shell_path	dot_config/neofetch/config.conf	/^shell_path="off"$/;"	k
 shell_version	dot_config/neofetch/config.conf	/^shell_version="off"$/;"	k
 show dashboard	dot_config/private_kglobalshortcutsrc.src.ini	/^show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop$/;"	k	section:plasmashell
-show-backup-trackers	dot_config/transmission/settings.json	/^    "show-backup-trackers": false,$/;"	b
-show-extra-peer-details	dot_config/transmission/settings.json	/^    "show-extra-peer-details": false,$/;"	b
-show-filterbar	dot_config/transmission/settings.json	/^    "show-filterbar": true,$/;"	b
-show-notification-area-icon	dot_config/transmission/settings.json	/^    "show-notification-area-icon": false,$/;"	b
-show-options-window	dot_config/transmission/settings.json	/^    "show-options-window": true,$/;"	b
-show-statusbar	dot_config/transmission/settings.json	/^    "show-statusbar": true,$/;"	b
-show-toolbar	dot_config/transmission/settings.json	/^    "show-toolbar": true,$/;"	b
-show-tracker-scrapes	dot_config/transmission/settings.json	/^    "show-tracker-scrapes": false,$/;"	b
 showOnlyCurrentScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^showOnlyCurrentScreen=true$/;"	k	section:Containments
 showToolTips	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^showToolTips=false$/;"	k	section:Containments
 show_advanced_command_settings	dot_config/copyq/copyq.conf	/^show_advanced_command_settings=false$/;"	k	section:Options
@@ -1582,21 +1488,13 @@ sodipodi	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg
 softwaremixer	dot_config/mopidy/mopidy.conf	/^[softwaremixer]$/;"	s
 song_format	dot_config/neofetch/config.conf	/^song_format="%artist% - %album% - %title%"$/;"	k
 song_shorthand	dot_config/neofetch/config.conf	/^song_shorthand="off"$/;"	k
-sort-mode	dot_config/transmission/settings.json	/^    "sort-mode": "sort-by-name",$/;"	s
-sort-reversed	dot_config/transmission/settings.json	/^    "sort-reversed": false,$/;"	b
 sort_selected_items	dot_config/copyq/copyq.conf	/^sort_selected_items=ctrl+shift+s$/;"	k	section:Shortcuts
 sortby	dot_config/yay/config.json	/^	"sortby": "votes",$/;"	s
-speed-limit-down	dot_config/transmission/settings.json	/^    "speed-limit-down": 100,$/;"	n
-speed-limit-down-enabled	dot_config/transmission/settings.json	/^    "speed-limit-down-enabled": false,$/;"	b
-speed-limit-up	dot_config/transmission/settings.json	/^    "speed-limit-up": 100,$/;"	n
-speed-limit-up-enabled	dot_config/transmission/settings.json	/^    "speed-limit-up-enabled": false,$/;"	b
 speed_shorthand	dot_config/neofetch/config.conf	/^speed_shorthand="off"$/;"	k
 speed_type	dot_config/neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
 squashEnabled	dot_config/private_kwinrc.src.ini	/^squashEnabled=false$/;"	k	section:Plugins
 start	dot_config/awesome/lib/animation/init.lua	/^function animation:start(args)$/;"	f	unknown:animation
-start-added-torrents	dot_config/transmission/settings.json	/^    "start-added-torrents": true,$/;"	b
 start_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	start_callback = function()$/;"	f
-statusbar-stats	dot_config/transmission/settings.json	/^    "statusbar-stats": "total-ratio",$/;"	s
 stdout	dot_config/neofetch/config.conf	/^stdout="off"$/;"	k
 step	dot_config/picom.conf	/^fade-in-step = 0.03;$/;"	k
 step	dot_config/picom.conf	/^fade-out-step = 0.03;$/;"	k
@@ -1643,7 +1541,6 @@ tab_tree_item_counter	dot_config/copyq/copyq.conf	/^tab_tree_item_counter="\\n  
 tab_tree_sel_item_counter	dot_config/copyq/copyq.conf	/^tab_tree_sel_item_counter="\\n    ;color: ${sel_fg - #044 + #400}"$/;"	k	section:Theme
 tab_tree_sel_item_css	dot_config/copyq/copyq.conf	/^tab_tree_sel_item_css="\\n    ;color: ${sel_fg}\\n    ;background-color: ${sel_bg}\\n    ;border/;"	k	section:Theme
 tabs	dot_config/copyq/copyq.conf	/^tabs=&clipboard$/;"	k	section:Options
-tcp-enabled	dot_config/transmission/settings.json	/^    "tcp-enabled": true,$/;"	b
 text_tab_width	dot_config/copyq/copyq.conf	/^text_tab_width=8$/;"	k	section:Options
 text_wrap	dot_config/copyq/copyq.conf	/^text_wrap=true$/;"	k	section:Options
 theme	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-application-prefer-dark-theme=true$/;"	k	section:Settings
@@ -1665,17 +1562,10 @@ tool_bar_css	dot_config/copyq/copyq.conf	/^tool_bar_css="\\n    ;color: ${fg}\\n
 tool_button_css	dot_config/copyq/copyq.conf	/^tool_button_css="\\n    ;color: ${fg}\\n    ;background: ${bg}\\n    ;border: 0\\n    ;border-ra/;"	k	section:Theme
 tool_button_pressed_css	dot_config/copyq/copyq.conf	/^tool_button_pressed_css="\\n    ;background: ${sel_bg}"$/;"	k	section:Theme
 tool_button_selected_css	dot_config/copyq/copyq.conf	/^tool_button_selected_css="\\n    ;background: ${sel_bg - #222}\\n    ;color: ${sel_fg}\\n    ;bo/;"	k	section:Theme
-torrent-added-notification-enabled	dot_config/transmission/settings.json	/^    "torrent-added-notification-enabled": true,$/;"	b
-torrent-added-verify-mode	dot_config/transmission/settings.json	/^    "torrent-added-verify-mode": "fast",$/;"	s
-torrent-complete-notification-enabled	dot_config/transmission/settings.json	/^    "torrent-complete-notification-enabled": true,$/;"	b
-torrent-complete-sound-command	dot_config/transmission/settings.json	/^    "torrent-complete-sound-command": [$/;"	a
-torrent-complete-sound-enabled	dot_config/transmission/settings.json	/^    "torrent-complete-sound-enabled": true,$/;"	b
 transient	dot_config/picom.conf	/^detect-transient = true$/;"	k
 translucencyEnabled	dot_config/private_kwinrc.src.ini	/^translucencyEnabled=true$/;"	k	section:Plugins
 transparency	dot_config/copyq/copyq.conf	/^transparency=0$/;"	k	section:Options
 transparency_focused	dot_config/copyq/copyq.conf	/^transparency_focused=0$/;"	k	section:Options
-trash-can-enabled	dot_config/transmission/settings.json	/^    "trash-can-enabled": true,$/;"	b
-trash-original-torrent-files	dot_config/transmission/settings.json	/^    "trash-original-torrent-files": false,$/;"	b
 tray_commands	dot_config/copyq/copyq.conf	/^tray_commands=true$/;"	k	section:Options
 tray_images	dot_config/copyq/copyq.conf	/^tray_images=true$/;"	k	section:Options
 tray_item_paste	dot_config/copyq/copyq.conf	/^tray_item_paste=true$/;"	k	section:Options
@@ -1685,7 +1575,6 @@ tray_tab	dot_config/copyq/copyq.conf	/^tray_tab=$/;"	k	section:Options
 tray_tab_is_current	dot_config/copyq/copyq.conf	/^tray_tab_is_current=true$/;"	k	section:Options
 trig	dot_config/nvim/lua/snippets/fish.lua	/^    { trig = "func", desc = "function ... end" },$/;"	f
 tsserver	dot_config/nvim/lua/plugins/example.lua	/^        tsserver = function(_, opts)$/;"	f
-umask	dot_config/transmission/settings.json	/^    "umask": "022",$/;"	s
 underline_char	dot_config/neofetch/config.conf	/^underline_char="-"$/;"	k
 underline_enabled	dot_config/neofetch/config.conf	/^underline_enabled="on"$/;"	k
 unrel	dot_config/awesome/lib/savefloats.lua	/^local function unrel(s, _rel)$/;"	f
@@ -1701,15 +1590,12 @@ update_microphone	dot_config/awesome/ui/notif-panel/widgets/mic_slider.lua	/^loc
 update_volume	dot_config/awesome/ui/notif-panel/widgets/vol_slider.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/popups/volume/init.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/top-panel/widgets/pulseaudio.lua	/^local update_volume = function()$/;"	f
-upload-slots-per-torrent	dot_config/transmission/settings.json	/^    "upload-slots-per-torrent": 8,$/;"	n
 uptime_shorthand	dot_config/neofetch/config.conf	/^uptime_shorthand="on"$/;"	k
 use_rich_text	dot_config/copyq/copyq.conf	/^itemtext\\use_rich_text=true$/;"	k	section:Plugins
 use_system_icons	dot_config/copyq/copyq.conf	/^use_system_icons=true$/;"	k	section:Theme
 useask	dot_config/yay/config.json	/^	"useask": false,$/;"	b
-user-has-given-informed-consent	dot_config/transmission/settings.json	/^    "user-has-given-informed-consent": true,$/;"	b
 usr	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 usr	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
-utp-enabled	dot_config/transmission/settings.json	/^    "utp-enabled": true,$/;"	b
 verbose_logging	dot_config/openrazer/razer.conf	/^verbose_logging = False$/;"	k	section:General
 version	dot_config/yay/config.json	/^	"version": "12.3.0",$/;"	s
 vertical_pad	dot_config/awesome/helpers/ui.lua	/^function ui.vertical_pad(height)$/;"	f	unknown:ui
@@ -1720,8 +1606,6 @@ view_zoom_out	dot_config/private_kglobalshortcutsrc.src.ini	/^view_zoom_out=Meta
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
 vsync	dot_config/picom.conf	/^vsync = true$/;"	k
 wallpaperplugin	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^wallpaperplugin=org.kde.image$/;"	k	section:Containments
-watch-dir	dot_config/transmission/settings.json	/^    "watch-dir": "\/home\/marley\/Desktop",$/;"	s
-watch-dir-enabled	dot_config/transmission/settings.json	/^    "watch-dir-enabled": false$/;"	b
 window	dot_config/picom.conf	/^animation-for-open-window = "zoom"; #open window$/;"	k
 window	dot_config/picom.conf	/^animation-for-transient-window = "slide-up"; #popup windows$/;"	k
 window	dot_config/picom.conf	/^animation-for-unmap-window = "zoom"; #minimize window$/;"	k
