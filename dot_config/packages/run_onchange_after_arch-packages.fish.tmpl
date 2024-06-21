@@ -27,7 +27,7 @@ if ! test "{{ .chezmoi.hostname }}" = "$file"
     yay -S --needed - <~/.config/packages/arch
 
     {{ range .packages.arch -}}
-    {{   if eq .chezmoi.hostname . -}}
+    {{   if eq .chezmoi.hostname (. | quote ) -}}
     {{     range .  -}}
     yay -S --needed - <{{ . }}
     {{     end -}}
