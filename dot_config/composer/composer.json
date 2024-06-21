@@ -1,6 +1,5 @@
 {
     "require": {
-        "laravel/installer": "^5.6",
-        "cpriego/valet-linux": "^2.3"
+        "laravel/installer": "^5.6"
     }
 }
