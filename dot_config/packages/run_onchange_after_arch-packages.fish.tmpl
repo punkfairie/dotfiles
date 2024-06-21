@@ -26,8 +26,9 @@ if ! test "{{ .chezmoi.hostname }}" = "$file"
     set_color yellow && echo "Package list has changed, reinstalling..."
     yay -S --needed - <~/.config/packages/arch
 
+    {{ $host := .chezmoi.hostname }}
     {{ range .packages.arch -}}
-    {{   if eq .chezmoi.hostname (. | quote ) -}}
+    {{   if eq $host . -}}
     {{     range .  -}}
     yay -S --needed - <{{ . }}
     {{     end -}}
