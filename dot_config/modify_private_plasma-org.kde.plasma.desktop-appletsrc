@@ -2,5 +2,4 @@
 
 source auto
 
-ignore regex "Containments" "[0-9]*" "Wallpaper" "org.kde.image" "General"
 ignore section "ScreenMapping"

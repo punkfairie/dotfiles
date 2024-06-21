@@ -846,7 +846,6 @@ copy_selection	dot_config/copyq/copyq.conf	/^copy_selection=false$/;"	k	section:
 core	dot_config/mopidy/mopidy.conf	/^[core]$/;"	s
 core	dot_config/pacman/pacman.conf	/^[core]$/;"	s
 corners	dot_config/picom.conf	/^detect-rounded-corners = true;$/;"	k
-cpriego/valet-linux	dot_config/composer/composer.json	/^        "cpriego\/valet-linux": "^2.3"$/;"	s	object:require
 cpu_brand	dot_config/neofetch/config.conf	/^cpu_brand="on"$/;"	k
 cpu_cores	dot_config/neofetch/config.conf	/^cpu_cores="off"$/;"	k
 cpu_speed	dot_config/neofetch/config.conf	/^cpu_speed="off"$/;"	k
@@ -1141,7 +1140,7 @@ knownItems	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^
 ksmserver	dot_config/private_kglobalshortcutsrc.src.ini	/^[ksmserver]$/;"	s
 kwin	dot_config/private_kglobalshortcutsrc.src.ini	/^[kwin]$/;"	s
 language	dot_config/copyq/copyq.conf	/^language=en$/;"	k	section:Options
-laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6",$/;"	s	object:require
+laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6"$/;"	s	object:require
 lastScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^lastScreen=-1$/;"	k	section:Containments
 lastScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^lastScreen=0$/;"	k	section:Containments
 lastScreen	dot_config/private_plasma-org.kde.plasma.desktop-appletsrc.src.ini	/^lastScreen=1$/;"	k	section:Containments
