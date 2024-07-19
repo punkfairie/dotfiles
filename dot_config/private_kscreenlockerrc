@@ -1,6 +1,0 @@
-[Daemon]
-Timeout=15
-
-[Greeter][Wallpaper][org.kde.image][General]
-Image=/home/marley/.local/share/wallpapers/Vivid-Wallpaper-With-Plasma-Logo.png
-PreviewImage=/home/marley/.local/share/wallpapers/Vivid-Wallpaper-With-Plasma-Logo.png
