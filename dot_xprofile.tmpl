@@ -31,7 +31,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # shellcheck disable=all
-{{- if eq .chezmoi.hostname "archgirlie" -}}
+{{- if eq .chezmoi.hostname "archgirlie" }}
 "$HOME/.screenlayout/desktop.sh"
 {{- end }}
 
@@ -43,6 +43,9 @@ mopidy &
 {{ end -}}
 {{ if lookPath "numlockx" -}}
 numlockx on
+{{ end -}}
+{{ if lookPath "picom" -}}
+picom --config "$HOME/.config/picom.conf" &
 {{ end -}}
 {{ if eq .chezmoi.hostname "archgirlie" -}}
 setxkbmap -option "apple:alupckeys"
