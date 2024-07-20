@@ -148,7 +148,6 @@ alt_item_css	dot_config/copyq/copyq.conf	/^alt_item_css="\\n    ;border: 0px sol
 always_on_top	dot_config/copyq/copyq.conf	/^always_on_top=false$/;"	k	section:Options
 animations	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-enable-animations=true$/;"	k	section:Settings
 animations	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-enable-animations=true$/;"	k	section:Settings
-animations	dot_config/picom.conf	/^animations: false;$/;"	k
 answerclean	dot_config/yay/config.json	/^	"answerclean": "None",$/;"	s
 answerdiff	dot_config/yay/config.json	/^	"answerdiff": "Installed",$/;"	s
 answeredit	dot_config/yay/config.json	/^	"answeredit": "",$/;"	s
@@ -163,7 +162,6 @@ aururl	dot_config/yay/config.json	/^	"aururl": "https:\/\/aur.archlinux.org",$/;
 autocompletion	dot_config/copyq/copyq.conf	/^autocompletion=true$/;"	k	section:Options
 autostart	dot_config/copyq/copyq.conf	/^autostart=false$/;"	k	section:Options
 backend	dot_config/hyfetch.json	/^    "backend": "neofetch",$/;"	s
-backend	dot_config/picom.conf	/^backend = "glx";$/;"	k
 background_color	dot_config/neofetch/config.conf	/^background_color=$/;"	k
 backlight_active	dot_config/openrazer/persistence.conf	/^backlight_active = True$/;"	k	section:IO2049F50104914
 backlight_brightness	dot_config/openrazer/persistence.conf	/^backlight_brightness = 75$/;"	k	section:IO2049F50104914
@@ -187,7 +185,6 @@ block_height	dot_config/neofetch/config.conf	/^block_height=1$/;"	k
 block_range	dot_config/neofetch/config.conf	/^block_range=(0 15)$/;"	k
 block_width	dot_config/neofetch/config.conf	/^block_width=3$/;"	k
 bold	dot_config/neofetch/config.conf	/^bold="on"$/;"	k
-borders	dot_config/picom.conf	/^round-borders = 1;$/;"	k
 bottomup	dot_config/yay/config.json	/^	"bottomup": true,$/;"	b
 box_widget	dot_config/awesome/ui/info-panel/init.lua	/^local function box_widget(widgets, _width, _height)$/;"	f
 buildDir	dot_config/yay/config.json	/^	"buildDir": "\/home\/marley\/.cache\/yay",$/;"	s
@@ -212,7 +209,6 @@ checkNewParams	dot_config/awesome/lib/animation/tween.lua	/^local function check
 checkSubjectAndTargetRecursively	dot_config/awesome/lib/animation/tween.lua	/^local function checkSubjectAndTargetRecursively(subject, target, path)$/;"	f
 check_clipboard	dot_config/copyq/copyq.conf	/^check_clipboard=true$/;"	k	section:Options
 check_selection	dot_config/copyq/copyq.conf	/^check_selection=false$/;"	k	section:Options
-clamping	dot_config/picom.conf	/^animation-clamping = false$/;"	k
 cleanAfter	dot_config/yay/config.json	/^	"cleanAfter": false,$/;"	b
 cleanmenu	dot_config/yay/config.json	/^	"cleanmenu": false,$/;"	b
 clipboard_notification_lines	dot_config/copyq/copyq.conf	/^clipboard_notification_lines=0$/;"	k	section:Options
@@ -240,7 +236,6 @@ copy_selected_items	dot_config/copyq/copyq.conf	/^copy_selected_items=ctrl+c$/;"
 copy_selection	dot_config/copyq/copyq.conf	/^copy_selection=false$/;"	k	section:Options
 core	dot_config/mopidy/mopidy.conf	/^[core]$/;"	s
 core	dot_config/pacman/pacman.conf	/^[core]$/;"	s
-corners	dot_config/picom.conf	/^detect-rounded-corners = true;$/;"	k
 cpu_brand	dot_config/neofetch/config.conf	/^cpu_brand="on"$/;"	k
 cpu_cores	dot_config/neofetch/config.conf	/^cpu_cores="off"$/;"	k
 cpu_speed	dot_config/neofetch/config.conf	/^cpu_speed="off"$/;"	k
@@ -277,8 +272,6 @@ current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-stor
 current-color-scheme	dot_config/awesome/ui/info-panel/weather/icons/weather-storm.svg	/^  <style id="current-color-scheme" type="text\/css">$/;"	i
 custom_colors	dot_config/hyfetch.json	/^        "custom_colors": [],$/;"	a	object:color_align
 custom_shape	dot_config/awesome/helpers/ui.lua	/^function ui.custom_shape(cr, width, height)$/;"	f	unknown:ui
-damage	dot_config/picom.conf	/^use-damage = true$/;"	k
-dampening	dot_config/picom.conf	/^animation-dampening = 18$/;"	k
 dc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://purl.org/dc/elements/1.1/
 de_version	dot_config/neofetch/config.conf	/^de_version="on"$/;"	k
 debug	dot_config/yay/config.json	/^	"debug": false,$/;"	b
@@ -351,11 +344,6 @@ encode_number	dot_config/awesome/lib/json.lua	/^local function encode_number(val
 encode_string	dot_config/awesome/lib/json.lua	/^local function encode_string(val)$/;"	f
 encode_table	dot_config/awesome/lib/json.lua	/^local function encode_table(val, stack)$/;"	f
 escape_char	dot_config/awesome/lib/json.lua	/^local function escape_char(c)$/;"	f
-exclude	dot_config/picom.conf	/^blur-background-exclude = [$/;"	k
-exclude	dot_config/picom.conf	/^fade-exclude = [$/;"	k
-exclude	dot_config/picom.conf	/^focus-exclude = [ $/;"	k
-exclude	dot_config/picom.conf	/^rounded-corners-exclude = [ $/;"	k
-exclude	dot_config/picom.conf	/^shadow-exclude = [$/;"	k
 exit	dot_config/copyq/copyq.conf	/^exit=ctrl+q$/;"	k	section:Shortcuts
 exit_command	dot_config/awesome/lib/exit-screen.lua	/^local exit_command = function()$/;"	f
 expire_tab	dot_config/copyq/copyq.conf	/^expire_tab=0$/;"	k	section:Options
@@ -364,7 +352,6 @@ extra	dot_config/pacman/pacman.conf	/^[extra]$/;"	s
 f	dot_config/nvim/lua/snippets/fish.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/gitconfig.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/lua.lua	/^local f = ls.function_node$/;"	f
-fading	dot_config/picom.conf	/^fading = true$/;"	k
 fg	dot_config/copyq/copyq.conf	/^fg=#515151$/;"	k	section:Theme
 file	dot_config/mopidy/mopidy.conf	/^[file]$/;"	s
 fill	dot_config/nvim/lua/snippets/helpers.lua	/^M.fill = function(_, parent, args)$/;"	f	unknown:M
@@ -375,8 +362,6 @@ find_fg	dot_config/copyq/copyq.conf	/^find_fg=#fff$/;"	k	section:Theme
 find_font	dot_config/copyq/copyq.conf	/^find_font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,1,0,0,0,Regular"$/;"	k	section:Theme
 find_items	dot_config/copyq/copyq.conf	/^find_items=f3$/;"	k	section:Shortcuts
 fire	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:fire(...)$/;"	f	unknown:ret
-focused	dot_config/picom.conf	/^mark-ovredir-focused = false$/;"	k
-focused	dot_config/picom.conf	/^mark-wmwin-focused = true;$/;"	k
 font	dot_config/copyq/copyq.conf	/^font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,0,0,0,0,Regular"$/;"	k	section:Theme
 font_antialiasing	dot_config/copyq/copyq.conf	/^font_antialiasing=true$/;"	k	section:Theme
 fore_back	dot_config/hyfetch.json	/^        "fore_back": null$/;"	z	object:color_align
@@ -439,7 +424,6 @@ image_source	dot_config/neofetch/config.conf	/^image_source="auto"$/;"	k
 images	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-button-images=true$/;"	k	section:Settings
 images	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-menu-images=true$/;"	k	section:Settings
 import	dot_config/copyq/copyq.conf	/^import=ctrl+i$/;"	k	section:Shortcuts
-in	dot_config/picom.conf	/^animation-for-workspace-switch-in = "fly-in"; #the windows in the workspace that is coming in$/;"	k
 inBack	dot_config/awesome/lib/animation/tween.lua	/^local function inBack(t, b, c, d, s)$/;"	f
 inBounce	dot_config/awesome/lib/animation/tween.lua	/^local function inBounce(t, b, c, d)$/;"	f
 inCirc	dot_config/awesome/lib/animation/tween.lua	/^local function inCirc(t, b, c, d)$/;"	f
@@ -473,7 +457,6 @@ item_popup_interval	dot_config/copyq/copyq.conf	/^item_popup_interval=0$/;"	k	se
 item_spacing	dot_config/copyq/copyq.conf	/^item_spacing=$/;"	k	section:Theme
 iterate_value	dot_config/awesome/ui/popups/layout/init.lua	/^function gears.table.iterate_value(t, value, step_size, filter, _)$/;"	f	unknown:gears.table
 keepSrc	dot_config/yay/config.json	/^	"keepSrc": false,$/;"	b
-kern	dot_config/picom.conf	/^blur-kern = "11x11gaussian";$/;"	k
 kernel_shorthand	dot_config/neofetch/config.conf	/^kernel_shorthand="on"$/;"	k
 keypressed_callback	dot_config/awesome/lib/exit-screen.lua	/^	keypressed_callback = function(_, _, key, _)$/;"	f
 keys	dot_config/nvim/lua/plugins/example.lua	/^    keys = function()$/;"	f
@@ -489,8 +472,6 @@ layer1	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1
 layer1	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layout	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
 layout	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
-leader	dot_config/picom.conf	/^detect-client-leader = true$/;"	k
-level	dot_config/picom.conf	/^log-level = "warn";$/;"	k
 library	dot_config/nvim/dot_neoconf.json	/^    "library": {$/;"	o	object:neodev
 light_dark	dot_config/hyfetch.json	/^    "light_dark": "dark",$/;"	s
 lightness	dot_config/hyfetch.json	/^    "lightness": 0.7,$/;"	n
@@ -513,7 +494,6 @@ makepkgbin	dot_config/yay/config.json	/^	"makepkgbin": "makepkg",$/;"	s
 makepkgconf	dot_config/yay/config.json	/^	"makepkgconf": "",$/;"	s
 mar does dotfiles	README.md	/^# mar does dotfiles$/;"	c
 markup	dot_config/awesome/ui/info-panel/calendar.lua	/^	markup = function(t)$/;"	f
-mass	dot_config/picom.conf	/^animation-window-mass = 1.0$/;"	k
 max_height	dot_config/copyq/copyq.conf	/^itemtext\\max_height=0$/;"	k	section:Plugins
 max_image_height	dot_config/copyq/copyq.conf	/^itemimage\\max_image_height=240$/;"	k	section:Plugins
 max_image_width	dot_config/copyq/copyq.conf	/^itemimage\\max_image_width=320$/;"	k	section:Plugins
@@ -542,7 +522,6 @@ menu_bar_selected_css	dot_config/copyq/copyq.conf	/^menu_bar_selected_css="\\n  
 menu_css	dot_config/copyq/copyq.conf	/^menu_css="\\n    ;border: 1px solid ${sel_bg}\\n    ;background: ${bg}\\n    ;color: ${fg}"$/;"	k	section:Theme
 menubar	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-shell-shows-menubar=1$/;"	k	section:Settings
 metadata10	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="metadata10">$/;"	i
-method	dot_config/picom.conf	/^blur-method = "dual_kawase"$/;"	k
 mflags	dot_config/yay/config.json	/^	"mflags": "",$/;"	s
 mode	dot_config/hyfetch.json	/^        "mode": "horizontal",$/;"	s	object:color_align
 mode	dot_config/hyfetch.json	/^    "mode": "rgb",$/;"	s
@@ -636,16 +615,12 @@ num_font	dot_config/copyq/copyq.conf	/^num_font="FairiesevkaSans Nerd Font Propo
 num_margin	dot_config/copyq/copyq.conf	/^num_margin=2$/;"	k	section:Theme
 number_search	dot_config/copyq/copyq.conf	/^number_search=false$/;"	k	section:Options
 on_press	dot_config/awesome/main/bindings.lua	/^		on_press = function(index)$/;"	f
-opacity	dot_config/picom.conf	/^active-opacity = 0.92;$/;"	k
-opacity	dot_config/picom.conf	/^detect-client-opacity = true;$/;"	k
-opacity	dot_config/picom.conf	/^inactive-opacity = 0.68;$/;"	k
 open_windows_on_current_screen	dot_config/copyq/copyq.conf	/^open_windows_on_current_screen=true$/;"	k	section:Options
 options	dot_config/pacman/pacman.conf	/^[options]$/;"	s
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function()$/;"	f
 opts	dot_config/nvim/lua/plugins/example.lua	/^    opts = function(_, opts)$/;"	f
 opts	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^    opts = function(_, opts)$/;"	f
 os_arch	dot_config/neofetch/config.conf	/^os_arch="off"$/;"	k
-out	dot_config/picom.conf	/^animation-for-workspace-switch-out = "fly-in"; #the windows in the workspace that are coming out$/;"	k
 outBack	dot_config/awesome/lib/animation/tween.lua	/^local function outBack(t, b, c, d, s)$/;"	f
 outBounce	dot_config/awesome/lib/animation/tween.lua	/^local function outBounce(t, b, c, d)$/;"	f
 outCirc	dot_config/awesome/lib/animation/tween.lua	/^local function outCirc(t, b, c, d)$/;"	f
@@ -667,7 +642,6 @@ outQuart	dot_config/awesome/lib/animation/tween.lua	/^local function outQuart(t,
 outQuint	dot_config/awesome/lib/animation/tween.lua	/^local function outQuint(t, b, c, d)$/;"	f
 outSine	dot_config/awesome/lib/animation/tween.lua	/^local function outSine(t, b, c, d)$/;"	f
 output	dot_config/mopidy/mopidy.conf	/^output = tee name=t ! queue ! autoaudiosink t. ! queue ! audio\/x-raw,rate=44100,channels=2,form/;"	k	section:audio
-override	dot_config/picom.conf	/^inactive-opacity-override = true;$/;"	k
 package_managers	dot_config/neofetch/config.conf	/^package_managers="on"$/;"	k
 pacmanbin	dot_config/yay/config.json	/^	"pacmanbin": "pacman",$/;"	s
 pacmanconf	dot_config/yay/config.json	/^	"pacmanconf": "\/etc\/pacman.conf",$/;"	s
@@ -706,8 +680,6 @@ proxy	dot_config/mopidy/mopidy.conf	/^[proxy]$/;"	s
 prrect	dot_config/awesome/helpers/ui.lua	/^function ui.prrect(radius, tl, tr, br, bl)$/;"	f	unknown:ui
 public_ip_host	dot_config/neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
 public_ip_timeout	dot_config/neofetch/config.conf	/^public_ip_timeout=2$/;"	k
-radius	dot_config/picom.conf	/^corner-radius = 12.0;$/;"	k
-radius	dot_config/picom.conf	/^shadow-radius = 7;$/;"	k
 rdf	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 reboot_command	dot_config/awesome/lib/exit-screen.lua	/^local reboot_command = function()$/;"	f
 rebuild	dot_config/yay/config.json	/^	"rebuild": "no"$/;"	s
@@ -759,7 +731,6 @@ set_font	dot_config/awesome/helpers/ui.lua	/^function ui.set_font(attr, font)$/;
 set_instant	dot_config/awesome/lib/animation/init.lua	/^function animation_manager:set_instant(value)$/;"	f	unknown:animation_manager
 set_slider_value	dot_config/awesome/ui/info-panel/music-player.lua	/^	local function set_slider_value(_, volume)$/;"	f
 set_wall	dot_config/awesome/main/wallpaper.lua	/^local function set_wall(s)$/;"	f
-shadow	dot_config/picom.conf	/^shadow = true;$/;"	k
 shape	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.shape = function(cr, w, h) --Rounded Corners$/;"	f	unknown:sidebar
 shape	dot_config/awesome/ui/notif-panel/init.lua	/^action.shape = function(cr, w, h) --Rounded Corners$/;"	f	unknown:action
 share	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
@@ -778,7 +749,6 @@ singlelineresults	dot_config/yay/config.json	/^	"singlelineresults": false,$/;"	
 size	dot_config/copyq/copyq.conf	/^size=1$/;"	k	section:Tabs
 size	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-cursor-theme-size=24$/;"	k	section:Settings
 size	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-cursor-theme-size=24$/;"	k	section:Settings
-size	dot_config/picom.conf	/^blur-size = 30$/;"	k
 slider	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-primary-button-warps-slider=true$/;"	k	section:Settings
 slider	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-primary-button-warps-slider=true$/;"	k	section:Settings
 sodipodi	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
@@ -794,9 +764,6 @@ speed_type	dot_config/neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
 start	dot_config/awesome/lib/animation/init.lua	/^function animation:start(args)$/;"	f	unknown:animation
 start_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	start_callback = function()$/;"	f
 stdout	dot_config/neofetch/config.conf	/^stdout="off"$/;"	k
-step	dot_config/picom.conf	/^fade-in-step = 0.03;$/;"	k
-step	dot_config/picom.conf	/^fade-out-step = 0.03;$/;"	k
-stiffness	dot_config/picom.conf	/^animation-stiffness = 125$/;"	k
 stop	dot_config/awesome/lib/animation/init.lua	/^function animation:stop()$/;"	f	unknown:animation
 stop_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	stop_callback = function()$/;"	f
 store_items	dot_config/copyq/copyq.conf	/^1\\store_items=true$/;"	k	section:Tabs
@@ -851,7 +818,6 @@ tool_bar_css	dot_config/copyq/copyq.conf	/^tool_bar_css="\\n    ;color: ${fg}\\n
 tool_button_css	dot_config/copyq/copyq.conf	/^tool_button_css="\\n    ;color: ${fg}\\n    ;background: ${bg}\\n    ;border: 0\\n    ;border-ra/;"	k	section:Theme
 tool_button_pressed_css	dot_config/copyq/copyq.conf	/^tool_button_pressed_css="\\n    ;background: ${sel_bg}"$/;"	k	section:Theme
 tool_button_selected_css	dot_config/copyq/copyq.conf	/^tool_button_selected_css="\\n    ;background: ${sel_bg - #222}\\n    ;color: ${sel_fg}\\n    ;bo/;"	k	section:Theme
-transient	dot_config/picom.conf	/^detect-transient = true$/;"	k
 transparency	dot_config/copyq/copyq.conf	/^transparency=0$/;"	k	section:Options
 transparency_focused	dot_config/copyq/copyq.conf	/^transparency_focused=0$/;"	k	section:Options
 tray_commands	dot_config/copyq/copyq.conf	/^tray_commands=true$/;"	k	section:Options
@@ -887,18 +853,12 @@ version	dot_config/yay/config.json	/^	"version": "12.3.0",$/;"	s
 vertical_pad	dot_config/awesome/helpers/ui.lua	/^function ui.vertical_pad(height)$/;"	f	unknown:ui
 vi	dot_config/copyq/copyq.conf	/^vi=true$/;"	k	section:Options
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
-vsync	dot_config/picom.conf	/^vsync = true$/;"	k
-window	dot_config/picom.conf	/^animation-for-open-window = "zoom"; #open window$/;"	k
-window	dot_config/picom.conf	/^animation-for-transient-window = "slide-up"; #popup windows$/;"	k
-window	dot_config/picom.conf	/^animation-for-unmap-window = "zoom"; #minimize window$/;"	k
 window_key_press_time_ms	dot_config/copyq/copyq.conf	/^window_key_press_time_ms=50$/;"	k	section:Options
 window_paste_with_ctrl_v_regex	dot_config/copyq/copyq.conf	/^window_paste_with_ctrl_v_regex=$/;"	k	section:Options
 window_wait_after_raised_ms	dot_config/copyq/copyq.conf	/^window_wait_after_raised_ms=50$/;"	k	section:Options
 window_wait_before_raise_ms	dot_config/copyq/copyq.conf	/^window_wait_before_raise_ms=20$/;"	k	section:Options
 window_wait_for_modifier_released_ms	dot_config/copyq/copyq.conf	/^window_wait_for_modifier_released_ms=2000$/;"	k	section:Options
 window_wait_raised_ms	dot_config/copyq/copyq.conf	/^window_wait_raised_ms=150$/;"	k	section:Options
-wintypes	dot_config/picom.conf	/^wintypes:$/;"	k
-x	dot_config/picom.conf	/^shadow-offset-x = -7;$/;"	k
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close_hover.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/maximize.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
@@ -906,6 +866,5 @@ xlink	dot_config/awesome/themes/catppuccin/titlebar/minimize.svg	/^<svg version=
 xlink	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xoffset	dot_config/neofetch/config.conf	/^xoffset=0$/;"	k
-y	dot_config/picom.conf	/^shadow-offset-y = -7;$/;"	k
 yoffset	dot_config/neofetch/config.conf	/^yoffset=0$/;"	k
 ~	dot_config/awesome/lib/animation/tween.lua	/^		if type(easing) ~= "function" then$/;"	f
