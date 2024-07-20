@@ -29,7 +29,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 exec_always --no-startup-id ~/.xprofile
-exec_always --no-startup-id ~/.config/.fehbg
 
 # +-- Movement ----------------------------------------------------------------+
 
