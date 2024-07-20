@@ -22,5 +22,5 @@ require("signals")
 require("ui")
 
 -- Autostart --
-awful.spawn.with_shell("picom")
-awful.spawn.with_shell("~/.config/.fehbg")
+awful.spawn.with_shell("picom --config ~/.config/picom/awesomewm")
+awful.spawn.with_shell("~/.config/fehbg/awesomewm")
