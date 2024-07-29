@@ -33,7 +33,7 @@ options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
 
 chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 0)"
 case $chosen in
-$shutdown)
+"$shutdown")
 	ans=$(confirm_exit &)
 	if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 		systemctl poweroff
@@ -43,7 +43,7 @@ $shutdown)
 		msg
 	fi
 	;;
-$reboot)
+"$reboot")
 	ans=$(confirm_exit &)
 	if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 		systemctl reboot
@@ -53,12 +53,12 @@ $reboot)
 		msg
 	fi
 	;;
-$lock)
+"$lock")
 	if [[ -f /usr/bin/betterlockscreen ]]; then
 		betterlockscreen -l
 	fi
 	;;
-$suspend)
+"$suspend")
 	ans=$(confirm_exit &)
 	if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 		mpc -q pause
@@ -70,7 +70,7 @@ $suspend)
 		msg
 	fi
 	;;
-$logout)
+"$logout")
 	ans=$(confirm_exit &)
 	if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 		if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
