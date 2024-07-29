@@ -20,7 +20,7 @@ logout=" Logout"
 # Confirmation
 confirm_exit() {
 	rofi -dmenu -no-config -i -no-fixed-num-lines -p "Are You Sure? : " \
-		-theme $dir/confirm.rasi
+		-theme "$dir/confirm.rasi"
 }
 
 # Message
