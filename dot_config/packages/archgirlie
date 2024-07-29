@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -9,6 +10,7 @@ base-devel
 bat
 bat-extras
 bcachefs-tools
+betterlockscreen
 bind
 bitwarden-cli
 bluetuith
