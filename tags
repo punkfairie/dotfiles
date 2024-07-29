@@ -97,10 +97,10 @@
 #titlebar #TabsToolbar .titlebar-spacer	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer {$/;"	c
 #titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"]	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {$/;"	c
 0	dot_config/polybar/config.ini	/^animation-charging-0 = 󰂀$/;"	k	section:module/battery
-0	dot_config/polybar/config.ini	/^font-0 = JetBrainsMono Nerd Font;2$/;"	k	section:bar/first
-0	dot_config/polybar/config.ini	/^font-0 = JetBrainsMono Nerd Font;2$/;"	k	section:bar/fourth
-0	dot_config/polybar/config.ini	/^font-0 = JetBrainsMono Nerd Font;2$/;"	k	section:bar/second
-0	dot_config/polybar/config.ini	/^font-0 = JetBrainsMono Nerd Font;2$/;"	k	section:bar/third
+0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/first
+0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/fourth
+0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/second
+0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/third
 0	dot_config/polybar/config.ini	/^ramp-capacity-0 = 󰂎$/;"	k	section:module/battery
 0	dot_config/polybar/config.ini	/^ramp-headphones-0 = $/;"	k	section:module/alsa
 0	dot_config/polybar/config.ini	/^ramp-load-0 =  $/;"	k	section:module/cpu
@@ -109,8 +109,8 @@
 0	dot_config/polybar/config.ini	/^ramp-volume-0 = $/;"	k	section:module/alsa
 0	dot_config/polybar/config.ini	/^ramp-volume-0 = $/;"	k	section:module/pulseaudio
 1	dot_config/polybar/config.ini	/^animation-charging-1 = 󰂄$/;"	k	section:module/battery
-1	dot_config/polybar/config.ini	/^font-1 = JetBrainsMono Nerd Font;4$/;"	k	section:bar/first
-1	dot_config/polybar/config.ini	/^font-1 = JetBrainsMono Nerd Font;4$/;"	k	section:bar/fourth
+1	dot_config/polybar/config.ini	/^font-1 = FairiesevkaSans Nerd Font Propo;4$/;"	k	section:bar/first
+1	dot_config/polybar/config.ini	/^font-1 = FairiesevkaSans Nerd Font Propo;4$/;"	k	section:bar/fourth
 1	dot_config/polybar/config.ini	/^ramp-capacity-1 = 󱊡$/;"	k	section:module/battery
 1	dot_config/polybar/config.ini	/^ramp-load-1 =  $/;"	k	section:module/cpu
 1	dot_config/polybar/config.ini	/^ramp-signal-1 = $/;"	k	section:module/network
@@ -404,7 +404,7 @@ distro	dot_config/hyfetch.json	/^    "distro": null,$/;"	z
 distro_shorthand	dot_config/neofetch/config.conf	/^distro_shorthand="on"$/;"	k
 dont_focus_before_close	dot_config/awesome/ui/popups/scratchpad/init.lua	/^	dont_focus_before_close = false, -- When set to true, the scratchpad will be closed by the togg/;"	f
 doubleconfirm	dot_config/yay/config.json	/^	"doubleconfirm": true,$/;"	b
-down	dot_config/polybar/config.ini	/^scroll-down = ~\/.config\/polybar\/mytheme\/scripts\/backlight.sh down$/;"	k	section:module/brightness
+down	dot_config/polybar/config.ini	/^scroll-down = ~\/.config\/polybar\/scripts\/backlight.sh down$/;"	k	section:module/brightness
 dpi	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi_x	dot_config/openrazer/persistence.conf	/^dpi_x = 1800$/;"	k	section:PM2038H11502057
@@ -454,8 +454,8 @@ encode_number	dot_config/awesome/lib/json.lua	/^local function encode_number(val
 encode_string	dot_config/awesome/lib/json.lua	/^local function encode_string(val)$/;"	f
 encode_table	dot_config/awesome/lib/json.lua	/^local function encode_table(val, stack)$/;"	f
 escape_char	dot_config/awesome/lib/json.lua	/^local function escape_char(c)$/;"	f
-exec	dot_config/polybar/config.ini	/^exec = \/home\/shibamroy\/.config\/polybar\/mytheme\/scripts\/player.sh$/;"	k	section:module/player
-exec	dot_config/polybar/config.ini	/^exec = \/home\/shibamroy\/.config\/polybar\/mytheme\/scripts\/songname.sh$/;"	k	section:module/songname
+exec	dot_config/polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/player.sh$/;"	k	section:module/player
+exec	dot_config/polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/songname.sh$/;"	k	section:module/songname
 exit	dot_config/copyq/copyq.conf	/^exit=ctrl+q$/;"	k	section:Shortcuts
 exit_command	dot_config/awesome/lib/exit-screen.lua	/^local exit_command = function()$/;"	f
 expire_tab	dot_config/copyq/copyq.conf	/^expire_tab=0$/;"	k	section:Options
@@ -466,7 +466,7 @@ f	dot_config/nvim/lua/snippets/gitconfig.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/lua.lua	/^local f = ls.function_node$/;"	f
 fg	dot_config/copyq/copyq.conf	/^fg=#515151$/;"	k	section:Theme
 file	dot_config/mopidy/mopidy.conf	/^[file]$/;"	s
-file	dot_config/polybar/config.ini	/^include-file = ~\/.config\/polybar\/mytheme\/colors.ini$/;"	k
+file	dot_config/polybar/config.ini	/^include-file = ~\/.config\/polybar\/colors.ini$/;"	k
 fill	dot_config/nvim/lua/snippets/helpers.lua	/^M.fill = function(_, parent, args)$/;"	f	unknown:M
 filter_case_insensitive	dot_config/copyq/copyq.conf	/^filter_case_insensitive=true$/;"	k	section:Options
 filter_regular_expression	dot_config/copyq/copyq.conf	/^filter_regular_expression=false$/;"	k	section:Options
@@ -608,7 +608,7 @@ initial	dot_config/awesome/lib/animation/init.lua	/^function animation:initial()
 inkscape	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
-interface	dot_config/polybar/config.ini	/^interface = wlp3s0$/;"	k	section:module/network
+interface	dot_config/polybar/config.ini	/^interface = enp4s0$/;"	k	section:module/network
 interval	dot_config/polybar/config.ini	/^interval = 0.5$/;"	k	section:module/player
 interval	dot_config/polybar/config.ini	/^interval = 1.0$/;"	k	section:module/date
 interval	dot_config/polybar/config.ini	/^interval = 2$/;"	k	section:module/cpu
@@ -645,16 +645,16 @@ layer1	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1
 layer1	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layout	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
 layout	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/mytheme\/scripts\/backlight.sh up$/;"	k	section:module/brightness
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/mytheme\/scripts\/launcher.sh &$/;"	k	section:module/launcher
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/mytheme\/scripts\/powermenu.sh$/;"	k	section:module/powermenu
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/mytheme\/scripts\/wifi-menu.sh$/;"	k	section:module/wifi
+left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/backlight.sh up$/;"	k	section:module/brightness
+left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/launcher.sh &$/;"	k	section:module/launcher
+left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/powermenu.sh$/;"	k	section:module/powermenu
+left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/wifi-menu.sh$/;"	k	section:module/wifi
 left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/first
 left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/fourth
 left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/second
 left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/third
-left	dot_config/polybar/config.ini	/^modules-left = battery pulseaudio$/;"	k	section:bar/fourth
 left	dot_config/polybar/config.ini	/^modules-left = launcher$/;"	k	section:bar/first
+left	dot_config/polybar/config.ini	/^modules-left = pulseaudio$/;"	k	section:bar/fourth
 left	dot_config/polybar/config.ini	/^padding-left = 10px$/;"	k	section:bar/first
 left	dot_config/polybar/config.ini	/^padding-left = 10px$/;"	k	section:bar/second
 left	dot_config/polybar/config.ini	/^padding-left = 25px$/;"	k	section:bar/third
@@ -934,7 +934,7 @@ restore_geometry	dot_config/copyq/copyq.conf	/^restore_geometry=true$/;"	k	secti
 restore_persistence	dot_config/openrazer/razer.conf	/^restore_persistence = False$/;"	k	section:Startup
 reverse_selected_items	dot_config/copyq/copyq.conf	/^reverse_selected_items=ctrl+shift+r$/;"	k	section:Shortcuts
 right	dot_config/polybar/config.ini	/^click-right = pavucontrol$/;"	k	section:module/pulseaudio
-right	dot_config/polybar/config.ini	/^click-right = ~\/.config\/polybar\/mytheme\/srcipts\/backlight.sh down$/;"	k	section:module/brightness
+right	dot_config/polybar/config.ini	/^click-right = ~\/.config\/polybar\/srcipts\/backlight.sh down$/;"	k	section:module/brightness
 right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/first
 right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/fourth
 right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/second
@@ -1121,7 +1121,7 @@ underline_char	dot_config/neofetch/config.conf	/^underline_char="-"$/;"	k
 underline_enabled	dot_config/neofetch/config.conf	/^underline_enabled="on"$/;"	k
 unrel	dot_config/awesome/lib/savefloats.lua	/^local function unrel(s, _rel)$/;"	f
 unsubscribe	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:unsubscribe(func)$/;"	f	unknown:ret
-up	dot_config/polybar/config.ini	/^scroll-up = ~\/.config\/polybar\/mytheme\/scripts\/backlight.sh up$/;"	k	section:module/brightness
+up	dot_config/polybar/config.ini	/^scroll-up = ~\/.config\/polybar\/scripts\/backlight.sh up$/;"	k	section:module/brightness
 up	dot_config/polybar/config.ini	/^unknown-as-up = true$/;"	k	section:module/network
 update	dot_config/awesome/lib/animation/tween.lua	/^function Tween:update(dt)$/;"	f	unknown:Tween
 update	dot_config/awesome/ui/info-panel/weather/init.lua	/^	widget.update = function(result)$/;"	f	unknown:widget
