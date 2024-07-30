@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -17,6 +18,7 @@ bluez
 bluez-utils
 browsh-bin
 btop
+calc
 catppuccin-cursors-macchiato
 catppuccin-frappe-grub-theme-git
 catppuccin-gtk-theme-macchiato
@@ -117,6 +119,7 @@ nano
 ncmpcpp
 neovim
 networkmanager
+networkmanager-dmenu-git
 nginx
 nm-connection-editor
 ntfs-3g
@@ -150,6 +153,7 @@ python-pip
 python-pipenv
 python-pipx
 python-pynvim
+pywal-16-colors
 qbittorrent
 qt5-graphicaleffects
 qt5-quickcontrols
