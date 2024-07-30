@@ -96,59 +96,10 @@
 #titlebar #TabsToolbar	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar {$/;"	i
 #titlebar #TabsToolbar .titlebar-spacer	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer {$/;"	c
 #titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"]	dot_config/firefox/userChrome.css	/^#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {$/;"	c
-0	dot_config/polybar/config.ini	/^animation-charging-0 = 󰂀$/;"	k	section:module/battery
-0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/first
-0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/fourth
-0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/second
-0	dot_config/polybar/config.ini	/^font-0 = FairiesevkaSans Nerd Font Propo;2$/;"	k	section:bar/third
-0	dot_config/polybar/config.ini	/^ramp-capacity-0 = 󰂎$/;"	k	section:module/battery
-0	dot_config/polybar/config.ini	/^ramp-headphones-0 = $/;"	k	section:module/alsa
-0	dot_config/polybar/config.ini	/^ramp-load-0 = $/;"	k	section:module/cpu
-0	dot_config/polybar/config.ini	/^ramp-signal-0 = $/;"	k	section:module/network
-0	dot_config/polybar/config.ini	/^ramp-used-0 = $/;"	k	section:module/memory
-0	dot_config/polybar/config.ini	/^ramp-volume-0 = $/;"	k	section:module/alsa
-0	dot_config/polybar/config.ini	/^ramp-volume-0 = $/;"	k	section:module/pulseaudio
-1	dot_config/polybar/config.ini	/^animation-charging-1 = 󰂄$/;"	k	section:module/battery
-1	dot_config/polybar/config.ini	/^font-1 = FairiesevkaSans Nerd Font Propo;4$/;"	k	section:bar/first
-1	dot_config/polybar/config.ini	/^font-1 = FairiesevkaSans Nerd Font Propo;4$/;"	k	section:bar/fourth
-1	dot_config/polybar/config.ini	/^ramp-capacity-1 = 󱊡$/;"	k	section:module/battery
-1	dot_config/polybar/config.ini	/^ramp-load-1 = $/;"	k	section:module/cpu
-1	dot_config/polybar/config.ini	/^ramp-signal-1 = $/;"	k	section:module/network
-1	dot_config/polybar/config.ini	/^ramp-used-1 = $/;"	k	section:module/memory
-1	dot_config/polybar/config.ini	/^ramp-volume-1 = $/;"	k	section:module/alsa
-1	dot_config/polybar/config.ini	/^ramp-volume-1 = $/;"	k	section:module/pulseaudio
-2	dot_config/polybar/config.ini	/^ramp-capacity-2 = 󱊡$/;"	k	section:module/battery
-2	dot_config/polybar/config.ini	/^ramp-load-2 = $/;"	k	section:module/cpu
-2	dot_config/polybar/config.ini	/^ramp-signal-2 = $/;"	k	section:module/network
-2	dot_config/polybar/config.ini	/^ramp-used-2 = $/;"	k	section:module/memory
-2	dot_config/polybar/config.ini	/^ramp-volume-2 = $/;"	k	section:module/alsa
-2	dot_config/polybar/config.ini	/^ramp-volume-2 = $/;"	k	section:module/pulseaudio
-3	dot_config/polybar/config.ini	/^ramp-capacity-3 = 󰁼$/;"	k	section:module/battery
-3	dot_config/polybar/config.ini	/^ramp-load-3 = $/;"	k	section:module/cpu
-3	dot_config/polybar/config.ini	/^ramp-used-3 = $/;"	k	section:module/memory
-4	dot_config/polybar/config.ini	/^ramp-capacity-4 = 󰁾$/;"	k	section:module/battery
-4	dot_config/polybar/config.ini	/^ramp-load-4 = $/;"	k	section:module/cpu
-4	dot_config/polybar/config.ini	/^ramp-used-4 = $/;"	k	section:module/memory
-5	dot_config/polybar/config.ini	/^ramp-capacity-5 = 󰁾$/;"	k	section:module/battery
-5	dot_config/polybar/config.ini	/^ramp-load-5 = $/;"	k	section:module/cpu
-5	dot_config/polybar/config.ini	/^ramp-used-5 = $/;"	k	section:module/memory
-6	dot_config/polybar/config.ini	/^ramp-capacity-6 = 󰂂$/;"	k	section:module/battery
-6	dot_config/polybar/config.ini	/^ramp-load-6 = $/;"	k	section:module/cpu
-6	dot_config/polybar/config.ini	/^ramp-used-6 = $/;"	k	section:module/memory
-7	dot_config/polybar/config.ini	/^ramp-capacity-7 = 󰂂$/;"	k	section:module/battery
-7	dot_config/polybar/config.ini	/^ramp-load-7 = $/;"	k	section:module/cpu
-7	dot_config/polybar/config.ini	/^ramp-used-7 = $/;"	k	section:module/memory
-8	dot_config/polybar/config.ini	/^ramp-capacity-8 = 󰂂$/;"	k	section:module/battery
-9	dot_config/polybar/config.ini	/^ramp-capacity-9 = 󰁹$/;"	k	section:module/battery
 Arch	README.md	/^### Arch$/;"	S	section:mar does dotfiles""First-Time Setup
 Architecture	dot_config/pacman/pacman.conf	/^Architecture = auto$/;"	k	section:options
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 Catppuccin-Macchiato-Standard-Pink-Dark	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
-EOF	dot_config/polybar/scripts/executable_pywal.sh	/^	cat > $RFILE <<- EOF$/;"	h
-EOF	dot_config/polybar/scripts/scripts/executable_colors-dark.sh	/^	cat > $RFILE <<- EOF$/;"	h
-EOF	dot_config/polybar/scripts/scripts/executable_colors-light.sh	/^	cat > $RFILE <<- EOF$/;"	h
-EOF	dot_config/polybar/scripts/scripts/executable_pywal.sh	/^	cat > $RFILE <<- EOF$/;"	h
-EOF	dot_config/polybar/scripts/scripts/executable_random.sh	/^	cat > $RFILE <<- EOF$/;"	h
 First-Time Setup	README.md	/^## First-Time Setup$/;"	s	chapter:mar does dotfiles
 GPG makes me want to toss the computer out the window	README.md	/^### GPG makes me want to toss the computer out the window$/;"	S	section:mar does dotfiles""First-Time Setup
 GRUB	README.md	/^### GRUB$/;"	S	section:mar does dotfiles""Themes
@@ -183,8 +134,6 @@ Themes	README.md	/^## Themes$/;"	s	chapter:mar does dotfiles
 ["<C-CR>"]	dot_config/nvim/lua/plugins/nvim-cmp.lua	/^        ["<C-CR>"] = function(fallback)$/;"	f
 ["<S-Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
 ["<Tab>"]	dot_config/nvim/lua/plugins/example.lua	/^        ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
-_EOF_	dot_config/polybar/scripts/scripts/executable_colors-dark.sh	/^	cat <<- _EOF_$/;"	h
-_EOF_	dot_config/polybar/scripts/scripts/executable_colors-light.sh	/^	cat <<- _EOF_$/;"	h
 _get_widget_geometry	dot_config/awesome/helpers/ui.lua	/^local function _get_widget_geometry(_hierarchy, widget)$/;"	f
 abort	dot_config/awesome/lib/animation/init.lua	/^function animation:abort()$/;"	f	unknown:animation
 about	dot_config/copyq/copyq.conf	/^about=shift+f1$/;"	k	section:Shortcuts
@@ -192,12 +141,8 @@ activate_closes	dot_config/copyq/copyq.conf	/^activate_closes=true$/;"	k	section
 activate_focuses	dot_config/copyq/copyq.conf	/^activate_focuses=true$/;"	k	section:Options
 activate_item_with_single_click	dot_config/copyq/copyq.conf	/^activate_item_with_single_click=false$/;"	k	section:Options
 activate_pastes	dot_config/copyq/copyq.conf	/^activate_pastes=true$/;"	k	section:Options
-active	dot_config/polybar/config.ini	/^label-active = %name%$/;"	k	section:module/xworkspaces
-adapter	dot_config/polybar/config.ini	/^adapter = ADP1$/;"	k	section:module/battery
 add_hover_cursor	dot_config/awesome/helpers/ui.lua	/^function ui.add_hover_cursor(w, hover_cursor)$/;"	f	unknown:ui
-alert	dot_config/polybar/colors.ini	/^alert = #937ead$/;"	k	section:colors
 alsamixer	dot_config/mopidy/mopidy.conf	/^[alsamixer]$/;"	s
-alt	dot_config/polybar/config.ini	/^time-alt = " %a, %d %b %Y"$/;"	k	section:module/date
 alt_bg	dot_config/copyq/copyq.conf	/^alt_bg=bg-#101a1a$/;"	k	section:Theme
 alt_item_css	dot_config/copyq/copyq.conf	/^alt_item_css="\\n    ;border: 0px solid transparent\\n    ;border-radius: 5px\\n    "$/;"	k	section:Theme
 always_on_top	dot_config/copyq/copyq.conf	/^always_on_top=false$/;"	k	section:Options
@@ -211,25 +156,12 @@ args	dot_config/hyfetch.json	/^    "args": null,$/;"	z
 ascii_bold	dot_config/neofetch/config.conf	/^ascii_bold="on"$/;"	k
 ascii_colors	dot_config/neofetch/config.conf	/^ascii_colors=(distro)$/;"	k
 ascii_distro	dot_config/neofetch/config.conf	/^ascii_distro="auto"$/;"	k
-at	dot_config/polybar/config.ini	/^full-at = 99$/;"	k	section:module/battery
 audio	dot_config/mopidy/mopidy.conf	/^[audio]$/;"	s
 aurrpcurl	dot_config/yay/config.json	/^	"aurrpcurl": "https:\/\/aur.archlinux.org\/rpc?",$/;"	s
 aururl	dot_config/yay/config.json	/^	"aururl": "https:\/\/aur.archlinux.org",$/;"	s
 autocompletion	dot_config/copyq/copyq.conf	/^autocompletion=true$/;"	k	section:Options
 autostart	dot_config/copyq/copyq.conf	/^autostart=false$/;"	k	section:Options
 backend	dot_config/hyfetch.json	/^    "backend": "neofetch",$/;"	s
-background	dot_config/polybar/colors.ini	/^background = #77171524$/;"	k	section:colors
-background	dot_config/polybar/config.ini	/^background = ${colors.background}$/;"	k	section:bar/first
-background	dot_config/polybar/config.ini	/^background = ${colors.background}$/;"	k	section:bar/fourth
-background	dot_config/polybar/config.ini	/^background = ${colors.background}$/;"	k	section:bar/second
-background	dot_config/polybar/config.ini	/^background = ${colors.background}$/;"	k	section:bar/third
-background	dot_config/polybar/config.ini	/^compositing-background = source$/;"	k	section:settings
-background	dot_config/polybar/config.ini	/^label-active-background = ${colors.background}$/;"	k	section:module/xworkspaces
-background	dot_config/polybar/config.ini	/^label-background = ${colors.background}$/;"	k	section:module/brightness
-background	dot_config/polybar/config.ini	/^label-background = ${colors.background}$/;"	k	section:module/launcher
-background	dot_config/polybar/config.ini	/^label-background = ${colors.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/config.ini	/^label-background= ${colors.background}$/;"	k	section:module/wifi
-background	dot_config/polybar/config.ini	/^label-urgent-background = ${colors.background}$/;"	k	section:module/xworkspaces
 background_color	dot_config/neofetch/config.conf	/^background_color=$/;"	k
 backlight_active	dot_config/openrazer/persistence.conf	/^backlight_active = True$/;"	k	section:IO2049F50104914
 backlight_brightness	dot_config/openrazer/persistence.conf	/^backlight_brightness = 75$/;"	k	section:IO2049F50104914
@@ -237,10 +169,6 @@ backlight_colors	dot_config/openrazer/persistence.conf	/^backlight_colors = 0 25
 backlight_effect	dot_config/openrazer/persistence.conf	/^backlight_effect = wave$/;"	k	section:IO2049F50104914
 backlight_speed	dot_config/openrazer/persistence.conf	/^backlight_speed = 1$/;"	k	section:IO2049F50104914
 backlight_wave_dir	dot_config/openrazer/persistence.conf	/^backlight_wave_dir = 1$/;"	k	section:IO2049F50104914
-bar/first	dot_config/polybar/config.ini	/^[bar\/first]$/;"	s
-bar/fourth	dot_config/polybar/config.ini	/^[bar\/fourth]$/;"	s
-bar/second	dot_config/polybar/config.ini	/^[bar\/second]$/;"	s
-bar/third	dot_config/polybar/config.ini	/^[bar\/third]$/;"	s
 bar_border	dot_config/neofetch/config.conf	/^bar_border="on"$/;"	k
 bar_char_elapsed	dot_config/neofetch/config.conf	/^bar_char_elapsed="-"$/;"	k
 bar_char_total	dot_config/neofetch/config.conf	/^bar_char_total="="$/;"	k
@@ -248,7 +176,6 @@ bar_color_elapsed	dot_config/neofetch/config.conf	/^bar_color_elapsed="distro"$/
 bar_color_total	dot_config/neofetch/config.conf	/^bar_color_total="distro"$/;"	k
 bar_length	dot_config/neofetch/config.conf	/^bar_length=15$/;"	k
 batchinstall	dot_config/yay/config.json	/^	"batchinstall": false,$/;"	b
-battery	dot_config/polybar/config.ini	/^battery = BAT0$/;"	k	section:module/battery
 battery_display	dot_config/neofetch/config.conf	/^battery_display="off"$/;"	k
 battery_notifier	dot_config/openrazer/razer.conf	/^battery_notifier = True$/;"	k	section:Startup
 battery_notifier_freq	dot_config/openrazer/razer.conf	/^battery_notifier_freq = 600$/;"	k	section:Startup
@@ -258,8 +185,6 @@ block_height	dot_config/neofetch/config.conf	/^block_height=1$/;"	k
 block_range	dot_config/neofetch/config.conf	/^block_range=(0 15)$/;"	k
 block_width	dot_config/neofetch/config.conf	/^block_width=3$/;"	k
 bold	dot_config/neofetch/config.conf	/^bold="on"$/;"	k
-border	dot_config/polybar/config.ini	/^compositing-border = over$/;"	k	section:settings
-bottom	dot_config/polybar/config.ini	/^margin-bottom = 0$/;"	k	section:global/wm
 bottomup	dot_config/yay/config.json	/^	"bottomup": true,$/;"	b
 box_widget	dot_config/awesome/ui/info-panel/init.lua	/^local function box_widget(widgets, _width, _height)$/;"	f
 buildDir	dot_config/yay/config.json	/^	"buildDir": "\/home\/marley\/.cache\/yay",$/;"	s
@@ -276,25 +201,10 @@ callback	dot_config/awesome/ui/top-panel/widgets/clock.lua	/^	callback = functio
 callback	dot_config/awesome/ui/top-panel/widgets/date.lua	/^	callback = function()$/;"	f
 catimg_size	dot_config/neofetch/config.conf	/^catimg_size="2"$/;"	k
 cc	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://creativecommons.org/ns#
-center	dot_config/polybar/config.ini	/^fixed-center = true$/;"	k	section:bar/first
-center	dot_config/polybar/config.ini	/^fixed-center = true$/;"	k	section:bar/fourth
-center	dot_config/polybar/config.ini	/^fixed-center = true$/;"	k	section:bar/second
-center	dot_config/polybar/config.ini	/^fixed-center = true$/;"	k	section:bar/third
-center	dot_config/polybar/config.ini	/^modules-center = brightness$/;"	k	section:bar/fourth
-center	dot_config/polybar/config.ini	/^modules-center = cpu memory$/;"	k	section:bar/second
-center	dot_config/polybar/config.ini	/^modules-center = player songname$/;"	k	section:bar/third
-center	dot_config/polybar/config.ini	/^modules-center = xworkspaces$/;"	k	section:bar/first
 change_clipboard_owner_delay_ms	dot_config/copyq/copyq.conf	/^change_clipboard_owner_delay_ms=150$/;"	k	section:Options
-change_color	dot_config/polybar/scripts/executable_pywal.sh	/^change_color() {$/;"	f
-change_color	dot_config/polybar/scripts/scripts/executable_colors-dark.sh	/^change_color() {$/;"	f
-change_color	dot_config/polybar/scripts/scripts/executable_colors-light.sh	/^change_color() {$/;"	f
-change_color	dot_config/polybar/scripts/scripts/executable_pywal.sh	/^change_color() {$/;"	f
-change_color	dot_config/polybar/scripts/scripts/executable_random.sh	/^change_color() {$/;"	f
 change_tab_icon	dot_config/copyq/copyq.conf	/^change_tab_icon=ctrl+shift+t$/;"	k	section:Shortcuts
 changed	dot_config/awesome/ui/popups/layout/init.lua	/^function layout_popup.changed()$/;"	f	unknown:layout_popup
 chaotic-aur	dot_config/pacman/pacman.conf	/^[chaotic-aur]$/;"	s
-charging	dot_config/polybar/config.ini	/^format-charging = <animation-charging> <label-charging>$/;"	k	section:module/battery
-charging	dot_config/polybar/config.ini	/^label-charging = "%percentage%%"$/;"	k	section:module/battery
 checkNewParams	dot_config/awesome/lib/animation/tween.lua	/^local function checkNewParams(_, _, subject, target, easing)$/;"	f
 checkSubjectAndTargetRecursively	dot_config/awesome/lib/animation/tween.lua	/^local function checkSubjectAndTargetRecursively(subject, target, path)$/;"	f
 check_clipboard	dot_config/copyq/copyq.conf	/^check_clipboard=true$/;"	k	section:Options
@@ -307,19 +217,10 @@ close_on_unfocus	dot_config/copyq/copyq.conf	/^close_on_unfocus=false$/;"	k	sect
 close_on_unfocus_delay_ms	dot_config/copyq/copyq.conf	/^close_on_unfocus_delay_ms=500$/;"	k	section:Options
 codepoint_to_utf8	dot_config/awesome/lib/json.lua	/^local function codepoint_to_utf8(n)$/;"	f
 col_offset	dot_config/neofetch/config.conf	/^col_offset=49$/;"	k
-color	dot_config/polybar/config.ini	/^border-color = ${colors.background}$/;"	k	section:bar/first
-color	dot_config/polybar/config.ini	/^border-color = ${colors.background}$/;"	k	section:bar/fourth
-color	dot_config/polybar/config.ini	/^border-color = ${colors.background}$/;"	k	section:bar/second
-color	dot_config/polybar/config.ini	/^border-color = ${colors.background}$/;"	k	section:bar/third
-color	dot_config/polybar/config.ini	/^line-color = ${colors.primary}$/;"	k	section:bar/first
-color	dot_config/polybar/config.ini	/^line-color = ${colors.primary}$/;"	k	section:bar/fourth
-color	dot_config/polybar/config.ini	/^line-color = ${colors.primary}$/;"	k	section:bar/second
-color	dot_config/polybar/config.ini	/^line-color = ${colors.primary}$/;"	k	section:bar/third
 color_align	dot_config/hyfetch.json	/^    "color_align": {$/;"	o
 color_blocks	dot_config/neofetch/config.conf	/^color_blocks="on"$/;"	k
 colorize_text	dot_config/awesome/helpers/ui.lua	/^function ui.colorize_text(text, color)$/;"	f	unknown:ui
 colors	dot_config/neofetch/config.conf	/^colors=(distro)$/;"	k
-colors	dot_config/polybar/colors.ini	/^[colors]$/;"	s
 combinedupgrade	dot_config/yay/config.json	/^	"combinedupgrade": true,$/;"	b
 command_history_size	dot_config/copyq/copyq.conf	/^command_history_size=100$/;"	k	section:Options
 commands	dot_config/copyq/copyq.conf	/^commands=f6$/;"	k	section:Shortcuts
@@ -329,10 +230,6 @@ config	dot_config/nvim/lua/plugins/example.lua	/^      config = function()$/;"	f
 config	dot_config/nvim/lua/plugins/luasnip.lua	/^    config = function(_, opts)$/;"	f
 config	dot_config/nvim/lua/plugins/nvim-emmet.lua	/^    config = function()$/;"	f
 confirm_exit	dot_config/copyq/copyq.conf	/^confirm_exit=true$/;"	k	section:Options
-confirm_exit	dot_config/polybar/scripts/executable_powermenu.sh	/^confirm_exit() {$/;"	f
-confirm_exit	dot_config/polybar/scripts/scripts/executable_powermenu.sh	/^confirm_exit() {$/;"	f
-connected	dot_config/polybar/config.ini	/^format-connected = <ramp-signal> <label-connected>$/;"	k	section:module/network
-connected	dot_config/polybar/config.ini	/^label-connected = ""$/;"	k	section:module/network
 copyTables	dot_config/awesome/lib/animation/tween.lua	/^local function copyTables(destination, keysTable, valuesTable)$/;"	f
 copy_clipboard	dot_config/copyq/copyq.conf	/^copy_clipboard=false$/;"	k	section:Options
 copy_selected_items	dot_config/copyq/copyq.conf	/^copy_selected_items=ctrl+c$/;"	k	section:Shortcuts
@@ -391,11 +288,6 @@ devel	dot_config/yay/config.json	/^	"devel": false,$/;"	b
 devices_off_on_screensaver	dot_config/openrazer/razer.conf	/^devices_off_on_screensaver = True$/;"	k	section:Startup
 diffmenu	dot_config/yay/config.json	/^	"diffmenu": false,$/;"	b
 disable_tray	dot_config/copyq/copyq.conf	/^disable_tray=false$/;"	k	section:Options
-disabled	dot_config/polybar/colors.ini	/^disabled = #c5dae5$/;"	k	section:colors
-discharging	dot_config/polybar/config.ini	/^format-discharging = <ramp-capacity> <label-discharging>$/;"	k	section:module/battery
-discharging	dot_config/polybar/config.ini	/^label-discharging = "%percentage%%"$/;"	k	section:module/battery
-disconnected	dot_config/polybar/config.ini	/^format-disconnected = <label-disconnected>$/;"	k	section:module/network
-disconnected	dot_config/polybar/config.ini	/^label-disconnected = "%{A1:networkmanager_dmenu &:} Offline%{A}"$/;"	k	section:module/network
 disk_display	dot_config/neofetch/config.conf	/^disk_display="off"$/;"	k
 disk_percent	dot_config/neofetch/config.conf	/^disk_percent="on"$/;"	k
 disk_show	dot_config/neofetch/config.conf	/^disk_show=('\/')$/;"	k
@@ -404,7 +296,6 @@ distro	dot_config/hyfetch.json	/^    "distro": null,$/;"	z
 distro_shorthand	dot_config/neofetch/config.conf	/^distro_shorthand="on"$/;"	k
 dont_focus_before_close	dot_config/awesome/ui/popups/scratchpad/init.lua	/^	dont_focus_before_close = false, -- When set to true, the scratchpad will be closed by the togg/;"	f
 doubleconfirm	dot_config/yay/config.json	/^	"doubleconfirm": true,$/;"	b
-down	dot_config/polybar/config.ini	/^scroll-down = ~\/.config\/polybar\/scripts\/backlight.sh down$/;"	k	section:module/brightness
 dpi	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-xft-dpi=98304$/;"	k	section:Settings
 dpi_x	dot_config/openrazer/persistence.conf	/^dpi_x = 1800$/;"	k	section:PM2038H11502057
@@ -433,7 +324,6 @@ editor_strikethrough	dot_config/copyq/copyq.conf	/^editor_strikethrough=$/;"	k	s
 editor_underline	dot_config/copyq/copyq.conf	/^editor_underline=ctrl+u$/;"	k	section:Shortcuts
 editor_undo	dot_config/copyq/copyq.conf	/^editor_undo=ctrl+z$/;"	k	section:Shortcuts
 editorflags	dot_config/yay/config.json	/^	"editorflags": "",$/;"	s
-empty	dot_config/polybar/config.ini	/^label-empty = %name%$/;"	k	section:module/xworkspaces
 enabled	dot_config/copyq/copyq.conf	/^itemencrypted\\enabled=true$/;"	k	section:Plugins
 enabled	dot_config/copyq/copyq.conf	/^itemfakevim\\enabled=true$/;"	k	section:Plugins
 enabled	dot_config/copyq/copyq.conf	/^itemimage\\enabled=true$/;"	k	section:Plugins
@@ -454,8 +344,6 @@ encode_number	dot_config/awesome/lib/json.lua	/^local function encode_number(val
 encode_string	dot_config/awesome/lib/json.lua	/^local function encode_string(val)$/;"	f
 encode_table	dot_config/awesome/lib/json.lua	/^local function encode_table(val, stack)$/;"	f
 escape_char	dot_config/awesome/lib/json.lua	/^local function escape_char(c)$/;"	f
-exec	dot_config/polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/player.sh$/;"	k	section:module/player
-exec	dot_config/polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/songname.sh$/;"	k	section:module/songname
 exit	dot_config/copyq/copyq.conf	/^exit=ctrl+q$/;"	k	section:Shortcuts
 exit_command	dot_config/awesome/lib/exit-screen.lua	/^local exit_command = function()$/;"	f
 expire_tab	dot_config/copyq/copyq.conf	/^expire_tab=0$/;"	k	section:Options
@@ -466,7 +354,6 @@ f	dot_config/nvim/lua/snippets/gitconfig.lua	/^local f = ls.function_node$/;"	f
 f	dot_config/nvim/lua/snippets/lua.lua	/^local f = ls.function_node$/;"	f
 fg	dot_config/copyq/copyq.conf	/^fg=#515151$/;"	k	section:Theme
 file	dot_config/mopidy/mopidy.conf	/^[file]$/;"	s
-file	dot_config/polybar/config.ini	/^include-file = ~\/.config\/polybar\/colors.ini$/;"	k
 fill	dot_config/nvim/lua/snippets/helpers.lua	/^M.fill = function(_, parent, args)$/;"	f	unknown:M
 filter_case_insensitive	dot_config/copyq/copyq.conf	/^filter_case_insensitive=true$/;"	k	section:Options
 filter_regular_expression	dot_config/copyq/copyq.conf	/^filter_regular_expression=false$/;"	k	section:Options
@@ -476,46 +363,10 @@ find_font	dot_config/copyq/copyq.conf	/^find_font="FairiesevkaSans Nerd Font Pro
 find_items	dot_config/copyq/copyq.conf	/^find_items=f3$/;"	k	section:Shortcuts
 fire	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:fire(...)$/;"	f	unknown:ret
 font	dot_config/copyq/copyq.conf	/^font="FairiesevkaSans Nerd Font Propo,9,-1,5,50,0,0,0,0,0,Regular"$/;"	k	section:Theme
-font	dot_config/polybar/config.ini	/^label-font = 1$/;"	k	section:module/powermenu
-font	dot_config/polybar/config.ini	/^label-font = 2$/;"	k	section:module/brightness
-font	dot_config/polybar/config.ini	/^label-font = 2$/;"	k	section:module/launcher
 font_antialiasing	dot_config/copyq/copyq.conf	/^font_antialiasing=true$/;"	k	section:Theme
 fore_back	dot_config/hyfetch.json	/^        "fore_back": null$/;"	z	object:color_align
-foreground	dot_config/polybar/colors.ini	/^foreground = #FFFFFF$/;"	k	section:colors
-foreground	dot_config/polybar/config.ini	/^compositing-foreground = over$/;"	k	section:settings
-foreground	dot_config/polybar/config.ini	/^foreground = ${colors.foreground}$/;"	k	section:bar/first
-foreground	dot_config/polybar/config.ini	/^foreground = ${colors.foreground}$/;"	k	section:bar/fourth
-foreground	dot_config/polybar/config.ini	/^foreground = ${colors.foreground}$/;"	k	section:bar/second
-foreground	dot_config/polybar/config.ini	/^foreground = ${colors.foreground}$/;"	k	section:bar/third
-foreground	dot_config/polybar/config.ini	/^format-connected-foreground = ${colors.primary}$/;"	k	section:module/network
-foreground	dot_config/polybar/config.ini	/^format-disconnected-foreground = ${colors.alert}$/;"	k	section:module/network
-foreground	dot_config/polybar/config.ini	/^label-active-foreground = ${colors.primary}$/;"	k	section:module/xworkspaces
-foreground	dot_config/polybar/config.ini	/^label-empty-foreground = ${colors.disabled}$/;"	k	section:module/xworkspaces
-foreground	dot_config/polybar/config.ini	/^label-foreground = ${colors.foreground}$/;"	k	section:module/launcher
-foreground	dot_config/polybar/config.ini	/^label-foreground = ${colors.primary}$/;"	k	section:module/brightness
-foreground	dot_config/polybar/config.ini	/^label-foreground = ${colors.primary}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/config.ini	/^label-foreground= ${colors.primary}$/;"	k	section:module/wifi
-foreground	dot_config/polybar/config.ini	/^label-muted-foreground = ${colors.disabled}$/;"	k	section:module/alsa
-foreground	dot_config/polybar/config.ini	/^label-muted-foreground = ${colors.disabled}$/;"	k	section:module/pulseaudio
-foreground	dot_config/polybar/config.ini	/^label-volume-foreground = ${colors.foreground}$/;"	k	section:module/alsa
-foreground	dot_config/polybar/config.ini	/^ramp-capacity-foreground = ${colors.primary}$/;"	k	section:module/battery
-foreground	dot_config/polybar/config.ini	/^ramp-load-foreground = ${colors.primary}$/;"	k	section:module/cpu
-foreground	dot_config/polybar/config.ini	/^ramp-used-foreground = ${colors.primary}$/;"	k	section:module/memory
-foreground	dot_config/polybar/config.ini	/^ramp-volume-foreground = ${colors.primary}$/;"	k	section:module/alsa
-foreground	dot_config/polybar/config.ini	/^ramp-volume-foreground = ${colors.primary}$/;"	k	section:module/pulseaudio
 forget	dot_config/awesome/lib/savefloats.lua	/^local function forget(c)$/;"	f
-format	dot_config/polybar/config.ini	/^format = <label>$/;"	k	section:module/brightness
-format	dot_config/polybar/config.ini	/^format = <label>$/;"	k	section:module/date
-format	dot_config/polybar/config.ini	/^format = <label>$/;"	k	section:module/launcher
-format	dot_config/polybar/config.ini	/^format = <label>$/;"	k	section:module/powermenu
-format	dot_config/polybar/config.ini	/^format = <label>$/;"	k	section:module/wifi
-format	dot_config/polybar/config.ini	/^format = <ramp-load> <label>$/;"	k	section:module/cpu
-format	dot_config/polybar/config.ini	/^format= <ramp-used> <label>$/;"	k	section:module/memory
-format	dot_config/polybar/config.ini	/^time-format = %H:%M$/;"	k	section:module/battery
 format_settings	dot_config/copyq/copyq.conf	/^itemsync\\format_settings=@Invalid()$/;"	k	section:Plugins
-framerate	dot_config/polybar/config.ini	/^animation-charging-framerate = 750$/;"	k	section:module/battery
-full	dot_config/polybar/config.ini	/^format-full = <label-full>$/;"	k	section:module/battery
-full	dot_config/polybar/config.ini	/^label-full = " Full"$/;"	k	section:module/battery
 gap	dot_config/neofetch/config.conf	/^gap=3$/;"	k
 getEasingFunction	dot_config/awesome/lib/animation/tween.lua	/^local function getEasingFunction(easing)$/;"	f
 get_cpu	dot_config/awesome/signals/cpu.lua	/^local function get_cpu()$/;"	f
@@ -523,9 +374,6 @@ get_disk	dot_config/awesome/signals/disk.lua	/^local function get_disk()$/;"	f
 get_mem	dot_config/awesome/signals/mem.lua	/^local function get_mem()$/;"	f
 get_oldest_notification	dot_config/awesome/ui/popups/notifications/init.lua	/^local function get_oldest_notification()$/;"	f
 get_player	dot_config/awesome/signals/player.lua	/^local function get_player()$/;"	f
-get_random_color	dot_config/polybar/scripts/scripts/executable_random.sh	/^get_random_color() {$/;"	f
-get_random_number	dot_config/polybar/scripts/scripts/executable_random.sh	/^get_random_number() {$/;"	f
-get_total_updates	dot_config/polybar/scripts/scripts/executable_updates.sh	/^get_total_updates() { UPDATES=$(~\/.config\/polybar\/colorblocks\/scripts\/checkupdates 2>\/dev\//;"	f
 get_uptime	dot_config/awesome/signals/uptime.lua	/^local function get_uptime()$/;"	f
 get_val	dot_config/awesome/ui/notif-panel/widgets/mic_slider.lua	/^local function get_val()$/;"	f
 get_val	dot_config/awesome/ui/notif-panel/widgets/vol_slider.lua	/^local function get_val()$/;"	f
@@ -540,7 +388,6 @@ get_vol	dot_config/awesome/ui/popups/volume/init.lua	/^local function get_vol()$
 get_widget_geometry	dot_config/awesome/helpers/ui.lua	/^function ui.get_widget_geometry(_wibox, widget)$/;"	f	unknown:ui
 gitbin	dot_config/yay/config.json	/^	"gitbin": "git",$/;"	s
 gitflags	dot_config/yay/config.json	/^	"gitflags": "",$/;"	s
-global/wm	dot_config/polybar/config.ini	/^[global\/wm]$/;"	s
 gpgbin	dot_config/yay/config.json	/^	"gpgbin": "gpg",$/;"	s
 gpgflags	dot_config/yay/config.json	/^	"gpgflags": "",$/;"	s
 gpu_brand	dot_config/neofetch/config.conf	/^gpu_brand="on"$/;"	k
@@ -554,10 +401,6 @@ gtk2	dot_config/neofetch/config.conf	/^gtk2="on"$/;"	k
 gtk3	dot_config/neofetch/config.conf	/^gtk3="on"$/;"	k
 gtk_shorthand	dot_config/neofetch/config.conf	/^gtk_shorthand="on"$/;"	k
 has_words_before	dot_config/nvim/lua/plugins/example.lua	/^      local has_words_before = function()$/;"	f
-height	dot_config/polybar/config.ini	/^height = 30$/;"	k	section:bar/first
-height	dot_config/polybar/config.ini	/^height = 30$/;"	k	section:bar/fourth
-height	dot_config/polybar/config.ini	/^height = 30$/;"	k	section:bar/second
-height	dot_config/polybar/config.ini	/^height = 30$/;"	k	section:bar/third
 help	dot_config/copyq/copyq.conf	/^help=f1$/;"	k	section:Shortcuts
 hide_main_window	dot_config/copyq/copyq.conf	/^hide_main_window=false$/;"	k	section:Options
 hide_main_window_in_task_bar	dot_config/copyq/copyq.conf	/^hide_main_window_in_task_bar=false$/;"	k	section:Options
@@ -608,15 +451,6 @@ initial	dot_config/awesome/lib/animation/init.lua	/^function animation:initial()
 inkscape	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
-interface	dot_config/polybar/config.ini	/^interface = enp4s0$/;"	k	section:module/network
-interval	dot_config/polybar/config.ini	/^interval = 0.5$/;"	k	section:module/player
-interval	dot_config/polybar/config.ini	/^interval = 1.0$/;"	k	section:module/date
-interval	dot_config/polybar/config.ini	/^interval = 2$/;"	k	section:module/cpu
-interval	dot_config/polybar/config.ini	/^interval = 3$/;"	k	section:module/songname
-interval	dot_config/polybar/config.ini	/^interval = 3.0$/;"	k	section:module/network
-interval	dot_config/polybar/config.ini	/^interval = 5$/;"	k	section:module/alsa
-interval	dot_config/polybar/config.ini	/^interval =1$/;"	k	section:module/memory
-interval	dot_config/polybar/config.ini	/^poll-interval = 1$/;"	k	section:module/battery
 item_css	dot_config/copyq/copyq.conf	/^item_css=$/;"	k	section:Theme
 item_data_threshold	dot_config/copyq/copyq.conf	/^item_data_threshold=1024$/;"	k	section:Options
 item_popup_interval	dot_config/copyq/copyq.conf	/^item_popup_interval=0$/;"	k	section:Options
@@ -626,13 +460,6 @@ keepSrc	dot_config/yay/config.json	/^	"keepSrc": false,$/;"	b
 kernel_shorthand	dot_config/neofetch/config.conf	/^kernel_shorthand="on"$/;"	k
 keypressed_callback	dot_config/awesome/lib/exit-screen.lua	/^	keypressed_callback = function(_, _, key, _)$/;"	f
 keys	dot_config/nvim/lua/plugins/example.lua	/^    keys = function()$/;"	f
-label	dot_config/polybar/config.ini	/^label = %mb_used%$/;"	k	section:module/memory
-label	dot_config/polybar/config.ini	/^label = %percentage%%$/;"	k	section:module/cpu
-label	dot_config/polybar/config.ini	/^label = %time%$/;"	k	section:module/date
-label	dot_config/polybar/config.ini	/^label = $/;"	k	section:module/wifi
-label	dot_config/polybar/config.ini	/^label = 󰀻$/;"	k	section:module/launcher
-label	dot_config/polybar/config.ini	/^label = 󰃝$/;"	k	section:module/brightness
-label	dot_config/polybar/config.ini	/^label = 󰐥$/;"	k	section:module/powermenu
 language	dot_config/copyq/copyq.conf	/^language=en$/;"	k	section:Options
 laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6"$/;"	s	object:require
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
@@ -645,20 +472,6 @@ layer1	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1
 layer1	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layout	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
 layout	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-decoration-layout=icon:minimize,maximize,close$/;"	k	section:Settings
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/backlight.sh up$/;"	k	section:module/brightness
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/launcher.sh &$/;"	k	section:module/launcher
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/powermenu.sh$/;"	k	section:module/powermenu
-left	dot_config/polybar/config.ini	/^click-left = ~\/.config\/polybar\/scripts\/wifi-menu.sh$/;"	k	section:module/wifi
-left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/first
-left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/fourth
-left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/second
-left	dot_config/polybar/config.ini	/^module-margin-left = 10px$/;"	k	section:bar/third
-left	dot_config/polybar/config.ini	/^modules-left = launcher$/;"	k	section:bar/first
-left	dot_config/polybar/config.ini	/^modules-left = pulseaudio$/;"	k	section:bar/fourth
-left	dot_config/polybar/config.ini	/^padding-left = 10px$/;"	k	section:bar/first
-left	dot_config/polybar/config.ini	/^padding-left = 10px$/;"	k	section:bar/second
-left	dot_config/polybar/config.ini	/^padding-left = 25px$/;"	k	section:bar/third
-left	dot_config/polybar/config.ini	/^padding-left = 30px$/;"	k	section:bar/fourth
 library	dot_config/nvim/dot_neoconf.json	/^    "library": {$/;"	o	object:neodev
 light_dark	dot_config/hyfetch.json	/^    "light_dark": "dark",$/;"	s
 lightness	dot_config/hyfetch.json	/^    "lightness": 0.7,$/;"	n
@@ -710,23 +523,8 @@ menu_css	dot_config/copyq/copyq.conf	/^menu_css="\\n    ;border: 1px solid ${sel
 menubar	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-shell-shows-menubar=1$/;"	k	section:Settings
 metadata10	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     id="metadata10">$/;"	i
 mflags	dot_config/yay/config.json	/^	"mflags": "",$/;"	s
-mixer	dot_config/polybar/config.ini	/^master-mixer = Master$/;"	k	section:module/alsa
 mode	dot_config/hyfetch.json	/^        "mode": "horizontal",$/;"	s	object:color_align
 mode	dot_config/hyfetch.json	/^    "mode": "rgb",$/;"	s
-module/alsa	dot_config/polybar/config.ini	/^[module\/alsa]$/;"	s
-module/battery	dot_config/polybar/config.ini	/^[module\/battery]$/;"	s
-module/brightness	dot_config/polybar/config.ini	/^[module\/brightness]$/;"	s
-module/cpu	dot_config/polybar/config.ini	/^[module\/cpu]$/;"	s
-module/date	dot_config/polybar/config.ini	/^[module\/date]$/;"	s
-module/launcher	dot_config/polybar/config.ini	/^[module\/launcher]$/;"	s
-module/memory	dot_config/polybar/config.ini	/^[module\/memory]$/;"	s
-module/network	dot_config/polybar/config.ini	/^[module\/network]$/;"	s
-module/player	dot_config/polybar/config.ini	/^[module\/player]$/;"	s
-module/powermenu	dot_config/polybar/config.ini	/^[module\/powermenu]$/;"	s
-module/pulseaudio	dot_config/polybar/config.ini	/^[module\/pulseaudio]$/;"	s
-module/songname	dot_config/polybar/config.ini	/^[module\/songname]$/;"	s
-module/wifi	dot_config/polybar/config.ini	/^[module\/wifi]$/;"	s
-module/xworkspaces	dot_config/polybar/config.ini	/^[module\/xworkspaces]$/;"	s
 modules	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-modules=colorreload-gtk-module:appmenu-gtk-module$/;"	k	section:Settings
 modules	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-modules=colorreload-gtk-module$/;"	k	section:Settings
 mouse_resize_handler	dot_config/awesome/lib/better-resize.lua	/^awful.layout.suit.tile.bottom.mouse_resize_handler = function(c)$/;"	f	unknown:awful.layout.suit.tile.bottom
@@ -741,15 +539,10 @@ move_up	dot_config/copyq/copyq.conf	/^move_up=ctrl+up$/;"	k	section:Shortcuts
 mpc_args	dot_config/neofetch/config.conf	/^mpc_args=()$/;"	k
 mpd	dot_config/mopidy/mopidy.conf	/^[mpd]$/;"	s
 mpris	dot_config/mopidy/mopidy.conf	/^[mpris]$/;"	s
-msg	dot_config/polybar/scripts/executable_powermenu.sh	/^msg() {$/;"	f
-msg	dot_config/polybar/scripts/scripts/executable_powermenu.sh	/^msg() {$/;"	f
 multilib	dot_config/pacman/pacman.conf	/^[multilib]$/;"	s
 music	dot_config/awesome/ui/info-panel/music-player.lua	/^local function music()$/;"	f
 music_player	dot_config/neofetch/config.conf	/^music_player="auto"$/;"	k
 mute	dot_config/awesome/ui/popups/volume/init.lua	/^volume.mute = function()$/;"	f	unknown:volume
-muted	dot_config/polybar/config.ini	/^format-muted = <label-muted>$/;"	k	section:module/alsa
-muted	dot_config/polybar/config.ini	/^label-muted = " Muted"$/;"	k	section:module/alsa
-muted	dot_config/polybar/config.ini	/^label-muted =  Muted$/;"	k	section:module/pulseaudio
 name	dot_config/copyq/copyq.conf	/^1\\name=&clipboard$/;"	k	section:Tabs
 name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-cursor-theme-name=Bibata-Rainbow-Modern$/;"	k	section:Settings
 name	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-font-name=Noto Sans,  10$/;"	k	section:Settings
@@ -761,7 +554,6 @@ name	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-font-name=Noto Sans,  10$/;"	
 name	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-icon-theme-name=BeautyDream$/;"	k	section:Settings
 name	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-sound-theme-name=ocean$/;"	k	section:Settings
 name	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-theme-name=catppuccin-macchiato-pink-standard+default$/;"	k	section:Settings
-name	dot_config/polybar/config.ini	/^name = i3$/;"	k	section:wm
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview4251	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^  <sodipodi:namedview id="namedview4251" pagecolor="#505050" bordercolor="#ffffff" borderopacity/;"	i
 namedview6	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     inkscape:current-layer="svg4" \/>$/;"	i
@@ -822,7 +614,6 @@ num_fg	dot_config/copyq/copyq.conf	/^num_fg=#a00028$/;"	k	section:Theme
 num_font	dot_config/copyq/copyq.conf	/^num_font="FairiesevkaSans Nerd Font Propo,7,-1,5,50,0,0,0,0,0,Regular"$/;"	k	section:Theme
 num_margin	dot_config/copyq/copyq.conf	/^num_margin=2$/;"	k	section:Theme
 number_search	dot_config/copyq/copyq.conf	/^number_search=false$/;"	k	section:Options
-occupied	dot_config/polybar/config.ini	/^label-occupied = %name%$/;"	k	section:module/xworkspaces
 on_press	dot_config/awesome/main/bindings.lua	/^		on_press = function(index)$/;"	f
 open_windows_on_current_screen	dot_config/copyq/copyq.conf	/^open_windows_on_current_screen=true$/;"	k	section:Options
 options	dot_config/pacman/pacman.conf	/^[options]$/;"	s
@@ -851,17 +642,9 @@ outQuart	dot_config/awesome/lib/animation/tween.lua	/^local function outQuart(t,
 outQuint	dot_config/awesome/lib/animation/tween.lua	/^local function outQuint(t, b, c, d)$/;"	f
 outSine	dot_config/awesome/lib/animation/tween.lua	/^local function outSine(t, b, c, d)$/;"	f
 output	dot_config/mopidy/mopidy.conf	/^output = tee name=t ! queue ! autoaudiosink t. ! queue ! audio\/x-raw,rate=44100,channels=2,form/;"	k	section:audio
-overline	dot_config/polybar/config.ini	/^compositing-overline = over$/;"	k	section:settings
 package_managers	dot_config/neofetch/config.conf	/^package_managers="on"$/;"	k
 pacmanbin	dot_config/yay/config.json	/^	"pacmanbin": "pacman",$/;"	s
 pacmanconf	dot_config/yay/config.json	/^	"pacmanconf": "\/etc\/pacman.conf",$/;"	s
-padding	dot_config/polybar/config.ini	/^label-active-padding = 5px$/;"	k	section:module/xworkspaces
-padding	dot_config/polybar/config.ini	/^label-empty-padding = 5px$/;"	k	section:module/xworkspaces
-padding	dot_config/polybar/config.ini	/^label-occupied-padding = 5px$/;"	k	section:module/xworkspaces
-padding	dot_config/polybar/config.ini	/^label-padding = 1$/;"	k	section:module/launcher
-padding	dot_config/polybar/config.ini	/^label-padding = 2$/;"	k	section:module/brightness
-padding	dot_config/polybar/config.ini	/^label-padding = 2$/;"	k	section:module/wifi
-padding	dot_config/polybar/config.ini	/^label-urgent-padding = 5px$/;"	k	section:module/xworkspaces
 parse	dot_config/awesome/lib/json.lua	/^parse = function(str, idx)$/;"	f
 parse_array	dot_config/awesome/lib/json.lua	/^local function parse_array(str, i)$/;"	f
 parse_literal	dot_config/awesome/lib/json.lua	/^local function parse_literal(str, i)$/;"	f
@@ -873,8 +656,6 @@ paste_selected_items	dot_config/copyq/copyq.conf	/^paste_selected_items=ctrl+v$/
 path2	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^     style="fill:#ffffff;stroke-width:11.11111164" \/>$/;"	i
 path7007	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^    <path style="fill: #52e0ad;fill-opacity:1;stroke-width:0.264583" d="M 10.768947,5.8246909 10/;"	i
 path7007	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^    <path style="fill: #f0fc52;fill-opacity:1;stroke-width:0.264583" d="M 10.768947,5.8246909 10/;"	i
-percentage	dot_config/polybar/config.ini	/^warn-percentage = 95$/;"	k	section:module/cpu
-percentage	dot_config/polybar/config.ini	/^warn-percentage=95$/;"	k	section:module/memory
 performEasing	dot_config/awesome/lib/animation/tween.lua	/^local function performEasing(table, initial, target, clock, duration, easing)$/;"	f
 performEasingOnSubject	dot_config/awesome/lib/animation/tween.lua	/^local function performEasingOnSubject(subject, target, initial, clock, duration, easing)$/;"	f
 pgpfetch	dot_config/yay/config.json	/^	"pgpfetch": true,$/;"	b
@@ -888,63 +669,32 @@ podcast	dot_config/mopidy/mopidy.conf	/^[podcast]$/;"	s
 poll_rate	dot_config/openrazer/persistence.conf	/^poll_rate = 500$/;"	k	section:PM2038H11502057
 poweroff_command	dot_config/awesome/lib/exit-screen.lua	/^local poweroff_command = function()$/;"	f
 preferences	dot_config/copyq/copyq.conf	/^preferences=ctrl+p$/;"	k	section:Shortcuts
-prefix	dot_config/polybar/config.ini	/^format-disconnected-prefix = $/;"	k	section:module/network
-prefix	dot_config/polybar/config.ini	/^format-full-prefix = 󰁹$/;"	k	section:module/battery
-prefix	dot_config/polybar/config.ini	/^format-muted-prefix = $/;"	k	section:module/alsa
 preset	dot_config/hyfetch.json	/^    "preset": "lesbian",$/;"	s
 previous_tab	dot_config/copyq/copyq.conf	/^previous_tab=left$/;"	k	section:Shortcuts
 prgram	dot_config/awesome/helpers/ui.lua	/^function ui.prgram(height, base)$/;"	f	unknown:ui
 pride_month_disable	dot_config/hyfetch.json	/^    "pride_month_disable": false$/;"	b
 pride_month_shown	dot_config/hyfetch.json	/^    "pride_month_shown": [],$/;"	a
-primary	dot_config/polybar/colors.ini	/^primary = #7d47a5$/;"	k	section:colors
 process_manager	dot_config/copyq/copyq.conf	/^process_manager=ctrl+shift+z$/;"	k	section:Shortcuts
 provides	dot_config/yay/config.json	/^	"provides": true,$/;"	b
 proxy	dot_config/mopidy/mopidy.conf	/^[proxy]$/;"	s
 prrect	dot_config/awesome/helpers/ui.lua	/^function ui.prrect(radius, tl, tr, br, bl)$/;"	f	unknown:ui
 public_ip_host	dot_config/neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
 public_ip_timeout	dot_config/neofetch/config.conf	/^public_ip_timeout=2$/;"	k
-pywal_get	dot_config/polybar/scripts/executable_pywal.sh	/^pywal_get() {$/;"	f
-pywal_get	dot_config/polybar/scripts/scripts/executable_pywal.sh	/^pywal_get() {$/;"	f
-radius	dot_config/polybar/config.ini	/^radius = 10.0$/;"	k	section:bar/first
-radius	dot_config/polybar/config.ini	/^radius = 10.0$/;"	k	section:bar/fourth
-radius	dot_config/polybar/config.ini	/^radius = 10.0$/;"	k	section:bar/second
-radius	dot_config/polybar/config.ini	/^radius = 10.0$/;"	k	section:bar/third
 rdf	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 reboot_command	dot_config/awesome/lib/exit-screen.lua	/^local reboot_command = function()$/;"	f
 rebuild	dot_config/yay/config.json	/^	"rebuild": "no"$/;"	s
-redirect	dot_config/polybar/config.ini	/^override-redirect = true$/;"	k	section:bar/first
-redirect	dot_config/polybar/config.ini	/^override-redirect = true$/;"	k	section:bar/fourth
-redirect	dot_config/polybar/config.ini	/^override-redirect = true$/;"	k	section:bar/second
-redirect	dot_config/polybar/config.ini	/^override-redirect = true$/;"	k	section:bar/third
 redownload	dot_config/yay/config.json	/^	"redownload": "no",$/;"	s
 refresh_rate	dot_config/neofetch/config.conf	/^refresh_rate="off"$/;"	k
 rel	dot_config/awesome/lib/savefloats.lua	/^local function rel(screen, win)$/;"	f
-reload	dot_config/polybar/config.ini	/^screen-reload = false$/;"	k	section:settings
 remove_tab	dot_config/copyq/copyq.conf	/^remove_tab=ctrl+w$/;"	k	section:Shortcuts
 removemake	dot_config/yay/config.json	/^	"removemake": "yes",$/;"	s
 rename_tab	dot_config/copyq/copyq.conf	/^rename_tab=ctrl+f2$/;"	k	section:Shortcuts
 requestsplitn	dot_config/yay/config.json	/^	"requestsplitn": 150,$/;"	n
 require	dot_config/composer/composer.json	/^    "require": {$/;"	o
 reset	dot_config/awesome/lib/animation/tween.lua	/^function Tween:reset()$/;"	f	unknown:Tween
-restack	dot_config/polybar/config.ini	/^wm-restack = ${wm.name}$/;"	k	section:bar/first
-restack	dot_config/polybar/config.ini	/^wm-restack = ${wm.name}$/;"	k	section:bar/fourth
-restack	dot_config/polybar/config.ini	/^wm-restack = ${wm.name}$/;"	k	section:bar/second
-restack	dot_config/polybar/config.ini	/^wm-restack = ${wm.name}$/;"	k	section:bar/third
 restore_geometry	dot_config/copyq/copyq.conf	/^restore_geometry=true$/;"	k	section:Options
 restore_persistence	dot_config/openrazer/razer.conf	/^restore_persistence = False$/;"	k	section:Startup
 reverse_selected_items	dot_config/copyq/copyq.conf	/^reverse_selected_items=ctrl+shift+r$/;"	k	section:Shortcuts
-right	dot_config/polybar/config.ini	/^click-right = pavucontrol$/;"	k	section:module/pulseaudio
-right	dot_config/polybar/config.ini	/^click-right = ~\/.config\/polybar\/srcipts\/backlight.sh down$/;"	k	section:module/brightness
-right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/first
-right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/fourth
-right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/second
-right	dot_config/polybar/config.ini	/^module-margin-right = 10px$/;"	k	section:bar/third
-right	dot_config/polybar/config.ini	/^modules-right = date$/;"	k	section:bar/first
-right	dot_config/polybar/config.ini	/^modules-right = wifi powermenu$/;"	k	section:bar/fourth
-right	dot_config/polybar/config.ini	/^padding-right = 25px$/;"	k	section:bar/first
-right	dot_config/polybar/config.ini	/^padding-right = 25px$/;"	k	section:bar/fourth
-right	dot_config/polybar/config.ini	/^padding-right = 25px$/;"	k	section:bar/second
-right	dot_config/polybar/config.ini	/^padding-right = 25px$/;"	k	section:bar/third
 round_widget	dot_config/awesome/ui/info-panel/init.lua	/^local function round_widget(radius)$/;"	f
 row_index_from_one	dot_config/copyq/copyq.conf	/^row_index_from_one=true$/;"	k	section:Options
 rpc	dot_config/yay/config.json	/^	"rpc": true,$/;"	b
@@ -960,7 +710,6 @@ save_filter_history	dot_config/copyq/copyq.conf	/^save_filter_history=false$/;"	
 save_on_app_deactivated	dot_config/copyq/copyq.conf	/^save_on_app_deactivated=true$/;"	k	section:Options
 screen_mask	dot_config/awesome/helpers/ui.lua	/^function ui.screen_mask(s, bg)$/;"	f	unknown:ui
 script_paste_delay_ms	dot_config/copyq/copyq.conf	/^script_paste_delay_ms=250$/;"	k	section:Options
-scroll	dot_config/polybar/config.ini	/^enable-scroll =true$/;"	k	section:module/brightness
 scroll_active	dot_config/openrazer/persistence.conf	/^scroll_active = True$/;"	k	section:PM2038H11502057
 scroll_brightness	dot_config/openrazer/persistence.conf	/^scroll_brightness = 75$/;"	k	section:PM2038H11502057
 scroll_colors	dot_config/openrazer/persistence.conf	/^scroll_colors = 0 255 0 0 255 255 0 0 255$/;"	k	section:PM2038H11502057
@@ -978,12 +727,10 @@ separatesources	dot_config/yay/config.json	/^	"separatesources": true,$/;"	b
 separator	dot_config/neofetch/config.conf	/^separator=" 󰾞"$/;"	k
 set	dot_config/awesome/lib/animation/init.lua	/^function animation:set(args)$/;"	f	unknown:animation
 set	dot_config/awesome/lib/animation/tween.lua	/^function Tween:set(clock)$/;"	f	unknown:Tween
-set	dot_config/polybar/scripts/executable_backlight.sh	/^function set() {$/;"	f
 set_font	dot_config/awesome/helpers/ui.lua	/^function ui.set_font(attr, font)$/;"	f	unknown:ui
 set_instant	dot_config/awesome/lib/animation/init.lua	/^function animation_manager:set_instant(value)$/;"	f	unknown:animation_manager
 set_slider_value	dot_config/awesome/ui/info-panel/music-player.lua	/^	local function set_slider_value(_, volume)$/;"	f
 set_wall	dot_config/awesome/main/wallpaper.lua	/^local function set_wall(s)$/;"	f
-settings	dot_config/polybar/config.ini	/^[settings]$/;"	s
 shape	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.shape = function(cr, w, h) --Rounded Corners$/;"	f	unknown:sidebar
 shape	dot_config/awesome/ui/notif-panel/init.lua	/^action.shape = function(cr, w, h) --Rounded Corners$/;"	f	unknown:action
 share	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
@@ -1002,14 +749,6 @@ singlelineresults	dot_config/yay/config.json	/^	"singlelineresults": false,$/;"	
 size	dot_config/copyq/copyq.conf	/^size=1$/;"	k	section:Tabs
 size	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-cursor-theme-size=24$/;"	k	section:Settings
 size	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-cursor-theme-size=24$/;"	k	section:Settings
-size	dot_config/polybar/config.ini	/^border-size = 2$/;"	k	section:bar/first
-size	dot_config/polybar/config.ini	/^border-size = 2$/;"	k	section:bar/fourth
-size	dot_config/polybar/config.ini	/^border-size = 2$/;"	k	section:bar/second
-size	dot_config/polybar/config.ini	/^border-size = 2$/;"	k	section:bar/third
-size	dot_config/polybar/config.ini	/^line-size = 3$/;"	k	section:bar/first
-size	dot_config/polybar/config.ini	/^line-size = 3$/;"	k	section:bar/fourth
-size	dot_config/polybar/config.ini	/^line-size = 3$/;"	k	section:bar/second
-size	dot_config/polybar/config.ini	/^line-size = 3$/;"	k	section:bar/third
 slider	dot_config/gtk-3.0/settings.ini.src.ini	/^gtk-primary-button-warps-slider=true$/;"	k	section:Settings
 slider	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-primary-button-warps-slider=true$/;"	k	section:Settings
 sodipodi	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
@@ -1020,14 +759,10 @@ song_format	dot_config/neofetch/config.conf	/^song_format="%artist% - %album% - 
 song_shorthand	dot_config/neofetch/config.conf	/^song_shorthand="off"$/;"	k
 sort_selected_items	dot_config/copyq/copyq.conf	/^sort_selected_items=ctrl+shift+s$/;"	k	section:Shortcuts
 sortby	dot_config/yay/config.json	/^	"sortby": "votes",$/;"	s
-soundcard	dot_config/polybar/config.ini	/^headphone-soundcard = default$/;"	k	section:module/alsa
-soundcard	dot_config/polybar/config.ini	/^master-soundcard = default$/;"	k	section:module/alsa
-soundcard	dot_config/polybar/config.ini	/^speaker-soundcard = default$/;"	k	section:module/alsa
 speed_shorthand	dot_config/neofetch/config.conf	/^speed_shorthand="off"$/;"	k
 speed_type	dot_config/neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
 start	dot_config/awesome/lib/animation/init.lua	/^function animation:start(args)$/;"	f	unknown:animation
 start_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	start_callback = function()$/;"	f
-stats	dot_config/polybar/config.ini	/^accumulate-stats = true$/;"	k	section:module/network
 stdout	dot_config/neofetch/config.conf	/^stdout="off"$/;"	k
 stop	dot_config/awesome/lib/animation/init.lua	/^function animation:stop()$/;"	f	unknown:animation
 stop_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	stop_callback = function()$/;"	f
@@ -1073,7 +808,6 @@ theme	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-application-prefer-dark-them
 themes	dot_config/gtk-4.0/symlink_gtk-dark.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk-dark.css$/;"	s
 themes	dot_config/gtk-4.0/symlink_gtk.css	/^\/usr\/share\/themes\/Catppuccin-Macchiato-Standard-Pink-Dark\/gtk-4.0\/gtk.css$/;"	s
 thumbnail_dir	dot_config/neofetch/config.conf	/^thumbnail_dir="${XDG_CACHE_HOME:-${HOME}\/.cache}\/thumbnails\/neofetch"$/;"	k
-time	dot_config/polybar/config.ini	/^time = " %I:%M %p"$/;"	k	section:module/date
 timeupdate	dot_config/yay/config.json	/^	"timeupdate": false,$/;"	b
 title_fqdn	dot_config/neofetch/config.conf	/^title_fqdn="off"$/;"	k
 toggle	dot_config/awesome/ui/info-panel/init.lua	/^sidebar.toggle = function()$/;"	f	unknown:sidebar
@@ -1084,13 +818,7 @@ tool_bar_css	dot_config/copyq/copyq.conf	/^tool_bar_css="\\n    ;color: ${fg}\\n
 tool_button_css	dot_config/copyq/copyq.conf	/^tool_button_css="\\n    ;color: ${fg}\\n    ;background: ${bg}\\n    ;border: 0\\n    ;border-ra/;"	k	section:Theme
 tool_button_pressed_css	dot_config/copyq/copyq.conf	/^tool_button_pressed_css="\\n    ;background: ${sel_bg}"$/;"	k	section:Theme
 tool_button_selected_css	dot_config/copyq/copyq.conf	/^tool_button_selected_css="\\n    ;background: ${sel_bg - #222}\\n    ;color: ${sel_fg}\\n    ;bo/;"	k	section:Theme
-top	dot_config/polybar/config.ini	/^margin-top = 0$/;"	k	section:global/wm
-top	dot_config/polybar/config.ini	/^top = true$/;"	k	section:bar/first
-top	dot_config/polybar/config.ini	/^top = true$/;"	k	section:bar/fourth
-top	dot_config/polybar/config.ini	/^top = true$/;"	k	section:bar/second
-top	dot_config/polybar/config.ini	/^top = true$/;"	k	section:bar/third
 transparency	dot_config/copyq/copyq.conf	/^transparency=0$/;"	k	section:Options
-transparency	dot_config/polybar/config.ini	/^pseudo-transparency = true$/;"	k	section:settings
 transparency_focused	dot_config/copyq/copyq.conf	/^transparency_focused=0$/;"	k	section:Options
 tray_commands	dot_config/copyq/copyq.conf	/^tray_commands=true$/;"	k	section:Options
 tray_images	dot_config/copyq/copyq.conf	/^tray_images=true$/;"	k	section:Options
@@ -1101,28 +829,10 @@ tray_tab	dot_config/copyq/copyq.conf	/^tray_tab=$/;"	k	section:Options
 tray_tab_is_current	dot_config/copyq/copyq.conf	/^tray_tab_is_current=true$/;"	k	section:Options
 trig	dot_config/nvim/lua/snippets/fish.lua	/^    { trig = "func", desc = "function ... end" },$/;"	f
 tsserver	dot_config/nvim/lua/plugins/example.lua	/^        tsserver = function(_, opts)$/;"	f
-type	dot_config/polybar/config.ini	/^type = custom\/script$/;"	k	section:module/player
-type	dot_config/polybar/config.ini	/^type = custom\/script$/;"	k	section:module/songname
-type	dot_config/polybar/config.ini	/^type = custom\/text$/;"	k	section:module/brightness
-type	dot_config/polybar/config.ini	/^type = custom\/text$/;"	k	section:module/launcher
-type	dot_config/polybar/config.ini	/^type = custom\/text$/;"	k	section:module/powermenu
-type	dot_config/polybar/config.ini	/^type = custom\/text$/;"	k	section:module/wifi
-type	dot_config/polybar/config.ini	/^type = internal\/alsa$/;"	k	section:module/alsa
-type	dot_config/polybar/config.ini	/^type = internal\/battery$/;"	k	section:module/battery
-type	dot_config/polybar/config.ini	/^type = internal\/cpu$/;"	k	section:module/cpu
-type	dot_config/polybar/config.ini	/^type = internal\/date$/;"	k	section:module/date
-type	dot_config/polybar/config.ini	/^type = internal\/network$/;"	k	section:module/network
-type	dot_config/polybar/config.ini	/^type = internal\/pulseaudio$/;"	k	section:module/pulseaudio
-type	dot_config/polybar/config.ini	/^type= internal\/xworkspaces$/;"	k	section:module/xworkspaces
-type	dot_config/polybar/config.ini	/^type=internal\/memory$/;"	k	section:module/memory
-underline	dot_config/polybar/config.ini	/^compositing-underline = over$/;"	k	section:settings
-underline	dot_config/polybar/config.ini	/^label-active-underline = ${colors.primary}$/;"	k	section:module/xworkspaces
 underline_char	dot_config/neofetch/config.conf	/^underline_char="-"$/;"	k
 underline_enabled	dot_config/neofetch/config.conf	/^underline_enabled="on"$/;"	k
 unrel	dot_config/awesome/lib/savefloats.lua	/^local function unrel(s, _rel)$/;"	f
 unsubscribe	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:unsubscribe(func)$/;"	f	unknown:ret
-up	dot_config/polybar/config.ini	/^scroll-up = ~\/.config\/polybar\/scripts\/backlight.sh up$/;"	k	section:module/brightness
-up	dot_config/polybar/config.ini	/^unknown-as-up = true$/;"	k	section:module/network
 update	dot_config/awesome/lib/animation/tween.lua	/^function Tween:update(dt)$/;"	f	unknown:Tween
 update	dot_config/awesome/ui/info-panel/weather/init.lua	/^	widget.update = function(result)$/;"	f	unknown:widget
 update	dot_config/awesome/ui/popups/notifications/init.lua	/^		update = function(_, pos)$/;"	f
@@ -1133,7 +843,6 @@ update_volume	dot_config/awesome/ui/notif-panel/widgets/vol_slider.lua	/^local u
 update_volume	dot_config/awesome/ui/popups/volume/init.lua	/^local update_volume = function() -- Sets the Volume Correct$/;"	f
 update_volume	dot_config/awesome/ui/top-panel/widgets/pulseaudio.lua	/^local update_volume = function()$/;"	f
 uptime_shorthand	dot_config/neofetch/config.conf	/^uptime_shorthand="on"$/;"	k
-urgent	dot_config/polybar/config.ini	/^label-urgent = %name%$/;"	k	section:module/xworkspaces
 use_rich_text	dot_config/copyq/copyq.conf	/^itemtext\\use_rich_text=true$/;"	k	section:Plugins
 use_system_icons	dot_config/copyq/copyq.conf	/^use_system_icons=true$/;"	k	section:Theme
 useask	dot_config/yay/config.json	/^	"useask": false,$/;"	b
@@ -1143,28 +852,13 @@ verbose_logging	dot_config/openrazer/razer.conf	/^verbose_logging = False$/;"	k	
 version	dot_config/yay/config.json	/^	"version": "12.3.0",$/;"	s
 vertical_pad	dot_config/awesome/helpers/ui.lua	/^function ui.vertical_pad(height)$/;"	f	unknown:ui
 vi	dot_config/copyq/copyq.conf	/^vi=true$/;"	k	section:Options
-volume	dot_config/polybar/config.ini	/^format-volume = <ramp-volume>  <label-volume>$/;"	k	section:module/alsa
-volume	dot_config/polybar/config.ini	/^format-volume = <ramp-volume>  <label-volume>$/;"	k	section:module/pulseaudio
-volume	dot_config/polybar/config.ini	/^label-volume = %percentage%%$/;"	k	section:module/alsa
-volume	dot_config/polybar/config.ini	/^label-volume = %percentage%%$/;"	k	section:module/pulseaudio
 volume_control	dot_config/awesome/ui/info-panel/music-player.lua	/^local function volume_control()$/;"	f
-warn	dot_config/polybar/config.ini	/^label-warn = %mb_used%$/;"	k	section:module/memory
-warning	dot_config/polybar/config.ini	/^label-warning = %percentage%%$/;"	k	section:module/cpu
-width	dot_config/polybar/config.ini	/^width = 12%$/;"	k	section:bar/second
-width	dot_config/polybar/config.ini	/^width = 20%$/;"	k	section:bar/first
-width	dot_config/polybar/config.ini	/^width = 20%$/;"	k	section:bar/fourth
-width	dot_config/polybar/config.ini	/^width = 20%$/;"	k	section:bar/third
 window_key_press_time_ms	dot_config/copyq/copyq.conf	/^window_key_press_time_ms=50$/;"	k	section:Options
 window_paste_with_ctrl_v_regex	dot_config/copyq/copyq.conf	/^window_paste_with_ctrl_v_regex=$/;"	k	section:Options
 window_wait_after_raised_ms	dot_config/copyq/copyq.conf	/^window_wait_after_raised_ms=50$/;"	k	section:Options
 window_wait_before_raise_ms	dot_config/copyq/copyq.conf	/^window_wait_before_raise_ms=20$/;"	k	section:Options
 window_wait_for_modifier_released_ms	dot_config/copyq/copyq.conf	/^window_wait_for_modifier_released_ms=2000$/;"	k	section:Options
 window_wait_raised_ms	dot_config/copyq/copyq.conf	/^window_wait_raised_ms=150$/;"	k	section:Options
-wm	dot_config/polybar/config.ini	/^[wm]$/;"	s
-x	dot_config/polybar/config.ini	/^offset-x = 2%$/;"	k	section:bar/first
-x	dot_config/polybar/config.ini	/^offset-x = 30%$/;"	k	section:bar/second
-x	dot_config/polybar/config.ini	/^offset-x = 49%$/;"	k	section:bar/third
-x	dot_config/polybar/config.ini	/^offset-x = 78%$/;"	k	section:bar/fourth
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/close_hover.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/maximize.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
@@ -1172,9 +866,5 @@ xlink	dot_config/awesome/themes/catppuccin/titlebar/minimize.svg	/^<svg version=
 xlink	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	n	uri:http://www.w3.org/1999/xlink
 xoffset	dot_config/neofetch/config.conf	/^xoffset=0$/;"	k
-y	dot_config/polybar/config.ini	/^offset-y = 5$/;"	k	section:bar/first
-y	dot_config/polybar/config.ini	/^offset-y = 5$/;"	k	section:bar/fourth
-y	dot_config/polybar/config.ini	/^offset-y = 5$/;"	k	section:bar/second
-y	dot_config/polybar/config.ini	/^offset-y = 5$/;"	k	section:bar/third
 yoffset	dot_config/neofetch/config.conf	/^yoffset=0$/;"	k
 ~	dot_config/awesome/lib/animation/tween.lua	/^		if type(easing) ~= "function" then$/;"	f
