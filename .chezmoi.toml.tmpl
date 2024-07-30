@@ -14,6 +14,7 @@ autoPush = true
 {{ if lookPath "delta" -}}
   [diff]
   command = "delta"
+  args = ["--syntax-theme", "catppuccin-macchiato", "--features", "mellow-barbet", "{{ "{{" }} .Destination  {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
 {{ end -}}
 
 [gpg]
