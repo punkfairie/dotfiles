@@ -29,11 +29,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 exec --no-startup-id ~/.xprofile
-exec --no-startup-id ~/.config/fehbg/i3
-exec --no-startup-id picom --config ~/.config/picom/i3
-
-exec --no-startup-id ~/.config/polybar/colorblocks/scripts/pywal.sh ~/data/photos/wallpaper/cloud.png
-exec --no-startup-id ~/.config/polybar/launch.sh --colorblocks
+exec --no-startup-id ~/.config/i3/launch.sh
 
 # +-- Movement ----------------------------------------------------------------+
 
