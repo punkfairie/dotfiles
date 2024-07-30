@@ -6,11 +6,15 @@
 {{- end -}}
 
 progress = true
+encryption = "gpg"
 
 [git]
 autoPush = true
 
-encryption = "gpg"
+{{ if lookPath "delta" -}}
+  [diff]
+  command = "delta"
+{{ end -}}
 
 [gpg]
 symmetric = true
