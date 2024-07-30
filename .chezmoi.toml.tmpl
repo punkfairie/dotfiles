@@ -11,11 +11,12 @@ encryption = "gpg"
 [git]
 autoPush = true
 
+[diff]
 {{ if lookPath "delta" -}}
-  [diff]
   command = "delta"
   args = ["--syntax-theme", "catppuccin-macchiato", "--features", "mellow-barbet", "{{ "{{" }} .Destination  {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
 {{ end -}}
+exclude = ["scripts"]
 
 [gpg]
 symmetric = true
