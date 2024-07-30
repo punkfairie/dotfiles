@@ -28,8 +28,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec --no-startup-id ~/.xprofile
-exec --no-startup-id ~/.config/i3/launch.sh
+exec_always --no-startup-id ~/.xprofile
+exec_always --no-startup-id ~/.config/i3/launch.sh
 
 # +-- Movement ----------------------------------------------------------------+
 
