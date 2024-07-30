@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -24,6 +25,8 @@ catppuccin-gtk-theme-macchiato
 catppuccin-latte-grub-theme-git
 catppuccin-macchiato-grub-theme-git
 catppuccin-mocha-grub-theme-git
+cdrdao
+cdrtools
 chaotic-keyring
 chaotic-mirrorlist
 cheat-bin
@@ -40,6 +43,7 @@ ctags
 dnsmasq
 duf
 dunst
+dvd+rw-tools
 edmarketconnector
 efibootmgr
 exfatprogs
@@ -54,6 +58,7 @@ fontforge
 forgit
 fortune-mod-archlinux
 fortune-mod-billwurtz
+fuseiso
 fzf
 gamemode
 gd
@@ -113,6 +118,7 @@ mopidy-mpd
 mopidy-mpris
 mopidy-podcast
 mpc
+mplayer
 mythes-en
 nano
 ncmpcpp
@@ -130,6 +136,7 @@ openrazer-daemon
 pamixer
 papirus-folders-catppuccin-git
 papirus-icon-theme
+phonon-qt5
 php-fpm
 php-mcrypt
 php-redis
