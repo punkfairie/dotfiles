@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -105,14 +106,8 @@ mediainfo
 meilisearch
 mesa
 minecraft-launcher
-mopidy
-mopidy-alsamixer
-mopidy-iris
-mopidy-local
-mopidy-mpd
-mopidy-mpris
-mopidy-podcast
 mpc
+mpd
 mythes-en
 nano
 ncmpcpp
