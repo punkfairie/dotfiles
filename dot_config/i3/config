@@ -139,7 +139,7 @@ mode "resize" {
 bindsym $mod+q kill
 
 # Start rofi
-bindsym $mod+r exec "~/.config/rofi/launchers/type-1/launcher.sh"
+bindsym $mod+r exec ~/.config/rofi/launchers/type-1/launcher.sh
 
 # Start a terminal
 bindsym $mod+Return exec wezterm
