@@ -135,7 +135,7 @@
 0	dot_config/polybar/colorblocks/bars.ini	/^ramp-0 = $/;"	k	section:module/brightness
 0	dot_config/polybar/colorblocks/bars.ini	/^ramp-headphones-0 = $/;"	k	section:module/volume
 0	dot_config/polybar/colorblocks/bars.ini	/^ramp-volume-0 = $/;"	k	section:module/volume
-0	dot_config/polybar/colorblocks/config.ini	/^font-0 = "Fairiesevka Nerd Font:pixelsize=10;4"$/;"	k	section:bar/main
+0	dot_config/polybar/colorblocks/config.ini	/^font-0 = "FairiesevkaSans Nerd Font Propo:pixelsize=10;4"$/;"	k	section:bar/main
 0	dot_config/polybar/colorblocks/modules.ini	/^animation-charging-0 = $/;"	k	section:module/battery
 0	dot_config/polybar/colorblocks/modules.ini	/^blacklist-0 = num lock$/;"	k	section:module/keyboard
 0	dot_config/polybar/colorblocks/modules.ini	/^icon-0 = 1;1$/;"	k	section:module/workspaces
@@ -502,7 +502,7 @@
 1	dot_config/polybar/colorblocks/bars.ini	/^bar-volume-foreground-1 = ${color.foreground}$/;"	k	section:module/volume
 1	dot_config/polybar/colorblocks/bars.ini	/^ramp-1 = $/;"	k	section:module/brightness
 1	dot_config/polybar/colorblocks/bars.ini	/^ramp-volume-1 = $/;"	k	section:module/volume
-1	dot_config/polybar/colorblocks/config.ini	/^font-1 = "Fairiesevka Nerd Font:pixelsize=13;4"$/;"	k	section:bar/main
+1	dot_config/polybar/colorblocks/config.ini	/^font-1 = "FairiesevkaSans Nerd Font Propo:pixelsize=13;4"$/;"	k	section:bar/main
 1	dot_config/polybar/colorblocks/modules.ini	/^animation-charging-1 = $/;"	k	section:module/battery
 1	dot_config/polybar/colorblocks/modules.ini	/^blacklist-1 = scroll lock$/;"	k	section:module/keyboard
 1	dot_config/polybar/colorblocks/modules.ini	/^icon-1 = 2;2$/;"	k	section:module/workspaces
