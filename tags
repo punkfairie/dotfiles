@@ -506,6 +506,7 @@
 1	dot_config/polybar/colorblocks/modules.ini	/^animation-charging-1 = $/;"	k	section:module/battery
 1	dot_config/polybar/colorblocks/modules.ini	/^blacklist-1 = scroll lock$/;"	k	section:module/keyboard
 1	dot_config/polybar/colorblocks/modules.ini	/^icon-1 = 2;2$/;"	k	section:module/workspaces
+1	dot_config/polybar/colorblocks/modules.ini	/^mount-1 = \/mnt\/babeshare$/;"	k	section:module/filesystem
 1	dot_config/polybar/colorblocks/modules.ini	/^ramp-1 = $/;"	k	section:module/temperature
 1	dot_config/polybar/colorblocks/modules.ini	/^ramp-1 = $/;"	k	section:module/backlight
 1	dot_config/polybar/colorblocks/modules.ini	/^ramp-capacity-1 = $/;"	k	section:module/battery
@@ -3005,6 +3006,7 @@ click	dot_config/polybar/blocks/config.ini	/^cursor-click = $/;"	k	section:bar/m
 click	dot_config/polybar/blocks/modules.ini	/^enable-click = true$/;"	k	section:module/workspaces
 click	dot_config/polybar/blocks/preview.ini	/^cursor-click = $/;"	k	section:bar/bottom
 click	dot_config/polybar/colorblocks/config.ini	/^cursor-click = $/;"	k	section:bar/main
+click	dot_config/polybar/colorblocks/modules.ini	/^enable-click = true$/;"	k	section:module/i3
 click	dot_config/polybar/colorblocks/modules.ini	/^enable-click = true$/;"	k	section:module/workspaces
 click	dot_config/polybar/colorblocks/preview.ini	/^cursor-click = $/;"	k	section:bar/bottom
 click	dot_config/polybar/cuts/config.ini	/^cursor-click = $/;"	k	section:bar/bottom
@@ -4580,10 +4582,10 @@ foreground	dot_config/polybar/colorblocks/modules.ini	/^format-foreground = ${co
 foreground	dot_config/polybar/colorblocks/modules.ini	/^format-offline-prefix-foreground = ${color.foreground}$/;"	k	section:module/mpd
 foreground	dot_config/polybar/colorblocks/modules.ini	/^format-prefix-foreground = #0a0a0a$/;"	k	section:module/title
 foreground	dot_config/polybar/colorblocks/modules.ini	/^format-warn-foreground = ${color.background}$/;"	k	section:module/temperature
-foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-next-foreground = #0a0a0a$/;"	k	section:module/mpd
-foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-pause-foreground = #0a0a0a$/;"	k	section:module/mpd
-foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-play-foreground = #0a0a0a$/;"	k	section:module/mpd
-foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-prev-foreground = #0a0a0a$/;"	k	section:module/mpd
+foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-next-foreground = ${color.foreground}$/;"	k	section:module/mpd
+foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-pause-foreground = ${color.foreground}$/;"	k	section:module/mpd
+foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-play-foreground = ${color.foreground}$/;"	k	section:module/mpd
+foreground	dot_config/polybar/colorblocks/modules.ini	/^icon-prev-foreground = ${color.foreground}$/;"	k	section:module/mpd
 foreground	dot_config/polybar/colorblocks/modules.ini	/^label-active-foreground = #0a0a0a$/;"	k	section:module/workspaces
 foreground	dot_config/polybar/colorblocks/modules.ini	/^label-empty-foreground = ${color.foreground-alt}$/;"	k	section:module/title
 foreground	dot_config/polybar/colorblocks/modules.ini	/^label-empty-foreground = ${color.foreground-alt}$/;"	k	section:module/workspaces
@@ -7520,6 +7522,7 @@ module/google	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/google]
 module/google	dot_config/polybar/hack/user_modules.ini	/^[module\/google]$/;"	s
 module/google	dot_config/polybar/shades/user_modules.ini	/^[module\/google]$/;"	s
 module/google	dot_config/polybar/shapes/user_modules.ini	/^[module\/google]$/;"	s
+module/i3	dot_config/polybar/colorblocks/modules.ini	/^[module\/i3]$/;"	s
 module/kde	dot_config/polybar/panels/panel/kde.ini	/^[module\/kde]$/;"	s
 module/kde	dot_config/polybar/panels/panel/kde_dark.ini	/^[module\/kde]$/;"	s
 module/keyboard	dot_config/polybar/blocks/modules.ini	/^[module\/keyboard]$/;"	s
@@ -10117,6 +10120,7 @@ scroll	dot_config/polybar/blocks/config.ini	/^cursor-scroll = $/;"	k	section:bar
 scroll	dot_config/polybar/blocks/modules.ini	/^enable-scroll = true$/;"	k	section:module/workspaces
 scroll	dot_config/polybar/blocks/preview.ini	/^cursor-scroll = $/;"	k	section:bar/bottom
 scroll	dot_config/polybar/colorblocks/config.ini	/^cursor-scroll = $/;"	k	section:bar/main
+scroll	dot_config/polybar/colorblocks/modules.ini	/^enable-scroll = true$/;"	k	section:module/i3
 scroll	dot_config/polybar/colorblocks/modules.ini	/^enable-scroll = true$/;"	k	section:module/workspaces
 scroll	dot_config/polybar/colorblocks/preview.ini	/^cursor-scroll = $/;"	k	section:bar/bottom
 scroll	dot_config/polybar/cuts/config.ini	/^cursor-scroll = $/;"	k	section:bar/bottom
@@ -10997,6 +11001,7 @@ type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/battery$/;"	k
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/cpu$/;"	k	section:module/cpu
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/date$/;"	k	section:module/date
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/fs$/;"	k	section:module/filesystem
+type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/i3$/;"	k	section:module/i3
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/memory$/;"	k	section:module/memory
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/mpd$/;"	k	section:module/mpd
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/network$/;"	k	section:module/network
