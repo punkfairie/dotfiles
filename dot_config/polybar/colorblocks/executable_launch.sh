@@ -17,8 +17,6 @@ if type "xrandr"; then
 	for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
 		MONITOR=$m polybar -q main -c "$DIR"/config.ini &
 	done
-
-	MONITOR="DVI-D-0" polybar -q main -c "$DIR"/config.ini &
 else
 	polybar -q main -c "$DIR"/config.ini &
 fi
