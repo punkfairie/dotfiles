@@ -15,7 +15,7 @@ sleep 10
 # Launch the bar
 if type "xrandr"; then
 	for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-		"$m" >>"$HOME/.scratch"
+		echo "$m" >>"$HOME/.scratch"
 		MONITOR=$m polybar -q main -c "$DIR"/config.ini &
 	done
 else
