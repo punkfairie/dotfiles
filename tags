@@ -3213,7 +3213,7 @@ confirm_run	dot_config/rofi/applets/bin/executable_powermenu.sh	/^confirm_run ()
 connected	dot_config/polybar/blocks/modules.ini	/^format-connected = <label-connected>$/;"	k	section:module/network
 connected	dot_config/polybar/blocks/modules.ini	/^label-connected = "%{A1:networkmanager_dmenu &:}%essid%%{A}"$/;"	k	section:module/network
 connected	dot_config/polybar/colorblocks/modules.ini	/^format-connected = <label-connected>$/;"	k	section:module/network
-connected	dot_config/polybar/colorblocks/modules.ini	/^label-connected = "%{A1:networkmanager_dmenu &:} %essid%%{A}"$/;"	k	section:module/network
+connected	dot_config/polybar/colorblocks/modules.ini	/^label-connected = "%{A1:networkmanager_dmenu &:} %netspeed%%{A}"$/;"	k	section:module/network
 connected	dot_config/polybar/cuts/modules.ini	/^format-connected = <label-connected>$/;"	k	section:module/network
 connected	dot_config/polybar/cuts/modules.ini	/^label-connected = "%{A1:networkmanager_dmenu &:} %essid%  %downspeed%  %upspeed%%{A}"$/;"	k	section:module/network
 connected	dot_config/polybar/docky/modules.ini	/^format-connected = <label-connected>$/;"	k	section:module/network
@@ -9732,7 +9732,7 @@ right	dot_config/polybar/blocks/user_modules.ini	/^expand-right = true$/;"	k	sec
 right	dot_config/polybar/colorblocks/config.ini	/^click-right =$/;"	k	section:bar/main
 right	dot_config/polybar/colorblocks/config.ini	/^double-click-right =$/;"	k	section:bar/main
 right	dot_config/polybar/colorblocks/config.ini	/^module-margin-right = 0$/;"	k	section:bar/main
-right	dot_config/polybar/colorblocks/config.ini	/^modules-right = color-switch sep updates sep filesystem sep cpu memory pulseaudio battery networ/;"	k	section:bar/main
+right	dot_config/polybar/colorblocks/config.ini	/^modules-right = color-switch sep updates sep filesystem sep cpu memory pulseaudio network date s/;"	k	section:bar/main
 right	dot_config/polybar/colorblocks/preview.ini	/^click-right =$/;"	k	section:bar/bottom
 right	dot_config/polybar/colorblocks/preview.ini	/^double-click-right =$/;"	k	section:bar/bottom
 right	dot_config/polybar/colorblocks/preview.ini	/^module-margin-right = 0$/;"	k	section:bar/main
