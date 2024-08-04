@@ -25,6 +25,10 @@ return {
 
       table.insert(opts.sources, { name = "emoji" })
 
+      opts.experimental = {
+        ghost_text = false,
+      }
+
       return opts
     end,
   },
