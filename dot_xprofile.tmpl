@@ -48,3 +48,6 @@ numlockx on
 {{ if eq .chezmoi.hostname "archgirlie" -}}
 setxkbmap -option "apple:alupckeys"
 {{ end -}}
+{{ if lookPath "wal" -}}
+wal -R
+{{ end -}}
