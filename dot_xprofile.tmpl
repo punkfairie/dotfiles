@@ -39,6 +39,7 @@ fi
 copyq &
 {{ end -}}
 {{ if lookPath "mpd" -}}
+sudo mount -a
 mpd &
 {{ end -}}
 {{ if lookPath "numlockx" -}}
@@ -48,4 +49,5 @@ numlockx on
 setxkbmap -option "apple:alupckeys"
 {{ end -}}
 {{ if lookPath "nmcli" -}}
-nmcli con up
+nmcli con up us.protonvpn.tcp
+{{ end -}}
