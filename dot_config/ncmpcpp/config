@@ -69,7 +69,7 @@ mpd_music_dir = /mnt/babeshare/babez/Music/
 ## visualizer.
 ##
 #
-visualizer_data_source = "localhost:5555"
+visualizer_data_source = "/tmp/mpd.fifo"
 #
 ##
 ## Note: Below parameter is needed for ncmpcpp to determine which output
@@ -77,12 +77,12 @@ visualizer_data_source = "localhost:5555"
 ## to synchronize with audio.
 ##
 #
-# visualizer_output_name = Visualizer feed
+visualizer_output_name = "my_fifo"
 #
 ##
 ## If you set format to 44100:16:2, make it 'yes'.
 ##
-# visualizer_in_stereo = yes
+visualizer_in_stereo = yes
 #
 ##
 ## Note: set below to >=10 only if you have synchronization issues with
@@ -98,13 +98,13 @@ visualizer_data_source = "localhost:5555"
 #
 ## Available values: spectrum, wave, wave_filled, ellipse.
 ##
-# visualizer_type = spectrum
+visualizer_type = spectrum
 #
 #visualizer_fps = 60
 #
 #visualizer_autoscale = no
 #
-# visualizer_look = ●▮
+visualizer_look = ●▮
 #
 #visualizer_color = blue, cyan, green, yellow, magenta, red
 #
