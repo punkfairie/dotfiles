@@ -48,6 +48,3 @@ numlockx on
 {{ if eq .chezmoi.hostname "archgirlie" -}}
 setxkbmap -option "apple:alupckeys"
 {{ end -}}
-{{ if lookPath "nmcli" -}}
-nmcli con up us.protonvpn.tcp
-{{ end -}}

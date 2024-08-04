@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -139,6 +140,7 @@ polybar
 postgresql
 protontricks-git
 protonup-qt
+protonvpn-cli-community
 python-catppuccin
 python-html2text
 python-pip
