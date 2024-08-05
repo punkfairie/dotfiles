@@ -1,7 +1,11 @@
 ---
 
 # style name or JSON path (default "auto")
+{{ if eq .drapeau.colors.name "catppuccin" -}}
 style: "~/.config/glow/themes/{{ .drapeau.colorscheme }}.json"
+{{ else -}}
+style: "pink"
+{{ end -}}
 # show local files only; no network (TUI-mode only)
 local: false
 # mouse support (TUI-mode only)
