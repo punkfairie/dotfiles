@@ -6,7 +6,9 @@ set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 #set -g @plugin 'tmux-plugins/tmux-resurrect'
 #set -g @plugin 'tmux-plugins/tmux-continuum'
+{{ if eq .drapeau.colors.name "catppuccin" -}}
 set -g @plugin 'catppuccin/tmux'
+{{ end }}
 
 ################################################################################
 #                                   General                                    #
@@ -110,6 +112,7 @@ bind -T copy-mode-vi / command-prompt -p '/' 'send -X search-forward %1'
 bind -T copy-mode-vi q send -X cancel
 bind -T copy-mode-vi Escape if-shell -F '#{selection_present}' 'send -X clear-selection' 'send -X cancel'
 
+{{ if eq .drapeau.colors.name "catppuccin" -}}
 ################################################################################
 #                                  Catppuccin                                  #
 ################################################################################
@@ -138,6 +141,7 @@ set -g @catppuccin_status_connect_separator "no"
 set -g @catppuccin_directory_text "#{pane_current_path}"
 set -g @catppuccin_date_time_text "%b %d • %I:%M %p"
 
+{{ end -}}
 ################################################################################
 #                                     tpm                                      #
 ################################################################################
