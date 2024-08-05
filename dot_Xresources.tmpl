@@ -1,37 +1,37 @@
-*background: {{ .drapeau.colors.base }}
-*foreground: {{ .drapeau.colors.text }}
+*background: {{ .drapeau.colors.base00 }}
+*foreground: {{ .drapeau.colors.base05 }}
 
 ! black
-*color0: {{ .drapeau.colors.surface1 }}
-*color8: {{ .drapeau.colors.surface2 }}
+*color0: {{ .drapeau.colors.base03 }}
+*color8: {{ .drapeau.colors.base04 }}
 
 ! red
-*color1: {{ .drapeau.colors.red }}
-*color9: {{ .drapeau.colors.red }}
+*color1: {{ .drapeau.colors.base08 }}
+*color9: {{ .drapeau.colors.base08 }}
 
 ! green
-*color2: {{ .drapeau.colors.green }}
-*color10: {{ .drapeau.colors.green }}
+*color2: {{ .drapeau.colors.base0B }}
+*color10: {{ .drapeau.colors.base0B }}
 
 ! yellow
-*color3: {{ .drapeau.colors.yellow }}
-*color11: {{ .drapeau.colors.yellow }}
+*color3: {{ .drapeau.colors.base0A }}
+*color11: {{ .drapeau.colors.base0A }}
 
 ! blue
-*color4: {{ .drapeau.colors.blue }}
-*color12: {{ .drapeau.colors.blue }}
+*color4: {{ .drapeau.colors.base0D }}
+*color12: {{ .drapeau.colors.base0D }}
 
 ! magenta
-*color5: {{ .drapeau.colors.pink }}
-*color13: {{ .drapeau.colors.pink }}
+*color5: {{ .drapeau.colors.base0F }}
+*color13: {{ .drapeau.colors.base0F }}
 
 ! cyan
-*color6: {{ .drapeau.colors.teal }}
-*color14: {{ .drapeau.colors.teal }}
+*color6: {{ .drapeau.colors.base0C }}
+*color14: {{ .drapeau.colors.base0C }}
 
 ! white
-*color7: {{ .drapeau.colors.subtext1 }}
-*color15: {{ .drapeau.colors.subtext0 }}
+*color7: {{ .drapeau.colors.base05 }}
+*color15: {{ .drapeau.colors.base05 }}
 
 {{ if lookPath "rofi" -}}
 ! Make Rofi use fish shell

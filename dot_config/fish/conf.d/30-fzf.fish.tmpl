@@ -10,9 +10,9 @@ set -gx FZF_DEFAULT_OPTS "\
 --prompt=' ' \
 --preview-label-pos='bottom' \
 --preview-window='border-sharp' \
---color=bg+:{{ .drapeau.colors.surface0 }},bg:{{ .drapeau.colors.base }},spinner:{{ .drapeau.colors.rosewater }},hl:{{ .drapeau.colors.red }} \
---color=fg:{{ .drapeau.colors.text }},header:{{ .drapeau.colors.red }},info:{{ .drapeau.colors.mauve }},pointer:{{ .drapeau.colors.rosewater }} \
---color=marker:{{ .drapeau.colors.rosewater }},fg+:{{ .drapeau.colors.text }},prompt:{{ .drapeau.colors.mauve }},hl+:{{ .drapeau.colors.red }}"
+--color=bg+:{{ .drapeau.colors.base02 }},bg:{{ .drapeau.colors.base00 }},spinner:{{ .drapeau.colors.base06 }},hl:{{ .drapeau.colors.base08 }} \
+--color=fg:{{ .drapeau.colors.base05 }},header:{{ .drapeau.colors.base08 }},info:{{ .drapeau.colors.base0E }},pointer:{{ .drapeau.colors.base06 }} \
+--color=marker:{{ .drapeau.colors.base06 }},fg+:{{ .drapeau.colors.base05 }},prompt:{{ .drapeau.colors.base0E }},hl+:{{ .drapeau.colors.base08 }}"
 
 # fzf.fish
 set -g fzf_preview_dir_cmd eza --all --color=always --sort=name --group-directories-first
