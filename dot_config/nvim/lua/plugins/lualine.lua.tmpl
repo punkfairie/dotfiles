@@ -3,7 +3,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     opts = function(_, opts)
-      table.insert(opts.options, { theme = {{ .drapeau.colors.name}} })
+      table.insert(opts.options, { theme = {{ .drapeau.colors.name | quote }} })
     end
   },
 }
