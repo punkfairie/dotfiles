@@ -1,31 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-palette = "default"
-
-[palettes.default]
-base00 = {{ .drapeau.colors.base00 | quote }}
-base01 = {{ .drapeau.colors.base01 | quote }}
-base02 = {{ .drapeau.colors.base02 | quote }}
-base03 = {{ .drapeau.colors.base03 | quote }}
-base04 = {{ .drapeau.colors.base04 | quote }}
-base05 = {{ .drapeau.colors.base06 | quote }}
-base06 = {{ .drapeau.colors.base06 | quote }}
-base07 = {{ .drapeau.colors.base07 | quote }}
-base08 = {{ .drapeau.colors.base08 | quote }}
-base09 = {{ .drapeau.colors.base09 | quote }}
-base0A = {{ .drapeau.colors.base0A | quote }}
-base0B = {{ .drapeau.colors.base0B | quote }}
-base0C = {{ .drapeau.colors.base0C | quote }}
-base0D = {{ .drapeau.colors.base0E | quote }}
-base0F = {{ .drapeau.colors.base0F | quote }}
-
 [character]
-success_symbol = "[[](base0F) ](base0B)"
-error_symbol = "[](base08)"
-vimcmd_symbol = "[](base0B)"
-vimcmd_replace_one_symbol = "[](base0B)"
-vimcmd_replace_symbol = "[](base0B)"
-vimcmd_visual_symbol = "[](base09)"
+success_symbol = "[[]({{ .drapeau.colors.base0F }}) ]({{ .drapeau.colors.base0B }})"
+error_symbol = "[]({{ .drapeau.colors.base08 }})"
+vimcmd_symbol = "[]({{ .drapeau.colors.base0B }})"
+vimcmd_replace_one_symbol = "[]({{ .drapeau.colors.base0B }})"
+vimcmd_replace_symbol = "[]({{ .drapeau.colors.base0B }})"
+vimcmd_visual_symbol = "[]({{ .drapeau.colors.base09 }})"
 
 [aws]
 symbol = "  "
@@ -83,7 +64,7 @@ symbol = " "
 
 [hostname]
 ssh_symbol = " "
-style = 'bold base07'
+style = 'bold {{ .drapeau.colors.base07 }}'
 
 [java]
 symbol = " "
@@ -185,7 +166,7 @@ symbol = " "
 
 [status]
 disabled = false
-style = 'base08'
+style = '{{ .drapeau.colors.base08 }}'
 symbol = '✗'
 not_executable_symbol = ''
 not_found_symbol = ''
@@ -194,7 +175,7 @@ signal_symbol = '󱐋'
 
 [sudo]
 disabled = false
-style = 'base0D'
+style = '{{ .drapeau.colors.base0D }}'
 symbol = '󰌋 '
 
 [swift]
