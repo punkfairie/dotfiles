@@ -3,4 +3,10 @@
 source auto
 
 ignore "Settings" "gtk-xft-dpi"
+
+{{ if eq .drapeau.colors.name "catppuccin" -}}
 set "Settings" "gtk-theme-name" "{{ .drapeau.colorscheme }}-pink-standard+default"
+{{ end -}}
+{{ if eq .drapeau.colors.name "rose-pine" -}}
+set "Settings" "gtk-theme-name" "{{ .drapeau.colorscheme }}-gtk"
+{{ end -}}

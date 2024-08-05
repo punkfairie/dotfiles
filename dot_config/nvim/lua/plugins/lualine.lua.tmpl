@@ -1,0 +1,10 @@
+{{ if eq .drapeau.colors.name "rose-pine" -}}
+return {
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = function(_, opts)
+      table.insert(opts.options, { theme = {{ .drapeau.colors.name}} })
+    end
+  },
+}
+{{ end -}}

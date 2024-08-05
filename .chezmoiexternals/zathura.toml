@@ -18,4 +18,19 @@ refreshPeriod = "672h"
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/zathura/main/src/catppuccin-mocha"
 refreshPeriod = "672h"
+
+[".config/zathura/rose-pine"]
+type = "file"
+url = "https://raw.githubusercontent.com/edunfelt/zathura/main/rose-pine"
+refreshPeriod = "672h"
+
+[".config/zathura/rose-pine-dawn"]
+type = "file"
+url = "https://raw.githubusercontent.com/edunfelt/zathura/main/rose-pine-dawn"
+refreshPeriod = "672h"
+
+[".config/zathura/rose-pine-moon"]
+type = "file"
+url = "https://raw.githubusercontent.com/edunfelt/zathura/main/rose-pine-moon"
+refreshPeriod = "672h"
 {{- end -}}

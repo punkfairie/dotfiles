@@ -1,0 +1,12 @@
+{{ if eq .drapeau.colors.name "rose-pine" -}}
+local highlights = require("rose-pine.plugins.bufferline")
+
+return {
+  {
+    "akinsho/bufferline.nvim",
+    opts = {
+      highlights = highlights,
+    },
+  },
+}
+{{ end -}}

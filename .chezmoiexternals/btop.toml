@@ -17,3 +17,18 @@ refreshPeriod = "672h"
 type = "file"
 url = "https://github.com/catppuccin/btop/blob/main/themes/catppuccin_mocha.theme"
 refreshPeriod = "672h"
+
+[".config/btop/themes/rose-pine-dawn.theme"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/btop/main/rose-pine-dawn.theme"
+refreshPeriod = "672h"
+
+[".config/btop/themes/rose-pine-moon.theme"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/btop/main/rose-pine-moon.theme"
+refreshPeriod = "672h"
+
+[".config/btop/themes/rose-pine.theme"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/btop/main/rose-pine.theme"
+refreshPeriod = "672h"
