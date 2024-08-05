@@ -9,7 +9,9 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 {{ if eq .drapeau.colors.name "catppuccin" -}}
 set -g @plugin 'catppuccin/tmux'
 {{ end }}
-
+{{ if eq .drapeau.colors.name "rosepine" -}}
+set -g @plugin 'rose-pine/tmux'
+{{ end }}
 ################################################################################
 #                                   General                                    #
 ################################################################################
@@ -114,10 +116,9 @@ bind -T copy-mode-vi Escape if-shell -F '#{selection_present}' 'send -X clear-se
 
 {{ if eq .drapeau.colors.name "catppuccin" -}}
 ################################################################################
-#                                  Catppuccin                                  #
+#                                  catppuccin                                  #
 ################################################################################
 
-# catppuccin
 set -g @catppuccin_flavour {{ .drapeau.colors.flavor | squote }}
 
 set -g @catppuccin_window_left_separator ""
@@ -141,6 +142,13 @@ set -g @catppuccin_status_connect_separator "no"
 set -g @catppuccin_directory_text "#{pane_current_path}"
 set -g @catppuccin_date_time_text "%b %d • %I:%M %p"
 
+{{ end -}}
+{{ if eq .drapeau.colors.name "rosepine" -}}
+################################################################################
+#                                  rose pine                                   #
+################################################################################
+
+set -g @rose_pine_variant {{ .drapeau.colors.flavor | squote }}
 {{ end -}}
 ################################################################################
 #                                     tpm                                      #
