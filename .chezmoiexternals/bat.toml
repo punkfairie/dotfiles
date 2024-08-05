@@ -1,19 +1,34 @@
 [".config/bat/themes/catppuccin-latte.tmTheme"]
 type = "file"
-url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Latte.tmTheme"
+url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Latte.tmTheme"
 refreshPeriod = "672h"
 
 [".config/bat/themes/catppuccin-frappe.tmTheme"]
 type = "file"
-url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Frappe.tmTheme"
+url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Frappe.tmTheme"
 refreshPeriod = "672h"
 
 [".config/bat/themes/catppuccin-macchiato.tmTheme"]
 type = "file"
-url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Macchiato.tmTheme"
+url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Macchiato.tmTheme"
 refreshPeriod = "672h"
 
 [".config/bat/themes/catppuccin-mocha.tmTheme"]
 type = "file"
-url = "https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme"
+url = "https://raw.githubusercontent.com/catppuccin/bat/main/themes/Catppuccin%20Mocha.tmTheme"
+refreshPeriod = "672h"
+
+[".config/bat/themes/rose-pine-dawn.tmTheme"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/tm-theme/main/dist/themes/rose-pine-dawn.tmTheme"
+refreshPeriod = "672h"
+
+[".config/bat/themes/rose-pine-moon.tmTheme"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/tm-theme/main/dist/themes/rose-pine-moon.tmTheme"
+refreshPeriod = "672h"
+
+[".config/bat/themes/rose-pine.tmTheme"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/tm-theme/main/dist/themes/rose-pine.tmTheme"
 refreshPeriod = "672h"
