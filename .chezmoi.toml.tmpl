@@ -16,6 +16,7 @@ autoPush = true
 {{ if lookPath "delta" -}}
 command = "delta"
 args = ["--syntax-theme", {{ $colorscheme | quote }}, "--features", "mellow-barbet", "{{ "{{" }} .Destination  {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
+pager = "delta"
 {{ end -}}
 exclude = ["scripts"]
 
