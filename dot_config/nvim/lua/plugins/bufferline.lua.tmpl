@@ -1,12 +1,11 @@
 {{ if eq .drapeau.colors.name "rose-pine" -}}
-local highlights = require("rose-pine.plugins.bufferline")
-
 return {
   {
     "akinsho/bufferline.nvim",
-    opts = {
-      highlights = highlights,
-    },
+    opts = function(_, opts)
+      local highlights = require("rose-pine.plugins.bufferline")
+      table.insert(opts, { highlights = highlights })
+    end,
   },
 }
 {{ end -}}
