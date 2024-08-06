@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -24,6 +25,7 @@ catppuccin-gtk-theme-macchiato
 catppuccin-latte-grub-theme-git
 catppuccin-macchiato-grub-theme-git
 catppuccin-mocha-grub-theme-git
+cava
 chaotic-keyring
 chaotic-mirrorlist
 cheat-bin
@@ -99,6 +101,7 @@ lsof
 luarocks
 lutris
 mailhog-bin
+maim
 man-db
 man-pages
 mariadb
@@ -121,6 +124,7 @@ numlockx
 nvidia
 nvidia-settings
 ocs-url
+onlyoffice-bin
 openrazer-daemon
 pamixer
 papirus-folders-catppuccin-git
@@ -130,6 +134,7 @@ php-mcrypt
 php-redis
 php-sqlite
 picom-git
+pipes.sh
 pipewire
 pipewire-alsa
 pipewire-pulse
