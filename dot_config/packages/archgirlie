@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -74,6 +75,7 @@ hyfetch
 hyphen-en
 i3-wm
 imagemagick
+inetutils
 inotify-tools
 iptables-nft
 jc
