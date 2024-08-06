@@ -148,10 +148,6 @@
 0	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-0 = $/;"	k	section:module/alsa
 0	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-0 = $/;"	k	section:module/pulseaudio
 0	dot_config/polybar/colorblocks/preview.ini	/^font-0 = "Iosevka Nerd Font:pixelsize=10;4"$/;"	k	section:bar/main
-0	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0 = " Reboot "$/;"	k	section:module/powermenu
-0	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0 = Menu$/;"	k	section:module/menu
-0	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-0 = " Back "$/;"	k	section:module/powermenu
-0	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-0 = " Shutdown "$/;"	k	section:module/powermenu
 0	dot_config/polybar/cuts/bars.ini	/^bar-capacity-foreground-0 = ${color.green}$/;"	k	section:module/battery_bar
 0	dot_config/polybar/cuts/bars.ini	/^bar-foreground-0 = ${color.green}$/;"	k	section:module/brightness
 0	dot_config/polybar/cuts/bars.ini	/^bar-load-foreground-0 = ${color.green}$/;"	k	section:module/cpu_bar
@@ -514,10 +510,6 @@
 1	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-1 = $/;"	k	section:module/alsa
 1	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-1 = $/;"	k	section:module/pulseaudio
 1	dot_config/polybar/colorblocks/preview.ini	/^font-1 = "Iosevka Nerd Font:pixelsize=13;4"$/;"	k	section:bar/main
-1	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1 = " Shutdown  "$/;"	k	section:module/powermenu
-1	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1 = Files$/;"	k	section:module/menu
-1	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-1 = " Reboot  "$/;"	k	section:module/powermenu
-1	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-1 = " Back  "$/;"	k	section:module/powermenu
 1	dot_config/polybar/cuts/bars.ini	/^bar-capacity-foreground-1 = ${color.green}$/;"	k	section:module/battery_bar
 1	dot_config/polybar/cuts/bars.ini	/^bar-foreground-1 = ${color.green}$/;"	k	section:module/brightness
 1	dot_config/polybar/cuts/bars.ini	/^bar-load-foreground-1 = ${color.green}$/;"	k	section:module/cpu_bar
@@ -832,7 +824,6 @@
 2	dot_config/polybar/colorblocks/modules.ini	/^ramp-signal-2 = 直$/;"	k	section:module/network
 2	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-2 = $/;"	k	section:module/alsa
 2	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-2 = $/;"	k	section:module/pulseaudio
-2	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-2 = Terminal$/;"	k	section:module/menu
 2	dot_config/polybar/cuts/bars.ini	/^bar-capacity-foreground-2 = ${color.yellow}$/;"	k	section:module/battery_bar
 2	dot_config/polybar/cuts/bars.ini	/^bar-foreground-2 = ${color.yellow}$/;"	k	section:module/brightness
 2	dot_config/polybar/cuts/bars.ini	/^bar-load-foreground-2 = ${color.yellow}$/;"	k	section:module/cpu_bar
@@ -1067,7 +1058,6 @@
 3	dot_config/polybar/colorblocks/modules.ini	/^ramp-3 = $/;"	k	section:module/temperature
 3	dot_config/polybar/colorblocks/modules.ini	/^ramp-3 = $/;"	k	section:module/backlight
 3	dot_config/polybar/colorblocks/modules.ini	/^ramp-capacity-3 = $/;"	k	section:module/battery
-3	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-3 =" Browser  "$/;"	k	section:module/menu
 3	dot_config/polybar/cuts/bars.ini	/^bar-capacity-foreground-3 = ${color.yellow}$/;"	k	section:module/battery_bar
 3	dot_config/polybar/cuts/bars.ini	/^bar-foreground-3 = ${color.yellow}$/;"	k	section:module/brightness
 3	dot_config/polybar/cuts/bars.ini	/^bar-load-foreground-3 = ${color.yellow}$/;"	k	section:module/cpu_bar
@@ -1907,30 +1897,6 @@ background	dot_config/polybar/colorblocks/modules.ini	/^label-urgent-background 
 background	dot_config/polybar/colorblocks/preview.ini	/^background = ${color.alpha}$/;"	k	section:bar/main
 background	dot_config/polybar/colorblocks/preview.ini	/^compositing-background = source$/;"	k	section:settings
 background	dot_config/polybar/colorblocks/preview.ini	/^tray-background = ${color.background}$/;"	k	section:bar/bottom
-background	dot_config/polybar/colorblocks/user_modules.ini	/^content-background = #FFFFFF$/;"	k	section:module/color-switch
-background	dot_config/polybar/colorblocks/user_modules.ini	/^content-background = ${color.alpha}$/;"	k	section:module/sep
-background	dot_config/polybar/colorblocks/user_modules.ini	/^content-background = ${color.background}$/;"	k	section:module/launcher
-background	dot_config/polybar/colorblocks/user_modules.ini	/^content-background = ${color.background}$/;"	k	section:module/links
-background	dot_config/polybar/colorblocks/user_modules.ini	/^content-background = ${color.background}$/;"	k	section:module/sysmenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^format-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^format-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^format-background = ${color.shade8}$/;"	k	section:module/updates
-background	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^label-separator-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^label-separator-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-2-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-3-background = ${color.background}$/;"	k	section:module/menu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-0-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-1-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-0-background = ${color.background}$/;"	k	section:module/powermenu
-background	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-1-background = ${color.background}$/;"	k	section:module/powermenu
 background	dot_config/polybar/cuts/bars.ini	/^format-background = ${color.background}$/;"	k	section:module/brightness
 background	dot_config/polybar/cuts/bars.ini	/^format-background = ${color.background}$/;"	k	section:module/cpu_bar
 background	dot_config/polybar/cuts/bars.ini	/^format-background = ${color.background}$/;"	k	section:module/memory_bar
@@ -3061,8 +3027,6 @@ clipboard_notification_lines	dot_config/copyq/copyq.conf	/^clipboard_notificatio
 clipboard_tab	dot_config/copyq/copyq.conf	/^clipboard_tab=&clipboard$/;"	k	section:Options
 close	dot_config/polybar/blocks/user_modules.ini	/^label-close =  $/;"	k	section:module/menu
 close	dot_config/polybar/blocks/user_modules.ini	/^label-close =  $/;"	k	section:module/powermenu
-close	dot_config/polybar/colorblocks/user_modules.ini	/^label-close = $/;"	k	section:module/menu
-close	dot_config/polybar/colorblocks/user_modules.ini	/^label-close = $/;"	k	section:module/powermenu
 close	dot_config/polybar/cuts/user_modules.ini	/^label-close =  $/;"	k	section:module/powermenu
 close	dot_config/polybar/cuts/user_modules.ini	/^label-close = $/;"	k	section:module/menu
 close	dot_config/polybar/docky/user_modules.ini	/^label-close =  $/;"	k	section:module/powermenu
@@ -3297,15 +3261,6 @@ content	dot_config/polybar/blocks/user_modules.ini	/^content = $/;"	k	section
 content	dot_config/polybar/blocks/user_modules.ini	/^content = $/;"	k	section:module/files
 content	dot_config/polybar/blocks/user_modules.ini	/^content = $/;"	k	section:module/settings
 content	dot_config/polybar/blocks/user_modules.ini	/^content = $/;"	k	section:module/term
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = "  "$/;"	k	section:module/sep
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/launcher
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/color-switch
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/sysmenu
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/twitter
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/gmail
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/github
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/google
-content	dot_config/polybar/colorblocks/user_modules.ini	/^content = $/;"	k	section:module/reddit
 content	dot_config/polybar/cuts/user_modules.ini	/^content = "%{T3}%{T-}"$/;"	k	section:module/decor3
 content	dot_config/polybar/cuts/user_modules.ini	/^content = "%{T3}%{T-}"$/;"	k	section:module/decor2
 content	dot_config/polybar/cuts/user_modules.ini	/^content = "%{T3}%{T-}"$/;"	k	section:module/decor1
@@ -3987,17 +3942,6 @@ exec	dot_config/polybar/blocks/user_modules.ini	/^menu-1-0-exec = menu-open-0$/;
 exec	dot_config/polybar/blocks/user_modules.ini	/^menu-1-1-exec = systemctl reboot$/;"	k	section:module/powermenu
 exec	dot_config/polybar/blocks/user_modules.ini	/^menu-2-0-exec = systemctl poweroff$/;"	k	section:module/powermenu
 exec	dot_config/polybar/blocks/user_modules.ini	/^menu-2-1-exec = menu-open-0$/;"	k	section:module/powermenu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^exec = ~\/.config\/polybar\/colorblocks\/scripts\/updates.sh$/;"	k	section:module/updates
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0-exec = menu-open-1$/;"	k	section:module/powermenu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0-exec = ~\/.config\/polybar\/colorblocks\/scripts\/launcher.sh &$/;"	k	section:module/menu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1-exec = menu-open-2$/;"	k	section:module/powermenu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1-exec = thunar &$/;"	k	section:module/menu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-2-exec = wezterm &$/;"	k	section:module/menu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-3-exec = firefox &$/;"	k	section:module/menu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-0-exec = menu-open-0$/;"	k	section:module/powermenu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-1-exec = systemctl reboot$/;"	k	section:module/powermenu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-0-exec = systemctl poweroff$/;"	k	section:module/powermenu
-exec	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-1-exec = menu-open-0$/;"	k	section:module/powermenu
 exec	dot_config/polybar/cuts/user_modules.ini	/^exec = ~\/.config\/polybar\/cuts\/scripts\/updates.sh$/;"	k	section:module/updates
 exec	dot_config/polybar/cuts/user_modules.ini	/^menu-0-0-exec = menu-open-1$/;"	k	section:module/powermenu
 exec	dot_config/polybar/cuts/user_modules.ini	/^menu-0-0-exec = ~\/.config\/polybar\/cuts\/scripts\/launcher.sh &$/;"	k	section:module/menu
@@ -4374,12 +4318,6 @@ font	dot_config/polybar/colorblocks/modules.ini	/^ramp-font = 2$/;"	k	section:mo
 font	dot_config/polybar/colorblocks/modules.ini	/^ramp-font = 2$/;"	k	section:module/temperature
 font	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-font = 2$/;"	k	section:module/alsa
 font	dot_config/polybar/colorblocks/modules.ini	/^ramp-volume-font = 2$/;"	k	section:module/pulseaudio
-font	dot_config/polybar/colorblocks/user_modules.ini	/^content-font = 2$/;"	k	section:module/links
-font	dot_config/polybar/colorblocks/user_modules.ini	/^format-prefix-font = 2$/;"	k	section:module/updates
-font	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-font = 2$/;"	k	section:module/menu
-font	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-font = 2$/;"	k	section:module/powermenu
-font	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-font = 1$/;"	k	section:module/powermenu
-font	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-font = 2$/;"	k	section:module/menu
 font	dot_config/polybar/forest/bars.ini	/^bar-capacity-empty-font = 2$/;"	k	section:module/battery_bar
 font	dot_config/polybar/forest/bars.ini	/^bar-capacity-fill-font = 2$/;"	k	section:module/battery_bar
 font	dot_config/polybar/forest/bars.ini	/^bar-capacity-indicator-font = 2$/;"	k	section:module/battery_bar
@@ -4601,33 +4539,6 @@ foreground	dot_config/polybar/colorblocks/modules.ini	/^toggle-off-foreground = 
 foreground	dot_config/polybar/colorblocks/modules.ini	/^toggle-on-foreground = ${color.foreground}$/;"	k	section:module/mpd
 foreground	dot_config/polybar/colorblocks/preview.ini	/^compositing-foreground = over$/;"	k	section:settings
 foreground	dot_config/polybar/colorblocks/preview.ini	/^foreground = ${color.foreground}$/;"	k	section:bar/main
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = #CC6666$/;"	k	section:module/color-switch
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.alpha}$/;"	k	section:module/sep
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade3}$/;"	k	section:module/twitter
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade4}$/;"	k	section:module/gmail
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade4}$/;"	k	section:module/launcher
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade4}$/;"	k	section:module/sysmenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade5}$/;"	k	section:module/reddit
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade6}$/;"	k	section:module/github
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^content-foreground = ${color.shade7}$/;"	k	section:module/google
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^format-foreground = ${color.foreground}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^format-foreground = ${color.foreground}$/;"	k	section:module/updates
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-foreground = ${color.shade4}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-foreground = ${color.shade4}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-foreground = ${color.shade4}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-foreground = ${color.shade4}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^label-separator-foreground = ${color.shade4}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^label-separator-foreground = ${color.shade4}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0-foreground = ${color.foreground-alt}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-0-foreground = ${color.foreground-alt}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1-foreground = ${color.foreground-alt}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-1-foreground = ${color.foreground-alt}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-2-foreground = ${color.foreground-alt}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-0-3-foreground = ${color.foreground-alt}$/;"	k	section:module/menu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-0-foreground = ${color.foreground-alt}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-1-1-foreground = ${color.foreground-alt}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-0-foreground = ${color.foreground-alt}$/;"	k	section:module/powermenu
-foreground	dot_config/polybar/colorblocks/user_modules.ini	/^menu-2-1-foreground = ${color.foreground-alt}$/;"	k	section:module/powermenu
 foreground	dot_config/polybar/cuts/bars.ini	/^bar-capacity-empty-foreground = ${color.foreground-alt}$/;"	k	section:module/battery_bar
 foreground	dot_config/polybar/cuts/bars.ini	/^bar-capacity-indicator-foreground = ${color.foreground}$/;"	k	section:module/battery_bar
 foreground	dot_config/polybar/cuts/bars.ini	/^bar-empty-foreground = ${color.foreground-alt}$/;"	k	section:module/brightness
@@ -5301,9 +5212,6 @@ format	dot_config/polybar/colorblocks/modules.ini	/^format = <label>$/;"	k	secti
 format	dot_config/polybar/colorblocks/modules.ini	/^format = <ramp> <label>$/;"	k	section:module/backlight
 format	dot_config/polybar/colorblocks/modules.ini	/^format = <ramp> <label>$/;"	k	section:module/temperature
 format	dot_config/polybar/colorblocks/modules.ini	/^time-format = %H:%M$/;"	k	section:module/battery
-format	dot_config/polybar/colorblocks/user_modules.ini	/^format = <label-toggle><menu>$/;"	k	section:module/menu
-format	dot_config/polybar/colorblocks/user_modules.ini	/^format = <label-toggle><menu>$/;"	k	section:module/powermenu
-format	dot_config/polybar/colorblocks/user_modules.ini	/^format = <label>$/;"	k	section:module/updates
 format	dot_config/polybar/cuts/bars.ini	/^bar-capacity-format = ${bar.format}$/;"	k	section:module/battery_bar
 format	dot_config/polybar/cuts/bars.ini	/^bar-format = ${bar.format}$/;"	k	section:module/brightness
 format	dot_config/polybar/cuts/bars.ini	/^bar-load-format = ${bar.format}$/;"	k	section:module/cpu_bar
@@ -6034,11 +5942,6 @@ inherit	dot_config/polybar/blocks/user_modules.ini	/^inherit = module\/apps$/;"	
 inherit	dot_config/polybar/colorblocks/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/bottom
 inherit	dot_config/polybar/colorblocks/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/mid
 inherit	dot_config/polybar/colorblocks/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/top
-inherit	dot_config/polybar/colorblocks/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/github
-inherit	dot_config/polybar/colorblocks/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/gmail
-inherit	dot_config/polybar/colorblocks/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/google
-inherit	dot_config/polybar/colorblocks/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/reddit
-inherit	dot_config/polybar/colorblocks/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/twitter
 inherit	dot_config/polybar/cuts/config.ini	/^inherit = bar\/main$/;"	k	section:bar/bottom
 inherit	dot_config/polybar/cuts/config.ini	/^inherit = bar\/main$/;"	k	section:bar/top
 inherit	dot_config/polybar/cuts/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/bottom
@@ -6211,7 +6114,6 @@ interval	dot_config/polybar/colorblocks/modules.ini	/^interval = 30$/;"	k	sectio
 interval	dot_config/polybar/colorblocks/modules.ini	/^interval = 5$/;"	k	section:module/alsa
 interval	dot_config/polybar/colorblocks/modules.ini	/^interval = 5$/;"	k	section:module/pulseaudio
 interval	dot_config/polybar/colorblocks/modules.ini	/^poll-interval = 2$/;"	k	section:module/battery
-interval	dot_config/polybar/colorblocks/user_modules.ini	/^interval = 5$/;"	k	section:module/updates
 interval	dot_config/polybar/cuts/bars.ini	/^interval = 0.5$/;"	k	section:module/cpu_bar
 interval	dot_config/polybar/cuts/bars.ini	/^interval = 1$/;"	k	section:module/mpd_bar
 interval	dot_config/polybar/cuts/bars.ini	/^interval = 2$/;"	k	section:module/memory_bar
@@ -6511,7 +6413,6 @@ label	dot_config/polybar/colorblocks/modules.ini	/^label = "%title%"$/;"	k	secti
 label	dot_config/polybar/colorblocks/modules.ini	/^label = %percentage%%$/;"	k	section:module/backlight
 label	dot_config/polybar/colorblocks/modules.ini	/^label = %temperature-c%$/;"	k	section:module/temperature
 label	dot_config/polybar/colorblocks/modules.ini	/^label = %time%$/;"	k	section:module/date
-label	dot_config/polybar/colorblocks/user_modules.ini	/^label = %output%$/;"	k	section:module/updates
 label	dot_config/polybar/cuts/bars.ini	/^label = "%mb_used%"$/;"	k	section:module/memory_bar
 label	dot_config/polybar/cuts/bars.ini	/^label = "%percentage%%"$/;"	k	section:module/cpu_bar
 label	dot_config/polybar/cuts/bars.ini	/^label = %percentage%%$/;"	k	section:module/brightness
@@ -6662,15 +6563,6 @@ left	dot_config/polybar/colorblocks/preview.ini	/^double-click-left =$/;"	k	sect
 left	dot_config/polybar/colorblocks/preview.ini	/^module-margin-left = 0$/;"	k	section:bar/main
 left	dot_config/polybar/colorblocks/preview.ini	/^modules-left = launcher sep workspaces sep mpd$/;"	k	section:bar/bottom
 left	dot_config/polybar/colorblocks/preview.ini	/^modules-left = menu sep title sep google github reddit gmail twitter$/;"	k	section:bar/top
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = exo-open --launch TerminalEmulator &$/;"	k	section:module/updates
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = exo-open https:\/\/mail.google.com\/ &$/;"	k	section:module/gmail
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = exo-open https:\/\/www.github.com\/ &$/;"	k	section:module/github
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = exo-open https:\/\/www.google.com\/ &$/;"	k	section:module/google
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = exo-open https:\/\/www.reddit.com\/ &$/;"	k	section:module/reddit
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = exo-open https:\/\/www.twitter.com\/ &$/;"	k	section:module/twitter
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = ~\/.config\/polybar\/colorblocks\/scripts\/color-switch.sh &$/;"	k	section:module/color-switch
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = ~\/.config\/polybar\/colorblocks\/scripts\/launcher.sh &$/;"	k	section:module/launcher
-left	dot_config/polybar/colorblocks/user_modules.ini	/^click-left = ~\/.config\/polybar\/colorblocks\/scripts\/powermenu.sh &$/;"	k	section:module/sysmenu
 left	dot_config/polybar/cuts/config.ini	/^click-left = $/;"	k	section:bar/bottom
 left	dot_config/polybar/cuts/config.ini	/^double-click-left =$/;"	k	section:bar/bottom
 left	dot_config/polybar/cuts/config.ini	/^module-margin-left = 0$/;"	k	section:bar/main
@@ -7410,7 +7302,6 @@ module/browser	dot_config/polybar/material/user_modules.ini	/^[module\/browser]$
 module/buttons	dot_config/polybar/pwidgets/mpd.ini	/^[module\/buttons]$/;"	s
 module/checknet	dot_config/polybar/hack/user_modules.ini	/^[module\/checknet]$/;"	s
 module/color-switch	dot_config/polybar/blocks/user_modules.ini	/^[module\/color-switch]$/;"	s
-module/color-switch	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/color-switch]$/;"	s
 module/color-switch	dot_config/polybar/cuts/user_modules.ini	/^[module\/color-switch]$/;"	s
 module/color-switch	dot_config/polybar/docky/user_modules.ini	/^[module\/color-switch]$/;"	s
 module/color-switch	dot_config/polybar/forest/user_modules.ini	/^[module\/color-switch]$/;"	s
@@ -7510,15 +7401,12 @@ module/filesystem_bar	dot_config/polybar/shades/bars.ini	/^[module\/filesystem_b
 module/filesystem_bar	dot_config/polybar/shapes/bars.ini	/^[module\/filesystem_bar]$/;"	s
 module/fs	dot_config/polybar/pwidgets/fs.ini	/^[module\/fs]$/;"	s
 module/fs_bar	dot_config/polybar/pwidgets/fs.ini	/^[module\/fs_bar]$/;"	s
-module/github	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/github]$/;"	s
 module/github	dot_config/polybar/hack/user_modules.ini	/^[module\/github]$/;"	s
 module/github	dot_config/polybar/shades/user_modules.ini	/^[module\/github]$/;"	s
 module/github	dot_config/polybar/shapes/user_modules.ini	/^[module\/github]$/;"	s
-module/gmail	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/gmail]$/;"	s
 module/gmail	dot_config/polybar/hack/user_modules.ini	/^[module\/gmail]$/;"	s
 module/gmail	dot_config/polybar/shades/user_modules.ini	/^[module\/gmail]$/;"	s
 module/gmail	dot_config/polybar/shapes/user_modules.ini	/^[module\/gmail]$/;"	s
-module/google	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/google]$/;"	s
 module/google	dot_config/polybar/hack/user_modules.ini	/^[module\/google]$/;"	s
 module/google	dot_config/polybar/shades/user_modules.ini	/^[module\/google]$/;"	s
 module/google	dot_config/polybar/shapes/user_modules.ini	/^[module\/google]$/;"	s
@@ -7536,7 +7424,6 @@ module/keyboard	dot_config/polybar/material/modules.ini	/^[module\/keyboard]$/;"
 module/keyboard	dot_config/polybar/shades/modules.ini	/^[module\/keyboard]$/;"	s
 module/keyboard	dot_config/polybar/shapes/modules.ini	/^[module\/keyboard]$/;"	s
 module/launcher	dot_config/polybar/blocks/user_modules.ini	/^[module\/launcher]$/;"	s
-module/launcher	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/launcher]$/;"	s
 module/launcher	dot_config/polybar/cuts/user_modules.ini	/^[module\/launcher]$/;"	s
 module/launcher	dot_config/polybar/docky/user_modules.ini	/^[module\/launcher]$/;"	s
 module/launcher	dot_config/polybar/forest/user_modules.ini	/^[module\/launcher]$/;"	s
@@ -7547,7 +7434,6 @@ module/launcher	dot_config/polybar/shades/user_modules.ini	/^[module\/launcher]$
 module/launcher	dot_config/polybar/shapes/user_modules.ini	/^[module\/launcher]$/;"	s
 module/left1	dot_config/polybar/shapes/glyphs.ini	/^[module\/left1]$/;"	s
 module/left2	dot_config/polybar/shapes/glyphs.ini	/^[module\/left2]$/;"	s
-module/links	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/links]$/;"	s
 module/links	dot_config/polybar/hack/user_modules.ini	/^[module\/links]$/;"	s
 module/links	dot_config/polybar/shades/user_modules.ini	/^[module\/links]$/;"	s
 module/links	dot_config/polybar/shapes/user_modules.ini	/^[module\/links]$/;"	s
@@ -7574,7 +7460,6 @@ module/memory_bar	dot_config/polybar/pwidgets/memory.ini	/^[module\/memory_bar]$
 module/memory_bar	dot_config/polybar/shades/bars.ini	/^[module\/memory_bar]$/;"	s
 module/memory_bar	dot_config/polybar/shapes/bars.ini	/^[module\/memory_bar]$/;"	s
 module/menu	dot_config/polybar/blocks/user_modules.ini	/^[module\/menu]$/;"	s
-module/menu	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/menu]$/;"	s
 module/menu	dot_config/polybar/cuts/user_modules.ini	/^[module\/menu]$/;"	s
 module/menu	dot_config/polybar/docky/user_modules.ini	/^[module\/menu]$/;"	s
 module/menu	dot_config/polybar/forest/user_modules.ini	/^[module\/menu]$/;"	s
@@ -7647,7 +7532,6 @@ module/network	dot_config/polybar/shades/modules.ini	/^[module\/network]$/;"	s
 module/network	dot_config/polybar/shapes/modules.ini	/^[module\/network]$/;"	s
 module/player	dot_config/polybar/pwidgets/mpd.ini	/^[module\/player]$/;"	s
 module/powermenu	dot_config/polybar/blocks/user_modules.ini	/^[module\/powermenu]$/;"	s
-module/powermenu	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/powermenu]$/;"	s
 module/powermenu	dot_config/polybar/cuts/user_modules.ini	/^[module\/powermenu]$/;"	s
 module/powermenu	dot_config/polybar/docky/user_modules.ini	/^[module\/powermenu]$/;"	s
 module/powermenu	dot_config/polybar/forest/user_modules.ini	/^[module\/powermenu]$/;"	s
@@ -7666,7 +7550,6 @@ module/pulseaudio	dot_config/polybar/hack/modules.ini	/^[module\/pulseaudio]$/;"
 module/pulseaudio	dot_config/polybar/material/modules.ini	/^[module\/pulseaudio]$/;"	s
 module/pulseaudio	dot_config/polybar/shades/modules.ini	/^[module\/pulseaudio]$/;"	s
 module/pulseaudio	dot_config/polybar/shapes/modules.ini	/^[module\/pulseaudio]$/;"	s
-module/reddit	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/reddit]$/;"	s
 module/reddit	dot_config/polybar/hack/user_modules.ini	/^[module\/reddit]$/;"	s
 module/reddit	dot_config/polybar/shades/user_modules.ini	/^[module\/reddit]$/;"	s
 module/reddit	dot_config/polybar/shapes/user_modules.ini	/^[module\/reddit]$/;"	s
@@ -7678,7 +7561,6 @@ module/right5	dot_config/polybar/shapes/glyphs.ini	/^[module\/right5]$/;"	s
 module/right6	dot_config/polybar/shapes/glyphs.ini	/^[module\/right6]$/;"	s
 module/right7	dot_config/polybar/shapes/glyphs.ini	/^[module\/right7]$/;"	s
 module/sep	dot_config/polybar/blocks/user_modules.ini	/^[module\/sep]$/;"	s
-module/sep	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/sep]$/;"	s
 module/sep	dot_config/polybar/forest/user_modules.ini	/^[module\/sep]$/;"	s
 module/sep	dot_config/polybar/grayblocks/user_modules.ini	/^[module\/sep]$/;"	s
 module/sep	dot_config/polybar/hack/user_modules.ini	/^[module\/sep]$/;"	s
@@ -7738,7 +7620,6 @@ module/style	dot_config/polybar/panels/panel/ubuntu_unity.ini	/^[module\/style]$
 module/style	dot_config/polybar/panels/panel/xubuntu.ini	/^[module\/style]$/;"	s
 module/style	dot_config/polybar/panels/panel/zorin.ini	/^[module\/style]$/;"	s
 module/sysmenu	dot_config/polybar/blocks/user_modules.ini	/^[module\/sysmenu]$/;"	s
-module/sysmenu	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/sysmenu]$/;"	s
 module/sysmenu	dot_config/polybar/cuts/user_modules.ini	/^[module\/sysmenu]$/;"	s
 module/sysmenu	dot_config/polybar/docky/user_modules.ini	/^[module\/sysmenu]$/;"	s
 module/sysmenu	dot_config/polybar/forest/user_modules.ini	/^[module\/sysmenu]$/;"	s
@@ -7800,12 +7681,10 @@ module/title	dot_config/polybar/panels/panel/xubuntu.ini	/^[module\/title]$/;"	s
 module/title	dot_config/polybar/pwidgets/workspace.ini	/^[module\/title]$/;"	s
 module/title	dot_config/polybar/shades/modules.ini	/^[module\/title]$/;"	s
 module/title	dot_config/polybar/shapes/modules.ini	/^[module\/title]$/;"	s
-module/twitter	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/twitter]$/;"	s
 module/twitter	dot_config/polybar/hack/user_modules.ini	/^[module\/twitter]$/;"	s
 module/twitter	dot_config/polybar/shades/user_modules.ini	/^[module\/twitter]$/;"	s
 module/twitter	dot_config/polybar/shapes/user_modules.ini	/^[module\/twitter]$/;"	s
 module/updates	dot_config/polybar/blocks/user_modules.ini	/^[module\/updates]$/;"	s
-module/updates	dot_config/polybar/colorblocks/user_modules.ini	/^[module\/updates]$/;"	s
 module/updates	dot_config/polybar/cuts/user_modules.ini	/^[module\/updates]$/;"	s
 module/updates	dot_config/polybar/docky/user_modules.ini	/^[module\/updates]$/;"	s
 module/updates	dot_config/polybar/forest/user_modules.ini	/^[module\/updates]$/;"	s
@@ -8298,8 +8177,6 @@ online	dot_config/polybar/shapes/bars.ini	/^format-online = <label-song> <bar-pr
 online	dot_config/polybar/shapes/modules.ini	/^format-online = <label-song> <icon-prev> <toggle> <icon-next>$/;"	k	section:module/mpd
 open	dot_config/polybar/blocks/user_modules.ini	/^label-open = $/;"	k	section:module/menu
 open	dot_config/polybar/blocks/user_modules.ini	/^label-open = $/;"	k	section:module/powermenu
-open	dot_config/polybar/colorblocks/user_modules.ini	/^label-open = $/;"	k	section:module/powermenu
-open	dot_config/polybar/colorblocks/user_modules.ini	/^label-open = $/;"	k	section:module/menu
 open	dot_config/polybar/cuts/user_modules.ini	/^label-open = $/;"	k	section:module/menu
 open	dot_config/polybar/cuts/user_modules.ini	/^label-open = $/;"	k	section:module/powermenu
 open	dot_config/polybar/docky/user_modules.ini	/^label-open = $/;"	k	section:module/menu
@@ -8668,15 +8545,6 @@ padding	dot_config/polybar/colorblocks/modules.ini	/^label-song-padding = 2$/;"	
 padding	dot_config/polybar/colorblocks/modules.ini	/^label-urgent-padding = 2$/;"	k	section:module/workspaces
 padding	dot_config/polybar/colorblocks/preview.ini	/^padding = 0$/;"	k	section:bar/main
 padding	dot_config/polybar/colorblocks/preview.ini	/^tray-padding = 0$/;"	k	section:bar/bottom
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^content-padding = 2$/;"	k	section:module/color-switch
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^content-padding = 2$/;"	k	section:module/launcher
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^content-padding = 2$/;"	k	section:module/links
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^content-padding = 2$/;"	k	section:module/sysmenu
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^format-padding = 2$/;"	k	section:module/updates
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-padding = 2$/;"	k	section:module/menu
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^label-close-padding = 2$/;"	k	section:module/powermenu
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-padding = 2$/;"	k	section:module/menu
-padding	dot_config/polybar/colorblocks/user_modules.ini	/^label-open-padding = 2$/;"	k	section:module/powermenu
 padding	dot_config/polybar/cuts/bars.ini	/^format-charging-padding = 1$/;"	k	section:module/battery_bar
 padding	dot_config/polybar/cuts/bars.ini	/^format-discharging-padding = 1$/;"	k	section:module/battery_bar
 padding	dot_config/polybar/cuts/bars.ini	/^format-full-padding = 1$/;"	k	section:module/battery_bar
@@ -9256,7 +9124,6 @@ prefix	dot_config/polybar/colorblocks/modules.ini	/^format-prefix = $/;"	k	se
 prefix	dot_config/polybar/colorblocks/modules.ini	/^format-prefix = $/;"	k	section:module/date
 prefix	dot_config/polybar/colorblocks/modules.ini	/^format-prefix = ﯑$/;"	k	section:module/title
 prefix	dot_config/polybar/colorblocks/modules.ini	/^format-unmounted-prefix = $/;"	k	section:module/filesystem
-prefix	dot_config/polybar/colorblocks/user_modules.ini	/^format-prefix = $/;"	k	section:module/updates
 prefix	dot_config/polybar/cuts/bars.ini	/^format-charging-prefix = " "$/;"	k	section:module/battery_bar
 prefix	dot_config/polybar/cuts/bars.ini	/^format-discharging-prefix = " " $/;"	k	section:module/battery_bar
 prefix	dot_config/polybar/cuts/bars.ini	/^format-full-prefix = " "$/;"	k	section:module/battery_bar
@@ -9738,10 +9605,6 @@ right	dot_config/polybar/colorblocks/preview.ini	/^double-click-right =$/;"	k	se
 right	dot_config/polybar/colorblocks/preview.ini	/^module-margin-right = 0$/;"	k	section:bar/main
 right	dot_config/polybar/colorblocks/preview.ini	/^modules-right = color-switch sep cpu memory alsa battery network date sep sysmenu$/;"	k	section:bar/bottom
 right	dot_config/polybar/colorblocks/preview.ini	/^modules-right = updates temperature filesystem keyboard pulseaudio backlight sep powermenu$/;"	k	section:bar/top
-right	dot_config/polybar/colorblocks/user_modules.ini	/^click-right = exo-open --launch TerminalEmulator &$/;"	k	section:module/updates
-right	dot_config/polybar/colorblocks/user_modules.ini	/^click-right = ~\/.config\/polybar\/colorblocks\/scripts\/color-switch.sh &$/;"	k	section:module/launcher
-right	dot_config/polybar/colorblocks/user_modules.ini	/^expand-right = true$/;"	k	section:module/menu
-right	dot_config/polybar/colorblocks/user_modules.ini	/^expand-right = true$/;"	k	section:module/powermenu
 right	dot_config/polybar/cuts/config.ini	/^click-right =$/;"	k	section:bar/bottom
 right	dot_config/polybar/cuts/config.ini	/^double-click-right =$/;"	k	section:bar/bottom
 right	dot_config/polybar/cuts/config.ini	/^module-margin-right = 0$/;"	k	section:bar/main
@@ -10235,8 +10098,6 @@ separator	dot_config/polybar/blocks/config.ini	/^separator =$/;"	k	section:bar/m
 separator	dot_config/polybar/blocks/preview.ini	/^separator =$/;"	k	section:bar/bottom
 separator	dot_config/polybar/colorblocks/config.ini	/^separator =$/;"	k	section:bar/main
 separator	dot_config/polybar/colorblocks/preview.ini	/^separator =$/;"	k	section:bar/bottom
-separator	dot_config/polybar/colorblocks/user_modules.ini	/^label-separator = " | "$/;"	k	section:module/menu
-separator	dot_config/polybar/colorblocks/user_modules.ini	/^label-separator = " | "$/;"	k	section:module/powermenu
 separator	dot_config/polybar/cuts/config.ini	/^separator =$/;"	k	section:bar/bottom
 separator	dot_config/polybar/cuts/preview.ini	/^separator =$/;"	k	section:bar/bottom
 separator	dot_config/polybar/cuts/user_modules.ini	/^label-separator = " | "$/;"	k	section:module/menu
@@ -10705,7 +10566,6 @@ tab_tree_sel_item_counter	dot_config/copyq/copyq.conf	/^tab_tree_sel_item_counte
 tab_tree_sel_item_css	dot_config/copyq/copyq.conf	/^tab_tree_sel_item_css="\\n    ;color: ${sel_fg}\\n    ;background-color: ${sel_bg}\\n    ;border/;"	k	section:Theme
 tabs	dot_config/copyq/copyq.conf	/^tabs=&clipboard$/;"	k	section:Options
 tail	dot_config/polybar/blocks/user_modules.ini	/^tail = true$/;"	k	section:module/updates
-tail	dot_config/polybar/colorblocks/user_modules.ini	/^tail = true$/;"	k	section:module/updates
 tail	dot_config/polybar/cuts/user_modules.ini	/^tail = true$/;"	k	section:module/updates
 tail	dot_config/polybar/docky/user_modules.ini	/^tail = true$/;"	k	section:module/updates
 tail	dot_config/polybar/forest/user_modules.ini	/^tail = true$/;"	k	section:module/updates
@@ -11012,14 +10872,6 @@ type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/temperature$/
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/xkeyboard$/;"	k	section:module/keyboard
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/xwindow$/;"	k	section:module/title
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/xworkspaces$/;"	k	section:module/workspaces
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/menu$/;"	k	section:module/menu
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/menu$/;"	k	section:module/powermenu
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/script$/;"	k	section:module/updates
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/text$/;"	k	section:module/color-switch
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/text$/;"	k	section:module/launcher
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/text$/;"	k	section:module/links
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/text$/;"	k	section:module/sep
-type	dot_config/polybar/colorblocks/user_modules.ini	/^type = custom\/text$/;"	k	section:module/sysmenu
 type	dot_config/polybar/cuts/bars.ini	/^type = internal\/alsa$/;"	k	section:module/volume
 type	dot_config/polybar/cuts/bars.ini	/^type = internal\/backlight$/;"	k	section:module/brightness
 type	dot_config/polybar/cuts/bars.ini	/^type = internal\/battery$/;"	k	section:module/battery_bar
