@@ -14,8 +14,8 @@ autoPush = true
 
 [diff]
 {{ if lookPath "delta" -}}
-  command = "delta"
-  args = ["--syntax-theme", {{ $colorscheme | quote }}, "--features", "mellow-barbet", "{{ "{{" }} .Destination  {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
+command = "delta"
+args = ["--syntax-theme", {{ $colorscheme | quote }}, "--features", "mellow-barbet", "{{ "{{" }} .Destination  {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
 {{ end -}}
 exclude = ["scripts"]
 
@@ -25,14 +25,14 @@ args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache
 
 [data]
 {{ if lookPath "get-gpg-key" -}}
-  gpgKey = {{ output "get-gpg-key" | trim | quote }}
+gpgKey = {{ output "get-gpg-key" | trim | quote }}
 {{ end -}}
 passphrase = {{ $passphrase | quote }}
 osid = {{ $osid | quote }}
 {{ if eq .chezmoi.hostname "marleycentre" -}}
-  isServer = true
+isServer = true
 {{ else }}
-  isServer = false
+isServer = false
 {{ end }}
 
 [data.drapeau]
