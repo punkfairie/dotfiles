@@ -1894,6 +1894,7 @@ background	dot_config/polybar/colorblocks/modules.ini	/^label-occupied-backgroun
 background	dot_config/polybar/colorblocks/modules.ini	/^label-offline-background = ${color.background}$/;"	k	section:module/mpd
 background	dot_config/polybar/colorblocks/modules.ini	/^label-song-background = ${color.background}$/;"	k	section:module/mpd
 background	dot_config/polybar/colorblocks/modules.ini	/^label-urgent-background = ${color.background}$/;"	k	section:module/workspaces
+background	dot_config/polybar/colorblocks/modules.ini	/^tray-background = ${color.background}$/;"	k	section:module/tray
 background	dot_config/polybar/colorblocks/preview.ini	/^background = ${color.alpha}$/;"	k	section:bar/main
 background	dot_config/polybar/colorblocks/preview.ini	/^compositing-background = source$/;"	k	section:settings
 background	dot_config/polybar/colorblocks/preview.ini	/^tray-background = ${color.background}$/;"	k	section:bar/bottom
@@ -7680,6 +7681,7 @@ module/title	dot_config/polybar/panels/panel/xubuntu.ini	/^[module\/title]$/;"	s
 module/title	dot_config/polybar/pwidgets/workspace.ini	/^[module\/title]$/;"	s
 module/title	dot_config/polybar/shades/modules.ini	/^[module\/title]$/;"	s
 module/title	dot_config/polybar/shapes/modules.ini	/^[module\/title]$/;"	s
+module/tray	dot_config/polybar/colorblocks/modules.ini	/^[module\/tray]$/;"	s
 module/twitter	dot_config/polybar/hack/user_modules.ini	/^[module\/twitter]$/;"	s
 module/twitter	dot_config/polybar/shades/user_modules.ini	/^[module\/twitter]$/;"	s
 module/twitter	dot_config/polybar/shapes/user_modules.ini	/^[module\/twitter]$/;"	s
@@ -10280,6 +10282,7 @@ size	dot_config/polybar/blocks/preview.ini	/^border-bottom-size = 0$/;"	k	sectio
 size	dot_config/polybar/blocks/preview.ini	/^line-size = 5$/;"	k	section:bar/main
 size	dot_config/polybar/colorblocks/config.ini	/^border-size = 0$/;"	k	section:bar/main
 size	dot_config/polybar/colorblocks/config.ini	/^underline-size = 2$/;"	k	section:bar/main
+size	dot_config/polybar/colorblocks/modules.ini	/^tray-size = 16$/;"	k	section:module/tray
 size	dot_config/polybar/colorblocks/preview.ini	/^border-size = 0$/;"	k	section:bar/main
 size	dot_config/polybar/colorblocks/preview.ini	/^underline-size = 2$/;"	k	section:bar/main
 size	dot_config/polybar/cuts/config.ini	/^border-size = 0$/;"	k	section:bar/main
@@ -10867,6 +10870,7 @@ type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/network$/;"	k
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/network$/;"	k	section:module/wireless-network
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/pulseaudio$/;"	k	section:module/pulseaudio
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/temperature$/;"	k	section:module/temperature
+type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/tray$/;"	k	section:module/tray
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/xkeyboard$/;"	k	section:module/keyboard
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/xwindow$/;"	k	section:module/title
 type	dot_config/polybar/colorblocks/modules.ini	/^type = internal\/xworkspaces$/;"	k	section:module/workspaces
