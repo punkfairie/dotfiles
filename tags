@@ -4392,7 +4392,6 @@ font	dot_config/polybar/shapes/glyphs.ini	/^content-font = 2$/;"	k	section:modul
 font_antialiasing	dot_config/copyq/copyq.conf	/^font_antialiasing=true$/;"	k	section:Theme
 for	dot_config/polybar/blocks/config.ini	/^throttle-output-for = 10$/;"	k	section:settings
 for	dot_config/polybar/blocks/preview.ini	/^throttle-output-for = 10$/;"	k	section:settings
-for	dot_config/polybar/colorblocks/config.ini	/^throttle-output-for = 10$/;"	k	section:settings
 for	dot_config/polybar/colorblocks/preview.ini	/^throttle-output-for = 10$/;"	k	section:settings
 for	dot_config/polybar/cuts/config.ini	/^throttle-output-for = 10$/;"	k	section:settings
 for	dot_config/polybar/cuts/preview.ini	/^throttle-output-for = 10$/;"	k	section:settings
@@ -8254,7 +8253,6 @@ outSine	dot_config/awesome/lib/animation/tween.lua	/^local function outSine(t, b
 output	dot_config/mopidy/mopidy.conf	/^output = tee name=t ! queue ! autoaudiosink t. ! queue ! audio\/x-raw,rate=44100,channels=2,form/;"	k	section:audio
 output	dot_config/polybar/blocks/config.ini	/^throttle-output = 5$/;"	k	section:settings
 output	dot_config/polybar/blocks/preview.ini	/^throttle-output = 5$/;"	k	section:settings
-output	dot_config/polybar/colorblocks/config.ini	/^throttle-output = 5$/;"	k	section:settings
 output	dot_config/polybar/colorblocks/preview.ini	/^throttle-output = 5$/;"	k	section:settings
 output	dot_config/polybar/cuts/config.ini	/^throttle-output = 5$/;"	k	section:settings
 output	dot_config/polybar/cuts/preview.ini	/^throttle-output = 5$/;"	k	section:settings
