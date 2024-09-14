@@ -10420,7 +10420,7 @@ soundcard	dot_config/polybar/shapes/bars.ini	/^speaker-soundcard = default$/;"	k
 soundcard	dot_config/polybar/shapes/modules.ini	/^headphone-soundcard = default$/;"	k	section:module/alsa
 soundcard	dot_config/polybar/shapes/modules.ini	/^master-soundcard = default$/;"	k	section:module/alsa
 soundcard	dot_config/polybar/shapes/modules.ini	/^speaker-soundcard = default$/;"	k	section:module/alsa
-spacing	dot_config/polybar/colorblocks/modules.ini	/^tray-spacing = 1$/;"	k	section:module/tray
+spacing	dot_config/polybar/colorblocks/modules.ini	/^tray-spacing = 5px$/;"	k	section:module/tray
 speed_shorthand	dot_config/neofetch/config.conf	/^speed_shorthand="off"$/;"	k
 speed_type	dot_config/neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
 start	dot_config/awesome/lib/animation/init.lua	/^function animation:start(args)$/;"	f	unknown:animation
