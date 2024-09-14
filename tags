@@ -1855,6 +1855,7 @@ background	dot_config/polybar/colorblocks/config.ini	/^compositing-background = 
 background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.background}$/;"	k	section:module/workspaces
 background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.shade3}$/;"	k	section:module/backlight
 background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.shade3}$/;"	k	section:module/date
+background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.shade4}$/;"	k	section:module/tray
 background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.shade5}$/;"	k	section:module/keyboard
 background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.shade7}$/;"	k	section:module/memory
 background	dot_config/polybar/colorblocks/modules.ini	/^format-background = ${color.shade7}$/;"	k	section:module/temperature
@@ -1885,7 +1886,7 @@ background	dot_config/polybar/colorblocks/modules.ini	/^label-occupied-backgroun
 background	dot_config/polybar/colorblocks/modules.ini	/^label-offline-background = ${color.background}$/;"	k	section:module/mpd
 background	dot_config/polybar/colorblocks/modules.ini	/^label-song-background = ${color.background}$/;"	k	section:module/mpd
 background	dot_config/polybar/colorblocks/modules.ini	/^label-urgent-background = ${color.background}$/;"	k	section:module/workspaces
-background	dot_config/polybar/colorblocks/modules.ini	/^tray-background = ${color.background}$/;"	k	section:module/tray
+background	dot_config/polybar/colorblocks/modules.ini	/^tray-background = ${color.shade4}$/;"	k	section:module/tray
 background	dot_config/polybar/colorblocks/preview.ini	/^background = ${color.alpha}$/;"	k	section:bar/main
 background	dot_config/polybar/colorblocks/preview.ini	/^compositing-background = source$/;"	k	section:settings
 background	dot_config/polybar/colorblocks/preview.ini	/^tray-background = ${color.background}$/;"	k	section:bar/bottom
