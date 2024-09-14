@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 arandr
@@ -108,6 +109,7 @@ mediainfo
 meilisearch
 mesa
 minecraft-launcher
+morgen-bin
 mpc
 mpd
 mythes-en
@@ -122,6 +124,7 @@ ntfs-3g
 numlockx
 nvidia
 nvidia-settings
+obsidian
 ocs-url
 onlyoffice-bin
 openrazer-daemon
@@ -132,7 +135,8 @@ php-fpm
 php-mcrypt
 php-redis
 php-sqlite
-picom-git
+picom
+pidgin
 pipes.sh
 pipewire
 pipewire-alsa
