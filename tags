@@ -8515,6 +8515,7 @@ padding	dot_config/polybar/colorblocks/modules.ini	/^format-padding = 2$/;"	k	se
 padding	dot_config/polybar/colorblocks/modules.ini	/^format-padding = 2$/;"	k	section:module/keyboard
 padding	dot_config/polybar/colorblocks/modules.ini	/^format-padding = 2$/;"	k	section:module/memory
 padding	dot_config/polybar/colorblocks/modules.ini	/^format-padding = 2$/;"	k	section:module/temperature
+padding	dot_config/polybar/colorblocks/modules.ini	/^format-padding = 2$/;"	k	section:module/tray
 padding	dot_config/polybar/colorblocks/modules.ini	/^format-prefix-padding = 2$/;"	k	section:module/title
 padding	dot_config/polybar/colorblocks/modules.ini	/^format-unmounted-padding = 2$/;"	k	section:module/filesystem
 padding	dot_config/polybar/colorblocks/modules.ini	/^format-volume-padding = 2$/;"	k	section:module/alsa
@@ -10419,7 +10420,7 @@ soundcard	dot_config/polybar/shapes/bars.ini	/^speaker-soundcard = default$/;"	k
 soundcard	dot_config/polybar/shapes/modules.ini	/^headphone-soundcard = default$/;"	k	section:module/alsa
 soundcard	dot_config/polybar/shapes/modules.ini	/^master-soundcard = default$/;"	k	section:module/alsa
 soundcard	dot_config/polybar/shapes/modules.ini	/^speaker-soundcard = default$/;"	k	section:module/alsa
-spacing	dot_config/polybar/colorblocks/modules.ini	/^tray-spacing = 3px$/;"	k	section:module/tray
+spacing	dot_config/polybar/colorblocks/modules.ini	/^tray-spacing = 1$/;"	k	section:module/tray
 speed_shorthand	dot_config/neofetch/config.conf	/^speed_shorthand="off"$/;"	k
 speed_type	dot_config/neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
 start	dot_config/awesome/lib/animation/init.lua	/^function animation:start(args)$/;"	f	unknown:animation
