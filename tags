@@ -12,6 +12,13 @@
 !_TAG_FIELD_DESCRIPTION!XML	uri	/uri associated with name prefix/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_KIND_DESCRIPTION!Asciidoc	S,subsection	/level 2 sections/
+!_TAG_KIND_DESCRIPTION!Asciidoc	T,l4subsection	/level 4 sections/
+!_TAG_KIND_DESCRIPTION!Asciidoc	a,anchor	/anchors/
+!_TAG_KIND_DESCRIPTION!Asciidoc	c,chapter	/chapters/
+!_TAG_KIND_DESCRIPTION!Asciidoc	s,section	/sections/
+!_TAG_KIND_DESCRIPTION!Asciidoc	t,subsubsection	/level 3 sections/
+!_TAG_KIND_DESCRIPTION!Asciidoc	u,l5subsection	/level 5 sections/
 !_TAG_KIND_DESCRIPTION!CSS	c,class	/classes/
 !_TAG_KIND_DESCRIPTION!CSS	i,id	/identities/
 !_TAG_KIND_DESCRIPTION!CSS	s,selector	/selectors/
@@ -54,6 +61,7 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
+!_TAG_PARSER_VERSION!Asciidoc	0.0	/current.age/
 !_TAG_PARSER_VERSION!CSS	0.0	/current.age/
 !_TAG_PARSER_VERSION!Iniconf	0.0	/current.age/
 !_TAG_PARSER_VERSION!JSON	0.0	/current.age/
