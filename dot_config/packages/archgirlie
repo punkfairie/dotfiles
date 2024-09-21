@@ -53,8 +53,6 @@ feh
 firefox
 firewalld
 fish
-fm-bin
-fm-bin-debug
 fontforge
 forgit
 fortune-mod-archlinux
@@ -120,6 +118,7 @@ networkmanager
 networkmanager-dmenu-git
 nginx
 nm-connection-editor
+nnn
 ntfs-3g
 numlockx
 nvidia
