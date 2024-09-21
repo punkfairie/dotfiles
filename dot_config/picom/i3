@@ -205,7 +205,8 @@ blur-kern = "3x3box";
 blur-background-exclude = [
   #"window_type = 'dock'",
   "window_type = 'desktop'",
-  "name = 'firefox'"
+  "name = 'firefox'",
+  "class_g = 'slop'"
 ];
 
 #################################
