@@ -53,6 +53,8 @@ feh
 firefox
 firewalld
 fish
+fm-bin
+fm-bin-debug
 fontforge
 forgit
 fortune-mod-archlinux
@@ -67,7 +69,6 @@ github-cli
 glow
 goland
 goland-jre
-google-chrome
 gparted
 grub
 gum
@@ -90,7 +91,6 @@ lib32-gamemode
 lib32-vkd3d
 libheif
 libmythes
-libreoffice-fresh
 libtransmission
 libva-nvidia-driver-git
 linux
@@ -109,7 +109,6 @@ mariadb
 mediainfo
 meilisearch
 mesa
-minecraft-launcher
 morgen-bin
 mpc
 mpd
@@ -129,6 +128,7 @@ obsidian
 ocs-url
 onlyoffice-bin
 openrazer-daemon
+pacman-contrib
 pamixer
 papirus-folders-catppuccin-git
 papirus-icon-theme
@@ -198,6 +198,7 @@ ttf-fairiesevka
 ttf-fairiesevka-propo
 ttf-fairiesevka-term
 ttf-firacode-nerd
+ttf-itim
 ttf-liberation
 ttf-nerd-fonts-symbols
 ttfautohint
