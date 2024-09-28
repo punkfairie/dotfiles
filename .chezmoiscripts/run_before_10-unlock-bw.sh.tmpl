@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+BW_PASSWORD={{ joinPath .chezmoi.sourceDir ".bw-password.asc" | include | decrypt }}
+BW_SESSION="$(bw unlock "$BW_PASSWORD" --raw)"
+export BW_SESSION
