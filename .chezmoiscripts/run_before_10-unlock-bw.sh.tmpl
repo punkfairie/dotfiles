@@ -3,5 +3,5 @@
 BW_PASSWORD={{ joinPath .chezmoi.sourceDir ".bw-password.asc" | include | decrypt }}
 export BW_PASSWORD
 
-BW_SESSION="$(bw unlock --password-env BW_PASSWORD --raw)"
+BW_SESSION="$(bw unlock --passwordenv BW_PASSWORD --raw)"
 export BW_SESSION
