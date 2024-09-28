@@ -20,6 +20,7 @@ bluez-utils
 browsh-bin
 btop
 calc
+calibre
 catppuccin-cursors-macchiato
 catppuccin-frappe-grub-theme-git
 catppuccin-gtk-theme-macchiato
@@ -40,7 +41,10 @@ copyq
 cowsay
 cpio
 ctags
+cuda
 dnsmasq
+docker
+docker-compose
 duf
 dunst
 edmarketconnector
@@ -72,6 +76,7 @@ grub
 grub-customizer
 gum
 gvfs-smb
+httpie
 hunspell-en_us
 hyfetch
 hyphen-en
@@ -80,6 +85,7 @@ imagemagick
 inetutils
 inotify-tools
 iptables-nft
+jan-bin
 jc
 jello-bin
 jgmenu
@@ -108,6 +114,7 @@ mariadb
 mediainfo
 meilisearch
 mesa
+mods
 morgen-bin
 mpc
 mpd
@@ -164,11 +171,14 @@ qt5-quickcontrols2
 qt5-svg
 qt5ct
 qt6-wayland
+raindrop
 razercommander
+rclone
 re2c
 redis
 reflector
 repoctl
+restic
 ripgrep
 rofi
 rofi-calc
@@ -217,6 +227,8 @@ vkd3d
 volta
 vulkan-tools
 wd719x-firmware
+webstorm
+webstorm-jre
 wezterm
 wget
 wine
@@ -244,3 +256,4 @@ xsel
 yay
 zathura
 zathura-pdf-mupdf
+zen-browser-avx2-bin
