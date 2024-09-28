@@ -9,9 +9,6 @@
 progress = true
 encryption = "gpg"
 
-[git]
-autoPush = true
-
 [diff]
 {{ if lookPath "delta" -}}
 command = "delta"
@@ -23,6 +20,12 @@ exclude = ["scripts"]
 [gpg]
 symmetric = true
 args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache"]
+
+[git]
+autoPush = true
+
+[hooks.read-source-state.pre]
+command = ".local/share/chezmoi/.install-bw.sh"
 
 [data]
 {{ if lookPath "get-gpg-key" -}}

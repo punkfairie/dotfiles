@@ -1,1 +1,3 @@
-{{- bitwardenAttachment "id_ed25519" "a551a692-b06a-49c0-9aa6-b16001875eed" -}}
+{{- if not (stat (joinPath .chezmoi.homeDir ".ssh/id_ed25519")) -}}
+  {{- bitwardenAttachment "id_ed25519" "a551a692-b06a-49c0-9aa6-b16001875eed" -}}
+{{- end -}}
