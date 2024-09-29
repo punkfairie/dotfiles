@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+type bw >/dev/null 2>&1 || exit
+
+pass={{ joinPath .chezmoi.sourceDir ".bw-password.asc" | include | decrypt }}
+
+if ! bw login --check; then
+	BW_SESSION=$(bw login "bitwarden@punkfairie.net" "$pass" --raw)
+else
+	BW_SESSION=$(bw unlock "$pass" --raw)
+fi
+
+export BW_SESSION
