@@ -26,9 +26,5 @@ set -gx EDITOR nvim
 set -gx VISUAL "$EDITOR"
 set -gx SUDO_EDITOR "$EDITOR"
 
-{{ if eq .osid "linux-debian" }}
-fish_add_path "/opt/nvim/linux64/bin"
-{{ end }}
-
 # Use vi key bindings.
 set -g fish_key_bindings fish_vi_key_bindings

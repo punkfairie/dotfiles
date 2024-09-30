@@ -1,7 +1,6 @@
 #!/usr/bin/env fish
 
 abbr -a g --position command git
-abbr -a d --position command dotfiles
 
 ################################################################################
 #                                  Functions                                   #
