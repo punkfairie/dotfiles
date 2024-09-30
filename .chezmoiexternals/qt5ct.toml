@@ -1,4 +1,4 @@
-{{- if (and (ne .chezmoi.hostname "marleycentre") (eq .chezmoi.os "linux")) -}}
+{{- if (and (not .isServer) (eq .chezmoi.os "linux")) -}}
 [".config/qt5ct/colors/Catppuccin-Frappe.conf"]
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/qt5ct/main/themes/Catppuccin-Frappe.conf"

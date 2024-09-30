@@ -1,4 +1,4 @@
-{{- if (and (ne .chezmoi.hostname "marleycentre") (eq .chezmoi.os "linux")) -}}
+{{- if (and (not .isServer) (eq .chezmoi.os "linux")) -}}
 [".config/zathura/catppuccin-frappe"]
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/zathura/main/src/catppuccin-frappe"

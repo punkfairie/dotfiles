@@ -33,7 +33,7 @@ gpgKey = {{ output "get-gpg-key" | trim | quote }}
 {{ end -}}
 passphrase = {{ $passphrase | quote }}
 osid = {{ $osid | quote }}
-{{ if eq .chezmoi.hostname "marleycentre" -}}
+{{ if eq $osid "linux-debian" -}}
 isServer = true
 {{ else }}
 isServer = false

@@ -1,3 +1,4 @@
+{{- if (not .isServer) -}}
 [".config/lazygit/catppuccin/frappe.yml"]
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/lazygit/main/themes-mergable/frappe/pink.yml"
@@ -17,3 +18,4 @@ refreshPeriod = "672h"
 type = "file"
 url = "https://raw.githubusercontent.com/catppuccin/lazygit/main/themes-mergable/mocha/pink.yml"
 refreshPeriod = "672h"
+{{- end -}}
