@@ -2,8 +2,8 @@
 
 {{ if eq .drapeau.colors.name "catppuccin" -}}
 set -gx GTK_THEME {{ .drapeau.colorscheme | title }}-Standard-Pink-Dark
-{{ end -}}
-
-{{ if eq .drapeau.colors.name "rose-pine" -}}
+{{ else if eq .drapeau.colors.name "rose-pine" -}}
 set -gx GTK_THEME {{ .drapeau.colorscheme }}-gtk
+{{ else -}}
+set -gx GTK_THEME Catppuccin-Macchiato-Standard-Pink-Dark
 {{ end -}}

@@ -1,3 +1,5 @@
 #!/usr/bin/env fish
 
-fish_add_path "$(brew --prefix)/opt/python@3.12/libexec/bin"
+if command -v brew &>/dev/null
+    fish_add_path "$(brew --prefix)/opt/python@3.12/libexec/bin"
+end

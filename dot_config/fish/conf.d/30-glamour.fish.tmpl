@@ -1,5 +1,8 @@
 #!/usr/bin/env fish
 
-# hardcoded theme bc rose-pine doesn't have a glow theme
+{{ if eq .drapeau.colors.name "rose-pine" -}}
 # TODO: make a rose-pine glow theme
 set -gx GLAMOUR_STYLE "~/.config/glow/themes/catppuccin-macchiato.json"
+{{ else -}}
+set -gx GLAMOUR_STYLE "~/.config/glow/themes/{{ .drapeau.colorscheme }}.json"
+{{ end -}}

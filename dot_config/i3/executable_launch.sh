@@ -4,4 +4,6 @@
 picom --config "$HOME/.config/picom/i3" &
 
 "$HOME/.config/polybar/colorblocks/scripts/pywal.sh" "$HOME/data/photos/wallpaper/girl.jpg"
+
+sleep 10
 "$HOME/.config/polybar/launch.sh" --colorblocks &
