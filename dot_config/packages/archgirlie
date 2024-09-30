@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 amfora
@@ -115,6 +116,7 @@ meilisearch
 mesa
 mods
 morgen-bin
+most
 mpc
 mpd
 mythes-en

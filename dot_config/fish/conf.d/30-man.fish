@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
 
-if command -v nvim &>/dev/null
-    set -gx MANPAGER "nvim +Man!"
+if command -v most &>/dev/null
+    set -gx MANPAGER most
 end
