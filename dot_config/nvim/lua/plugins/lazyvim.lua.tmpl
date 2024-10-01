@@ -2,7 +2,11 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      {{ if eq .drapeau.colorscheme "rose-pine" -}}
+      colorscheme = "rose-pine-main",
+      {{ else -}}
       colorscheme = {{ .drapeau.colorscheme | quote }},
+      {{ end -}}
     },
   },
 }
