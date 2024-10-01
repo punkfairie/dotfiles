@@ -9,12 +9,13 @@ return {
         -- data/conf
         "yamllint",
 
-        {{ if not .isServer -}}
         -- php
         "blade-formatter",
         "pint",
         "rustywind",
-        {{ end -}}
+
+        -- web
+        "emmet-language-server",
 
         -- shell
         "shfmt",

@@ -7,11 +7,6 @@ return {
     -- @class ConformOpts
     opts = {
       formatters_by_ft = {
-        {{ if not .isServer -}}
-        -- lua
-        lua = { "stylua" },
-        {{ end -}}
-
         -- data/conf
         json = { "prettier" },
         toml = { "taplo" },
@@ -20,22 +15,19 @@ return {
         -- web
         html = { "prettier" },
         liquid = { "prettier" },
-        css = { {{ if not .isServer }}"stylelint", {{ end }}"prettier" },
-        scss = { {{ if not .isServer }}"stylelint", {{ end }}"prettier" },
-        javascript = { {{ if not .isServer }}"eslint", {{ end }}"prettier" },
-        typescript = { {{ if not .isServer }}"eslint", {{ end }}"prettier" },
-        vue = { {{ if not .isServer }}"eslint", {{ end }}"prettier" },
+        css = { "stylelint", "prettier" },
+        scss = { "stylelint", "prettier" },
+        javascript = { "eslint", "prettier" },
+        typescript = { "eslint", "prettier" },
+        vue = { "eslint", "prettier" },
         markdown = { "prettier" },
 
-        {{ if not .isServer -}}
         -- php
         php = { "pint" },
         blade = { "blade-formatter", "rustywind" },
-        {{ end -}}
 
         -- shell
         sh = { "shellcheck", "shfmt" },
-        fish = { "fish_indent" },
 
         -- misc
         ruby = { "prettier" },
@@ -44,7 +36,6 @@ return {
         shfmt = {
           prepend_args = { "--indent=2", "--case-indent", "--binary-next-line", "--func-next-line" },
         },
-        {{ if not .isServer -}}
         pint = {
           meta = {
             url = "https://github.com/laravel/pint",
@@ -57,7 +48,6 @@ return {
           args = { "$FILENAME" },
           stdin = false,
         },
-        {{ end -}}
       },
     },
   },

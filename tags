@@ -1612,7 +1612,6 @@ adapter	dot_config/polybar/shapes/bars.ini	/^adapter = ACAD$/;"	k	section:module
 adapter	dot_config/polybar/shapes/modules.ini	/^adapter = ACAD$/;"	k	section:module/battery
 add_hover_cursor	dot_config/awesome/helpers/ui.lua	/^function ui.add_hover_cursor(w, hover_cursor)$/;"	f	unknown:ui
 alpha	dot_config/polybar/colorblocks/colors.ini	/^alpha = #00000000$/;"	k	section:color
-alsamixer	dot_config/mopidy/mopidy.conf	/^[alsamixer]$/;"	s
 alt	dot_config/polybar/blocks/colors.ini	/^background-alt = #C4C7C5$/;"	k	section:color
 alt	dot_config/polybar/blocks/colors.ini	/^foreground-alt = #C4C7C5$/;"	k	section:color
 alt	dot_config/polybar/blocks/modules.ini	/^time-alt = "%a, %d %b %Y"$/;"	k	section:module/date
@@ -1725,7 +1724,6 @@ at	dot_config/polybar/shades/bars.ini	/^full-at = 99$/;"	k	section:module/batter
 at	dot_config/polybar/shades/modules.ini	/^full-at = 99$/;"	k	section:module/battery
 at	dot_config/polybar/shapes/bars.ini	/^full-at = 99$/;"	k	section:module/battery_bar
 at	dot_config/polybar/shapes/modules.ini	/^full-at = 99$/;"	k	section:module/battery
-audio	dot_config/mopidy/mopidy.conf	/^[audio]$/;"	s
 aurrpcurl	dot_config/yay/config.json	/^	"aurrpcurl": "https:\/\/aur.archlinux.org\/rpc?",$/;"	s
 aururl	dot_config/yay/config.json	/^	"aururl": "https:\/\/aur.archlinux.org",$/;"	s
 autocompletion	dot_config/copyq/copyq.conf	/^autocompletion=true$/;"	k	section:Options
@@ -3451,7 +3449,6 @@ copy_clipboard	dot_config/copyq/copyq.conf	/^copy_clipboard=false$/;"	k	section:
 copy_selected_items	dot_config/copyq/copyq.conf	/^copy_selected_items=ctrl+c$/;"	k	section:Shortcuts
 copy_selection	dot_config/copyq/copyq.conf	/^copy_selection=false$/;"	k	section:Options
 copy_shot	dot_config/rofi/applets/bin/executable_screenshot.sh	/^copy_shot () {$/;"	f
-core	dot_config/mopidy/mopidy.conf	/^[core]$/;"	s
 core	dot_config/pacman/pacman.conf	/^[core]$/;"	s
 countdown	dot_config/rofi/applets/bin/executable_screenshot.sh	/^countdown () {$/;"	f
 cpu_brand	dot_config/neofetch/config.conf	/^cpu_brand="on"$/;"	k
@@ -3919,9 +3916,6 @@ enabled	dot_config/copyq/copyq.conf	/^itempinned\\enabled=true$/;"	k	section:Plu
 enabled	dot_config/copyq/copyq.conf	/^itemsync\\enabled=true$/;"	k	section:Plugins
 enabled	dot_config/copyq/copyq.conf	/^itemtags\\enabled=true$/;"	k	section:Plugins
 enabled	dot_config/copyq/copyq.conf	/^itemtext\\enabled=true$/;"	k	section:Plugins
-enabled	dot_config/mopidy/mopidy.conf	/^enabled = false$/;"	k	section:file
-enabled	dot_config/mopidy/mopidy.conf	/^enabled = false$/;"	k	section:podcast
-enabled	dot_config/mopidy/mopidy.conf	/^enabled = false$/;"	k	section:stream
 enabled	dot_config/nvim/dot_neoconf.json	/^        "enabled": true$/;"	b	object:neoconf.plugins.lua_ls
 enabled	dot_config/nvim/dot_neoconf.json	/^      "enabled": true,$/;"	b	object:neodev.library
 encode	dot_config/awesome/lib/json.lua	/^encode = function(val, stack)$/;"	f
@@ -4100,7 +4094,6 @@ fg	dot_config/polybar/panels/panel/xubuntu.ini	/^fg = #EAEAEA$/;"	k	section:colo
 fg	dot_config/polybar/panels/panel/zorin.ini	/^fg = #EAEAEA$/;"	k	section:color
 fg	dot_config/polybar/pwidgets/colors.ini	/^fg = #FFFFFFFF$/;"	k	section:color
 fga	dot_config/polybar/pwidgets/colors.ini	/^fga = #FF454545$/;"	k	section:color
-file	dot_config/mopidy/mopidy.conf	/^[file]$/;"	s
 file	dot_config/polybar/blocks/config.ini	/^include-file = ~\/.config\/polybar\/blocks\/bars.ini$/;"	k	section:global/wm
 file	dot_config/polybar/blocks/config.ini	/^include-file = ~\/.config\/polybar\/blocks\/colors.ini$/;"	k	section:global/wm
 file	dot_config/polybar/blocks/config.ini	/^include-file = ~\/.config\/polybar\/blocks\/modules.ini$/;"	k	section:global/wm
@@ -5794,10 +5787,8 @@ hide_tabs	dot_config/copyq/copyq.conf	/^hide_tabs=false$/;"	k	section:Options
 hide_toolbar	dot_config/copyq/copyq.conf	/^hide_toolbar=false$/;"	k	section:Options
 hide_toolbar_labels	dot_config/copyq/copyq.conf	/^hide_toolbar_labels=true$/;"	k	section:Options
 horizontal_pad	dot_config/awesome/helpers/ui.lua	/^function ui.horizontal_pad(width)$/;"	f	unknown:ui
-hostname	dot_config/mopidy/mopidy.conf	/^hostname = 127.0.0.1$/;"	k	section:mpd
 hourly_widget	dot_config/awesome/ui/info-panel/weather/init.lua	/^local hourly_widget = function()$/;"	f
 hover_item_css	dot_config/copyq/copyq.conf	/^hover_item_css=$/;"	k	section:Theme
-http	dot_config/mopidy/mopidy.conf	/^[http]$/;"	s
 icon	dot_config/copyq/copyq.conf	/^1\\icon=$/;"	k	section:Tabs
 icon_size	dot_config/copyq/copyq.conf	/^icon_size=16$/;"	k	section:Theme
 id	dot_config/awesome/lib/animation/subscribable.lua	/^			local id = tostring(func):gsub("function: ", "")$/;"	f
@@ -6025,7 +6016,6 @@ inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"
 inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/google
 inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/reddit
 inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/twitter
-init	dot_config/nvim/lua/plugins/chezmoi-vim.lua	/^  init = function()$/;"	f
 init	dot_config/nvim/lua/plugins/example.lua	/^      init = function()$/;"	f
 initial	dot_config/awesome/lib/animation/init.lua	/^function animation:initial()$/;"	f	unknown:animation
 inkscape	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
@@ -6908,7 +6898,6 @@ lime	dot_config/polybar/panels/panel/xubuntu.ini	/^lime = #c0ca33$/;"	k	section:
 lime	dot_config/polybar/panels/panel/zorin.ini	/^lime = #c0ca33$/;"	k	section:color
 lime	dot_config/polybar/pwidgets/colors.ini	/^lime = #c0ca33$/;"	k	section:color
 linear	dot_config/awesome/lib/animation/tween.lua	/^local function linear(t, b, c, d)$/;"	f
-local	dot_config/mopidy/mopidy.conf	/^[local]$/;"	s
 local_ip_interface	dot_config/neofetch/config.conf	/^local_ip_interface=('auto')$/;"	k
 locale	dot_config/polybar/blocks/config.ini	/^locale = $/;"	k	section:bar/main
 locale	dot_config/polybar/blocks/preview.ini	/^locale = $/;"	k	section:bar/bottom
@@ -6954,7 +6943,6 @@ locale	dot_config/polybar/shapes/config.ini	/^locale = $/;"	k	section:bar/main
 locale	dot_config/polybar/shapes/preview.ini	/^locale = $/;"	k	section:bar/bottom
 lock_command	dot_config/awesome/lib/exit-screen.lua	/^local lock_command = function()$/;"	f
 log	dot_config/copyq/copyq.conf	/^show-log=f12$/;"	k	section:Shortcuts
-logging	dot_config/mopidy/mopidy.conf	/^[logging]$/;"	s
 logo_active	dot_config/openrazer/persistence.conf	/^logo_active = True$/;"	k	section:PM2038H11502057
 logo_brightness	dot_config/openrazer/persistence.conf	/^logo_brightness = 75$/;"	k	section:PM2038H11502057
 logo_colors	dot_config/openrazer/persistence.conf	/^logo_colors = 0 255 0 0 255 255 0 0 255$/;"	k	section:PM2038H11502057
@@ -6962,7 +6950,6 @@ logo_effect	dot_config/openrazer/persistence.conf	/^logo_effect = spectrum$/;"	k
 logo_speed	dot_config/openrazer/persistence.conf	/^logo_speed = 1$/;"	k	section:PM2038H11502057
 logo_wave_dir	dot_config/openrazer/persistence.conf	/^logo_wave_dir = 1$/;"	k	section:PM2038H11502057
 lua_ls	dot_config/nvim/dot_neoconf.json	/^      "lua_ls": {$/;"	o	object:neoconf.plugins
-m3u	dot_config/mopidy/mopidy.conf	/^[m3u]$/;"	s
 main	.chezmoiscripts/run_after_00-drapeau.py	/^def main():$/;"	f
 makepkgbin	dot_config/yay/config.json	/^	"makepkgbin": "makepkg",$/;"	s
 makepkgconf	dot_config/yay/config.json	/^	"makepkgconf": "",$/;"	s
@@ -7071,8 +7058,6 @@ mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/minimize.svg	/^<s
 mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^    <path id="mdi-close-normal" style="fill: #f0fc52;fill-rule:evenodd;stroke-width:0.264583;pai/;"	i
 mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/ontop.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 mdi-close-normal	dot_config/awesome/themes/catppuccin/titlebar/unfocus.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
-media_dir	dot_config/mopidy/mopidy.conf	/^media_dir = \/mnt\/babeshare\/babez\/Music\/$/;"	k	section:local
-media_dirs	dot_config/mopidy/mopidy.conf	/^media_dirs =$/;"	k	section:file
 memory_display	dot_config/neofetch/config.conf	/^memory_display="off"$/;"	k
 memory_percent	dot_config/neofetch/config.conf	/^memory_percent="on"$/;"	k
 memory_unit	dot_config/neofetch/config.conf	/^memory_unit="gib"$/;"	k
@@ -7849,8 +7834,6 @@ move_to_clipboard	dot_config/copyq/copyq.conf	/^move_to_clipboard=$/;"	k	section
 move_to_top	dot_config/copyq/copyq.conf	/^move_to_top=ctrl+home$/;"	k	section:Shortcuts
 move_up	dot_config/copyq/copyq.conf	/^move_up=ctrl+up$/;"	k	section:Shortcuts
 mpc_args	dot_config/neofetch/config.conf	/^mpc_args=()$/;"	k
-mpd	dot_config/mopidy/mopidy.conf	/^[mpd]$/;"	s
-mpris	dot_config/mopidy/mopidy.conf	/^[mpris]$/;"	s
 msg	dot_config/polybar/blocks/scripts/executable_powermenu.sh	/^msg() {$/;"	f
 msg	dot_config/polybar/colorblocks/scripts/executable_powermenu.sh	/^msg() {$/;"	f
 msg	dot_config/polybar/cuts/scripts/executable_powermenu.sh	/^msg() {$/;"	f
@@ -8250,7 +8233,6 @@ outQuad	dot_config/awesome/lib/animation/tween.lua	/^local function outQuad(t, b
 outQuart	dot_config/awesome/lib/animation/tween.lua	/^local function outQuart(t, b, c, d)$/;"	f
 outQuint	dot_config/awesome/lib/animation/tween.lua	/^local function outQuint(t, b, c, d)$/;"	f
 outSine	dot_config/awesome/lib/animation/tween.lua	/^local function outSine(t, b, c, d)$/;"	f
-output	dot_config/mopidy/mopidy.conf	/^output = tee name=t ! queue ! autoaudiosink t. ! queue ! audio\/x-raw,rate=44100,channels=2,form/;"	k	section:audio
 output	dot_config/polybar/blocks/config.ini	/^throttle-output = 5$/;"	k	section:settings
 output	dot_config/polybar/blocks/preview.ini	/^throttle-output = 5$/;"	k	section:settings
 output	dot_config/polybar/colorblocks/preview.ini	/^throttle-output = 5$/;"	k	section:settings
@@ -9022,7 +9004,6 @@ play	dot_config/polybar/shapes/modules.ini	/^icon-play = 契$/;"	k	section:modul
 plugin_priority	dot_config/copyq/copyq.conf	/^plugin_priority=itemimage, itemencrypted, itemfakevim, itemnotes, itempinned, itemsync, itemtags/;"	k	section:General
 plugins	dot_config/nvim/dot_neoconf.json	/^      "plugins": true$/;"	b	object:neodev.library
 plugins	dot_config/nvim/dot_neoconf.json	/^    "plugins": {$/;"	o	object:neoconf
-podcast	dot_config/mopidy/mopidy.conf	/^[podcast]$/;"	s
 poll_rate	dot_config/openrazer/persistence.conf	/^poll_rate = 500$/;"	k	section:PM2038H11502057
 position	dot_config/polybar/blocks/config.ini	/^tray-position = none$/;"	k	section:bar/main
 position	dot_config/polybar/blocks/preview.ini	/^tray-position = none$/;"	k	section:bar/bottom
@@ -9350,7 +9331,6 @@ primary	dot_config/polybar/hack/colors.ini	/^primary = #00BCD4$/;"	k	section:col
 primary	dot_config/polybar/material/colors.ini	/^primary = #ffb300$/;"	k	section:color
 process_manager	dot_config/copyq/copyq.conf	/^process_manager=ctrl+shift+z$/;"	k	section:Shortcuts
 provides	dot_config/yay/config.json	/^	"provides": true,$/;"	b
-proxy	dot_config/mopidy/mopidy.conf	/^[proxy]$/;"	s
 prrect	dot_config/awesome/helpers/ui.lua	/^function ui.prrect(radius, tl, tr, br, bl)$/;"	f	unknown:ui
 public_ip_host	dot_config/neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
 public_ip_timeout	dot_config/neofetch/config.conf	/^public_ip_timeout=2$/;"	k
@@ -10340,7 +10320,6 @@ slider	dot_config/gtk-4.0/settings.ini.src.ini	/^gtk-primary-button-warps-slider
 sodipodi	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
 sodipodi	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
 sodipodi	dot_config/awesome/themes/catppuccin/titlebar/minimize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd
-softwaremixer	dot_config/mopidy/mopidy.conf	/^[softwaremixer]$/;"	s
 song	dot_config/polybar/blocks/bars.ini	/^label-song =  " %artist% - %title%"$/;"	k	section:module/mpd_bar
 song	dot_config/polybar/blocks/modules.ini	/^label-song =  "%artist% - %title%"$/;"	k	section:module/mpd
 song	dot_config/polybar/colorblocks/bars.ini	/^label-song =  " %artist% - %title%"$/;"	k	section:module/mpd_bar
@@ -10487,7 +10466,6 @@ stop	dot_config/polybar/shapes/bars.ini	/^icon-stop = $/;"	k	section:module/mpd_
 stop	dot_config/polybar/shapes/modules.ini	/^icon-stop = 栗$/;"	k	section:module/mpd
 stop_callback	dot_config/awesome/ui/popups/layout/init.lua	/^	stop_callback = function()$/;"	f
 store_items	dot_config/copyq/copyq.conf	/^1\\store_items=true$/;"	k	section:Tabs
-stream	dot_config/mopidy/mopidy.conf	/^[stream]$/;"	s
 strict	dot_config/polybar/blocks/config.ini	/^monitor-strict = false$/;"	k	section:bar/main
 strict	dot_config/polybar/blocks/preview.ini	/^monitor-strict = false$/;"	k	section:bar/main
 strict	dot_config/polybar/colorblocks/config.ini	/^monitor-strict = false$/;"	k	section:bar/main

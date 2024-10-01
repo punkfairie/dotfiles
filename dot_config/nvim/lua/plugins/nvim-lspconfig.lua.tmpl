@@ -10,11 +10,10 @@ return {
 
         -- web
         html = {
-          filetypes = { "html" {{ if not .isServer }}, "liquid"{{ end }} },
+          filetypes = { "html", "liquid" },
         },
         css_variables = { mason = false },
         cssls = {},
-        {{ if not .isServer -}}
         denols = {},
         stylelint_lsp = {
           settings = {
@@ -25,7 +24,6 @@ return {
             },
           },
         },
-        {{ end -}}
         emmet_language_server = {
           filetypes = {
             "css",
@@ -65,12 +63,10 @@ return {
           },
         },
 
-        {{ if not .isServer -}}
         -- php
         phpactor = {
           filetypes = { "php", "blade" },
         },
-        {{ end -}}
 
         -- shell
         pkgbuild_language_server = { mason = false },
