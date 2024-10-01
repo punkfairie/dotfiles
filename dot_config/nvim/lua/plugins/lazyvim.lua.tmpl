@@ -5,7 +5,7 @@ return {
       {{ if eq .drapeau.colorscheme "rose-pine" -}}
       colorscheme = "rose-pine-main",
       {{ else -}}
-      colorscheme = {{ .drapeau.colorscheme | quote }},
+      colorscheme = {{ .drapeau.colors.name | quote }},
       {{ end -}}
     },
   },
