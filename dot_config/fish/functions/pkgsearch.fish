@@ -4,7 +4,7 @@ function pkgsearch -d "Search the core/extra/AUR repos for a package" -a search
     set -f query ""
 
     if set -q search
-        set query "--query $search"
+        set query "--query=$search"
     end
 
     set -f res (yay -Slq | command fzf --multi --preview 'yay -Si {}' --height=90% --layout=reverse "$query")
