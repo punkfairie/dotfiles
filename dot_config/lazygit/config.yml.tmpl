@@ -6,5 +6,9 @@ git:
     colorArg: always
     pager: delta --paging=never --features=arctic-fox
 os:
+  {{ if lookPath "copyq" -}}
   copyToClipboardCmd: "copyq copy {{text}}"
+  {{ else if lookPath "pbcopy" -}}
+  copyToClipboardCmd: echo "{{text}}" | pbcopy
+  {{ end -}}
   editPreset: nvim-remote
