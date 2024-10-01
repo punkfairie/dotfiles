@@ -4,38 +4,40 @@
 # Usage: extract <file>
 
 function extract -a file
+    set --erase argv[1]
+
     if test -f "$file"
-        switch $file
+        switch "$file"
             case "*.tar.bz2"
-                tar -jxvf $file
+                tar -jxvf $argv "$file"
             case "*.tar.gz"
-                tar -zxvf $file
+                tar -zxvf $argv "$file"
             case "*.bz2"
-                bunzip2 $file
+                bunzip2 $argv "$file"
             case "*.dmg"
                 if test "$(uname)" = Darwin
-                    hdiutil mount $file
+                    hdiutil mount "$file"
                 end
             case "*.gz"
-                gunzip $file
+                gunzip $argv "$file"
             case "*.tar"
-                tar -xvf $file
+                tar -xvf $argv "$file"
             case "*.tbz2"
-                tar -jxvf $file
+                tar -jxvf $argv "$file"
             case "*.tgz"
-                tar -zxvf $file
-            case "*.zip"
-                unzip $file
-            case "*.ZIP"
-                unzip $file
+                tar -zxvf $argv "$file"
+            case "*.zip" "*.ZIP"
+                set -f dir (string replace --ignore-case '.zip' '')
+                mkdir "$dir"
+                unzip $argv "$file" -d "$dir"
             case "*pax"
-                cat $file | pax -r
+                cat "$file" | pax -r $argv
             case "*.pax.Z"
-                uncompress $file --stdout | pax -r
+                uncompress "$file" --stdout | pax -r $argv
             case "*.rar"
-                unrar x $file
+                unrar x "$file"
             case "*.Z"
-                uncompress $file
+                uncompress $argv "$file"
             case "*"
                 echo "'$file' cannot be extracted/mounted via extract()."
         end
