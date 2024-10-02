@@ -1469,7 +1469,7 @@ EOF	dot_config/polybar/docky/scripts/executable_colors-dark.sh	/^	cat > $RFILE <
 EOF	dot_config/polybar/docky/scripts/executable_colors-light.sh	/^	cat > $RFILE <<- EOF$/;"	h
 EOF	dot_config/polybar/docky/scripts/executable_pywal.sh	/^	cat > $RFILE <<- EOF$/;"	h
 EOF	dot_config/polybar/docky/scripts/executable_random.sh	/^	cat > $RFILE <<- EOF$/;"	h
-EOF	dot_config/polybar/executable_launch.sh	/^	cat <<- EOF$/;"	h
+EOF	dot_config/polybar/executable_launch.sh	/^  cat <<-EOF$/;"	h
 EOF	dot_config/polybar/forest/scripts/executable_styles.sh	/^	cat > $RFILE <<- EOF$/;"	h
 EOF	dot_config/polybar/grayblocks/scripts/executable_colors-dark.sh	/^	cat > $RFILE <<- EOF$/;"	h
 EOF	dot_config/polybar/grayblocks/scripts/executable_colors-light.sh	/^	cat > $RFILE <<- EOF$/;"	h
@@ -6506,7 +6506,7 @@ label	dot_config/polybar/shapes/modules.ini	/^label = %time%$/;"	k	section:modul
 label	dot_config/polybar/shapes/user_modules.ini	/^label = "%output% "$/;"	k	section:module/updates
 language	dot_config/copyq/copyq.conf	/^language=en$/;"	k	section:Options
 laravel/installer	dot_config/composer/composer.json	/^        "laravel\/installer": "^5.6"$/;"	s	object:require
-launch_bar	dot_config/polybar/executable_launch.sh	/^launch_bar() {$/;"	f
+launch_bar	dot_config/polybar/executable_launch.sh	/^launch_bar()$/;"	f
 launcher	dot_config/polybar/panels/scripts/executable_launcher.sh	/^launcher() {$/;"	f
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i
 layer1	dot_config/awesome/themes/catppuccin/titlebar/close_hover.svg	/^<svg version="1.1" xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999/;"	i

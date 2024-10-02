@@ -28,11 +28,11 @@ if ! test "{{ .chezmoi.hostname }}" = "$file"
 
     {{ if eq .chezmoi.hostname "archgirlie" -}}
     {{   range .packages.arch.archgirlie -}}
-    yay -S --needed - <{{ . }}
+    yay -S --needed {{ . }}
     {{   end -}}
     {{ else if eq .chezmoi.hostname "archbaby" -}}
     {{   range .packages.arch.archbaby -}}
-    yay -S --needed - <{{ . }}
+    yay -S --needed {{ . }}
     {{   end -}}
     {{ end -}}
 end
