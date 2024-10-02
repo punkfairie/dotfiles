@@ -3713,7 +3713,6 @@ doubleconfirm	dot_config/yay/config.json	/^	"doubleconfirm": true,$/;"	b
 down	dot_config/polybar/blocks/config.ini	/^scroll-down =$/;"	k	section:bar/main
 down	dot_config/polybar/blocks/preview.ini	/^scroll-down =$/;"	k	section:bar/bottom
 down	dot_config/polybar/colorblocks/config.ini	/^scroll-down = i3-msg workspace prev_on_output$/;"	k	section:bar/main
-down	dot_config/polybar/colorblocks/config.ini	/^scroll-down = i3wm-wsprev$/;"	k	section:bar/main
 down	dot_config/polybar/colorblocks/preview.ini	/^scroll-down =$/;"	k	section:bar/bottom
 down	dot_config/polybar/cuts/config.ini	/^scroll-down =$/;"	k	section:bar/bottom
 down	dot_config/polybar/cuts/preview.ini	/^scroll-down =$/;"	k	section:bar/bottom
@@ -11470,7 +11469,6 @@ up	dot_config/polybar/blocks/config.ini	/^scroll-up =$/;"	k	section:bar/main
 up	dot_config/polybar/blocks/modules.ini	/^unknown-as-up = true$/;"	k	section:module/network
 up	dot_config/polybar/blocks/preview.ini	/^scroll-up =$/;"	k	section:bar/bottom
 up	dot_config/polybar/colorblocks/config.ini	/^scroll-up = i3-msg workspace next_on_output$/;"	k	section:bar/main
-up	dot_config/polybar/colorblocks/config.ini	/^scroll-up = i3wm-wsnext$/;"	k	section:bar/main
 up	dot_config/polybar/colorblocks/modules.ini	/^unknown-as-up = true$/;"	k	section:module/network
 up	dot_config/polybar/colorblocks/preview.ini	/^scroll-up =$/;"	k	section:bar/bottom
 up	dot_config/polybar/cuts/config.ini	/^scroll-up =$/;"	k	section:bar/bottom
