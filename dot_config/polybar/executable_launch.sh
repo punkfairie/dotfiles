@@ -20,7 +20,13 @@ launch_bar()
   else
     if type "xrandr" &>/dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar -q main -c "$dir/$style/config.ini" &
+        bar="main"
+
+        if [[ "$m" == "DP-0" ]]; then
+          bar="tray"
+        fi
+
+        MONITOR=$m polybar -q "$bar" -c "$dir/$style/config.ini" &
       done
     else
       polybar -q main -c "$dir/$style/config.ini" &
