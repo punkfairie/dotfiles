@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-"$HOME/.config/fehbg/i3"
-picom --config "$HOME/.config/picom/i3" &
-
 "$HOME/.config/polybar/colorblocks/scripts/pywal.sh" "$HOME/data/photos/wallpaper/girl.jpg"
 
-sleep 10
+picom --config "$HOME/.config/picom/i3" &
+"$HOME/.config/fehbg/i3"
+
+sleep 2
 "$HOME/.config/polybar/launch.sh" --colorblocks &
