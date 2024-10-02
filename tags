@@ -2397,6 +2397,7 @@ bar/top	dot_config/polybar/material/preview.ini	/^[bar\/top]$/;"	s
 bar/top	dot_config/polybar/pwidgets/main.ini	/^[bar\/top]$/;"	s
 bar/top	dot_config/polybar/shades/preview.ini	/^[bar\/top]$/;"	s
 bar/top	dot_config/polybar/shapes/preview.ini	/^[bar\/top]$/;"	s
+bar/tray	dot_config/polybar/colorblocks/config.ini	/^[bar\/tray]$/;"	s
 bar_border	dot_config/neofetch/config.conf	/^bar_border="on"$/;"	k
 bar_char_elapsed	dot_config/neofetch/config.conf	/^bar_char_elapsed="-"$/;"	k
 bar_char_total	dot_config/neofetch/config.conf	/^bar_char_total="="$/;"	k
@@ -3712,6 +3713,8 @@ dont_focus_before_close	dot_config/awesome/ui/popups/scratchpad/init.lua	/^	dont
 doubleconfirm	dot_config/yay/config.json	/^	"doubleconfirm": true,$/;"	b
 down	dot_config/polybar/blocks/config.ini	/^scroll-down =$/;"	k	section:bar/main
 down	dot_config/polybar/blocks/preview.ini	/^scroll-down =$/;"	k	section:bar/bottom
+down	dot_config/polybar/colorblocks/config.ini	/^scroll-down = i3-msg workspace prev_on_output$/;"	k	section:bar/main
+down	dot_config/polybar/colorblocks/config.ini	/^scroll-down = i3wm-wsprev$/;"	k	section:bar/main
 down	dot_config/polybar/colorblocks/config.ini	/^scroll-down =$/;"	k	section:bar/main
 down	dot_config/polybar/colorblocks/preview.ini	/^scroll-down =$/;"	k	section:bar/bottom
 down	dot_config/polybar/cuts/config.ini	/^scroll-down =$/;"	k	section:bar/bottom
@@ -5929,6 +5932,7 @@ inherit	dot_config/polybar/blocks/user_modules.ini	/^inherit = module\/apps$/;"	
 inherit	dot_config/polybar/blocks/user_modules.ini	/^inherit = module\/apps$/;"	k	section:module/files
 inherit	dot_config/polybar/blocks/user_modules.ini	/^inherit = module\/apps$/;"	k	section:module/settings
 inherit	dot_config/polybar/blocks/user_modules.ini	/^inherit = module\/apps$/;"	k	section:module/term
+inherit	dot_config/polybar/colorblocks/config.ini	/^inherit = bar\/main$/;"	k	section:bar/tray
 inherit	dot_config/polybar/colorblocks/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/bottom
 inherit	dot_config/polybar/colorblocks/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/mid
 inherit	dot_config/polybar/colorblocks/preview.ini	/^inherit = bar\/main$/;"	k	section:bar/top
@@ -9576,7 +9580,8 @@ right	dot_config/polybar/blocks/user_modules.ini	/^expand-right = true$/;"	k	sec
 right	dot_config/polybar/colorblocks/config.ini	/^click-right =$/;"	k	section:bar/main
 right	dot_config/polybar/colorblocks/config.ini	/^double-click-right =$/;"	k	section:bar/main
 right	dot_config/polybar/colorblocks/config.ini	/^module-margin-right = 0$/;"	k	section:bar/main
-right	dot_config/polybar/colorblocks/config.ini	/^modules-right = color-switch tray sep updates sep cpu memory pulseaudio network date sep sysmenu$/;"	k	section:bar/main
+right	dot_config/polybar/colorblocks/config.ini	/^modules-right = color-switch sep updates sep cpu memory pulseaudio network date sep sysmenu$/;"	k	section:bar/main
+right	dot_config/polybar/colorblocks/config.ini	/^modules-right = color-switch tray sep updates sep cpu memory pulseaudio network date sep sysmenu$/;"	k	section:bar/tray
 right	dot_config/polybar/colorblocks/preview.ini	/^click-right =$/;"	k	section:bar/bottom
 right	dot_config/polybar/colorblocks/preview.ini	/^double-click-right =$/;"	k	section:bar/bottom
 right	dot_config/polybar/colorblocks/preview.ini	/^module-margin-right = 0$/;"	k	section:bar/main
@@ -11473,6 +11478,8 @@ unsubscribe	dot_config/awesome/lib/animation/subscribable.lua	/^	function ret:un
 up	dot_config/polybar/blocks/config.ini	/^scroll-up =$/;"	k	section:bar/main
 up	dot_config/polybar/blocks/modules.ini	/^unknown-as-up = true$/;"	k	section:module/network
 up	dot_config/polybar/blocks/preview.ini	/^scroll-up =$/;"	k	section:bar/bottom
+up	dot_config/polybar/colorblocks/config.ini	/^scroll-up = i3-msg workspace next_on_output$/;"	k	section:bar/main
+up	dot_config/polybar/colorblocks/config.ini	/^scroll-up = i3wm-wsnext$/;"	k	section:bar/main
 up	dot_config/polybar/colorblocks/config.ini	/^scroll-up =$/;"	k	section:bar/main
 up	dot_config/polybar/colorblocks/modules.ini	/^unknown-as-up = true$/;"	k	section:module/network
 up	dot_config/polybar/colorblocks/preview.ini	/^scroll-up =$/;"	k	section:bar/bottom
