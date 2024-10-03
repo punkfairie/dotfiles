@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-if command -v yay
+if command -v yay &>/dev/null
     abbr -a y --position command yay
     abbr -a yi --position command "yay -S"
     abbr -a yr --position command "yay -R"
