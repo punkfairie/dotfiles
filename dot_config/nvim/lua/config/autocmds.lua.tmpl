@@ -13,9 +13,20 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
   end,
 })
 
-{{ if not .isServer -}}
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*" },
+  callback = function()
+    local save_cursor = vim.fn.getpos(".")
+    pcall(function()
+      vim.cmd([[%s/\s\+$//e]])
+    end)
+    vim.fn.setpos(".", save_cursor)
+  end,
+})
+
 -- Define an autocmd group for the blade workaround
-local augroup = vim.api.nvim_create_augroup("lsp_blade_workaround", { clear = true })
+local augroup =
+  vim.api.nvim_create_augroup("lsp_blade_workaround", { clear = true })
 
 -- Autocommand to temporarily change 'blade' filetype to 'php' when opening for LSP server activation
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
@@ -33,7 +44,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.schedule(function()
       -- Check if the attached client is 'intelephense'
       for _, client in ipairs(vim.lsp.get_active_clients()) do
-        if client.name == "intelephense" and client.attached_buffers[args.buf] then
+        if
+          client.name == "intelephense" and client.attached_buffers[args.buf]
+        then
           vim.api.nvim_buf_set_option(args.buf, "filetype", "blade")
           -- update treesitter parser to blade
           vim.api.nvim_buf_set_option(args.buf, "syntax", "blade")
@@ -43,4 +56,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end)
   end,
 })
-{{ end -}}

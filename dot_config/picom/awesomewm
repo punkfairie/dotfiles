@@ -167,7 +167,7 @@ active-opacity = 0.92;
 
 # Specify a list of conditions of windows that should always be considered focused.
 # focus-exclude = []
-focus-exclude = [ 
+focus-exclude = [
   "class_g = 'awesome'",
 	"class_g = 'Cairo-clock'",
 	"class_g = 'Rofi'",
@@ -320,7 +320,7 @@ detect-client-opacity = true;
 # as they essentially does sw-opti's job already, 
 # unless you wish to specify a lower refresh rate than the actual value.
 #
-# sw-opti = 
+# sw-opti =
 
 # Use EWMH '_NET_ACTIVE_WINDOW' to determine currently focused window, 
 # rather than listening to 'FocusIn'/'FocusOut' event. Might have more accuracy, 
