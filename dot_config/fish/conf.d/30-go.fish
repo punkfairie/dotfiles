@@ -1,3 +1,5 @@
 #!/usr/bin/env fish
 
-fish_add_path "$HOME/go/bin"
+if command -v go &>/dev/null
+    fish_add_path "$HOME/go/bin"
+end

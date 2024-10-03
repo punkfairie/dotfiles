@@ -11,9 +11,3 @@
 # Custom commands
 [commands]
 "Fish Shell Completions" = "fish_update_completions"
-{{ if lookPath "yay" -}}
-"Update package list" = "yay -Qeq > {{ joinPath .chezmoi.sourceDir "dot_config/packages/" .chezmoi.hostname }} && set_color green && printf '%s'  && set_color normal && printf '%s' ' done\n'"
-{{ end -}}
-{{if lookPath "brew" -}}
-"Update Brewfile" = "brew bundle dump --describe --force --file={{ joinPath .chezmoi.sourceDir "dot_config/packages/Brewfile" }} && set_color green && printf '%s'  && set_color normal && printf '%s' ' done\n'"
-{{ end -}}

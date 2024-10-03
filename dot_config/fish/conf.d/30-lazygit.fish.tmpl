@@ -1,11 +1,13 @@
 #!/usr/bin/env fish
 
-function lzg --wraps=lazygit
-    {{ if eq .drapeau.colors.name "catppuccin" -}}
-    set -f configs "$XDG_CONFIG_HOME/lazygit/config.yml,$XDG_CONFIG_HOME/lazygit/{{ .drapeau.colors.name }}/themes-mergable/{{ .drapeau.colors.flavor }}/pink.yml"
-    {{ else -}}
-    set -f configs "$XDG_CONFIG_HOME/lazygit/config.yml"
-    {{ end -}}
+if command -v lazygit &>/dev/null
+    function lzg --wraps=lazygit
+        {{ if eq .drapeau.colors.name "catppuccin" -}}
+        set -f configs "$XDG_CONFIG_HOME/lazygit/config.yml,$XDG_CONFIG_HOME/lazygit/{{ .drapeau.colors.name }}/themes-mergable/{{ .drapeau.colors.flavor }}/pink.yml"
+        {{ else -}}
+        set -f configs "$XDG_CONFIG_HOME/lazygit/config.yml"
+        {{ end -}}
 
-    lazygit --use-config-file="$configs"
+        lazygit --use-config-file="$configs"
+    end
 end

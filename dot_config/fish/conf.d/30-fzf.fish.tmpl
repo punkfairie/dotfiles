@@ -1,8 +1,11 @@
 #!/usr/bin/env fish
 
-set -gx FZF_DEFAULT_CMD 'rg --files --hidden --glob "!.git"'
+if command -v fzf &>/dev/null
+    if command -v rg &>/dev/null
+        set -gx FZF_DEFAULT_CMD 'rg --files --hidden --glob "!.git"'
+    end
 
-set -gx FZF_DEFAULT_OPTS "\
+    set -gx FZF_DEFAULT_OPTS "\
 --margin=10%,5% \
 --border=sharp \
 --pointer=' ' \
@@ -14,6 +17,11 @@ set -gx FZF_DEFAULT_OPTS "\
 --color=fg:{{ .drapeau.colors.base05 }},header:{{ .drapeau.colors.base08 }},info:{{ .drapeau.colors.base0E }},pointer:{{ .drapeau.colors.base06 }} \
 --color=marker:{{ .drapeau.colors.base06 }},fg+:{{ .drapeau.colors.base05 }},prompt:{{ .drapeau.colors.base0E }},hl+:{{ .drapeau.colors.base08 }}"
 
-# fzf.fish
-set -g fzf_preview_dir_cmd eza --all --color=always --sort=name --group-directories-first
-set -g fzf_diff_highlighter delta --paging=never --features=arctic-fox
+    # fzf.fish
+    if command -v eza &>/dev/null
+        set -g fzf_preview_dir_cmd eza --all --color=always --sort=name --group-directories-first
+    end
+    if command -v delta &>/dev/null
+        set -g fzf_diff_highlighter delta --paging=never --features=arctic-fox
+    end
+end
