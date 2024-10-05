@@ -18,7 +18,7 @@
 # example.com
 # example.com:123
 
-include = "./themes/rose-pine-moon.toml"
+include = "./themes/{{ .drapeau.colorscheme }}.toml"
 
 [a-general]
 # Press Ctrl-H to access it
@@ -59,7 +59,7 @@ ansi = true
 highlight_code = true
 
 # Which highlighting style to use (see https://xyproto.github.io/splash/docs/)
-highlight_style = "monokai"
+highlight_style = {{ .drapeau.colorscheme | quote }}
 
 # Whether to replace list asterisks with unicode bullets
 bullets = true
