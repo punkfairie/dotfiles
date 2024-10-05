@@ -508,6 +508,9 @@ export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
 # TeXmacs
 export TEXMACS_HOME_PATH=$XDG_STATE_HOME/texmacs
 
+# tig
+# mkdir "$XDG_DATA_HOME"/tig
+
 # uncrustify
 export UNCRUSTIFY_CONFIG="$XDG_CONFIG_HOME"/uncrustify/uncrustify.cfg
 
@@ -534,6 +537,40 @@ export W3M_DIR="$XDG_STATE_HOME/w3m"
 export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
 # mkdir "$XDG_CONFIG_HOME/wakatime"
 
+# wget
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+alias wget='export WGETRC="$XDG_CONFIG_HOME/wgetrc"'
 
-# tig
-# mkdir "$XDG_DATA_HOME"/tig
+# wine
+# mkdir -p "$XDG_DATA_HOME"/wineprefixes
+export WINEPREFIX="$XDG_DATA_HOME"/wineprefixes/default
+
+# x3270
+export X3270PRO="$XDG_CONFIG_HOME"/x3270/config
+export C3270PRO="$XDG_CONFIG_HOME"/c3270/config
+
+# xbindkeys
+alias xbindkeys='xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config'
+
+# xinit
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
+export XSERVERRC="$XDG_CONFIG_HOME"/X11/xserverrc
+
+# yarn
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+
+# z
+export _Z_DATA="$XDG_DATA_HOME/z"
+
+# zsh
+export ZDOTDIR=$XDG_CONFIG_HOME/zsh
+# nvim "$XDG_CONFIG_HOME"/zsh/.zshrc
+#   HISTFILE="$XDG_STATE_HOME"/zsh/history
+#   # Completion files: Use XDG dirs
+#   [ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
+#   zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+#   compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+#
+# For using zsh as a login shell:
+# nvim "$HOME"/.zshenv
+#   export ZDOTDIR=$XDG_CONFIG_HOME/zsh
