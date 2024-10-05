@@ -11,4 +11,6 @@ if command -v chezmoi &>/dev/null
     abbr -a czct --position command "chezmoi chattr +t"
 
     abbr -a czcm --position command 'git aa && git c -m "$(chezmoi generate git-commit-message)" && git p'
+
+    abbr -a czd --position command "chezmoi data | bat --language=json"
 end
