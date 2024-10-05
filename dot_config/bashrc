@@ -26,6 +26,19 @@ export VISUAL="$EDITOR"
 # ██╔╝ ██╗██████╔╝╚██████╔╝
 # ╚═╝  ╚═╝╚═════╝  ╚═════╝
 
+# Almost this entire list:
+# https://wiki.archlinux.org/title/XDG_Base_Directory
+#
+# Excluded:
+# Anything that makes me nervous about breakage (e.g. ~/.terminfo)
+# Programs that create their files outside the ~ directory (e.g. /usr/local/n)
+#   as the goal is less standardization and more a clean home directory
+#
+# I don't use most of these programs. Anything I actually use will be copied to
+# relevant fish/conf.d files. The list exists here to both catch anything that
+# bypasses fish and for newly installed programs, so I have an easy way to copy
+# over the needed settings.
+
 export XDG_CONFIG_HOME="$HOME"/.config
 export XDG_CACHE_HOME="$HOME"/.cache
 export XDG_DATA_HOME="$HOME"/.local/share
@@ -53,11 +66,17 @@ export ASPELL_CONF="per-conf $XDG_CONFIG_HOME/aspell/aspell.conf; personal $XDG_
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 
+# azure-cli
+export AZURE_CONFIG_DIR=$XDG_DATA_HOME/azure
+
 # bash-completion
 export BASH_COMPLETION_USER_FILE="$XDG_CONFIG_HOME"/bash-completion/bash_completion
 
 # bashdb
 alias bashdb='bashdb -x ${XDG_CONFIG_HOME:-$HOME/.config}/bashdb/bashdbinit'
+
+# bazaar
+# mkdir "$XDG_CONFIG_HOME"/bazaar
 
 # bogofilter
 export BOGOFILTER_DIR="$XDG_DATA_HOME"/bogofilter
@@ -126,6 +145,14 @@ export MIX_XDG="true"
 # Elm
 export ELM_HOME="$XDG_CONFIG_HOME"/elm
 
+# factorio
+# nvim __install_dir/config-path.cfg
+#   use-system-read-write-data-directories=true
+# nvim __install_dir/config/config.ini
+#   [path]
+#   read-data=__PATH__executable__/../../data
+#   write-data=.local/share/factorio
+
 # fceux
 export FCEUX_HOME="$XDG_CONFIG_HOME"/fceux
 
@@ -158,6 +185,12 @@ export GRC_PREFS_PATH="$XDG_CONFIG_HOME"/gnuradio/grc.conf
 export GOPATH="$XDG_DATA_HOME"/go
 export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
 
+# gopass
+# nvim "$XDG_CONFIG_HOM"$XDG_CONFIG_HOME"/config.yml
+#   root:
+#   path: gpgcli-gitcli-fs+file:///home/<userid>/.config/password-storeroot:
+#   path: gpgcli-gitcli-fs+file:///home/<userid>/.config/password-store
+
 # GQ LDAP client
 export GQRC="$XDG_CONFIG_HOME"/gqrc
 export GQSTATE="$XDG_DATA_HOME"/gq/gq-state
@@ -181,8 +214,14 @@ export HOUDINI_USER_PREF_DIR="$XDG_CACHE_HOME"/houdini__HVER__
 # imapfilter
 export IMAPFILTER_HOME="$XDG_CONFIG_HOME/imapfilter"
 
-# ipfs
+# IPFS
 export IPFS_PATH="$XDG_DATA_HOME"/ipfs
+
+# irb
+export IRBRC="$XDG_CONFIG_HOME"/irb/irbrc
+# nvim "$XDG_CONFIG_HOME"/irb/irbrc
+#   IRB.conf[:SAVE_HISTORY] ||= 1000
+#   IRB.conf[:HISTORY_FILE] ||= File.join(ENV["XDG_DATA_HOME"], "irb", "history")
 
 # irssi
 alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi'
@@ -230,6 +269,11 @@ alias ltrace='ltrace -F "$XDG_CONFIG_HOME"/ltrace/ltrace.conf'
 # lynx
 export LYNX_CFG="$XDG_CONFIG_HOME"/lynx.cfg
 
+# maptool-bin
+# sudo nvim /opt/maptool/lib/app/MapTool.cfg
+#   [JavaOptions]
+#   -DMAPTOOL_DATADIR=.local/share/maptool-rptools
+
 # Mathematica
 export MATHEMATICA_USERBASE="$XDG_CONFIG_HOME"/mathematica
 
@@ -246,8 +290,250 @@ export MINIKUBE_HOME="$XDG_DATA_HOME"/minikube
 alias mitmproxy='mitmproxy --set confdir=$XDG_CONFIG_HOME/mitmproxy'
 alias mitmweb='mitmweb --set confdir=$XDG_CONFIG_HOME/mitmproxy'
 
+# MOC
+alias mocp='mocp -M "$XDG_CONFIG_HOME"/moc'
+
+# monero
+alias monerod='monerod --data-dir "$XDG_DATA_HOME"/bitmonero'
+
+# most
+export MOST_INITFILE="$XDG_CONFIG_HOME"/mostrc
+
+# MPlayer
+export MPLAYER_HOME="$XDG_CONFIG_HOME"/mplayer
+
+# mtpaint
+# sudo nvim /etc/mtpaint/mtpaintrc
+#   userINI = ~/.config/mtpaint
+
+# mypy
+export MYPY_CACHE_DIR="$XDG_CACHE_HOME"/mypy
+
+# MySQL
+export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
+
+# mysql-workbench
+alias mysql-workbench='mysql-workbench --configdir="$XDG_DATA_HOME/mysql/workbench"'
+
+# ncmpc
+alias ncmpc='ncmpc -f "$XDG_CONFIG_HOME"/ncmpc/config'
+
+# Netbeans
+alias netbeans='netbeans --userdir "${XDG_CONFIG_HOME}"/netbeans'
+
+# newsboat
+# mkdir -p "$XDG_DATA_HOME"/newsboat "$XDG_CONFIG_HOME"/newsboat
+
+# Node.js
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+
+# nodenv
+export NODENV_ROOT="$XDG_DATA_HOME"/nodenv
+
+# notmuch
+# mkdir -p $XDG_CONFIG_HOME/notmuch/default; mv $HOME/.notmuch-config $XDG_CONFIG_HOME/notmuch/default/config
+
+# npm
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+# nvim "$XDG_CONFIG_HOME/npm/npmrc"
+#   prefix=${XDG_DATA_HOME}/npm
+#   cache=${XDG_CACHE_HOME}/npm
+#   init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
+#   logs-dir=${XDG_STATE_HOME}/npm/logs
+
+# nuget
+export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
+
+# nvidia-settings
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
+
+# nvm
+export NVM_DIR="$XDG_DATA_HOME"/nvm
+
+# Octave
+export OCTAVE_HISTFILE="$XDG_CACHE_HOME/octave-hsts"
+export OCTAVE_SITE_INITFILE="$XDG_CONFIG_HOME/octave/octaverc"
+# nvim "$XDG_CONFIG_HOME"/octave/octaverc
+#   source /usr/share/octave/site/m/startup/octaverc;
+#   pkg prefix ~/.local/share/octave/packages ~/.local/share/octave/packages;
+#   pkg local_list /home/<your username>/.local/share/octave/octave_packages;
+#
+## local_list must be an absolute path
+
+# omnisharp-roslyn-bin
+export OMNISHARPHOME="$XDG_CONFIG_HOME/omnisharp"
+
+# opam
+export OPAMROOT="$XDG_DATA_HOME/opam"
+
+# parallel
+export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+
+# pass
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
+
 # pdfsam
 export _JAVA_OPTIONS="$_JAVA_OPTIONS" -Djavafx.cachedir="$XDG_CACHE_HOME"/openjfx
 
+# phive
+export PHIVE_HOME="$XDG_DATA_HOME/phive"
+
+# Pidgin
+alias pidgin='pidgin --config="$XDG_DATA_HOME"/purple'
+
+# platformio-core
+export PLATFORMIO_CORE_DIR="$XDG_DATA_HOME"/platformio
+
+# PostgreSQL
+export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
+export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
+export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
+export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
+# mkdir "$XDG_CONFIG_HOME/pg" && mkdir "$XDG_STATE_HOME"
+
+# PulseAudio
+# sudo nvim /etc/pulse/client.conf
+#   cookie-file = ~/.config/pulse/cookie
+
+# PuTTY
+# mkdir "$XDG_CONFIG_HOME"/putty
+
+# pyenv
+export PYENV_ROOT=$XDG_DATA_HOME/pyenv
+
+# python
+export PYTHON_HISTORY=$XDG_STATE_HOME/python/history
+export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
+export PYTHONUSERBASE=$XDG_DATA_HOME/python
+
+# python-easyocr
+export EASYOCR_MODULE_PATH="$XDG_CONFIG_HOME/EasyOCR"
+
+# python-grip
+export GRIPHOME="$XDG_CONFIG_HOME/grip"
+
 # python-pylint
 export PYLINTRC="$XDG_CONFIG_HOME"/pylint/pylintrc
+
+# python-setuptools
+export PYTHON_EGG_CACHE="$XDG_CACHE_HOME"/python-eggs
+
+# racket
+export PLTUSERHOME="$XDG_DATA_HOME"/racket
+
+# rbenv
+export RBENV_ROOT="$XDG_DATA_HOME"/rbenv
+
+# readline
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
+
+# recoll
+export RECOLL_CONFDIR="$XDG_CONFIG_HOME/recoll"
+
+# redis
+export REDISCLI_HISTFILE="$XDG_DATA_HOME"/redis/rediscli_history
+export REDISCLI_RCFILE="$XDG_CONFIG_HOME"/redis/redisclirc
+
+# ripgrep
+export RIPGREP_CONFIG_PATH=$XDG_CONFIG_HOME/ripgrep/config
+
+# rlwrap
+export RLWRAP_HOME="$XDG_DATA_HOME"/rlwrap
+
+# ruby-bundler
+export BUNDLE_USER_CACHE=$XDG_CACHE_HOME/bundle
+export BUNDLE_USER_CONFIG=$XDG_CONFIG_HOME/bundle/config
+export BUNDLE_USER_PLUGIN=$XDG_DATA_HOME/bundle
+
+# ruby-solargraph
+export SOLARGRAPH_CACHE=$XDG_CACHE_HOME/solargraph
+
+# ruby-travis
+export TRAVIS_CONFIG_PATH=$XDG_CONFIG_HOME/travis
+
+# ruff
+export RUFF_CACHE_DIR=$XDG_CACHE_HOME/ruff
+
+# Rust Rustup
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+
+# SageMath
+export DOT_SAGE="$XDG_CONFIG_HOME"/sage
+
+# sbt
+alias sbt='sbt -ivy "$XDG_DATA_HOME"/ivy2 -sbt-dir "$XDG_DATA_HOME"/sbt'
+
+# GNU Screen
+export SCREENRC="$XDG_CONFIG_HOME"/screen/screenrc
+export SCREENDIR="${XDG_RUNTIME_DIR}/screen"
+
+# scummvm
+# mkdir "$XDG_CONFIG_HOME"/scummvm/ "$XDG_DATA_HOME"/scummvm
+# mv $HOME/.scummvmrc "$XDG_CONFIG_HOME"/scummvm/scummvm.ini
+# mv $HOME/.scummvm "$XDG_DATA_HOME"/scummvm/saves
+
+# simplescreenrecorder
+# mkdir "$XDG_CONFIG_HOME"/simplescreenrecorder
+
+# singularity-ce
+export SINGULARITY_CONFIGDIR="$XDG_CONFIG_HOME/singularity"
+export SINGULARITY_CACHEDIR="$XDG_CACHE_HOME/singularity"
+
+# spacemacs
+export SPACEMACSDIR="$XDG_CONFIG_HOME"/spacemacs
+
+# spotdl
+# mkdir "$XDG_DATA_HOME"/spotdl
+
+# SQLite
+export SQLITE_HISTORY=$XDG_DATA_HOME/sqlite_history
+
+# starship
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
+export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
+
+# subversion
+alias svn='svn --config-dir "$XDG_CONFIG_HOME"/subversion'
+
+# task
+# Let it create the sample .taskrc, then:
+# mkdir "$XDG_CONFIG_HOME"/task
+# mv "$HOME"/.taskrc "$XDG_CONFIG_HOME"/task/taskrc
+
+# TeX Live
+export TEXMFHOME=$XDG_DATA_HOME/texmf
+export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
+export TEXMFCONFIG=$XDG_CONFIG_HOME/texlive/texmf-config
+
+# TeXmacs
+export TEXMACS_HOME_PATH=$XDG_STATE_HOME/texmacs
+
+# uncrustify
+export UNCRUSTIFY_CONFIG="$XDG_CONFIG_HOME"/uncrustify/uncrustify.cfg
+
+# Unison
+export UNISON="$XDG_DATA_HOME"/unison
+
+# units
+alias units='units --history "$XDG_CACHE_HOME"/units_history'
+
+# urxvtd
+export RXVT_SOCKET="$XDG_RUNTIME_DIR"/urxvtd
+
+# Vagrant
+export VAGRANT_HOME="$XDG_DATA_HOME"/vagrant
+export VAGRANT_ALIAS_FILE="$XDG_DATA_HOME"/vagrant/aliases
+
+# virtualenv
+export WORKON_HOME="$XDG_DATA_HOME/virtualenvs"
+
+# w3m
+export W3M_DIR="$XDG_STATE_HOME/w3m"
+
+# wakatime
+export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
+# mkdir "$XDG_CONFIG_HOME/wakatime"
+
+
+# tig
+# mkdir "$XDG_DATA_HOME"/tig
