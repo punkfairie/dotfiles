@@ -1,6 +1,6 @@
 #!/usr/bin/env fish
 
-set -Ux WGETRC "$XDG_CONFIG_HOME/wgetrc"
+set -gx WGETRC "$XDG_CONFIG_HOME/wgetrc"
 
 if command -v wget &>/dev/null
 
