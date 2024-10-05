@@ -6006,7 +6006,6 @@ inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"
 inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/reddit
 inherit	dot_config/polybar/shapes/user_modules.ini	/^inherit = module\/links$/;"	k	section:module/twitter
 init	dot_config/nvim/lua/plugins/example.lua	/^      init = function()$/;"	f
-init	dot_config/nvim/lua/plugins/figban.lua	/^    init = function()$/;"	f
 initial	dot_config/awesome/lib/animation/init.lua	/^function animation:initial()$/;"	f	unknown:animation
 inkscape	dot_config/awesome/themes/catppuccin/assets/volume.svg	/^   inkscape:version="0.92.4 5da689c313, 2019-01-14">$/;"	n	uri:http://www.inkscape.org/namespaces/inkscape
 inkscape	dot_config/awesome/themes/catppuccin/titlebar/maximize_hover.svg	/^<svg xmlns:inkscape="http:\/\/www.inkscape.org\/namespaces\/inkscape" xmlns:sodipodi="http:\/\/s/;"	n	uri:http://www.inkscape.org/namespaces/inkscape

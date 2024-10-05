@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# ██████╗  █████╗ ███████╗██╗  ██╗██████╗  ██████╗
+# ██╔══██╗██╔══██╗██╔════╝██║  ██║██╔══██╗██╔════╝
+# ██████╔╝███████║███████╗███████║██████╔╝██║
+# ██╔══██╗██╔══██║╚════██║██╔══██║██╔══██╗██║
+# ██████╔╝██║  ██║███████║██║  ██║██║  ██║╚██████╗
+# ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
+
 export HISTFILE="$XDG_STATE_HOME"/bash/history
 
 # If not running interactively, don't do anything
@@ -11,3 +18,236 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR='nvim'
 export VISUAL="$EDITOR"
+
+# ██╗  ██╗██████╗  ██████╗
+# ╚██╗██╔╝██╔══██╗██╔════╝
+#  ╚███╔╝ ██║  ██║██║  ███╗
+#  ██╔██╗ ██║  ██║██║   ██║
+# ██╔╝ ██╗██████╔╝╚██████╔╝
+# ╚═╝  ╚═╝╚═════╝  ╚═════╝
+
+export XDG_CONFIG_HOME="$HOME"/.config
+export XDG_CACHE_HOME="$HOME"/.cache
+export XDG_DATA_HOME="$HOME"/.local/share
+export XDG_STATE_HOME="$HOME"/.local/state
+
+# abook
+alias abook='abook --config $XDG_CONFIG_HOME/abook/abookrc --datafile $XDG_DATA_HOME/abook/addressbook'
+
+# ack
+export ACKRC="$XDG_CONFIG_HOME/ack/ackrc"
+
+# Ansible
+export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
+export ANSIBLE_CONFIG="${XDG_CONFIG_HOME}/ansible.cfg"
+export ANSIBLE_GALAXY_CACHE_DIR="${XDG_CACHE_HOME}/ansible/galaxy_cache"
+
+# asdf
+export ASDF_CONFIG_FILE="${XDG_CONFIG_HOME}/asdf/asdfrc"
+export ASDF_DATA_DIR="${XDG_DATA_HOME}/asdf"
+
+# aspell
+export ASPELL_CONF="per-conf $XDG_CONFIG_HOME/aspell/aspell.conf; personal $XDG_DATA_HOME/aspell/en.pws; repl $XDG_DATA_HOME/aspell/en.prepl"
+
+# aws-cli
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
+
+# bash-completion
+export BASH_COMPLETION_USER_FILE="$XDG_CONFIG_HOME"/bash-completion/bash_completion
+
+# bashdb
+alias bashdb='bashdb -x ${XDG_CONFIG_HOME:-$HOME/.config}/bashdb/bashdbinit'
+
+# bogofilter
+export BOGOFILTER_DIR="$XDG_DATA_HOME"/bogofilter
+
+# btpd-git
+alias btpd='btpd -d $XDG_DATA_HOME/.btpd'
+alias btcli='HOME="$XDG_DATA_HOME" btcli'
+
+# calc
+export CALCHISTFILE="$XDG_CACHE_HOME"/calc_history
+
+# cargo
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+
+# cd-bookmark
+export CD_BOOKMARK_FILE=$XDG_CONFIG_HOME/cd-bookmark/bookmarks
+
+# cgdb
+export CGDB_DIR=$XDG_CONFIG_HOME/cgdb
+
+# chez-scheme
+alias petite='petite --eehistory "$XDG_DATA_HOME"/chezscheme/history'
+
+# chktex in texlive-binextra
+export CHKTEXRC=$XDG_CONFIG_HOME/chktex
+
+# cinelerra
+export CIN_CONFIG="$XDG_CONFIG_HOME"/bcast5
+
+# conky
+alias conky='conky --config="$XDG_CONFIG_HOME"/conky/conkyrc'
+
+# claws-mail
+alias claws-mail='claws-mail --alternate-config-dir "$XDG_DATA_HOME"/claws-mail'
+
+# crawl
+export CRAWL_DIR="$XDG_DATA_HOME"/crawl/
+
+# CUDA
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+
+# dict
+alias dict='dict -c "$XDG_CONFIG_HOME"/dict/dictrc'
+
+# discord
+export DISCORD_USER_DATA_DIR="${XDG_DATA_HOME}"
+
+# Docker
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+
+# docker-machine
+export MACHINE_STORAGE_PATH="$XDG_DATA_HOME"/docker-machine
+
+# DOSBox
+alias dosbox='dosbox -conf "$XDG_CONFIG_HOME"/dosbox/dosbox.conf'
+
+# Electrum Bitcoin Wallet
+export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
+
+# ELinks
+export ELINKS_CONFDIR="$XDG_CONFIG_HOME"/elinks
+
+# elixir
+export MIX_XDG="true"
+
+# Elm
+export ELM_HOME="$XDG_CONFIG_HOME"/elm
+
+# fceux
+export FCEUX_HOME="$XDG_CONFIG_HOME"/fceux
+
+# FFmpeg
+export FFMPEG_DATADIR="$XDG_CONFIG_HOME"/ffmpeg
+
+# emscripten
+export EM_CONFIG="$XDG_CONFIG_HOME"/emscripten/config
+export EM_CACHE="$XDG_CACHE_HOME"/emscripten/cache
+export EM_PORTS="$XDG_DATA_HOME"/emscripten/cache
+alias emcc='emcc --em-config "$XDG_CONFIG_HOME"/emscripten/config --em-cache "$XDG_CACHE_HOME"/emscripten/cache'
+
+# get_iplayer
+export GETIPLAYERUSERPREFS="$XDG_DATA_HOME"/get_iplayer
+
+# getmail
+alias getmail='getmail --rcfile="$XDG_CONFIG_HOME/getmail/getmailrc" --getmaildir="$XDG_DATA_HOME/getmail"'
+
+# ghcup-hs-bin
+export GHCUP_USE_XDG_DIRS=true
+
+# gliv
+alias gliv='gliv --glivrc="$XDG_CONFIG_HOME"/gliv/glivrc'
+
+# gnuradio
+export GR_PREFS_PATH="$XDG_CONFIG_HOME"/gnuradio
+export GRC_PREFS_PATH="$XDG_CONFIG_HOME"/gnuradio/grc.conf
+
+# Go
+export GOPATH="$XDG_DATA_HOME"/go
+export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
+
+# GQ LDAP client
+export GQRC="$XDG_CONFIG_HOME"/gqrc
+export GQSTATE="$XDG_DATA_HOME"/gq/gq-state
+
+# Gradle
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+
+# GTK
+export GTK_RC_FILES="$XDG_CONFIG_HOME"/gtk-1.0/gtkrc
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc":"$XDG_CONFIG_HOME/gtk-2.0/gtkrc.mine"
+
+# Haskell Stack
+export STACK_XDG=1
+
+# hledger
+export LEDGER_FILE="$XDG_DATA_HOME"/hledger.journal
+
+# Houdini
+export HOUDINI_USER_PREF_DIR="$XDG_CACHE_HOME"/houdini__HVER__
+
+# imapfilter
+export IMAPFILTER_HOME="$XDG_CONFIG_HOME/imapfilter"
+
+# ipfs
+export IPFS_PATH="$XDG_DATA_HOME"/ipfs
+
+# irssi
+alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi'
+
+# isync
+alias mbsync='mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc'
+
+# Java OpenJDK
+export _JAVA_OPTIONS="$_JAVA_OPTIONS" -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
+# k9s
+export K9SCONFIG="$XDG_CONFIG_HOME"/k9s
+
+# KDE
+export KDEHOME="$XDG_CONFIG_HOME"/kde
+
+# keychain
+alias keychain='keychain --absolute --dir "$XDG_RUNTIME_DIR"/keychain'
+
+# kodi
+export KODI_DATA=$XDG_DATA_HOME/kodi
+
+# kscript
+export KSCRIPT_CACHE_DIR="$XDG_CACHE_HOME"/kscript
+
+# ledger
+alias ledger='ledger --init-file "$XDG_CONFIG_HOME"/ledgerrc'
+
+# Leiningen
+export LEIN_HOME="$XDG_DATA_HOME"/lein
+
+# libdvdcss
+export DVDCSS_CACHE="$XDG_DATA_HOME"/dvdcss
+
+# libice
+export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
+
+# libx11
+export XCOMPOSEFILE="$XDG_CONFIG_HOME"/X11/xcompose
+export XCOMPOSECACHE="$XDG_CACHE_HOME"/X11/xcompose
+
+# ltrace
+alias ltrace='ltrace -F "$XDG_CONFIG_HOME"/ltrace/ltrace.conf'
+
+# lynx
+export LYNX_CFG="$XDG_CONFIG_HOME"/lynx.cfg
+
+# Mathematica
+export MATHEMATICA_USERBASE="$XDG_CONFIG_HOME"/mathematica
+
+# maxima
+export MAXIMA_USERDIR="$XDG_CONFIG_HOME"/maxima
+
+# mednafen
+export MEDNAFEN_HOME="$XDG_CONFIG_HOME"/mednafen
+
+# minikube
+export MINIKUBE_HOME="$XDG_DATA_HOME"/minikube
+
+# mitmproxy
+alias mitmproxy='mitmproxy --set confdir=$XDG_CONFIG_HOME/mitmproxy'
+alias mitmweb='mitmweb --set confdir=$XDG_CONFIG_HOME/mitmproxy'
+
+# pdfsam
+export _JAVA_OPTIONS="$_JAVA_OPTIONS" -Djavafx.cachedir="$XDG_CACHE_HOME"/openjfx
+
+# python-pylint
+export PYLINTRC="$XDG_CONFIG_HOME"/pylint/pylintrc
