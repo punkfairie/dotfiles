@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+find /usr/share/figlet/fonts -name '*.[ft]lf' | while read -r font; do
+  echo "$font:"
+  figlet -t -f "$font" "Hello World"
+  echo
+  echo
+done | less
