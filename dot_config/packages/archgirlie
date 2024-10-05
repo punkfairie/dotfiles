@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 amfora
@@ -18,6 +19,7 @@ bluez
 bluez-utils
 browsh-bin
 btop
+bun-bin
 calc
 calibre
 catppuccin-cursors-macchiato
@@ -54,6 +56,8 @@ exodus
 eza
 fd
 feh
+figlet
+figlet-fonts-extra
 firefox
 firewalld
 fish
@@ -122,6 +126,7 @@ mpd
 mythes-en
 nano
 ncmpcpp
+neo-matrix-git
 neovim
 networkmanager
 networkmanager-dmenu-git
