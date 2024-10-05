@@ -1,0 +1,34 @@
+[".config/amfora/themes/catppuccin-frappe"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/amfora/refs/heads/main/themes/frappe.toml"
+refreshPeriod = "672h"
+
+[".config/amfora/themes/catppuccin-latte"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/amfora/refs/heads/main/themes/latte.toml"
+refreshPeriod = "672h"
+
+[".config/amfora/themes/catppuccin-macchiato"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/amfora/refs/heads/main/themes/macchiato.toml"
+refreshPeriod = "672h"
+
+[".config/amfora/themes/catppuccin-mocha"]
+type = "file"
+url = "https://raw.githubusercontent.com/catppuccin/amfora/refs/heads/main/themes/mocha.toml"
+refreshPeriod = "672h"
+
+[".config/amfora/themes/rose-pine"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/amfora/refs/heads/main/themes/rose-pine.toml"
+refreshPeriod = "672h"
+
+[".config/amfora/themes/rose-pine-dawn"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/amfora/refs/heads/main/themes/rose-pine-dawn.toml"
+refreshPeriod = "672h"
+
+[".config/amfora/themes/rose-pine-moon"]
+type = "file"
+url = "https://raw.githubusercontent.com/rose-pine/amfora/refs/heads/main/themes/rose-pine-moon.toml"
+refreshPeriod = "672h"
