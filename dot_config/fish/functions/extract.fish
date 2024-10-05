@@ -1,7 +1,17 @@
 #!/usr/bin/env fish
 
 # Extracts archived files / mounts disk images.
-# Usage: extract <file>
+# Usage: extract <file> <extra args>
+
+function run_cmd --argument-names cmd
+    set -f cmd_name (string split -f1 ' ' "$cmd")
+
+    if command -v "$cmd" &>/dev/null
+        eval "$cmd"
+    else
+        printf "Please install %s to extract this file.\n" "$cmd_name"
+    end
+end
 
 function extract -a file
     set --erase argv[1]
@@ -9,35 +19,48 @@ function extract -a file
     if test -f "$file"
         switch "$file"
             case "*.tar.bz2"
-                tar -jxvf $argv "$file"
+                run_cmd "tar -jxvf $argv $file"
+
             case "*.tar.gz"
-                tar -zxvf $argv "$file"
+                run_cmd "tar -zxvf $argv $file"
+
             case "*.bz2"
-                bunzip2 $argv "$file"
+                run_cmd "bunzip2 $argv $file"
+
             case "*.dmg"
                 if test "$(uname)" = Darwin
                     hdiutil mount "$file"
                 end
+
             case "*.gz"
-                gunzip $argv "$file"
+                run_cmd "gunzip $argv $file"
+
             case "*.tar"
-                tar -xvf $argv "$file"
+                run_cmd "tar -xvf $argv $file"
+
             case "*.tbz2"
-                tar -jxvf $argv "$file"
+                run_cmd "tar -jxvf $argv $file"
+
             case "*.tgz"
-                tar -zxvf $argv "$file"
+                run_cmd "tar -zxvf $argv $file"
+
             case "*.zip" "*.ZIP"
                 set -f dir (string replace --ignore-case '.zip' '')
                 mkdir "$dir"
-                unzip $argv "$file" -d "$dir"
+                run_cmd "unzip $argv $file -d $dir"
+
             case "*pax"
-                cat "$file" | pax -r $argv
+                run_cmd "cat $file | pax -r $argv"
+
             case "*.pax.Z"
-                uncompress "$file" --stdout | pax -r $argv
+                run_cmd "uncompress $file --stdout | pax -r $argv"
+
             case "*.rar"
-                unrar x "$file"
+                run_cmd "unrar x $file"
+
             case "*.Z"
-                uncompress $argv "$file"
+                run_cmd "uncompress $argv $file"
+
             case "*"
                 echo "'$file' cannot be extracted/mounted via extract()."
         end

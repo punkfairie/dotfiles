@@ -32,21 +32,23 @@ fi
 
 # shellcheck disable=all
 {{- if eq .chezmoi.hostname "archgirlie" }}
-"$HOME/.screenlayout/desktop.sh"
+"$HOME/.config/xrandr/desktop.sh"
 {{- end }}
+
+sudo mount -a
+
+{{ if eq .chezmoi.hostname "archgirlie" -}}
+setxkbmap -option "apple:alupckeys"
+{{ end -}}
 
 {{ if lookPath "copyq" -}}
 copyq &
 {{ end -}}
 {{ if lookPath "mpd" -}}
-sudo mount -a
 mpd &
 {{ end -}}
 {{ if lookPath "numlockx" -}}
 numlockx on
-{{ end -}}
-{{ if eq .chezmoi.hostname "archgirlie" -}}
-setxkbmap -option "apple:alupckeys"
 {{ end -}}
 {{ if lookPath "pidgin" -}}
 pidgin &

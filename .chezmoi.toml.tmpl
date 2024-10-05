@@ -28,9 +28,7 @@ autoPush = true
 command = ".local/share/chezmoi/.install-bw.sh"
 
 [data]
-{{ if lookPath "get-gpg-key" -}}
-gpgKey = {{ output "get-gpg-key" | trim | quote }}
-{{ end -}}
+gpgKey = {{ output (joinPath .chezmoi.sourceDir "dot_local/bin/executable_get-gpg-key") | trim | quote }}
 passphrase = {{ $passphrase | quote }}
 osid = {{ $osid | quote }}
 {{ if eq $osid "linux-debian" -}}

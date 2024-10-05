@@ -7,38 +7,40 @@ tags*
 {{- end }}
 
 {{- if .isServer }}
+.config/awesome
+.config/cava
 .config/composer
+.config/dunst
+.config/fehbg
 .config/firefox
 .config/fish/conf.d/30-gtk.fish
 .config/fish/conf.d/30-qt.fish
 .config/gtk-3.0
 .config/gtk-4.0
-.config/nvim/lua/plugins/diffview.lua
-.config/nvim/lua/plugins/dim.lua
-.config/nvim/lua/plugins/gitsigns.lua
-.config/nvim/lua/plugins/lazygit.lua
-.config/nvim/lua/plugins/nerdy.lua
-.config/nvim/lua/plugins/nvim-devdocs.lua
-.config/nvim/lua/plugins/refactoring.lua
-.config/nvim/lua/plugins/ssr.lua
-.config/nvim/lua/plugins/vim-blade.lua
-.config/transmission
+.config/i3
+.config/mpd
+.config/ncmpcpp
+.config/openrazer
+.config/picom
+.config/polybar
+.config/razercommander
+.config/rofi
+.config/wezterm
 .config/zathura
 .icons
 {{- end }}
 
 {{- if ne .osid "darwin" }}
-.config/fish/conf.d/30-python.fish
 .config/packages/Brewfile
 {{- end }}
 
 {{- if ne .chezmoi.os "linux" }}
 .config/fish/conf.d/30-gtk.fish
-.config/fish/conf.d/30-journalctl.fish
 .config/fish/conf.d/30-qt.fish
-.config/fish/conf.d/30-systemctl.fish
 .config/gtk-3.0
 .config/gtk-4.0
+.config/mpd
+.config/ncmpcpp
 .config/openrazer
 .config/razercommander
 .config/zathura
@@ -47,19 +49,18 @@ tags*
 
 {{- if ne .osid "linux-arch" }}
 .config/awesome
-.config/fish/conf.d/30-yay.fish
-.config/fish/functions/pkgsearch.fish
-.config/mopidy
-.config/ncmpcpp
+.config/copyq
+.config/dunst
+.config/fehbg
+.config/i3
 .config/packages/arch*
 .config/pacman
-.config/qalculate
+.config/picom
+.config/polybar
 .config/rofi
 .config/yay
-.config/.fehbg
-.config/picom.conf
+.config/xrandr
 .local/bin/update-package-list
-.screenlayout
 .xprofile
 .Xresources
 {{- end }}

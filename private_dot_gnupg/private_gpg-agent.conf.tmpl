@@ -1,4 +1,6 @@
+{{ if lookPath "pinentry-qt5" -}}
 pinentry-program /usr/bin/pinentry-qt5
+{{ end -}}
 
 # Stop asking for password so often.
 default-cache-ttl 60480000

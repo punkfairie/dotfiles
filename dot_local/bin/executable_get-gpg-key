@@ -1,10 +1,9 @@
-#!/usr/bin/env fish
+#!/usr/bin/env bash
 
-set -f key (\
-        gpg --list-secret-keys --keyid-format SHORT\
-        | grep 'rsa4096' \
-        | sed 's/sec   rsa4096\///'\
-        | awk '{print $1}'\
-    )
+key="$(
+  gpg --list-secret-keys --keyid-format SHORT | grep 'rsa4096' \
+    | sed 's/sec   rsa4096\///' \
+    | awk '{print $1}'
+)"
 
 echo "$key"
