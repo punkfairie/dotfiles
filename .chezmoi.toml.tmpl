@@ -19,7 +19,7 @@ exclude = ["scripts"]
 
 [gpg]
 symmetric = true
-args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache"]
+args = ["--batch", "--passphrase", {{ $passphrase | quote }}, "--no-symkey-cache", "--quiet"]
 
 [git]
 autoPush = true
