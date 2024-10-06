@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman-key --init
-sudo pacman-key --populate archlinux
+if command -v pacman-key &>/dev/null; then
+  sudo pacman-key --init
+  sudo pacman-key --populate archlinux
+fi
