@@ -26,6 +26,7 @@ tags*
 .config/razercommander
 .config/rofi
 .config/wezterm
+.config/X11
 .config/zathura
 .icons
 {{- end }}
