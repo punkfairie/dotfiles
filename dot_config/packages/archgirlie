@@ -1,3 +1,4 @@
+[1m[33m -> [0m[0mAvoid running yay as root/sudo.
 aic94xx-firmware
 alsa-utils
 amfora
@@ -168,6 +169,7 @@ python-pip
 python-pipenv
 python-pipx
 python-pynvim
+python-pywalfox
 pywal-16-colors
 qbittorrent
 qt5-graphicaleffects
