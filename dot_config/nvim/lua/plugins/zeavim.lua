@@ -1,7 +1,7 @@
 return {
   {
     "KabbAmine/zeavim.vim",
-    cmd = { "Zeavim", "ZeavimV", "Zeavim!", "Docset" },
+    cmd = { "Zeavim", "ZeavimV", "Docset" },
     keys = {
       {
         "<leader>z",
