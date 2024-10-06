@@ -110,6 +110,8 @@
   rset = remote set-url
   rup  = remote update
 
+  rsetap = remote set-url --add --push
+
   # Logs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # Current branch.
