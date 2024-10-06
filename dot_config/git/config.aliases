@@ -2,7 +2,7 @@
 
 [alias]
 
-  # Staging - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  # Staging - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   a  = add
   aa = add --all
@@ -102,6 +102,14 @@
   sub  = submodule
   subu = submodule update --init --recursive
 
+  r    = remote
+  rv   = remote --verbose
+  ra   = remote add
+  rrm  = remote remove
+  rmv  = remote rename
+  rset = remote set-url
+  rup  = remote update
+
   # Logs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # Current branch.
@@ -135,7 +143,7 @@
   laps = log -5 --pretty=lf --graph --all --cc        --patch
 
 
-  # Shortcuts - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  # Shortcuts - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   nevermind = "!git reset --hard HEAD && git clean -df"
 
@@ -143,7 +151,7 @@
 
   chash = "!git log --oneline | gum filter --height 10 | cut -d' ' -f1 | copyq copy - &>/dev/null"
 
-  # Notes - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  # Notes - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # A note on reset, restore, and revert, paraphrased from `man git`, plus myown
   # own on `rm`:
@@ -156,8 +164,8 @@
   #
   # These are not a description of the *possible* uses, rather a narrowing of
   # the *intended* uses.
- 
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   # PATH VALUES:
   # :/ - all files within the root of the working tree, so all files in the
