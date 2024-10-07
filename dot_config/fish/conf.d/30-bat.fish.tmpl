@@ -9,11 +9,11 @@
 set -gx BATDIFF_USE_DELTA true
 
 function cat --wraps bat
-    {{ $batcmd }} $argv
+    command {{ $batcmd }} $argv
 end
 
 function cath --wraps bat
-    {{ $batcmd }} --plain --language=help $argv
+    command {{ $batcmd }} --plain --language=help $argv
 end
 
 abbr -a B --position anywhere --set-cursor "% | {{ $batcmd }}"
