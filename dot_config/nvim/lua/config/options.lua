@@ -22,7 +22,6 @@ vim.filetype.add({
   },
   filename = {
     [".env"] = "conf",
-    ["Caddyfile"] = "Caddyfile",
   },
   pattern = {
     ["%.env%.[%w_.-]+"] = "conf",
