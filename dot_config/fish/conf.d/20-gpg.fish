@@ -2,5 +2,8 @@
 
 if command -v gpgconf &>/dev/null
     set -gx GPG_TTY (tty)
-    gpgconf --launch gpg-agent
+
+    if status --is-interactive
+        gpgconf --launch gpg-agent
+    end
 end
