@@ -135,6 +135,7 @@ nginx
 nm-connection-editor
 nnn
 ntfs-3g
+ntp
 numlockx
 nvidia
 nvidia-settings
@@ -239,6 +240,7 @@ webstorm
 webstorm-jre
 wezterm
 wget
+whois
 wine
 wireshark-gtk2
 wishlist-bin
