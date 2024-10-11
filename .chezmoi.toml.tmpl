@@ -1,5 +1,6 @@
 {{- $passphrase := promptStringOnce . "passphrase" "passphrase" -}}
 {{- $colorscheme := "rose-pine" -}}
+{{- $gpgKey := promptStringOnce . "gpgKey" "gpgKey" -}}
 
 {{- $osid := .chezmoi.os -}}
 {{- if hasKey .chezmoi.osRelease "id" -}}
@@ -28,7 +29,7 @@ autoPush = true
 command = ".local/share/chezmoi/.install-bw.sh"
 
 [data]
-gpgKey = {{ output (joinPath .chezmoi.sourceDir "dot_local/bin/executable_get-gpg-key") | trim | quote }}
+gpgKey = {{ $gpgKey | quote }}
 passphrase = {{ $passphrase | quote }}
 osid = {{ $osid | quote }}
 {{ if eq $osid "linux-debian" -}}
